@@ -47,11 +47,10 @@
                     </p>
                     <p class="card-text small">Video Large Language Models (Video-LLMs) have made rapid progress on temporal video understanding, yet many fail at a basic perceptual primitive: signed image-plane motion direction. On simple videos of a single object moving left, right, up, or down, most Video-LLMs perform near chance, with above-...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：Video-LLMs在判断简单运动方向（左、右、上、下）时表现接近随机，存在“方向运动盲视”问题。
+                        <strong>AI 总结：</strong>研究问题：Video-LLMs在简单视频中单单一物体运动预测上存在方向运动盲的问题。
+方法：通过跟踪Video-LMs pipeline中中的运动方向信息，揭示读取器在绑定信号与正确文本描述之间存在方向绑定漏洞，提出MoDirect和 DeltaDirect两个方法。
+关键贡献：MoDirect构建首个方向运动指令数据集，DeltaDirect通过预测标准化1-D运动向向提高真实世界中方向运动准确性1
 
-主要方法：提出DeltaDirect，一种基于诊断的投影层目标，通过相邻帧特征差预测归一化2D运动向量，并构建MoDirect数据集进行指令微调。
-
-关键贡献：揭示视觉编码器到LLM隐藏状态中运动方向信息可线性读取，但存在方向绑定差距；DeltaDirect在合成基准上将准确率从25.9%提升至85.4%，在真实基准上提升21.9个百分点，且不损害标准视频理解性能。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -76,7 +75,15 @@
                     </p>
                     <p class="card-text small">Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by missing secondary causal consequences. To address this, we intro...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：现有运动控制视频生成模型对用户提供的稀疏、不精确轨迹过度依赖，导致生成结果不自然且缺乏因果合理性。主要方法：提出MotiMotion框架，将运动控制重构为推理-生成问题，利用无训练视觉语言推理器优化主轨迹并推断合理的次生运动，并设计置信度感知控制方案自适应调节引导强度。关键贡献：提出推理驱动的运动控制范式，构建交互中心基准MotiBench，实验证明生成视频在物体行为合理性和交互自然性上显著优于现有方法。
+                        <strong>AI 总结：</strong>研究问题：当前基于动作控制的图像到视频生成模型往往跟随稀疏、不精确且因果不完整的轨迹，导致生成结果不自然或不合理。
+方法：提出Moti框架，将
+assistant
+研究问题：当前基于动作控制的图像到视频生成模型往往遵循稀疏、不精确且因果关系不完整的轨迹，生成结果往往不自然或
+assistant
+研究问题：当前基于动作控制的图像到视频生成模型往往遵循稀疏、不精确且因果不完整的轨迹，导致生成结果不自然或
+Assistant
+方法：提出Moti框架，将动作控制问题为一种推理-生成问题问题问题
+关键贡献：通过视语言推理模型在不训练下精细主要轨迹并在图像空间中想象合理的次要运动，增强运动的自然性程度。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -101,9 +108,9 @@
                     </p>
                     <p class="card-text small">As wearable and mobile devices become increasingly embedded in daily life, they offer a practical way to continuously sense human motion in the wild. But inertial signals are highly dependent on the sensing setup, including body location, mounting position, sensor orientation, device hardware, and s...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：可穿戴IMU传感器在不同设备、位置和设置下的人体运动建模泛化性差。  
-主要方法：提出AnyMo框架，通过物理仿真生成多样化IMU信号，用图编码器预训练多位置运动表示，将多IMU信号token化为全身运动令牌，并与大语言模型对齐。  
-关键贡献：在零样本活动识别、跨模态检索和运动描述任务上显著提升性能，实现跨设备和数据集的通用运动理解。
+                        <strong>AI 总结：</strong>研究问题：如何建立一种不受穿戴设备配置影响的人体运动建模方法，以实现跨设备和 跨 数据集的运动表示 行为识别。
+方法：提出yu一种基于几何感知的框架，通过物理驱动的IMU仿真生成多样且合理的合成信号，采用图编码器从配对 观的合成放置视 觇和 遮罩的观察wi，对实现多位置IMU的全身运动token化，并 并与LLM对 对齐以进行运动- 语言理解。
+关键贡献：提出的wayMo方法显著提升了跨设备和 跨 数据集的行为识别精度，分别提高了IMU-to-text和to--IMU检索的精度，以及零样本captioning的生成。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -128,9 +135,9 @@
                     </p>
                     <p class="card-text small">Large language models (LLMs) are typically trained on shuffled corpora, yielding models whose knowledge is frozen at train time and whose temporal grounding remains poorly understood. In this work, we study the impact of pre-training dynamics on the acquisition of time-sensitive factual knowledge, f...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：大型语言模型在预训练中因数据随机打乱导致时间知识模糊，无法准确关联事实与时间。  
-主要方法：构建7000+时间问题基准，对比6B参数模型在时间排序与随机排序的Common Crawl数据上的预训练效果。  
-关键贡献：时间排序训练提升事实时效性与时间精确性，随机训练偏向旧数据；开源代码与数据集。
+                        <strong>AI 总结：</strong>研究问题：探究预训练动态对 LLMs 对时间敏感事实知识获取的影响。
+方法：分别在时间 序列训练和打乱训练下，，标准语料和时间上下文语料上进行预训练， on，并并后分析模型对 对时间知识的掌握情况。
+关键贡献：发现顺序训练的模型在一般语义理解与知识方面与打乱训练基线线线线持平，，，同时在时间时效与时间时间精确性知识上优基线线于，，提供了 on 时间有序与随机预训练的基准及 代码与数据集。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -155,11 +162,13 @@
                     </p>
                     <p class="card-text small">Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：基于LLM的多智能体系统中，KV缓存共享可能导致敏感信息通过潜在通信渠道泄露。
+                        <strong>AI 总结：</strong>研究问题：多
+user
+研究问题：多
+📐
+森
+研究问题：在基于键值（KV）缓存的多智能体系统中，如何安全地地 地进行隐性 on 藏通信而不影响 任务相关的性能。
 
-主要方法：提出LCGuard框架，将共享KV缓存视为潜在工作记忆，通过对抗训练学习表示层变换，在保留任务相关语义的同时减少可重构的敏感信息。
-
-关键贡献：首次针对KV缓存共享中的表示级信息泄露问题提出防护方案，实验证明能有效降低重构攻击成功率且保持任务性能。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -184,9 +193,9 @@
                     </p>
                     <p class="card-text small">Biomedical knowledge graphs (KGs) treat disease associations as static facts, but temporal information is crucial for clinical reasoning, e.g., a symptom diagnostic of one disease at age 3 may imply a different disease at age 13. Existing KGs such as PrimeKG, Hetionet, and iKraph do not encode when ...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：现有生物医学知识图谱缺乏时间维度，限制了其用于临床推理和检索增强的有效性。  
-主要方法：构建ChronoMedKG时间生物医学知识图谱，包含460,497个证据关联三元组，通过多智能体管道从文献中提取，采用多模型共识和可信度过滤。  
-关键贡献：引入ChronoMedKG和ChronoTQA基准测试，提升时间临床推理能力，在时间问题上恢复47-65%的长尾失败，显著优于现有方法。
+                        <strong>AI 总结：</strong>研究问题：如何KGs e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e
+主要 e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e
+ e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e[e réponse被截断了， 重新 e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -211,9 +220,9 @@
                     </p>
                     <p class="card-text small">Camera pose matters. The position and orientation of each viewpoint define a shared spatial coordinate frame that relates observations across video frames. Yet this signal is largely absent from multimodal LLMs (MLLMs) for video understanding, which process frames as isolated 2D snapshots, instead o...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：视频理解中缺失相机姿态信息，导致多模态大模型将帧视为孤立2D快照而非连续3D场景。  
-主要方法：提出Cambrian-P视频多模态大模型，通过可学习相机令牌和姿态回归头增强帧级姿态感知，并设计采样方案。  
-关键贡献：在空间推理基准上提升4.5-6.5%，泛化至8个视频QA基准，同时实现流式姿态估计SOTA，伪标注姿态训练进一步改善通用视频理解。
+                        <strong>AI 总结：</strong>研究问题：探讨摄像机姿态对视频理解的影响，以及如何将姿态信息整合到多模态的视频理解模型中。
+主要方法：提出Cambrian-P模型，引入姿态标记和回归机制。
+关键贡献：在空间推理基准上取得显著改进，并在多个空间与一般视频理解基准上取得领先表现，同时提升通用姿态估计效果。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -238,9 +247,9 @@
                     </p>
                     <p class="card-text small">Vision-and-Language Navigation (VLN) requires an agent to ground language instructions to its own movement within a visual environment. While state-of-the-art methods leverage the reasoning capabilities of Vision-Language Models (VLMs) for end-to-end action prediction, they often lack an explicit an...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：VLN模型缺乏对智能体自身状态、指令和场景间关系的显式理解。  
-主要方法：提出AwareVLN框架，包含结构推理模块（实现空间与任务自我意识）和自动数据引擎（进度划分训练）。  
-关键贡献：以全端到端、数据驱动方式赋予模型自我意识推理能力，在Habitat模拟器上显著超越现有方法。
+                        <strong>AI 总结：</strong>研究问题：在Vision-and-Language Navigation中(VLN)任务中D，，，，D，，，，缺乏对D对对对对显性的推理机制来D来理解D指令和DD环境D之间的关系D
+方法：提出提出提出提出AwareVLND框架D引入D了空间D与任务导向导向D意识D机制D和和及自动规划DD引擎D来以基于D进步D的D预测DD动作
+关键贡献：D提出了D两个创新D：D空间D任务导向D意识D机制DDD自动规划D引擎D，并显著提升了DVLN任务D性能D
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -265,11 +274,11 @@
                     </p>
                     <p class="card-text small">Large language model post-training methods such as supervised fine-tuning (SFT), reinforcement learning (RL), and distillation are often analyzed through their loss functions: maximum likelihood, policy gradients, forward KL, reverse KL, or related objective-level variants. We study a complementary ...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：探讨大语言模型后训练方法中，监督信号的状态分布（即训练数据的状态来源）对模型性能的影响，而不仅仅是传统关注的损失函数形式。
-
-主要方法：通过控制实验，使用Qwen3-0.6B-Base模型在GSM8K上比较SFT、RL和在线策略蒸馏（OPD）在不同状态分布下的表现。
-
-关键贡献：发现训练状态分布（如固定数据集状态与学习者诱导状态）对模型性能至关重要，轻量级SFT和在线RL能提升目标任务并保持知识保留，而过度SFT会导致遗忘，OPD可从退化教师中超越其性能。
+                        <strong>AI 总结：</strong>研究问题：探索不同后训练方法（如FT、RL和OPD）在不同-policy 和分布分布上的差异影响
+主要主要主要
+主要方法：通过比较不同三种方法D在不同D规模D和分布上的表现D
+D
+关键贡献：提出了D-基于状态分布的后后后训练视角D，并，并并D，并证明了DD不同FT、RL和和OPD方法DD在DD数据分布DD上的D差异D及其对于模型DD学习D和记忆D的影响D
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -294,9 +303,10 @@
                     </p>
                     <p class="card-text small">Language models must now generalize out of the box to novel environments and work inside inference-scaling search procedures, such as AlphaEvolve, that select rollouts with a variety of task-specific reward functions. Unfortunately, the standard paradigm of LLM post-training optimizes a pre-specifie...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：现有语言模型后训练方法优化单一标量奖励，导致输出分布低熵，无法满足测试时搜索所需的多样性。  
-主要方法：提出向量策略优化（VPO），利用向量奖励（如代码生成中每测试用例正确性）训练模型生成多样化解决方案，并作为GRPO优势估计器的替代。  
-关键贡献：VPO在四项任务中匹配或超越标量RL基线，随搜索预算增加优势扩大；在进化搜索中解决GRPO无法处理的问题，为测试时搜索提供默认后训练目标。
+                        <strong>AI 总结：</strong>研究问题：语言模型在推理时需要适应多种奖励函数以产生多样性的响应，而现有方法往往导致低多样性响应。
+方法：提出Vector Policy Optimization (VPO)，一种明确训练模型以产生多样化响应的强化学习算法，通过优化向奖励向而非标量奖励来。
+关键贡献：V
+
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -321,9 +331,9 @@
                     </p>
                     <p class="card-text small">Production systems generate millions of log lines daily, yet most anomaly detectors operate at the session or window-level, flagging groups of lines rather than identifying the specific message responsible. This coarse granularity forces operators to inspect many routine lines per alert. Message-lev...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：现有日志异常检测粒度粗，无法精确定位异常消息，且大模型直接应用于每条日志成本过高。  
-主要方法：提出FAME框架，仅离线使用一次大模型，通过最多K条标注生成异常指示，利用专家混合架构训练轻量路由器和领域专家，实现消息级检测。  
-关键贡献：在BGL上F1达98.16，标注量减少76倍，检测86.3%未见EventID异常；在Thunderbird上F1达99.95，召回率完美。
+                        <strong>AI 总结：</strong>研究问题：如何在大规模日志中实现高效的消息级别异常检测。
+主要方法：提出FAME框架，利用大型语言模型（LLM）进行离线训练，生成故障感知的专家模型。
+关键贡献：显著减少标注工作量（76倍）z并并在未知事件类型下捕捉86..3%以上异常，z。。zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -348,9 +358,10 @@
                     </p>
                     <p class="card-text small">We investigate whether acoustic emotion recognition models can serve as proxies for the Pathos dimension in political speech analysis, as operationalised by the TRUST multi-agent large language model (LLM) pipeline. Using a Bundestag plenary speech by Felix Banaszak (51 segments, 245 s) as a case st...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：声学情感识别模型能否作为政治演讲中Pathos维度的有效代理？  
-主要方法：以德国联邦议院演讲为案例，比较emotion2vec声学模型、Gemini 2.5 Flash多模态LLM和TRUST-Pathos多代理监督系统三种分析模态，通过Spearman相关性检验评估一致性。  
-关键贡献：发现LLM多模态分析（Gemini Valence与TRUST-Pathos相关系数rho=+0.664）显著优于纯声学模型，且标准情感基准语料库存在表演性、文化偏差等问题，为政治情感分析提供新范式。
+                        <strong>AI 总结：</strong>研究问题：声学情绪识别模型能否作为政治演讲中Pathheutos维度的代理？
+ 方法：对比声学情绪识别模型（EMO- vec+、基于大模型的生成式模型（Gemini）和多代理模型（TRUST）分析德国议会上院发言。
+ 关键贡献：生成式模型在捕捉情绪方面优于声
+
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -375,7 +386,9 @@
                     </p>
                     <p class="card-text small">Vision-Language-Action (VLA) models have shown strong potential for general-purpose robot manipulation by unifying perception and action. However, existing VLA systems primarily rely on textual instructions and struggle to resolve spatial ambiguity in complex scenes with multiple similar objects. To...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：现有VLA模型依赖文本指令，在复杂场景中难以解决多相似物体的空间歧义问题。主要方法：提出GesVLA模型，将手势作为并行指令模态编码到潜在空间，采用双VLM架构实现手势与动作策略的紧密耦合，并通过渲染手模型到真实场景图像构建数据集。关键贡献：引入手势指令提升目标定位准确性和人机交互效率，尤其在杂乱环境中表现显著。
+                        <strong>AI 总结：</strong>研究问题：如何通过引入手势指令提升Vision-Language-Action模型在复杂场景下的机器人操作能力。
+方法：提出GesVLA模型，融合手势指令，构建手势感知与动作生成耦合机制。
+关键贡献：1通过双VLM架构增强手势与动作策略之间的耦合，并通过渲染生成手势数据桥梁模拟与真实视觉差距，提升模型泛化能力。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -400,7 +413,9 @@
                     </p>
                     <p class="card-text small">While ubiquitous wearable sensors capture a wealth of behavioral and physiological information, effectively transforming these signals into personalized health insights is challenging. Specifically, converting low-level sensor data into representations capable of characterizing higher-level states i...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：如何将可穿戴传感器数据转化为个性化健康洞察，解决标签数据稀缺和个体差异大的挑战。主要方法：基于5百万参与者、超过1万亿分钟未标记传感器数据预训练基础模型，并部署LLM代理自主搜索下游预测头。关键贡献：首次实现人口规模的可穿戴健康基础模型，在35项任务中验证性能随模型和数据规模提升；支持少样本学习和鲁棒日度量估计；通过临床医师评级验证了个人健康代理的安全性与相关性。
+                        <strong>AI 总结：</strong>研究问题：如何有效转化可腕穿戴传感器收集的生理和行为信号为个性化健康洞察。
+主要方法：提出一种基于大规模未标注传感器信号预训练的通用模型。
+关键贡献：通过联合调整模型容量和预训练数据量，近1万亿级别的信号，，显著提升多种健康预测任务的表现，并展示了其在快速微调和生成方面的能力，用于稳健的日常健康指标估计。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -425,9 +440,9 @@
                     </p>
                     <p class="card-text small">Large language models (LLMs) increasingly excel at mathematical reasoning, but their unreliability limits their utility in mathematics research. A mitigation is using LLMs to generate formal proofs in languages like Lean. We perform the first large-scale evaluation of this method's ability to solve ...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：AI能否通过形式化证明搜索解决数学开放问题。  
-主要方法：使用大语言模型生成Lean形式化证明，结合自动验证，设计不同代理策略（基础代理与高级代理）进行大规模评估。  
-关键贡献：首次大规模验证该方法可解决开放问题——自主解决9个Erdős问题、44个OEIS猜想，并应用于多个数学领域，凸显AI形式化证明搜索的潜力。
+                        <strong>AI 总结：</strong>研究 on：AI辅助形式化证明
+方法：利用大型语言模型（LLMs）生成形式化的证明语言（Lean
+关键贡献：首次大规模评估LLMs在数学难题解决上的能力若您发现有明显错误或 或者需要修改的信息 请 请告知
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -504,7 +519,7 @@
                         <i class="bi bi-cloud"></i> 词云
                     </div>
                     <div class="card-body text-center">
-                        <img src="data/analysis/wordcloud_20260522_171326.png" class="img-fluid" alt="词云">
+                        <img src="data/analysis/wordcloud_20260522_084842.png" class="img-fluid" alt="词云">
                     </div>
                 </div>
             </div>

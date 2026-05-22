@@ -37,12 +37,12 @@ llm:
   # 提供商 / Provider: openai, gemini, claude, deepseek, vllm
   provider: "openai"
 
-  # OpenAI 兼容 API 配置 (联通云 DeepSeek)
+  # OpenAI 配置 / OpenAI settings (使用 SiliconFlow API)
   openai:
-    api_key: ""  # 在 .env 文件中设置
-    model: "DeepSeek-V4-Flash"  # DeepSeek-V4-Flash
-    base_url: ""  # 在 .env 文件中设置
-    temperature: 0.7
+    api_key: ""  # 在 .env 文件中设置 / Set in .env file
+    model: "Qwen/Qwen2.5-7B-Instruct"  # Qwen2.5-7B-Instruct
+    base_url: ""  # 在 .env 文件中设置 / Set in .env file
+    temperature: 0.8
     max_tokens: 2048
 
   # Google Gemini 配置 / Google Gemini settings
