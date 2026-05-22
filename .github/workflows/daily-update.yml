@@ -8,8 +8,14 @@ on:
   # 允许手动触发
   workflow_dispatch:
 
+# 设置权限
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
-  update-papers:
+  update-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,21 +43,24 @@ jobs:
           echo "ZOTERO_USER_ID=${{ secrets.ZOTERO_USER_ID }}" >> .env
           echo "ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}" >> .env
 
-      # 运行主程序
+      # 运行主程序获取论文
       - name: Run daily update
         run: python main.py
 
+      # 生成静态网页
+      - name: Generate static page
+        run: python generate_static.py
+
       # 提交数据到仓库
-      - name: Commit and push data
+      - name: Commit data
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # 添加数据文件
           git add data/ -f
+          git add docs/ -f
           git add logs/ -f
 
-          # 检查是否有变更
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
@@ -59,3 +68,16 @@ jobs:
             git commit -m "Daily update: ${DATE}"
             git push
           fi
+
+      # 部署到 GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
