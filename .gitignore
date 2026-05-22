@@ -13,9 +13,13 @@ build/
 # Environment variables (敏感信息)
 .env
 
-# Data files (运行时生成)
-data/
-logs/
+# Data files (运行时生成，但保留结构)
+data/*/
+logs/*.log
+
+# Keep data directories structure
+!data/.gitkeep
+!logs/.gitkeep
 
 # IDE
 .vscode/
