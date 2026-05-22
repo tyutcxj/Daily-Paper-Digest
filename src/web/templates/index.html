@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card-paper {
+            transition: transform 0.2s;
+        }
+        .card-paper:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .category-badge {
+            font-size: 0.75rem;
+        }
+        .abstract-text {
+            font-size: 0.9rem;
+            color: #666;
+            max-height: 100px;
+            overflow: hidden;
+        }
+        .keyword-badge {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="bi bi-journal-richtext"></i> {{ title }}
+            </a>
+            <div class="navbar-nav ms-auto">
+                <select id="dateSelector" class="form-select form-select-sm" style="width: auto;">
+                    <option value="">选择日期</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="mb-3">
+                    <i class="bi bi-file-text"></i> 论文列表
+                    <span id="paperCount" class="badge bg-secondary">0</span>
+                </h4>
+                <div id="papersList" class="row">
+                    <!-- 论文卡片将在这里动态加载 -->
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Zotero 库信息 -->
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <i class="bi bi-book"></i> 我的 Zotero 库
+                    </div>
+                    <div class="card-body">
+                        <div id="zoteroProfile">
+                            <p class="text-muted">加载中...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <i class="bi bi-graph-up"></i> 趋势分析
+                    </div>
+                    <div class="card-body">
+                        <h6>热门关键词</h6>
+                        <div id="keywordsContainer" class="mb-3">
+                            <!-- 关键词将在这里动态加载 -->
+                        </div>
+
+                        <h6>研究类别</h6>
+                        <div id="categoriesContainer">
+                            <!-- 类别将在这里动态加载 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <i class="bi bi-cloud"></i> 词云
+                    </div>
+                    <div class="card-body text-center">
+                        <img id="wordcloudImage" src="" alt="词云" class="img-fluid" style="display: none;">
+                        <p id="wordcloudPlaceholder" class="text-muted">暂无词云数据</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 论文详情模态框 -->
+    <div class="modal fade" id="paperModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paperModalTitle">论文详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="paperModalBody">
+                    <!-- 论文详情将在这里动态加载 -->
+                </div>
+                <div class="modal-footer">
+                    <a id="paperPdfLink" href="#" class="btn btn-primary" target="_blank">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
