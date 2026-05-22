@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily arXiv - AI Research Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .card-title a:hover { color: #0d6efd !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-journal-richtext"></i> Daily arXiv - AI Research Tracker
+            </a>
+            <span class="navbar-text">
+                <i class="bi bi-calendar"></i> 更新日期: 2026-05-22
+            </span>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h4 class="mb-3">
+                    <i class="bi bi-file-text"></i> 今日论文
+                    <span class="badge bg-secondary">15 篇</span>
+                </h4>
+                <div class="row">
+                    
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22823v1" target="_blank" class="text-decoration-none text-dark">
+                            Which Way Did It Move? Diagnosing and Overcoming Directional Motion Blindness in Video-LLMs
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Jongseo Lee, Hyuntak Lee, Sunghun Kim et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Video Large Language Models (Video-LLMs) have made rapid progress on temporal video understanding, yet many fail at a basic perceptual primitive: signed image-plane motion direction. On simple videos of a single object moving left, right, up, or down, most Video-LLMs perform near chance, with above-...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：Video-LLMs在判断简单运动方向（左、右、上、下）时表现接近随机，存在“方向运动盲视”问题。
+
+主要方法：提出DeltaDirect，一种基于诊断的投影层目标，通过相邻帧特征差预测归一化2D运动向量，并构建MoDirect数据集进行指令微调。
+
+关键贡献：揭示视觉编码器到LLM隐藏状态中运动方向信息可线性读取，但存在方向绑定差距；DeltaDirect在合成基准上将准确率从25.9%提升至85.4%，在真实基准上提升21.9个百分点，且不损害标准视频理解性能。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22823v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22818v1" target="_blank" class="text-decoration-none text-dark">
+                            MotiMotion: Motion-Controlled Video Generation with Visual Reasoning
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Lee Hsin-Ying, Hanwen Jiang, Yiqun Mei et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by missing secondary causal consequences. To address this, we intro...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有运动控制视频生成模型对用户提供的稀疏、不精确轨迹过度依赖，导致生成结果不自然且缺乏因果合理性。主要方法：提出MotiMotion框架，将运动控制重构为推理-生成问题，利用无训练视觉语言推理器优化主轨迹并推断合理的次生运动，并设计置信度感知控制方案自适应调节引导强度。关键贡献：提出推理驱动的运动控制范式，构建交互中心基准MotiBench，实验证明生成视频在物体行为合理性和交互自然性上显著优于现有方法。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22818v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22715v1" target="_blank" class="text-decoration-none text-dark">
+                            AnyMo: Geometry-Aware Setup-Agnostic Modeling of Human Motion in the Wild
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> <span class="badge bg-secondary">cs.AI</span> <span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Baiyu Chen, Zechen Li, Wilson Wongso et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">As wearable and mobile devices become increasingly embedded in daily life, they offer a practical way to continuously sense human motion in the wild. But inertial signals are highly dependent on the sensing setup, including body location, mounting position, sensor orientation, device hardware, and s...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：可穿戴IMU传感器在不同设备、位置和设置下的人体运动建模泛化性差。  
+主要方法：提出AnyMo框架，通过物理仿真生成多样化IMU信号，用图编码器预训练多位置运动表示，将多IMU信号token化为全身运动令牌，并与大语言模型对齐。  
+关键贡献：在零样本活动识别、跨模态检索和运动描述任务上显著提升性能，实现跨设备和数据集的通用运动理解。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22715v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22769v1" target="_blank" class="text-decoration-none text-dark">
+                            Understanding Data Temporality Impact on Large Language Models Pre-training
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> <span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Pilchen Hippolyte, Fabre Romain, Signe Talla Franck et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Large language models (LLMs) are typically trained on shuffled corpora, yielding models whose knowledge is frozen at train time and whose temporal grounding remains poorly understood. In this work, we study the impact of pre-training dynamics on the acquisition of time-sensitive factual knowledge, f...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：大型语言模型在预训练中因数据随机打乱导致时间知识模糊，无法准确关联事实与时间。  
+主要方法：构建7000+时间问题基准，对比6B参数模型在时间排序与随机排序的Common Crawl数据上的预训练效果。  
+关键贡献：时间排序训练提升事实时效性与时间精确性，随机训练偏向旧数据；开源代码与数据集。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22769v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22786v1" target="_blank" class="text-decoration-none text-dark">
+                            LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> <span class="badge bg-secondary">cs.ET</span> <span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：基于LLM的多智能体系统中，KV缓存共享可能导致敏感信息通过潜在通信渠道泄露。
+
+主要方法：提出LCGuard框架，将共享KV缓存视为潜在工作记忆，通过对抗训练学习表示层变换，在保留任务相关语义的同时减少可重构的敏感信息。
+
+关键贡献：首次针对KV缓存共享中的表示级信息泄露问题提出防护方案，实验证明能有效降低重构攻击成功率且保持任务性能。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22786v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22734v1" target="_blank" class="text-decoration-none text-dark">
+                            ChronoMedKG: A Temporally-Grounded Biomedical Knowledge Graph and Benchmark for Clinical Reasoning
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Md Shamim Ahmed, Farzaneh Firoozbakht, Lukas Galke Poech et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Biomedical knowledge graphs (KGs) treat disease associations as static facts, but temporal information is crucial for clinical reasoning, e.g., a symptom diagnostic of one disease at age 3 may imply a different disease at age 13. Existing KGs such as PrimeKG, Hetionet, and iKraph do not encode when ...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有生物医学知识图谱缺乏时间维度，限制了其用于临床推理和检索增强的有效性。  
+主要方法：构建ChronoMedKG时间生物医学知识图谱，包含460,497个证据关联三元组，通过多智能体管道从文献中提取，采用多模型共识和可信度过滤。  
+关键贡献：引入ChronoMedKG和ChronoTQA基准测试，提升时间临床推理能力，在时间问题上恢复47-65%的长尾失败，显著优于现有方法。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22734v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22819v1" target="_blank" class="text-decoration-none text-dark">
+                            Cambrian-P: Pose-Grounded Video Understanding
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Jihan Yang, Zifan Zhao, Xichen Pan et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Camera pose matters. The position and orientation of each viewpoint define a shared spatial coordinate frame that relates observations across video frames. Yet this signal is largely absent from multimodal LLMs (MLLMs) for video understanding, which process frames as isolated 2D snapshots, instead o...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：视频理解中缺失相机姿态信息，导致多模态大模型将帧视为孤立2D快照而非连续3D场景。  
+主要方法：提出Cambrian-P视频多模态大模型，通过可学习相机令牌和姿态回归头增强帧级姿态感知，并设计采样方案。  
+关键贡献：在空间推理基准上提升4.5-6.5%，泛化至8个视频QA基准，同时实现流式姿态估计SOTA，伪标注姿态训练进一步改善通用视频理解。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22819v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22816v1" target="_blank" class="text-decoration-none text-dark">
+                            AwareVLN: Reasoning with Self-awareness for Vision-Language Navigation
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.RO</span> <span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Wenxuan Guo, Xiuwei Xu, Yichen Liu et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Vision-and-Language Navigation (VLN) requires an agent to ground language instructions to its own movement within a visual environment. While state-of-the-art methods leverage the reasoning capabilities of Vision-Language Models (VLMs) for end-to-end action prediction, they often lack an explicit an...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：VLN模型缺乏对智能体自身状态、指令和场景间关系的显式理解。  
+主要方法：提出AwareVLN框架，包含结构推理模块（实现空间与任务自我意识）和自动数据引擎（进度划分训练）。  
+关键贡献：以全端到端、数据驱动方式赋予模型自我意识推理能力，在Habitat模拟器上显著超越现有方法。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22816v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22731v1" target="_blank" class="text-decoration-none text-dark">
+                            Post-Training is About States, Not Tokens: A State Distribution View of SFT, RL, and On-Policy Distillation
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> <span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Dong Nie<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Large language model post-training methods such as supervised fine-tuning (SFT), reinforcement learning (RL), and distillation are often analyzed through their loss functions: maximum likelihood, policy gradients, forward KL, reverse KL, or related objective-level variants. We study a complementary ...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：探讨大语言模型后训练方法中，监督信号的状态分布（即训练数据的状态来源）对模型性能的影响，而不仅仅是传统关注的损失函数形式。
+
+主要方法：通过控制实验，使用Qwen3-0.6B-Base模型在GSM8K上比较SFT、RL和在线策略蒸馏（OPD）在不同状态分布下的表现。
+
+关键贡献：发现训练状态分布（如固定数据集状态与学习者诱导状态）对模型性能至关重要，轻量级SFT和在线RL能提升目标任务并保持知识保留，而过度SFT会导致遗忘，OPD可从退化教师中超越其性能。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22731v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22817v1" target="_blank" class="text-decoration-none text-dark">
+                            Vector Policy Optimization: Training for Diversity Improves Test-Time Search
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> <span class="badge bg-secondary">cs.AI</span> <span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Ryan Bahlous-Boldi, Isha Puri, Idan Shenfeld et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Language models must now generalize out of the box to novel environments and work inside inference-scaling search procedures, such as AlphaEvolve, that select rollouts with a variety of task-specific reward functions. Unfortunately, the standard paradigm of LLM post-training optimizes a pre-specifie...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有语言模型后训练方法优化单一标量奖励，导致输出分布低熵，无法满足测试时搜索所需的多样性。  
+主要方法：提出向量策略优化（VPO），利用向量奖励（如代码生成中每测试用例正确性）训练模型生成多样化解决方案，并作为GRPO优势估计器的替代。  
+关键贡献：VPO在四项任务中匹配或超越标量RL基线，随搜索预算增加优势扩大；在进化搜索中解决GRPO无法处理的问题，为测试时搜索提供默认后训练目标。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22817v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22779v1" target="_blank" class="text-decoration-none text-dark">
+                            FAME: Failure-Aware Mixture-of-Experts for Message-Level Log Anomaly Detection
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.SE</span> <span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Huanchi Wang, Zihang Huang, Yifang Tian et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Production systems generate millions of log lines daily, yet most anomaly detectors operate at the session or window-level, flagging groups of lines rather than identifying the specific message responsible. This coarse granularity forces operators to inspect many routine lines per alert. Message-lev...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有日志异常检测粒度粗，无法精确定位异常消息，且大模型直接应用于每条日志成本过高。  
+主要方法：提出FAME框架，仅离线使用一次大模型，通过最多K条标注生成异常指示，利用专家混合架构训练轻量路由器和领域专家，实现消息级检测。  
+关键贡献：在BGL上F1达98.16，标注量减少76倍，检测86.3%未见EventID异常；在Thunderbird上F1达99.95，召回率完美。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22779v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22732v1" target="_blank" class="text-decoration-none text-dark">
+                            Beyond Acoustic Emotion Recognition: Multimodal Pathos Analysis in Political Speech Using LLM-Based and Acoustic Emotion Models
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> <span class="badge bg-secondary">cs.CL</span> <span class="badge bg-secondary">cs.HC</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Juergen Dietrich<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">We investigate whether acoustic emotion recognition models can serve as proxies for the Pathos dimension in political speech analysis, as operationalised by the TRUST multi-agent large language model (LLM) pipeline. Using a Bundestag plenary speech by Felix Banaszak (51 segments, 245 s) as a case st...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：声学情感识别模型能否作为政治演讲中Pathos维度的有效代理？  
+主要方法：以德国联邦议院演讲为案例，比较emotion2vec声学模型、Gemini 2.5 Flash多模态LLM和TRUST-Pathos多代理监督系统三种分析模态，通过Spearman相关性检验评估一致性。  
+关键贡献：发现LLM多模态分析（Gemini Valence与TRUST-Pathos相关系数rho=+0.664）显著优于纯声学模型，且标准情感基准语料库存在表演性、文化偏差等问题，为政治情感分析提供新范式。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22732v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22812v1" target="_blank" class="text-decoration-none text-dark">
+                            GesVLA: Gesture-Aware Vision-Language-Action Model Embedded Representations
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.RO</span> <span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Wenxuan Guo, Ziyuan Li, Meng Zhang et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Vision-Language-Action (VLA) models have shown strong potential for general-purpose robot manipulation by unifying perception and action. However, existing VLA systems primarily rely on textual instructions and struggle to resolve spatial ambiguity in complex scenes with multiple similar objects. To...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有VLA模型依赖文本指令，在复杂场景中难以解决多相似物体的空间歧义问题。主要方法：提出GesVLA模型，将手势作为并行指令模态编码到潜在空间，采用双VLM架构实现手势与动作策略的紧密耦合，并通过渲染手模型到真实场景图像构建数据集。关键贡献：引入手势指令提升目标定位准确性和人机交互效率，尤其在杂乱环境中表现显著。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22812v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22759v1" target="_blank" class="text-decoration-none text-dark">
+                            Towards a General Intelligence and Interface for Wearable Health Data
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Girish Narayanswamy, Maxwell A. Xu, A. Ali Heydari et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">While ubiquitous wearable sensors capture a wealth of behavioral and physiological information, effectively transforming these signals into personalized health insights is challenging. Specifically, converting low-level sensor data into representations capable of characterizing higher-level states i...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何将可穿戴传感器数据转化为个性化健康洞察，解决标签数据稀缺和个体差异大的挑战。主要方法：基于5百万参与者、超过1万亿分钟未标记传感器数据预训练基础模型，并部署LLM代理自主搜索下游预测头。关键贡献：首次实现人口规模的可穿戴健康基础模型，在35项任务中验证性能随模型和数据规模提升；支持少样本学习和鲁棒日度量估计；通过临床医师评级验证了个人健康代理的安全性与相关性。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22759v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://arxiv.org/pdf/2605.22763v1" target="_blank" class="text-decoration-none text-dark">
+                            Advancing Mathematics Research with AI-Driven Formal Proof Search
+                        </a>
+                    </h5>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> George Tsoukalas, Anton Kovsharov, Sergey Shirobokov et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-05-21
+                    </p>
+                    <p class="card-text small">Large language models (LLMs) increasingly excel at mathematical reasoning, but their unreliability limits their utility in mathematics research. A mitigation is using LLMs to generate formal proofs in languages like Lean. We perform the first large-scale evaluation of this method's ability to solve ...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：AI能否通过形式化证明搜索解决数学开放问题。  
+主要方法：使用大语言模型生成Lean形式化证明，结合自动验证，设计不同代理策略（基础代理与高级代理）进行大规模评估。  
+关键贡献：首次大规模验证该方法可解决开放问题——自主解决9个Erdős问题、44个OEIS猜想，并应用于多个数学领域，凸显AI形式化证明搜索的潜力。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="https://arxiv.org/pdf/2605.22763v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <i class="bi bi-tags"></i> 热门关键词
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark me-1 mb-1">motion</span> <span class="badge bg-info text-dark me-1 mb-1">video</span> <span class="badge bg-info text-dark me-1 mb-1">agent</span> <span class="badge bg-info text-dark me-1 mb-1">models</span> <span class="badge bg-info text-dark me-1 mb-1">training</span> <span class="badge bg-info text-dark me-1 mb-1">llm</span> <span class="badge bg-info text-dark me-1 mb-1">language</span> <span class="badge bg-info text-dark me-1 mb-1">data</span> <span class="badge bg-info text-dark me-1 mb-1">model</span> <span class="badge bg-info text-dark me-1 mb-1">level</span> <span class="badge bg-info text-dark me-1 mb-1">direction</span> <span class="badge bg-info text-dark me-1 mb-1">health</span> <span class="badge bg-info text-dark me-1 mb-1">gesture</span> <span class="badge bg-info text-dark me-1 mb-1">reasoning</span> <span class="badge bg-info text-dark me-1 mb-1">pose</span> 
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <i class="bi bi-bar-chart"></i> 研究类别
+                    </div>
+                    <div class="card-body">
+                        
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.AI</span>
+                <span class="badge bg-primary">8</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.CV</span>
+                <span class="badge bg-primary">6</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.CL</span>
+                <span class="badge bg-primary">5</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.LG</span>
+                <span class="badge bg-primary">4</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.HC</span>
+                <span class="badge bg-primary">2</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.RO</span>
+                <span class="badge bg-primary">2</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.ET</span>
+                <span class="badge bg-primary">1</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.MA</span>
+                <span class="badge bg-primary">1</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.NE</span>
+                <span class="badge bg-primary">1</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.SE</span>
+                <span class="badge bg-primary">1</span>
+            </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <i class="bi bi-cloud"></i> 词云
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="data/analysis/wordcloud_20260522_171326.png" class="img-fluid" alt="词云">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 py-3 bg-light text-center">
+        <p class="text-muted mb-0">
+            Powered by <a href="https://github.com/tyutcxj/Daily-Paper-Digest">Daily arXiv</a>
+            | Data from <a href="https://arxiv.org">arXiv</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
