@@ -64,16 +64,45 @@ def generate_html(papers, summaries, analysis, today=None, all_dates=None):
         summary = summary_map.get(paper_id, '暂无总结')
         abstract_short = abstract[:200] + '...' if len(abstract) > 200 else abstract
 
+        # 计算相似度星级 (0-5星)
+        relevance_score = paper.get('relevance_score', 0)
+        if relevance_score >= 0.5:
+            stars = 5
+            star_color = "text-success"
+        elif relevance_score >= 0.4:
+            stars = 4
+            star_color = "text-success"
+        elif relevance_score >= 0.3:
+            stars = 3
+            star_color = "text-warning"
+        elif relevance_score >= 0.2:
+            stars = 2
+            star_color = "text-warning"
+        elif relevance_score >= 0.1:
+            stars = 1
+            star_color = "text-secondary"
+        else:
+            stars = 0
+            star_color = "text-muted"
+
+        stars_html = f'<span class="{star_color}">{"★" * stars}{"☆" * (5 - stars)}</span>'
+        score_text = f'<small class="text-muted">({relevance_score:.2f})</small>' if relevance_score > 0 else ''
+
         # 论文卡片
         papers_html += f'''
         <div class="col-md-6 mb-4">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title">
-                        <a href="#" onclick="showModal('modal-{i}'); return false;" class="text-decoration-none text-dark">
-                            {title}
-                        </a>
-                    </h5>
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-{i}'); return false;" class="text-decoration-none text-dark">
+                                {title}
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: {relevance_score:.2f}">
+                            {stars_html} {score_text}
+                        </div>
+                    </div>
                     <div class="mb-2">{categories}</div>
                     <p class="text-muted small mb-2">
                         <i class="bi bi-person"></i> {authors}<br>
@@ -105,6 +134,9 @@ def generate_html(papers, summaries, analysis, today=None, all_dates=None):
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 {stars_html} {score_text}</span>
+                        </div>
                         <p><strong>作者：</strong>{all_authors}</p>
                         <p><strong>发布日期：</strong>{published}</p>
                         <p><strong>类别：</strong>{categories}</p>
