@@ -286,11 +286,15 @@ def main():
     docs_analysis_dir = docs_data_dir / 'analysis'
     docs_analysis_dir.mkdir(exist_ok=True)
 
-    # 复制词云图片
+    # 清理旧的词云图片，只保留最新的
     if analysis and analysis.get('wordcloud_path'):
         wordcloud_path = Path(analysis['wordcloud_path'])
         if wordcloud_path.exists():
             import shutil
+            # 删除旧的词云图片
+            for old_file in docs_analysis_dir.glob('wordcloud_*.png'):
+                old_file.unlink()
+            # 复制新的词云图片
             shutil.copy(wordcloud_path, docs_analysis_dir / wordcloud_path.name)
 
     # 保存 HTML
