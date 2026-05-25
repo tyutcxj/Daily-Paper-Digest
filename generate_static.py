@@ -30,24 +30,29 @@ def generate_html(papers, summaries, analysis):
 
     # 构建论文卡片 HTML
     papers_html = ""
+    modals_html = ""
     for i, paper in enumerate(papers):
         paper_id = paper.get('id', '')
-        title = paper.get('title', '').replace('"', '&quot;')
-        authors = ', '.join(paper.get('authors', [])[:3])
-        if len(paper.get('authors', [])) > 3:
+        title = paper.get('title', '').replace('"', '&quot;').replace("'", "&#39;")
+        authors = ', '.join(paper.get('authors', [])[:5])
+        if len(paper.get('authors', [])) > 5:
             authors += ' et al.'
+        all_authors = ', '.join(paper.get('authors', []))
         categories = ''.join([f'<span class="badge bg-secondary">{c}</span> ' for c in paper.get('categories', [])[:3]])
-        abstract = paper.get('abstract', '')[:300] + '...'
+        abstract = paper.get('abstract', '')
         published = paper.get('published', '').split(' ')[0]
         pdf_url = paper.get('pdf_url', '#')
+        arxiv_url = paper.get('id', '#')
         summary = summary_map.get(paper_id, '暂无总结')
+        abstract_short = abstract[:200] + '...' if len(abstract) > 200 else abstract
 
+        # 论文卡片
         papers_html += f'''
         <div class="col-md-6 mb-4">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <a href="{pdf_url}" target="_blank" class="text-decoration-none text-dark">
+                        <a href="#" onclick="showModal('modal-{i}'); return false;" class="text-decoration-none text-dark">
                             {title}
                         </a>
                     </h5>
@@ -56,15 +61,52 @@ def generate_html(papers, summaries, analysis):
                         <i class="bi bi-person"></i> {authors}<br>
                         <i class="bi bi-calendar"></i> {published}
                     </p>
-                    <p class="card-text small">{abstract}</p>
+                    <p class="card-text small">{abstract_short}</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
                         <strong>AI 总结：</strong>{summary}
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
-                    <a href="{pdf_url}" target="_blank" class="btn btn-sm btn-outline-primary">
-                        <i class="bi bi-file-pdf"></i> 查看 PDF
+                    <a href="#" onclick="showModal('modal-{i}'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
                     </a>
+                    <a href="{pdf_url}" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>'''
+
+        # 详情弹窗
+        modals_html += f'''
+        <div class="modal fade" id="modal-{i}" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">{title}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>作者：</strong>{all_authors}</p>
+                        <p><strong>发布日期：</strong>{published}</p>
+                        <p><strong>类别：</strong>{categories}</p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>{abstract}</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">{summary}</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="{arxiv_url}" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="{pdf_url}" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>'''
@@ -162,6 +204,9 @@ def generate_html(papers, summaries, analysis):
         </div>
     </div>
 
+    <!-- 详情弹窗 -->
+    {modals_html}
+
     <footer class="mt-5 py-3 bg-light text-center">
         <p class="text-muted mb-0">
             Powered by <a href="https://github.com/tyutcxj/Daily-Paper-Digest">Daily arXiv</a>
@@ -170,6 +215,12 @@ def generate_html(papers, summaries, analysis):
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showModal(modalId) {{
+            var modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }}
+    </script>
 </body>
 </html>'''
 
