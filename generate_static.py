@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
 生成静态网页 - 用于 GitHub Pages 部署
+支持多天历史数据
 """
 
 import json
 import os
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 def load_json(filepath):
@@ -19,8 +20,11 @@ def load_json(filepath):
         return None
 
 
-def generate_html(papers, summaries, analysis):
+def generate_html(papers, summaries, analysis, today=None):
     """生成 HTML 页面"""
+
+    if today is None:
+        today = datetime.now().strftime('%Y-%m-%d')
 
     # 构建总结映射
     summary_map = {}
@@ -133,9 +137,6 @@ def generate_html(papers, summaries, analysis):
         wordcloud_filename = analysis['wordcloud_path'].split('\\')[-1].split('/')[-1]
         wordcloud_html = f'<img src="data/analysis/{wordcloud_filename}" class="img-fluid" alt="词云">'
 
-    # 生成日期
-    today = datetime.now().strftime('%Y-%m-%d')
-
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -227,82 +228,177 @@ def generate_html(papers, summaries, analysis):
     return html
 
 
+def generate_history_html(all_dates):
+    """生成历史记录页面"""
+
+    dates_html = ""
+    for date_info in all_dates:
+        dates_html += f'''
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5><i class="bi bi-calendar3"></i> {date_info["date"]}</h5>
+                    <p class="text-muted">{date_info["count"]} 篇论文</p>
+                    <a href="daily/{date_info["date"]}.html" class="btn btn-primary btn-sm">
+                        <i class="bi bi-eye"></i> 查看
+                    </a>
+                </div>
+            </div>
+        </div>'''
+
+    html = f'''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily arXiv - 历史记录</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-journal-richtext"></i> Daily arXiv - AI Research Tracker
+            </a>
+            <a href="index.html" class="btn btn-outline-light btn-sm">
+                <i class="bi bi-arrow-left"></i> 返回最新
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h4 class="mb-4"><i class="bi bi-calendar-week"></i> 历史记录</h4>
+        <div class="row">
+            {dates_html}
+        </div>
+    </div>
+
+    <footer class="mt-5 py-3 bg-light text-center">
+        <p class="text-muted mb-0">
+            Powered by <a href="https://github.com/tyutcxj/Daily-Paper-Digest">Daily arXiv</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>'''
+
+    return html
+
+
 def main():
     """主函数"""
     print("生成静态网页...")
 
-    # 查找最新的数据文件
+    # 数据目录
     data_dir = Path('data/papers')
     summaries_dir = Path('data/summaries')
     analysis_dir = Path('data/analysis')
 
-    # 获取今天的日期
-    today = datetime.now().strftime('%Y-%m-%d')
-
-    # 加载论文数据
-    papers_file = data_dir / f'papers_{today}.json'
-    if not papers_file.exists():
-        # 尝试查找最新的文件
-        papers_files = sorted(data_dir.glob('papers_*.json'), reverse=True)
-        if papers_files:
-            papers_file = papers_files[0]
-        else:
-            print("未找到论文数据")
-            return
-
-    papers = load_json(papers_file)
-    if not papers:
-        print("加载论文数据失败")
-        return
-
-    # 加载总结数据
-    summaries_file = summaries_dir / f'summaries_{today}.json'
-    if not summaries_file.exists():
-        summaries_files = sorted(summaries_dir.glob('summaries_*.json'), reverse=True)
-        if summaries_files:
-            summaries_file = summaries_files[0]
-
-    summaries = load_json(summaries_file) or []
-
-    # 加载分析数据
-    analysis_files = sorted(analysis_dir.glob('analysis_*.json'), reverse=True)
-    analysis = load_json(analysis_files[0]) if analysis_files else None
-
-    print(f"论文: {len(papers)} 篇")
-    print(f"总结: {len(summaries)} 篇")
-
-    # 生成 HTML
-    html = generate_html(papers, summaries, analysis)
-
-    # 保存到 docs 目录（GitHub Pages 默认目录）
+    # docs 目录
     docs_dir = Path('docs')
     docs_dir.mkdir(exist_ok=True)
-
-    # 复制数据文件到 docs
+    docs_daily_dir = docs_dir / 'daily'
+    docs_daily_dir.mkdir(exist_ok=True)
     docs_data_dir = docs_dir / 'data'
     docs_data_dir.mkdir(exist_ok=True)
-
-    # 复制分析文件
     docs_analysis_dir = docs_data_dir / 'analysis'
     docs_analysis_dir.mkdir(exist_ok=True)
 
-    # 清理旧的词云图片，只保留最新的
-    if analysis and analysis.get('wordcloud_path'):
-        wordcloud_path = Path(analysis['wordcloud_path'])
-        if wordcloud_path.exists():
-            import shutil
-            # 删除旧的词云图片
-            for old_file in docs_analysis_dir.glob('wordcloud_*.png'):
-                old_file.unlink()
-            # 复制新的词云图片
-            shutil.copy(wordcloud_path, docs_analysis_dir / wordcloud_path.name)
+    # 获取所有可用的日期
+    papers_files = sorted(data_dir.glob('papers_*.json'), reverse=True)
+    all_dates = []
 
-    # 保存 HTML
-    html_file = docs_dir / 'index.html'
-    with open(html_file, 'w', encoding='utf-8') as f:
-        f.write(html)
+    for papers_file in papers_files:
+        # 提取日期
+        date_str = papers_file.stem.replace('papers_', '')
 
-    print(f"静态网页已生成: {html_file}")
+        # 加载论文数据
+        papers = load_json(papers_file)
+        if not papers:
+            continue
+
+        # 加载对应的总结数据
+        summaries_file = summaries_dir / f'summaries_{date_str}.json'
+        summaries = load_json(summaries_file) if summaries_file.exists() else []
+
+        # 加载分析数据（查找该日期的分析）
+        analysis = None
+        for analysis_file in analysis_dir.glob(f'analysis_{date_str.replace("-", "")}*.json'):
+            analysis = load_json(analysis_file)
+            if analysis:
+                break
+
+        print(f"日期: {date_str}, 论文: {len(papers)} 篇, 总结: {len(summaries)} 篇")
+
+        # 生成每日页面
+        html = generate_html(papers, summaries, analysis, today=date_str)
+        daily_file = docs_daily_dir / f'{date_str}.html'
+        with open(daily_file, 'w', encoding='utf-8') as f:
+            f.write(html)
+
+        # 复制该日期的词云图片
+        if analysis and analysis.get('wordcloud_path'):
+            wordcloud_path = Path(analysis['wordcloud_path'])
+            if wordcloud_path.exists():
+                import shutil
+                shutil.copy(wordcloud_path, docs_analysis_dir / wordcloud_path.name)
+
+        all_dates.append({
+            'date': date_str,
+            'count': len(papers)
+        })
+
+    if not all_dates:
+        print("未找到论文数据")
+        return
+
+    # 生成主页（显示最新一天）
+    latest_date = all_dates[0]
+    latest_papers = load_json(data_dir / f'papers_{latest_date["date"]}.json')
+    latest_summaries = load_json(summaries_dir / f'summaries_{latest_date["date"]}.json') or []
+
+    # 查找最新的分析数据
+    latest_analysis = None
+    for analysis_file in sorted(analysis_dir.glob('analysis_*.json'), reverse=True):
+        latest_analysis = load_json(analysis_file)
+        if latest_analysis:
+            break
+
+    # 生成主页，添加历史导航链接
+    index_html = generate_html(latest_papers, latest_summaries, latest_analysis, today=latest_date['date'])
+
+    # 在主页添加历史记录链接
+    history_link = '''
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="history.html" class="btn btn-outline-primary">
+                    <i class="bi bi-calendar-week"></i> 查看历史记录
+                </a>
+            </div>
+        </div>
+    </div>'''
+
+    # 在 navbar 后面插入历史记录按钮
+    index_html = index_html.replace(
+        '<div class="container mt-4">',
+        f'{history_link}\n    <div class="container mt-4">'
+    )
+
+    with open(docs_dir / 'index.html', 'w', encoding='utf-8') as f:
+        f.write(index_html)
+
+    # 生成历史记录页面
+    history_html = generate_history_html(all_dates)
+    with open(docs_dir / 'history.html', 'w', encoding='utf-8') as f:
+        f.write(history_html)
+
+    print(f"生成完成！共 {len(all_dates)} 天的数据")
+    print(f"- 主页: docs/index.html")
+    print(f"- 历史: docs/history.html")
+    print(f"- 每日: docs/daily/*.html")
 
 
 if __name__ == '__main__':

@@ -61,7 +61,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # 只提交 docs 目录（GitHub Pages 需要）
+          # 提交 docs 目录（GitHub Pages 需要）
           git add docs/ -f
 
           if git diff --staged --quiet; then
