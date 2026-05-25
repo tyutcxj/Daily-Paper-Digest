@@ -79,15 +79,27 @@ class PersonalizedRecommender:
         candidate_vectors = self.vectorizer.transform(candidate_docs)
 
         # 计算与用户论文的相似度
-        # 使用平均相似度作为匹配分数
         similarities = cosine_similarity(candidate_vectors, self.user_vectors)
 
         # 计算每篇候选论文与用户库的最大相似度和平均相似度
         max_similarities = np.max(similarities, axis=1)
         mean_similarities = np.mean(similarities, axis=1)
 
-        # 综合分数：最大相似度 * 0.7 + 平均相似度 * 0.3
-        scores = max_similarities * 0.7 + mean_similarities * 0.3
+        # 综合分数：最大相似度权重更高
+        scores = max_similarities * 0.8 + mean_similarities * 0.2
+
+        # 添加关键词匹配加成
+        if self.user_interests and self.user_interests.get('top_keywords'):
+            user_keywords = set(self.user_interests['top_keywords'][:30])
+            for i, paper in enumerate(papers):
+                title_lower = paper.get('title', '').lower()
+                abstract_lower = paper.get('abstract', '').lower()
+                text = f"{title_lower} {abstract_lower}"
+
+                # 计算关键词匹配数
+                keyword_matches = sum(1 for kw in user_keywords if kw.lower() in text)
+                keyword_bonus = min(keyword_matches * 0.05, 0.3)  # 最多加 0.3
+                scores[i] += keyword_bonus
 
         # 添加分数到论文
         for i, paper in enumerate(papers):
@@ -97,11 +109,16 @@ class PersonalizedRecommender:
         # 按分数排序
         ranked_papers = sorted(papers, key=lambda x: x['relevance_score'], reverse=True)
 
-        # 过滤低分论文（可选）
-        min_score = 0.1
+        # 提高过滤阈值，只保留高相关性论文
+        min_score = 0.2
         filtered_papers = [p for p in ranked_papers if p['relevance_score'] >= min_score]
 
-        logger.info(f"推荐排序完成: {len(filtered_papers)}/{len(papers)} 篇论文通过过滤")
+        # 如果过滤后太少，降低阈值
+        if len(filtered_papers) < 5:
+            min_score = 0.15
+            filtered_papers = [p for p in ranked_papers if p['relevance_score'] >= min_score]
+
+        logger.info(f"推荐排序完成: {len(filtered_papers)}/{len(papers)} 篇论文通过过滤 (阈值: {min_score})")
 
         return filtered_papers[:top_n]
 

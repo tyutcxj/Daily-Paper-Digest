@@ -20,11 +20,25 @@ def load_json(filepath):
         return None
 
 
-def generate_html(papers, summaries, analysis, today=None):
+def generate_html(papers, summaries, analysis, today=None, all_dates=None):
     """生成 HTML 页面"""
 
     if today is None:
         today = datetime.now().strftime('%Y-%m-%d')
+
+    # 构建日期选择器 HTML
+    date_selector_html = ""
+    if all_dates and len(all_dates) > 1:
+        options = ""
+        for d in all_dates:
+            selected = 'selected' if d['date'] == today else ''
+            options += f'<option value="daily/{d["date"]}.html" {selected}>{d["date"]} ({d["count"]}篇)</option>'
+        date_selector_html = f'''
+        <select class="form-select form-select-sm" style="width: auto;" onchange="if(this.value) window.location.href=this.value">
+            {options}
+        </select>'''
+    else:
+        date_selector_html = f'<span class="navbar-text"><i class="bi bi-calendar"></i> {today}</span>'
 
     # 构建总结映射
     summary_map = {}
@@ -153,12 +167,12 @@ def generate_html(papers, summaries, analysis, today=None):
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-journal-richtext"></i> Daily arXiv - AI Research Tracker
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-journal-richtext"></i> Daily arXiv
             </a>
-            <span class="navbar-text">
-                <i class="bi bi-calendar"></i> 更新日期: {today}
-            </span>
+            <div class="d-flex align-items-center">
+                {date_selector_html}
+            </div>
         </div>
     </nav>
 
@@ -311,19 +325,24 @@ def main():
     all_dates = []
 
     for papers_file in papers_files:
-        # 提取日期
         date_str = papers_file.stem.replace('papers_', '')
-
-        # 加载论文数据
         papers = load_json(papers_file)
-        if not papers:
-            continue
+        if papers:
+            all_dates.append({
+                'date': date_str,
+                'count': len(papers)
+            })
 
-        # 加载对应的总结数据
-        summaries_file = summaries_dir / f'summaries_{date_str}.json'
-        summaries = load_json(summaries_file) if summaries_file.exists() else []
+    if not all_dates:
+        print("未找到论文数据")
+        return
 
-        # 加载分析数据（查找该日期的分析）
+    # 生成每日页面
+    for date_info in all_dates:
+        date_str = date_info['date']
+        papers = load_json(data_dir / f'papers_{date_str}.json')
+        summaries = load_json(summaries_dir / f'summaries_{date_str}.json') or []
+
         analysis = None
         for analysis_file in analysis_dir.glob(f'analysis_{date_str.replace("-", "")}*.json'):
             analysis = load_json(analysis_file)
@@ -333,7 +352,7 @@ def main():
         print(f"日期: {date_str}, 论文: {len(papers)} 篇, 总结: {len(summaries)} 篇")
 
         # 生成每日页面
-        html = generate_html(papers, summaries, analysis, today=date_str)
+        html = generate_html(papers, summaries, analysis, today=date_str, all_dates=all_dates)
         daily_file = docs_daily_dir / f'{date_str}.html'
         with open(daily_file, 'w', encoding='utf-8') as f:
             f.write(html)
@@ -345,47 +364,19 @@ def main():
                 import shutil
                 shutil.copy(wordcloud_path, docs_analysis_dir / wordcloud_path.name)
 
-        all_dates.append({
-            'date': date_str,
-            'count': len(papers)
-        })
-
-    if not all_dates:
-        print("未找到论文数据")
-        return
-
     # 生成主页（显示最新一天）
     latest_date = all_dates[0]
     latest_papers = load_json(data_dir / f'papers_{latest_date["date"]}.json')
     latest_summaries = load_json(summaries_dir / f'summaries_{latest_date["date"]}.json') or []
 
-    # 查找最新的分析数据
     latest_analysis = None
     for analysis_file in sorted(analysis_dir.glob('analysis_*.json'), reverse=True):
         latest_analysis = load_json(analysis_file)
         if latest_analysis:
             break
 
-    # 生成主页，添加历史导航链接
-    index_html = generate_html(latest_papers, latest_summaries, latest_analysis, today=latest_date['date'])
-
-    # 在主页添加历史记录链接
-    history_link = '''
-    <div class="container mt-3">
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <a href="history.html" class="btn btn-outline-primary">
-                    <i class="bi bi-calendar-week"></i> 查看历史记录
-                </a>
-            </div>
-        </div>
-    </div>'''
-
-    # 在 navbar 后面插入历史记录按钮
-    index_html = index_html.replace(
-        '<div class="container mt-4">',
-        f'{history_link}\n    <div class="container mt-4">'
-    )
+    # 生成主页
+    index_html = generate_html(latest_papers, latest_summaries, latest_analysis, today=latest_date['date'], all_dates=all_dates)
 
     with open(docs_dir / 'index.html', 'w', encoding='utf-8') as f:
         f.write(index_html)
