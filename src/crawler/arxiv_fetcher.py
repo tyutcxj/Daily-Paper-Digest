@@ -3,6 +3,7 @@ arXiv 论文爬取模块
 """
 
 import logging
+import time
 import arxiv
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
@@ -43,8 +44,12 @@ class ArxivFetcher:
             sort_order = arxiv.SortOrder.Ascending
 
         try:
-            # 创建搜索客户端
-            client = arxiv.Client()
+            # 创建搜索客户端，增加重试次数和延迟
+            client = arxiv.Client(
+                page_size=50,
+                delay_seconds=5.0,
+                num_retries=5
+            )
 
             # 创建搜索请求
             search = arxiv.Search(
@@ -116,7 +121,12 @@ class ArxivFetcher:
         logger.info(f"搜索查询: {query}")
 
         try:
-            client = arxiv.Client()
+            # 创建搜索客户端，增加重试次数和延迟
+            client = arxiv.Client(
+                page_size=50,
+                delay_seconds=5.0,
+                num_retries=5
+            )
 
             search = arxiv.Search(
                 query=query,

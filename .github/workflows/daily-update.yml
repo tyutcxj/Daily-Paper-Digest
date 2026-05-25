@@ -43,6 +43,10 @@ jobs:
           echo "ZOTERO_USER_ID=${{ secrets.ZOTERO_USER_ID }}" >> .env
           echo "ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}" >> .env
 
+      # 等待一段时间避免 arXiv API 限流
+      - name: Wait before fetching
+        run: sleep 30
+
       # 运行主程序获取论文
       - name: Run daily update
         run: python main.py
