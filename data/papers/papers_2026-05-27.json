@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2605.26256",
+    "title": "Personalizing Embodied Multimodal Large Language Model Agents over Long-term User Interactions",
+    "authors": [
+      "Jeongeun Lee, Chanyoung Park, Dongha Lee"
+    ],
+    "abstract": "arXiv:2605.26256v1 Announce Type: new \nAbstract: Multimodal large language model (MLLM)-based embodied agents have shown strong potential for solving complex tasks in physical environments. However, personalized assistance requires more than following generic instruction or recognizing object categories. In real-world scenarios, the intended target is often specified only implicitly through prior interactions, requiring agents to leverage personalized context accumulated over time. In this work, we propose POLAR, a multiomodal memory-augmented framework for personalized embodied agents over long-term user interactions. POLAR organizes prior interactions into a multimodal knowledge graph that captures semantic memory for personalized context and visual concepts, and episodic memory for embodied experiences such as agent trajectories. To execute embodied tasks, POLAR retrieves relevant memories to interpret the current request and guide task execution. We evaluate POLAR across multiple MLLM backbones and diverse evaluation scenarios to study the role of memory in long-term personalization. Results show that the proposed memory mechanism consistently improves performance by enabling more effective use of information accumulated over prior interactions. The gains are especially pronounced when the agents are required to reason across multiple interactions, perform multi-hop inference, or tracking updates in user-specific context over time.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26256",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26256"
+      }
+    ],
+    "relevance_score": 0.4855692312816099,
+    "max_similarity": 0.2255638293429554
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26292",
+    "title": "Evi-Steer: Learning to Steer Biomedical Vision-Language Models through Efficient and Generalizable Evidential Tuning",
+    "authors": [
+      "Taha Koleilat, Hassan Rivaz, Yiming Xiao"
+    ],
+    "abstract": "arXiv:2605.26292v1 Announce Type: new \nAbstract: Parameter-efficient adaptation of vision-language foundation models is crucial for precise multimodal understanding of biomedical images, yet existing methods remain deterministic and often struggle under domain shift or ambiguous image-text alignment. This limitation is particularly critical in the clinic, where models should remain robust in low-data regimes and domain shifts. We present Evi-Steer, an evidential cross-modal low-dimensional steering framework for BiomedCLIP that enables uncertainty-aware parameter-efficient fine-tuning while updating only 0.11% of total model parameters. Our approach performs lightweight low-dimensional token updates in both vision and text encoders while simultaneously estimating epistemic uncertainty. These uncertainty estimates update gate residuals, allowing the model to adapt conservatively when evidence is weak. Furthermore, we introduce cross-modal confidence fusion based on Dempster-Shafer theory, enabling visual adaptation to be conditioned on textual confidence and suppressing conflicting or uncertain cross-modal updates. We conduct a comprehensive evaluation on 15 biomedical imaging datasets spanning 8 organs and 8 imaging modalities under few-shot learning and domain generalization settings. Evi-Steer consistently outperforms state-of-the-art methods under few-shot learning and domain shift settings, demonstrating a practical and robust pathway for deploying vision-language models in real-world clinical settings. Code is available at https://github.com/HealthX-Lab/Evi-Steer.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26292",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26292"
+      }
+    ],
+    "relevance_score": 0.4742428242410079,
+    "max_similarity": 0.21011359900100735
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26232",
+    "title": "Not All Modalities Are Equal: Instruction-Aware Gating for Multimodal Videos",
+    "authors": [
+      "Bonan Ding, Umair Nawaz, Ufaq Khan, Abdelrahman M. Shaker, Muhammad Haris Khan, Jiale Cao, Jin Xie, Fahad Shahbaz Khan"
+    ],
+    "abstract": "arXiv:2605.26232v1 Announce Type: new \nAbstract: Pre-trained video large language models excel at visual reasoning. However, they struggle when videos arrive with auxiliary streams, such as audio, depth map, or dense temporal evidence. In such a scenario, uniform fusion induces modality interference, allowing irrelevant channels to distract the model. To address this issue, we present a unified multimodal video understanding framework, named UniMVU, that performs instruction-aware fusion across video, audio, depth map, or any other modality inputs via two levels of dynamic gating: inner-modality gates emphasize salient regions within each modality, whereas modality-level gates re-weight whole streams; both are conditioned on the text instruction to adaptively balance modality importance. Our UniMVU combines cross-modal self-attention with instruction-driven inner-modality gating module and a modality-level gating module with control token; for time-aligned streams we further adopt a fast-to-slow fusion scheme that reduces redundancy. Across six benchmarks (AVQA, AVSD, Music-AVQA, ScanQA, SQA3D and MVBench), our UniMVU achieves consistent gains over static-fusion baselines achieving gains as high as 13.5 in terms of CIDEr metric. Further, our analysis shows that the gating mechanism aligns with the human-interpretable modality relevance, and ablations show the contributions of inner-modality and modality-level gating. Our UniMVU provides a simple, unified recipe for instruction-aware multimodal video understanding that scales to diverse modalities without hand-crafted fusion rules.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26232",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26232"
+      }
+    ],
+    "relevance_score": 0.47336140498812646,
+    "max_similarity": 0.21084282045182048
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26543",
+    "title": "PolyFusionAgent: A Multimodal Foundation Model and Autonomous AI Assistant for Polymer Property Prediction and Inverse Design",
+    "authors": [
+      "Manpreet Kaur, Xingying Zhang, Qian Liu"
+    ],
+    "abstract": "arXiv:2605.26543v1 Announce Type: new \nAbstract: Polymer discovery is central to fields ranging from energy storage to biomedicine, but it is hindered by an astronomically large chemical design space and fragmented representations of structure, properties, and prior knowledge. This fragmentation leaves many AI models disconnected from physical and experimental reality, restricting their ability to support directly actionable design decisions. Here we introduce PolyFusionAgent, an interactive framework coupling a multimodal polymer foundation model (PolyFusion) with a tool-augmented, literature-grounded design agent (PolyAgent). PolyFusion aligns complementary polymer views including sequence, topology, 3D geometry, and fingerprints across millions of polymers to learn a shared latent space transferable across chemistries and data regimes, improving thermophysical property prediction and enabling property-conditioned generation of chemically valid, structurally novel polymers beyond the reference design space. PolyAgent closes the design loop by linking prediction and inverse design with evidence retrieval from the polymer literature, proposing, evaluating, and contextualizing hypotheses with explicit precedent in one workflow. Together, PolyFusionAgent enables interactive, evidence-linked polymer discovery combining large-scale representation learning, multimodal chemical knowledge, and verifiable scientific reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26543",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26543"
+      }
+    ],
+    "relevance_score": 0.4656019925893038,
+    "max_similarity": 0.20088831002363433
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26161",
+    "title": "TSFMAudit: Data Contamination Auditing in Forecasting Time Series Foundation Models",
+    "authors": [
+      "Hongkai Li, Shifeng Xie, Lefei Shen, Zhuo Li, Mouxiang Chen, Xiaobin Zhang, Han Fu, Jianling Sun, Xiaoxue Ren, Chenghao Liu"
+    ],
+    "abstract": "arXiv:2605.26161v1 Announce Type: new \nAbstract: Time series foundation models (TSFMs) are increasingly pretrained on large corpora, raising concerns that evaluation datasets may have been exposed during pretraining and thus yield overly optimistic performance estimates. Auditing such contamination is challenging in time series because signals are continuous and heterogeneous, and often lack corpus documentation. To the best of our knowledge, this is the first work to study pretraining contamination auditing for TSFMs. We formalize the problem of pretraining contamination auditing for TSFMs and propose TSFMAudit, a method based on probe adaptation dynamics. Our key intuition is that contamination manifests as unusually efficient adaptation: after a fine tuning probe, contaminated datasets tend to exhibit faster loss reduction with smaller backbone movement. We evaluate TSFMAudit on 6 TSFMs and 187 datasets using documented training source evidence as supervision, and compare against 10 competitive baselines adapted from the LLM literature.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26161",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26161"
+      }
+    ],
+    "relevance_score": 0.4575887208785611,
+    "max_similarity": 0.2547138267644355
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26244",
+    "title": "LongAV-Compass: Towards Unified Evaluation of Minute-Scale Audio-Visual Generation Across T2AV, I2AV, and V2AV",
+    "authors": [
+      "Tengfei Liu, Yang Shi, Xuanyu Zhu, Jiafu Tang, Liu Yang, Qixun Wang, Zhuoran Zhang, Yuqi Tang, Fengxiang Wang, Yuhao Dong, Xinlong Chen, Bozhou Li, Bohan Zeng, Yue Ding, Xiaohan Zhang, Jialu Chen, Haotian Wang, Yuanxing Zhang, Pengfei Wan, Leye Wang"
+    ],
+    "abstract": "arXiv:2605.26244v1 Announce Type: new \nAbstract: Audio-visual generation is rapidly advancing from short clips to minute-long content, while existing evaluation protocols remain largely confined to short-form settings. Existing benchmarks primarily focus on 5--10 second text-conditioned generation and rarely support unified evaluation across text, image, and video conditioning modalities. Moreover, they provide limited insight into how identity consistency, narrative coherence, and audio-visual alignment degrade over extended temporal horizons. To bridge this gap, we introduce LongAV-Compass, a systematic benchmark for minute-long audio-visual generation. LongAV-Compass contains 284 curated test cases spanning text-to-audio-video (T2AV), image-to-audio-video (I2AV), and video-to-audio-video (V2AV), organized by application scenario and generation complexity. The benchmark combines taxonomy-guided benchmark construction with a unified evaluation framework that integrates MLLM-assisted assessment with complementary perceptual and multimodal metrics, including DINO-v2, ArcFace, CLIP, and ImageBind. The framework evaluates more than 20 fine-grained dimensions covering within-segment quality, cross-segment consistency, global narrative coherence, semantic alignment, and audio-visual synchronization. Through experiments on 11 representative models together with human-alignment validation, LongAV-Compass provides a diagnostic testbed for analyzing the limitations of current systems in sustaining coherent, semantically aligned, and temporally consistent minute-scale audio-visual generation across diverse input modalities.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26244",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26244"
+      }
+    ],
+    "relevance_score": 0.4548809381024471,
+    "max_similarity": 0.18769326284463794
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26414",
+    "title": "Reasoning, Code, or Both? How Large Language Models Handle Variations in Math Questions",
+    "authors": [
+      "Matthew Kutakh"
+    ],
+    "abstract": "arXiv:2605.26414v1 Announce Type: new \nAbstract: Large Language Models (LLMs) achieve impressive accuracy on mathematical reasoning benchmarks, yet their performance drops when problems are modified with simple changes like different names or numbers. Code execution methods, which let models generate and run Python code instead of reasoning in natural language, have been proposed as a solution, but their effect on reasoning robustness (the ability to maintain accuracy across problem variations) has not been systematically tested. This study evaluates three approaches on 1,000 problems from the GSM-Symbolic dataset: pure reasoning using chain-of-thought (CoT) prompting, single-shot code execution using Program-Aided Language models (PAL), and iterative code execution using Step-by-Step Coding (SBSC). All three were run on paired original and modified problems using Claude Haiku 4.5. CoT was the most robust method, with an accuracy drop of 1.3 percentage points and 1.8% of problems breaking under perturbation. PAL was the least robust at 1.7 percentage points and 3.1% broke, with SBSC falling in between. Although these differences were not statistically significant ($p = .096$), the directional trend was consistent across all measures, suggesting that code execution, whether single-shot or iterative, does not improve reasoning robustness on grade-school-level problem variations.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26414",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26414"
+      }
+    ],
+    "relevance_score": 0.4545991385570424,
+    "max_similarity": 0.18704836960470655
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26283",
+    "title": "Benchmarking Convolutional, Transformer, Hybrid, and Vision Language Models for Multi Disease Retinal Screening",
+    "authors": [
+      "Durjoy Dey, Aymane Ajbar, Yuhong Yan"
+    ],
+    "abstract": "arXiv:2605.26283v1 Announce Type: new \nAbstract: Modern deep learning offers powerful tools for automated retinal screening, but it remains unclear how different visual model families compare in realistic multi-disease settings and under domain shift. In this work, we benchmark twelve architectures across four model families: convolutional neural networks, vision transformers, hybrid CNN-transformer backbones, and vision-language models, using the Retinal Fundus Multi-disease Image Dataset (RFMiD). We evaluate two tasks: binary screening for any retinal disease and multi-label classification across 28 disease classes. Using standardized training, calibration, and evaluation protocols, we report AUC, F1, precision, recall, and sensitivity at a clinically relevant operating point with specificity near 80%. On RFMiD, all architectures perform well on binary screening, with AUC above 84%, but attention-based models perform best. SwinTiny and the hybrid CoAtNet0 and MaxViTTiny models achieve the strongest binary screening results and improve macro and micro F1 in the multi-label setting. Vision-language models, including CLIP ViT-B/16 and SigLIP-Base384, are competitive with CNN baselines but do not surpass the best transformer and hybrid backbones. In external validation on Messidor-2 for referable diabetic retinopathy, AUC ranges from 66.8% to 84.7%, with hybrid and transformer models again showing strong performance. These results provide a reproducible reference for model selection in multi-disease retinal screening and guide future automated screening tools for clinical deployment.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26283",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26283"
+      }
+    ],
+    "relevance_score": 0.44961779764641335,
+    "max_similarity": 0.18011042548500486
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26322",
+    "title": "OmniToM: Benchmarking Theory of Mind in LLMs via Explicit Belief Modeling",
+    "authors": [
+      "Adam Bawatneh, Sagar Sapkota, Amrit Singh Bedi, Santu Karmaker, Mubarak Shah"
+    ],
+    "abstract": "arXiv:2605.26322v1 Announce Type: new \nAbstract: Theory of Mind (ToM), the ability to infer others' knowledge, intentions, and emotions, is commonly evaluated in large language models (LLMs) using end-point question answering, where performance is judged solely by the final answer to a social reasoning query. This paradigm obscures whether the model actually constructs the underlying mental-state representations required for robust reasoning, particularly in scenarios involving divergent, evolving, or mistaken beliefs. In order to address this research gap, we introduce OmniToM, a benchmark that directly evaluates these representations by requiring explicit modeling of belief structures for all relevant actors within a narrative. These structures are composed of belief propositions: minimal statements of what an actor takes to be true about the world or another actor's mental state, allowing knowledge, intentions, emotions, and false beliefs to be analyzed in a common format. Models are evaluated in two stages: Stage 1: Belief Extraction, which extracts from the story the beliefs relevant to its social dynamics, and Stage 2: Belief Labeling, which assigns each belief a seven-dimensional schema label covering recursive order, truth status, knowledge access, explicitness, content type, mental source, and context. Built from 895 stories from the existing ToMBench story corpus and augmented with 22,343 labeled belief propositions, OmniToM uses a human-calibrated LLM-assisted annotation pipeline. Across diverse models in zero-shot evaluation, OmniToM reveals an actor-specific belief-tracking bottleneck: current LLMs struggle with the knowledge-access and representational decisions required to transform narrative facts into actors' beliefs and shared mental states.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26322",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26322"
+      }
+    ],
+    "relevance_score": 0.44833176860123036,
+    "max_similarity": 0.17834887693923848
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26366",
+    "title": "Automatic Layer Selection for Hallucination Detection",
+    "authors": [
+      "Xinpeng Wang, William Cao, Andrew Gordon Wilson, Zhe Zeng"
+    ],
+    "abstract": "arXiv:2605.26366v1 Announce Type: new \nAbstract: Recent studies on hallucination detection have shown that hallucination-related signals are more strongly encoded in intermediate layers than in the final layer of large language models (LLMs). Although a growing body of work has sought to exploit this property for hallucination detection, how to automate the selection of high-performing layers remains underexplored, and principled methods for this purpose are still lacking. To address this gap, we first propose several hypotheses for why such signals emerge in intermediate layers and evaluate corresponding criteria for automatic layer selection across diverse LLM architectures, scales, and tasks, covering both question answering and summarization hallucination detection benchmarks. However, we find that none of these criteria consistently delivers satisfactory performance. We therefore propose a new selection criterion, First Effective Peak of Intrinsic Dimension (FEPoID), which consistently identify optimal or near-optimal layers and outperforms both the aforementioned criteria and existing hallucination detection baselines. FEPoID is training-free and incurs negligible computational overhead. In addition, we study the generation behaviors of LLMs and introduce a simple yet effective truncation strategy, which further amplifies hallucination-related signals and substantially improves overall detection performance. Code is publicly available at https://github.com/DesoloYw/Automatic-Layer-Selection-for-Hallucination-Detection.git",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26366",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26366"
+      }
+    ],
+    "relevance_score": 0.4333180745628592,
+    "max_similarity": 0.16249857435592743
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26396",
+    "title": "Advancing Creative Physical Intelligence in Large Multimodal Models",
+    "authors": [
+      "Cheng Qian, Hyeonjeong Ha, Jiayu Liu, Jeonghwan Kim, Emre Can Acikgoz, Bingxuan Li, Kunlun Zhu, Jiateng Liu, Aditi Tiwari, Zhenhailong Wang, Xiusi Chen, Mahdi Namazifar, Heng Ji"
+    ],
+    "abstract": "arXiv:2605.26396v1 Announce Type: new \nAbstract: Large multimodal models (LMMs) have rapidly advanced in perception and reasoning; however, it remains unclear whether these capabilities generalize to discovering visually grounded solutions in open-ended environments, beyond pattern recognition. In such settings, intelligence requires more than answering well-posed questions: it involves identifying how elements in a scene can be repurposed in non-obvious yet physically feasible ways. This form of creative problem-solving is central to human intelligence, but remains largely untested in current benchmarks. To evaluate this ability, we introduce MM-CreativityBench, a benchmark for affordance-grounded creative tool use in visually rich, physically constrained environments. Each instance presents a scenario image with structured views of candidate entities and their parts, enabling fine-grained, interactive evaluation of how models iteratively inspect the scene, identify relevant affordances, and compose visually and physically grounded solutions. Our experiments show that current LMMs often fall short, not due to lack of generative capability, but because they do not sustain grounded exploration. Models often overlook relevant entities, under-examine critical parts, or hallucinate attributes not grounded in the image. Motivated by this failure mode, we propose affordance-grounded alignment, which casts creative tool use as a preference learning problem. Using Direct Preference Optimization, we encourage models to prefer attribute-affordance reasoning grounded in visual evidence over hallucinated alternatives. In addition, we incorporate supervision derived from an affordance knowledge base to guide broader entity exploration and multi-turn planning. Our results show consistent gains in selecting the correct entities and parts, while substantially reducing hallucination and grounding-related errors.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26396",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26396"
+      }
+    ],
+    "relevance_score": 0.42821362937465124,
+    "max_similarity": 0.15413759885403083
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26305",
+    "title": "Experiments in Agentic AI for Science",
+    "authors": [
+      "Judy Fox, Geoffrey Fox"
+    ],
+    "abstract": "arXiv:2605.26305v1 Announce Type: new \nAbstract: This paper details two novel frameworks for developing autonomous, agentic AI in scientific workflows. Both systems leverage a hybrid Local Body, Remote Brain architecture via Google Colab, utilizing Python-based local orchestrators to invoke large language model (LLM) cloud backends. The first agent, DeepTS/DeepCollector, automates the large-scale curation, extraction, and deduplication of time-series datasets. The second, DeepScribe, is an autonomous presentation analyzer that converts visually dense, mathematically complex physics lectures into structured scientific reports. Through practical systems engineering-such as granular attribute extraction (Cellular RAG), remote data inspection, and distributed concurrency controls-we demonstrate how agentic AI can overcome the context and reasoning limitations of current state-of-the-art systems to rigorously support scientific workflows. Finally, we outline a generalization of DeepTS to support deep knowledge graphs and discuss the application of this conceptual approach to high-energy physics (DeepQCD).",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26305",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26305"
+      }
+    ],
+    "relevance_score": 0.40244216438473723,
+    "max_similarity": 0.12245269067404765
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26121",
+    "title": "GEM: Geometric Entropy Mixing for Optimal LLM Data Curation",
+    "authors": [
+      "Yue Min, Ziyun Qiao, Ruining Chen, Yujun Li"
+    ],
+    "abstract": "arXiv:2605.26121v1 Announce Type: new \nAbstract: LLM pre-training efficacy increasingly depends on data composition rather than sheer volume. Yet, optimal mixing is hindered by categorization flaws: human taxonomies suffer from ontological misalignment, and Euclidean clustering fails to address embedding anisotropy. We introduce GEM (Geometric Entropy Mixing), a framework reformulating data curation as a variational problem on the hypersphere augmented with a mixing-balance regularizer. By decoupling the generative prior and optimizing the objective via a provable MM (Minorize-Maximize) algorithm, GEM effectively counteracts the cluster collapse to discover balanced semantic structures invisible to Euclidean heuristics. We employ teacher-student distillation to scale this geometric fidelity to web-scale corpora and introduce the Geometric Influence Score (GIS) for interpretable taxonomy generation. Experiments with 1.1B-parameter models demonstrate that GEM establishes a new state-of-the-art when integrated into mixing strategies like DoReMi and RegMix, improving average downstream accuracy by up to 1.2% and offering a robust coordinate system for predictable data mixing.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26121",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26121"
+      }
+    ],
+    "relevance_score": 0.3843141455654788,
+    "max_similarity": 0.10111561381748096
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26128",
+    "title": "The Constraint Tax: Measuring Validity-Correctness Tradeoffs in Structured Outputs for Small Language Models",
+    "authors": [
+      "Jaideep Ray"
+    ],
+    "abstract": "arXiv:2605.26128v1 Announce Type: new \nAbstract: Production LLM systems increasingly require machine-readable outputs: JSON objects, typed traces, regex-constrained fields, and tool-call schemas. This paper targets on-device and low-cost small language model (SLM) deployments, where sub-3B models are attractive for privacy, latency, and commodity hardware but have limited capacity to satisfy schemas while solving tasks. The usual engineering assumption is that hard output constraints improve reliability without changing the underlying answer. We show that this assumption is unsafe for small models. We introduce \\emph{constraint tax}, a measurement protocol for isolating the answer and executable-accuracy loss caused by structured-output constraints at fixed model, fixed task distribution, and fixed problem instances. Across 15,000 commodity-GPU generations with Qwen2.5-0.5B, Qwen2.5-1.5B, and SmolLM2-1.7B, hard answer-only schema decoding raises schema validity from 61.5\\% to 100.0\\%, but lowers answer accuracy from 19.7\\% to 11.0\\% and increases wrong-valid-schema outputs from 49.5\\% to 88.9\\%. The strongest industry analogue is a deterministic calendar tool-call task: Qwen2.5-1.5B achieves 91.5\\% executable accuracy with prompt-only JSON but only 48.0\\% under the same hard tool-call schema, while both modes are 100.0\\% schema-valid. The error is semantic, not structural. We also show that the 3B boundary still pays a direct-schema tax and that delayed packaging supports a constructive design pattern: reason free, constrain late. The practical conclusion is direct: production systems should report schema validity, answer accuracy, executable accuracy, and wrong-valid-schema rate separately.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26128",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26128"
+      }
+    ],
+    "relevance_score": 0.3819695145348278,
+    "max_similarity": 0.09898858741255871
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26333",
+    "title": "Managing Uncertainty in LLM-Generated Procedural Knowledge for Virtual Laboratory Planning",
+    "authors": [
+      "Polychronis Karpodinis, Dimitris Kalles"
+    ],
+    "abstract": "arXiv:2605.26333v1 Announce Type: new \nAbstract: Educational virtual laboratories can make experimental training more scala-ble, adaptive, and accessible, especially when students have limited access to physical laboratory facilities. However, authoring new simulated laboratory procedures remains costly: educators must describe new equipment, define how instruments and materials interact, and specify valid procedural flows that can be executed or assessed inside the virtual environment. Large lan-guage models can assist in this authoring process by generating detailed ex-perimental procedures, but their output should not be treated as directly exe-cutable plans. They may omit necessary actions, arrange steps in the wrong order, or produce instructions that are logically incorrect or incompatible with the laboratory equipment. This paper presents a prototype framework for managing uncertainty in LLM-generated procedural knowledge for virtu-al laboratory planning. The framework aims to reduce procedural uncertainty by using structured domain representations and uncertain LLM-generated state-transition samples to extract candidate procedural rules, transform them into explicit and inspectable constraints, and use them to repair uncertain procedural steps. Although the motivating domain refers to educational vir-tual laboratories, the underlying problem is more general: managing uncer-tain procedural knowledge for action planning in structured interactive envi-ronments. We illustrate the approach in a virtual laboratory domain involving laboratory instruments, containers, tools, and material-transfer actions.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26333",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26333"
+      }
+    ],
+    "relevance_score": 0.3799352707699555,
+    "max_similarity": 0.15800352735542658
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26242",
+    "title": "Can LLMs Introspect? A Reality Check",
+    "authors": [
+      "Shashwat Singh, Tal Linzen, Shauli Ravfogel"
+    ],
+    "abstract": "arXiv:2605.26242v1 Announce Type: new \nAbstract: Can large language models detect and report their own internal states? A number of studies have argued that the answer to this question is yes. We argue, based on lessons from human metacognition research, that this conclusion may be premature: to be convinced of this conclusion we need to distinguish genuine introspection from pattern matching based on surface-level cues. Furthermore, we argue that behavioral evidence alone is inherently insufficient to establish strong introspective claims.\n  We re-examine two recently introduced evaluation paradigms in light of this consideration. In the first paradigm, models are expected to detect whether their internal states have been tampered with. We find that models cannot reliably distinguish such interventions on their internal states from manipulations of the input, suggesting that their success in the original studies reflects their ability to detect anomalies more generally, as opposed to interventions on their internal states in particular. In the second paradigm we examine, models are tasked with predicting labels derived from their own hidden states. Here, we find that classifiers that only have access to the input achieve equivalent performance to the model's own in-context predictions, indicating that the original results do not conclusively demonstrate that the model has privileged access to its internal representations. We further introduce a relabeled control setting, where models cannot rely on the semantics of the task to solve it, and instead must rely on the internal representation; models perform closer to chance on this better-controlled version of the task. Taken together, these results indicate that current evidence is insufficient to establish that LLMs display metacognitive monitoring.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26242",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26242"
+      }
+    ],
+    "relevance_score": 0.3619409141691611,
+    "max_similarity": 0.13437535153252328
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26175",
+    "title": "InfoQuant: Shaping Activation Distributions for Low-Bit LLM Quantization",
+    "authors": [
+      "Ke Li, Dong An, Xiaoling Zang, Can Ye, Liang Xie, Qibo Qiu, Chen Shen, Xiaofei He, Wenxiao Wang"
+    ],
+    "abstract": "arXiv:2605.26175v1 Announce Type: new \nAbstract: Low-bit activation quantization remains a major bottleneck in efficient large language model (LLM) deployment. The difficulty is not only that activations contain outliers, but that their distributions are often poorly matched to a low-bit uniform quantizer. Existing post-training quantization (PTQ) methods suppress peaks, balance channels, or minimize reconstruction error, yet they rarely specify what activation distribution is actually easy to discretize. As a result, activations may appear numerically smoother while still incurring large quantization error because the quantization range remains wide or most values collapse into a few levels near the mean. We recast activation transformation as quantizer-facing distribution design and analyze quantization error from an information-theoretic perspective. Our analysis shows that quantization-friendly activations should jointly have a smaller numerical range and sufficient dispersion within that range. Guided by this analysis, we propose InfoQuant, a train-free method that employs Peak Suppression Orthogonal Transformation (PSOT) to shape activations into more quantization-friendly distributions. We further introduce adaptive outlier-token selection to improve the robustness of PSOT during optimization. Across multiple LLM families, InfoQuant consistently outperforms prior PTQ and end-to-end training baselines. Under W4A4KV4, it preserves 97% of floating-point accuracy on average and reduces the LLaMA-2 13B performance gap by 42% over the previous state of the art. Code is available at [https://github.com/LLIKKE/InfoQuant](https://github.com/LLIKKE/InfoQuant)",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26175",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26175"
+      }
+    ],
+    "relevance_score": 0.3499260340959226,
+    "max_similarity": 0.12034896909708191
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26403",
+    "title": "From Static Context to Calibrated Interactive RL: Mitigating Distribution Shift in Multi-turn Dialogue with Aligned Simulator",
+    "authors": [
+      "Xiaohua Wang, Jiakang Yuan, Zisu Huang, Muzhao Tian, Changze Lv, Kaitao Song, Tao Chen, Xiaoqing Zheng"
+    ],
+    "abstract": "arXiv:2605.26403v1 Announce Type: new \nAbstract: A long-standing goal of the research community is to develop highly interactive LLM-based dialogue agents. Recent research focuses on optimizing policies based on fixed offline logs (Static Context RL) or using a prompt-based simulator (Interactive RL). In this work, we theoretically show that both paradigms are fundamentally limited by context distribution shift--a mismatch between dialogue histories observed during training and those encountered in real conversations. This shift compounds quadratically over turns and severely degrades dialogue quality. Specifically, we attribute this shift to two distinct sources: (i) policy-induced shift, arising from training on static histories rather than self-generated trajectories; and (ii) simulator-induced shift, stemming from discrepancies between simulated and real human behaviors. To address these challenges, we propose Calibrated Interactive RL, a unified framework that couples interactive RL with simulator alignment. By aligning the simulator with human interaction patterns, our approach reduces the sim-to-real gap and mitigates compounding distribution shifts. Experiments across multiple dialogue tasks confirm our theoretical analysis: (i) Interactive RL significantly outperforms the Static Context baseline by mitigating policy distribution shift; and (ii) calibrating simulators with our alignment method further bridges the sim-to-real gap, yielding state-of-the-art downstream performance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26403",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26403"
+      }
+    ],
+    "relevance_score": 0.323706450440517,
+    "max_similarity": 0.2135935694512774
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26530",
+    "title": "Which Changes Matter? Towards Trustworthy Legal AI via Relevance-Sensitive Evaluation and Solver-Grounded Reasoning",
+    "authors": [
+      "Chen Linze, Cai Yufan, Hou Zhe, Dong Jin Song"
+    ],
+    "abstract": "arXiv:2605.26530v1 Announce Type: new \nAbstract: Legal reasoning requires distinguishing changes that matter from those that do not. Legal AI should remain stable under legally irrelevant perturbations, but should change when perturbations alter legally material points. We formulate this requirement as a legal-relevance-sensitive evaluation problem: LLMs should only be sensitive to the legally relevant change. We introduce a unified evaluation suite covering should-change and should-not-change evaluation across judicial fairness, robustness, and statute-confusion scenarios. Our evaluation shows that existing legal LLMs are systematically sensitive to legally irrelevant variations and often fail to distinguish related legal elements and statutory rules. To mitigate these failures, we present LexGuard, an adversarial multi-agent framework grounded in formal reasoning. LexGuard formalizes statutes into executable constraints, uses adversarial agents to extract competing fact-statute arguments, and invokes SMT solvers to verify legal satisfaction and logical consistency. Experiments show that LexGuard improves legal reasoning reliability by reducing vulnerability to manipulative framing, improving disambiguation among similar statutes, limiting the influence of legally irrelevant attributes, and increasing consistency under benign reformulations. We show that legal trustworthiness requires not only accuracy, but calibrated sensitivity to legally material changes.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26530",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26530"
+      }
+    ],
+    "relevance_score": 0.27324764278976305,
+    "max_similarity": 0.1505430448516428
+  },
+  {
+    "id": "https://arxiv.org/abs/2605.26189",
+    "title": "Max-Window Scale Estimation for Near-Lossless HiF8 W8A8 Quantization-Aware Training",
+    "authors": [
+      "Yingying Cheng, Jinquan Shi, Li Zhou, Zhiyang He, Zhaoyi Sun, Fan Zhang, Jie Sun"
+    ],
+    "abstract": "arXiv:2605.26189v1 Announce Type: new \nAbstract: Quantization-aware training (QAT) with low-bit floating-point formats enables efficient LLM deployment, yet introduces subtle failure modes invisible to standard training metrics. We present a systematic study of HiF8 W8A8 QAT for OpenPangu-Embedded-1B through the lens of Delayed Tensor Scaling (DTS). Across eight controlled experiments, we identify and disentangle two orthogonal failure modes: (i)amax saturation, where delayed scale estimates silently corrupt knowledge-sensitive representations via forward-pass clipping, and (ii)catastrophic forgetting, where an aggressive learning rate overwrites pretrained commonsense knowledge independently of quantization. Neither is detectable from training loss alone. We address amax saturation with a conservative max-algorithm DTS strategy over a 64-step history window, and mitigate forgetting via a 500-step BF16 warmup followed by QAT at lr=10^{-5}. Both fixes are necessary and sufficient: our final configuration achieves 0.43% MMLU drop, 0.58% HellaSwag drop, and 0.22% ARC-Challenge drop versus a matched BF16 baseline, with a training loss APE of only 0.11% over 10,000 steps.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 27 May 2026 00:00:00 -0400",
+    "updated": "Wed, 27 May 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.26189",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2605.26189"
+      }
+    ],
+    "relevance_score": 0.24511009212980733,
+    "max_similarity": 0.11485155370688499
+  }
+]
