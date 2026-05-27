@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试下拉菜单</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Daily arXiv</a>
+            <div class="d-flex align-items-center">
+                <select class="form-select form-select-sm" style="width: auto;" onchange="if(this.value) window.location.href=this.value">
+                    <option value="" selected>选择日期</option>
+                    <option value="daily/2026-05-25.html">2026-05-25 (17篇)</option>
+                    <option value="daily/2026-05-22.html">2026-05-22 (15篇)</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h4>测试页面</h4>
+        <p>请检查右上角是否有日期下拉菜单</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

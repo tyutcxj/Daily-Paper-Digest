@@ -34,11 +34,11 @@ def generate_html(papers, summaries, analysis, today=None, all_dates=None):
             selected = 'selected' if d['date'] == today else ''
             options += f'<option value="daily/{d["date"]}.html" {selected}>{d["date"]} ({d["count"]}篇)</option>'
         date_selector_html = f'''
-        <select class="form-select form-select-sm" style="width: auto;" onchange="if(this.value) window.location.href=this.value">
+        <select class="form-select form-select-sm date-selector" onchange="if(this.value) window.location.href=this.value">
             {options}
         </select>'''
     else:
-        date_selector_html = f'<span class="navbar-text"><i class="bi bi-calendar"></i> {today}</span>'
+        date_selector_html = f'<span class="navbar-text text-white"><i class="bi bi-calendar"></i> {today}</span>'
 
     # 构建总结映射
     summary_map = {}
@@ -194,20 +194,21 @@ def generate_html(papers, summaries, analysis, today=None, all_dates=None):
     <style>
         .card:hover {{ transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s; }}
         .card-title a:hover {{ color: #0d6efd !important; }}
-        .navbar .form-select {{
-            background-color: rgba(255,255,255,0.2);
-            color: white;
-            border-color: rgba(255,255,255,0.3);
-            cursor: pointer;
+        .date-selector {{
+            min-width: 200px;
+            background-color: rgba(255,255,255,0.9) !important;
+            color: #333 !important;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 500;
         }}
-        .navbar .form-select:focus {{
-            background-color: rgba(255,255,255,0.3);
-            color: white;
-            box-shadow: 0 0 0 0.25rem rgba(255,255,255,0.25);
+        .date-selector:focus {{
+            background-color: white !important;
+            box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.5);
         }}
-        .navbar .form-select option {{
+        .date-selector option {{
             color: #333;
             background-color: white;
+            padding: 8px;
         }}
     </style>
 </head>
