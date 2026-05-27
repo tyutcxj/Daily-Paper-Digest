@@ -55,14 +55,14 @@ jobs:
       - name: Generate static page
         run: python generate_static.py
 
-      # 提交网页到仓库（不提交原始数据）
+      # 提交数据和网页到仓库
       - name: Commit and push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # 提交 docs 目录（GitHub Pages 需要）
-          git add docs/ -f
+          # 提交数据和 docs 目录
+          git add data/papers/ data/summaries/ docs/
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
