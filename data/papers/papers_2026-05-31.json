@@ -1,0 +1,536 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2605.30343v1",
+    "title": "Unlocking the Working Memory of Large Language Models for Latent Reasoning",
+    "authors": [
+      "Lukas Aichberger",
+      "Sepp Hochreiter"
+    ],
+    "abstract": "To improve the reasoning capabilities of large language models, test-time compute is typically scaled by generating intermediate tokens before the final answer. However, this couples reasoning to autoregressive generation and thereby conflates internal computation with external communication. In contrast, human cognition can use working memory to hold and manipulate information internally without the need to externalize intermediate thoughts. Drawing on this principle, we introduce Reasoning in Memory (RiM), a latent reasoning method that replaces the autoregressive generation of reasoning steps with memory blocks. These memory blocks are fixed sequences of special tokens that unlock the working-memory capacity of large language models. Since they are fixed rather than generated, they can be processed in a single forward pass, enabling compute-efficient latent reasoning. To operationalize these memory blocks, we employ a two-stage curriculum. First, we ground them by predicting explicit reasoning steps after each memory block. Second, we discard this step-level supervision and iteratively refine the final answer after each memory block. Our experiments on reasoning benchmarks show that, across language models of different families and sizes, RiM matches or exceeds existing latent reasoning methods while avoiding the autoregressive generation of thoughts. These results demonstrate that large language models can be trained to use working memory as an effective mechanism for latent reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:59:49Z",
+    "updated": "2026-05-28T17:59:49Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30343v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30343v1"
+    ],
+    "relevance_score": 0.5306218692484589,
+    "max_similarity": 0.2822365386768112
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30260v1",
+    "title": "How LoRA Remembers? A Parametric Memory Law for LLM Finetuning",
+    "authors": [
+      "Ziwen Xu",
+      "Haiwen Hong",
+      "Linsong Yu",
+      "Benglei Cui",
+      "Longtao Huang",
+      "Hui Xue",
+      "Ningyu Zhang"
+    ],
+    "abstract": "Large Language Models (LLMs) must continuously learn and update knowledge to remain effective in dynamic real-world environments. While Low-Rank Adaptation (LoRA) is widely used for such memory updates, existing studies mainly rely on qualitative downstream evaluations, leaving the quantitative capacity limits and underlying dynamics of exact parametric memory largely unexplored. To bridge this gap, we employ LoRA as a controlled memory capacity probe within the latent space to systematically quantify exact parametric memory. We introduce the Parametric Memory Law, a robust power law linking loss reduction Delta L to effective parameters and sequence length. At the token level, fine-grained analysis reveals a deterministic phase transition, demonstrating that a prediction probability of p > 0.5 constitutes a sufficient condition for verbatim recall under greedy decoding. Driven by these insights, we introduce MemFT, a threshold-guided optimization strategy that dynamically redistributes the training budget toward sub-threshold tokens. Empirical evaluations demonstrate that MemFT can enhance memory fidelity and efficiency. Code will be released at https://github.com/zjunlp/ParametricMemoryLaw.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:22:24Z",
+    "updated": "2026-05-28T17:22:24Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30260v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30260v1"
+    ],
+    "relevance_score": 0.5181728231732177,
+    "max_similarity": 0.33074229790666204
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30350v1",
+    "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation",
+    "authors": [
+      "Jusuk Lee",
+      "Seungjae Lee",
+      "Jonghun Shin",
+      "Hoseong Jung",
+      "Sungha Kim",
+      "Daesol Cho",
+      "H. Jin Kim",
+      "Jia-Bin Huang",
+      "Furong Huang"
+    ],
+    "abstract": "Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-training framework that pushes motion understanding upstream into perception. We construct image-language-3D flow triplets from heterogeneous human and robot videos, and use these triplets as training-time supervision to shape an image-only encoder. Our key idea is to encourage the three modalities to span a small simplex volume in the shared hyperspherical space -- a smaller simplex volume indicating stronger alignment. To avoid the geometric ambiguity and trivial collapse of naive volume minimization, we combine simplex-volume minimization with a cosine regularizer and a contrastive objective. Our analyses show that DynaFLIP focuses on control-relevant regions critical for manipulation. The resulting dynamics-aware representations serve as reusable visual backbones and consistently outperform baselines across diverse downstream policies, including VLAs. We validate this across diverse simulation and real-world setups, with gains reaching +22.5% under out-of-distribution scenarios. Our results suggest that robot generalization improves when visual representations are trained to encode not just what is present, but how the world changes under action.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:59:53Z",
+    "updated": "2026-05-28T17:59:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30350v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30350v1"
+    ],
+    "relevance_score": 0.4924386227424739,
+    "max_similarity": 0.23370546646229406
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30344v1",
+    "title": "Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection",
+    "authors": [
+      "Xiaona Zhou",
+      "Muntasir Wahed",
+      "Tianjiao Yu",
+      "Constantin Brif",
+      "Ismini Lourentzou"
+    ],
+    "abstract": "Recent advances in Vision-Language Models (VLMs) have achieved impressive performance across many tasks, yet prior studies report unsatisfactory performance when applying large language or multimodal models to finding abnormal patterns in sequential data. Public anomaly detection benchmarks typically provide interval annotations but not natural-language rationales, making it difficult to fine-tune VLMs to produce grounded, interpretable decisions. To address this gap, we construct VisAnomBench, a curated benchmark built from public time-series datasets and augmented with high-quality anomaly explanations selected from multiple large VLMs using fine-grained, task-specific rewards. Through fine-tuning on this benchmark, we develop VisAnomReasoner, a parameter-efficient VLM for time-series anomaly detection. Experimental results on VisAnomBench show that VisAnomReasoner achieves more accurate anomaly localization and consistently outperforms all baselines, with improvements of at least 21.23 and 23.87 percentage points in precision and F1, respectively. Additional experiments on the TSB-AD-U benchmark demonstrate strong cross-benchmark generalization, with VisAnomReasoner improving precision and F1 by 9.57 and 13.39 percentage points, respectively.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:59:50Z",
+    "updated": "2026-05-28T17:59:50Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30344v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30344v1"
+    ],
+    "relevance_score": 0.476921780231865,
+    "max_similarity": 0.2135915649964696
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30311v1",
+    "title": "Archon: A Unified Multimodal Model for Holistic Digital Human Generation",
+    "authors": [
+      "Chong Bao",
+      "Shichen Liu",
+      "Lijun Yu",
+      "David Futschik",
+      "Stylianos Moschoglou",
+      "Shefali Srivastava",
+      "Ziqian Bai",
+      "Feitong Tan",
+      "Guofeng Zhang",
+      "Zhaopeng Cui",
+      "Sean Fanello",
+      "Yinda Zhang"
+    ],
+    "abstract": "Digital humans are fundamental to immersive interaction, yet creating a unified model for holistic modalities, including text, audio, motion, and visual content, remains an open challenge. In this paper, we present Archon, a fully pretrained, human-centric unified multimodal model for holistic avatar generation. Archon unifies seven modalities with modality-specific tokenizers, and a native autoregressive unified multimodal model pretrained on synchronized modalities and 72 diverse tasks to model holistic joint distributions. To address the token explosion challenge in high-fidelity talking videos, we introduce a memory-efficient semantic video reparameterization, achieving 4x token reduction while preserving fine-grained dynamics, coupled with a semantic-driven video diffusion decoder. We further propose a \"Thinking in Modality\" that decomposes ambiguous cross-modal tasks into stepwise thinking in an alternative chain of modality, progressively enhancing fidelity and controllability. Extensive experiments demonstrate that Archon achieves superior or comparable performance across diverse digital human generation tasks, validating the effectiveness of our unified framework. Project page: https://zju3dv.github.io/archon/.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:53:27Z",
+    "updated": "2026-05-28T17:53:27Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30311v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30311v1"
+    ],
+    "relevance_score": 0.46215811179183736,
+    "max_similarity": 0.2585041750038629
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30345v1",
+    "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
+    "authors": [
+      "Qinpei Luo",
+      "Ruichun Ma",
+      "Xinyu Zhang",
+      "Lili Qiu"
+    ],
+    "abstract": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB schematic generation from natural-language intent is largely unexplored. This paper presents SchGen, the first large language model that generates editable PCB schematics from natural-language requests. The key challenge lies in the lack of an LLM-suited representation and a large-scale dataset. Current schematic formats are dominated by verbose, tool-specific syntax and geometry-heavy descriptions, making them difficult to generate reliably. We introduce a semantically grounded code representation that encodes schematic editing primitives with relative placement and pin-name-based wiring, transforming a geometry-driven generation problem into a semantics-driven matching task amenable to LLMs. We further construct a large-scale dataset of PCB schematics paired with user prompts via a human-agent collaborative pipeline that converts open-source hardware designs into our representation. Experiments show that SchGen significantly outperforms alternative representations and even larger general-purpose LLMs on wire connectivity accuracy and functional correctness. Our results highlight the critical role of representation design in enabling generative models for complex hardware design tasks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:59:50Z",
+    "updated": "2026-05-28T17:59:50Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30345v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30345v1"
+    ],
+    "relevance_score": 0.4471400564993343,
+    "max_similarity": 0.1772141780489347
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30345v1",
+    "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
+    "authors": [
+      "Qinpei Luo",
+      "Ruichun Ma",
+      "Xinyu Zhang",
+      "Lili Qiu"
+    ],
+    "abstract": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB schematic generation from natural-language intent is largely unexplored. This paper presents SchGen, the first large language model that generates editable PCB schematics from natural-language requests. The key challenge lies in the lack of an LLM-suited representation and a large-scale dataset. Current schematic formats are dominated by verbose, tool-specific syntax and geometry-heavy descriptions, making them difficult to generate reliably. We introduce a semantically grounded code representation that encodes schematic editing primitives with relative placement and pin-name-based wiring, transforming a geometry-driven generation problem into a semantics-driven matching task amenable to LLMs. We further construct a large-scale dataset of PCB schematics paired with user prompts via a human-agent collaborative pipeline that converts open-source hardware designs into our representation. Experiments show that SchGen significantly outperforms alternative representations and even larger general-purpose LLMs on wire connectivity accuracy and functional correctness. Our results highlight the critical role of representation design in enabling generative models for complex hardware design tasks.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:59:50Z",
+    "updated": "2026-05-28T17:59:50Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30345v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30345v1"
+    ],
+    "relevance_score": 0.4471400564993343,
+    "max_similarity": 0.1772141780489347
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30289v1",
+    "title": "Statistical Embeddings for Similarity, Retrieval, and Interpretable Alignment of Numeric Tabular Datasets",
+    "authors": [
+      "M. Ross Kunz",
+      "John Merickel",
+      "Keith Wilson"
+    ],
+    "abstract": "Numeric tabular datasets are the dominant data format in scientific practice, yet large language models lack native mechanisms for representing numeric datasets in a meaningful way across heterogeneous feature spaces. Existing approaches either target predictive modeling over individual datasets, which requires a shared set of variable definitions, or lack mechanisms for interpretable cross-dataset alignment. The proposed methodology characterizes numeric tabular datasets through structured exploratory data analysis descriptors, embeds those descriptors into a shared vector space using a pretrained sentence transformer, and quantifies cross-dataset similarity via Canonical Correlation Analysis (CCA). Furthermore, a penalized formulation of CCA is applied to recover sparse, interpretable variable-level correspondences between datasets, identifying which statistical descriptors or variable-level quantities drive cross-dataset alignment without requiring shared variable names or feature conventions. Differential privacy is optionally applied to the descriptor set prior to embedding, supporting deployment in sensitive data contexts without requiring access to raw observations at time of comparison. The methodology is evaluated across 15 datasets spanning general-purpose benchmarks, materials informatics, and nuclear-grade graphite characterization. Results demonstrate a total P@1 score of 0.9, with known nearest-neighbor retrieval and cluster structure remaining robust across embedding ablations and differential privacy budgets. The proposed framework provides a principled pathway for integrating heterogeneous numeric data into retrieval-augmented generation pipelines while preserving statistical context, with direct applications to data-driven algorithm selection and simulation model initialization for unknown datasets.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:40:42Z",
+    "updated": "2026-05-28T17:40:42Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30289v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30289v1"
+    ],
+    "relevance_score": 0.40995939709478685,
+    "max_similarity": 0.13061468327082995
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30337v1",
+    "title": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+    "authors": [
+      "Alaa Khamis",
+      "Alaa Maalouf"
+    ],
+    "abstract": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. However, TTFT is only practical if it is fast: selection and finetuning both happen per query, making each a direct bottleneck. Existing methods trade speed for quality: fast retrieval is often redundant, while stronger diversity-aware selection adds prohibitive per-query cost. We introduce HullFT, a geometric approach to TTFT that addresses both bottlenecks. Given a query, HullFT first represents the query embedding as a sparse convex combination of few training sequences, using efficient projection-free Frank-Wolfe optimization. This yields a support set that is inherently relevant and diverse. We then convert the fractional convex weights into an exact integer multiset for finetuning through a geometric integerization procedure. The resulting multiplicities naturally create repeated examples, which we exploit with Gradient Reuse to amortize forward-backward computation across repeated finetuning steps. Our experiments show that HullFT improves the quality-efficiency tradeoff over current state-of-the-art TTFT methods, achieving lower bits-per-byte at substantially lower total runtime.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:59:01Z",
+    "updated": "2026-05-28T17:59:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30337v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30337v1"
+    ],
+    "relevance_score": 0.4077962291624204,
+    "max_similarity": 0.12998316562458354
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30323v1",
+    "title": "In-Context Reward Adaptation for Robust Preference Modeling",
+    "authors": [
+      "Zhenyu Sun",
+      "Zheng Xu",
+      "Ermin Wei"
+    ],
+    "abstract": "Reinforcement Learning from Human Feedback (RLHF) typically relies on static reward models to align Large Language Models with human preferences. However, human values are inherently diverse and heterogeneous, and a single reward model often lacks the robustness required to generalize to unseen preference domains. While existing multi-reward frameworks attempt to address this, they are often restricted to a fixed set of known domains and fail to adapt to unseen human distributions without costly retraining. In this work, we propose In-Context Reward Adaptation, a transformer-based framework designed to model diverse and unseen human preferences on the fly. By leveraging the in-context learning capabilities of transformers, our approach adaptively infers the underlying reward structure from a small set of preference demonstrations. We demonstrate that while a standard transformer architecture is insufficient for this task by characterizing an asymptotic bias to the ground-truth, incorporating human response time as an auxiliary input signal enables the model to successfully adapt to preferences from previously unseen domains. Our findings show that this approach provides a more robust foundation for preference modeling, allowing for the representation of heterogeneous rewards and preference distribution shift, and offering a scalable path toward more flexible human-AI alignment.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:56:54Z",
+    "updated": "2026-05-28T17:56:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30323v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30323v1"
+    ],
+    "relevance_score": 0.40513105138466865,
+    "max_similarity": 0.1269271846027226
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30323v1",
+    "title": "In-Context Reward Adaptation for Robust Preference Modeling",
+    "authors": [
+      "Zhenyu Sun",
+      "Zheng Xu",
+      "Ermin Wei"
+    ],
+    "abstract": "Reinforcement Learning from Human Feedback (RLHF) typically relies on static reward models to align Large Language Models with human preferences. However, human values are inherently diverse and heterogeneous, and a single reward model often lacks the robustness required to generalize to unseen preference domains. While existing multi-reward frameworks attempt to address this, they are often restricted to a fixed set of known domains and fail to adapt to unseen human distributions without costly retraining. In this work, we propose In-Context Reward Adaptation, a transformer-based framework designed to model diverse and unseen human preferences on the fly. By leveraging the in-context learning capabilities of transformers, our approach adaptively infers the underlying reward structure from a small set of preference demonstrations. We demonstrate that while a standard transformer architecture is insufficient for this task by characterizing an asymptotic bias to the ground-truth, incorporating human response time as an auxiliary input signal enables the model to successfully adapt to preferences from previously unseen domains. Our findings show that this approach provides a more robust foundation for preference modeling, allowing for the representation of heterogeneous rewards and preference distribution shift, and offering a scalable path toward more flexible human-AI alignment.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:56:54Z",
+    "updated": "2026-05-28T17:56:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30323v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30323v1"
+    ],
+    "relevance_score": 0.40513105138466865,
+    "max_similarity": 0.1269271846027226
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30295v1",
+    "title": "MedCase-Structured: A Text-to-FHIR Dataset for Benchmarking Diagnostic Reasoning in Clinically Realistic EHR Settings",
+    "authors": [
+      "Valentina Bui Muti",
+      "Eugénie Dulout",
+      "Ziquan Fu"
+    ],
+    "abstract": "Large language models (LLMs) show promise for clinical reasoning and decision support, but evaluation in realistic, electronic health record-congruent settings remains limited. Existing benchmarks often rely on static datasets or unstructured inputs that do not reflect the structured, interoperable data formats used in clinical systems. We introduce a pipeline for generating clinically realistic HL7 FHIR R4 bundles from unstructured text, enabling controllable evaluation of clinical decision support systems. The pipeline combines staged LLM generation with terminology-grounded validation and repair to reduce hallucinated codes and enforce structural and semantic consistency. Applying this approach to MedCaseReasoning, we construct MedCase-Structured, a synthetic dataset aligned with clinician-authored diagnostic cases, achieving valid FHIR generation for 82.5% of cases. Evaluation on MedCase-Structured reveals consistently lower diagnostic accuracy for LLMs on structured FHIR inputs than with plain text, highlighting the importance of deployment-aligned benchmarking.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:42:43Z",
+    "updated": "2026-05-28T17:42:43Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30295v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30295v1"
+    ],
+    "relevance_score": 0.4046097463343463,
+    "max_similarity": 0.12548654341698418
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30318v1",
+    "title": "Before the Shutter: Aesthetic and Actionable Portrait Photography Planning in 3D Scenes",
+    "authors": [
+      "Ruixiang Jiang",
+      "Chang Wen Chen"
+    ],
+    "abstract": "Portrait photography is largely decided before the shutter opens: the subject's pose, the camera configuration, and the lighting devices must be coordinated within the surrounding 3D scene. In contrast, most existing computational methods focus on post-production in 2D image space, such as retouching, relighting, or editing images that already exist; pre-capture photographic planning remains largely unexplored. We introduce 3D aesthetic portrait planning, the task of generating human pose, camera, lighting, and exposure plans that produce visually compelling portraits while satisfying geometric and photometric feasibility in a 3D scene. Our approach builds a Photographic Scene Graph that represents scene affordances, subject-scene relations, and portrait-relevant lighting structure. Built on this representation, we perform aesthetic-guided comparative planning over previous attempts and current viewfinder observations. Experiments across diverse indoor and outdoor scenes show that our method produces portraits preferred by human raters and MLLM evaluators over competitive baselines, while maintaining high physical plausibility. Together, our results suggest a path from post-capture correction toward pre-capture computational portrait planning. Project repository: https://github.com/songrise/Before-the-Shutter",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:55:09Z",
+    "updated": "2026-05-28T17:55:09Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30318v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30318v1"
+    ],
+    "relevance_score": 0.3933968709884075,
+    "max_similarity": 0.23800369517989423
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30329v1",
+    "title": "SoundnessBench: Can Your AI Scientist Really Tell Good Research Ideas from Bad Ones?",
+    "authors": [
+      "Sy-Tuyen Ho",
+      "Minghui Liu",
+      "Huy Nghiem",
+      "Furong Huang"
+    ],
+    "abstract": "Autonomous AI research agents aim to accelerate scientific discovery by automating the research pipeline, from hypothesis generation to peer review. However, existing benchmarks rarely test a fundamental bottleneck: whether Large Language Models can judge the methodological viability of a research idea before expending time and computational resources. We introduce SoundnessBench, a curated benchmark of 1,099 machine-learning research proposals reconstructed from ICLR submissions, labeled with reviewer soundness sub-scores, and audited against source papers. SoundnessBench should be interpreted as a benchmark for recoverable proposal-stage soundness rather than exact prediction of full-paper review outcomes. Across 12 frontier LLMs, we find a pervasive optimism bias: under standard prompting, models frequently rate low-soundness proposals as sound, while aggressive prompting largely shifts errors from false positives to false negatives. Additional controls for public-corpus contamination, paper-identifying phrases, surface features, and human audit quality suggest that this behavior is not explained by a single confounder. Our results indicate that current LLMs are not yet reliable as standalone first-gate evaluators for scientific rigor.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:57:37Z",
+    "updated": "2026-05-28T17:57:37Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30329v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30329v1"
+    ],
+    "relevance_score": 0.3909952628350948,
+    "max_similarity": 0.10919905137114343
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30334v1",
+    "title": "Demystifying Data Organization for Enhanced LLM Training",
+    "authors": [
+      "Yalun Dai",
+      "Yangyu Huang",
+      "Tongshen Yang",
+      "Yonghan Wang",
+      "Xin Zhang",
+      "Wenshan Wu",
+      "Qihao Zhao",
+      "Hao Li",
+      "Yuanyuan Gao",
+      "Kim-Hui Yap",
+      "Scarlett Li"
+    ],
+    "abstract": "Large Language Models (LLMs) have revolutionized various fields, yet their training efficiency is heavily reliant on effective data curation. While data selection has been widely studied, the strategic data organization for enhanced training remains an underexplored area, particularly since current LLMs are often trained for only one or a few epochs. This paper systematically explores the influence of data organization on LLM training by reusing pre-computed sample-level scores originally generated for data efficiency, thereby incurring minimal additional computational overhead. We identify and formalize four key guidelines for optimizing data organization: Boundary Sharpening, Cyclic Scheduling, Curriculum Continuity, and Local Diversity. Guided by them, we introduce two novel data ordering methods termed STR and SAW. Extensive experiments across different model scales and data sizes, encompassing both pre-training and SFT stages, validate the effectiveness of our summarized guidelines. They also demonstrate the robustness of our proposed data ordering methods in enhancing the stability and performance of LLM training. Github Link: https://github.com/microsoft/data-efficacy/",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:58:53Z",
+    "updated": "2026-05-28T17:58:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30334v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30334v1"
+    ],
+    "relevance_score": 0.389886764104993,
+    "max_similarity": 0.16851788916577326
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30348v1",
+    "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
+    "authors": [
+      "Yaxin Luo",
+      "Jiacheng Cui",
+      "Xiaohan Zhao",
+      "Xinyi Shang",
+      "Jiacheng Liu",
+      "Xinyue Bi",
+      "Zhaoyi Li",
+      "Zhiqiang Shen"
+    ],
+    "abstract": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\\textbf{Data Mixture Surgery (DMS)}$: given only generated text from a target LLM, estimate the domain-level distribution of its pretraining corpus under a predefined taxonomy. We propose $\\textbf{LLMSurgeon}$, a strong framework that casts DMS as an inverse problem under the label-shift assumption. Rather than directly aggregating classifier outputs, LLMSurgeon estimates a calibrated $\\textit{soft}$ confusion matrix and solves a constrained inverse problem to correct systematic domain confusion and recover the latent mixture prior. To evaluate, we introduce $\\textbf{LLMScan}$, a recipe-verifiable evaluation suite built from open-source LLMs with transparent pretraining mixtures. Across LLMScan, LLMSurgeon recovers domain mixtures with high fidelity under fixed protocols. Our work presents a practical, post-hoc approach for auditing the digital DNA of foundation models without access to their training data.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:59:53Z",
+    "updated": "2026-05-28T17:59:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30348v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30348v1"
+    ],
+    "relevance_score": 0.34183761206349356,
+    "max_similarity": 0.10932082829291397
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30348v1",
+    "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
+    "authors": [
+      "Yaxin Luo",
+      "Jiacheng Cui",
+      "Xiaohan Zhao",
+      "Xinyi Shang",
+      "Jiacheng Liu",
+      "Xinyue Bi",
+      "Zhaoyi Li",
+      "Zhiqiang Shen"
+    ],
+    "abstract": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\\textbf{Data Mixture Surgery (DMS)}$: given only generated text from a target LLM, estimate the domain-level distribution of its pretraining corpus under a predefined taxonomy. We propose $\\textbf{LLMSurgeon}$, a strong framework that casts DMS as an inverse problem under the label-shift assumption. Rather than directly aggregating classifier outputs, LLMSurgeon estimates a calibrated $\\textit{soft}$ confusion matrix and solves a constrained inverse problem to correct systematic domain confusion and recover the latent mixture prior. To evaluate, we introduce $\\textbf{LLMScan}$, a recipe-verifiable evaluation suite built from open-source LLMs with transparent pretraining mixtures. Across LLMScan, LLMSurgeon recovers domain mixtures with high fidelity under fixed protocols. Our work presents a practical, post-hoc approach for auditing the digital DNA of foundation models without access to their training data.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:59:53Z",
+    "updated": "2026-05-28T17:59:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30348v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30348v1"
+    ],
+    "relevance_score": 0.34183761206349356,
+    "max_similarity": 0.10932082829291397
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30335v1",
+    "title": "Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents",
+    "authors": [
+      "Anany Kotawala"
+    ],
+    "abstract": "Multi-component LLM agents assemble probabilistic claims from components that each see only part of a joint problem; the composition can violate basic probability axioms even when every component is locally coherent. We formalise this locally coherent, globally incoherent failure via the compositional residual eps*, the L2 distance from the composed quote to the joint coherent polytope, computable at runtime from system output and the declared cross-component coupling constraints. A product-structure dichotomy characterises when local coherence suffices, and a Rayleigh-quotient prediction matches the observed residual within 7% on three of four relation classes. A hierarchical Boyle-Dykstra projection repairs the composition deterministically; an anytime-valid e-process gives sequential coherence monitoring. Across 1,876 ensemble cliques on a four-LLM mid-tier panel (frontier-panel rerun in Section 5.5), eps* > 0 on 33-94% of cliques, translating to +0.115 nats per bet of regret on 1,770 resolved bets under the proportional allocation rule (the gain collapses to +0.006 under bettors that themselves coherentise). Three intuitive LLM-side mitigations(retrieval, partition-aware prompting, aggregator-LLM) each fail or regress.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-05-28T17:58:55Z",
+    "updated": "2026-05-28T17:58:55Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30335v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30335v1"
+    ],
+    "relevance_score": 0.3019012775321242,
+    "max_similarity": 0.0628432748495446
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30330v1",
+    "title": "When, why, and how do diffusion posterior samplers fail? A finite-sample lens",
+    "authors": [
+      "Benjamin A. Burns",
+      "Sara Fridovich-Keil"
+    ],
+    "abstract": "Diffusion models have excellent capacity to model complex distributions of natural data, which has made them a popular and effective choice for posterior sampling in imaging inverse problems. Existing methods can incorporate any measurement model at inference time but must use an inexact approximation for the likelihood at intermediate timesteps for computational tractability. Although these approximations can often work well empirically, their downstream effect on the sampled posterior is poorly understood and can result in unexplained failures. To understand when, why, and how these likelihood approximations propagate to erroneous posterior distributions, we introduce a finite-sample perspective on posterior sampling that approximates the posterior to arbitrary precision as training set size tends towards infinity, for any forward model and prior distribution. Using this finite-sample lens, we observe that popular posterior sampling approximations tend to under- or over-estimate the spread of the posterior at intermediate timesteps, causing downstream consequences including sensitivity to early stopping time, inaccurate relative weighting of posterior modes, and hallucination, both of prior modes that are not in the posterior and likelihood modes that are not supported by the prior. Moreover, we find that the cause of these posterior errors requires neither a nonlinear measurement model nor a multimodal posterior, but can arise solely due to a multimodal prior and inaccurate posterior spread at intermediate sampling times. Our finite-sample posterior sampling approach is agnostic to the type of likelihood approximation and the type of (linear or nonlinear) forward model, and can thus serve as a drop-in diagnostic to evaluate the accuracy and failure modes of existing and future posterior samplers.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:57:46Z",
+    "updated": "2026-05-28T17:57:46Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30330v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30330v1"
+    ],
+    "relevance_score": 0.29134005207949615,
+    "max_similarity": 0.10980580853518801
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.30315v1",
+    "title": "Resolution Diagnostics for Paired LLM Evaluation",
+    "authors": [
+      "Anany Kotawala"
+    ],
+    "abstract": "Across two public LLM leaderboards, many displayed pairwise rankings do not meet a conventional paired-test resolution target under the actual paired evaluation design: 11 of 40 Open LLM Leaderboard v1 pairwise comparisons and 4 of 9 MMLU-Pro top-10 adjacent-rank pairs are unresolved at (alpha, 1-beta) = (0.05, 0.8). The MMLU-Pro count rises to 6/9 under real subject-level clustering and stays at 5-6 out of 9 in 99.9% of category-bootstrap resamples. We frame paired LLM evaluation as a hypothesis-testing problem, invert level-alpha, power-(1-beta) tests, and report a per-pair resolution ratio q = N/N* as the primary diagnostic. A sharp small-effect expansion with an explicit second-order constant shows that the widely-used unpaired Cohen-h-plus-(1-rho) shortcut deviates from the correct N* by approximately a factor of two in the close-comparison regime, a deficit that three of five off-the-shelf calculators(Cohen 1988, G*Power, R pwr) silently inherit when the user post-multiplies their per-arm output by (1-rho). The unresolved-pair pattern remains under multiplicity correction and anytime-valid sequential testing.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-05-28T17:54:09Z",
+    "updated": "2026-05-28T17:54:09Z",
+    "pdf_url": "https://arxiv.org/pdf/2605.30315v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2605.30315v1"
+    ],
+    "relevance_score": 0.2262687210405734,
+    "max_similarity": 0.09317212583429638
+  }
+]
