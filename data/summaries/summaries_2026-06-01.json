@@ -1,0 +1,282 @@
+[
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30861",
+    "title": "Distilling LLM Feedback for Lean Theorem Proving",
+    "authors": [
+      "Gaetan Narozniak, G\\'erard Biau, R\\'emi Munos, Ahmad Rammal, Pierre Marion"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30861",
+    "summary": "研究问题：提升复杂推理模型后训练效果，解决GRPO算法稀疏奖励、探索不足和模式崩溃问题。\n主要方法：提出反馈蒸馏，让模型在token级别匹配自身分布，并注入语言模型提供的特权反馈。\n关键贡献：反馈蒸馏保持更高策略熵和更好pass@k扩展性，与GRPO互补，联合使用效果更优。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30738",
+    "title": "MAVEN: Improving Generalization in Agentic Tool Calling",
+    "authors": [
+      "Omkar Ghugarkar, Vishvesh Bhat, Muhammad Ahmed Mohsin, Asad Aali"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30738",
+    "summary": "研究问题：提升智能体工具调用在多环境中的泛化能力  \n主要方法：提出MAVEN轻量级符号推理框架，实现结构化分解、自适应工具编排与中间验证  \n关键贡献：引入MAVEN-Bench基准，在无额外训练下将GPT-OSS-120b准确率从48%提升至71%，成本仅为前沿模型的1/10",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30785",
+    "title": "Learning Agent-Compatible Context Management for Long-Horizon Tasks",
+    "authors": [
+      "Lu Yi, Runlin Lei, Liuyi Yao, Yuexiang Xie, Yuyang Li, Wenhao Zhang, Zhewei Wei, Yaliang Li, Jian-Yun Nie"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30785",
+    "summary": "研究问题：解决LLM代理在长周期任务中因上下文累积导致的性能下降问题。  \n主要方法：提出AdaCoM，通过外部LLM对冻结代理的上下文进行灵活修改和端到端强化学习管理。  \n关键贡献：发现保真度-可靠性权衡，不同能力代理需不同压缩策略，且AdaCoM在相似能力代理间泛化有效。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30838",
+    "title": "COMPASS: Cognitive MCTS-Guided Process Alignment for Safe Search Agents",
+    "authors": [
+      "Wenkai Shen, Pengyang Zhou, Jiahe Xu, Jiaming Qian, Haozhe He, Zhihao Huang, Chaochao Chen, Xiaolin Zheng"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30838",
+    "summary": "研究问题：LLM搜索代理的多步推理导致检索诱导的安全退化。  \n主要方法：提出COMPASS框架，结合认知树探索与内省步骤对齐。  \n关键贡献：实现安全-效用平衡，减少训练数据需求。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30832",
+    "title": "SLAT: Segment-Level Adaptive Trimming for Efficient CoT Reasoning",
+    "authors": [
+      "Jian Yao, Xiongcai Luo, Ran Cheng, Kay Chen Tan"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30832",
+    "summary": "研究问题：大模型CoT推理中的结构冗余导致高计算开销。\n主要方法：提出SLAT框架，基于正确性-长度权衡理论，在RL中自适应修剪高概率低边际效用的冗余片段。\n关键贡献：实现50%推理长度压缩，同时保持竞争性准确率，建立更优的准确率-效率帕累托前沿。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30824",
+    "title": "Planner-Centric Reinforcement Learning for Deep Research with Structure-Aware Reward",
+    "authors": [
+      "Mustafa Anis Hussain, Xinle Wu, Yao Lu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30824",
+    "summary": "研究问题：如何提升LLM在深度研究任务中的规划与执行能力。  \n主要方法：提出DecomposeR框架，将研究计划表示为有向无环图，分两阶段训练规划与回答的强化学习。  \n关键贡献：通过结构化奖励实现细粒度规划优化，在长文本基准上提升5.1-8.0分。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30900",
+    "title": "BilliardPhys-Bench: Benchmarking Physical Reasoning and Visual Dynamics of Multimodal LLMs",
+    "authors": [
+      "Ben Wang, Xiaogang Li, Ruochen Gao, Peiyao Xiao, Chengliang Xu, Zeyu Wang, Zichao Chen, Bing Zhao, Hu Wei"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30900",
+    "summary": "研究问题：多模态大模型在物理直觉推理上的不足  \n主要方法：构建台球物理基准，测试碰撞、反弹和最终位置预测能力  \n关键贡献：发现“静止偏差”和场景复杂度导致性能下降",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30358",
+    "title": "QASM-Eval: A Dataset to Train and Evaluate LLMs on OpenQASM-3 Beyond Quantum Circuits",
+    "authors": [
+      "Zhenxiao Fu, Lei Jiang, Fan Chen"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30358",
+    "summary": "研究问题：缺乏针对OpenQASM-3硬件特性训练和评估LLM的数据集。  \n主要方法：构建包含100个专家验证测试任务和4000个训练任务的QASM-Eval数据集。  \n关键贡献：首个覆盖经典逻辑、时序调度、脉冲控制等硬件层面特征的OpenQASM-3数据集。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30393",
+    "title": "NumLeak: Public Numeric Benchmarks as Latent Labels in Foundation Models",
+    "authors": [
+      "Anany Kotawala"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30393",
+    "summary": "研究问题：公开数值基准在预训练中导致模型记忆而非泛化。  \n主要方法：提出NumLeak框架，结合API边界探测与白盒因果LM验证。  \n关键贡献：揭示前沿模型高精度回忆金融、经济等数值，并发现拒绝-回忆不对称性及黑盒探测低估问题。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30637",
+    "title": "EHRBench: An Automated and Reliable EHR-based Benchmark for Clinical Decision Making with LLMs",
+    "authors": [
+      "Yuzhang Xie, Keqi Han, Yunpeng Xiao, Hejie Cui, Guanchen Wu, Ziyang Zhang, Kai Shu, Jiaying Lu, Xiao Hu, Carl Yang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30637",
+    "summary": "研究问题：评估LLM在真实临床决策中的可靠性  \n主要方法：构建EHR-LLM-KB自动化管道，将EHR轨迹转换为结构化基准  \n关键贡献：提出EHRBench，实现大规模、可靠的临床决策基准测试",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30512",
+    "title": "PhyDrawGen: Physically Grounded Diagram Generation from Natural Language",
+    "authors": [
+      "Nafiul Haque, Syed Nazmus Sakib, Shifat E Arman"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30512",
+    "summary": "研究问题：从自然语言生成符合物理定律的物理示意图。\n主要方法：神经符号管道，先提取场景图，再用确定性求解器生成几何图，最后通过视觉验证循环修正。\n关键贡献：提出PhyDrawGen，在力学、光学和电磁学基准上显著优于GPT-5等模型。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30680",
+    "title": "Healthcare Mechanisms from Policy-as-Code Search under Strategic Provider Response",
+    "authors": [
+      "Zihan Wang, Xiang Xu, Hongyuan Zha, Wenhao Li"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30680",
+    "summary": "研究问题：现有医疗AI基准无法评估策略性提供者响应下的机制均衡。\n主要方法：将医院机制设计转化为语言模型的程序合成，通过多智能体模拟器Medi-Sim执行规则程序并评分。\n关键贡献：发现利润压力下的编码上浮和低复杂度患者选择等经典现象，并合成可检查的混合目标程序消除编码上浮、减少拒绝率。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30381",
+    "title": "When LLMs Learn to Be Consistently Wrong: A Multi-Model Study of Linear Representations of Synthetic Deception",
+    "authors": [
+      "Vahideh Zolfaghari"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30381",
+    "summary": "研究问题：研究大模型通过直接优化错误答案学习合成欺骗的线性表征基础。  \n主要方法：对五种Transformer模型进行LoRA微调，训练线性探针检测隐藏状态中的欺骗信号。  \n关键贡献：发现线性探针在早期层即可高精度检测欺骗，支持线性表征假设，且跨域泛化损失极低。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30448",
+    "title": "Bounded Behavioral Indistinguishability for Black-Box LLM Distillation",
+    "authors": [
+      "Munawar Hasan"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30448",
+    "summary": "研究问题：黑盒LLM蒸馏中输出相似性无法保证行为不可区分性  \n主要方法：提出(ε,q,t,A)-行为不可区分性形式化定义，并通过5000提示探针套件进行对抗评估  \n关键贡献：证明LoRA蒸馏虽提升语义相似度，但无法消除行为差异，尤其在风格/格式、鲁棒性和领域技术提示中",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30621",
+    "title": "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents",
+    "authors": [
+      "Minhua Lin, Juncheng Wu, Zijun Wang, Zhan Shi, Yisi Sang, Bing He, Zewen Liu, Tianxin Wei, Zongyu Wu, Zhiwei Zhang, Dakuo Wang, Xiang Zhang, Benoit Dumoulin, Cihang Xie, Yuyin Zhou, Suhang Wang, Hanqing Lu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30621",
+    "summary": "研究问题：LLM智能体在自进化过程中，基础能力与“束更新”和“束收益”两种能力的关系。\n主要方法：分析不同能力层级模型在束更新和束收益上的表现差异。\n关键贡献：发现束更新能力与基础能力无关，而束收益能力与基础能力呈非单调关系。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30898",
+    "title": "UniScale: Adaptive Unified Inference Scaling via Online Joint Optimization of Model Routing and Test-Time Scaling",
+    "authors": [
+      "Kaiyu Huang, Xingyu Wang, Mingze Kong, Zhubo Shi, Yuqian Hou, Hong Xu, Zhongxiang Dai, Minchen Yu, Qingjiang Shi"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30898",
+    "summary": "研究问题：平衡大语言模型推理质量与计算成本的联合优化问题  \n主要方法：将模型路由与测试时缩放统一建模为上下文多臂老虎机，通过LinUCB在线学习推理策略  \n关键贡献：提出UniScale框架实现两种机制的在线联合优化，突破各自独立设计的性能天花板",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30385",
+    "title": "LLMs Without Deep Neural Networks: New Architecture, Benefits and Case Study",
+    "authors": [
+      "Vincent Granville"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30385",
+    "summary": "研究问题：验证深度神经网络替代方案在LLM中的有效性  \n主要方法：提出基于RBF网络的新模型，通过闭式解全局优化损失函数，无需迭代训练  \n关键贡献：消除繁琐训练步骤，提升可解释性和准确性，并发现与RBF网络机制一致",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30461",
+    "title": "Scalable Constrained Multi-Agent Reinforcement Learning via State Augmentation and Consensus for Separable Dynamics",
+    "authors": [
+      "Santiago Amaya-Corredor, Miguel Calvo-Fullana, Anders Jonsson"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30461",
+    "summary": "研究问题：多智能体在可分离动力学与全局资源约束下的协调问题  \n主要方法：结合状态增强策略学习与分布式对偶变量共识  \n关键贡献：证明轻量级邻居共识可实现全局约束满足，并给出约束违反的界",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30510",
+    "title": "A Novel Global Context-aware Deep Neural Network for Enhanced Brain Tumor Segmentation using Magnetic Resonance Images",
+    "authors": [
+      "Sourjya Mukherjee, Ananya Bhattacharjee, R. Murugan"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30510",
+    "summary": "研究问题：脑肿瘤分割的自动化方法  \n主要方法：提出GCSER-UNet，融合空间和通道注意力机制  \n关键贡献：在TCGA LGG和BraTS 2020数据集上取得领先Dice分数",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2605.30803",
+    "title": "PReMISE: Policy Rubrics as Measurement Specifications for LLM Judges",
+    "authors": [
+      "Swastik Roy, Rajkumar Pujari, Tharindu Kumarage, Charith Peris, Rahul Gupta, Anna Rumshisky, Pradeep Natarajan, Venkatesh Saligrama"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 01 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2605.30803",
+    "summary": "研究问题：LLM评委评分依赖模糊规则，导致评估不准确。  \n主要方法：提出PReMISE框架，基于偏好数据发现规则集，并从四维度审计规则。  \n关键贡献：PReMISE是唯一同时满足适用性、特异性和有效维度的规则源，修复操作提升评委准确率至68.6%。",
+    "language": "zh"
+  }
+]
