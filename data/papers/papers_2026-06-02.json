@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2606.00095",
+    "title": "Bridging the 2D-3D Gap: A Hierarchical Semantic-Geometric Map for Vision Language Navigation",
+    "authors": [
+      "Kailing Li, Tianwen Qian, Lijin Yang, Yuqian Fu, Jingyu Gong, Xiaoling Wang, Liang He"
+    ],
+    "abstract": "arXiv:2606.00095v1 Announce Type: new \nAbstract: Vision-Language Navigation (VLN) enables embodied agents to reach target locations in unseen environments by following language instructions. Despite recent progress with vision-language models (VLMs), a critical semantic-geometric gap remains: while VLMs excel at language and 2D visual understanding, they struggle with 3D spatial reasoning and fail to capture the causal dynamics between actions and spatial transitions, resulting in unreliable navigation, particularly in zero-shot settings. To bridge this gap, we propose a Hierarchical Semantic-Geometric Map (HSGM) that transforms 3D geometric information into a structured representation compatible with VLMs, effectively linking them to the physical world. Specifically, HSGM is represented as a multi-channel top-down map organized into three levels: (1) geometric level that records navigable regions and obstacles, (2) semantic level that represents objects and their relations, and (3) decision level that supports high-level task reasoning and goal selection. During navigation, the VLM acts as a high-level semantic planner, interpreting the spatial layout encoded in the HSGM to select geometrically valid waypoints, while low-level, collision-free movements between waypoints are executed by a classical path-planning algorithm, fully decoupling semantic reasoning from action execution. Additionally, complex instructions are decomposed into subtasks to alleviate the problem of progress forgetting or hallucinating in long-horizon navigation. Extensive experiments on R2R-CE and RxR-CE benchmarks demonstrate that our zero-shot framework achieves state-of-the-art performance and even outperforms several supervised methods. Code is available at https://github.com/Teacher-Tom/HSGM_public.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00095",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00095"
+      }
+    ],
+    "relevance_score": 0.5102047245104828,
+    "max_similarity": 0.2557600892682176
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00135",
+    "title": "On Effectiveness and Efficiency of Agentic Tool-calling and RL Training",
+    "authors": [
+      "Tong Liu, Cheng Qian, Matej Cief, Yuan He, Daniele Dan, Nikolaos Aletras, Gabriella Kazai"
+    ],
+    "abstract": "arXiv:2606.00135v1 Announce Type: new \nAbstract: Tool-calling is a central component of modern large language model (LLM) agents, equipping them with skills beyond their parametric knowledge. This paper studies tool-calling along two complementary axes: effectiveness, i.e., how this capability is measured, and efficiency, i.e., how it is learned. On effectiveness, we systematically analyze tool-calling evaluation pipelines and show that results can be highly sensitive to seemingly minor, often undocumented implementation choices including the random seed, system prompt, multi-turn template construction, and how prior interaction/reasoning history is carried forward. These choices can lead to substantial differences in reported performance, especially in multi-turn settings where without rigorous standardization, leaderboard rankings are unreliable. On efficiency, we examine standard reinforcement learning (RL) for tool-calling and identify two sources of computational waste: (i) during rollouts, many prompts produce no learning signal, and (ii) during policy updates, optimization incurs high computational cost. Guided by these findings, we introduce two techniques that accelerate RL-based tool-calling training, achieving substantial wall-clock speedup without degrading performance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00135",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00135"
+      }
+    ],
+    "relevance_score": 0.4799081356366667,
+    "max_similarity": 0.22034632340822943
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00105",
+    "title": "Visual-Noise Guided In-Context Distillation for Multimodal Large Language Model Unlearning",
+    "authors": [
+      "Junkai Chen, Yuhao He, Junxiang You, Ruiqi Liu, Chenyu Wang, Shu Wu"
+    ],
+    "abstract": "arXiv:2606.00105v1 Announce Type: new \nAbstract: Multimodal Large Language Models (MLLMs) have achieved remarkable progress on vision-language tasks, but they may also memorize and expose sensitive or restricted knowledge, raising concerns about privacy and broader safety risks. Machine Unlearning (MU) provides a promising way to remove targeted undesirable knowledge from trained models without retraining from scratch while preserving general model utility. Nevertheless, effective unlearning in MLLMs remains particularly challenging. Existing training-based methods often struggle to balance unlearning effectiveness and model utility. In contrast, training-free methods such as in-context unlearning preserve model utility by avoiding parameter updates, but they do not remove memorized knowledge at the parameter level and may remain vulnerable to reverse-engineering attacks. More importantly, in-context unlearning is insufficient in multimodal settings, where visual inputs can provide strong conditioning signals and induce undesirable outputs. To address these challenges, we propose Visual-Noise Guided In-Context Distillation (VGID), a distillation-based framework for MLLM unlearning. VGID dynamically constructs an unlearning-oriented teacher distribution from the frozen base model through dual-modal intervention that combines visual perturbation with textual in-context unlearning. The resulting intervention-induced distribution serves as a teacher signal for distillation, guiding the student model toward parameter-level unlearning without requiring external teacher models or explicit undesirable response annotations. Experimental results show that VGID achieves strong unlearning effectiveness while preserving competitive model utility, reducing forget set ROUGE-L by 0.371 with only a 0.055 drop in retain set ROUGE-L in a representative setting.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00105",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00105"
+      }
+    ],
+    "relevance_score": 0.4746269200563472,
+    "max_similarity": 0.21013617217560576
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00087",
+    "title": "Structured Visual Evidence Decomposition for Evidence-Grounded Multimodal Screening of Obstructive Sleep Apnea-Hypopnea Syndrome",
+    "authors": [
+      "Chen Zhan, Yingchen Wei, Xiaoyu Tan, Jingjing Huang, Xihe Qiu"
+    ],
+    "abstract": "arXiv:2606.00087v1 Announce Type: new \nAbstract: Effective pre-polysomnography screening for obstructive sleep apnea-hypopnea syndrome (OSAHS) requires combining clinical risk factors with visible craniofacial and neck cues. Directly prompting general-purpose multimodal foundation models for medical yes/no decisions can yield unstable, poorly calibrated outputs. We propose EviOSAHS, an evidence-grounded multimodal reasoning framework that separates image-only anatomical evidence acquisition from final clinical adjudication. Each frontal facial image is decomposed into seven fixed anatomical queries covering the neck, chin, mouth, face/neck fat, lower jaw, midface, and nose. Visual responses are converted into structured evidence cards recording target anatomy, visibility, risk direction, evidence strength, confidence, and a concise summary. These cards are combined with a cleaned clinical profile only in the final stage, where a large language model performs balanced binary screening adjudication. We evaluated EviOSAHS on a 642-subject cohort, mapping normal subjects to screening-negative and mild, moderate, or severe OSAHS subjects to screening-positive. EviOSAHS achieved 88.47% accuracy, 94.86% sensitivity, 93.74% F1-score, and a 5.14% false-negative rate, outperforming clinical-only prompting, direct multimodal prompting, and naive two-stage pipelines under a unified protocol. Ablations showed that seven-question visual decomposition and balanced final adjudication were critical to the high-sensitivity operating point. A question-level audit of 4,494 visual outputs showed a 100% structured parse rate and 93.88% high-visibility rate. EviOSAHS provides an auditable, high-sensitivity workflow for binary pre-polysomnography OSAHS screening, but should be viewed as a triage assistant rather than a diagnostic system. Prospective validation, external testing, and calibrated operating-point control are needed before clinical deployment.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00087",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00087"
+      }
+    ],
+    "relevance_score": 0.47281934436120676,
+    "max_similarity": 0.20961890725297122
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00240",
+    "title": "MindZero: Learning Online Mental Reasoning With Zero Annotations",
+    "authors": [
+      "Shunchi Zhang, Jin Lu, Chuanyang Jin, Yichao Zhou, Zhining Zhang, Tianmin Shu"
+    ],
+    "abstract": "arXiv:2606.00240v1 Announce Type: new \nAbstract: Effective real-world assistance requires AI agents with robust Theory of Mind (ToM): inferring human mental states from their behavior. Despite recent advances, several key challenges remain, including (1) online inference with robust uncertainty updates over multiple hypotheses; (2) efficient reasoning suitable for real-time assistance; and (3) the lack of ground-truth mental state annotations in real-world domains. We address these challenges by introducing MindZero, a self-supervised reinforcement learning framework that trains multimodal large language models (MLLMs) for efficient and robust online mental reasoning. During training, the model is rewarded for generating mental state hypotheses that maximize the likelihood of observed actions estimated by a planner, similar to model-based ToM reasoning. This method thus eliminates the need for explicit mental state annotations. After training, MindZero internalizes model-based reasoning into fast single-pass inference. We evaluate MindZero against baselines across challenging mental reasoning and AI assistance tasks in gridworld and household domains. We found that LLMs alone are insufficient; model-based methods improve accuracy but are slow, costly, and limited by backbone MLLM capacity. In contrast, MindZero enhances MLLMs' intrinsic ToM ability and significantly outperforms model-based methods in both accuracy and efficiency, showing that mental reasoning can be effectively learned as a self-supervised skill.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00240",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00240"
+      }
+    ],
+    "relevance_score": 0.4706726846724862,
+    "max_similarity": 0.20610154142581016
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00133",
+    "title": "World Models: A Comprehensive Survey of Architectures, Methodologies, Reasoning Paradigms, and Applications",
+    "authors": [
+      "Arif Hassan Zidan, Yi Pan, Hanqi Jiang, Ruiyu Yan, Wei Ruan, Zihao Wu, Lifeng Chen, Weihang You, Xinliang Li, Bowen Chen, Huawen Hu, Peilong Wang, Sizhuang Liu, Jing Zhang, Siyuan Li, Zhengliang Liu, Yu Bao, Lin Zhao, Lichao Sun, Dajiang Zhu, Xiang Li, Jinglei Lv, Quanzheng Li, Wei Liu, Tianming Liu, Wei Zhang"
+    ],
+    "abstract": "arXiv:2606.00133v1 Announce Type: new \nAbstract: World models, internal simulators that learn the structure and dynamics of an environment, have emerged as a central paradigm in the pursuit of artificial general intelligence, enabling agents to predict, plan, and reason within learned representations. Despite rapid progress across reinforcement learning, robotics, autonomous driving, and video generation, the field lacks a unified framework integrating its diverse architectural choices, training methods, reasoning mechanisms, and application settings. This survey addresses that gap with a multi-axis taxonomy organized along four dimensions: (i) architecture, encompassing representation format, dynamics formulation, input modality, learning paradigm, and downstream application; (ii) methodological family, including state-space and recurrent approaches, transformer-based models, diffusion-based generators, physics-informed networks, and language-augmented multimodal systems; (iii) reasoning strategy, covering imagination-based planning, latent policy learning, counterfactual reasoning, and planning under uncertainty; and (iv) application domain, spanning robotics, autonomous driving, video prediction, multimodal agents, reinforcement learning, scientific modeling, medical imaging, educational measurement, and business and finance. Tracing the field from early cognitive-science foundations to milestone systems such as PlaNet, the Dreamer family, MuZero, Sora, Cosmos, and Genie, we examine how these dimensions interact and highlight the recent convergence of chain-of-thought reasoning with world-model imagination. We review evaluation protocols and benchmarks, identify persistent challenges such as compounding prediction errors, sim-to-real transfer, and fragmented evaluation, and outline future directions toward unified multimodal world models, foundation-scale interactive simulators, and safe deployment in safety-critical domains.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00133",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00133"
+      }
+    ],
+    "relevance_score": 0.4699216803735463,
+    "max_similarity": 0.20432051297209636
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00101",
+    "title": "CoCoVideo: The High-Quality Commercial-Model-Based Contrastive Benchmark for AI-Generated Video Detection",
+    "authors": [
+      "Huidong Feng, Wentao Chen, Jie Chen, Xinqi Cai, Ruolong Ma, Yinglin Zheng, Yuxin Lin, Ming Zeng"
+    ],
+    "abstract": "arXiv:2606.00101v1 Announce Type: new \nAbstract: With the rapid advancement of artificial intelligence generated content (AIGC) technologies, video forgery has become increasingly prevalent, posing new challenges to public discourse and societal security. Despite remarkable progress in existing deepfake detection methods, AIGC forgery detection remains challenging, as existing datasets mainly rely on open-source video generation models with quality far below that of commercial AIGC systems. Even datasets containing a few commercial samples often retain visible watermarks, compromising authenticity and hindering model generalization to high-fidelity AIGC videos. To address these issues, we introduce CoCoVideo-26K, a contrastive, commercial-model-based AIGC video dataset covering 13 mainstream commercial generators and providing semantically aligned real-fake video pairs. This dataset enables deeper exploration of the differences between authentic and high-quality synthetic videos and establishes a new benchmark for highly realistic video forgery detection. Building on this dataset, we propose CoCoDetect, a detection framework integrating contrastive learning with confidence-gated multimodal large language model (MLLM) inference. An R3D-18 backbone extracts spatio-temporal representations, while a confidence gate routes uncertain cases to an MLLM for reasoning about physical plausibility and scene consistency. Extensive experiments on CoCoVideo-26K and public benchmarks demonstrate state-of-the-art performance, validating the framework's robustness and generalizability. Our code and dataset are available at https://github.com/DonoToT/CoCoVideo.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00101",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00101"
+      }
+    ],
+    "relevance_score": 0.45919547714276365,
+    "max_similarity": 0.19141482572419136
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00083",
+    "title": "From Demonstrations to Rewards: Test-Time Prompt Optimization for VLM Reward Models",
+    "authors": [
+      "Christian Gumbsch, Leonardo Barcellona, Lennard Sch\\\"unemann, Platon Karageorgis, Andrii Zadaianchuk, Zehao Wang, Sergey Zakharov, Fabien Despinoy, Rahaf Aljundi, Efstratios Gavves"
+    ],
+    "abstract": "arXiv:2606.00083v1 Announce Type: new \nAbstract: Reinforcement learning relies on accurate reward functions, which are often hand-crafted or even unavailable in real-world applications, such as robotics. Recent work has explored the zero-shot reasoning capabilities of pre-trained Vision-Language Models (VLMs) as reward models. However, without careful prompt engineering, these approaches tend to produce suboptimal rewards, where false positive predictions can severely degrade downstream policy learning. In robotics, limited datasets comprising expert demonstrations are often collected to bootstrap policy learning. This scenario provides an opportunity to optimize a reward model prior policy training. We propose Demo2Reward a test-time adaptation technique to optimize the language instruction of a reward model based on a few demonstrations (3-10 trajectories) to reduce false positives while preserving true positives. Crucially, this requires no additional model training or computation resources during policy learning. We show that Demo2Reward consistently outperforms existing zero- and few-shot VLM reward models across a range of simulated robotic tasks and policy backbones. Finally, we demonstrate that Demo2Reward effectively transfers to a real-world robotic learning scenario, enabling policy learning without manually engineering a reward function.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00083",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00083"
+      }
+    ],
+    "relevance_score": 0.45208396602306766,
+    "max_similarity": 0.184273533274452
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00080",
+    "title": "Planktonzilla: Multimodal dataset and models for understanding plankton ecosystems",
+    "authors": [
+      "Alan Gerson Contreras Montanares, Luis Valenzuela, Luis Mart\\'i, Nayat Sanchez-Pi"
+    ],
+    "abstract": "arXiv:2606.00080v1 Announce Type: new \nAbstract: Marine plankton underpin aquatic food webs and play a key role in global CO2 sequestration, making reliable species identification critical for understanding ocean health and climate feedbacks. Existing classification models perform well on individual collections but fail to generalize across instruments and environments due to isolated training datasets and inconsistent labels. To address this, we introduce Planktonzilla-17M, a unified dataset consolidating publicly available plankton image collections spanning thirteen imaging systems. It comprises 17.4 million images with standardized taxonomy and geo-environmental metadata, including 3.74 million plankton images spanning over 602 taxonomic classes, of which 201 are identified at the species level, making it the largest and most comprehensive plankton image dataset to date. Using this large-scale dataset, we perform a controlled comparison between supervised and CLIP-style image--text training on a shared ViT backbone. We find that a supervised classifier matches or exceeds CLIP-style training when trained using taxonomic lineage as text. We further observe that BioCLIP and BioCLIP2 perform poorly on plankton in zero-shot and few-shot settings. Leveraging Planktonzilla-17M improves plankton classification performance, highlighting the limitations of current biological foundation models in marine imaging domains.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00080",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00080"
+      }
+    ],
+    "relevance_score": 0.44669029186904274,
+    "max_similarity": 0.23921060845090467
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00129",
+    "title": "A Shared Valence Axis Across Modern LLMs and Human EEG: The Saturation Regularity",
+    "authors": [
+      "Yousef A. Radwan, Xuhui Liu, Kilichbek Haydarov, Yuqian Fu, Mohamed Elhoseiny"
+    ],
+    "abstract": "arXiv:2606.00129v1 Announce Type: new \nAbstract: Large language models (LLMs) have emerged as powerful representation learners whose internal features increasingly align with human cognition. We study whether modern LLMs can serve as a lens for understanding neural representations in the human brain, focusing on emotional valence in EEG.\n  We first build a one-dimensional valence direction, the V-axis, from modern LLMs using only nine emotion-evocative sentences. We validate it through zero-shot transfer to sentiment benchmarks and cross-model consistency across fourteen LLMs. We then show that this LLM-derived direction maps onto human neural activity. On a public EEG cohort of 123 subjects watching affective videos, a single linear projection on EEG features tracks the V-axis position of each stimulus. Moreover, 36 EEG emotion classifiers trained without exposure to the V-axis spontaneously rediscover the same direction in their internal representations, suggesting that the same valence structure emerges in both language models and human electrophysiology.\n  Yet this convergence does not provide an effective training signal. We test twenty-five alignment strategies, including knowledge distillation, representational similarity, contrastive, and topographic losses; none improve decoding, and sixteen significantly reduce accuracy. We formalize this result as the saturation regularity: once task labels alone drive a brain-decoding network onto the target direction, additional supervision mainly distorts an already-saturated basin, while the load-bearing within-class residual receives little useful gradient.\n  This regularity also indicates where improvement should come from: the residual subspace unreachable by supervision. Motivated by this insight, we ensemble across residual diversity rather than supervising the basin, improving balanced accuracy by 10.5% over the prior best on FACED, with the same effect replicated on SEED-V.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00129",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00129"
+      }
+    ],
+    "relevance_score": 0.4300514465017635,
+    "max_similarity": 0.15747593611420885
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00079",
+    "title": "BitsMoE: Efficient Spectral Energy-Guided Bit Allocation for MoE LLM Quantization",
+    "authors": [
+      "Jiayu Zhao, Zihan Teng, Minhao Fan, Tianrui Ma, Wentao Ren, Song Chen, Weichen Liu"
+    ],
+    "abstract": "arXiv:2606.00079v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) large language models reduce per-token computation through sparse expert activation, but their deployment remains memory-intensive because all expert weights must be kept resident in memory. Existing MoE compression methods struggle in the ultra-low-bit regime: pruning irreversibly removes model capacity, while coarse-grained quantization fails to allocate bits according to heterogeneous expert and weight-direction importance. We propose BitsMoE, a spectral-energy-guided bit-allocation framework for MoE LLM quantization. BitsMoE decomposes each MoE layer by SVD into a shared basis and expert-specific spectral factors, retaining the shared basis without quantization to preserve common cross-expert structure and using the expert-specific factors as fine-grained quantization units. To determine the bit-width of each unit, BitsMoE formulates spectrum-wise mixed-precision quantization as an activation-aware reconstruction surrogate and solves an integer linear program that minimizes estimated reconstruction loss under a fixed bit budget. Experiments across multiple MoE LLMs show that BitsMoE substantially reduces downstream task accuracy degradation in ultra-low-bit regimes. Under 2-bit quantization on Qwen3-30B-A3B-Base, BitsMoE accelerates quantization by 12.3$\\times$, improves average accuracy by 27.83 percentage points, and increases decoding speed by 1.76$\\times$ over GPTQ. Our model and code are publicly available at https://github.com/zjiayu064/BitsMoE.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00079",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00079"
+      }
+    ],
+    "relevance_score": 0.4286729556983656,
+    "max_similarity": 0.1565016853113962
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00017",
+    "title": "MindGames Arena Generalization Track: In2AI Solution with Delayed Per-Step Reward Attribution",
+    "authors": [
+      "Aliaksei Korshuk, Alexander Buyantuev, Ilya Makarov"
+    ],
+    "abstract": "arXiv:2606.00017v1 Announce Type: new \nAbstract: Training language model agents for multi-agent strategic interaction presents a core difficulty: the quality of any action may depend on future events that never materialize, on moves that violate game rules, or on decisions made by other players. Standard reinforcement learning assumes that rewards can be assigned at each step, but this assumption fails in settings where outcomes are entangled across time and agents. We introduce delayed per-step reward attribution with eligibility gating, an episode lifecycle and postprocessing pipeline that computes rewards only at episode end, propagates them back to originating steps according to task-specific semantics, and excludes steps that lack valid dependent information from training. Together with asynchronous rollout generation via vLLM's continuous batching, curriculum-based opponent sampling, and multi-level stratified batch construction, this approach enables stable, sample-efficient RL training in multi-agent environments. We evaluate on the MindGames Arena benchmark at NeurIPS 2025, where a single 8-billion-parameter open-source model trained with our method matched or surpassed substantially larger proprietary systems, including GPT-5, in head-to-head play and took first place in both the Open (unrestricted) and Efficient (<=8B parameters) tracks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00017",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00017"
+      }
+    ],
+    "relevance_score": 0.4238407185429752,
+    "max_similarity": 0.14920589975477247
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00138",
+    "title": "A Multi-AI-agent Framework Enabling End-to-end Finite Element Analysis for Solid Mechanics Problems",
+    "authors": [
+      "Titu Ranjan Sarker, Muhammed Jawaad Zulqernine, Ling Yue, Shaowu Pan, Chenxi Wang, Shiyao Lin"
+    ],
+    "abstract": "arXiv:2606.00138v1 Announce Type: new \nAbstract: Finite element analysis (FEA) is the most important numerical approach for solid mechanics. Challenges of FEA include a steep learning curve for entry-level users and potential false simulations due to incorrect definitions of key simulation components, such as boundary conditions, load cases, and solution variables. Years of engineering experience are usually necessary for real-world problem-solving. To address these issues, we present AbaqusAgent, a multi-agent framework grounded in large language models (LLMs) for solid mechanics analyses. AbaqusAgent is developed to facilitate analysis case generation and execution using Abaqus, one of the most widely used FEA packages, by turning users' natural-language instructions into executed FEA analyses and result visualization. AbaqusAgent is composed of six agents, including interpreter, architect, input writer, runner, reviewer, and visualizer agents, encompassing all the essential pre-processing and post-processing steps of standard FEA analyses. A wide variety of 50 solid mechanics problems have been successfully validated, achieving an overall success rate of 86%. Beyond improving the efficiency of FEA for solid mechanics problems and lowering the barrier to computational mechanics education, AbaqusAgent advances the human-simulation interaction paradigm and enables integration with AI-empowered optimization and material characterization workflows. The code is available at https://github.com/LIRAM-LIN/AbaqusAgent",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00138",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00138"
+      }
+    ],
+    "relevance_score": 0.4220208128990817,
+    "max_similarity": 0.1475138504053488
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00272",
+    "title": "On Wednesdays, We Ask Questions: Optimizing \"Active Listening\" in Automated Legal Triage and Referral",
+    "authors": [
+      "Quinten Steenhuis, Jacqueline Harvey"
+    ],
+    "abstract": "arXiv:2606.00272v1 Announce Type: new \nAbstract: The FETCH classifier generates follow-up questions to help refine the best match for the applicant's legal problem, using a low-cost ensemble of LLMs. In this paper, we describe an expert attorney and LLM-assisted evaluation of the follow-up question approach in FETCH and show that while low-cost LLMs perform well at classification tasks, generating high-quality plain-language questions in this setting appears to require a more sophisticated and higher-cost model. Through discussion with legal intake workers, we propose a rubric for the evaluation of legal intake classification questions, and we find that prompt engineering alone is not enough to improve question quality for intake purposes. We also find that LLM-as-judge and human ratings diverge. We demonstrate that with the addition of a single high-cost model, GPT-5, the classifier can elicit relevant information from applicants for legal help, and that the questions lead to more accurate performance at classification tasks. We also find uneven fact elicitation across different categories, including domestic violence, at odds with family law screening protocols, suggesting the value of including dedicated screening panels for certain areas of law.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00272",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00272"
+      }
+    ],
+    "relevance_score": 0.4125607815064854,
+    "max_similarity": 0.136199935756704
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00172",
+    "title": "CAST: Non-Privileged Clipped Asymmetric Self-Teaching with Advantage Flipping for GRPO",
+    "authors": [
+      "Yang Li, Gongle Xue, Yijia Guo, Yuheng Yuan, Liwen Hu, Lei Ma"
+    ],
+    "abstract": "arXiv:2606.00172v1 Announce Type: new \nAbstract: Reinforcement learning with verifiable rewards (RLVR), especially Group Relative Policy Optimization (GRPO), has been widely used to improve reasoning in large language models. However, outcome-level rewards provide only sparse supervision, and group-relative advantages vanish when all sampled trajectories for a prompt are either correct or incorrect. On-Policy Self-Distillation (OPSD) offers dense token-level guidance, but its token preferences are not necessarily aligned with trajectory correctness; empirical diagnostics show that OPSD signals behave differently on correct and incorrect rollouts, with teacher-positive and teacher-negative gap signals exhibiting different noise profiles. These diagnostics are conducted under an OPSD-style privileged teacher context for analysis only, whereas CAST training uses answer-free self-teacher scoring.Motivated by these observations, this work proposes CAST, an answer-free self-distillation method for GRPO-style RLVR. CAST keeps the verifier-grounded GRPO objective, but uses a stop-gradient self-teacher to shape token-level advantages according to trajectory correctness. Unlike prior self-distilled RLVR methods, CAST does not require reference-solution-conditioned teacher scoring, keeps the self-teacher log-probability gap active throughout training, and applies bidirectional local advantage sign reversal: teacher-negative tokens in correct trajectories can receive negative token-level advantages, while teacher-positive tokens in incorrect trajectories can receive bounded positive local advantages. For zero-variance all-correct and all-wrong groups, CAST assigns bounded sign-constrained base advantages, so these otherwise zero-gradient groups can contribute verifier-signed token feedback. Experiments on mathematical reasoning show that CAST improves RLVR training while retaining a lightweight, verifier-grounded trajectory-level objective.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00172",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00172"
+      }
+    ],
+    "relevance_score": 0.4110624417270715,
+    "max_similarity": 0.13495813580910165
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00103",
+    "title": "Evaluating Interactive Reasoning in Large Language Models: A Hierarchical Benchmark with Executable Games",
+    "authors": [
+      "Mingyuan Fan, Weiguang Han, Daixin Wang, Cen Chen, Zhiqiang Zhang, Jun Zhou"
+    ],
+    "abstract": "arXiv:2606.00103v1 Announce Type: new \nAbstract: We introduce a multi-turn interactive framework for reasoning evaluation that treats reasoning as active evidence acquisition and belief updating. Wherein, LLMs receive only the task rules, must issue targeted queries to a hidden environment, integrate partial observations over time, and decide when to submit a final answer. Beyond standard success rate and interaction efficiency, we evaluate contextual robustness under controlled contextual perturbations, and metacognitive adaptation through counterfactual revision and necessity judgment. We instantiate the framework as a benchmark of 474 executable games, each evaluated under five fixed configuration search spaces corresponding to five difficulty levels, and evaluate a broad set of frontier LLMs. Results show that the benchmark is highly discriminative, exposing large differences not only in success rate but also in interaction efficiency. Moreover, we empirically show that contextual perturbations cause moderate but consistent declines, whereas counterfactual revision and necessity judgment lead to much larger drops.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00103",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00103"
+      }
+    ],
+    "relevance_score": 0.4083589370913003,
+    "max_similarity": 0.1305122995688685
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00140",
+    "title": "Geometric Erasure by Contrastive Velocity Matching in Rectified Flows",
+    "authors": [
+      "Jonas Henry Grebe, Tobias Braun, Anna Rohrbach, Marcus Rohrbach"
+    ],
+    "abstract": "arXiv:2606.00140v1 Announce Type: new \nAbstract: While the rapid adoption of multimodal generative models offers immense potential, it has also increased the risks of harmful content synthesis, deepfakes, and copyright infringements. To address these challenges, concept erasure has emerged as a prospective safeguard. However, as the field gradually transitions from U-Net-based diffusion models to Rectified Flow Transformers, erasure research has struggled to keep pace. In this work, we introduce GEM, a simple but highly effective erasure framework for Rectified Flow models. As part of our contribution, we establish a principled bridge between trajectory-based unlearning grounded in Generative Flow Networks and classic teacher-guided erasure: we translate trajectory-based signals into a teacher-guided flow-matching setup that unifies the strengths of both paradigms. Concretely, a teacher provides complementary attraction and repulsion signals that we combine into a single geometric guidance objective, yielding targeted suppression of unwanted concepts while preserving benign generation.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00140",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00140"
+      }
+    ],
+    "relevance_score": 0.37665320685976816,
+    "max_similarity": 0.09168188220744004
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00232",
+    "title": "TIGER: Traceable Inference with Graph-Based Evidence Routing for Mitigating Hallucinations in Multimodal Generation",
+    "authors": [
+      "Kaixiang Zhao, Tianrun Yu, Shawn Huang, Porter Jenkins, Yushun Dong, Amanda Hughes"
+    ],
+    "abstract": "arXiv:2606.00232v1 Announce Type: new \nAbstract: We study fact-level repair for multimodal generation, where a fluent output may contain specific facts that are not supported by the input. Existing inference-time repair methods often generate feedback by jointly conditioning on the input and the current output. This design has two limitations: hallucinated claims in the output can bias the model's interpretation of the input, and free-form feedback cannot be ranked or scheduled at the fact level. We present TIGER, an inference-time framework that redesigns feedback for localized repair. TIGER independently extracts an observation graph from the input and a claim graph from the current output, then assigns each claim a graph-conditioned risk score based on support and conflict. The model repairs selected high-risk claims while keeping the backbone frozen. We provide a convergence analysis showing that the expected total risk decreases geometrically to an explicit asymptotic bound under mild assumptions. Experiments across four cross-modal paths, including image-to-text, image+text-to-text, audio-to-text, and video-to-text, show that TIGER reduces unsupported content while preserving task quality. The gains hold across multiple backbones, and a CrisisFACTS case study suggests that the same repair mechanism can improve grounding in multi-source settings.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00232",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00232"
+      }
+    ],
+    "relevance_score": 0.37395062547003843,
+    "max_similarity": 0.1488162986172047
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00251",
+    "title": "Capability Self-Assessment: Teaching LLMs to Know Their Limits",
+    "authors": [
+      "Haoyan Yang, Reza Shirkavand, Yukai Jin, Jiawei Zhou, Shangqian Gao, Heng Huang"
+    ],
+    "abstract": "arXiv:2606.00251v1 Announce Type: new \nAbstract: The ability to recognize one's own limitations and decide whether to solve a problem or delegate is fundamental for reliable intelligent systems. Yet we show that modern large language models systematically lack this ability: across diverse model families and scales, they overestimate their competence and attempt queries they cannot solve. We refer to this ability as Capability Self-Assessment (CSA) and formulate it as a policy-learning problem, aiming to improve self-assessment while preserving the model's original capabilities. Our results show that reinforcement learning teaches CSA effectively, significantly outperforming supervised fine-tuning while preserving original capabilities. In contrast, supervised fine-tuning severely degrades the capabilities the model is meant to assess. Moreover, learned self-assessment behavior generalizes well out of distribution, suggesting that CSA is a transferable model trait. Finally, CSA is practically useful: it improves local-cloud decision making at inference time and provides a signal for targeted data selection during training.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00251",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00251"
+      }
+    ],
+    "relevance_score": 0.3738423205394016,
+    "max_similarity": 0.14959475558479074
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.00189",
+    "title": "Learning to Construct Practical Agentic Systems",
+    "authors": [
+      "Aditya Kumar, Zhihan Lei, Jerry Yan, Joshua W. Momo, Lauhitya Reddy, Rafael Enrique Cabrera Jimenez, Cassandra A. Cohen, Arthur Kajiyama, William W. Cohen"
+    ],
+    "abstract": "arXiv:2606.00189v1 Announce Type: new \nAbstract: Automated design and optimization of agentic LLM-based systems leads to sophisticated systems that substantially improve result quality over off-the-shelf agentic patterns. However, studies of fielded agentic systems show that production systems focus much more on issues such as simplicity, controllability, and predictability of inference costs. In this paper we propose principled approaches to designing and optimizing practical agentic systems. We describe an agent framework that enables designers to enforce modularity in agentic systems, by defining \"pseudo-tools\" that call LLMs recursively on a restricted context. Using this framework we hand-engineer agents for a diverse set of tasks, and show that relative to dynamically-planned workflows, hand-constructed fixed workflows are generally cheaper and more accurate. We then propose novel learning methods for the agentic components required by this framework, namely pseudo-tools and fixed workflows. These learning methods generally outperform hand-engineered agents. We also exploit the modularity of the framework to apply multi-objective optimization methods to jointly optimize cost and response quality and blend the results of multiple learning systems.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 02 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.00189",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.00189"
+      }
+    ],
+    "relevance_score": 0.26978691868081084,
+    "max_similarity": 0.14540096804215927
+  }
+]
