@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2606.09861",
+    "title": "Time Series as Language: A Universal Tokenizer for General-Purpose Time Series Foundation Models",
+    "authors": [
+      "Yunhao Zhang, Ruiying Qi, Jiale Zheng, Jianfeng Zhang, Lujia Pan, Junchi Yan"
+    ],
+    "abstract": "arXiv:2606.09861v1 Announce Type: new \nAbstract: While Next-Token Prediction (NTP) has unified LLM pretraining, its adaptation to unbounded, continuous time series (TS) remains open. To bridge the gap, we introduce UniTok, a universal tokenizer that transforms TS into discrete tokens, and UniTok-FM, a foundation model pretrained via NTP on these tokens. UniTok-FM is a general-purpose foundation model that supports zero-shot and prompt-boosted forecasting, as well as few-shot generation and classification via training-free in-context inference--a capability not achieved by prior works. Technically, UniTok is a vector-quantized autoencoder incorporating prefix normalization for scale stabilization, a progressive-resolution causal architecture for encoding and decoding, and a structure-preserving reconstruction loss for training. UniTok-FM adopts an off-the-shelf LLM architecture without TS-specific modifications. Instead of pretraining on isolated TS, it performs NTP on context windows formed by multiple series with similar patterns, aiming to capture their shared dynamics. Experiments on forecasting, generation, and classification show that a single unified UniTok-FM consistently outperforms statistical and supervised baselines, achieves competitive performance with task-specific foundation models, and uniquely enables training-free in-context inference across tasks.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09861",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09861"
+      }
+    ],
+    "relevance_score": 0.49016194968493476,
+    "max_similarity": 0.23190516942540249
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.09853",
+    "title": "SynIB: Informational Bottleneck for Maximizing Synergy in Multimodal Learning",
+    "authors": [
+      "Konstantinos Kontras, Teodora Gagaleska, Thomas Strypsteen, Christos Chatzichristos, Matthew Blaschko, Maarten De Vos, Paul Pu Liang"
+    ],
+    "abstract": "arXiv:2606.09853v1 Announce Type: new \nAbstract: A central objective in multimodal learning is to capture synergy: task-relevant information that arises only from the joint use of multiple modalities, and is not available from any single modality alone. While most approaches operate at the architectural level through larger or more complex fusion models, we propose a complementary axis: shaping the training objective itself. Standard training often emphasizes unimodal or redundant information, falling short on examples that require cross-modal reasoning. We formalize multimodal synergy through information theory and introduce the Synergistic Information Bottleneck (SynIB), a scalable objective that targets synergy directly. To prioritize learning synergy, SynIB motivates the model to predict accurately from all modalities while penalizing confidence when information from any modality is withheld. Alongside the standard task loss, the model runs forward passes with one modality masked at a time and is penalized for remaining confident, which would indicate reliance on unimodal cues rather than cross-modal interactions. We validate SynIB in two regimes. On synthetic XOR tasks where the ground-truth synergy is known by construction, standard training fails to recover it while SynIB does. On five real-world benchmarks, including three MultiBench affective tasks, Hateful Memes with CLIP-ViT and DeBERTa backbones, and a controllable irony extension of CREMA-D we introduce, SynIB improves accuracy on synergy-dependent examples by up to 7.8% and overall accuracy by up to 3.8%.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09853",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09853"
+      }
+    ],
+    "relevance_score": 0.48194367734478305,
+    "max_similarity": 0.22033226389907723
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10209",
+    "title": "Less Context, Better Agents: Efficient Context Engineering for Long-Horizon Tool-Using LLM Agents",
+    "authors": [
+      "Abhilasha Lodha, Mahsa Pahlavikhah Varnosfaderani, Abir Chakraborty, Abhinav Mithal"
+    ],
+    "abstract": "arXiv:2606.10209v1 Announce Type: new \nAbstract: Large language models deployed as autonomous agents for enterprise workflows face a key challenge: verbose tool responses from enterprise systems can cause context overflow, stale-state errors, and high inference cost. We study this problem in automated expense itemization in Microsoft Dynamics 365 Finance and Operations using Model Context Protocol tools. We evaluate four GPT-5 configurations on a 50-task hotel expense benchmark: no user model, full conversation history, context pruned to the last 5 tool call/response pairs, and pruning with automated summarization. Results are averaged across 5 independent runs, with the user model held constant for the context-engineering comparison. The no-user-model baseline achieves only 8.0% complete itemization. Full-context retention improves completion to 71.0%, but consumes 1,480,996 tokens and 14.56 hours per benchmark. Pruning to the last 5 tool calls improves completion to 79.0% while reducing token use to 535,274 and runtime to 5.39 hours. Adding summarization achieves the best result: 91.6% complete itemization and 99.64% average amount itemized, with 553,374 tokens and 5.79 hours. We further report confidence intervals, effect-size analysis, sensitivity over pruning and summary windows, failure analysis, results across five expense types grouped into three categories, and cross-model evidence with Claude Sonnet 4.5. These results show that, for this class of enterprise tool-use workflow, selective retention of recent tool interactions plus compact summarization can improve both reliability and efficiency compared with full-history retention.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10209",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10209"
+      }
+    ],
+    "relevance_score": 0.47575707395748335,
+    "max_similarity": 0.2150977031591624
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10314",
+    "title": "Mobility Anomaly Generation using LLM-Driven Behavior with Kinematic Constraints",
+    "authors": [
+      "Yueyang Liu, Joon-Seok Kim, Andreas Z\\\"ufle"
+    ],
+    "abstract": "arXiv:2606.10314v1 Announce Type: new \nAbstract: Although the study of human trajectory anomalies is critical for advancing spatial data mining, empirical research remains severely hindered by a pervasive lack of ground-truth datasets. Despite the availability of several real-world and simulated human trajectory collections, these datasets exclusively capture normal mobility patterns and lack annotated anomalies. This specific scarcity is fundamentally driven by the inherent statistical rarity of anomalous events, precluding the feasibility of conventional observational methods. Compounding this challenge, the systematic acquisition of large-scale mobility data is strictly bottlenecked by prohibitive costs and stringent privacy regulations. To overcome these fundamental limitations and establish a reliable human trajectory anomalies dataset with annotated ground truth, we introduce a novel, end-to-end generative framework designed to synthesize realistic trajectory anomalies at scale. Our architecture bridges the gap between purely synthetic mobility data and complex real-world physical constraints by operating directly on baseline simulated trajectories. We employ Large Language Model (LLM) agents to systematically inject semantically meaningful behavioral anomalies such as irregular out-of-distribution check-ins and skipped routine visits. To ensure rigorous spatial validity, the system leverages map-constrained routing reconstruction to recalculate the physical transitions between these LLM agent-modified staypoints. Moreover, to narrow the simulation-to-reality gap, we augment the resulting trajectories with a context-aware spatial noise model, parameterized by environmental and location-specific variables, to accurately emulate heterogeneous GPS sensor degradation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10314",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10314"
+      }
+    ],
+    "relevance_score": 0.467287799078185,
+    "max_similarity": 0.203840696615006
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10334",
+    "title": "Self-Distillation Policy Optimization via Visual Feedback: Bridging Code and Visual Artifacts",
+    "authors": [
+      "Haoyu Dong"
+    ],
+    "abstract": "arXiv:2606.10334v1 Announce Type: new \nAbstract: Code-generating large language models (LLMs) increasingly produce visual artifacts such as charts, web pages, and slides by writing programs that are executed by non-differentiable renderers, committing to code before observing the render. As a result, otherwise executable code often yields artifacts with visually salient defects, including overlapping elements, clipped text, broken alignment, low contrast, and overflow. We study visual-feedback self-distillation for code-generated visual artifacts. We propose Visual-SDPO, a self-distillation policy-optimization framework that treats rendered visual feedback as privileged context for a weight-sharing teacher and distills this feedback into a coding student. To make supervision spatially targeted rather than uniform, we introduce Visual-Grounded Code Credit Weighting, which traces each detected defect back to the code statements responsible for the affected elements and amplifies the distillation signal on those statements. A sequence-level GRPO (Group Relative Policy Optimization) term complements the dense token-level objective by rewarding executable, visually high-quality rollouts, while failed executions remain learnable through the self-distillation path by passing execution errors as privileged context to the teacher. We instantiate Visual-SDPO for chart, web/UI, and slide generation with a unified Qwen3-VL-8B-Instruct backbone. Across chart-to-code, UI-to-code, and slide-generation benchmarks (ChartMimic, Design2Code, and AeSlides), Visual-SDPO improves over the zero-shot base by more than 10 absolute points in the primary metric and over GRPO by at least 2.4 points, with fewer training steps and no added inference-time cost.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10334",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10334"
+      }
+    ],
+    "relevance_score": 0.45941608773608633,
+    "max_similarity": 0.19304203883207044
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10147",
+    "title": "From Senses to Decisions: The Information Flow of Auditory and Visual Perception in Multimodal LLMs",
+    "authors": [
+      "Wish Suharitdamrong, Muhammad Awais, Xiatian Zhu, Sara Atito"
+    ],
+    "abstract": "arXiv:2606.10147v1 Announce Type: new \nAbstract: Multimodal Large Language Models (MLLMs) can listen and see, but how do audio and visual signals actually travel through the network to shape an answer? Despite their growing role in research and real-world applications, the internal pathways through which audio and visual tokens influence the final prediction remain poorly understood. In this study, we examine audio-visual information flow inside Audio-Visual Large Language Models (AVLLMs), tracing how AVLLMs route, utilize, and integrate audio and visual information across two input configurations, audio-visual video and multiple interleaved audio-visual items. We find that for audio-visual video, AVLLMs follow the sequential information flow pathway established for VLMs and VideoLLMs, with audio and visual contribution flowing along this pathway in proportion to the task's reliance on each modality. In settings with multiple interleaved audio-visual items, this routing shifts to different parallel streams. Furthermore, we demonstrate that audio-visual and other token types can be discarded once their information is transferred to LLM, with minimal impact on the model's prediction or even slight improvement, generalizing across multiple tasks and datasets, enabling more efficient inference. These findings hold across multiple models and scales, Qwen2.5-Omni and Video-SALMONN2 Plus at 3B and 7B scales, leading to hypotheses on why these flow structures emerge. Together, these results deliver the first coherent picture of how AVLLMs orchestrate sound and sight inside the network and lay the groundwork for the next wave of interpretability, design, and efficiency advances in audio-visual and broader MLLMs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10147",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10147"
+      }
+    ],
+    "relevance_score": 0.4533061820245108,
+    "max_similarity": 0.18548807956516888
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10346",
+    "title": "Reasoning or Memorization? Direction-Aware Diversity Exploration in LLM Reinforcement Learning",
+    "authors": [
+      "Jiangnan Xia, Yucheng Shi, Yu Yang, Kishan Panaganti, Zhenwen Liang, Ninghao Liu"
+    ],
+    "abstract": "arXiv:2606.10346v1 Announce Type: new \nAbstract: Reinforcement learning has become a key paradigm for eliciting reasoning abilities in large language models, where exploration is crucial for discovering effective solution trajectories. Existing exploration methods typically encourage diversity in semantic or gradient spaces, without distinguishing what drives this diversity. A trajectory may appear novel because it follows a new reasoning process, or because it varies memorized patterns and shortcuts. Rewarding both cases equally may steer exploration toward memorization rather than genuine reasoning improvement. In this paper, we propose DiRL, a Direction-Aware Reinforcement Learning framework that anchors exploration to an internal reasoning-memorization direction of the policy. Specifically, DiRL extracts this direction from model representations, constructs direction-weighted gradient features to characterize rollout updates, and shapes rewards to amplify reasoning-aligned exploration while suppressing memorization-aligned variations. DiRL integrates seamlessly into standard Group Relative Policy Optimization (GRPO). Extensive experiments on mathematical and general reasoning benchmarks demonstrate the effectiveness of DiRL, showing significant improvements over various existing exploration methods.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10346",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10346"
+      }
+    ],
+    "relevance_score": 0.4432655725021639,
+    "max_similarity": 0.17442791358719636
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.09873",
+    "title": "Rotate2Think: Geometric Priming via Orthogonal Rotation to Improve Language Model Reasoning",
+    "authors": [
+      "Aditya Sharma, Christopher J. Pal, Amal Zouaq"
+    ],
+    "abstract": "arXiv:2606.09873v1 Announce Type: new \nAbstract: Reasoning models achieve strong performance on challenging tasks by generating explicit intermediate reasoning traces before producing a final answer. Yet the internal structure of representation space when reasoning remains poorly understood: how do a model's hidden representations differ during thinking versus the embeddings of the input prompt, and can this structure be exploited to elicit stronger reasoning at inference time? We show that both input embeddings and thinking embeddings (mean-pooled last-layer hidden states over the prompt and reasoning trace, respectively) exhibit extremely high conicity, with all vectors clustering tightly around a single mean direction. Crucially, these mean input and thinking directions are non-collinear, with thinking embeddings occupying a geometrically distinct region of embedding space across many different models and benchmark tasks. This observation motivates casting the input-to-thinking transition as a rotation problem admitting a closed-form solution via orthogonal Procrustes analysis. We propose Rotate2Think, a training-free method that estimates this rotation from a small set of correctly solved examples and injects the resulting synthetic thinking vector between thinking delimiters at inference time, providing a geometric primer at the onset of the reasoning trace. Evaluated across multiple benchmarks and model families, Rotate2Think improves accuracy in 30 of 32 model-benchmark configurations across mathematics, science, and code tasks, and generalizes zero-shot to multimodal reasoning on MATH-Vision.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09873",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09873"
+      }
+    ],
+    "relevance_score": 0.44136045180674344,
+    "max_similarity": 0.17006197719225188
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10392",
+    "title": "Instruction Finetuning DeepSeek-R1-8B Model Using LoRA and NEFTune",
+    "authors": [
+      "Wu Yuerong, Mingni Luo"
+    ],
+    "abstract": "arXiv:2606.10392v1 Announce Type: new \nAbstract: Financial named-entity recognition (NER) is essential for translating unstructured financial reports and news into structured knowledge graphs. However, general-purpose large language models (LLMs) often misclassify financial entities or ignore domain-specific patterns. This paper investigates the use of DeepSeek-R1-8B, a recent open-source large language model, combined with Low-Rank Adaptation (LoRA) and Noisy Embedding Fine-Tuning (NEFTune) for financial NER. Each annotated sentence in our corpus of 1693 samples is converted into an instruction-input-output triple. We insert lightweight LoRA matrices into the Transformer layers and apply NEFTune to improve generalisation by adding uniform noise to embedding vectors during training. Experiments show that the LoRA-adapted DeepSeek-R1-8B achieves a micro-F1 of 0.901 on seven entity types (Company, Date, Location, Money, Person, Product and Quantity), and adding NEFTune further boosts the micro-F1 to 0.912, outperforming Llama3-8B, Qwen3-8B, Baichuan2-7B, T5 and BERT-Base baselines.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10392",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10392"
+      }
+    ],
+    "relevance_score": 0.432227766833244,
+    "max_similarity": 0.16034591302236262
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10286",
+    "title": "Sim2Schedule: A Simulator-Guided LLM Framework for Autonomous Open-Pit Mine Scheduling",
+    "authors": [
+      "Mustavi Ibne Masum, Thiago Eustaquio Alves de Oliveira, Mahzabeen Emu"
+    ],
+    "abstract": "arXiv:2606.10286v1 Announce Type: new \nAbstract: Open-pit mine scheduling is a critical process for maximizing economic return under complex geotechnical and operational constraints. While Mixed-Integer Linear Programming (MILP) provides mathematically optimal baselines, its exponential computational complexity and inability to adapt in real time limit its practical deployment in dynamic industrial environments. This work introduces a simulator-driven Large Language Model (LLM) scheduling framework in which the LLM acts as an autonomous decision-making agent, guided at each step by a custom simulator that encodes geotechnical precedence, extraction-processing coupling, and dynamic capacity constraints directly into the action generation mechanism. Operating entirely zero-shot within a closed, data-secure environment, the framework produces complete, interpretable extraction and processing schedules without cloud-based inference, domain-specific fine-tuning, or retraining. To provide a trustworthy performance benchmark, a novel MILP formulation is developed that incorporates realistic operational and geotechnical constraints. Evaluated across mining instances of varying scale and time periods, the LLM-based framework recovers between 94\\% and 99\\% of the MILP optimal NPV while scaling linearly in computation time. These results position simulator-constrained LLM agents as a practical and scalable alternative to classical optimization for long-horizon industrial scheduling under complex operational constraints.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10286",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10286"
+      }
+    ],
+    "relevance_score": 0.41857584703092043,
+    "max_similarity": 0.14342337106633116
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.09859",
+    "title": "Mitigating Manifold Departure: Uncertainty-Aware Subspace Rectification for Trustworthy MLLM Decoding",
+    "authors": [
+      "Yingxuan Zhuang, Jingxiao Yang, Miao Pan, Cheng Tan, Yuxiang Cai, Siwei Tan, Chen Zhi, Xuhong Zhang, Jianwei Yin, Jintao Chen"
+    ],
+    "abstract": "arXiv:2606.09859v1 Announce Type: new \nAbstract: MLLMs frequently hallucinate objects inconsistent with visual inputs. This issue is typically attributed to the over-reliance on language priors, which can override the visual context. Recent training-free decoding strategies address this by penalizing language priors. However, these methods overlook the dual nature of language priors, where they can be both helpful and harmful depending on the alignment with visual evidence. In particular, blindly suppressing language priors often disrupts the model's semantic manifold, leading to performance degradation, a phenomenon we term Manifold Departure. To address this, we propose Manifold-Guided Adaptive Projection (MGAP), a geometry-aware, training-free decoding method that mitigates hallucinations while preserving representation structure. MGAP first constructs a language-prior subspace from blind hidden states via SVD. During decoding, MGAP projects each multimodal hidden state onto this subspace and applies a consistency-aware gate to adaptively attenuate only the projected prior component, yielding a subspace-selective update that largely preserves the orthogonal semantic components. Extensive experiments on POPE and CHAIR show that MGAP outperforms prior decoding baselines, achieving stronger hallucination suppression without sacrificing coherence.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09859",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09859"
+      }
+    ],
+    "relevance_score": 0.4098736539231512,
+    "max_similarity": 0.13256586569183906
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10298",
+    "title": "From Context-Aware to Conflict-Aware: Generalizing Contrastive Decoding for Knowledge Conflict in LLMs",
+    "authors": [
+      "Runze Jiang, Taiqiang Wu, Yan Wang, Bingyu Zhu, Longtao Huang"
+    ],
+    "abstract": "arXiv:2606.10298v1 Announce Type: new \nAbstract: When large language models generate from retrieved or augmented contexts, conflicts between external context and parametric priors remain a central reliability bottleneck. Existing contrastive decoding methods follow a \\emph{context-aware} paradigm that unilaterally amplifies context over parametric priors, overwriting correct priors when the context is erroneous. We generalize this to the \\textbf{conflict-aware} paradigm that dynamically allocates authority between prior and context based on conflict signals, rather than presupposing context trustworthiness. We show that the affine combination of prior and context logits yields a \\textbf{power family} with an inherent \\textbf{regime asymmetry}: extrapolation amplifies errors unboundedly when the prior is correct, interpolation under-corrects when the context is correct, and no static regime covers both. Existing contrastive decoding methods are instances of this family, mostly extrapolative. To evaluate both conflict directions, we propose TriState-Bench, a model-aware evaluation protocol that calibrates per-model prior knowledge to measure three conflict states: correction, resistance, and agreement. To resolve the asymmetry, we propose Adaptive Regime Routing (ARR), which routes between regimes at each step, lifting resistance EM from below 6 to 16--33 without sacrificing correction or agreement. Our code is available at https://github.com/keith-Jiang/conflict-aware-decoding.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10298",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10298"
+      }
+    ],
+    "relevance_score": 0.40769869535207315,
+    "max_similarity": 0.12984777520786966
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.09863",
+    "title": "From Confident Closing to Silent Failure: Characterizing False Success in LLM Agents",
+    "authors": [
+      "Laksh Advani"
+    ],
+    "abstract": "arXiv:2606.09863v1 Announce Type: new \nAbstract: LLM agents can fail silently by asserting task completion when the environment state shows otherwise. We study this failure mode, false success, across two agent benchmarks: 9,876 tau2-bench trajectories from 8 model families and 1,879 AppWorld trajectories from 4 model families with text-independent ground truth. False success is common but varies by setting: 45--48% of failures in single-control tau2-bench domains, 3% in dual-control telecom, and 75.8% among AppWorld self-assessing coding-agent trajectories with explicit status claims. LLM judges fail reliably: no configuration across 5 judges, 5 prompt strategies, and full task specifications exceeds AUROC 0.65 on tau2-bench, and the same judges reach only 0.54 AUROC on AppWorld API-call traces. Judges rely on surface completion proxies -- confident closing language in tau2-bench and coarse action-sequence volume in AppWorld -- rather than verified state changes. Lightweight TF-IDF detectors achieve task-disjoint AUROC 0.83 on tau2-bench and 0.95 on AppWorld, recovering 4--8x more false successes than the best judge at the same flag rate with 3,300x lower latency. These results suggest that production monitoring should use lightweight, domain-calibrated detectors as triage signals rather than relying on LLM judges as the primary monitor for false success.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09863",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09863"
+      }
+    ],
+    "relevance_score": 0.40687241497641685,
+    "max_similarity": 0.13075295242018448
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10254",
+    "title": "RealMath-Eval: Why SOTA Judges Struggle with Real Human Reasoning",
+    "authors": [
+      "Yiteng Mao, Kenan Xu, Yijia Lyu, Wenhao Li, Jianlong Chen, Xiangfeng Wang"
+    ],
+    "abstract": "arXiv:2606.10254v1 Announce Type: new \nAbstract: While Large Language Models (LLMs) have achieved near-perfect performance in \\emph{solving} high-school mathematics, their ability to \\emph{evaluate} the diverse reasoning processes of real human students remains under-examined. To bridge this gap, we introduce \\textbf{RealMath-Eval}, a rigorously annotated benchmark of 224 real-world exam responses from high schools. Our initial evaluation reveals that even state-of-the-art LLM judges struggle significantly on this task, exhibiting a high Mean Squared Error ($\\sim$2.96) against expert human grading. To probe a plausible explanation, we contrast this performance with a control setting where the same judges evaluate synthetic LLM-generated solutions. We identify a stark ``Evaluation Gap'': judges are considerably more accurate and consistent on synthetic text (MSE $\\sim$1.17) but struggle to generalize to authentic student reasoning. Through semantic embedding analysis, we find that synthetic errors suffer from a ``structural collapse'' into predictable, low-dimensional linear subspaces, whereas human errors form a more diverse error space. Furthermore, generative probability probes suggest that human reasoning involves significantly higher information-theoretic surprisal, indicating that student reasoning transitions are more out-of-distribution for current models. Finally, we find that surface-level style transfer fails to close this gap. Our findings suggest that current LLM evaluation pipelines relying heavily on synthetic data may not adequately capture the diversity of authentic student mathematical reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10254",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10254"
+      }
+    ],
+    "relevance_score": 0.40624371416410987,
+    "max_similarity": 0.1270094929041715
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.09868",
+    "title": "SPACE: Source-free Proxy Anchor Concept Erasure for MLLMs",
+    "authors": [
+      "Zhijing Zhang, Jiaqi Ding, Qianshan Wei, Nan Zhou, Jiaqi Li, Yongliang Wu, Tongxin Zhu, Xiaolin Fang"
+    ],
+    "abstract": "arXiv:2606.09868v1 Announce Type: new \nAbstract: As Multimodal Large Language Models (MLLMs) face growing privacy risks and regulatory constraints, machine unlearning (MU) has emerged as a crucial solution for removing sensitive data while preserving model performance. However, existing MU methods typically rely on visual data of the target concepts, which is often unavailable due to strict data retention policies, thus creating a demand for source-free unlearning approaches that operate without access to the target data. In this work, we propose Source-free Proxy Anchor Concept Erasure (SPACE), the first source-free unlearning framework specialized for MLLMs. SPACE consists of two stages: (1) Text-Guided Proxy Anchor Selection (TPAS), which retrieves semantically aligned proxy anchors from the shared feature space. (2) Dual-Constraint Semantic Isolation (DCSI), which optimizes these anchors to indirectly erase target concepts. DCSI confines updates to the null space of retained knowledge, ensuring structural integrity. We theoretically prove that SPACE strictly bounds the perturbation on retained knowledge and maximizes feature spectral entropy, thereby maintaining the model's performance. Furthermore, extensive experiments across six datasets show that SPACE achieves performance comparable to that of state-of-the-art data-dependent methods, validating its effectiveness in source-free MU scenarios. The source code will be released.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09868",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09868"
+      }
+    ],
+    "relevance_score": 0.39870879907015533,
+    "max_similarity": 0.11763560340978135
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.09866",
+    "title": "Two to Tango: Coupled Task-Reference Selection for Safe LLM Fine-tuning",
+    "authors": [
+      "Xinrui Chen, Jianhao Zhang, Ou Wu, Di Gao"
+    ],
+    "abstract": "arXiv:2606.09866v1 Announce Type: new \nAbstract: Fine-tuning safety aligned large language models (LLMs) on downstream data improves adaptation but may erode learned safety behavior. Existing methods use fixed safety examples, global constraints, or one-sided task filtering. Our diagnostics show task updates expose different safety constraints, motivating joint selection of relevant references and compatible task samples. We propose DualSelect, a coupled framework for task and reference selection that refreshes task conditioned safety references before filtering whole task samples compatible with the induced reference direction. Under a minimax view, DualSelect selects safety references with high preservation loss and task conflict, together with compatible task samples, through entropy-regularized scoring surrogates, lazy reference refresh, and gradient correction. On 1B-8B LLMs, DualSelect preserves safety without losing task utility; using the REDORCA judge, it improves Safety Avg. over the strongest baseline by at least 5.10 points and remains highest in Safety Avg. across judges with moderate overhead. This view extends to retention focused continual learning.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09866",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09866"
+      }
+    ],
+    "relevance_score": 0.39739975786164167,
+    "max_similarity": 0.11758306902776114
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10359",
+    "title": "ReflectiChain: Epistemic Grounding in LLM-Driven World Models for Supply Chain Resilience",
+    "authors": [
+      "Jia Luo"
+    ],
+    "abstract": "arXiv:2606.10359v1 Announce Type: new \nAbstract: AI agents in supply chains face a fundamental epistemic gap: large language models (LLMs) interpret policies but lack physical grounding, while reinforcement learning (RL) optimizes flows but is semantically blind to unstructured constraints. We introduce REFLECTICHAIN, bridging this gap through a Generative Supply Chain World Model (SC-WM) - encoding heterogeneous supply networks into a 6-dim graph-latent space with physical conservation - and Double-Loop Learning that separates epistemic uncertainty (KL-trust-region-bounded policy adaptation) from aleatoric uncertainty (stochastic latent rollouts). On Semi-Sim, a 10-node semiconductor benchmark with SIR risk propagation, 6 perturbation types, and 10 policy constraint templates, REFLECTICHAIN improves Rationale Consistency Score by 33.0% (p < 0.0001, d = 2.78), maintains 82.3% operability under adversarial shocks, and exhibits anti-fragile behavior (+40.2% gain under moderate pressure). We identify three operational epistemic mechanisms - uncertainty separation, knowledge-boundary detection, and empirical Bayesian policy updating - and discuss five limitation categories.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10359",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10359"
+      }
+    ],
+    "relevance_score": 0.39577296205013285,
+    "max_similarity": 0.11488930651198209
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.09864",
+    "title": "Alignment Collapse Under KV Cache Quantization: Diagnosis and Mitigation",
+    "authors": [
+      "Bruce Changlong Xu, Adarsh Kumarappan, Mu Zhou"
+    ],
+    "abstract": "arXiv:2606.09864v1 Announce Type: new \nAbstract: Key-value (KV) cache quantization is widely used to reduce Large Language Model (LLM) inference memory, yet existing evaluations solely focus on measuring perplexity and accuracy without assessing the safety impact. In this study, we explore alignment preservation under KV cache quantization. Across eleven instruction-tuned models (3.8B-72B) and five benchmarks (1,894 prompts), we find that low-bit quantization can silently destroy safety alignment: Mistral-7B loses 15.2% of its refusals at only 1.03x perplexity, and no universal safe bit-width exists, with sharp model-specific phase transitions invisible to standard metrics. We identify that the root cause is geometric: safety features occupy a low-dimensional activation subspace 10^2-10^3x more vulnerable to quantization noise than the full representation space perplexity averages over. Inspired by this observation, we propose Per-Channel Reduction (PCR), a diagnostic that classifies each model into one of three mechanistic failure modes: outlier-crushes-safety, where safety lives in non-outlier channels collaterally damaged by outlier-driven scale factors; outlier-as-safety, where safety overlaps outlier channels and finer granularity cannot rescue it; and multi-layer dilution, where safety is distributed across many layers and per-layer fixes fail. PCR predicts the correct mitigation direction on all nine primary models and one held-out model from an independent family using 20 calibration prompts. PCR generalizes across unseen prompts, models, and production quantizers, including KIVI with up to 97.2% recovery, succeeding where attention-based allocation methods fail. The resulting training-free protocol, requiring approximately 35 GPU-minutes, recovers up to 97% of lost alignment at minimal memory overhead, addressing vulnerabilities confirmed in production vLLM serving with FP8 KV cache on NVIDIA GPUs.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09864",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09864"
+      }
+    ],
+    "relevance_score": 0.38330131520601296,
+    "max_similarity": 0.09942055759712647
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.10389",
+    "title": "Beyond Static Evaluation: Co-Evolutionary Mechanisms for LLM-Driven Strategy Evolution in Adversarial Games",
+    "authors": [
+      "Haoran Li, Zengle Ge, Ziyang Zhang, Xiaomin Yuan, Yui Lo, Qianhui Liu, Bocheng An, Dongke Rong, Jiaqun Liu, Annan Li, Jianmin Wu, Dawei Yin, Dou Shen"
+    ],
+    "abstract": "arXiv:2606.10389v1 Announce Type: new \nAbstract: Recent advances in LLM-driven code evolution have enabled automated discovery by iteratively generating and improving programs. However, applying these methods to adversarial multi-agent games introduces a fundamental challenge: the evaluation landscape shifts as strategies improve, causing fixed evaluators to become unreliable and evolution to stagnate. We propose three mechanisms to address this challenge: evaluator co-evolution, which incorporates discovered champions into the opponent pool; hierarchical deep evaluation, which replaces noisy few-game scores with statistically reliable assessments; and weakness pressure, which dynamically up-weights the most difficult opponents to break through plateaus. We implement these mechanisms within FAMOU, a framework built upon the same foundation-model code-evolution paradigm as OpenEvolve and ShinkaEvolve. On the MCTF 2026 3v3 maritime capture-the-flag task, FAMOU consistently outperforms both baselines under two backbone LLMs, achieving the highest combined score (0.526) and the best generalization to unseen opponents (61.7% win rate), while ablations confirm that each mechanism contributes to performance. Notably, the LLM mutation process generates tactical structures entirely absent from the seed strategies -- including lookahead search and adaptive interception -- demonstrating that code-level evolution can produce nontrivial algorithmic innovations in adversarial settings. The FAMOU-evolved strategy further achieved 1st place in the hardware round-robin and 3rd in simulation at the AAMAS 2026 MCTF Competition, validating its real-world transferability. The optimized implementation and corresponding evaluation codes developed through our evolutionary process are available at: https://github.com/1xiangliu1/FAMOU-CoEvo",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10389",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.10389"
+      }
+    ],
+    "relevance_score": 0.37510226771348687,
+    "max_similarity": 0.08965781461751089
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.09865",
+    "title": "LLM-as-a-Discriminator: When Synthetic Tables Still Look Real",
+    "authors": [
+      "Manel Slokom, Malek Slokom, Thierno Kante"
+    ],
+    "abstract": "arXiv:2606.09865v1 Announce Type: new \nAbstract: Privacy and data sharing are often in tension. Many organizations use synthetic data to reduce privacy risk and still share useful data. For tabular data, auditing privacy remains hard. In many cases, even humans cannot easily tell if a table is real or synthetic. In this paper, we propose a method based on LLM discrimination. We ask an LLM to classify each table sample as REAL or SYNTHETIC. We test two settings: C1 with table only, and C2 with table plus distributional metadata. We use LLaMA as an open model and Gemini as a reference model. In our experiments, we run three synthesis models, CTGAN, TVAE, and Gaussian Copula, on two public datasets, UCI Adult and ACS Census. We collect 451 valid trials. Our results show clear differences between models. On Adult, LLaMA reaches DRS=0% in reported cells, while Gemini reaches DRS=100% for CTGAN and TVAE. On Census, LLaMA predicts SYNTHETIC for most samples, while Gemini stays high in C1 but drops for CTGAN and TVAE in C2. We also compare with a classifier two-sample test (C2ST) and record linkage as distributional baselines, and with a human pilot of 2 annotators and 240 trials. Our results show that LLM discrimination is a practical privacy audit signal when model choice, per provider reporting, and data encoding are handled with care. For reproducibility, code and experiment scripts are available at https://github.com/SlokomManel/LLM-as-a-Discriminator.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09865",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.09865"
+      }
+    ],
+    "relevance_score": 0.3410040688922476,
+    "max_similarity": 0.10970791571226586
+  }
+]

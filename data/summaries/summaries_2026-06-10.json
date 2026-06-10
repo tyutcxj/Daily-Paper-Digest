@@ -1,0 +1,282 @@
+[
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09861",
+    "title": "Time Series as Language: A Universal Tokenizer for General-Purpose Time Series Foundation Models",
+    "authors": [
+      "Yunhao Zhang, Ruiying Qi, Jiale Zheng, Jianfeng Zhang, Lujia Pan, Junchi Yan"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09861",
+    "summary": "研究问题：如何将连续时间序列转化为离散token，实现通用时间序列基础模型的预训练。  \n主要方法：提出UniTok向量量化自编码器，含前缀归一化、渐进分辨率因果架构和结构保持损失；UniTok-FM采用标准LLM架构，在相似模式的多序列上下文窗口上进行下一token预测。  \n关键贡献：首个支持零样本预测、提示增强预测、少样本生成和分类的通用时间序列基础模型，性能优于统计和监督基线。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09853",
+    "title": "SynIB: Informational Bottleneck for Maximizing Synergy in Multimodal Learning",
+    "authors": [
+      "Konstantinos Kontras, Teodora Gagaleska, Thomas Strypsteen, Christos Chatzichristos, Matthew Blaschko, Maarten De Vos, Paul Pu Liang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09853",
+    "summary": "研究问题：多模态学习中如何最大化仅联合多模态才能获得的协同信息。  \n主要方法：提出SynIB目标，通过掩码单模态并惩罚高置信度，迫使模型依赖跨模态交互。  \n关键贡献：从信息论形式化协同，提供可扩展的训练目标，在合成XOR任务上验证有效性。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10209",
+    "title": "Less Context, Better Agents: Efficient Context Engineering for Long-Horizon Tool-Using LLM Agents",
+    "authors": [
+      "Abhilasha Lodha, Mahsa Pahlavikhah Varnosfaderani, Abir Chakraborty, Abhinav Mithal"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10209",
+    "summary": "研究问题：LLM代理在企业工作流中面临上下文溢出、状态错误和高推理成本问题。  \n主要方法：在费用明细任务中评估GPT-5四种配置：无用户模型、全历史、剪枝到最后5个工具调用、剪枝+自动摘要。  \n关键贡献：剪枝+摘要实现91.6%完成率，99.64%平均金额，大幅降低token和耗时。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10314",
+    "title": "Mobility Anomaly Generation using LLM-Driven Behavior with Kinematic Constraints",
+    "authors": [
+      "Yueyang Liu, Joon-Seok Kim, Andreas Z\\\"ufle"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10314",
+    "summary": "研究问题：人类轨迹异常研究缺乏真实标注数据集  \n主要方法：提出端到端生成框架，利用LLM代理在模拟轨迹上注入语义异常并考虑运动学约束  \n关键贡献：建立可靠的大规模合成轨迹异常数据集",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10334",
+    "title": "Self-Distillation Policy Optimization via Visual Feedback: Bridging Code and Visual Artifacts",
+    "authors": [
+      "Haoyu Dong"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10334",
+    "summary": "研究问题：代码生成大模型产生的视觉工件常有视觉缺陷（如重叠、裁剪）。  \n主要方法：提出Visual-SDPO框架，利用渲染视觉反馈作为特权上下文进行自蒸馏，并引入Visual-Grounded Code Credit Weighting放大缺陷相关代码的蒸馏信号。  \n关键贡献：结合序列级GRPO与密集token级目标，使失败执行也可通过自蒸馏路径学习。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10346",
+    "title": "Reasoning or Memorization? Direction-Aware Diversity Exploration in LLM Reinforcement Learning",
+    "authors": [
+      "Jiangnan Xia, Yucheng Shi, Yu Yang, Kishan Panaganti, Zhenwen Liang, Ninghao Liu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10346",
+    "summary": "研究问题：现有LLM强化学习探索方法无法区分真正推理与记忆模式，导致探索偏向记忆而非推理提升。  \n主要方法：提出DiRL框架，提取模型内部推理-记忆方向，构建方向加权梯度特征并调整奖励，以鼓励推理对齐的探索。  \n关键贡献：首次将探索方向锚定到推理-记忆方向，显著提升数学和通用推理基准性能。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09873",
+    "title": "Rotate2Think: Geometric Priming via Orthogonal Rotation to Improve Language Model Reasoning",
+    "authors": [
+      "Aditya Sharma, Christopher J. Pal, Amal Zouaq"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09873",
+    "summary": "研究问题：推理模型思考时隐藏表示与输入嵌入的几何差异及利用方法。  \n主要方法：Rotate2Think，通过正交Procrustes分析估计旋转，注入合成思考向量。  \n关键贡献：发现思考嵌入与输入嵌入方向不同，提出无需训练的几何启动方法提升推理。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10147",
+    "title": "From Senses to Decisions: The Information Flow of Auditory and Visual Perception in Multimodal LLMs",
+    "authors": [
+      "Wish Suharitdamrong, Muhammad Awais, Xiatian Zhu, Sara Atito"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10147",
+    "summary": "研究问题：音频和视觉信号在AVLLM中如何流动并影响最终预测。\n主要方法：分析AVLLM内部信息流，研究两种输入配置下的路由和整合方式。\n关键贡献：发现顺序流和并行流两种路由模式，并证明可丢弃已传递信息的token以提升效率。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10392",
+    "title": "Instruction Finetuning DeepSeek-R1-8B Model Using LoRA and NEFTune",
+    "authors": [
+      "Wu Yuerong, Mingni Luo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10392",
+    "summary": "研究问题：金融NER中通用LLM分类不准  \n主要方法：使用LoRA和NEFTune微调DeepSeek-R1-8B  \n关键贡献：micro-F1达0.912，超越多个基线模型",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09859",
+    "title": "Mitigating Manifold Departure: Uncertainty-Aware Subspace Rectification for Trustworthy MLLM Decoding",
+    "authors": [
+      "Yingxuan Zhuang, Jingxiao Yang, Miao Pan, Cheng Tan, Yuxiang Cai, Siwei Tan, Chen Zhi, Xuhong Zhang, Jianwei Yin, Jintao Chen"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09859",
+    "summary": "研究问题：MLLM解码中语言先验与视觉证据冲突导致幻觉  \n主要方法：提出Manifold-Guided Adaptive Projection (MGAP)，通过SVD构建语言先验子空间并自适应衰减投影分量  \n关键贡献：在抑制幻觉的同时保持语义流形结构，实现可信解码",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10286",
+    "title": "Sim2Schedule: A Simulator-Guided LLM Framework for Autonomous Open-Pit Mine Scheduling",
+    "authors": [
+      "Mustavi Ibne Masum, Thiago Eustaquio Alves de Oliveira, Mahzabeen Emu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10286",
+    "summary": "研究问题：露天矿调度中MILP计算复杂且无法实时适应。  \n主要方法：模拟器驱动的LLM框架，LLM作为自主决策代理，由模拟器指导生成调度。  \n关键贡献：零样本、封闭安全环境，无需微调，恢复94%-99%最优NPV，计算线性扩展。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10298",
+    "title": "From Context-Aware to Conflict-Aware: Generalizing Contrastive Decoding for Knowledge Conflict in LLMs",
+    "authors": [
+      "Runze Jiang, Taiqiang Wu, Yan Wang, Bingyu Zhu, Longtao Huang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10298",
+    "summary": "研究问题：LLM生成时外部上下文与参数先验的知识冲突可靠性瓶颈。  \n主要方法：提出冲突感知范式，通过自适应机制ARR动态分配先验与上下文的权威。  \n关键贡献：提出TriState-Bench评估协议和ARR方法，解决静态机制的不对称性。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09863",
+    "title": "From Confident Closing to Silent Failure: Characterizing False Success in LLM Agents",
+    "authors": [
+      "Laksh Advani"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09863",
+    "summary": "研究问题：LLM agent的虚假成功（false success）现象  \n主要方法：在tau2-bench和AppWorld基准上分析虚假成功频率，评估LLM judge检测能力，提出轻量级TF-IDF检测器  \n关键贡献：发现虚假成功普遍但LLM judge不可靠（AUROC≤0.65），TF-IDF检测器更优（AUROC 0.83-0.95），建议用轻量级检测器替代LLM judge",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09868",
+    "title": "SPACE: Source-free Proxy Anchor Concept Erasure for MLLMs",
+    "authors": [
+      "Zhijing Zhang, Jiaqi Ding, Qianshan Wei, Nan Zhou, Jiaqi Li, Yongliang Wu, Tongxin Zhu, Xiaolin Fang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09868",
+    "summary": "研究问题：多模态大模型在无目标数据下的机器遗忘问题。\n主要方法：提出SPACE框架，包括文本引导的代理锚点选择和双约束语义隔离。\n关键贡献：首个源无关遗忘框架，理论保证扰动有界且保持性能，实验效果可比现有方法。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09866",
+    "title": "Two to Tango: Coupled Task-Reference Selection for Safe LLM Fine-tuning",
+    "authors": [
+      "Xinrui Chen, Jianhao Zhang, Ou Wu, Di Gao"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09866",
+    "summary": "研究问题：微调安全对齐的大语言模型时，如何保持安全性而不损失任务效用。  \n主要方法：提出DualSelect框架，联合选择任务相关的安全参考和兼容的任务样本，通过熵正则化评分、懒惰参考刷新和梯度校正等机制。  \n关键贡献：在1B-8B模型上，安全评分提升至少5.10点，且保持任务效用。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10359",
+    "title": "ReflectiChain: Epistemic Grounding in LLM-Driven World Models for Supply Chain Resilience",
+    "authors": [
+      "Jia Luo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10359",
+    "summary": "研究问题：LLM驱动的供应链AI代理存在认知鸿沟（LLM缺乏物理基础，RL无法理解非结构化约束）\n主要方法：提出ReflectiChain，包含生成式供应链世界模型和双循环学习（分离认知与偶然不确定性）\n关键贡献：在半导体基准上提升合理性一致性33%，展现抗脆弱性，识别三种认知机制",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09864",
+    "title": "Alignment Collapse Under KV Cache Quantization: Diagnosis and Mitigation",
+    "authors": [
+      "Bruce Changlong Xu, Adarsh Kumarappan, Mu Zhou"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09864",
+    "summary": "研究问题：KV缓存量化下对齐安全性丧失的现象及原因。  \n主要方法：通过实验发现低比特量化破坏安全对齐，提出Per-Channel Reduction (PCR)诊断方法分类三种故障模式。  \n关键贡献：揭示安全特征在低维子空间易受量化噪声影响，提出PCR诊断方法。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10389",
+    "title": "Beyond Static Evaluation: Co-Evolutionary Mechanisms for LLM-Driven Strategy Evolution in Adversarial Games",
+    "authors": [
+      "Haoran Li, Zengle Ge, Ziyang Zhang, Xiaomin Yuan, Yui Lo, Qianhui Liu, Bocheng An, Dongke Rong, Jiaqun Liu, Annan Li, Jianmin Wu, Dawei Yin, Dou Shen"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10389",
+    "summary": "研究问题：对抗多智能体游戏中固定评估器随策略进化失效导致进化停滞。  \n主要方法：提出评估器协同进化、分层深度评估和弱点压力三种机制，集成于FAMOU框架。  \n关键贡献：在MCTF 2026任务上超越基线，实现最高综合得分和最佳泛化能力。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.09865",
+    "title": "LLM-as-a-Discriminator: When Synthetic Tables Still Look Real",
+    "authors": [
+      "Manel Slokom, Malek Slokom, Thierno Kante"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.09865",
+    "summary": "研究问题：合成表格数据的隐私审计困难，人类难以区分真实与合成数据。  \n主要方法：使用LLM（LLaMA和Gemini）作为判别器，对表格样本进行分类（REAL/SYNTHETIC），测试仅表格和加分布元数据两种设置。  \n关键贡献：提出LLM判别作为实用隐私审计信号，实验显示不同模型和设置下判别效果差异显著，需谨慎处理模型选择、报告和数据编码。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2606.10254",
+    "title": "RealMath-Eval: Why SOTA Judges Struggle with Real Human Reasoning",
+    "authors": [
+      "Yiteng Mao, Kenan Xu, Yijia Lyu, Wenhao Li, Jianlong Chen, Xiangfeng Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 10 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.10254",
+    "summary": "研究问题：LLM评估真实人类数学推理的能力不足  \n主要方法：构建RealMath-Eval基准，对比真实与合成回答，进行语义嵌入和概率分析  \n关键贡献：发现评估差距，揭示合成与人类错误的结构差异",
+    "language": "zh"
+  }
+]
