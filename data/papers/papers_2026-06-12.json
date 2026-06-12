@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2606.12451",
+    "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+    "authors": [
+      "Ashutosh Hathidara, Sai Shruthi Sistla, Sebastian Schreiber, Sahil Bansal"
+    ],
+    "abstract": "arXiv:2606.12451v1 Announce Type: new \nAbstract: Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture specialized tool semantics, parametric tool retrieval addresses this by encoding each tool as a virtual token appended to the LLM vocabulary, fine-tuned in two stages (memorization then retrieval SFT) to use the LLM as a retriever, achieving strong performance on standard ToolBench retrieval benchmarks. Yet these benchmarks use verbose, fully-specified queries, and their evaluation applies constrained decoding that restricts outputs to valid token paths, neither reveals whether the model actually understands its tools. We introduce \\textbf{ToolSense}, an open-source LLM-powered diagnostic framework that takes any tool catalog as input and automatically generates three benchmarks: a Realistic Retrieval Benchmark (RRB) with queries at three ambiguity tiers, an MCQ probing benchmark, and a QA probing benchmark. Applying ToolSense to ToolBench (~47k tools) and evaluating five parametric model training configurations reveals a knowledge-retrieval dissociation: on RRB queries, several configurations collapse by ~50-64 percentage points compared to fully-specified ToolBench benchmarks, falling below the embedding-model baseline. Additionally, despite strong retrieval performance, some models score near-random on factual probes, suggesting a knowledge-retrieval dissociation. We open-source the ToolSense framework and the ToolBench diagnostic benchmarks at https://github.com/SAP/toolsense.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12451",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12451"
+      }
+    ],
+    "relevance_score": 0.5101957609229764,
+    "max_similarity": 0.25391602346658093
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12744",
+    "title": "GRIP: Feedback-Guided Prompt Retrieval for Large Multimodal Models",
+    "authors": [
+      "Garvita Allabadi, Matteo Sodano, Roberto Estev\\~ao, Yuxiong Wang, Vikram Adve, Emre Kiciman, Ranveer Chandra"
+    ],
+    "abstract": "arXiv:2606.12744v1 Announce Type: new \nAbstract: In-Context Learning (ICL) has become a powerful mechanism for adapting Large Language Models (LLMs) to new tasks without fine-tuning. Extending this concept to Large Multimodal Models (LMMs), Multimodal In-Context Learning (M-ICL) relies on retrieving relevant examples, such as images, captions, or question-answer pairs, to guide predictions across tasks like classification, captioning, and visual question answering (VQA). Most existing approaches select in-context examples based on feature-space similarity, assuming that semantically similar samples provide the most useful context. However, our systematic analysis reveals that this assumption does not always hold: visually similar examples are not necessarily those that most effectively enhance in-context learning performance.\n  To address this, we propose the Guided Retrieval of In-context Prompts (GRIP), a learnable vision-only retrieval framework that leverages feedback from LMMs to identify examples that truly improve model predictions. GRIP learns to distinguish beneficial from detrimental in-context examples through contrastive training, refining retrieval beyond pure similarity. Across three multimodal tasks, namely classification, captioning, and VQA, GRIP improves consistently over similarity-based retrieval on Qwen2.5-VL-7B, with its strongest gains in classification on Idefics2-8B. Moreover, we demonstrate that retrievers trained with feedback from one open LMM can be transferred to other models without retraining, including closed-source GPT-4o and Gemini, enabling scalable and cost-efficient deployment of M-ICL. Code will be published upon acceptance.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12744",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12744"
+      }
+    ],
+    "relevance_score": 0.4617953427712911,
+    "max_similarity": 0.1930263390239783
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.11262",
+    "title": "PermDoRA -- Understanding Adapter Interference in Language Models: Limits of Parameter-Space Geometry",
+    "authors": [
+      "Gowtham Sivaramakrishnan, Sarvesha Kumar Kombaiah Seetha, Kishan Gupta Balaji, Santhosh Baradwaj Vaduvur Ranganathan"
+    ],
+    "abstract": "arXiv:2606.11262v1 Announce Type: new \nAbstract: Access control in large language models (LLMs) requires modular mechanisms to enable domain-specific behavior without retraining or cross-domain interference. A common hypothesis is that interference during adapter composition arises from overlap in linear parameter updates, suggesting that enforcing orthogonality or directional independence should improve multi-domain performance. We test this hypothesis using DoRA-RBAC, a hierarchical adapter composition framework based on weight-decomposed low-rank adaptation. We compare conventional Euclidean merging with a geometry-aware Riemannian-inspired merging strategy that approximates the Frechet mean via normalized directional averaging across multiple QA benchmarks (GPQA, PubMedQA, SimpleQA, WMDP) on LLaMA-3.1-8B and Mistral-7B. Our results show that while single-domain performance matches LoRA, geometry-aware merging provides no consistent advantage over standard averaging in multi-domain settings.Diagnostic analysis further reveals that angular alignment and orthogonality of adapter updates are weak predictors of composition performance. These findings suggest that adapter interference is not governed primarily by parameter-space geometry, but is instead consistent with interactions in shared nonlinear representations.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.11262",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.11262"
+      }
+    ],
+    "relevance_score": 0.4565685508567797,
+    "max_similarity": 0.190293238260009
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12671",
+    "title": "SalArt-VQA: Diagnosing Whether VLMs Understand Salient Artifacts in Generated Images",
+    "authors": [
+      "Xiaoxiao Sun, Ruotian Zhang, Junzhe Huang, James Burgess, Serena Yeung-Levy"
+    ],
+    "abstract": "arXiv:2606.12671v1 Announce Type: new \nAbstract: Vision-language models (VLMs) are increasingly used to detect whether AI-generated images contain visible artifacts, yet their ability to analyze such artifacts remains poorly understood. A correct image-level decision can still hide important failures: a model may correctly flag an artifact while relying on the wrong visual cue, selecting the wrong region, or describing a defect that the image does not support. To evaluate these behaviors directly, we introduce SalArt-VQA, a diagnostic benchmark for fine-grained SALient ARTifact understanding in AI-generated images. SalArt-VQA contains 950 images and 3,681 human-authored multiple-choice questions spanning artifact images, matched real reference images, and paired generated reference images. Four aligned question types evaluate presence detection, semantic localization, spatial grounding, and evidence-grounded defect identification, while the reference splits test calibration and abstention when the annotated defect is absent. Across 20 VLMs, SalArt-VQA reveals failures that image-level detection accuracy hides: the strongest model reaches 99.37% detection recall on artifact images but answers all four artifact-side questions correctly on only 53.26% of images. Comparing artifact images with artifact-free references reveals a sensitivity-calibration tradeoff: sensitive models often make unsupported artifact claims, while conservative models avoid false alarms largely by missing real artifacts. These results show that high artifact detection accuracy alone does not imply grounded artifact understanding. SalArt-VQA exposes these hidden failure modes and provides a fine-grained evaluation of whether VLM artifact claims are supported by local visual evidence.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12671",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12671"
+      }
+    ],
+    "relevance_score": 0.44987036408762804,
+    "max_similarity": 0.18073524915730327
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12633",
+    "title": "ECA: Efficient Continual Alignment for Open-Ended Image-to-Text Generation",
+    "authors": [
+      "Jiangtao Kong, Peijun Zhao, Chun-Fu Chen, Youngwook Do, Shaohan Hu, Tianyi Zhou, Huajie Shao"
+    ],
+    "abstract": "arXiv:2606.12633v1 Announce Type: new \nAbstract: Incremental Learning (IL) for Open-ended Image-to-Text Generation (OpenITG) enables models to continuously generate accurate, contextually relevant text for new images while preserving previously acquired knowledge. Unlike prior studies, this paper addresses a more practical scenario in which the predominant category of visual data shifts over time as environments evolve. In this context, we introduce a new notion of continual alignment, which incrementally adapts the alignment module within pre-trained VLMs to preserve high-quality cross-modal representations. Based on this idea, we propose Efficient Continual Alignment (ECA), a novel exemplar-free IL approach for OpenITG. The key challenge is enabling the model to acquire new, task-specific features while minimizing interference with the established alignment without accessing raw data from previous tasks. To address this, ECA employs three core mechanisms: a Mixture of Query (MoQ) module that adapts task-specific query tokens, a Fisher Dynamic Expansion (FeDEx) that dynamically expands model structure based on a Fisher Information Matrix (FIM)-based metric, and an embedding dictionary with Dictionary Replay (DR) to retain past knowledge. To evaluate ECA's performance, we construct four new IL OpenITG benchmarks that better reflect real-world scenarios. Experimental results demonstrate that ECA significantly mitigates catastrophic forgetting and improves IL performance compared to baseline methods. Code and benchmarks are available at https://github.com/Snowball0823/ECA.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12633",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12633"
+      }
+    ],
+    "relevance_score": 0.43350152080412374,
+    "max_similarity": 0.15831969865088844
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.11290",
+    "title": "FlowBank: Query-Adaptive Agentic Workflows Optimization through Precompute-and-Reuse",
+    "authors": [
+      "Lingzhi Yuan, Chenghao Deng, Fangxu Yu, Souradip Chakraborty, Mohammad Rostami, Furong Huang"
+    ],
+    "abstract": "arXiv:2606.11290v1 Announce Type: new \nAbstract: Large Language Model (LLM)-based multi-agent systems are increasingly powerful, but current agentic workflow optimization paradigms make an unsatisfying trade-off. Task-level methods spend substantial offline compute yet deploy only a single workflow, leaving complementary candidates unused, while query-level methods synthesize a new workflow per query at substantial inference cost. Our motivating analysis shows these paradigms are more complementary than competing: workflows discovered during offline search often solve different subsets of queries, and many queries handled by expensive query-level generation can already be solved by cheaper precomputed workflows. This suggests a different objective: rather than searching for one universally best workflow or regenerating one per instance, we should build a compact bank of reusable, complementary workflows and select among them adaptively at inference time. Doing so requires solving three coupled problems: generating complementary rather than redundant candidates, compressing them into a small deployable portfolio, and assigning each query to the right workflow under a performance-cost trade-off. To this end, we present FlowBank, a three-stage framework for portfolio-based agentic workflow optimization. Diversifying proposes DiverseFlow to steer search toward under-covered queries and produce a high-coverage candidate pool. Curating proposes CuraFlow to compress this pool into a compact portfolio with minimal redundancy. Matching casts deployment as edge-value prediction on a query-workflow bipartite graph and routes each incoming query to the portfolio member with the best predicted utility. Across five benchmarks, FlowBank achieves the highest average score among the evaluated methods while remaining cost-competitive, improving over the strongest automated and handcrafted baselines by 4.26% and 14.92% relative, respectively.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.11290",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.11290"
+      }
+    ],
+    "relevance_score": 0.43328418113711653,
+    "max_similarity": 0.1614493497631287
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.11266",
+    "title": "Seeing Before Colliding: Anticipatory Safe RL with Frozen Vision-Language Models",
+    "authors": [
+      "Samuel Tetteh, Cody Fleming"
+    ],
+    "abstract": "arXiv:2606.11266v1 Announce Type: new \nAbstract: The cost signal that constrained-RL algorithms optimize against is almost always reactive: the simulator emits a non-zero cost only after a collision has begun, and the Lagrange multiplier of PPO-Lagrangian grows only after the episode budget has been exceeded. At race speeds, where collisions are instantaneous and irreversible, any safety mechanism that waits for cost to accumulate is structurally too late. We present VLM-Safe-RL, a framework that integrates a frozen vision-language model into the CMDP Lagrangian update as an anticipatory cost term. The framework comprises four contributions: (i) Decoupled Dual-Path CLIP, independent reward/cost paths that respect the CMDP's factorization; (ii) VLM-Lagrange, an augmented multiplier update that incorporates a per-step VLM cost as an anticipatory term; (iii) Confidence Gating, a Bayes-optimal weight derived from a logistic noise model on the CLIP margin; and (iv) VLMPPOLag, the composed algorithm. On Safety-Gymnasium FormulaOne L2, our principal evaluation ($n{=}5$ seeds, $10^{6}$ steps, budget $d_{\\text{lim}}{=}25$) VLMPPOLag$+$Conf is the only configuration in our default budget comparison that simultaneously retains substantive return ($J_r{\\approx}40$) and holds cost within budget on a majority of seeds; the five constraint-aware baselines (PPOLag, CPO, CPPOPID, CPO-CLG, PPOLag-RND) each fail at least one requirement. The mechanism generalizes to held-out MetaDrive Medium (catastrophe rate $41\\%{\\to}26\\%$, 95\\% bootstrap CI $[-26,-5]$\\,pp) and shows directionally consistent transfer to Bullet Safety-Gym; we report honestly where it does not (MetaDrive Easy/Hard, Qwen2-VL backbone) and trace the Hard failure to a Lagrangian-regulation pathology rather than the VLM signal itself. To our knowledge, this is the first work to use frozen VLM signals as an anticipatory cost term inside the CMDP Lagrangian update.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.11266",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.11266"
+      }
+    ],
+    "relevance_score": 0.4326737183841196,
+    "max_similarity": 0.16214508159997942
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12590",
+    "title": "Analyzing and Improving Fine-grained Preference Optimization in Medical LVLMs",
+    "authors": [
+      "Shayan Mohammadizadehsamakosh, Pritam Sarkar, Leonid Sigal, Ali Etemad, Elham Dolatabadi"
+    ],
+    "abstract": "arXiv:2606.12590v1 Announce Type: new \nAbstract: Large Vision-Language Models (LVLMs) have achieved strong performance across medical imaging tasks, yet they remain prone to factual inconsistencies, poor visual grounding, and misalignment with clinically meaningful feedback. Existing post-training alignment approaches, including Direct Preference Optimization (DPO) and its variants, face three critical limitations in the medical domain: (1) sequence-level reward signals treat clinically critical tokens identically to generic filler text; (2) reliance on static supervised fine-tuning references as preferred responses introduces an off-policy distribution shift, steering optimization toward stylistic artifacts over clinical correctness; and (3) alignment objectives lack explicit visual grounding constraints, leaving models insensitive to subtle yet diagnostically decisive pathological features. Our method leverages a bidirectional token-wise KL regularizer alongside a visual-contrastive grounding objective that pairs clean and lesion-corrupted images to penalize responses generated without adequate visual evidence. Together, these components form a fine-grained, on-policy alignment framework that constructs preference pairs by minimally editing model-generated outputs, correcting only clinically erroneous spans while preserving the original linguistic style. Extensive experiments across medical imaging tasks and clinical text generation benchmarks validate the effectiveness of our approach.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12590",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12590"
+      }
+    ],
+    "relevance_score": 0.4284494867276789,
+    "max_similarity": 0.1540390974879038
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12702",
+    "title": "Deployment-Centered Evaluation: Predicting Query-Level Rejection Risk in a Clinical LLM System",
+    "authors": [
+      "Alyssa Unell, Miguel Fuentes, Brenna Li, Bridget Lin, Meena Jagadeesan, Sanmi Koyejo, Nigam Shah"
+    ],
+    "abstract": "arXiv:2606.12702v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly integrated into clinical systems, making it essential to evaluate the real-world utility of these systems. However, static benchmarks tend to measure correctness rather than user acceptance, aggregate performance across queries, and require densely annotated datasets -- leading to major blind spots for evaluating clinical systems. In this work, we perform a deployment-centered evaluation of an LLM system embedded within electronic health records at an academic medical center, where user feedback is sparse but closely reflects the deployment conditions. Specifically, we train a pre-response classifier that estimates the risk that a future interaction will result in the user rejecting the LLM response, based on query content and deployment-specific context available before generation. We conduct a prospective analysis of our model over 4.5 months of user feedback, finding that our prediction model achieves an AUROC of 0.719. Further, we estimate the benefit of such predictions in two downstream use cases (guardrail triggering and abstention). Our key conceptual insight is that making use of deployment-specific context (i.e., the provider type, department name, language model used for response), as opposed to only query content, improves the ability to predict whether the user will reject the system output. Altogether, our empirical case study demonstrates the feasibility of predicting user rejection using deployment-specific context, opening the door to targeted guardrails.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12702",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12702"
+      }
+    ],
+    "relevance_score": 0.4243910723605656,
+    "max_similarity": 0.15038283491209098
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12657",
+    "title": "TrajGenAgent: A Hierarchical LLM Agent for Human Mobility Trajectory Generation",
+    "authors": [
+      "Siyu Li, Toan Tran, Lingyi Zhao, Khurram Shafique, Li Xiong"
+    ],
+    "abstract": "arXiv:2606.12657v1 Announce Type: new \nAbstract: Human mobility data is important for transportation, urban planning, and epidemic control, but large-scale trajectory collection is often costly and privacy-constrained, motivating realistic synthetic trajectory generation. Existing LLM-based generators typically rely on either prompt engineering, which preserves zero-shot reasoning but lacks fine-grained spatiotemporal grounding, or trajectory-level fine-tuning, which improves statistical precision but incurs substantial computational cost and may weaken general reasoning. We propose TrajGenAgent, a semantic-aware hierarchical LLM-agent framework for human mobility trajectory generation without model fine-tuning. TrajGenAgent uses a two-stage orchestrator-worker design: an LLM first synthesizes an individual- and weekday-conditioned activity chain from historical evidence via in-context learning, and a deterministic workflow then grounds each activity into a complete visit using personalized POI retrieval, distance-aware location selection, kinematics-aware travel-time propagation, and LLM-based duration estimation. To evaluate realism beyond aggregate spatiotemporal statistics, we introduce an anomaly-detection-based evaluation framework using two complementary detectors to assess behavioral and semantic plausibility. Experiments on benchmark and large-scale simulation datasets show that TrajGenAgent improves spatiotemporal fidelity, semantic coherence, and individual-specific behavioral realism over representative neural and LLM-based baselines, while avoiding parameter updates.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12657",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12657"
+      }
+    ],
+    "relevance_score": 0.4213845198875622,
+    "max_similarity": 0.1451977497251138
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12809",
+    "title": "MLUBench: A Benchmark for Lifelong Unlearning Evaluation in MLLMs",
+    "authors": [
+      "He Li, Haoang Chi, Qizhou Wang, Yunxin Mao, Zhiheng Zhang, Jie Tan, Tongliang Liu, Wenjing Yang, Bo Han"
+    ],
+    "abstract": "arXiv:2606.12809v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) are trained on massive multimodal data, making data unlearning increasingly important as data owners may request the removal of specific content. In practice, these requests often arrive sequentially over time, giving rise to the challenging problem of MLLM Lifelong Unlearning. However, most existing benchmarks are limited in scale and scope, failing to capture the complexities of MLLM lifelong unlearning. To fill this gap, we introduce the MLUBench, a large-scale and comprehensive benchmark featuring 127 entities across 9 classes under lifelong unlearning requests. We perform extensive experiments using MLUBench and reveal that existing unlearning methods suffer from severe, cumulative degradation. More critically, we further identify the unique challenge of this problem: unlike in unimodal models, MLLM lifelong unlearning is constrained by the need to preserve multimodal alignment. Continually unlearning from one modality could degrade the entire model. To alleviate this challenge, we propose LUMoE, an effective method. Experiments demonstrate that LUMoE significantly mitigates the degradation problem faced by baselines. The source code and the MLUBench dataset are open-sourced in https://github.com/lihe-maxsize/Lifelong_Unlearning_main.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12809",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12809"
+      }
+    ],
+    "relevance_score": 0.41788288616413455,
+    "max_similarity": 0.14031422125771367
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12616",
+    "title": "PersonaDrive: Human-Style Retrieval-Augmented VLA Agents for Closed-Loop Driving Simulation",
+    "authors": [
+      "Mahmoud Srewa, Praneetsai Iddamsetty, Mohammad Abdullah Al Faruque, Salma Elmalaki"
+    ],
+    "abstract": "arXiv:2606.12616v1 Announce Type: new \nAbstract: Closed-loop driving simulators typically populate their environments with non-ego traffic agents that behave largely the same way, produced either by rule-based traffic managers or by learned models trained toward a single behavioral mode. Recent work introduces style variation through post-hoc labels on observational data or LLM-inferred reward weights, but these signals act as proxies for what a style should reward rather than demonstrations of humans explicitly asked to drive in that style. We introduce PersonaDrive, a pipeline that conditions a vision-language-action (VLA) driving agent on retrieved demonstrations from a style-instructed human driving dataset, in which participants drive CARLA leaderboard routes under aggressive, neutral, and conservative instructions on a driver-in-the-loop rig. The pipeline has three stages: (i) offline triplet mining over per-style human driving data using a combined image-text similarity score; (ii) training a lightweight retrieval head that fuses frozen visual features with a small control encoder over per-style databases; and (iii) fine-tuning a single VLA backbone to treat retrieved context points as in-context behavioral demonstrations during waypoint prediction. At inference, the same backbone is conditioned on any style by swapping which per-style database the retrieval head queries, so selecting a style requires no per-style retraining while enabling human-style, style-diverse non-ego agents for closed-loop simulation. On Bench2Drive, PersonaDrive (no style) improves the driving score by 4.6% over SimLingo and 2.5% over HiP-AD, and under style conditioning attains the highest driving score in every style within a roughly 2% band (its weakest style surpassing the strongest baseline, DMW, by 5.4%), while average speed and acceleration rise by 18% and 25% from the conservative to the aggressive instruction.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12616",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12616"
+      }
+    ],
+    "relevance_score": 0.40945665509223816,
+    "max_similarity": 0.13335555588193318
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12747",
+    "title": "Prefill Awareness in Large Language Models",
+    "authors": [
+      "Andy Wang, Parv Mahajan, David Demitri Africa, Alexandra Souly, Jordan Taylor, Robert Kirk"
+    ],
+    "abstract": "arXiv:2606.12747v1 Announce Type: new \nAbstract: Safety-relevant studies of language models, including alignment and jailbreaking evaluations and AI control protocols, often rely on prefilling model outputs. If AI models can recognize and act on the fact their prior assistant messages have been inserted or edited, the effectiveness and validity of these methods could be compromised. We investigate whether frontier language models can distinguish between tampered and untampered assistant-side context, a capability we call prefill awareness. To do so, we construct a binary preference benchmark across three prefill mechanisms, filtering for cases where models show consistent stances. We find that frontier models show substantial prefill awareness: Claude Opus 4.5 detects prefills opposing its preferences in 9-35% of cases with a 0% false positive rate when prompted; additionally, models often revert towards baseline behavior without explicitly reporting that the prefill was foreign. Controlled ablations later also show that detection and resistance rely on different cues, where stylistic mismatch mainly affects whether models flag a prefill as foreign, while preference mismatch mainly affects whether they revert toward their baseline answer. We also examine more realistic agentic settings such as misalignment-continuation evaluations and SWE-bench trajectories, where frontier models sometimes disavow prefilled assistant turns in ways that depend strongly on dataset, task success, and hidden formatting artifacts. Our results indicate that prefill awareness is already a substantial confound for some prefill-based methods. We recommend that model developers track this capability in frontier systems.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12747",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12747"
+      }
+    ],
+    "relevance_score": 0.3885275525244075,
+    "max_similarity": 0.1057120461321224
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12797",
+    "title": "The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements",
+    "authors": [
+      "Md Jafrin Hossain, Mohammad Arif Hossain, Weiqi Liu, Nirwan Ansari"
+    ],
+    "abstract": "arXiv:2606.12797v1 Announce Type: new \nAbstract: Agentic large language model systems that autonomously invoke tools, maintain persistent memory, and execute multi-step plans are increasingly deployed in public-facing domains, including government services, healthcare triage, and financial advising. We ask whether the frameworks used to build these systems provide architectural-level structural safety guarantees. Applying six containment principles derived from a compositional model of agentic architectures, we audit three dominant frameworks (LangChain, AutoGPT, and OpenAI Agents SDK) and find no native compliance in any of them. Memory integrity, a defense against one of the most prevalent vulnerability classes, is not observed in any of the three evaluated frameworks. We validate these findings empirically: in a simulated government benefits agent built on LangChain, a single memory-poisoning write induces persistent targeted corruption across all tested seeds and backends, increasing the wrongful denial rate for targeted applicants to 88.9%. Under a complex five-factor policy, the same attack preserves aggregate accuracy while increasing targeted wrongful denials by 3.5x, rendering the corruption difficult to detect through standard monitoring. We then introduce two lightweight containment mechanisms: a memory integrity validator and a policy gate, which eliminate both attack vectors with sub-millisecond overhead (<0.2ms per call). We conclude that the current agentic framework ecosystem may not yet meet secure-by-default expectations for public-facing deployments and outline priority architectural interventions to enable trustworthy deployment in high-stakes, socially impactful applications.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12797",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12797"
+      }
+    ],
+    "relevance_score": 0.3849649443565743,
+    "max_similarity": 0.16469900092837864
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.11275",
+    "title": "RoVE: Rotary Value Embeddings Attention for Relative Position-dependent Value Pathways",
+    "authors": [
+      "Alejandro Garc\\'ia-Castellanos, Maurice Weiler, Erik J Bekkers"
+    ],
+    "abstract": "arXiv:2606.11275v1 Announce Type: new \nAbstract: Rotary Position Embeddings (RoPE) make attention scores position-relative but leave the value pathway position-blind: the message sent by a value token is the same regardless of its distance from the query. We propose RoVE, a parameter-free modification that makes values position-sensitive by rotating them simultaneously with keys, and show that it turns RoPE attention into attentive convolution. This new perspective unifies several independent formulations of the same operation across computer vision, robotics, and modern LLM architectures. Trained 124M and 354M GPT-2 models show consistent empirical gains over RoPE on few-shot in-context learning, out-of-distribution perplexity, and long-context retrieval, with the clearest improvements on tasks that require long-range aggregation.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.11275",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.11275"
+      }
+    ],
+    "relevance_score": 0.3845886062450444,
+    "max_similarity": 0.10236507998914698
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12563",
+    "title": "Arbor: Tree Search as a Cognition Layer for Autonomous Agents",
+    "authors": [
+      "Neha Prakriya, Chaojun Hou, Zheng Gong, Huasha Zhao, Xi Zhao, Mou Li, Zhenyu Gu, Emad Barsoum"
+    ],
+    "abstract": "arXiv:2606.12563v1 Announce Type: new \nAbstract: Arbor is a multi-agent framework that introduces structured tree search as a cognition layer for autonomous agents operating in large, stateful action spaces. Prior autonomous optimization systems operate on isolated targets with stateless evaluation. Arbor instead maintains an explicit search tree of scored hypotheses that serves as the shared working memory across agents, evolving with every measurement, treating failures as diagnostic signal that reshapes subsequent exploration, and expanding as prior successes shift the bottleneck distribution.\n  We validate Arbor on full-stack LLM inference optimization, a domain where achieving peak performance has historically required coordinated effort from engineering teams across the application, framework, compiler, kernel, and hardware stack. Arbor pairs an Orchestrator agent, which drives optimization by delegating to Domain Specialists across the inference stack, with a Critic agent that safeguards stability through root-cause analysis, introspection, and measurement validation -- a checks-and-balances architecture where neither agent can unilaterally drive the system. Agent capabilities are decomposed into hard skills (domain expertise) and soft skills (coordination protocols that determine how contributions compose), enabling fully autonomous multi-day campaigns. Arbor achieves up to 193% inference throughput-latency Pareto improvement over vendor-optimized baselines, while a single agent without the harness plateaus at +33% throughput improvement and crashes irrecoverably within hours. Arbor generalizes to multiple generations of hardware platform, and run-to-run variance is within 2 percentage points demonstrating that the method is hardware-agnostic and reproducible.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12563",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12563"
+      }
+    ],
+    "relevance_score": 0.3655754857522605,
+    "max_similarity": 0.20272131173416572
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.11201",
+    "title": "To Intervene or Not: Guiding Inference-time Alignment with Probabilistic Model Blending",
+    "authors": [
+      "Jin Gan, Xin Li, Jun Luo"
+    ],
+    "abstract": "arXiv:2606.11201v1 Announce Type: new \nAbstract: The wide deployment of LLMs has made model alignment necessary to make newly trained models safely and effectively respond to user instructions. Among different methods, inference-time alignment is often cheaper as it intervenes (i.e., offers guidances) only during output generation. Existing proposals apply guidances extracted from certain aligned models without properly assessing their reliability. Nonetheless, our systematic evaluation reveals that guidance effectiveness varies drastically across models; since ineffective guidances lead to further confusion and thus further interventions, the resulting excessive interventions typically indicate poor performance. To make interventions more effective and thus more efficient, we introduce BlendIn, an inference-time alignment framework that shifts from binary decisions to creating hybrid distributions integrating both models' knowledge. BlendIn stabilizes inference-time alignment by performing quality-aware alignment and proportionally weighting each model's contribution based on reliability. Compared with existing works, it preserves beneficial guidance while downweighting unreliable suggestions. BlendIn provides both diagnostic signals and mitigation strategies for misaligned guidance, achieving consistent and up to 50% performance improvement on challenging model pairs. Our code is available at: https://github.com/DecayingSeart/BlendIn.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.11201",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.11201"
+      }
+    ],
+    "relevance_score": 0.344232159267648,
+    "max_similarity": 0.11261387262340211
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.11247",
+    "title": "Physics-informed generative AI for semiconductor manufacturing: Enforcing hard physical constraints in generative models by construction",
+    "authors": [
+      "Yaser Mike Banad, Sarah Sharif"
+    ],
+    "abstract": "arXiv:2606.11247v1 Announce Type: new \nAbstract: Generative models are increasingly used to propose designs, data, and control actions for physical systems, yet many such systems are governed by hard physical constraints rather than by perceptual plausibility. Semiconductor manufacturing provides a demanding test case: generated masks, layouts, synthetic defect data, and process recipes must obey lithography, transport, reaction, and device-physics constraints, because physically invalid samples are not merely low quality but unusable. This Perspective argues that semiconductor manufacturing exposes a broader computational-science challenge, namely that generative AI for constrained physical domains must be physics-informed by construction, not corrected only through post-hoc filtering. We survey the emerging architectural toolkit, including physics-informed diffusion, PDE-constrained variational models, neural-operator priors, and conservation-law-respecting generative networks, and show how it connects to differentiable lithography, TCAD, process simulation, and autonomous experimentation. We identify four integration patterns between generative models and physics-based simulators, and we propose a research agenda centered on physics-fidelity benchmarks, differentiable simulator infrastructure, and multimodal foundation models for physical design and manufacturing. The central claim is analytical rather than rhetorical: where physical validity is the binding criterion of success, architectures that enforce it by construction should be expected to outperform those that filter for it after the fact, and the fab is the setting where this distinction is sharpest.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.11247",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.11247"
+      }
+    ],
+    "relevance_score": 0.26157304671738585,
+    "max_similarity": 0.13624932713864774
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.11205",
+    "title": "Dual-Stance Evaluation of Sycophancy: The Structure of Agreement and the Limits of Intervention",
+    "authors": [
+      "Matthew James Buchan"
+    ],
+    "abstract": "arXiv:2606.11205v1 Announce Type: new \nAbstract: Activation steering can shift LLM behaviour, but standard evaluations do not typically test whether a sycophancy-reduction direction also suppresses agreement with factually correct statements. We introduce dual-stance evaluation, which tests both stances of each topic, and apply it to centroid-difference steering on Llama-3-8B-Instruct. We find a dissociation: the model represents sycophantic and factual agreement in geometrically distinct subspaces, yet the steering direction projects equally onto both and cannot differentially target either. The direction accordingly reduces agreement with factually correct statements (e.g. that the Earth is round) as well as sycophantic ones. All other static properties of the two activation groups are matched, suggesting the behavioural dissociation arises from generation dynamics or from finer-grained structure that residual-stream analysis cannot resolve. The pattern illustrates a general gap: representations that are readable from activations may not be writable through them.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.11205",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.11205"
+      }
+    ],
+    "relevance_score": 0.2506448460099208,
+    "max_similarity": 0.06071714422958369
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.12730",
+    "title": "Rethinking Psychometric Evaluation of LLMs: When and Why Self-Reports Predict Behavior",
+    "authors": [
+      "Rafal Kocielnik, Pengrui Han, Peiyang Song, Myrl G. Marmarelis, Ramit Debnath, Dean Mobbs, Anima Anandkumar, R. Michael Alvarez"
+    ],
+    "abstract": "arXiv:2606.12730v1 Announce Type: new \nAbstract: Anticipating LLM behavioral tendencies from low-cost psychometric probes is critical for safe deployment, but only if self-reports (SR) reliably predict behavior. Recent work documented substantial SR-behavior dissociation in LLMs, but relied on broad personality traits (Big 5) that predict specific behaviors weakly, even in humans. Furthermore, the isolation of conversational sessions combined with weak context matching left open whether LLMs truly lack coherence or whether the conditions needed to detect such coherence were not met. We contrast Big 5 with the Theory of Planned Behavior (TPB), which measures intention targeted to a specific behavior and predicts human behavior substantially better than broad traits. We run experiments across four behavioral tasks and 11 frontier LLMs, while also varying session context and identity induction. We find that SR-behavior coherence exists but is selective. 1) Within a shared conversation, the Theory of Planned Behavior reaches human-level coherence; Big 5 does not. 2) Across separate conversations, coherence survives only for behaviors anchored outside the immediate prompt, such as implicit bias shaped by training, and collapses when behavior is strongly primed by context, as with sycophancy. 3) Persona prompting makes self-reports more consistent across conversations, but does not bring behavior into alignment. These findings suggest that coarse personality frameworks, such as Big 5 may not be the best tools for testing deployment behavior. More task- and behavior-specific instruments are needed, and even these must be evaluated across tasks and contexts.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 12 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.12730",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.12730"
+      }
+    ],
+    "relevance_score": 0.22085863462564304,
+    "max_similarity": 0.08549846338105754
+  }
+]
