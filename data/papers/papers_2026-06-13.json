@@ -1,0 +1,637 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2606.13663v1",
+    "title": "HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents",
+    "authors": [
+      "Yaxin Du",
+      "Yifan Zhou",
+      "Yujie Ge",
+      "Jiajun Wang",
+      "Xianghe Pang",
+      "Shuo Tang",
+      "Tuney Zheng",
+      "Bryan Dai",
+      "Jian Yang",
+      "Siheng Chen"
+    ],
+    "abstract": "Tool-augmented LLM agents commonly rely on step-wise atomic tool calls, where each invocation, observation, and value transfer is exposed in the main reasoning trace. This creates an \\emph{execution-granularity mismatch}: locally deterministic tool workflows are unfolded into repeated model-visible decisions, consuming context and forcing the model to manage low-level dataflow in the trace. We introduce \\textbf{HyperTool}, a unified executable MCP-style tool interface that changes the model-visible unit of tool execution. A model invokes HyperTool with a code block that can call existing tools through their original schemas, manipulate returned values, and pass intermediate results locally, folding deterministic tool subroutines into a single outer call. To train models to use this interface, we synthesize HyperTool-format trajectories from cross-tool compositional tasks and verify them in real MCP environments. On MCP-Universe, HyperTool improves average accuracy from 15.69\\% to 35.29\\% on Qwen3-32B and from 9.93\\% to 33.33\\% on Qwen3-8B, and surpass GPT-OSS and Kimi-k2.5 on average accuracy, showing that our HyperTool can substantially improve multi-step tool use.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-06-11T17:56:36Z",
+    "updated": "2026-06-11T17:56:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13663v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13663v1"
+    ],
+    "relevance_score": 0.6380803394398742,
+    "max_similarity": 0.41781287720254945
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13673v1",
+    "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
+    "authors": [
+      "Seokju Cho",
+      "Ryo Hachiuma",
+      "Abhishek Badki",
+      "Hang Su",
+      "Byung-Kwan Lee",
+      "Chan Hee Song",
+      "Sifei Liu",
+      "Subhashree Radhakrishnan",
+      "Seungryong Kim",
+      "Yu-Chiang Frank Wang",
+      "Min-Hung Chen"
+    ],
+    "abstract": "Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs with specialist perception modules, yet their effectiveness is bounded by the action interface through which those tools are invoked. In this work, we study how the design of this interface shapes the agent's capacity for open-ended spatial reasoning. Existing spatial agents either employ single-pass code execution, which commits to a full analysis strategy before any intermediate result is observed, or rely on a structured tool-call interface that often offers less flexibility for freely composing operations or tailoring the analysis to each task. Both designs offer limited flexibility for open-ended, complex 3D/4D spatial reasoning. We therefore propose SpatialClaw, a training-free framework for spatial reasoning that adopts code as the action interface. SpatialClaw maintains a stateful Python kernel pre-loaded with input frames and a suite of perception and geometry primitives, letting a VLM-backed agent write one executable cell per step conditioned on all prior outputs, enabling the agent to flexibly compose and manipulate perception results and adapt its analysis to both intermediate text and visual observations and the demands of each problem. Evaluated across 20 spatial reasoning benchmarks spanning a broad range of static and dynamic 3D/4D spatial reasoning tasks, SpatialClaw achieves 59.9% average accuracy, outperforming the recent spatial agent by +11.2 points, with consistent gains across six VLM backbones from two model families without any benchmark- or model-specific adaptation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:59:36Z",
+    "updated": "2026-06-11T17:59:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13673v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13673v1"
+    ],
+    "relevance_score": 0.5263623570145757,
+    "max_similarity": 0.2762035413603458
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13673v1",
+    "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
+    "authors": [
+      "Seokju Cho",
+      "Ryo Hachiuma",
+      "Abhishek Badki",
+      "Hang Su",
+      "Byung-Kwan Lee",
+      "Chan Hee Song",
+      "Sifei Liu",
+      "Subhashree Radhakrishnan",
+      "Seungryong Kim",
+      "Yu-Chiang Frank Wang",
+      "Min-Hung Chen"
+    ],
+    "abstract": "Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs with specialist perception modules, yet their effectiveness is bounded by the action interface through which those tools are invoked. In this work, we study how the design of this interface shapes the agent's capacity for open-ended spatial reasoning. Existing spatial agents either employ single-pass code execution, which commits to a full analysis strategy before any intermediate result is observed, or rely on a structured tool-call interface that often offers less flexibility for freely composing operations or tailoring the analysis to each task. Both designs offer limited flexibility for open-ended, complex 3D/4D spatial reasoning. We therefore propose SpatialClaw, a training-free framework for spatial reasoning that adopts code as the action interface. SpatialClaw maintains a stateful Python kernel pre-loaded with input frames and a suite of perception and geometry primitives, letting a VLM-backed agent write one executable cell per step conditioned on all prior outputs, enabling the agent to flexibly compose and manipulate perception results and adapt its analysis to both intermediate text and visual observations and the demands of each problem. Evaluated across 20 spatial reasoning benchmarks spanning a broad range of static and dynamic 3D/4D spatial reasoning tasks, SpatialClaw achieves 59.9% average accuracy, outperforming the recent spatial agent by +11.2 points, with consistent gains across six VLM backbones from two model families without any benchmark- or model-specific adaptation.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-06-11T17:59:36Z",
+    "updated": "2026-06-11T17:59:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13673v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13673v1"
+    ],
+    "relevance_score": 0.5263623570145757,
+    "max_similarity": 0.2762035413603458
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13681v1",
+    "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+    "authors": [
+      "Jundong Xu",
+      "Qingchuan Li",
+      "Jiaying Wu",
+      "Yihuai Lan",
+      "Shuyue Stella Li",
+      "Huichi Zhou",
+      "Bowen Jiang",
+      "Lei Wang",
+      "Jun Wang",
+      "Anh Tuan Luu",
+      "Caiming Xiong",
+      "Hae Won Park",
+      "Bryan Hooi",
+      "Zhiyuan Hu"
+    ],
+    "abstract": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-06-11T17:59:59Z",
+    "updated": "2026-06-11T17:59:59Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13681v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13681v1"
+    ],
+    "relevance_score": 0.4871152749826245,
+    "max_similarity": 0.22891831046490715
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13669v1",
+    "title": "Agents-K1: Towards Agent-native Knowledge Orchestration",
+    "authors": [
+      "Zongsheng Cao",
+      "Bihao Zhan",
+      "Jinxin Shi",
+      "Jiong Wang",
+      "Fangchen Yu",
+      "Zhijie Zhong",
+      "Zijie Guo",
+      "Tianshuo Peng",
+      "Zhuo Liu",
+      "Yi Xie",
+      "Xiang Zhuang",
+      "Yue Fan",
+      "Runmin Ma",
+      "Shiyang Feng",
+      "Xiangchao Yan",
+      "Anran Liu",
+      "Peng Ye",
+      "Wenlong Zhang",
+      "Shufei Zhang",
+      "Chunfeng Song",
+      "Fenghua Ling",
+      "Jie Zhou",
+      "Liang He",
+      "Bo Zhang",
+      "Lei Bai"
+    ],
+    "abstract": "Current LLM-based research agents have advanced through agent orchestration, yet largely overlook scientific knowledge orchestration. Existing works often reduce papers to abstracts, surface mentions, and flat \\texttt{cites} edges, omitting key entities, claims, evidence, mechanisms, and method lineages essential for scientific reasoning. To this end, we introduce \\textbf{Agents-K1}, an end-to-end knowledge orchestration pipeline that converts raw documents into agent-native scientific knowledge graphs. Agents-K1 integrates three components under a unifying theoretical foundation: a multimodal parser whose five-module schema captures entities, multimodal evidence, citations, and typed inter-entity relations across the full paper rather than abstracts alone; a 4B information-extraction backbone trained with GRPO under a rule-based reward; and a graphanything CLI, a tri-source agent interface that unifies web search, multimodal graph retrieval, and cross-document traversal. On top of this, we process 2.46 million scientific papers across six subjects to produce \\textbf{Scholar-KG}, of which we release a one-million-paper subset, and the full Scholar-KG is accessible via the SCP link below. The same pipeline can be extended to general-domain corpora and to schema-conformant data synthesis. Extensive experiments demonstrate that Agents-K1 achieves superior performance in scientific information extraction, knowledge graph construction, and multi-hop scientific reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:58:35Z",
+    "updated": "2026-06-11T17:58:35Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13669v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13669v1"
+    ],
+    "relevance_score": 0.449448529391603,
+    "max_similarity": 0.17980115795737855
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13679v1",
+    "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
+    "authors": [
+      "Dian Zheng",
+      "Harry Lee",
+      "Manyuan Zhang",
+      "Kaituo Feng",
+      "Zoey Guo",
+      "Ray Zhang",
+      "Hongsheng Li"
+    ],
+    "abstract": "Recent image generators have demonstrated impressive photorealism and instruction-following capabilities in single-image generation and editing. However, constrained by their architectures, they cannot achieve interleaved generation (text-image sequence), which has crucial applications in visual narratives, guidance, and embodied manipulation. Even the latest open-source Unified Multimodal Models (UMMs) exhibit limited performance in this regard. In this paper, we introduce InterleaveThinker, the first multi-agent pipeline designed to endow any existing image generator with interleaved generation capabilities. Specifically, we employ a planner agent to organize the image-text input sequence, instructing the image generator on the required execution at each step. Subsequently, we introduce a critic agent to evaluate the generator's outputs, identify samples that deviate from the planned instructions, and refine the instructions for regeneration. To implement this pipeline, we construct the Interleave-Planner-SFT-80k and Interleave-Critic-SFT-112k to perform a format cold-start. Then we develop Interleave-Critic-RL-13k to reinforce the step-wise instruction correction capability within a generation trajectory using GRPO. Since a single interleaved generation trajectory may involve over 25 generator calls, optimizing the entire trajectory is computationally impractical. Therefore, we propose accuracy reward and step-wise reward, allowing single-step RL to effectively guide the entire generation trajectory. The results show that InterleaveThinker improves performance across various image generators. On interleaved generation benchmarks, it achieves performance comparable to Nano Banana and GPT-5. Surprisingly, it also significantly enhances the base model on reasoning-based benchmarks; for example, on 4-step FLUX.2-klein, we observe substantial gains on WISE and RISE.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-06-11T17:59:50Z",
+    "updated": "2026-06-11T17:59:50Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13679v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13679v1"
+    ],
+    "relevance_score": 0.4489391821391495,
+    "max_similarity": 0.1795623862900196
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13662v1",
+    "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+    "authors": [
+      "Amy Xin",
+      "Jiening Siow",
+      "Junjie Wang",
+      "Zijun Yao",
+      "Fanjin Zhang",
+      "Jian Song",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
+    "abstract": "LLM-based agents have shown increasing potential in automating scientific discovery. Given an optimizable metric and an execution environment, they can propose, validate, and iterate scientific solutions, and have produced results that outperform human-designed approaches. As model capabilities continue to improve, we argue that the bottleneck for autonomous scientific discovery is shifting from prescribing agent workflows to designing agent environments: the resources, constraints, and interfaces that shape agent behavior. We frame this as environment engineering: building environments that amplify productive behaviors, such as open-ended exploration, systematic artifact management, and inter-agent collaboration, while suppressing harmful behaviors, such as reward hacking and high-friction human oversight. We present EurekAgent, an environment-engineered agent system for metric-driven autonomous scientific discovery. EurekAgent engineers the environment along four dimensions: permissions engineering for bounded agent execution and isolated evaluation; artifact engineering for filesystem and Git-based collaboration; budget engineering for budget-aware exploration; and human-in-the-loop engineering for easy human supervision and intervention. EurekAgent sets new state-of-the-art results on multiple mathematics, kernel engineering, and machine learning tasks, including new state-of-the-art 26-circle packing results discovered with less than $11 in total API cost. We open-source our code and results, and call for environment engineering as a core research direction for developing reliable autonomous research agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:56:35Z",
+    "updated": "2026-06-11T17:56:35Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13662v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13662v1"
+    ],
+    "relevance_score": 0.438931102491805,
+    "max_similarity": 0.16995115461284027
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13662v1",
+    "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+    "authors": [
+      "Amy Xin",
+      "Jiening Siow",
+      "Junjie Wang",
+      "Zijun Yao",
+      "Fanjin Zhang",
+      "Jian Song",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
+    "abstract": "LLM-based agents have shown increasing potential in automating scientific discovery. Given an optimizable metric and an execution environment, they can propose, validate, and iterate scientific solutions, and have produced results that outperform human-designed approaches. As model capabilities continue to improve, we argue that the bottleneck for autonomous scientific discovery is shifting from prescribing agent workflows to designing agent environments: the resources, constraints, and interfaces that shape agent behavior. We frame this as environment engineering: building environments that amplify productive behaviors, such as open-ended exploration, systematic artifact management, and inter-agent collaboration, while suppressing harmful behaviors, such as reward hacking and high-friction human oversight. We present EurekAgent, an environment-engineered agent system for metric-driven autonomous scientific discovery. EurekAgent engineers the environment along four dimensions: permissions engineering for bounded agent execution and isolated evaluation; artifact engineering for filesystem and Git-based collaboration; budget engineering for budget-aware exploration; and human-in-the-loop engineering for easy human supervision and intervention. EurekAgent sets new state-of-the-art results on multiple mathematics, kernel engineering, and machine learning tasks, including new state-of-the-art 26-circle packing results discovered with less than $11 in total API cost. We open-source our code and results, and call for environment engineering as a core research direction for developing reliable autonomous research agents.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-06-11T17:56:35Z",
+    "updated": "2026-06-11T17:56:35Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13662v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13662v1"
+    ],
+    "relevance_score": 0.438931102491805,
+    "max_similarity": 0.16995115461284027
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13598v1",
+    "title": "Reward Modeling for Multi-Agent Orchestration",
+    "authors": [
+      "King Yeung Tsang",
+      "Zihao Zhao",
+      "Vishal Venkataramani",
+      "Haizhou Shi",
+      "Zixuan Ke",
+      "Semih Yavuz",
+      "Shafiq Joty",
+      "Hao Wang"
+    ],
+    "abstract": "Multi-Agent Systems (MAS) built on Large Language Models (LLMs) require effective orchestration to coordinate specialized agents, yet training such orchestrators is hindered by limited supervision and high computational cost. We propose Orchestration Reward Modeling (OrchRM), a self-supervised framework for evaluating orchestration quality without human annotations. OrchRM leverages intermediate artifacts from multi-agent executions to construct win-lose pairs for Bradley-Terry reward model training. Unlike existing MAS test-time scaling and orchestrator training frameworks that rely on costly sub-agent rollouts, OrchRM operates directly at the orchestration level, enabling efficient and high-performing reward-guided orchestrator training and MAS test-time scaling. OrchRM improves training efficiency by up to 10x in token usage while improving MAS test-time scaling performance by up to 8% in accuracy. These gains consistently transfer across multiple domains, including mathematical reasoning, web-based question answering, and multi-hop reasoning, demonstrating orchestration-level reward modeling as a scalable direction for robust multi-agent orchestration. Code will be available at https://github.com/Wang-ML-Lab/OrchRM.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:16:24Z",
+    "updated": "2026-06-11T17:16:24Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13598v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13598v1"
+    ],
+    "relevance_score": 0.43878633710054,
+    "max_similarity": 0.16711072017630943
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13598v1",
+    "title": "Reward Modeling for Multi-Agent Orchestration",
+    "authors": [
+      "King Yeung Tsang",
+      "Zihao Zhao",
+      "Vishal Venkataramani",
+      "Haizhou Shi",
+      "Zixuan Ke",
+      "Semih Yavuz",
+      "Shafiq Joty",
+      "Hao Wang"
+    ],
+    "abstract": "Multi-Agent Systems (MAS) built on Large Language Models (LLMs) require effective orchestration to coordinate specialized agents, yet training such orchestrators is hindered by limited supervision and high computational cost. We propose Orchestration Reward Modeling (OrchRM), a self-supervised framework for evaluating orchestration quality without human annotations. OrchRM leverages intermediate artifacts from multi-agent executions to construct win-lose pairs for Bradley-Terry reward model training. Unlike existing MAS test-time scaling and orchestrator training frameworks that rely on costly sub-agent rollouts, OrchRM operates directly at the orchestration level, enabling efficient and high-performing reward-guided orchestrator training and MAS test-time scaling. OrchRM improves training efficiency by up to 10x in token usage while improving MAS test-time scaling performance by up to 8% in accuracy. These gains consistently transfer across multiple domains, including mathematical reasoning, web-based question answering, and multi-hop reasoning, demonstrating orchestration-level reward modeling as a scalable direction for robust multi-agent orchestration. Code will be available at https://github.com/Wang-ML-Lab/OrchRM.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-06-11T17:16:24Z",
+    "updated": "2026-06-11T17:16:24Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13598v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13598v1"
+    ],
+    "relevance_score": 0.43878633710054,
+    "max_similarity": 0.16711072017630943
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13668v1",
+    "title": "Influcoder: Distilling Decoders' Gradient Influence Rankings into an Encoder for Data Attribution",
+    "authors": [
+      "Dimitri Kachler",
+      "Damien Sileo",
+      "Pascal Denis"
+    ],
+    "abstract": "With the growth of LLMs' (Large Language Models) capabilities, there has been an increasing push to curate high quality datasets by filtering samples in the training data. In general, Data Attribution (DA) methods aim to estimate how individual samples in a training dataset can precondition a model to generate certain outputs. As an example, one might be interested in which samples in the data could be the source of toxic behavior after training the LLM. Many methods quantify this conditioning through the paradigm of influence functions. While methods of this family are effective in its function, they lack the necessary processing speed and storage compactness to be practically implemented on large datasets. We propose a method, Influcoder, as a quick and cost-effective approach to influence-based Data Attribution at scale.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-06-11T17:58:33Z",
+    "updated": "2026-06-11T17:58:33Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13668v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13668v1"
+    ],
+    "relevance_score": 0.4335808485746131,
+    "max_similarity": 0.1614720172816274
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13607v1",
+    "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
+    "authors": [
+      "Zach Studdiford",
+      "Gary Lupyan"
+    ],
+    "abstract": "When large language models (LLMs) fail to generalize or make haphazard errors in reasoning, it is often taken as evidence that LLMs are not truly reasoning, but rather performing a kind of pattern matching. The implication is that people's behavior does not exhibit the same types of failures because human reasoning uses principled and abstract world models. We evaluate human participants and 25 LLMs on their ability to engage in common-sense reasoning about a variety of everyday situations and observe similar patterns of errors in both people and models. We then identify the set of attention heads driving LLM responses and find that these heads implement a form of pattern-matching. These attention heads allow us to predict seemingly inexplicable reasoning errors in people caused by ostensibly irrelevant prompt details. Taken together, our results suggest that everyday causal reasoning in people and LLMs is more consistent with a form of pattern-matching than with abstract world models.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:23:10Z",
+    "updated": "2026-06-11T17:23:10Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13607v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13607v1"
+    ],
+    "relevance_score": 0.43019798828003386,
+    "max_similarity": 0.15750801692514307
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13610v1",
+    "title": "One Polluted Page Is Enough: Evaluating Web Content Pollution in Generative Recommenders",
+    "authors": [
+      "Minghao Luo",
+      "Liang Chen"
+    ],
+    "abstract": "Search-augmented LLMs increasingly mediate everyday consumer recommendations by retrieving live web content. This creates a new risk: generative recommenders may consume polluted web content, such as fake reviews and promotional pages crafted to mislead recommendations. We ask: to what extent do search-augmented LLMs become unwitting promoters of fake products when consuming polluted retrieval results? To answer this, we introduce FORGE (Fake Online Recommendations in Generative Environments), a benchmark for measuring fake-product promotion under controlled web-content pollution. Given an upstream search result, FORGE locally rewrites real products in retrieved web pages into fake ones to simulate web-content pollution, and measures how often the LLM recommends the fake product. FORGE covers 225 real-world products across 15 categories and 5 consumer scenarios. Across 12 commercial and open-weights LLMs, all models are vulnerable: a single polluted page yields fooled rates of up to 27%, while the full top-3 replacement raises this to 73.8%. Vulnerability varies substantially across categories, increasing when models lack stable prior knowledge of the relevant products. Reasoning does not mitigate this vulnerability; instead, it often generates spurious social proof to justify false recommendations. We evaluate three defenses: skepticism prompting and consensus filtering (over model priors or cross-document evidence). Skepticism can exacerbate vulnerability, much like reasoning, while filtering risks suppressing legitimate products. We release FORGE at https://github.com/leoluolol/forge-benchmark.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:24:14Z",
+    "updated": "2026-06-11T17:24:14Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13610v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13610v1"
+    ],
+    "relevance_score": 0.41189655148289167,
+    "max_similarity": 0.13480047419177593
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13649v1",
+    "title": "Operadic consistency: a label-free signal for compositional reasoning failures in LLMs",
+    "authors": [
+      "Nathaniel Bottman",
+      "Yinhong Liu",
+      "Kyle Richardson"
+    ],
+    "abstract": "Detecting LLM reasoning failures at inference time without ground-truth labels has motivated a wide range of confidence baselines, including self-consistency, semantic entropy, and P(True), built on within-question sampling and self-evaluation. Operad theory, the formalism for systems built by iterated substitution, suggests a complementary diagnostic: a model's direct answer to a compositional query should agree with the answer it produces by composing a stated decomposition of the same query. We instantiate this idea as operadic consistency (OC), a per-question signal. Across twelve instruction-tuned LLMs (4B to 671B parameters, open-weights and closed-source) on four multi-hop QA datasets, OC is strongly correlated with accuracy on every dataset (Pearson $r \\in [0.86, 0.94]$, all $p \\leq 0.0004$), and is the only signal we evaluate with $r \\geq 0.85$ uniformly across all four datasets. Chain-of-thought self-consistency (CoT-SC; Wang et al., 2023) matches OC on HotpotQA and DROP ($r = 0.93, 0.87$) but drops to $r \\approx 0.45$ on MuSiQue and StrategyQA. At the per-question level, OC contributes information beyond CoT-SC and semantic entropy on every dataset (cluster-robust $p \\leq 10^{-16}$ for the OC coefficient), and the conclusion is robust to additionally controlling for constructed decomposition-aware baselines ($p \\leq 10^{-13}$). The same signal yields selective-prediction improvements (accuracy at fixed coverage) over a tuned CoT-SC baseline at the equal-cost $K = 3$ budget (AUARC lifts of +0.086 to +0.096 and AUROC lifts of +0.092 to +0.164; 95% CIs exclude zero on every cell). On five frontier thinking models, where the decomposition is extracted from the model's own chain of thought, the same equal-cost comparison gives positive selective-prediction point-estimate lift on all 16 (dataset, budget, metric) cells tested, with 95% CIs excluding zero on 12 of the 16.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-06-11T17:50:40Z",
+    "updated": "2026-06-11T17:50:40Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13649v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13649v1"
+    ],
+    "relevance_score": 0.3961219736713151,
+    "max_similarity": 0.11538330430381864
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13649v1",
+    "title": "Operadic consistency: a label-free signal for compositional reasoning failures in LLMs",
+    "authors": [
+      "Nathaniel Bottman",
+      "Yinhong Liu",
+      "Kyle Richardson"
+    ],
+    "abstract": "Detecting LLM reasoning failures at inference time without ground-truth labels has motivated a wide range of confidence baselines, including self-consistency, semantic entropy, and P(True), built on within-question sampling and self-evaluation. Operad theory, the formalism for systems built by iterated substitution, suggests a complementary diagnostic: a model's direct answer to a compositional query should agree with the answer it produces by composing a stated decomposition of the same query. We instantiate this idea as operadic consistency (OC), a per-question signal. Across twelve instruction-tuned LLMs (4B to 671B parameters, open-weights and closed-source) on four multi-hop QA datasets, OC is strongly correlated with accuracy on every dataset (Pearson $r \\in [0.86, 0.94]$, all $p \\leq 0.0004$), and is the only signal we evaluate with $r \\geq 0.85$ uniformly across all four datasets. Chain-of-thought self-consistency (CoT-SC; Wang et al., 2023) matches OC on HotpotQA and DROP ($r = 0.93, 0.87$) but drops to $r \\approx 0.45$ on MuSiQue and StrategyQA. At the per-question level, OC contributes information beyond CoT-SC and semantic entropy on every dataset (cluster-robust $p \\leq 10^{-16}$ for the OC coefficient), and the conclusion is robust to additionally controlling for constructed decomposition-aware baselines ($p \\leq 10^{-13}$). The same signal yields selective-prediction improvements (accuracy at fixed coverage) over a tuned CoT-SC baseline at the equal-cost $K = 3$ budget (AUARC lifts of +0.086 to +0.096 and AUROC lifts of +0.092 to +0.164; 95% CIs exclude zero on every cell). On five frontier thinking models, where the decomposition is extracted from the model's own chain of thought, the same equal-cost comparison gives positive selective-prediction point-estimate lift on all 16 (dataset, budget, metric) cells tested, with 95% CIs excluding zero on 12 of the 16.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-06-11T17:50:40Z",
+    "updated": "2026-06-11T17:50:40Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13649v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13649v1"
+    ],
+    "relevance_score": 0.3961219736713151,
+    "max_similarity": 0.11538330430381864
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13608v1",
+    "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+    "authors": [
+      "Xiaoyuan Liu",
+      "Jianhong Tu",
+      "Yuqi Chen",
+      "Siyuan Xie",
+      "Sihan Ren",
+      "Tianneng Shi",
+      "Gal Gantar",
+      "Evan Sandoval",
+      "Donghyun Lee",
+      "Daniel Miao",
+      "Peter J. Gilbert",
+      "Nick Hynes",
+      "Mauro Staver",
+      "Warren He",
+      "David Marn",
+      "Andrew Low",
+      "Xi Zhang",
+      "Elron Bandel",
+      "Michal Shmueli-Scheuer",
+      "Siva Reddy",
+      "Alexandre Drouin",
+      "Alexandre Lacoste",
+      "Ramayya Krishnan",
+      "Elham Tabassi",
+      "Yu Su",
+      "Victor Barres",
+      "Chenguang Wang",
+      "Wenbo Guo",
+      "Dawn Song"
+    ],
+    "abstract": "Agent systems are advancing quickly across domains, but their evaluation remains fragmented. Most benchmarks rely on fixed, LLM-centric harnesses that require heavy integration, create test-production mismatch, and limit fair comparison across diverse agent designs. The root problem is the lack of an open, agent-agnostic assessment interface. We advocate Agentified Agent Assessment (AAA), where evaluation is performed by judge agents and all participants interact through standardized protocols: A2A for task management and MCP for tool access. Conventional benchmarking defines two separate interfaces, one for the benchmark and one for the agent, while AAA only needs one; this yields a generic, unified framework that separates assessment logic from agent implementation and enables reproducible, interoperable, and multi-agent evaluation. We further introduce AgentBeats as a concrete realization of AAA: we identify five practical operation modes that make standardized assessment compatible with real-world constraints on openness, privacy, and reproducibility.   To evaluate our design at scale, we conduct two studies: a five-month open competition that drew 298 judge agents across 12 categories together with 467 subject agents from independent participants, showing that AAA applies across a heterogeneous range of benchmarks; and a case study on coding agents that confirms agentified evaluation preserves fidelity with the public record while surfacing previously missing head-to-head results, yielding research insights about agent design. Combining a community-scale field study and a controlled coding case study, we verify that AAA delivers coverage, practicality, and fidelity across heterogeneous scenarios at scale. Together, AAA and AgentBeats offer a clear path toward open, standardized, and reproducible agent assessment.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:23:54Z",
+    "updated": "2026-06-11T17:23:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13608v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13608v1"
+    ],
+    "relevance_score": 0.379440132302148,
+    "max_similarity": 0.22009968044924907
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13608v1",
+    "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+    "authors": [
+      "Xiaoyuan Liu",
+      "Jianhong Tu",
+      "Yuqi Chen",
+      "Siyuan Xie",
+      "Sihan Ren",
+      "Tianneng Shi",
+      "Gal Gantar",
+      "Evan Sandoval",
+      "Donghyun Lee",
+      "Daniel Miao",
+      "Peter J. Gilbert",
+      "Nick Hynes",
+      "Mauro Staver",
+      "Warren He",
+      "David Marn",
+      "Andrew Low",
+      "Xi Zhang",
+      "Elron Bandel",
+      "Michal Shmueli-Scheuer",
+      "Siva Reddy",
+      "Alexandre Drouin",
+      "Alexandre Lacoste",
+      "Ramayya Krishnan",
+      "Elham Tabassi",
+      "Yu Su",
+      "Victor Barres",
+      "Chenguang Wang",
+      "Wenbo Guo",
+      "Dawn Song"
+    ],
+    "abstract": "Agent systems are advancing quickly across domains, but their evaluation remains fragmented. Most benchmarks rely on fixed, LLM-centric harnesses that require heavy integration, create test-production mismatch, and limit fair comparison across diverse agent designs. The root problem is the lack of an open, agent-agnostic assessment interface. We advocate Agentified Agent Assessment (AAA), where evaluation is performed by judge agents and all participants interact through standardized protocols: A2A for task management and MCP for tool access. Conventional benchmarking defines two separate interfaces, one for the benchmark and one for the agent, while AAA only needs one; this yields a generic, unified framework that separates assessment logic from agent implementation and enables reproducible, interoperable, and multi-agent evaluation. We further introduce AgentBeats as a concrete realization of AAA: we identify five practical operation modes that make standardized assessment compatible with real-world constraints on openness, privacy, and reproducibility.   To evaluate our design at scale, we conduct two studies: a five-month open competition that drew 298 judge agents across 12 categories together with 467 subject agents from independent participants, showing that AAA applies across a heterogeneous range of benchmarks; and a case study on coding agents that confirms agentified evaluation preserves fidelity with the public record while surfacing previously missing head-to-head results, yielding research insights about agent design. Combining a community-scale field study and a controlled coding case study, we verify that AAA delivers coverage, practicality, and fidelity across heterogeneous scenarios at scale. Together, AAA and AgentBeats offer a clear path toward open, standardized, and reproducible agent assessment.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-06-11T17:23:54Z",
+    "updated": "2026-06-11T17:23:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13608v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13608v1"
+    ],
+    "relevance_score": 0.379440132302148,
+    "max_similarity": 0.22009968044924907
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13629v1",
+    "title": "Valid Inference with Synthetic Data via Task Exchangeability",
+    "authors": [
+      "Lezhi Tan",
+      "Tijana Zrnic"
+    ],
+    "abstract": "There is a proliferation of work arguing for the use of synthetic data in scientific research. For example, social scientists are arguing for the use of LLM-generated \"silicon samples\" in pilot studies; AI evaluations increasingly rely on \"LLM-as-a-judge\" outputs; and proteomics research is accelerated by generative models that produce synthetic protein structures. These developments raise an intriguing possibility: synthetic data may help researchers ask more questions, run more studies, and accelerate discovery. But they also raise a fundamental concern: synthetic data can be biased, noisy, and misspecified. In this work, we propose statistical principles for using synthetic data in scientific research with provable validity guarantees. The key insight is a new technical condition that we call task exchangeability. Informally, this is a requirement that the researcher can identify historical tasks, for which real data is available, such that their current task of interest is exchangeable with the historical tasks in an appropriate mathematical sense. We develop methods for valid inference under task exchangeability, together with extensions that provide guarantees even beyond exchangeability. We demonstrate the framework on public opinion surveys with silicon samples and AI evaluation with autoraters.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:41:09Z",
+    "updated": "2026-06-11T17:41:09Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13629v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13629v1"
+    ],
+    "relevance_score": 0.3441220966784132,
+    "max_similarity": 0.11333635337168067
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13629v1",
+    "title": "Valid Inference with Synthetic Data via Task Exchangeability",
+    "authors": [
+      "Lezhi Tan",
+      "Tijana Zrnic"
+    ],
+    "abstract": "There is a proliferation of work arguing for the use of synthetic data in scientific research. For example, social scientists are arguing for the use of LLM-generated \"silicon samples\" in pilot studies; AI evaluations increasingly rely on \"LLM-as-a-judge\" outputs; and proteomics research is accelerated by generative models that produce synthetic protein structures. These developments raise an intriguing possibility: synthetic data may help researchers ask more questions, run more studies, and accelerate discovery. But they also raise a fundamental concern: synthetic data can be biased, noisy, and misspecified. In this work, we propose statistical principles for using synthetic data in scientific research with provable validity guarantees. The key insight is a new technical condition that we call task exchangeability. Informally, this is a requirement that the researcher can identify historical tasks, for which real data is available, such that their current task of interest is exchangeable with the historical tasks in an appropriate mathematical sense. We develop methods for valid inference under task exchangeability, together with extensions that provide guarantees even beyond exchangeability. We demonstrate the framework on public opinion surveys with silicon samples and AI evaluation with autoraters.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-06-11T17:41:09Z",
+    "updated": "2026-06-11T17:41:09Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13629v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13629v1"
+    ],
+    "relevance_score": 0.3441220966784132,
+    "max_similarity": 0.11333635337168067
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.13670v1",
+    "title": "Automated reproducibility assessments in the social and behavioral sciences using large language models",
+    "authors": [
+      "Tobias Holtdirk",
+      "Pietro Marcolongo",
+      "Anna Steinberg Schulten",
+      "Felix Henninger",
+      "Stefan Rose",
+      "Sarah Ball",
+      "Bolei Ma",
+      "Frauke Kreuter",
+      "Markus Weinmann",
+      "Stefan Feuerriegel"
+    ],
+    "abstract": "Reproducibility in the social and behavioral sciences is typically evaluated by independent researchers who reanalyze the original data to assess whether the published findings can be recovered. However, such approaches are resource-intensive and difficult to scale. Here, we show that large language models (LLMs) can automate reproducibility assessments. Using N=76 published studies with predefined claims from the behavioral and social sciences, we compare LLM-generated analysis with the original findings and human reanalysis. For 7 studies, the LLM could not produce a viable effect size estimate. For the remaining studies, our LLM pipeline recovered the original effect sizes in 41% of studies using a +/-0.05 tolerance in Cohen's d. Further, our LLM pipeline reached the same qualitative conclusion as the original study in 96% of cases, where conclusions indicate whether the reanalysis supports the original claim. For comparison, human reanalysts recovered the original effect sizes in 34% of studies and reached the same qualitative conclusion in 74% of cases. Together, these results show that LLMs can serve as a scalable tool for automated reproducibility assessment and provide a foundation for systematic auditing of empirical results in the social and behavioral sciences.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-06-11T17:58:36Z",
+    "updated": "2026-06-11T17:58:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.13670v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2606.13670v1"
+    ],
+    "relevance_score": 0.33349931049286585,
+    "max_similarity": 0.10055721913300802
+  }
+]
