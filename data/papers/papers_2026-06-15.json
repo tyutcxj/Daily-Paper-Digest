@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2606.13870",
+    "title": "Mirage Probes: How Vision Models Fake Visual Understanding",
+    "authors": [
+      "Daniel Ben-Levi, Judah Goldfeder, Weiliang Zhao, Raz Lapid, Amit LeVi, Allen G. Roush, Ravid Shwartz-Ziv, Hod Lipson"
+    ],
+    "abstract": "arXiv:2606.13870v1 Announce Type: new \nAbstract: Vision-language models (VLMs) can answer image-based questions confidently, and often correctly, even when no image is provided. This mirage behavior inflates benchmark scores without reflecting visual grounding. Prior work treats this as a single failure mode. We argue it is two. Using Mirage Probes, a contrastive probing framework that pairs paraphrased question variants with matched mirage and non-mirage labels on the same image, we show that mirage behavior is linearly decodable from internal activations across residual stream, MLP, post-attention, and attention-head sites in two open-source VLMs. We demonstrate that a Naive Bayes text baseline cannot recover this signal, ruling out surface lexical confounds. Cross-benchmark separability patterns, together with a novel Prior Harnessing Index (PHI) measuring how much a model can answer from text alone, expose two distinct regimes: textual biases, where the model answers from language priors without engaging visual representations, and spurious images, where it constructs false visual content in latent space and answers as if grounded. The distinction has direct mitigation consequences: text-distribution cleaning can address the first regime but cannot reach the second, since spurious-image mirages live in the model's visual representations rather than its text. Faithful visual grounding will require interventions at the representational level.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13870",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13870"
+      }
+    ],
+    "relevance_score": 0.4997687780818064,
+    "max_similarity": 0.24155826572989722
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13896",
+    "title": "How do Self-Supervised Remote Sensing Vision Models Transfer to Downstream Tasks?",
+    "authors": [
+      "Julia Romero, Qin Lv, Morteza Karimzadeh"
+    ],
+    "abstract": "arXiv:2606.13896v1 Announce Type: new \nAbstract: Self-supervised geospatial foundation models (GeoFMs) learn transferable representations from remote sensing data, but their downstream behavior is difficult to characterize. We study six representative GeoFMs spanning joint-embedding, reconstruction, and multimodal pretraining families, and evaluate transfer across classification, regression, and segmentation benchmarks under different label availability and downstream pipelines. We find that model rankings change across tasks and adaptation settings. Layerwise probing shows that, in most cases, task-relevant information is more accessible in intermediate transformer blocks compared to final-layer embeddings, and that GeoFMs exhibit distinct depthwise profiles. In segmentation case studies on PASTIS and Sen1Floods11, downstream adaptation settings such as decoder design and fine-tuning can be as impactful as the choice of GeoFM, and standard dense-prediction heads may be poorly aligned with how GeoFMs organize information over depth. Finally, CKA analysis on case studies shows that fine-tuning does not rewrite GeoFMs uniformly across depth, and the strongest changes are localized to the first linear layer of the MLP in ViT blocks. These results help explain why GeoFM rankings shift across benchmarks and motivate more representation-aware evaluation and adaptation strategies.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13896",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13896"
+      }
+    ],
+    "relevance_score": 0.4891527239609674,
+    "max_similarity": 0.23005655988384366
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13707",
+    "title": "Orchestra-o1: Omnimodal Agent Orchestration",
+    "authors": [
+      "Fan Zhang, Vireo Zhang, Shengju Qian, Haoxuan Li, Hao Wu, Jinyang Wu, Donghao Zhou, Zhihong Zhu, Zheng Lian, Xin Wang, Pheng-Ann Heng"
+    ],
+    "abstract": "arXiv:2606.13707v1 Announce Type: new \nAbstract: The recent success of agent swarms has shifted the paradigm of large language model (LLM)-based agents from single-agent workflows to multi-agent systems, highlighting the importance of agent orchestration for task decomposition and collaboration. However, existing orchestration frameworks are limited to a narrow set of modalities and struggle to generalize to more complex settings where heterogeneous modalities coexist and interact. This limitation becomes particularly pronounced in omnimodal scenarios, where tasks require the unified understanding and coordination of diverse inputs such as text, image, audio, and video. In this work, we propose Orchestra-o1, an omnimodal agent orchestration framework designed to support efficient agent collaboration across multiple modalities. Orchestra-o1 introduces a unified orchestration mechanism that enables modality-aware task decomposition, online sub-agent specialization, and parallel sub-task execution. This scalable design allows agent systems to effectively tackle complex real-world tasks involving heterogeneous information sources, surpassing the second-best approach by 10.3% accuracy on the OmniGAIA benchmark. Furthermore, we introduce decision-aligned group relative policy optimization (DA-GRPO), an efficient agentic reinforcement learning approach for training Orchestra-o1-8B, which also achieves state-of-the-art performance against all existing open-source omnimodal agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13707",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13707"
+      }
+    ],
+    "relevance_score": 0.47817819358776414,
+    "max_similarity": 0.2775926554492719
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13916",
+    "title": "A Multi-Agent AI System for Automated High School Transcript Processing: Collaborative Document Analysis at Scale",
+    "authors": [
+      "Ben Torkian, Jun Zhou"
+    ],
+    "abstract": "arXiv:2606.13916v1 Announce Type: new \nAbstract: Each year, college admissions offices face an overwhelming challenge: processing millions of high school transcripts, each with unique formats, grading systems, and layouts. This manual process creates operational bottlenecks that delay admissions decisions and consume valuable resources. We present a transformative solution through a multi-agent AI system where specialized agents collaborate to automatically process diverse transcript formats through intelligent coordination and communication. Our multi-agent architecture consists of three specialized agents-a Pattern Recognition Agent for format-specific parsing, a Semantic Analysis Agent for natural language understanding, and a Vision Intelligence Agent for multimodal document analysis-coordinated by an Orchestration Agent that manages agent communication and result reconciliation. Our key innovation lies in agent-based quality control using GPA extraction as a coordination signal, ensuring reliable agent collaboration and preventing critical information loss. When evaluated on 40 real world transcripts from high schools across 13 U.S. states, our agent system successfully processed every document, achieving 96.7% accuracy compared to expert manual review while maintaining practical processing speeds of 45 seconds per transcript. This work demonstrates how multi-agent coordination can solve complex document processing challenges, offering institutions a scalable, collaborative AI solution that preserves accuracy while dramatically reducing processing time.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13916",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13916"
+      }
+    ],
+    "relevance_score": 0.4745320769918787,
+    "max_similarity": 0.2745615344869099
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13740",
+    "title": "Efficient On-Device Diffusion LLM Inference with Mobile NPU",
+    "authors": [
+      "Tuowei Wang, Yanfan Sun, Ju Ren"
+    ],
+    "abstract": "arXiv:2606.13740v1 Announce Type: new \nAbstract: Diffusion large language models (dLLMs) accelerate generation by denoising multiple tokens in parallel, making them attractive for latency-sensitive mobile inference. However, repeated denoising introduces substantial computation on smartphones. Mobile neural processing units (NPUs) offer high-throughput dense matrix computation, but efficiently exploiting them remains challenging: token commitment shrinks per-block effective workloads, token revision complicates KV cache reuse, and limited NPU-visible address space incurs costly remapping and data transfer overheads.\n  In this paper, we propose llada.cpp, the first NPU-aware inference framework for accelerating dLLMs on smartphones. llada.cpp aligns block-wise dLLM inference with the execution characteristics of mobile NPUs through three techniques. (1) Multi-Block Speculative Decoding fills the shrinking workload in late-stage current-block decoding with speculative future-block tokens. (2) Dual-Path Progressive Revision keeps committed tokens revisable until stable and refreshes unstable tokens through a CPU-side path without stalling dense NPU execution. (3) Swap-Optimized Memory Runtime compacts NPU-visible address layouts and overlaps data staging with NPU computation to reduce remapping and transfer overheads. We implement llada.cpp as an end-to-end framework and evaluate it across diverse hardware platforms and dLLM workloads. llada.cpp reduces LLaDA-8B generation latency by 17x-42x over the CPU baseline with prefix KV cache reuse, while preserving generation quality.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13740",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13740"
+      }
+    ],
+    "relevance_score": 0.4499312165675515,
+    "max_similarity": 0.1821502114094718
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13929",
+    "title": "Self-Evolving Visual Questioner",
+    "authors": [
+      "Yijun Liang, Hengguang Zhou, Ming Li, Lichen Li, Cho-Jui Hsieh, Tianyi Zhou"
+    ],
+    "abstract": "arXiv:2606.13929v1 Announce Type: new \nAbstract: Vision-language models (VLMs) are typically trained as passive answerers, while their ability to actively ask diverse, non-trivial, visual-centric and grounded questions remains underexplored. Existing visual questioners' performance is bottlenecked by the availability of high-quality training data or the cost of curating them. We show that a VLM can continuously improve itself as a visual questioner without any external supervision. We propose a self-evolving framework that uses a VLM itself as both a proposer and a filter to produce harder, more informative, and visual-centric questions, while maintaining their exploration diversity to avoid training collapse. These questions are then used to train the VLM in both questioner and answerer modes. To evaluate the questioner, we introduce an agentic protocol that assesses questions along perception, reasoning, and diversity dimensions. Experiments across various backbone VLMs show that our method substantially enhances the quality and substantially expands the difficulty boundary of autonomous question generation. Under the same budget, our self-supervision is more effective than training on the static source data. Moreover, the self-evolving questioner remains a competitive or even better answerer.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13929",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13929"
+      }
+    ],
+    "relevance_score": 0.41672211307680174,
+    "max_similarity": 0.13915182437106743
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13731",
+    "title": "TwinBI: An Agentic Digital Twin for Efficient Augmented Interactions with Business Intelligence Dashboards",
+    "authors": [
+      "Jisoo Jang Wen-Syan Li"
+    ],
+    "abstract": "arXiv:2606.13731v1 Announce Type: new \nAbstract: Business intelligence (BI) increasingly combines dashboard interaction with LLM-based assistance, but these two modes often fall out of sync during multi-step analysis. As users switch between direct dashboard manipulation and natural-language queries, it becomes difficult to preserve a consistent analytical state across filters, hierarchies, metrics, and chart context. We present TwinBI, an agentic digital-twin framework that couples an LLM-based agent system with an executable BI dashboard state. TwinBI unifies conversational interaction, dashboard manipulation, semantic grounding, and provenance tracking through a shared analytical state reconstructed from a unified interaction log. It also exposes artifacts such as schema views, SQL, logs, and an /insights command for state-grounded analytical summaries. We evaluate TwinBI in two complementary ways. In a controlled A/B benchmark with the same backbone agent, TwinBI improves exact-match accuracy from 43.3% to 63.3%, partial-credit accuracy from 48.3% to 70.8%, and substantially reduces timeout rate from 40.0% to 10.0% relative to Dashboard alone. In a usability study, participants benefited from the integrated dashboard-and-chat workflow, with high task accuracy, moderate workload, and favorable ratings for state-aware interaction mechanisms. These results suggest that TwinBI improves both agent-level analytical reliability and user-facing analytical support by turning visible dashboard state into richer actionable context. Our dataset and source code are available at: https://github.com/simonjisu/TwinBI",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13731",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13731"
+      }
+    ],
+    "relevance_score": 0.40896154210890046,
+    "max_similarity": 0.19315648501515312
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13862",
+    "title": "SuperThoughts: Reasoning Tokens in Superposition",
+    "authors": [
+      "Zheyang Xiong, Shivam Garg, Max Yu, Vaishnavi Shrivastava, Haoyu Zhao, Anastasios Kyrillidis, Dimitris Papailiopoulos"
+    ],
+    "abstract": "arXiv:2606.13862v1 Announce Type: new \nAbstract: Long Chain-of-Thought (CoT) reasoning improves LLM problem-solving but is computationally expensive due to sequential token generation. While recent works explore reasoning in continuous latent spaces to bypass discrete token generation, they often struggle with training stability and fail to scale to complex, long-horizon tasks due to lack of supervision signal. We propose SuperThoughts, which compresses pairs of consecutive CoT tokens into single latent representations and decodes two tokens per step via a lightweight Multi-Token Prediction (MTP) module. This preserves discrete token supervision at training time while doubling throughput at inference time. We finetune Qwen2.5-Math-1.5B-Instruct, Qwen2.5-Math-7B-Instruct, Qwen2.5-Math-14B-Instruct, and evaluate on MATH500, AMC, OlympiadBench, and GPQA-Diamond. With a confidence-based adaptive mechanism that falls back to standard decoding when uncertain, SuperThoughts achieves $\\sim$20--30\\% CoT length reduction while maintaining accuracy with minimal degradation (1-2 points accuracy drop on most tasks).",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13862",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13862"
+      }
+    ],
+    "relevance_score": 0.3988750628587955,
+    "max_similarity": 0.18112280563384173
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13685",
+    "title": "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation",
+    "authors": [
+      "Abel Yagubyan"
+    ],
+    "abstract": "arXiv:2606.13685v1 Announce Type: new \nAbstract: LLM-as-a-Judge is now widely used to rank model outputs, train reward models, and populate public leaderboards, but its run-to-run reliability remains under-characterized. We study repeated identical evaluations on 29 tasks spanning 10 categories using two OpenAI judge models (GPT-4o-mini and GPT-4.1-mini), with 50 pairwise trials and 50 pointwise trials per question, supplemented by temperature and prompt-sensitivity ablations. Across judges, pairwise preferences flip on average 13.6% of the time, with 28% of questions exceeding a 20% flip rate and one question reaching 56%. GPT-4o-mini also exhibits a significant first-position bias (72% A-majority, p = 0.024). At the same time, mean pointwise score gaps are small (0.19--0.36 on a 10-point scale) and not statistically significant in aggregate, producing a pairwise--pointwise gap: judges frequently choose a winner even when their own scalar scores provide little evidence of a meaningful quality difference. Beyond within-judge instability, cross-judge agreement is only 76% ($\\kappa = 0.51$), semantically equivalent prompt templates change majority outcomes in 25% of tested cases, and deterministic decoding reduces but does not eliminate inconsistency. A reliability curve analysis shows that, in our dataset, 11 repeated trials are needed for a majority vote to recover the 50-trial reference verdict with 95% probability on average, rising to 15 for high-variance questions. These findings suggest that single-trial LLM judging is often too noisy for high-stakes evaluation, and that multi-trial aggregation, position randomization, and explicit uncertainty reporting should be standard practice. Because both judges are from a single provider, cross-provider replication remains an important next step.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13685",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13685"
+      }
+    ],
+    "relevance_score": 0.3933424742147853,
+    "max_similarity": 0.11246634905229215
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13782",
+    "title": "MA-ProofBench: A Two-Tiered Evaluation of LLMs for Theorem Proving in Mathematical Analysis",
+    "authors": [
+      "Lushi Pu, Weiming Zhang, Xinheng Xie, Zixuan Fu, Bingxiang He, Hongya Lyu, Xin Li, Jie Zhou, Yudong Wang"
+    ],
+    "abstract": "arXiv:2606.13782v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have made notable progress in automated theorem proving, yet existing formal benchmarks remain limited in both mathematical coverage and difficulty. Most are concentrated in areas that are easier to formalize, such as algebra and elementary number theory, and provide limited coverage of subfields that require deeper reasoning, including mathematical analysis. To address this gap, we introduce MA-ProofBench, to the best of our knowledge, the first formal theorem-proving benchmark dedicated to Mathematical Analysis. The benchmark contains 200 formalized theorems covering 6 core topics and 27 subcategories, including measure and integration theory, complex analysis, and functional analysis. The problems are divided into two difficulty levels, an undergraduate level (Level I, 100 problems) and a Ph.D. qualifying level (Level II, 100 problems), to evaluate how well LLMs perform formal reasoning at different mathematical depths. Each problem is constructed through a human-led, LLM-assisted formalization pipeline followed by independent expert review, ensuring that the formal statements remain faithful to the original mathematics. We evaluate a range of recent general-purpose reasoning models and formal theorem provers on MA-ProofBench. However, most models perform poorly: even the best-performing model, GPT-5.5, achieves only 16% Pass@8 on Level I and 5% on Level II, while most models stay close to 0% on Level II. Further analysis identifies Mathlib hallucinations and incomplete proofs as the two dominant failure modes, while an evaluation on the natural-language version of the benchmark exposes a clear gap between informal and formal reasoning. MA-ProofBench is intended to serve as a reliable reference for tracking progress in formal mathematical reasoning in advanced domains.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13782",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13782"
+      }
+    ],
+    "relevance_score": 0.3916636859995746,
+    "max_similarity": 0.17149258861956995
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13861",
+    "title": "Temporal Backtracking Search for Test-time Generative Video Reasoning",
+    "authors": [
+      "Sejoon Jun, Zheng Ding, Huangyuan Su, Weirui Ye, Yilun Du"
+    ],
+    "abstract": "arXiv:2606.13861v1 Announce Type: new \nAbstract: While test-time scaling has revolutionized reasoning in large language models, generative video reasoning remains bottlenecked by a single-shot paradigm. We demonstrate that searching over denoising steps cannot rescue logically flawed rollouts because spatial trajectories commit early in the diffusion process. Root-level Best-of-N (BoN) sampling is similarly inefficient: reasoning errors cluster early in the temporal axis, and resampling blindly discards verified upstream progress. To unlock effective test-time scaling for video models, we introduce Temporal Backtracking Search (TBS), which shifts the search space to the temporal axis. TBS transforms video generation into an iterative generate-verify-restart loop via three core mechanisms: (1) variable-K conditioning to resume generation from arbitrary clean prefixes; (2) temporal process verification to localize failures and extract valid restart anchors; and (3) prefix-based search to reallocate compute toward extending correct trajectories rather than root resampling. Across algorithmic, navigation, and robotics domains, TBS Pareto-dominates matched-budget BoN. In a strict out-of-distribution setting where one-shot generation collapses (0.7% for BoN), TBS achieves 22.7%, with every solved episode stemming from a restarted branch. Ultimately, TBS reveals that the local reasoning competence of video models far exceeds what single-shot rollouts indicate, providing a scalable test-time framework to unlock it.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13861",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13861"
+      }
+    ],
+    "relevance_score": 0.38381710446926426,
+    "max_similarity": 0.16212342448695818
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13873",
+    "title": "Natively Unlearnable Large Language Models",
+    "authors": [
+      "Gaurav R. Ghosal, Pratyush Maini, Aditi Raghunathan"
+    ],
+    "abstract": "arXiv:2606.13873v1 Announce Type: new \nAbstract: Unlearning aims to remove the influence of specific training data sources, but this has proved challenging because the contributions of different sources are entangled within the model. Isolating source contributions to disjoint parameters makes removal easier, though it obstructs joint learning across sources. We propose NULLs (Natively Unlearnable LLMs), a model class that satisfies the two opposing goals of isolating source-specific contributions and learning jointly across sources, by training a set of shared backbone neurons alongside a pool of sparsely activated sinks. During training, information specific to a source naturally concentrates in its sinks while information shared across sources accumulates in the backbone. A source is then unlearned at deployment by disabling its corresponding sinks, with no gradient updates and no access to the retained data. We show that NULLs scales to Wikipedia's ~6M articles, isolating each as an independent source. Unlearning a single article removes knowledge specific to it while preserving facts shared with semantically related articles, closely matching retraining from scratch. We note that unlearning with NULLs is also robust: in a case study of unlearning the Harry Potter books, NULLs resists both adversarial extraction and relearning that reverses post-hoc unlearning. Finally, NULLs preserves general language capabilities, matching a standard transformer on downstream benchmarks. Together, these results suggest that source-level unlearning need not be an afterthought. It can be built natively into LLM training while retaining the benefits of shared representation learning.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13873",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13873"
+      }
+    ],
+    "relevance_score": 0.36466082537009215,
+    "max_similarity": 0.1379463243814602
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13934",
+    "title": "Adversarial Concept Search: Predicting Compositional Errors From Feature Geometry",
+    "authors": [
+      "Jennifer Meng Lu, Ruochen Zhang, Isabelle Lee, David Alvarez-Melis, Ellie Pavlick, Naomi Saphra"
+    ],
+    "abstract": "arXiv:2606.13934v1 Announce Type: new \nAbstract: Humans cannot always intuit what scenarios are most challenging to LLMs. Hoping to capture challenging edge cases, developers either design problems to be difficult for humans or curate extensive benchmarks. What if we could instead anticipate which scenarios a model will fail on? In this paper, we use an LLM's representational geometry to predict which concept combinations it will fail on. We attribute this compositional failure to interference between salient features. In tasks that require systematic composition - toy programmatic settings, multihop reasoning, multilingual factual recall - we find that when a pair of concepts is encoded near-orthogonally, the model reliably composes them. When their linear encodings are close, producing interference, the model fails to compose them. Our method reliably anticipates failure modes across different compositional tasks, without evaluating specific inputs. These results lay the groundwork to use representational geometry to identify high-risk examples, construct targeted stress tests, and provide a scalable foundation for active learning in real-world deployment.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13934",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13934"
+      }
+    ],
+    "relevance_score": 0.3526644681888958,
+    "max_similarity": 0.123766192093022
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13683",
+    "title": "UP-NRPA: User Portrait based Nested Rollout Policy Adaptation for Planning with Large Language Models in Goal-oriented Dialogue Systems",
+    "authors": [
+      "Hui Wang, Fafa Zhang, Meng Liu, Xiangyu Chen, Chaoxu Mu"
+    ],
+    "abstract": "arXiv:2606.13683v1 Announce Type: new \nAbstract: To address the challenge that current dialogue policy planning methods struggle to dynamically adapt to diverse user characteristics, this paper proposes a User Portrait based Nested Rollout Policy Adaptation (UP-NRPA) online framework with Large Language Models. In contrast to conventional approaches dependent on model training and require offline reinforcement learning policy models for user groups, UP-NRPA enables dynamic customization of dialogue strategies through an adaptive mechanism. This is achieved by leveraging real-time user feedback alongside personality, preferences, and objectives mapped from the current user portrait, thereby adapting to user characteristics without offline reinforcement learning. In collaborative and non-collaborative dialogue benchmarks, UP-NRPA demonstrated considerable benefits, achieving an impressive 100% success rate in multiple dialogue tasks. Particularly in negotiation tasks, the sale-to-list ratio (SL) increased by 56.41%. This demonstrates that UP-NRPA can adapt to diverse user needs without requiring a training mechanism, enabling the dialogue system to adapt to user characteristics.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13683",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13683"
+      }
+    ],
+    "relevance_score": 0.35002398183217687,
+    "max_similarity": 0.12055439445840385
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13815",
+    "title": "Poker Arena: Multi-Axis Profiling of Strategic Reasoning and Memory in LLMs",
+    "authors": [
+      "Pratham Singla, Shivank Garg, Vihan Singh"
+    ],
+    "abstract": "arXiv:2606.13815v1 Announce Type: new \nAbstract: Strategic reasoning under uncertainty underpins consequential decisions in negotiation, finance, and policy, but prevailing game-play benchmarks collapse heterogeneous reasoning dimensions into a single scalar, leaving the capability structure of frontier LLMs unexamined. We introduce Poker Arena, a no-limit Texas Hold'em tournament platform that couples a three-layer memory architecture (within-hand, session, and cross-session) with a nine-axis cognitive profile decomposing strategic reasoning into interpretable dimensions such as bet-sizing calibration and positional awareness. We evaluate seven frontier models across 50 sessions of 1,000 hands and a controlled memory ablation; tournament chips and aggregate axis score order the field differently: Claude Opus 4.6 wins +$15,730 chips with 14 first-place finishes, yet ranks only fifth of seven on mean axis score, while persistent memory helps some models and hurts others. These findings show that multi-axis evaluation surfaces capability structure that scalar leaderboards systematically misrank, with cross-dimensional consistency outweighing peak performance on any single axis.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13815",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13815"
+      }
+    ],
+    "relevance_score": 0.3498592775313113,
+    "max_similarity": 0.18294472794268057
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13705",
+    "title": "Can Editing 1 Neuron Fix Repetition Loops in LLMs?",
+    "authors": [
+      "Aristotelis Lazaridis, Aman Sharma, Dylan Bates, Brian King, Vincent Lu, Jack FitzGerald"
+    ],
+    "abstract": "arXiv:2606.13705v1 Announce Type: new \nAbstract: Yes. Can it cure doom loops? Probably not.\n  The Gemma 4 instruction-tuned models share a reproducible failure: on long factual enumeration prompts, such as listing every episode of a TV series, the 88 IAU constellations, or the 151 original Pokemon, they collapse into repetition, either a tight verbatim loop or a list whose entries decay onto a single answer. These loops occur at rates as high as 95% and survive prompt rewording, inference-engine changes, and most sampling adjustments. In this paper we explore whether this behavior is localized enough to remove by weight edits. To localize the cause, we use per-layer ablation and per-neuron attribution, then confirm the strongest candidates with full-generation sweeps. The loops trace to a small set of MLP neurons (or, in the 26B-A4B Mixture-of-Experts model, a few routed experts) which we suppress with static weight edits. These \"surgeries\" can be as small as a single sign-inverted neuron (in the E2B model). The size of the effective edits grows with model scale, but in all cases, the loop patterns can be addressed at normal generation budgets while preserving general-purpose benchmark scores. However, the edits do not solve everything: we also study longer thinking budgets, where the two larger models most visibly enter doom looping, i.e. a non-convergent regime in which the model self-corrects in circles over a fact it cannot recall, exhausting the budget without committing to a final answer. We show this residual failure is reduced but not eliminated by the same edits, and argue it is fundamentally a knowledge-precision problem rather than a removable circuit; weight surgery can delete a loop, but it cannot supply a missing fact. Our results are both a feasibility demonstration, that is, evidence that a concrete generation pathology can be localized to a few parameters and edited out, and a delineation of where that approach stops.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13705",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13705"
+      }
+    ],
+    "relevance_score": 0.34563040535153755,
+    "max_similarity": 0.1146983865471343
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13884",
+    "title": "Capability Minimization as a Safety Primitive: Risk-Aware Causal Gating for Least-Privilege LLM Agents",
+    "authors": [
+      "Laxmipriya Ganesh Iyer, Rahul Suresh Babu"
+    ],
+    "abstract": "arXiv:2606.13884v1 Announce Type: new \nAbstract: Modern decision systems increasingly rely on learned components whose outputs may be confident yet wrong, exposing downstream actions to costly errors. We introduce Risk-Aware Causal Gating (RACG), a framework that decides whether to act on, defer, or abstain from a model's prediction by combining causal effect estimation with calibrated risk control. RACG models the causal pathway from candidate actions to outcomes and gates each decision according to an estimated counterfactual risk rather than raw predictive confidence. To make gating reliable, we derive distribution-free bounds on the probability of acting under high-risk conditions and show how these bounds translate into operating thresholds that satisfy user-specified safety constraints. We further propose an adaptive gating policy that adjusts to distribution shift by monitoring discrepancies between predicted and realized outcomes, tightening the gate when causal assumptions appear violated. Across simulated interventions and real-world decision benchmarks, RACG reduces high-cost errors substantially while preserving most of the utility of an ungated policy, and it outperforms confidence-based and selective-prediction baselines at matched abstention rates. Our results indicate that explicitly separating causal risk from predictive uncertainty yields decision systems that are both safer and more transparent, offering a principled mechanism for trustworthy automation in high-stakes settings.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13884",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13884"
+      }
+    ],
+    "relevance_score": 0.2823151331763976,
+    "max_similarity": 0.0992091020981158
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13949",
+    "title": "Minim: Privacy-Aware Minimal View for Agents via Trusted Local Sanitization",
+    "authors": [
+      "Hexuan Yu, Chaoyu Zhang, Heng Jin, Shanghao Shi, Ning Zhang, Y. Thomas Hou, Wenjing Lou"
+    ],
+    "abstract": "arXiv:2606.13949v1 Announce Type: new \nAbstract: Modern LLM-powered autonomous agents increasingly rely on rich user interface (UI) state observations to achieve reliable action grounding in complex digital environments. However, many deployments transmit the full UI state to remote inference servers even when most elements are irrelevant to the current task, which can leak sensitive but unnecessary context such as authentication codes, private notifications, and background application states. We propose MINIM, a trusted local broker that performs privacy-aware minimization on the client side before any observation leaves the device. Grounded in Contextual Integrity (CI), MINIM learns a dual-score representation for each UI element by predicting an inherent sensitivity score (s) and a task-conditioned necessity score (n). These scores drive a ternary disclosure policy that keeps essential elements, abstracts sensitive attributes when needed, and removes task-irrelevant content. We optimize a CI-aware objective that penalizes necessity errors more strongly on high-risk content, enabling aggressive pruning while preserving task-critical information. Experiments on real-world UI observations derived from WebArena show that MINIM substantially reduces task-irrelevant sensitive leakage while preserving task-critical semantic context and the interactive affordances required for reliable agent actions.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13949",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13949"
+      }
+    ],
+    "relevance_score": 0.26432959543682855,
+    "max_similarity": 0.13868978057787293
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.13925",
+    "title": "Sorries Are Not the Hard Part: An Expert-Review Case Study of a Semi-Autonomous Formalization",
+    "authors": [
+      "Vasily Ilin, Brian Nugent"
+    ],
+    "abstract": "arXiv:2606.13925v1 Announce Type: new \nAbstract: Large language models can often close proof gaps in interactive theorem provers, but a verified theorem is not the same thing as a reusable library contribution. We study this distinction through a detailed case study: a semi-autonomous formalization of Grothendieck's vanishing theorem. The initial version compiles with no sorries, but an expert review found serious problems in definitions, theorem generality, file organization, and the API. We then ran a review-driven refactor and compression process and obtained a second expert review. The before-and-after comparison shows a sharp split: agents adapted well to local, mechanically checkable feedback, but remained weak at choosing definitions and designing APIs. We argue that autoformalization should be evaluated not only by closed sorries, but by whether the resulting formalization survives expert review.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.13925",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.13925"
+      }
+    ],
+    "relevance_score": 0.2609521964348251,
+    "max_similarity": 0.07430879986417988
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.14000",
+    "title": "Formalizing Numerical Analysis: An Agent Pipeline and Quality Audit Beyond Kernel Acceptance",
+    "authors": [
+      "Theodore Meek, Siyuan Ge, Di Qiu Xiang, Simon Chess, Vasily Ilin"
+    ],
+    "abstract": "arXiv:2606.14000v1 Announce Type: new \nAbstract: Recent work has demonstrated that coding agents can formalize entire advanced mathematics textbooks in Lean 4, yet existing efforts concentrate on branches of mathematics already well-represented in mathlib and measure success solely through kernel acceptance. We address both limitations by applying a coding agent to formalize Numerical Methods for Ordinary Differential Equations, a textbook in numerical analysis that is largely absent from mathlib, stressing the agent's capacity to develop new theory from scratch. We further introduce a systematic, reproducible three-dimensional framework for evaluating the quality of agent-produced formalizations beyond compilation: semantic correctness, Mathlib reuse, and cross-file reuse via LLM-as-judge methods. Applying this framework to our own formalization and to the released outputs of RepoProver and M2F, we uncover recurring unfaithful formalization patterns, including incomplete multi-part statements, added weakening hypotheses, and parameter restrictions, that kernel acceptance entirely obscures. Our results suggest that compilation-based metrics substantially overstate formalization quality, and we provide a reproducible audit methodology to support more rigorous evaluation of future autoformalization systems.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "updated": "Mon, 15 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.14000",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.14000"
+      }
+    ],
+    "relevance_score": 0.2375173765890653,
+    "max_similarity": 0.16679117048909053
+  }
+]
