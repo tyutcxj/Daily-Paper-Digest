@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2606.17250",
+    "title": "Rethinking Groups in Critic-Free RLVR",
+    "authors": [
+      "Yihong Wu, Liheng Ma, Lingfeng Xiao, Muzhi Li, Xinyu Wang, Yingxue Zhang, Jian-Yun Nie"
+    ],
+    "abstract": "arXiv:2606.17250v1 Announce Type: new \nAbstract: Reinforcement learning (RL) has become a central paradigm for post-training large language models. Existing critic-free RL methods typically generate a group of rollouts for the same question to estimate value baselines for advantage computation. However, this design suffers from data inefficiency, group synchronization barriers, and inflexibility with structured rollouts. In this work, we revisit the role of the ``group'' and show that its underlying function is not merely to estimate baselines but to prevent false penalties on negative samples. Building on this insight, we propose negative token filtering, a simple and effective strategy that enables stable single-rollout training. We apply it to two batch-level advantage methods, achieving comparable performance on reasoning tasks and stronger performance on agentic tasks relative to group-based RL techniques.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17250",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17250"
+      }
+    ],
+    "relevance_score": 0.5215755217383191,
+    "max_similarity": 0.2709421141545232
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17312",
+    "title": "Quantifying Consistency in LLM Logical Reasoning via Structural Uncertainty",
+    "authors": [
+      "Baishali Chaudhury, Mengdie Flora Wang, Hyunji Hayley Park, Rahul Ghosh, Sungmin Hong, Jae Oh Woo"
+    ],
+    "abstract": "arXiv:2606.17312v1 Announce Type: new \nAbstract: Large language models can arrive at the same answer through reasoning paths that are unstable, contradictory, or difficult to rank consistently -- a failure mode especially prevalent in multi-step deductive reasoning. Existing methods assess reliability primarily through output dispersion -- measuring how much sampled answers differ -- but this discards a complementary signal: whether the model can consistently rank competing reasoning candidates. We propose structural uncertainty, a consistency-aware framework derived from the stability of self-preference-induced rankings over sampled reasoning solutions. Given a query, we generate multiple candidate solutions and ask the model to judge pairwise preferences among its own outputs. We aggregate self-preferences into ranking distributions via Bradley-Terry modeling with PageRank, and decompose the signal into two entropy-based components: across-trial ranking instability and within-trial candidate ambiguity. Across five LLMs and eight benchmarks, structural signals provide information complementary to answer dispersion: on logical and mathematical reasoning tasks, the combination improves identification of unreliable instances, while on factual retrieval the structural signal collapses toward uniformity, diagnosing a regime boundary where reasoning-level consistency evaluation is uninformative. The two components relate differently to accuracy: within-trial ambiguity correlates positively with correctness -- consistent with settings where multiple plausible solution paths remain competitive -- while across-trial instability correlates negatively, signaling unreliable reasoning. Structural uncertainty is best understood not as a universal confidence estimator, but as a regime-sensitive evaluator of logical reasoning consistency.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17312",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17312"
+      }
+    ],
+    "relevance_score": 0.5057518358647513,
+    "max_similarity": 0.25128142166838796
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17368",
+    "title": "Distributed General-Purpose Agent Networks: Architecture, Key Mechanisms, and Prototypes",
+    "authors": [
+      "Shengli Zhang, Deen Ma, Zibin Lin, Taotao Wang"
+    ],
+    "abstract": "arXiv:2606.17368v1 Announce Type: new \nAbstract: Large language models have accelerated the transition from passive conversational assistants to autonomous agents that can understand goals, plan actions, invoke tools, and execute multi-step tasks. Yet the capability of a single agent remains constrained by its local data, tool permissions, runtime environment, and governance boundary. This paper studies distributed general-purpose agent networks: open peer-to-peer networks in which heterogeneous agents deployed on personal devices, edge nodes, or autonomous computing environments can discover one another, establish trust, negotiate cooperation rules, and execute open-ended tasks. We argue that such networks cannot be obtained by simply combining existing peer-to-peer overlays with conventional multi-agent systems. Unlike traditional P2P networks, agent networks must propagate semantic declarations about intentions, capabilities, states, and cooperation constraints. We therefore propose a layered architecture centered on a protocol adaptation layer that connects upper-level task semantics with lower-level network operations. Based on this architecture, the paper identifies three core mechanism problems: semantic announcement propagation for collaborator discovery, verifiable identity and multi-topic reputation for cooperation governance, and semantic-gradient mechanism design for open task execution. For each problem, we present a technical route, including bodyless gossip with sequential logs, BAID-based identity binding with MG-EigenTrust reputation, and a Stackelberg-style mechanism-generation loop driven by semantic attribution feedback. We further report prototype overhead results for BAID-style tiered verification and mechanism-level simulations of MG-EigenTrust under cross-topic disguise-collusion attacks. The resulting framework provides a system-level foundation for open, trustworthy, and scalable agent collaboration.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17368",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17368"
+      }
+    ],
+    "relevance_score": 0.4507837643959786,
+    "max_similarity": 0.18237540811205732
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17113",
+    "title": "The Critical Role of Model Selection in Causal Inference: A Comparative Analysis of Classification Models within the InferBERT Framework for Pharmacovigilance",
+    "authors": [
+      "Csaba Kiss, Roland Molontay, Gabriele Pergola"
+    ],
+    "abstract": "arXiv:2606.17113v1 Announce Type: new \nAbstract: Distinguishing causal adverse drug events (ADEs) from spurious correlations remains a central challenge in pharmacovigilance. The InferBERT framework integrates transformer models with Do-calculus, but its success hinges on the underlying classification model. This study evaluates the impact of model choice in InferBERT, assessing whether simpler models suffice, if domain-specific pre-training helps, whether scaling to LLMs improves causal detection, and the effect of post-hoc calibration. We performed a comparative study on two benchmarks: Analgesics-induced Acute Liver Failure (AILF) and Tramadol-related Mortalities (TRAM). Four models were evaluated-XGBoost (baseline), ALBERT (original InferBERT), BioBERT (biomedical transformer), and Med-LLaMA (medical LLM)-using 5-fold cross-validation repeated over 20 runs. We measured accuracy, Expected Calibration Error (ECE) pre- and post-isotonic regression, and Jaccard concordance of causal terms with PRR, ROR, and EBGM; significance was tested with paired t-tests. BioBERT achieved the highest accuracy on both datasets, while Med-LLaMA underperformed despite its size and parameter-efficient fine-tuning. Domain-specific pre-training was decisive. Calibration improved ECE but had mixed effects on accuracy and causal discovery. BioBERT's superiority also yielded the strongest concordance with traditional pharmacovigilance signals. These results show that domain-specific pre-training provides a clear advantage over simpler baselines and larger LLMs. Investing in manageable, domain-aware models is more effective for computational pharmacovigilance than simply scaling model size.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17113",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17113"
+      }
+    ],
+    "relevance_score": 0.44661626530720316,
+    "max_similarity": 0.17754721700152112
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17182",
+    "title": "Verified Detection and Prevention of Concurrency Anomalies in Multi-Agent Large Language Model Systems",
+    "authors": [
+      "Sajjad Khan"
+    ],
+    "abstract": "arXiv:2606.17182v1 Announce Type: new \nAbstract: Multi-agent LLM systems share state through memory stores, vector indices, and tool registries. We model such sharing as long-running read-generate-write operations under deterministic-generation semantics -- the regime durable-execution engines enforce by deterministic replay -- and formalize four concurrency anomalies in TLA+: stale-generation, phantom-tool, causal-cascade, and tool-effect reordering, structural analogues of classical isolation anomalies, each with a TLC counter-example. The exclusion lattice over these anomalies is trivial; the contribution is the mechanically verified realizability and strict separation of one maximal chain within it, $L_0 \\subsetneq \\cdots \\subsetneq L_4$, to our knowledge the first machine-checked consistency hierarchy for such runtimes. A development of 274 Verus obligations (zero assume, zero admit; trust base: two structural axioms and a mutex correspondence) proves the detectors sound and complete against the specifications and each runtime its avoidance set. Three deployed Rust runtimes realize L0-L1 (pessimistic locking, serializable snapshot isolation, default-SI), each verified against stale-generation and refined to its state machine; L2-L4 are exec-mode-verified with dependency-free prevention twins (A3, A6, A2: 0/1000 versus 1000/1000), and L2 is run live across three model families (A3 prevented in all 120 retracted sessions). We reproduce a silent lost update in ByteDance's deer-flow, formalizing its fix as a verified $L_0 \\to L_1$ refinement, and exhibit tool-effect reordering in LangGraph's ToolNode on unmodified output, removed by an L3 commit-order sequencer. The verified detector, refinements, and realizability artifacts are the contribution; the phenomena and lattice are classical.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17182",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17182"
+      }
+    ],
+    "relevance_score": 0.44064866444552403,
+    "max_similarity": 0.17101883660529543
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17577",
+    "title": "Surrogate Assisted Pedestrian Protection Design via a Foundation Model Orchestrated Workflow",
+    "authors": [
+      "Osamu Ito, Akihiko Katagiri, Yoshikazu Nakagawa, Shin Saeki, Jun Shiraishi, Masato Sasaki"
+    ],
+    "abstract": "arXiv:2606.17577v1 Announce Type: new \nAbstract: AI-driven engineering workflows face particular challenges in crash safety design: unlike aerodynamics, crash events involve highly nonlinear contact dynamics, material nonlinearity, and discrete state transitions that are difficult to capture with data-driven surrogate models. To the best of our knowledge, we present the first foundation model--orchestrated workflow for crash safety design that enables surrogate-assisted exploration for pedestrian protection, reducing evaluation time from hours per CAE simulation to seconds.\n  The workflow integrates four components: (1) a surrogate trained on CAE crash simulations to predict pedestrian leg injury metrics from design parameters, achieving an average $R^2=0.87$ and providing distribution-free conformal prediction intervals; (2) multiobjective evolutionary search (NSGA-II) to discover diverse feasible parameter sets under user-specified constraints; (3) a morphing-based geometry generator that maps parameters to topology-preserving 3D shapes; and (4) a natural-language interface in which an LLM orchestrates the workflow and a vision--language model supports semantic comparison of generated designs.\n  In an automotive front-bumper case study, the workflow produces 35 distinct safety-compliant alternatives from a single exploration, a process that would require weeks with conventional CAE iteration. These results suggest that foundation models can serve as integration layers between ML surrogates and physics-based simulation, helping bring AI capabilities to safety-critical engineering domains.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17577",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17577"
+      }
+    ],
+    "relevance_score": 0.4333254443183713,
+    "max_similarity": 0.16141816720131055
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17507",
+    "title": "LLM-as-Judge in Education: A Curriculum-Grounded Marking Pipeline",
+    "authors": [
+      "Xiwei Xu, Chen Wang, Jacky Jiang, Phil Yang, Qian Fu, Mohan Dhall, Wenjie Zhang, Liming Zhu"
+    ],
+    "abstract": "arXiv:2606.17507v1 Announce Type: new \nAbstract: Generative AI and large language models (LLMs) are increasingly applied to question generation and automated assessment. However, deploying LLMs in preparation for high-stakes exams requires more than prompt engineering; it demands software pipelines that systematically ground model outputs in authorised curriculum artefacts and marking guidelines issued by education authorities. This paper presents a curriculum-grounded, configurable LLM-as-Judge pipeline for question-level marking, co-developed with an industrial partner, to support exam preparation for university admission. The pipeline identifies the relevant topics, subtopics, and cognitive demand of a question, and assembles verifiable and authorised context to support LLM judgement. Curriculum intent is operationalised through concrete syllabus artefacts, including prescribed verbs and outcomes, performance band descriptors, glossary definitions, and marking-guideline principles. A staged LLM workflow is employed to first generate question-specific rubrics, capturing structured expectations of performance, and then derive and evaluate marking criteria used to allocate marks to student responses. This design improves consistency, transparency, and alignment with official marking practices. Preliminary evaluation shows that the proposed LLM-as-Judge pipeline delivers marking outcomes comparable to human tutors, while yielding justifications that are more traceable to authorised curriculum artefacts and marking standards. The pipeline has also been integrated into an online study platform, where early deployment data provide initial insights into operational usage and manual overrides.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17507",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17507"
+      }
+    ],
+    "relevance_score": 0.4330099594934044,
+    "max_similarity": 0.16141853561761385
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17220",
+    "title": "When Rules Learn: A Self-Evolving Agent for Legal Case Retrieval",
+    "authors": [
+      "Mingxu Tao, Jiawei Hu, Xian Zhou, Wenpeng Hu, Jiajun Cheng, Yunbo Cao, Zhunchen Luo, Guotong Geng"
+    ],
+    "abstract": "arXiv:2606.17220v1 Announce Type: new \nAbstract: Legal case retrieval remains challenging due to the complexity of legal language and the need for precise lexical alignment between queries and relevant cases. Although dense retrieval models have achieved notable progress, empirical studies show that BM25 continues to serve as a strong baseline in this domain. It motivates us to propose a self-evolving framework for rule-driven query rewriting that enhances BM25 without any parameter training. The framework equips an LLM-based agent with an automatic evaluation environment, enabling it to iteratively create rewriting rules, plan validation experiments over rule combinations, and eliminate ineffective rules based on historical feedbacks. We evaluate our method on the Chinese legal case retrieval benchmark LeCaRD-v2. Experimental results demonstrate that the proposed framework outperforms non-evolutionary baselines, including human-designed rules and greedy rule selection, particularly when powered by a highcapacity core LLM. We also conduct detailed analyses to investigate the mechanisms underlying self-evolution. Our findings reveal that LLM's capabilities to leverage previous experimental results and its intrinsic knowledge of rule elimination play critical roles in refining the rule set via self-evolution.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17220",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17220"
+      }
+    ],
+    "relevance_score": 0.43211789887004537,
+    "max_similarity": 0.15807233719857566
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17459",
+    "title": "Can LLMs Be CEOs? Benchmarking Strategic Resource Reallocation with Multi-Role Agent Simulation",
+    "authors": [
+      "Yuyang Dai, Xueqing Peng, Lingfei Qian, Zhuohan Xie"
+    ],
+    "abstract": "arXiv:2606.17459v1 Announce Type: new \nAbstract: Evaluating the decision-making capabilities of large language models (LLMs) is a growing research priority, yet existing benchmarks focus on isolated cognitive tasks such as reasoning, knowledge retrieval, and economic rationality in stylized settings. These evaluations overlook the defining challenge of real executive decision-making: integrating conflicting recommendations from specialized stakeholders under information asymmetry, organizational constraints, and temporal dependencies. We introduce \\textsc{CEO-Bench}, a multi-agent benchmark that evaluates LLMs on CEO-level strategic resource reallocation -- the process of redirecting capital across business units in a multi-round, constraint-rich organizational environment. In \\textsc{CEO-Bench}, LLM agents receive conflicting advice from four role-conditioned C-suite advisors (CFO, CTO, COO, CMO), each with private signals and distinct priorities, and must synthesize these into a concrete allocation plan evaluated along four dimensions: role integration, conditional boldness, history-sensitive judgment, and plan validity. Experiments across five frontier models on 13 scenarios reveal that all models achieve high structural validity but diverge sharply on strategic calibration -- the hardest capability layer. We identify systematic failure modes including single-advisor capture, conservative default under ambiguity, and historical amnesia, and uncover a structural integration-boldness tradeoff: models that engage more deeply with conflicting perspectives tend to produce less decisive action. These findings delineate the current capability boundary of LLMs as organizational decision-makers and inform the design of future AI-assisted executive systems.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17459",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17459"
+      }
+    ],
+    "relevance_score": 0.42813095743825436,
+    "max_similarity": 0.1536759676884302
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17057",
+    "title": "Correct When Paired, Wrong When Split: Decoupling and Editing Modality-Specific Neurons in MLLMs",
+    "authors": [
+      "Tingchao Fu, Wenkai Wang, Fanxiao Li, Huadong Zhang, Jinhong Zhang, Dayang Li, Yunyun Dong, Renyang Liu, Wei Zhou"
+    ],
+    "abstract": "arXiv:2606.17057v1 Announce Type: new \nAbstract: Although Knowledge Editing provides an efficient mechanism for updating the knowledge of Multimodal Large Language Models (MLLMs), we find that current paradigms still suffer from an important yet remain underexplored issue : editing decoupling failure, where entity-related knowledge can be updated when the model is triggered by multimodal inputs (text--image query pairs), however, it often reverts to outdated pre-edit facts when the paired inputs are split into unimodal ones. Our in-depth empirical analysis reveals that the entity knowledge in MLLMs is not stored as a unified representation, but is instead distributed across disentangled modality-specific pathways. As a result, updates biased toward multimodal queries fail to propagate effectively to unimodal circuits. To bridge this gap, we propose DECODE, which explicitly disentangles and localizes modality-specific neuron groups for targeted knowledge. Extensive experiments demonstrate that DECODE consistently achieves effective knowledge updates under different modality triggers, thereby mitigating editing decoupling failures.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17057",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17057"
+      }
+    ],
+    "relevance_score": 0.4161648038153335,
+    "max_similarity": 0.20161786061366935
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17107",
+    "title": "Models Take Notes at Prefill: KV Cache Can Be Editable and Composable",
+    "authors": [
+      "Bojie Li"
+    ],
+    "abstract": "arXiv:2606.17107v1 Announce Type: new \nAbstract: Prefix caching reuses prefill only across an exactly shared prefix, so one changed field invalidates the entire downstream cache. Yet overwriting the field's own key/value vectors and reusing the rest leaves the model acting on the old value. The reason, established causally across four model families: at prefill the model has already written the field-conditioned conclusion onto downstream notes; the field's own key/value drives under 1% of the decision. Read as a notebook of memoized conclusions, two capabilities follow. (1) It is editable. A salient erratum amends the notes; and with chain-of-thought, editing the field alone recovers the decision (1.00 at 8B, ~1% compute), while without CoT it is ignored. (2) It is composable. The notes are position-portable, so a precompiled skill can be RoPE-repositioned and spliced into any context, indistinguishable from full recompute (logit cosine 0.90-0.999, twelve models) at O(L) rather than O(L^2) time-to-first-token. A unified edit+compose agent stays decision-identical to recompute at up to 14.9x lower latency. The approach applies to any per-token attention KV cache, validated across scale, quantization, Mixture-of-Experts, and multimodal caches, and extends to several attention variants through small adapters. Because the erratum is append-only, it composes with production prefix caching: in an online vLLM benchmark it keeps the prefix cache-aligned (98.5% hit-rate), cutting p90 time-to-first-token by 53-398x.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17107",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17107"
+      }
+    ],
+    "relevance_score": 0.4125624282420013,
+    "max_similarity": 0.13718716102010214
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17118",
+    "title": "MODE: Modality-Decomposed Expert-Level Mixed-Precision Quantization for MoE Multimodal LLMs",
+    "authors": [
+      "Yuanteng Chen, Peisong Wang, Zhilei Liu, Nanxin Zeng, Yuantian Shao, Shiqiang Lang, Tao Liu, Chuangyi Li, Qinghao Hu, Gang Li, Jing Liu, Jian Cheng"
+    ],
+    "abstract": "arXiv:2606.17118v1 Announce Type: new \nAbstract: Mixture-of-Experts Multimodal Large Language Models (MoE-MLLMs) offer remarkable performance but incur prohibitive GPU memory costs, making compression essential. Among PTQ methods, expert-level mixed-precision quantization has proven effective for MoE-LLMs, yet suffers notable degradation on MoE-MLLMs due to two overlooked biases in expert importance estimation. (1) At the cross-modal level, the numerical dominance of vision tokens causes expert selection frequency to be dominated by vision tokens, masking experts that are critical to the text modality; (2) at the intra-vision level, the large proportion of redundant vision tokens further skew frequency statistics, obscuring experts critical for informative visual content. To bridge gaps, we propose MODE, a modality-decomposed expert-level mixed-precision quantization framework for MoE-MLLMs that decomposes expert selection frequency by modality, filters redundant vision tokens to obtain denoised visual frequency, and further evaluates quantization sensitivity per modality as a complementary signal to frequency-based estimation. These signals are integrated into an Integer Linear Programming formulation to assign per-expert bit-widths under a given budget. Extensive experiments show that MODE is particularly well-suited for MoE-MLLMs, limiting average performance loss to within 2.9% at W3A16, with larger gains at the extreme 2-bit setting.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17118",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17118"
+      }
+    ],
+    "relevance_score": 0.40843857699715663,
+    "max_similarity": 0.13053386951979914
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17328",
+    "title": "MemTrace: Probing What Final Accuracy Misses in Long-Term Memory",
+    "authors": [
+      "Xianxuan Long, Zhikai Chen, Shenglai Zeng, Shouren Wang, Kai Guo, Jiliang Tang"
+    ],
+    "abstract": "arXiv:2606.17328v1 Announce Type: new \nAbstract: LLM agents increasingly maintain long-term memory of user facts across sessions. Yet such memory is usually evaluated by aggregating accuracy over question rows or episodes. Because this approach scores question rows independently, even when several questions probe the same fact, it cannot show how that fact behaves as conditions change. We introduce MemTrace, a benchmark whose unit of measurement is the knowledge point: a single typed fact about the user, rather than an individual question. MemTrace probes each fact along three controlled dimensions: memory age, defined by how many sessions ago the fact appeared in the history; question type, covering current state, earlier state, and trajectory of change; and evidence condition, covering present, missing, and contradicted-by-false-premise settings. Evaluating 13 memory-system configurations across four paradigms, we find that similar pooled accuracy hides different failures: recovering a fact's current and earlier states does not imply tracking how it changed, and safe abstention does not imply correcting a false premise. The dominant bottleneck is evidence use, not retrieval: when systems fail, the evidence was retrievable 10 times more often than it was missing. These results suggest that improving long-term memory requires better use of reachable evidence, not simply more storage or retrieval.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17328",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17328"
+      }
+    ],
+    "relevance_score": 0.39087335079571917,
+    "max_similarity": 0.17194563572191007
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17443",
+    "title": "Incumbent Advantage: Brand Bias and Cognitive Manipulation Dynamics in LLM Recommendation Systems",
+    "authors": [
+      "Xi Chu, Yupeng Hou"
+    ],
+    "abstract": "arXiv:2606.17443v1 Announce Type: new \nAbstract: Large language models (LLMs) are becoming a major way for consumers to find products, but we do not yet understand how brands compete in this new channel. We study brand dynamics in LLM recommendations using skincare products -- a category where consumers cannot easily judge quality before buying and must rely on brand reputation -- across three commercial LLMs (GPT-4o-mini, Claude Sonnet, Gemini 3 Flash), with a robustness check on search goods. In three experiments, we find: (1) a Conditional Monopoly where well-known brands get recommended 100% of the time (IAI = 10.0) when all products have the same specifications, but this dominance disappears with less than a +0.1-star rating advantage for a competitor; (2) authority-style marketing language, including fabricated clinical-evidence claims, breaks this monopoly at a Bias Surplus Value equal to +0.17 rating points, with each model responding differently; and (3) a social dilemma in multi-brand GEO competition: when all brands adopt the same optimization strategy, individual payoff falls from +0.802 to +0.007 in our payoff proxy, and non-participating brands receive zero recommendations in our tests. Our results suggest that generative engine optimization (GEO) should be studied not only as a security risk, but also as an emerging marketing practice that shapes market competition.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17443",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17443"
+      }
+    ],
+    "relevance_score": 0.38644971564785113,
+    "max_similarity": 0.1034046107489291
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17115",
+    "title": "Probing, Fusion, and Trustworthiness: A Systematic Evaluation of Foundation Model Representations for Multimodal Cancer Analysis",
+    "authors": [
+      "Jingyu Hu, Giuseppe Tripodi, Reed Naidoo, Sarah F. McGough, Tapabrata Chakraborti"
+    ],
+    "abstract": "arXiv:2606.17115v1 Announce Type: new \nAbstract: Foundation models (FMs) have emerged as powerful representation extractors for medical data, yet their generalizability to datasets under distribution shift remains underexplored. This work systematically evaluates FM-based representations on a suite of computational pathology tasks across two real-world commercial cohorts, IH-BC and IH-NSCLC, drawn from the licensed in-house (IH) oncology dataset. The analysis focuses on two modalities, whole-slide images and transcriptomic profiles, drawn from the IH multimodal data. We first benchmark unimodal probing performance across five FMs on eight downstream classification tasks, and find that image and omics representations carry complementary predictive signals. Then we investigate whether multimodal fusion can yield additional gains over unimodal baselines by comparing three image-omics fusion strategies built on paired representations. The trustworthiness of selected unimodal and multimodal pipelines is further assessed through conformal prediction. Our results show that FM representations achieve competitive performance on out-of-distribution data and that multimodal fusion helps mainly when no single modality dominates the signal. Conformal prediction reveals that in the majority of cases where a point prediction fails, the true diagnosis remains recoverable within the prediction set, reinforcing the value of uncertainty-aware inference for clinical support.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17115",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17115"
+      }
+    ],
+    "relevance_score": 0.37834869105812685,
+    "max_similarity": 0.21688555857683794
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17199",
+    "title": "PowerOPD: Stabilizing On-Policy Distillation with Bounded Power Transformation",
+    "authors": [
+      "Anhao Zhao, Junlong Tong, Yingqi Fan, Ping Nie, Wenjie Li, Xiaoyu Shen"
+    ],
+    "abstract": "arXiv:2606.17199v1 Announce Type: new \nAbstract: Standard on-policy distillation (OPD) for large language models estimates the reverse-KL objective using student-sampled tokens, yielding an unbiased single-sample Monte Carlo estimator that avoids vocabulary-wide computation. However, we show that this estimator suffers from severe training pathologies in practice: sample inefficiency, unstable generation dynamics, and a substantial performance gap compared to exact full-vocabulary OPD. Reward-level diagnosis traces these pathologies to the log-ratio reward, which is unbounded by construction, producing extremely high-variance gradients concentrated at early positions and persisting throughout training; standard post-hoc scaling fail as they operate only after this distortion occurs. To solve this problem, we propose PowerOPD: a family of natively bounded, sign-consistent rewards from the Box-Cox power transformation, parameterized by alpha > 0, of which the log-ratio is the degenerate alpha -> 0 limit. Across six mathematical reasoning benchmarks and four Qwen3 teacher-student pairs, PowerOPD achieves benchmark-averaged Avg@8/Pass@8 gains of up to +6.37/+5.71 over vanilla OPD, +3.01/+3.54 over post-hoc stabilization, and +2.59/+8.90 over full-vocabulary OPD, while reducing wall-clock time by 59.2% and peak GPU memory by 23.1%. Larger alpha generally improves accuracy, consistently shortens responses, and keeps gradient norms more than 3,000x smaller than vanilla OPD.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17199",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17199"
+      }
+    ],
+    "relevance_score": 0.3760543108287903,
+    "max_similarity": 0.0906498964292348
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17546",
+    "title": "SEAGym: An Evaluation Environment for Self-Evolving LLM Agents",
+    "authors": [
+      "Congjie Zheng, Chuanyi Xue, Bin Liang, Jun Yang, Changshui Zhang"
+    ],
+    "abstract": "arXiv:2606.17546v1 Announce Type: new \nAbstract: Self-evolving LLM-based agents improve mainly by changing their agent harness: the structured execution layer around a base model, including prompts, memory, tools, middleware, runtime state, and the model-tool interaction loop. Existing evaluations often reduce this process to isolated task scores or a single sequential curve, obscuring whether an update produces reusable improvement, overfits recent tasks, increases cost, or harms older behavior. We introduce SEAGym, an evaluation environment for measuring agent harness updates across training, validation, test, replay, and cost records. SEAGym turns Harbor-compatible benchmarks into dynamic self-evolution task sources with train batches, frozen update-validation, held-out ID and OOD transfer views, replay diagnostics, and saved snapshot and metric records. Instantiating SEAGym on Terminal-Bench 2.0 and HLE, we compare ACE, TF-GRPO, and AHE under a shared epoch/batch protocol. The results show that these evaluation views provide complementary signals about the evolution process: frequent updates may fail to improve held-out performance, useful intermediate snapshots may collapse later, and source diversity and model backend can affect harness reliability.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17546",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17546"
+      }
+    ],
+    "relevance_score": 0.34765358434325944,
+    "max_similarity": 0.17980331589206247
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17453",
+    "title": "MapSatisfyBench: Benchmarking Satisfaction-Aware Map Agents through Behavior-Grounded Implicit Decision Factors",
+    "authors": [
+      "Lubin Bai, Mengyu Cao, Sixue Wang, Zhongwei Wan, Yue Pan, Jiale Hou, Xiang Li, Xiuyuan Zhang"
+    ],
+    "abstract": "arXiv:2606.17453v1 Announce Type: new \nAbstract: Large language model agents are increasingly integrated into map services. Since map services are embedded in everyday-life scenarios rather than professional task settings, users often express their needs informally, resulting in underspecified queries with many unspoken needs, namely, implicit decision factors that are critical for user satisfaction. Although clarification is an effective way to mitigate this issue, it increases user burden in daily interaction, and a capable agent should first proactively recover such factors from available information sources. However, evaluating this ability is challenging. The first challenge is to determine which implicit decision factors are suitable for evaluation. A factor is evaluable only if it affects user acceptance and can be recovered from information available to the agent before it responds. Second, user satisfaction cannot be reliably represented by a single reference answer, requiring a benchmark that converts satisfaction-relevant factors into objective and quantifiable evaluation targets. To address these challenges, we propose a restore-identify-filter framework that reconstructs complete user needs from behavior-chain evidence, identifies implicit decision factors, and retains only those supported by pre-query evidence. Building on this methodology, we construct MapSatisfyBench from large-scale, real-world anonymized user data and annotate ground truth from five dimensions and enables full-chain evaluation of satisfaction-aware map agents. Experiments show that current agents generally perform well on explicit task completion, but remain limited in satisfying implicit decision factors and proactively acquiring the evidence needed for satisfaction-aware decisions. These findings establish MapSatisfyBench as a benchmark for shifting map-agent evaluation from task completion toward satisfaction-aware spatial decision making.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17453",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17453"
+      }
+    ],
+    "relevance_score": 0.33119577000350786,
+    "max_similarity": 0.15862787808723014
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17591",
+    "title": "Closing the Feedback Loop: From Experience Extraction to Insight Governance in Verbal Reinforcement Learning",
+    "authors": [
+      "Yanwei Cui, Xing Zhang, Yulong Zhang, Li Shao, Xiaofeng Shi, Guanghui Wang, Peiyang He"
+    ],
+    "abstract": "arXiv:2606.17591v1 Announce Type: new \nAbstract: Training-free verbal reinforcement learning enables LLM agents to learn from world feedback -- objective signals such as dynamic task outcomes, market returns, or demand forecasts -- by extracting verbal rules from experience and injecting them as context, updating the agent's behavior without parameter changes. However, in non-stationary environments these agents face a retention-forgetting dilemma: retaining stale insights causes negative transfer, while discarding them causes catastrophic forgetting when conditions recur. We identify four requirements for navigating this dilemma -- outcome-driven evaluation, persistent structured evidence, non-monotonic knowledge lifecycle, and compositional governance -- and show that existing methods invest heavily in experience extraction while underinvesting in insight governance. We propose a three-layer architecture -- rules, evidence, and skills -- connected by a feedback-driven curation loop that closes the governance gap. Rules capture distilled experience from world outcomes; evidence logs track each rule's reliability across episodes; skills govern which rules to apply, how to resolve conflicts, and when to abstain. On financial forecasting as a case study, where world feedback is naturally abundant, noisy, and non-stationary, we show that the same accumulated experience either degrades performance below the zero-shot baseline or dramatically improves accuracy and risk-adjusted returns, depending on whether the curation loop is present.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17591",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17591"
+      }
+    ],
+    "relevance_score": 0.3158399234369429,
+    "max_similarity": 0.14040162521904692
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.17574",
+    "title": "DeepInsight: A Unified Evaluation Infrastructure Across the Physical AI Stack",
+    "authors": [
+      "Siyi Li, Chunyu Sun, Jiahao Zhang, Yuchen Kang, Wuliang Wang, Yu Qiu, Rui Jiang, Haitao Cui, Jie Chen"
+    ],
+    "abstract": "arXiv:2606.17574v1 Announce Type: new \nAbstract: Evaluating a Physical AI stack spans operators that differ by more than three orders of magnitude -- from a single foundation-model decoding step to thousands of physics ticks of whole-body control -- varying orthogonally in modality, reward semantics, and resource profile. No existing framework spans this range, so the stack is evaluated today by stitching together separate harnesses that share neither runtime nor scoring, preserving each segment's local validity but losing the shared identity needed to diagnose cross-layer regressions. We present DeepInsight, an evaluation infrastructure that serves this full spectrum on a single runtime. Rather than homogenize the regimes, it preserves their heterogeneity behind three narrow abstractions -- task, resource, and result -- each realized as one invariant shared by every subsystem: one episode driver, one resource-handle protocol implemented by every expensive backend (LLM inference and sandboxed runtimes alike), and one trace identity scheme under which every event is written. Deployed in production across all three layers of an embodied humanoid stack, this single set of invariants onboards new benchmarks largely by configuration. Where mature peer orchestrators exist -- at the foundation-model end -- it reproduces published references and peer-framework readings within their own spread, runs the same suites faster on a single node, and scales near-linearly across nodes. Its distinctive return is diagnostic: because every layer writes into one shared trace, a regression that begins in one layer and surfaces in another stays localizable on that trace -- a cross-layer payoff no federation of per-segment harnesses can reproduce.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "updated": "Wed, 17 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.17574",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.17574"
+      }
+    ],
+    "relevance_score": 0.2567449760388939,
+    "max_similarity": 0.1300104540300832
+  }
+]
