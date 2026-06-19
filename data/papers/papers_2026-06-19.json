@@ -1,0 +1,515 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2606.19404",
+    "title": "Thermodynamic Signatures of Reasoning: Free-Energy and Spectral-Form-Factor Diagnostics for Hallucination Detection in Large Language Models",
+    "authors": [
+      "Salim Khazem"
+    ],
+    "abstract": "arXiv:2606.19404v1 Announce Type: new \nAbstract: Hallucination detection in large language models (LLMs) is deployment-critical, and recent work shows that the spectrum of attention-derived graph Laplacians carries strong signal about reasoning quality. Prior spectral diagnostics, however, summarize the Laplacian spectrum by a handful of eigenvalues or hand-picked scalars, leaving most of its structure unused. We propose Free-Energy Signatures (Fes), a spectral descriptor that treats each layer's attention Laplacian as a Hamiltonian and extracts its thermodynamic potentials partition function, free energy, spectral entropy, heat capacity together with the random-matrix-theory (RMT) spectral form factor. We prove three results: (i)~Lipschitz stability of Fes under attention perturbation; (ii)~an expressiveness result showing that Fes enriches finite spectral summaries and approximates moment-derived spectral functionals under explicit regularity and grid-resolution assumptions; and (iii)~a finite-sample PAC bound on the AUROC of a training-free detector built from Fes. Empirically, across six open-weight LLMs and six benchmarks, a lightweight probe on Fes descriptors achieves the strongest aggregate AUROC among attention-spectral baselines, improving over LapEig by $+6.5$ AUROC points and over GoR-4 by $+2.4$ points on average, while requiring no update to the underlying LLM. In the fully unsupervised setting, an RMT-deviation score achieves mean AUROC $0.71$, providing a label-free but weaker detector. A complementary RMT analysis shows that correct generations exhibit more Wigner-Dyson like spectral statistics, whereas hallucinations exhibit more Poisson-like statistics. The anonymized code and config are provided in the supplementary material.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19404",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19404"
+      }
+    ],
+    "relevance_score": 0.546156637634592,
+    "max_similarity": 0.303551135850611
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19494",
+    "title": "Hidden Anchors in Multi-Agent LLM Deliberation",
+    "authors": [
+      "Apurba Pokharel, Ram Dantu"
+    ],
+    "abstract": "arXiv:2606.19494v1 Announce Type: new \nAbstract: Multi-agent LLM deliberation, where agents exchange and revise answers over several rounds, is increasingly used to improve reasoning and accuracy, yet how and why it works is rarely modelled. Such deliberation mirrors how humans reach decisions. As social animals we are pulled both by the group, the herd effect that classical opinion-dynamics models such as DeGroot and Friedkin--Johnsen capture, and by our own internal belief, which they do not. We model multi-agent deliberation as a closed-loop dynamical system in which each agent carries a hidden internal belief, its anchor, that continually pulls its opinion regardless of its neighbours. We show this anchor can be recovered from the deliberation alone, and that it explains a behaviour classical consensus rules forbid: an agent's confidence in the correct answer can climb past where any agent started, escaping the space (convexhull) formed by the initial beliefs. Checking whether the recovered anchor also predicts held-out runs (generalizes) gives a simple test for when a model is truly driven bysuch an anchor. Across three open-weight model families this is a spectrum, not all-or-nothing. All anchors' influence are about equally strongly, but they differ in where the anchor sits, and only when it sits far from the initial opinions does deliberation escape the hull and need the full closed-loop model.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19494",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19494"
+      }
+    ],
+    "relevance_score": 0.4934961080158239,
+    "max_similarity": 0.29976272104696877
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19475",
+    "title": "Diffusion Language Models: An Experimental Analysis",
+    "authors": [
+      "Thomas Bertolani, Davide Bucciarelli, Leonardo Zini, Marcella Cornia, Lorenzo Baraldi"
+    ],
+    "abstract": "arXiv:2606.19475v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have revolutionized language modeling through autoregressive generation, enabling strong performance across a wide range of tasks. Recently, Diffusion Language Models (DLMs) have emerged as an alternative paradigm that generates text through iterative denoising rather than next-token prediction, allowing parallel refinement of entire sequences. While numerous diffusion-based architectures have been proposed, differences in evaluation protocols, datasets, inference budgets, and generation hyperparameters make it difficult to compare their capabilities and understand the trade-offs they offer. In this work, we present a systematic experimental analysis of modern DLMs. Specifically, we evaluate eight state-of-the-art DLMs across eight benchmarks spanning reasoning, coding, translation, knowledge, and structured problem solving, while explicitly considering both generation quality and computational efficiency. Beyond downstream evaluation, we analyze the impact of key inference-time factors, including denoising steps, context length, block size, and parallel unmasking strategies, and complement large-scale experiments with controlled comparisons of smaller models trained under identical conditions. Our analysis highlights the strengths and limitations of diffusion-based language modeling across different tasks, architectures, and inference budgets. We show that the behavior of DLMs is strongly influenced by generation-time design choices, leading to distinct trade-offs between performance and computational efficiency. Overall, our study provides practical insights into the capabilities and deployment characteristics of contemporary DLMs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19475",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19475"
+      }
+    ],
+    "relevance_score": 0.47968477713271124,
+    "max_similarity": 0.21691491909392677
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19684",
+    "title": "Exploring Multi-Modal Large Language Models and Two-Stage Fine-Tuning for Fashion Image Retrieval",
+    "authors": [
+      "Nguyen Cao Hoang, Hoang Bui Le, Nam Vo Hoang, Trung-Nghia Le"
+    ],
+    "abstract": "arXiv:2606.19684v1 Announce Type: new \nAbstract: Composed image retrieval retrieves a target image using a composed query of a reference image and a modified text description. In the fashion domain, this task requires understanding subtle attribute variations such as color, pattern, and texture. However, existing approaches face limitations due to scarce annotated data and simplistic negative sampling. We propose a novel framework that integrates a multi-modal large language model (LLaVA) to generate attribute-aware triplets and introduces a two-stage fine-tuning strategy to enhance contrastive learning. We leverage pretrained vision-language models, such as CLIP-ViT/B32, to generate and concatenate sentence-level prompts with the relative caption and to scale the number of negatives using static representations. Experimental results demonstrate enhanced compositional reasoning and improved fine-grained retrieval behavior, underscoring the feasibility and potential of the proposed framework for fashion retrieval.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19684",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19684"
+      }
+    ],
+    "relevance_score": 0.479389886532689,
+    "max_similarity": 0.21520909889786333
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19682",
+    "title": "Vortex: Multi-Modal Fusion System for Intelligent Video Retrieval",
+    "authors": [
+      "Duc-Tho Nguyen, Hieu-Hoc Tran-Minh, Khanh-Hoa Lam, Hoang-Nhut Ly, Huu-Phuc Huynh, Thanh-Tien Tran, Trung-Nghia Le"
+    ],
+    "abstract": "arXiv:2606.19682v1 Announce Type: new \nAbstract: This paper presents Vortex, the multimodal video retrieval system developed by our team, FocusOnFun, for the Ho Chi Minh City AI Challenge 2025, designed to advance intelligent multimedia search and temporal reasoning. The system integrates adaptive keyframe extraction, multimodal metadata generation from vision-language and speech models, and a hybrid retrieval strategy that fuses CLIP and SigLIP2 embeddings through Reciprocal Rank Fusion to balance global and fine-grained semantics. To enhance interactivity, Vortex incorporates Rocchio-based relevance feedback and a multi-stage temporal search mechanism for sequential event alignment. Built on Milvus and Elasticsearch, the architecture enables scalable indexing and efficient retrieval. Evaluated in the official competition, our FocusOnFun team's system achieved a score of 79.6/88 (90.5\\%) in the Preliminary Round and was further evaluated in the Final Round, achieving an `Excellent' overall performance with `Outstanding' results in the question-answering (QA) task. This demonstrating the complementary strengths of CLIP and SigLIP2 and confirming the effectiveness of the hybrid retrieval approach. The system establishes a robust foundation for future research in intelligent, context-aware, and interactive video retrieval.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19682",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19682"
+      }
+    ],
+    "relevance_score": 0.4633307226826784,
+    "max_similarity": 0.19675490231511195
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19534",
+    "title": "PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models",
+    "authors": [
+      "Yueyi Sun, Yuhao Wang, Jason Li, Ye Tian, Tao Zhang, Jacky Mai, Yihan Wang, Haochen Wang, Jinbin Bai, Ling Yang, Yunhai Tong"
+    ],
+    "abstract": "arXiv:2606.19534v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) have achieved remarkable progress in visual understanding tasks. However, most existing MLLMs rely on autoregressive generation, which limits their efficiency for perception tasks that require captioning multiple regions. In this work, we propose PerceptionDLM, a multimodal diffusion language model optimized for efficient parallel region perception. Built upon PerceptionDLM-Base, a strong foundational baseline that achieves state-of-the-art performance among open-source diffusion MLLMs, our architecture fully leverages the parallel decoding nature of DLMs. Specifically, we introduce efficient prompting and structured attention masking to enable simultaneous perception of multiple masked regions, allowing the model to generate region descriptions in parallel at both the sequence and token levels. This design significantly improves inference efficiency compared with existing approaches that process regions sequentially. To systematically evaluate the parallelism property of visual perception capability for DLMs, we construct a new Parallel Detailed Localized Captioning Benchmark (ParaDLC-Bench) by scaling the DLC-Bench to include multiple region masks per image, enabling joint evaluation of both caption quality and inference efficiency. Experiments demonstrate that PerceptionDLM maintains competitive performance in region captioning while achieving substantial speed improvements for multi-region perception tasks. Our results highlight the potential of multimodal diffusion language models for efficient, parallel visual perception. To the best of our knowledge, we are the first to achieve parallel region caption and perception by leveraging the advantages of diffusion language models. Code, models, and datasets are released.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19534",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19534"
+      }
+    ],
+    "relevance_score": 0.4631433334025499,
+    "max_similarity": 0.19646734059246956
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19464",
+    "title": "Deontic Policies for Runtime Governance of Agentic AI Systems",
+    "authors": [
+      "Anupam Joshi, Tim Finin, Karuna Pande Joshi, Lalana Kagal"
+    ],
+    "abstract": "arXiv:2606.19464v1 Announce Type: new \nAbstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organizational boundaries must be constrained not just by authentication and access control, but by the full structure of enterprise governance. This includes specifying what agents are permitted and prohibited from doing, what they areobliged to do after certain actions (e.g., notify the CISO), under what conditions a standing obligation may be waived, and which rules take precedence when policies conflict. This governance problem exceeds what current policy engines provide. Systems such as XACML, Rego, and Cedar address only the permit/prohibit subset of this governance structure. They do not provide obligation lifecycle management, meta-policy conflict resolution, dispensations that waive obligations in specific circumstances, and ontological reasoning over domain class hierarchies commonly found in applications such as healthcare, cybersecurity, or data privacy. We propose AgenticRei, which realizes key governance requirements such as obligations, dispensations, policy conflict resolutions, and reasoning over policies, as well as the basic permit/prohibit constraints. We use a deontic policy language built on the Rei framework, expressed as OWL (Web Ontology Language) and evaluated at runtime by a high-performance logic engine entirely outside the LLM. The same pipeline governs both tool invocations by the agent and agent-to-agent messages. We show through examples that deontic policies capture governance constraints around security and privacy that mostly cannot be expressed in current production engines. Our approach composes naturally with industry-standard frameworks like A2AS.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19464",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19464"
+      }
+    ],
+    "relevance_score": 0.4500777321077226,
+    "max_similarity": 0.18113383848040024
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19588",
+    "title": "Analyzing the Narration Gap in LLM-Solver Loops",
+    "authors": [
+      "Zunchen Huang, Songgaojun Deng"
+    ],
+    "abstract": "arXiv:2606.19588v1 Announce Type: new \nAbstract: Formal tools such as SAT and SMT solvers are increasingly embedded in language model reasoning pipelines when a safety or security critical question can be formulated in logic. Unlike chain of thought whose steps are sampled from the model distribution without formal guarantee, a solver produces a sound and independently verifiable answer. However, the soundness guarantee can be lost in the interaction between the solver and the model. The hybrid pipeline has three components: formalizing the question, deciding it, and narrating the result. Prior work has studied the formalization and decision, but not narration, which is the step that turns a formal tool's output into the user answer. To fill the narration gap, we first model the LLM-solver loop as a verified decision procedure. We further evaluate five open-sourced models under prompt injection, and we find certificate gating makes the solver verdict sound, while an adversary can invert a verified conclusion across phrasings and channels. We study the mitigation through hardened prompt that reduces injection significantly but cannot eliminate it and still suffers under adaptive attack. Combining the formal analysis and empirical studies, we show in the LLM-solver loop, robustness does not reach to the answer that the user finally reads.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19588",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19588"
+      }
+    ],
+    "relevance_score": 0.4427787618152515,
+    "max_similarity": 0.17404173588354793
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19527",
+    "title": "Emergent Alignment",
+    "authors": [
+      "Martin Kol\\'a\\v{r}"
+    ],
+    "abstract": "arXiv:2606.19527v1 Announce Type: new \nAbstract: Can Large Language Models (LLMs) discern when their own outputs are misaligned with human ethics? And can they self-correct? We endow an LLM with a conscience step that reviews its own reasoning and outputs, and we extend the training loss with an alignment component using Direct Preference Optimization (DPO) to steer the model away from non-ethical outputs. The result is an online technique to align models in a wide range of applications: training, fine-tuning, adversarial prompting, and zero-shot learning. It does not require a weaker or stronger judge, relying instead on a frozen copy of itself. In previous work, the Emergent Misalignment scenario showed a range of emergent unethical behaviors from fine-tuning the model to hack code. Instead, we empirically show how to achieve Emergent Alignment: a single high-level introspective question steers training toward an ethical model under the same code hacking scenario.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19527",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19527"
+      }
+    ],
+    "relevance_score": 0.4267253893290351,
+    "max_similarity": 0.1528156210872252
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19704",
+    "title": "Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents",
+    "authors": [
+      "Dhaval C. Patel, Kaoutar El Maghraoui, Shuxin Lin, Yusheng Li, Tianjun Feng, Chun-Yi Tsai, Yihan Sun, Wei Alexander Xin, Akshat Bhandari, Tanisha Rathod, Aaron Fan, Sanskruti Vijay Shejwal, Tomas Pasiecznik, Sagar Chethan Kumar, Tanmay Agarwal, Rohith Kanathur, Sam Colman, Amaan Sheikh, Dev Bahl, Ann Li, Krish Veera, Alimurtaza Mustafa Merchant, Shambhawi Baswaraj Bhure, Sajal Kumar Goyla, Chengrui Li, Kirthana Natarajan, Rui Li, Thomas Ajai, Rujing Li, Vivek G. Iyer, Sanjaii Vijayakumar, Yitong Bai, Ayal Yakobe, Darief Maes, Yassine Jebbouri, Tianyang Xu, Thai Quoc On, Vera Mazeeva, Winston Li, Yuval Shemla, Yeshitha Bhuvanesh, Rushin Bhatt, Siddharth Chethan Gowda, Alisha Vinod, Caroline Cahill, Shriya Aishani Rachakonda, Yunfeng Chen, Aryaman Agrawal, Aman Upganlawar, Mao Le Jonathan Ang, Yubin Sally Go, Madhav Rajkondawar, Yang-Jung Chen, Trisha Maturi, Ananya Kapoor, Andrew Li, Shrey Arora, Mana Abbaszadeh, Shen Li, Charles Xu, Byeolah Kwon"
+    ],
+    "abstract": "arXiv:2606.19704v1 Announce Type: new \nAbstract: Agent benchmarks are growing fast, but no single benchmark touches more than four or five of the dimensions that deployment exposes. This paper aggregates the largest coordinated deep-dive of one MCP-based industrial-agent benchmark to date: fourteen parallel implementation studies covering new asset classes (including a multi-modal visual extension), alternative orchestrations, retrieval strategies, reasoning modes, infrastructure optimizations, and evaluation-methodology probes. Consolidating those studies with seven prior agent benchmarks, we argue that aggregate-score leaderboards systematically underspecify deployed-agent evaluation. Rankings derived from aggregate scores do not transfer to out-of-distribution settings; recent public-to-hidden competition retrospectives provide direct empirical evidence of this rank instability. We propose ranking configurations by predictive validity, the correlation between in-sample and out-of-sample rank, rather than in-sample mean, and report a twelve-tier measurement apparatus that exposes the deployment-relevant dimensions HELM and its agent-era successors collapse. The position is operationalized through three falsifiable out-of-distribution criteria with explicit thresholds; existing evidence partly supports it but is too thin to confirm. We close with a pre-registered pilot design and a field-level vision for what the next generation of agentic benchmarks should report.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19704",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19704"
+      }
+    ],
+    "relevance_score": 0.4168364315401616,
+    "max_similarity": 0.14006231410458192
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19559",
+    "title": "Uncertainty Decomposition for Clarification Seeking in LLM Agents",
+    "authors": [
+      "Gregory Matsnev"
+    ],
+    "abstract": "arXiv:2606.19559v1 Announce Type: new \nAbstract: Recent position papers argue that the classical aleatoric/epistemic uncertainty framework is insufficient for interactive large language model (LLM) agents and call for underspecification-aware, decomposed, and communicable uncertainty representations that can unlock new agent capabilities such as proactive clarification seeking and shared mental-model building. Practical deployment constraints -- black-box APIs, interactive latency budgets, and the absence of labeled trajectories -- rule out logprob-based, multi-sampling, and training-based methods, leaving prompt-based estimation as the most viable family for surfacing such signals at deployment time. We answer this call with a simple prompt-based decomposition that separates action confidence from request uncertainty (u), enabling the agent to ask for clarification when the task specification is ambiguous. To evaluate it, we introduce two clarification-augmented benchmarks (WebShop-Clarification and ALFWorld-Clarification) in which 50% of tasks are deliberately underspecified, and systematically compare the proposed decomposition against ReAct+UE and Uncertainty-Aware Memory (UAM) across five LLM backbones (GPT-5.1, DeepSeek-v3.2-exp, GLM-4.7, Qwen3.5-35B, GPT-OSS-120B) on these variants together with the standard WebShop, ALFWorld, and REAL benchmarks for fault detection. Averaged across the five backbones, the proposed decomposition improves clarification F1 on ALFWorld-Clarification by 73% over ReAct+UE and by 36% over UAM, and leads clarification F1 on every backbone on WebShop-Clarification and on four of five backbones on ALFWorld-Clarification, indicating that the gains generalize beyond a single LLM.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19559",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19559"
+      }
+    ],
+    "relevance_score": 0.4096949424280652,
+    "max_similarity": 0.1311915899442644
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19735",
+    "title": "GLARE: A Natural Language Interface for Querying Global Explanations",
+    "authors": [
+      "Bhavan Vasu, Rajesh Mangannavar"
+    ],
+    "abstract": "arXiv:2606.19735v1 Announce Type: new \nAbstract: While global explanations are crucial for understanding vision models across datasets, classes, and decision contexts, their complex and monolithic nature often hinders practical exploration. Because users typically seek targeted answers to specific questions rather than static artifacts, we present an LLM-based interactive interface that provides natural language access to global explanations for black-box image classifiers. The system's core LLM acts as a mediator, translating natural language questions into structured SQL queries over local explanation data. This enables flexible aggregation without exposing users to low-level representations. For each query, the interface outputs statistics-augmented natural language responses, supporting local explanations, and intent-aligned visualizations. We evaluate the system on intent interpretation, query mapping accuracy, generalization to novel queries and datasets, and robustness to linguistic errors. Our results demonstrate that LLM-mediated querying substantially improves the accessibility and usability of global explanations for human-centered XAI.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19735",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19735"
+      }
+    ],
+    "relevance_score": 0.39961884062557995,
+    "max_similarity": 0.11952157396831502
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19509",
+    "title": "LLM Doesn't Know What It Doesn't Know: Detecting Epistemic Blind Spots via Cross-Model Attribution Divergence on Clinical Tabular Data",
+    "authors": [
+      "Akshat Dasula, Prasanna Desikan, Jaideep Srivastava"
+    ],
+    "abstract": "arXiv:2606.19509v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly applied to structured clinical data, yet whether they can recognize the limits of their own knowledge on such tasks remains unexplored. We study this question through the lens of cross-model attribution divergence with the goal of reducing epistemic uncertainty for structured tasks, comparing Qwen 2.5 7B and XGBoost on a prediction task via attribution divergence analysis. We report four findings. First, LLM verbalized confidence is epistemically vacuous, it outputs a near-constant (0.856-0.937) regardless of whether accuracy is 49% or 75.3%, tracking prompt format rather than prediction quality. Second, the LLM exhibits an inverse difficulty effect: accuracy drops to 64.8% when XGBoost is 99% correct, but matches XGBoost (73.8% vs. 73.1%) when it is moderately uncertain. Third, few-shot examples and SHAP-derived feature evidence are orthogonal, super-additive interventions: they reduce the Attribution Disagreement Score (ADS) from 1.54 to 0.38 and improve accuracy from 49% to 75.3% without training. Fourth, a cross-model calibrator that determined LLM reliability using attribution divergence signals reduces expected calibration error from 0.254 to 0.080, replacing uninformative verbalized confidence with patient-specific reliability estimates, without accessing model internals or requiring repeated inference. We frame these findings as a cold start problem for LLMs on structured data and outline a path toward genuine epistemic self-awareness.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19509",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19509"
+      }
+    ],
+    "relevance_score": 0.3883261849223959,
+    "max_similarity": 0.10502926120104678
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19501",
+    "title": "DeXposure-Claw: An Agentic System for DeFi Risk Supervision",
+    "authors": [
+      "Aijie Shu, Bowei Chen, Wenbin Wu, Cathy Yi-Hsuan Chen, Fengxiang He"
+    ],
+    "abstract": "arXiv:2606.19501v1 Announce Type: new \nAbstract: Decentralized finance exposes supervisors to fast-moving, networked credit risks. General-purpose LLM agents fit this setting poorly: they over-read weak evidence and recommend high-stakes interventions, while existing evaluations offer no regulator-aligned way to measure the resulting false alarms. We introduce DeXposure-Claw, a forecast-grounded agentic supervision system that routes LLM decisions through structured evidence: (1) DeXposure-FM, a graph time-series foundation model, forecasts future exposure networks; (2) deterministic monitors and stress scenarios then turn those forecasts into typed alerts, attribution signals, and scenario evidence; and (3) data-health and confidence gates constrain escalation before DeXposure-Claw emits auditable supervisory tickets with rationales. We further develop DeXposure-Bench, a six-axis evaluation harness, whose decision axis scores tickets against a regulator-aligned absolute-loss ground truth and an explicit false-intervention rate. Experiments on five years of weekly real data fully support our system. Code is at https://github.com/EVIEHub/DeXposure-Claw.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19501",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19501"
+      }
+    ],
+    "relevance_score": 0.3455561141745499,
+    "max_similarity": 0.115580898513451
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19364",
+    "title": "Closing the Social-Semantic Gap: SPSD for Edge-Based Prompt Compression in Cloud LLM Inference",
+    "authors": [
+      "Abhinit Sen, Ajeet Kumar, Manaranjan Pradhan"
+    ],
+    "abstract": "arXiv:2606.19364v1 Announce Type: new \nAbstract: The prefill stage of Large Language Model (LLM) inference is a growing contributor to cloud-scale energy cost. Many consumer-support and conversational prompts contain social scaffolding: politeness markers, apologetic preamble, repetition, and rapport-building language that is important for human communication but carries low marginal information for machine reasoning. We call this discrepancy the Social-Semantic Gap. We present SPSD (Sentiment Preserving Semantic Distillation), an edge-based pipeline that compresses user prompts using a 4-bit quantised Small Language Model before transmission to a cloud-deployed LLM. Evaluation on a 248-prompt corpus using Gemma-2-2B-Instruct (Q4_K_M) as the SLM and Llama-3.1-8B-Instruct as the cloud evaluation model yields a mean input token saving of 99.9 tokens per distilled call, with all 146 distilled calls yielding positive savings. Response quality, assessed by blind LLM-as-judge scoring across 121 pairs, is non-inferior to the raw path within a pre-specified 1-point margin on a 15-point rubric; the judge awarded 43 percent ties, 28 percent distilled wins, and 29 percent raw wins. Cosine similarity is mixed: mean 0.682, median 0.712, with 54.1 percent of pairs above the 0.70 reference threshold. Safety-critical domains are conservatively routed to passthrough via rule-based gates. Per-call net energy saving is estimated at 70-270 uWh under stated assumptions. SPSD shows that on-device prompt distillation can reduce cloud LLM input-token cost while preserving response quality within a practical non-inferiority margin.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19364",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19364"
+      }
+    ],
+    "relevance_score": 0.32725930977778145,
+    "max_similarity": 0.09213335207659765
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19607",
+    "title": "Which Pairs to Compare for LLM Post-Training?",
+    "authors": [
+      "Jiangze Han, Vineet Goyal, Will Ma"
+    ],
+    "abstract": "arXiv:2606.19607v1 Announce Type: new \nAbstract: Preference-based post-training has become a central paradigm for aligning language models. A common data-collection strategy is to generate a small set of completions for each prompt and label the resulting comparison pairs. However, human preference labels are often much more expensive than generating additional completions, suggesting a different use of the same labeling budget: generate a larger pool of completions, but label only the most informative comparison pairs. This paper studies which pairs should be compared in preference-based post-training. We formulate comparison curation as a sampling-design problem and evaluate designs by the quality of the final policy under the preference-based post-training objective. We instantiate this framework for Direct Preference Optimization (DPO), analyzing how the choice of labeled pairs propagates through DPO training to downstream policy performance. Our main results provide matching upper and lower bounds on the post-training optimality gap of the DPO-trained policy. The bounds show that comparison selection affects downstream performance through a single design-dependent information matrix, which links label allocation to parameter estimation error and policy suboptimality. This yields an explicit optimization criterion for budgeted comparison curation and motivates practical sampling designs for selecting informative pairs from large generated completion pools. Experiments on synthetic settings and language-model post-training benchmarks show that the proposed designs consistently improve sample efficiency over common comparison-selection heuristics.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19607",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19607"
+      }
+    ],
+    "relevance_score": 0.32043830773881554,
+    "max_similarity": 0.14563814988953713
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19630",
+    "title": "AI4SE and SE4AI Exploration: A Decade Looking Back and Forward",
+    "authors": [
+      "H. Sinan Bank, Daniel R. Herber, Thomas Bradley"
+    ],
+    "abstract": "arXiv:2606.19630v1 Announce Type: new \nAbstract: The March 2020 INCOSE INSIGHT special issue on AI and Systems Engineering (SE) became the most downloaded issue in the publication's history and launched a research community that now draws over 250 registrants to its annual workshop. In this article, we trace the progress in AI and SE across three phases (labeled here foundational, applied, and LLM inflection) based on the authors' reading of the field's core papers, and describe our opinions of where the community has converged and where critical gaps remain. Separately, a human-AI agreement literature review leveraging both human expertise and six AI models was performed to assess the relevance of 1,712 INCOSE INSIGHT articles and 889 SERC publications. The results identify five critical research gaps and offer guidance for practitioners navigating AI adoption, assurance, and workforce transformation in SE. We share the agreement data and the AI4SE/SE4AI Explorer web application so readers can compare their own relevance judgments with the human and AI raters.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19630",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19630"
+      }
+    ],
+    "relevance_score": 0.31408810718657776,
+    "max_similarity": 0.07726113019069251
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19376",
+    "title": "Cost-Optimal LLM Routing with Limited User Feedback under User Satisfaction Guarantees",
+    "authors": [
+      "Herbert Woisetschl\\\"ager, Arastun Mammadli, Ryan Zhang, Shiqiang Wang"
+    ],
+    "abstract": "arXiv:2606.19376v1 Announce Type: new \nAbstract: Inference costs for large language model (LLM) applications are rapidly growing, driven by surging demand and rising infrastructure cost. Users expect high-quality responses, and in commercial settings this is formally codified in Service Level Agreements (SLAs), creating a fundamental tension between cost and quality. Recent progress on cost-aware LLM request routing has shown potential to resolve this tension, but existing approaches rely on complete feedback signals, offline training, extensive per-workload tuning, and most lack SLA guarantees or inference-time adaptivity. We introduce SLARouter, an online routing algorithm that learns a cost-optimal policy from the sparse, one-sided user feedback available in production systems. SLARouter provides theoretical guarantees for both cost optimality and strict SLA compliance. Experiments across a wide range of LLM benchmarks show that SLARouter satisfies SLA constraints without the need for per-benchmark tuning, reducing operating cost by up to 2.2x over existing baselines.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19376",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19376"
+      }
+    ],
+    "relevance_score": 0.2784392810085468,
+    "max_similarity": 0.09437111108640245
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.19371",
+    "title": "ProMUSE: Progressive Multi-modal Uncertainty-guided Staged Evidential Alzheimer Disease Classification",
+    "authors": [
+      "Long Doan, Branden Chen, Ethan Litton, Huan Huang, Jiajing Huang, Yixin Xie, Weihua Zhou, Nandakumar Narayanan, Chen Zhao"
+    ],
+    "abstract": "arXiv:2606.19371v1 Announce Type: new \nAbstract: Alzheimer's disease (AD) is a fatal disorder that destroys memory and cognitive skills in the elderly population. Most treatments for AD are effective in the early stage, leading to an increasing demand for early AD diagnosis. AD diagnosis increasingly relies on multimodal data such as clinical assessments, structural Magnetic Resonance Imaging (MRI), and Positron Emission Tomography (PET) imaging. However, MRI and PET acquisition remain costly and not universally accessible, making full-modality inference impractical in real-world clinical workflows. We propose ProMUSE, a Progressive Multi-modal Uncertainty Guided Staged Evidential Network that adaptively determines when additional modalities are necessary, helping reduce the overall cost of data acquisition while maintaining accuracy. ProMUSE first performs evidential classification using low-cost clinical data and quantifies uncertainty via a Dirichlet-based subjective logic model. When uncertainty exceeds a learned threshold, ProMUSE progressively incorporates MRI or PET features, fusing modality-wise belief and uncertainty through Dempster-Shafer theory to obtain a calibrated multimodal prediction. This staged acquisition strategy enables accurate diagnosis while minimizing reliance on expensive imaging. Experiments on ADNI, AIBL, and OASIS across CN-AD, CN-MCI, and MCI-AD tasks demonstrate that ProMUSE achieves competitive or superior accuracy compared to full-modality baselines while reducing MRI/PET usage by 50-90%, yielding substantial cost savings. These results highlight ProMUSE as a practical, uncertainty-aware, and resource-efficient solution for real-world AD screening.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 19 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.19371",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.19371"
+      }
+    ],
+    "relevance_score": 0.2535540996488174,
+    "max_similarity": 0.1861966555014818
+  }
+]
