@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2606.20621",
+    "title": "PEAR: Permutation-Equivariant Adaptive Routing Multi-Agent Debate",
+    "authors": [
+      "Yang Feng, Ziwei Xu, Xia Hu, Fengxiang He"
+    ],
+    "abstract": "arXiv:2606.20621v1 Announce Type: new \nAbstract: Multi-agent debate improves the reliability of large language models (LLMs) through iterative peer critiques. However, fixed topologies often introduce persistent positional biases, amplify unreliable agents, and cause high sensitivity to role assignments. We introduce \\textit{Permutation-Equivariant Adaptive Routing Multi-Agent Debate (PEAR)}, an inference-time protocol that dynamically reconfigures communication roles and sparse topologies across consecutive debate rounds. By strategically switching agent-to-role assignments based on evolving agent states, PEAR prevents any agent from permanently occupying a privileged network position or distributes influence more evenly across the debate. We theoretically characterize PEAR as an equivariant sparse router: it preserves accuracy under agent relabeling while reducing routing complexity and improving generalization. Comprehensive empirical evaluations across four reasoning benchmarks and six diverse LLM backbones demonstrate PEAR significantly improves average accuracy over the strongest debate baselines. The code is at https://github.com/EVIEHub/PEAR.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20621",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20621"
+      }
+    ],
+    "relevance_score": 0.5545878149664891,
+    "max_similarity": 0.311988484519535
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20702",
+    "title": "Beyond Templates: Revisiting Zero-Shot Remote Sensing through Meta-Prompting",
+    "authors": [
+      "Eirini Baltzi, Dionysis Christopoulos, Sotiris Spanos, Valsamis Ntouskos, Konstantinos Karantzalos"
+    ],
+    "abstract": "arXiv:2606.20702v1 Announce Type: new \nAbstract: Vision-language models (VLMs) have sparked growing interest in zero-shot Earth Observation (EO) downstream tasks, with further gains enabled by remote-sensing-adapted models. We examine this setting across 17 VLM variants and 12 remote sensing (RS) datasets under Meta-Prompting for Visual Recognition (MPVR), and show that zero-shot performance remains highly sensitive to textual design choices, from the meta-prompts used to guide the LLM in generating class descriptions to the descriptions themselves. We explore why semantically rich LLM-generated class descriptions do not translate into consistent gains over simple domain-adapted CLIP-style descriptions. While LLM descriptions are more semantically expressive, they can also introduce noise in the text embedding space, reducing robustness in downstream tasks. We support this observation through a text log-likelihood analysis in the whitened CLIP feature space, comparing LLM-generated and template-based descriptions. Building on this finding, we study query embedding calibration and show that lightweight calibration of the query space consistently yields strong improvements in zero-shot classification and retrieval. Overall, our results provide practical insight into the trade-off between semantic richness and robustness, and identify embedding calibration as a simple and effective tool for improving zero-shot remote sensing performance.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20702",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20702"
+      }
+    ],
+    "relevance_score": 0.5175609221949566,
+    "max_similarity": 0.2658841539998566
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20643",
+    "title": "SPARC: A Multi-Agent System for Electrical Circuit Question Answering",
+    "authors": [
+      "Mushtari Sadia, Zhenning Yang, Umme Habiba Lamia, Nishat Shawrin, Ang Chen, Amrita Roy Chowdhury"
+    ],
+    "abstract": "arXiv:2606.20643v1 Announce Type: new \nAbstract: Electrical circuit diagram QA tasks require complex mathematical reasoning, which remains challenging for multimodal LLMs. We present SPARC, a multi-agent system that answers questions over circuit diagrams by grounding reasoning in executable physics-based simulations. SPARC uses LLM agents to synthesize, execute, and analyze simulation programs, improving accuracy and reliability by design. It achieves 83% accuracy, with up to a 58% absolute improvement over baselines, while enabling systematic error diagnosis.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20643",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20643"
+      }
+    ],
+    "relevance_score": 0.48449747163072565,
+    "max_similarity": 0.22432348313822748
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20599",
+    "title": "Beyond Fixed Budgets: Characterizing the Inelasticity and Limitations of Tree-of-Thought Reasoning Strategies",
+    "authors": [
+      "Atkia Mahila, Avinash Maurya, M. Mustafa Rafique, Bogdan Nicolae"
+    ],
+    "abstract": "arXiv:2606.20599v1 Announce Type: new \nAbstract: Tree of Thought (ToT) search has become a promising direction for improving the reasoning capabilities of large language models, but deploying these methods in practice raises a question that has received little systematic attention: how do different search strategies behave under varying compute budgets, model sizes, and problem difficulties? In this work, we evaluate two representative ToT methods; DPTS, a Monte Carlo tree search based approach, and SSDP, a semantic deduplication based approach, across two mathematical reasoning benchmarks (Math500 and GSM8K), two model scales (Llama-3B and Llama-8B), and four token budgets (3k--10k). Our analysis reveals that the two methods exhibit limitations that pull in opposite directions. DPTS suffers from a cold-start bottleneck at low budgets: it requires sufficient exploration before its value estimates become reliable, making it a poor fit for resource-constrained settings despite strong scaling behavior at higher budgets. SSDP, on the other hand, reaches candidate solutions efficiently but is prone to frontier depletion; its aggressive node merging permanently discards unexplored paths, leaving it unable to improve regardless of how much budget remains. Together, these findings suggest that neither a fixed exploration strategy nor a fixed pruning strategy is sufficient across compute continuum. We argue that effective search for scientific reasoning agents requires strategies that can adapt their behavior based on search progress and available resources.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20599",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20599"
+      }
+    ],
+    "relevance_score": 0.45245170935235957,
+    "max_similarity": 0.18493362607349384
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20625",
+    "title": "AlphaMemo: Structured Search-Process Memory for Self-Evolving Alpha Mining Agents",
+    "authors": [
+      "Hang Yu, Zifan Zheng, Jeff Z. Pan, Tongliang Liu, Zhiyong Wang, Fengxiang He"
+    ],
+    "abstract": "arXiv:2606.20625v1 Announce Type: new \nAbstract: LLM agents are promising for alpha mining via combining financial priors, symbolic reasoning, executable factor generation, and feedback-driven refinement. Yet, they face a combinatorial search space, noisy non-stationary feedback, redundant discoveries, and overfitting risks from naively reusing past successes. To address these challenges, we propose AlphaMemo, a self-evolving alpha mining agent with Structured Search-Process Memory. Rather than memorizing only final factors or full trajectories, AlphaMemo records reusable evidence about which edit motifs work or fail under specific parent-factor contexts. It extracts motifs from Abstract Syntax Tree (AST) differences, applies confidence-gated residual memory on top of a search-ledger prior, and uses asymmetric veto control to suppress high-confidence failure patterns. Experiments on CSI 500 and S\\&amp;P 500 show improved out-of-sample performance and fixed-budget discovery efficiency, with ablations validating the roles of residual learning, confidence gating, AST-diff motifs, and veto memory. Code is at https://github.com/jarrettyu/AlphaMemo.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20625",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20625"
+      }
+    ],
+    "relevance_score": 0.4496329940762473,
+    "max_similarity": 0.18258198287945943
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20707",
+    "title": "GEOPHYS: The Geometry of Physical Plausibility",
+    "authors": [
+      "Christian Intern\\`o, Alexander Pondaven, Habon Issa, Fabio Pizzati, Francesco Pinto, Markus Olhofer, Ivan Laptev, Philip Torr, Eero P. Simoncelli, Barbara Hammer, David Klindt"
+    ],
+    "abstract": "arXiv:2606.20707v1 Announce Type: new \nAbstract: While humans can identify physically implausible events within milliseconds, machine learning approaches addressing the same problem are extremely slow and expensive. They either rely on external multimodal-LLM judges or require ad-hoc modifications to the training procedure. In this work, we argue that indicators of physical plausibility are implicitly captured by five geometric properties of the per-frame embeddings produced by frozen image encoders. In aggregate, we call them GEOPHYS. First, we show that these signals correlate with human EEG responses to two forms of object-permanence violations. Second, GEOPHYS robustly discriminates physically implausible videos from realistic ones, achieving state-of-the-art physics-violation detection: 98.3% on LikePhys and 93.3% on IntPhys2, whereas V-JEPA 2, GPT-4o, Gemini, and twelve modern video diffusion models perform near chance. Third, used as a best-of-N verifier for physical alignment during video generation, GEOPHYS lifts MAGI-1 24B from 50.01% to 64.50% on PhysicsIQ at 1.5x lower wall-clock and 4.65x lower memory than the V-JEPA 2 world-model verifier. Ultimately, GEOPHYS demonstrates that physical plausibility in videos can be assessed by leveraging the emergent geometric properties of temporal features extracted from image encoders.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20707",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20707"
+      }
+    ],
+    "relevance_score": 0.445947553797147,
+    "max_similarity": 0.17800810413386053
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20638",
+    "title": "RIZZ: Routing Interactions to Near Zero-Interference Zones for Continual Adaptation of Black-Box Agents",
+    "authors": [
+      "Sonali Goel, Pranav Vaidhyanathan, Lucas Schorling, Natalia Ares, Maike Osborne"
+    ],
+    "abstract": "arXiv:2606.20638v1 Announce Type: new \nAbstract: Large language models are increasingly deployed as long-lived agents that must adapt across users, tasks, domains, modalities, and feedback regimes without access to model weights. Existing black-box adaptation methods typically optimize a single prompt, maintain an undifferentiated memory, or rely on repeated rollout-heavy search. However, these designs struggle when streams of input are nonstationary, feedback is sparse, and failures from one task family can contaminate behavior on another. We introduce RIZZ (Routing Interactions to Near Zero-interference Zones), a continual adaptation framework for compound language-model systems that learns entirely through verifier-gated memory, routing, and prompt compilation. RIZZ organizes input streams into dynamically spawned memory branches. At inference time, either while online or offline, a context-aware router selects or creates a branch that retrieves branch-local, global, graph-structured, and working-memory context, which is compiled into a bounded prompt together with retrieved task evidence. After the model acts, task verifiers score the output, and only verified interactions can update memory, promote reusable rules, demote harmful rules, or create anti-patterns. This yields a black-box agent that improves through persistent natural-language feedback while explicitly controlling interference. RIZZ targets the regime where adaptation must occur online under context budgets. Finally, we demonstrate the effectiveness of our framework against state-of-the-art baselines on competitive benchmarks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20638",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20638"
+      }
+    ],
+    "relevance_score": 0.4279837716192456,
+    "max_similarity": 0.21706575391941152
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20600",
+    "title": "The New Associationism: Lessons from Deep Learning",
+    "authors": [
+      "Daniel Rothschild"
+    ],
+    "abstract": "arXiv:2606.20600v1 Announce Type: new \nAbstract: What can the success of modern AI tell us about how humans learn? This paper argues that taking AI seriously as a model of human learning supports a modest but genuine associationism. The central finding is that supervised learning -- learning driven by evaluative feedback -- underlies a surprisingly wide range of contemporary AI systems, from large language models to game-playing agents, differing primarily in how much work is required to generate the relevant feedback signal. This vindicates associationist ideals of a uniform, gradual, error-driven learning mechanism operating across domains, and defuses the once-influential argument that associationist mechanisms are too limited to account for human cognitive capacities. At the same time, the successes of deep learning depend on computational architectures that go well beyond anything classical associationists envisaged, and supervised learning operates within these as one component rather than a complete account of learning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20600",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20600"
+      }
+    ],
+    "relevance_score": 0.4040217632414954,
+    "max_similarity": 0.1263439807629937
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20697",
+    "title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+    "authors": [
+      "Shuyang Hou, Ziqi Liu, Haoyue Jiao, Lutong Xie, Yaxian Qing, Xiaopu Zhang, Qingyang Xu, Zhangyan Xu, Xuefeng Guan, Huayi Wu"
+    ],
+    "abstract": "arXiv:2606.20697v1 Announce Type: new \nAbstract: AlphaEarth Foundations (AEF) unify global remote sensing foundation embeddings through multimodal self-supervised learning, but their pretraining focuses on physical land-surface signals, limiting plug-and-play use in socioeconomic tasks. We integrate seven heterogeneous data streams across 36 Chinese cities over eight years - AEF embeddings, population, nighttime lights, remote sensing indices, points of interest (POIs), urban morphology, and cross-lingual text - and construct CHN-Econ, a socioeconomic benchmark with 16 labels in three categories. We conduct 31 controlled experiments along five axes: fusion architecture, self-supervised objective, text integration, embedding dimensionality, and normalization. Used alone as a linear probe, AEF achieves R2 values of only 0.301 for cross-region and 0.160 for cross-tier evaluation. The five-axis ablated backbone improves these scores to 0.832 and 0.671, respectively, but reveals that low-dimensional semantic streams are consistently suppressed by high-dimensional streams under shared reconstruction. To address this bottleneck, we propose Capacity-Adaptive Reconstruction (CAR), replacing shared reconstruction with per-stream decoders and stream-level losses to mitigate inter-stream capacity competition. CAR further raises cross-region and cross-tier R2 to 0.848 and 0.693, and restores collapsed labels from negative R2 to a stable range. Using CAR, we infer 14.4 million pixels across 36 cities and eight years and release AEF-Econ, including 128d and 64d compressed versions. Self-diagnostics and case studies show that AEF-Econ captures cross-city hierarchies and intra-urban spatial organization under unsupervised settings, providing a socioeconomic remote sensing foundation embedding complementary to AEF physical embeddings.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20697",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20697"
+      }
+    ],
+    "relevance_score": 0.4017780523332447,
+    "max_similarity": 0.18449925021363978
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20640",
+    "title": "An LLM-Explainable DRL Framework for Passenger-Directed Autonomous Driving",
+    "authors": [
+      "Ouided Braoui, Meriem Bouali, Nadir Farhi"
+    ],
+    "abstract": "arXiv:2606.20640v1 Announce Type: new \nAbstract: Autonomous vehicles offer the potential for safer and more efficient mobility, yet public trust remains limited due to the lack of transparency in their decision-making. This work addresses this issue by combining deep reinforcement learning (DRL) for adaptive driving control with large language model (LLM)-based explainability modules designed to communicate agent behavior to passengers. DRL agents were trained in simulation using a Dueling Double Deep Q-Network to follow distinct driving requests: \\textit{fast}, \\textit{comfort}, and \\textit{stop}. They demonstrated stable learning, safe compliance with traffic rules, and reliable switching between modes within a single trip. In parallel, LLM modules were introduced to interpret passenger requests, determine when explanations were needed, and generate concise, safety-oriented justifications. Results show that this framework, serving as a proof of concept for integrating RL decision-making and LLMs, balances safety, adaptability, and explainability, and is most effective when requests are delayed or overridden due to safety constraints.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20640",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20640"
+      }
+    ],
+    "relevance_score": 0.4006543767531812,
+    "max_similarity": 0.1216987637808965
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20689",
+    "title": "NeoJaundice-AI: Smartphone-Based Neonatal Jaundice Detection Using Dual-Input Deep Learning and Synthetic Augmentation",
+    "authors": [
+      "Rahul Patel, Nirjala Jarpula"
+    ],
+    "abstract": "arXiv:2606.20689v1 Announce Type: new \nAbstract: Neonatal jaundice (hyperbilirubinemia) is one of the most common conditions affecting newborns worldwide, with India alone recording roughly 15 million cases per year. Early detection is critical, yet standard diagnosis requires blood tests that are often impractical in rural clinics where laboratory facilities are limited. This paper presents NeoJaundice-AI, a smartphone-based screening system that uses photographs of a baby's skin and sclera (eye white) to estimate jaundice severity and predict serum bilirubin levels in under three seconds without requiring internet connectivity.\n  The proposed system is built on a dual-branch EfficientNet-B0 architecture that independently processes skin and sclera images. Deep features are fused with handcrafted YCbCr color statistics to jointly perform four-class severity classification and continuous bilirubin regression. A key contribution is a synthetic jaundice generation method that simulates bilirubin-induced yellowing through controlled YCbCr channel modifications on normal neonatal skin images. This approach addresses data scarcity, particularly for severe jaundice cases and darker Indian skin tones (Fitzpatrick Types IV to VI). In addition, a skin-tone normalization module improves prediction consistency across diverse neonatal complexions.\n  Experimental results demonstrate an overall classification accuracy of 91.8 percent, a clinical sensitivity of 93.5 percent, and a bilirubin mean absolute error of 1.4 mg/dL. After INT8 quantization and ONNX conversion, the model size is reduced to 8.3 MB while maintaining inference times below three seconds on standard Android devices. To the best of our knowledge, this is the first India-focused neonatal jaundice AI system that combines multimodal image fusion, skin-tone adaptation, synthetic data augmentation, and fully offline mobile deployment within a single framework.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20689",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20689"
+      }
+    ],
+    "relevance_score": 0.39559454507605174,
+    "max_similarity": 0.11473446361949344
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20717",
+    "title": "MIRAGE: Stealthy Visual Prompt Injection for Vulnerability Detection in Web Agents",
+    "authors": [
+      "Xuelong Dai, Jianyu Ma, Boyang Ma, Biwei Yan, Yijun Yang, Yue Zhang"
+    ],
+    "abstract": "arXiv:2606.20717v1 Announce Type: new \nAbstract: Multimodal Large Language Model (MLLM)-based web agents provide practical, high-precision solutions for visual browser automation; however, they inherently expand the attack surface, introducing novel vision-based vulnerabilities. Existing adversarial evaluations targeting these agents frequently rely on permissive threat models and visually conspicuous artifacts. In this paper, we investigate a constrained vulnerability detection setting: a trusted web platform where the evaluator acts solely as an unprivileged third party, such as a merchant or advertiser, controlling only a semantically legitimate, spatially constrained region, such as an ad slot, a sponsored card, or a localized widget. Operating under these realistic constraints, we propose MIRAGE, a novel visual indirect prompt injection framework for targeted next-action hijacking. Our approach leverages diffusion models to generate perceptually benign adversarial images strictly confined to the attacker-controlled boundaries permitted by the trusted service provider. To maximize attack efficacy within such a restrictive setting, we introduce a robust optimization technique combining curvature-aware adversarial diffusion guidance with sparse, dark-pixel residual perturbations. Comprehensive evaluations against prominent MLLM web agent frameworks, specifically SeeAct and OpenClaw, empirically demonstrate the potency, realism, and stealth of our proposed MIRAGE.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20717",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20717"
+      }
+    ],
+    "relevance_score": 0.38684750639676746,
+    "max_similarity": 0.10334989608086884
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20920",
+    "title": "$\\Omega$: Operator-based Mixture Ensemble for Generative Assimilation",
+    "authors": [
+      "Pouria Behnoudfar, Nan Chen"
+    ],
+    "abstract": "arXiv:2606.20920v1 Announce Type: new \nAbstract: Characterizing non-Gaussian posterior distributions in partially observed high-dimensional nonlinear systems remains a fundamental challenge in data assimilation. Ensemble Kalman filters rely on Gaussian approximations that can be inaccurate for strongly non-Gaussian posteriors, whereas particle filters suffer from severe scalability limitations. Recent score-based generative approaches improve posterior characterization but typically require supervised training with ground-truth posterior samples, which are unavailable in most practical applications. We introduce $\\Omega$ (Operator-based Mixture Ensemble for Generative Assimilation), a scalable framework that integrates conditional Gaussian surrogate modeling, unsupervised score learning, and generative sampling. The conditional Gaussian surrogate provides a nonlinear non-Gaussian baseline approximation while admitting closed-form conditional posterior distributions for the unresolved variables. First, $\\Omega$ exploits these closed-form conditional distributions to analytically recover the high-dimensional unobserved component, reducing computational cost and mitigating the curse of dimensionality. Second, $\\Omega$ learns only the residual discrepancy beyond an analytical baseline through denoising score matching using ensemble trajectories alone, eliminating the need for ground-truth posterior samples and substantially reducing the learning burden. Third, $\\Omega$ reconstructs the full non-Gaussian posterior distribution of both observed and unobserved variables via a Gaussian mixture representation, capturing multimodal, skewed, and heavy-tailed statistics. Finally, $\\Omega$ employs annealed Langevin sampling to iteratively refine ensemble members from the baseline toward the target posterior. $\\Omega$ is validated on several turbulent models with intermittency and extreme events, consistently improving posterior accuracy.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20920",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20920"
+      }
+    ],
+    "relevance_score": 0.37652132862841714,
+    "max_similarity": 0.09272205579449616
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20757",
+    "title": "Evidential Fusion Network for Multimodal Survival Prediction under Missing Modalities",
+    "authors": [
+      "Yucheng Xing, Hailan Mo, Zi Wang, Ling Huang, Mengling Feng"
+    ],
+    "abstract": "arXiv:2606.20757v1 Announce Type: new \nAbstract: Recent multimodal survival prediction models have demonstrated strong predictive performance by leveraging complementary information across modalities. However, such models generally assume data completeness and exhibit limited robustness toward missing modalities, which are frequently encountered in real-world clinical settings. We propose the Evidential Missing Modality Survival Fusion (EMMS) model for multimodal survival prediction under missing modalities. EMMS offers a straightforward, computationally effective approach to survival analysis without requiring a generative phase for missing data. By employing Dempster-Shafer theory and Gaussian Random Fuzzy Numbers for multimodal decision fusion, it considers both aleatoric and epistemic uncertainty alongside modality reliability for fusion. Moreover, the model treats missing modalities as vacuous evidence, preventing interference with available inputs and naturally reflecting increased uncertainty and calibrated predictions. Extensive experiments on four cancer datasets demonstrate state-of-the-art performance while providing calibrated and interpretable uncertainty estimates under incomplete multimodal observations, without introducing additional computational overhead.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20757",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20757"
+      }
+    ],
+    "relevance_score": 0.365733626726547,
+    "max_similarity": 0.13996419576504995
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20624",
+    "title": "In LLM Reasoning, there is Irrationality on top of Value Misalignment",
+    "authors": [
+      "Kejiang Qian, Fengxiang He"
+    ],
+    "abstract": "arXiv:2606.20624v1 Announce Type: new \nAbstract: Significant progress has been made in aligning LLMs with target value functions. We argue that, even when an LLM has been well aligned in (post-)training, it may still fail to maximise the aligned value in reasoning. We mathematically formalise this gap as rational value risk: the utility discrepancy between a model's deployed reasoning strategy and its rational counterpart, which is defined to be the responses that maximise expected utility in the steepest direction. The estimation error of rational value risk is further decomposed into three components from finite candidates, finite prompts, and imperfect verifiers. Extensive experiments are conducted, covering models Llama-3.1, Qwen-2.5, T{\\\"}ulu-3 families (7B-72B), GPT-5.2, GPT-5.5, and DeepSeek-V4, and benchmarks UltraFeedback, AlpacaEval, GSM8K, MATH, HumanEval, and MathArena. The results validate that (1) rational value risk is widespread; (2) value alignment can reduce, but cannot eliminate, it; (3) the risk is highly sensitive to inference-time reasoning strategy; and (4) longer reasoning improves rationality with diminishing returns. The code is at https://github.com/EVIEHub/LLM-Rationality.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20624",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20624"
+      }
+    ],
+    "relevance_score": 0.35356478632856003,
+    "max_similarity": 0.12580797734965313
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20820",
+    "title": "CELEUS: Certifiable and Efficient LLM Evaluation via E-Processes",
+    "authors": [
+      "Zhijian Zhou, Zesheng Ye, Zhaorun Chen, Bo Li, Feng Liu"
+    ],
+    "abstract": "arXiv:2606.20820v1 Announce Type: new \nAbstract: Can we trust evaluation scores to capture an LLM's true real-world performance? Certifiable evaluation answers this question by providing guarantee for LLM evaluation. In particular, existing methods sequentially curate evaluation samples and keep updating confidence intervals (CIs) that cover the true performance with high probability (e.g., 95%) until some conditions are satisfied, e.g., the CI width reaches a target precision. However, existing methods are not generally anytime-valid: the claimed coverage (e.g., 95%) may fail when CIs are repeatedly updated and used to decide when to stop, leaving a gap between theoretical rigor and practice. This paper bridges this gap by proposing Celeus, a Certifiable framework for Efficient LLM evaluation, which leverages E-processes to build anytime-valid CIs. Concretely, we propose signals that combine two ingredients: (i) Uncertainty-guided sampling to select informative samples for evaluation, and (ii) Surrogate-assisted approximations for unevaluated samples. We prove that such signals remain unbiased for the evaluation score conditional on the past, enabling statistically-grounded and anytime-valid $e$-process CIs. More importantly, the two ingredients reduce estimation variance and help reach the target precision with fewer evaluated samples. We also prove that CIs obtained by Celeus can shrink at a near-parametric rate up to logarithmic factors and analyze the oracle variance-optimal sampling rule that motivates the empirical uncertainty-guided one. Experiments show that Celeus reaches the target precision using 54-62% fewer evaluated samples than baselines, while preserving anytime-valid coverage.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20820",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20820"
+      }
+    ],
+    "relevance_score": 0.343825543472954,
+    "max_similarity": 0.11420661050709187
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20676",
+    "title": "Jury Duty: Calibration and Orientation Failures in MLLM-as-a-Judge Under Cultural Ambiguity",
+    "authors": [
+      "Daniel Lee, Harsh Sharma, Eunkyu Park, Pranav Narayanan Venkit, Jeonghwan Kim, Kah Mun Chia, Andreas Vlachos, Shafiq Joty"
+    ],
+    "abstract": "arXiv:2606.20676v1 Announce Type: new \nAbstract: MLLM-as-a-Judge is conventionally validated by agreement with human annotations, but this metric is undefined when the human pool is culturally heterogeneous. We introduce VOIR DIRE, a multimodal benchmark of 626 culturally paired image--prompt artifacts spanning U.S. and mainland Chinese contexts across food, fashion, and architecture, with annotator pools that are within-pool reliable (a = 0.86/0.74) but cross-pool divergent on evaluation (Q1 r = -0.12). Across six MLLMs, the bias decomposes into two failures: a positivity-floor calibration failure (compressed scale use) and an orientation failure (default to one cultural norm). On this corpus, where contested items are sampled to split the two pools, the floor mechanically validates the more-permissive Chinese reading; persona prompting partially recovers calibration, but the orientation residual survives, evidence the tilt is not reducible to scale compression. Reference-pool in-context demonstrations deepen the orientation residual and inflate the high end rather than restoring use of the low end. Model origin adds a small additive tilt (~0.10 MAE) that is approximately invariant under demonstration. We recommend reporting alignment against each reference pool separately and treating cross-pool divergence as a judge property.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20676",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20676"
+      }
+    ],
+    "relevance_score": 0.3387386276312179,
+    "max_similarity": 0.10759584622513196
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20631",
+    "title": "Harnessing Agent Skills: Architectural Patterns and a Reference Architecture for Skill-Mediated LLM Agents",
+    "authors": [
+      "Boming Xia, Liming Zhu, Zhenchang Xing, Qinghua Lu, Dino Sejdinovic, Xiwei Xu"
+    ],
+    "abstract": "arXiv:2606.20631v1 Announce Type: new \nAbstract: Agent skills externalise reusable agent-facing behavioural knowledge and guidance as persistent artefacts that can be discovered, activated, and interpreted by LLM agents. Although a skill artefact is static at rest, its architectural responsibilities arise in use, when the artefact is selected for a run, bound to context and authority constraints, interpreted by a stochastic agent, and recorded as run evidence. We call this run-specific relation skill-in-use. This paper studies agent skill harnessing: the architectural responsibilities that govern the transition from skill artefacts to skill-in-use, bound the executable consequences associated with skill-in-use, and capture evidence for attribution, verification, repair, and evolution. This paper provides a catalogue of ten empirically grounded architectural patterns (five core, five supporting) for skill harnessing and synthesises them into a reference architecture with four responsibility layers: Supply Chain, Mediation, Execution Control, and Evidence & Feedback. We evaluate the architecture through cross-instantiation across 8 selected systems. The resulting patterns and reference architecture provide a vocabulary and diagnostic frame for analysing skill-harnessing responsibilities across agent systems.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20631",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20631"
+      }
+    ],
+    "relevance_score": 0.3002237803053026,
+    "max_similarity": 0.1847738796056284
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20715",
+    "title": "CDER-SME: A Cross-Device Event-RGB Micro-Expression Dataset under Multi-Level Stress Induction",
+    "authors": [
+      "Jingting Li, Hui Sha, Su-Jing Wang"
+    ],
+    "abstract": "arXiv:2606.20715v1 Announce Type: new \nAbstract: Micro-expression recognition (MER) in realistic scenarios demands high temporal sensitivity and ecological validity, yet existing benchmarks are largely constrained to laboratory-controlled settings and rigid hardware-coupled sensing. We introduce CDER-SME, a cross-device Event-RGB dataset collected under a multi-level stress induction framework (cognitive and social) to elicit spontaneous emotional leakage. To enable reproducible acquisition with independent, decoupled sensors, we provide a hardware-agnostic alignment pipeline for temporal synchronization and landmark-guided spatial registration. CDER-SME adopts a three-tier structure with 92 subjects and 1,963 expert-annotated samples (Action Units and emotions), including 790 Event-RGB pairs and 210 high-fidelity aligned pairs. We further report a reproducible multimodal baseline, where cross-modal fusion improves performance over single-modality counterparts, supporting the complementarity of event dynamics and RGB cues. By removing the need for coaxial calibration, CDER-SME offers a practical benchmark for cross-device alignment and deployable Event-RGB MER in real-world affective intelligence.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20715",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20715"
+      }
+    ],
+    "relevance_score": 0.28223026108166493,
+    "max_similarity": 0.09875932615551634
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.20709",
+    "title": "TeleStyle V2: Beyond Content-Preserving Style Transfer with Self-Distillation and Distribution-Matching-Distillation",
+    "authors": [
+      "Shiwen Zhang, Yifan Xu, Haibin Huang, Chi Zhang, Xuelong Li"
+    ],
+    "abstract": "arXiv:2606.20709v1 Announce Type: new \nAbstract: Given a content reference and a style reference, content-preserving style transfer requires the model to generate stylized outputs with content and style consistency. We introduced TeleStyle V1 to tackle this problem. However, TeleStyle V1 is trained with photorealistic content reference and artistic style reference, which makes it incapable to cope with artistic content reference and realistic style reference in most cases. In this paper, we designed a Self-Distillation data synthesis strategy to construct such triplets from TeleStyle V1. Trained with such self-distilled triplets, our TeleStyle V2 supports Content-Style references in the forms of Realistic-and-Realistic (RnR), Realistic-and-Stylized (RnS), Stylized-and-Realistic (SnR), Stylized-and-Stylized (SnS). In addition, we found Distribution Matching Distillation could preserve the general text-guided image editing capability of the foundation model and fix the content consistency degradation caused by SFT process. Through quantitative evaluations, our TeleStyleV2-QIE-2509-DMD performs at least on par with Qwen-Image-Edit-2509-DMD, demonstrating strong general image editing skills beyond content-preserving style transfer. We observed the content/style reference order confusion problem in TeleStyle V1 and further introduced prompt enhancer to solve it. TeleStyle V2 uses Qwen-Image-Edit's VLM encoder, Qwen2.5-VL-7B, to generate content prompt and style prompt for free. TeleStyle V2 could achieve comparable style transfer performance with state-of-the-art commercial model, gemini-3-pro-image-preview.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "updated": "Tue, 23 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.20709",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.20709"
+      }
+    ],
+    "relevance_score": 0.27081236098627415,
+    "max_similarity": 0.14793288304852723
+  }
+]
