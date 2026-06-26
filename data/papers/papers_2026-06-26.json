@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2606.26346",
+    "title": "How Do Tool-Augmented LLM Agents Perform on Real-World Energy Analytics Tasks?",
+    "authors": [
+      "David Akinpelu, Akintonde Abbas, Rereloluwa Alimi, Ayodeji Lana"
+    ],
+    "abstract": "arXiv:2606.26346v1 Announce Type: new \nAbstract: Agentic benchmarks have emerged across general-purpose and domain-specific settings, including finance, coding, law, and drug discovery, yet energy-domain evaluations remain largely limited to static knowledge recall. This is a critical gap for a sector that requires live data retrieval, specialized regulatory and market knowledge, and multi-step quantitative reasoning under real-world constraints.\n  We present an empirical study of tool-augmented LLM agents on real-world energy market analytics tasks. Our evaluation environment includes 243 expert-curated problems across three categories: (1) Market Data Retrieval and Analysis, (2) Knowledge Retrieval and Interpretation, and (3) Advanced Quantitative Modeling and Decision Analytics. Tasks include price and demand analysis, tariff impact modeling, asset revenue and returns estimation, hedging strategy analysis, and optimization modeling, with problems spanning multiple difficulty levels.\n  Agents are equipped with a configurable suite of domain tools, including live electricity market APIs for major U.S. ISOs, regulatory docket search, utility tariff databases, asset optimization models, and retrieval-augmented generation over energy market documents. We assess agent responses using a multi-dimensional evaluation protocol that scores approach correctness, answer accuracy, attribute alignment, and source validity, with category-aware routing to match scoring criteria to question type. We evaluate both closed-source and open-source LLMs, providing a comparative analysis of how model capability and domain tooling interact in a high-stakes professional domain. Key artifacts are publicly released to support reproducibility and future research.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26346",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26346"
+      }
+    ],
+    "relevance_score": 0.5853910888010276,
+    "max_similarity": 0.34006235246604494
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26350",
+    "title": "OpenFinGym: A Verifiable Multi-Task Gym Environment for Evaluating Quant Agents",
+    "authors": [
+      "Kaicheng Zhang, Wen Ge, Lei Jiang, Weixin Yang, Jordan Langham-Lopez, Jialin Yu, Lukasz Szpruch, Hao Ni"
+    ],
+    "abstract": "arXiv:2606.26350v1 Announce Type: new \nAbstract: Although large language model agents are increasingly applied to quantitative-finance workflows, their evaluation remains fragmented across isolated tasks, while the financial relevance of benchmark tasks is often overlooked. Yet financial workflows are inherently multi-stage, spanning interdependent tasks such as forecasting, strategy construction, risk management, and trading. Existing platforms typically focus on a single task, and can therefore overstate agent competence and fail to reveal weaknesses in generalization, real-market interaction, and financially meaningful decision-making. We introduce OpenFinGym, a unified gym environment for quantitative-finance agent development that covers forecasting, market generation, real-time trading, and fraud detection under a single execution and verification interface. OpenFinGym additionally provides an automated task-construction pipeline that turns quantitative finance publications into executable task packages; a containerised runtime with a host-side verifier service that supports scalable agent rollouts and prevents runtime train-test leakage; a paper trading engine with a low-latency data-stream design; deferred-resolution support for long-horizon and event-market forecasts; and integration for SFT and RL post-training",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26350",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26350"
+      }
+    ],
+    "relevance_score": 0.5005359541100073,
+    "max_similarity": 0.23969215126502136
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26387",
+    "title": "Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs",
+    "authors": [
+      "Xi Xiao, Chen Liu, Chih-Ting Liao, Yunbei Zhang, Qizhen Lan, Yuxiang Wei, Lin Zhao, Janet Wang, Jianyang Gu, Muchao Ye, Tianyang Wang, Hao Xu"
+    ],
+    "abstract": "arXiv:2606.26387v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) extend large language models (LLMs) with visual perception, enabling joint reasoning over images and text. Despite inheriting strong reasoning capabilities from LLMs, they remain prone to hallucinations that contradict their visual inputs. Mechanistic studies indicate that this weakness stems from visual laziness: MLLMs encode the correct visual evidence internally, but overly rely on strong language priors during response. Existing alignment methods, such as direct preference optimization, primarily optimize outcome-level rewards based on text. This introduces an optimization bias toward linguistic shortcuts, leading to responses that often contradict the visual evidence. To address this, we propose Visual Information Gain In aLignment (VIGIL), a reinforcement-learning (RL) post-training framework that shifts the focus from numerical reward fitting to causal visual grounding. VIGIL introduces a geometric constraint that explicitly maximizes the mutual information between the visual input and the generated response. We achieve this by penalizing \"blind confidence\" instances where the model remains improperly certain even when textual-visual attention is masked to create a counterfactual blind state. Extensive experiments show that VIGIL consistently outperforms recent alignment methods across hallucination and reasoning benchmarks without compromising text-only capabilities. Our approach matches the full-data performance of state-of-the-art methods using only 25% of the preference data and even demonstrates emergent spatial grounding capabilities without explicit bounding box supervision.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26387",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26387"
+      }
+    ],
+    "relevance_score": 0.4972273501145099,
+    "max_similarity": 0.22848746578497675
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26122",
+    "title": "DocArena: Turning Raw Documents into Controllable Training Environments for Document Search Agents",
+    "authors": [
+      "Jiamian Wang, Ruiyi Zhang, Tong Yu, Jing Shi, Samyadeep Basu, Rajiv Jain, Zhiqiang Tao, Tong Sun"
+    ],
+    "abstract": "arXiv:2606.26122v1 Announce Type: new \nAbstract: Recent methods train search agents via reinforcement learning from (question, answer, evidence) tuples without requiring expert trajectories. The tuples serve as the training environment, and whose properties directly shape what search strategies and generalization abilities the agent can develop. While prior works have made encouraging progress in improving training data quality, existing environments remain predominantly text-based and existing approaches can struggle to construct training environments that are controllable, scalable, and account for multimodal data. Given this, we propose DocArena, a fully automated data curation pipeline building on the practical need for multimodal document search and question-answering. It transforms raw document collections into training environments for search agents without any human annotation. The pipeline first structures and indexes documents through MLLM-based visual perception, then profiles and leverage the cross-page information distribution to construct reasoning-intensive QA pairs, as well as performs cascaded quality assurance operations via MLLM. We introduce DocArena-79K with QA pairs from 8,336 documents spanning 16 domains and 49 languages. We further design a Doc-Search agent infrastructure that decouples visual perception from the policy model, allowing text-based LLMs to serve as the reasoning backbone for multimodal document retrieval and QA. Under a unified evaluation framework where only the policy model differs, experiments on six multimodal document scenarios and seven text-based QA benchmarks show that agents trained on DocArena data achieve the best performance on both retrieval accuracy and QA quality. Further analysis on agent search behaviors confirms the effectiveness and controllability of the constructed training environment.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26122",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26122"
+      }
+    ],
+    "relevance_score": 0.47459383724557125,
+    "max_similarity": 0.20230725560428406
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26333",
+    "title": "Mesh-RL: Coupled subgrid reinforcement learning",
+    "authors": [
+      "Behnam Gheshlaghi, Bahador Rashidi, Shahin Atakishiyev"
+    ],
+    "abstract": "arXiv:2606.26333v1 Announce Type: new \nAbstract: Reinforcement learning in large or sparse-reward environments suffers from slow temporal-difference reward propagation, as value information spreads only locally across the state space. We propose Mesh-RL, a spatial domain-decomposition framework inspired by the finite element method and domain decomposition theory, which partitions the environment into overlapping subgrids and enforces boundary-consistent temporal-difference updates. Such an approach enables localized learning while ensuring globally coherent value propagation. Unlike hierarchical or model-based approaches, Mesh-RL accelerates long-range credit assignment without modifying the reward function, Bellman operator, or introducing explicit planning mechanisms. We evaluate Mesh-RL on hazard-dense grid-world environments with varying geometries and mesh resolutions. Across Q-learning, SARSA, and Dyna-Q, Mesh-RL consistently improves convergence speed, cumulative reward, and learning stability. Higher mesh resolutions sustain exploration, prevent premature convergence, and substantially accelerate value propagation to distant states. While Dyna-Q already benefits from internal planning, it still achieves additional gains under structured decomposition. Overall, Mesh-RL introduces a principled spatial domain-decomposition mechanism for accelerating temporal-difference learning. Our framework bridges finite element method-inspired boundary-consistency techniques from scientific computing with reinforcement learning to improve sample efficiency in sparse-reward environments. We will release source code of the study.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26333",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26333"
+      }
+    ],
+    "relevance_score": 0.4684585870404314,
+    "max_similarity": 0.2646818259504815
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26103",
+    "title": "Investigating LLM's Problem Solving Capability -- a Study on Statics Questions",
+    "authors": [
+      "Tanner Culleton, Hung-Fu Chang"
+    ],
+    "abstract": "arXiv:2606.26103v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have rapidly influenced many aspects of society, particularly education, due to their demonstrated ability to complete assignments and examinations across a wide range of subjects. Although prior studies have examined the educational impact of LLMs, much of the existing work relies on public or open problem datasets and lacks topic-specific analysis. In engineering education, especially within mechanical engineering, systematic investigations of LLM performance on specific problem types remain limited. Instead of using traditional methods that directly ask textbook questions to an LLM tool, our study adopts a model distillation process to evaluate LLM capabilities in solving statics problems. By distilling ChatGPT, we extracted 25 text-only statics questions and further constructed two additional datasets by adding diagrams and modifying their numerical values. Experimental results show that while LLMs perform well on text-only statics problems, their accuracy decreases when diagrams are introduced and the problems require multi-step reasoning. Further analysis suggests that this performance drop is not primarily caused by limitations in image recognition, but rather by difficulties in multi-step reasoning and in consistently applying extracted visual information across successive solution stages.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26103",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26103"
+      }
+    ],
+    "relevance_score": 0.4574781648303226,
+    "max_similarity": 0.1849573672609829
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26366",
+    "title": "Narration-of-Thought: Inference-Time Scaffolding for Defeasible Ethical Reasoning in Large Language Models",
+    "authors": [
+      "Patrick Cooper, Alvaro Velasquez"
+    ],
+    "abstract": "arXiv:2606.26366v1 Announce Type: new \nAbstract: Standard chain-of-thought on moral dilemmas exhibits two failure modes: stakeholder collapse (the trace names at most one party with a stake in the outcome) and uncertainty suppression (no explicit unknowns or hedges before committing to an action). We introduce narration-of-thought (NoT), a system prompt that structures chain-of-thought into five sections: protagonist, stakeholders, two-step consequences, uncertainty, then commitment. NoT adds no training, parameters, or fine-tuning. On 100 DailyDilemmas scenarios across four generators from three vendors, NoT cuts stakeholder collapse from up to 31% to under 1% and uncertainty suppression from up to 72% to 1-24% on every model. A matched-budget verbose-CoT control rules out token spend as the active ingredient; NoT retains Cliff's delta advantages of +0.79 to +0.90 on stakeholder count and +0.65 to +0.93 on uncertainty score for three of four generators, and a section ablation attributes each shift to its specific sub-instruction. Textual-gradient descent initialised at NoT improves the scaffold further; a cross-family training judge (different vendor from the generator) dominates an in-family one on every measured axis. Extended to a five-round multi-stakeholder debate protocol, the scaffold converts a 6% standoff into 95% full consensus on a calibration set and 100% combined convergence on a DailyDilemmas replication. The resulting traces externalise the stakeholders, consequences, and uncertainty grounding each commitment, providing an auditable substrate for dependable agentic deployment.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26366",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26366"
+      }
+    ],
+    "relevance_score": 0.45291127375689544,
+    "max_similarity": 0.18424103304497189
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26287",
+    "title": "GeMoE: Gating Entropy is All You Need for Uncertainty-aware Adaptive Routing in MoE-based Large Vision-Language Models",
+    "authors": [
+      "Chaoxiang Cai, Minghe Weng, Jie Li, Yibo Jiang, Longrong Yang, Zequn Qin, Xi Li"
+    ],
+    "abstract": "arXiv:2606.26287v1 Announce Type: new \nAbstract: With the increase in model parameters and training data, the instruction following and generalization capabilities of Large VisionLanguage Models (LVLMs) have been significantly improved. Based on the Mixture of Experts (MoE) architecture, LVLMs expand their parameter capacity while maintaining the inference cost. However, traditional MoE methods employ a Top-k static routing strategy, which fails to account for variations in the input and adaptively select the number of experts, resulting in suboptimal resource utilization. In this paper, we propose viewing token routing as an information encoding task, framing dynamic routing as a Minimum Description Length (MDL) problem in encoding By validating the connection between MDL and gating entropy in the MoE scenario, we introduce Gating Entropy-based Uncertainty-aware Adaptive Routing (GeMoE) for MoE. Unlike traditional static or heuristic-based dynamic routing methods, GeMoE explicitly models the trade-off between model complexity and performance. By using gating entropy to assess the complexity of tokens, GeMoE adaptively determines the number of experts each token should engage. On a wide range of backbones and benchmarks, our method achieves 99.5% average performance retention compared to the original static routing, while improving average expert activation sparsity by 36.5%.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26287",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26287"
+      }
+    ],
+    "relevance_score": 0.4515890114847517,
+    "max_similarity": 0.18053854031787925
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26535",
+    "title": "From Hallucination to Grounding: Diagnosing Visual Spatial Intelligence via CRISP",
+    "authors": [
+      "Zhixing Li, Yinan Yu"
+    ],
+    "abstract": "arXiv:2606.26535v1 Announce Type: new \nAbstract: Current VLM evaluations often conflate language priors with genuine spatial reasoning. To address this, we introduce CRISP, a novel structural-diagnostic evaluation paradigm that assesses visual spatial intelligence through consistency, the alignment between implicit perception and explicit reasoning. Unlike traditional black-box QA, CRISP utilizes metric 3D Scene Graphs and an oracle intervention protocol to decouple latent reasoning capabilities from perceptual bottlenecks. This granular diagnosis uncovers a systematic perception-reasoning disconnect. Crucially, we reveal that while proprietary models possess robust latent reasoning engines, they suffer from inaccurate metric estimation and a critical failure to leverage their implicit structural representations. Conversely, open-source models remain fundamentally bottlenecked by their lack of multi-hop compositional reasoning. By shifting the focus from merely ``guessing correctly'' via language priors to genuinely ``perceiving, verifying, and reasoning,'' CRISP offers a rigorous roadmap for multimodal alignment beyond end-to-end post-training. The code and dataset are available at https://github.com/iiyamayuki/CRISP-Bench.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26535",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26535"
+      }
+    ],
+    "relevance_score": 0.44714817282273,
+    "max_similarity": 0.17115451977489435
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26552",
+    "title": "Perception, Verdict, and Evolution: Hindsight-Driven Self-Refining Forensics Agent for AI-Generated Image Detection",
+    "authors": [
+      "Yangjun Wu, Keyu Yan, Yu Liu, Jingren Zhou, Fei Huang, Rong Zhang, Zhou Zhao, Fei Wu"
+    ],
+    "abstract": "arXiv:2606.26552v1 Announce Type: new \nAbstract: The rapid advancement of generative models presents a significant challenge to existing deepfake detection methods, particularly given the widespread dissemination of highly realistic AI-generated images. Although Multimodal Large Language Models (MLLMs) show strong potential for this task, existing approaches suffer from two key limitations: insufficient sensitivity to fine-grained forensic artifacts and reliance on static synthetic supervision from frontier models, leading to limited flexibility and high-cost. To address these issues, we propose ForeAgent, an agentic forensics framework for AI-generated image detection with iterative self-evolution. First, ForeAgent adopts a Perception-Verdict architecture that aggregates multi-view cues spanning semantic, spatial, and frequency-domain features, and leverages an MLLM as a verdict module to fuse these signals for a logical-grounded verdict. Second, to enable continual self-improvement, we introduce a Hindsight-Driven Self-Refining strategy following a Sampling-Reflection-Evolution paradigm. The agent performs inference rollouts on training instances. Guided by ground-truth labels as hindsight, it reflects on failure cases and low-quality reasoning trajectories to regenerate higher-quality reasoning traces. These synthesized samples are then strictly filtered through a dual-expert quality gating module. ForeAgent continuously evolves via fine-tuning on self-curated high-quality samples. Extensive experiments demonstrate that ForeAgent achieves state-of-the-art performance on the Chameleon benchmark, reaching 82.18% accuracy (+16.41% over AIDE), and achieves 93.3% mean accuracy on AIGCDetect-Benchmark across 16 generators. In addition, external evaluation shows that ForeAgent produces more consistent and causally grounded reasoning compared to GPT-5 and GPT-5-mini.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26552",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26552"
+      }
+    ],
+    "relevance_score": 0.441894536868301,
+    "max_similarity": 0.16116127130176272
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26416",
+    "title": "Methane-Plume Segmentation From Hyperspectral Satellite Imagery Via Multimodal Deep Learning",
+    "authors": [
+      "Brayan Quintero, Jeferson Acevedo, Samuel Traslavi\\~na, Hoover Rueda-Chac\\'on"
+    ],
+    "abstract": "arXiv:2606.26416v1 Announce Type: new \nAbstract: Efficient detection of methane plumes is crucial for understanding and mitigating global warming, as accurately identifying and segmenting them in earth observation imagery remain essential for large-scale monitoring. In this work, we propose a multimodal deep learning model that integrates a feature-guided methane enhancement (FGME) mechanism which injects physically meaningful methane cues into transformer-based RGB representations at multiple semantic scales. Our method is evaluated on the MPDataset, where it outperforms the state-of-the-art with improvements of +0.92 in MIoU, +0.87 in MPrecision and +1.01 in Recall. Notably, these gains are obtained with a substantially lower computational cost than other high-performing architectures, resulting in a favorable accuracy-efficiency trade-off for large-scale methane monitoring. These results highlight the potential of efficient multimodal fusion strategies for accurate and scalable methane plume segmentation in real-world remote sensing applications.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26416",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26416"
+      }
+    ],
+    "relevance_score": 0.4376522291872422,
+    "max_similarity": 0.15886225290993763
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26348",
+    "title": "What We are Missing in Multimodal LLM Evaluation?",
+    "authors": [
+      "Po-han Li, Shenghui Chen, Sandeep Chinchali, Ufuk Topcu"
+    ],
+    "abstract": "arXiv:2606.26348v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) can process diverse inputs, e.g., text, images, audio, and video, and generate textual responses. While their capabilities have advanced rapidly, evaluation of such models has not kept pace. Most existing evaluation benchmarks are limited to isolated tasks and reveal little about whether a model integrates information across modalities. We examine current means for evaluating MLLMs and review the existing benchmark taxonomy to identify gaps, including temporal-spatial coherence, physical world understanding, multimodal consistency, and selective attention. Addressing these gaps is essential for measuring real progress in multimodal intelligence and exposing capability boundaries.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26348",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26348"
+      }
+    ],
+    "relevance_score": 0.43254647617603015,
+    "max_similarity": 0.151913071894573
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26422",
+    "title": "Estimating Uncertainty in Classifier Performance with Applications to Large Language Models and Nested Data",
+    "authors": [
+      "Kylie Anglin"
+    ],
+    "abstract": "arXiv:2606.26422v1 Announce Type: new \nAbstract: Researchers increasingly use text classification--supervised models or large language models--to measure constructs from natural language, providing metrics such as recall and precision as evidence of their validity. Yet, though these metrics are point estimates subject to sampling variation, measures of uncertainty are inconsistently reported alongside them. Further, when they are reported, they are often estimated with methods that are not appropriate when relevant labelled datasets are small or performance is high. To increase and improve confidence interval reporting in the field, this paper evaluates confidence interval methods for performance metrics under conditions typical of social science text classification: small to moderate sample sizes, infrequent constructs, and texts nested within individuals. Across simulations, default methods such as the Wald interval and the basic percentile bootstrap are the least accurate, with coverage sometimes far below the nominal 95% level. Accuracy is improved with the use of Agresti-Coull, Wilson, Clopper-Pearson, and a novel pseudo-count regularized bootstrap (which is particularly relevant to the calculation of F1). When texts are nested within individuals, we demonstrate that adjustment for both effective N and the appropriate degrees of freedom is necessary for producing accurate analytic intervals. Among bootstrap intervals, the hierarchical bootstrap is more accurate than the cluster bootstrap when individuals produce a moderate number of texts but overly conservative when individuals produce only a few. By providing guidance to the field on appropriate interval estimation, we aim to improve the transparency of machine learning applications, and to encourage greater attention to the validation sample size at the design stage.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26422",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26422"
+      }
+    ],
+    "relevance_score": 0.40638808217275296,
+    "max_similarity": 0.12243073264852977
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26155",
+    "title": "Detecting and Controlling Sycophancy with Cascading Linear Features",
+    "authors": [
+      "Maty Bohacek, Rishub Jain, Nicholas Dufour, Thomas Leung, Chris Bregler, Roma Patel"
+    ],
+    "abstract": "arXiv:2606.26155v1 Announce Type: new \nAbstract: Interpreting and controlling model behaviors through activation steering methods requires many pairs of contrastive samples that clearly exhibit desired or undesired behavior. These data pairs determine the degree to which interpretability frameworks can reliably detect model features responsible for a behavior, and therefore the ability to steer models toward or away from such behavior. In this work, we present an iterative data generation pipeline that isolates cascading linear features responsible for a behavior. Specifically, we show how moving beyond simple binary pairs of samples, and instead isolating samples that show degrees of features that scale linearly with behavior, allows for better disentanglement of features. We focus on detecting and steering away from sycophancy -- the tendency of language models to prioritize user validation. We demonstrate that sycophancy features discovered through cascading samples form linearly separable subspaces, and allow for selection of model activations that more clearly correspond to the desired behavior than baseline approaches. We also evaluate their ability to enable detection, deterministic scoring, and robust steering, and see that they either match or outperform LLM-as-a-judge and system prompting baselines while providing lower computational demand and more interpretability guarantees. Code & Data: https://cascading-feats.github.io/",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26155",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26155"
+      }
+    ],
+    "relevance_score": 0.39870316613326645,
+    "max_similarity": 0.11467907840864074
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26203",
+    "title": "Agentic Analysis for Agentic Infrastructure: An LLM-Powered Pipeline for Comparative Governance of DAO and Corporate AI Protocols",
+    "authors": [
+      "Yutian Wang, Luyao Zhang"
+    ],
+    "abstract": "arXiv:2606.26203v1 Announce Type: new \nAbstract: As AI agent protocols proliferate, the governance structures shaping their interoperability standards remain empirically underexamined. We introduce an LLM-powered comparative pipeline for large-scale governance discourse analysis, integrating automated annotation, neural topic modeling, and multi-layer network analysis to study socio-technical power structures at scale. We validate it on two contrasting standards for agent interoperability: ERC-8004 (permissionless, on-chain) and Google A2A (corporate-led). Analyzing 4,323 governance participation records, we combine LLM-assisted coding, topic modeling, and multi-layer network analysis to examine how institutional design shapes thematic priorities and community structure. We find that while governance form influences substantive focus, both regimes exhibit comparable levels of participation inequality and community fragmentation. Discourse alignment is denser in the permissionless setting, suggesting that open governance may foster greater thematic convergence despite decentralized participation. These findings illustrate how LLM-assisted methods can advance the empirical study of technology governance, with implications for designing more equitable agentic AI standards. All data and code are openly available.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26203",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26203"
+      }
+    ],
+    "relevance_score": 0.3594495175454966,
+    "max_similarity": 0.1290190550255153
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26101",
+    "title": "Know2Guess: A Contamination-Aware Multi-Zone Benchmark for Knowledge-Boundary Evaluation in Large Language Models",
+    "authors": [
+      "Renwei Meng, Bowen Zhang, Jian Wang, Xican Wang, Haoyi Wu, Xuanyan Qiu, Shengan Yang"
+    ],
+    "abstract": "arXiv:2606.26101v1 Announce Type: new \nAbstract: Reliable evaluation of large language models should separate supported answering from unsupported guessing without conflating either with data contamination, prompt idiosyncrasy, or generic refusal behavior. We present a contamination-aware, multi-zone benchmark for measuring the transition from answerable knowledge to abstention-expected unknowns under frozen build-time labels. The benchmark contains 1,200 items across five domains, explicit abstention expectations, contamination-risk metadata, and dual parsing with an official strict parser plus a normalized robustness parser. We evaluate FLAN-T5, Qwen2.5-Instruct, and Llama-3-Instruct models under locked answer-or-abstain prompts, answer-only controls, and prompt-template variants. The benchmark is not solved by generic non-answer behavior: FLAN baselines remain weak on productive abstention, while stronger instruction-tuned models expose a selective but incomplete transition from answering to abstaining. Qwen2.5-3B-Instruct achieves the best overall reliability, but answer-expected zones remain difficult, calibration remains poor, and benign-item refusal persists. Prompt and parser robustness analyses preserve the main ranking and qualitative conclusions. The benchmark therefore provides a reproducible protocol for auditing answerability, abstention, refusal, and contamination as distinct but interacting dimensions of LLM reliability.The dataset is publicly available at https://github.com/renweimeng/Know2Guess-A-Contamination-Aware-Multi-Zone-Benchmark.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26101",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26101"
+      }
+    ],
+    "relevance_score": 0.3552617483146653,
+    "max_similarity": 0.12001537080862704
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26185",
+    "title": "Necessary but Not Sufficient: Temperature Control and Reproducibility in LLM-as-Judge Safety Evaluations",
+    "authors": [
+      "Hiroki Tamba"
+    ],
+    "abstract": "arXiv:2606.26185v1 Announce Type: new \nAbstract: LLM-as-judge (\"grader\") components are now standard in evaluation harnesses, including safety evaluations where a pass/fail verdict may gate downstream deployment decisions. A widespread assumption is that setting the grader's sampling temperature to 0 makes grading deterministic. We test this assumption against a real safety-evaluation codebase (Japan AISI's open-source aisev) and show it fails on two levels. First, the harness invokes its grader without setting temperature or seed; the underlying provider silently applies its default of 1.0, so items near the decision boundary flip pass/fail across identical runs (per-item disagreement up to ~50% over 20 runs). Second, pinning temperature=0 reduces but does not eliminate flips: across 690 API calls spanning two providers, three model tiers, and five sampling configurations, 1-2 of 7 borderline items remain non-reproducible even under forced greedy decoding (top_k=1). Claude Opus 4.7/4.8 has since deprecated temperature entirely, rendering the primary mitigation inapplicable to newer model generations. These findings expose a structural gap: evaluation harnesses that report single-run verdicts without variance or grader-disagreement metrics can present noise as a safety property. We release a reproduction harness (690 calls, 7 conditions) and recommend that harnesses treat grader disagreement as a first-class health metric alongside the scores themselves.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26185",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26185"
+      }
+    ],
+    "relevance_score": 0.3368278324390425,
+    "max_similarity": 0.10312683340280175
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26173",
+    "title": "AlgoEvolve: LLM-driven Meta-evolution of Algorithmic Trading Programs",
+    "authors": [
+      "Dhruv Sharma, Gautam Shroff"
+    ],
+    "abstract": "arXiv:2606.26173v1 Announce Type: new \nAbstract: Recent work shows that Large Language Models (LLMs) can act as semantic mutation operators for the evolutionary discovery of programs and proofs. Most current applications focus on static coding benchmarks. We extend this paradigm to algorithmic trading. This domain is uniquely challenging because it is noisy, non-stationary, and highly discontinuous. We present AlgoEvolve, an LLM-driven evolutionary framework that generates, evaluates, and iteratively improves executable trading strategies. These strategies are expressed as Python code and evaluated through a rigorous testing protocol. Across multiple experiments, the system exhibits emergent regime-adaptive strategy logic, including autonomous shifts in trading rules. We further introduce a meta-evolutionary outer loop that evolves the prompts guiding program synthesis in the inner loop. This outer loop discovers improved search heuristics. These heuristics balance exploration and exploitation while reducing zero-trade failures. They consistently outperform initial human-designed instructions. The results demonstrate that LLM-based semantic evolution provides a viable approach for continual program synthesis in complex environments.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26173",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26173"
+      }
+    ],
+    "relevance_score": 0.3096479368017779,
+    "max_similarity": 0.1279080629185448
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26327",
+    "title": "EVOM: Agentic Meta-Evolution of Actor-Critic Architectures for Reinforcement Learning",
+    "authors": [
+      "Boyun Zhang, Chao Wang, Kai Wu"
+    ],
+    "abstract": "arXiv:2606.26327v1 Announce Type: new \nAbstract: In actor-critic reinforcement learning, network architectures are typically manually designed. Automating this design is challenging because each candidate must be trained before evaluation, and the design space is open-ended. To address these challenges, we introduce EVOM, an agentic meta-evolution framework for discovering high-performance actor-critic architectures. We frame architecture search as a bi-level optimization: an inner loop trains weights via the low-fidelity proximal policy optimization (PPO), while an outer loop drives meta-evolution by iteratively refining architecture programs. Crucially, this outer loop is powered by an LLM-based design agent that operates purely as an architecture designer, completely decoupled from policy execution and environment control. Experiments reveal that EVOM outperforms the manually designed baseline, an LLM-guided random search, and the state-of-the-art LLM-guided programmatic policy search method MLES, delivering superior performance on Ant-v4 and HalfCheetah-v4. Ablation studies validate that both the meta-evolution loop and the LLM Design Agent are indispensable for final performance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26327",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26327"
+      }
+    ],
+    "relevance_score": 0.29505881518171706,
+    "max_similarity": 0.17318968091811515
+  },
+  {
+    "id": "https://arxiv.org/abs/2606.26164",
+    "title": "\\chisao{}: A GPU-Native Parallel Optimizer for Multimodal Black-Box Functions via Convergence-Anticonvergence Oscillation",
+    "authors": [
+      "Ira Wolfson"
+    ],
+    "abstract": "arXiv:2606.26164v1 Announce Type: new \nAbstract: Finding all modes of a multimodal black-box function is a fundamental challenge in optimization, Bayesian inference, and scientific computing. Existing approaches -- basin-hopping, CMA-ES, multistart gradient descent -- operate sequentially and cannot exploit the massive parallelism of modern GPU hardware. We introduce \\chisao{} (\\textbf{C}onvergence-\\textbf{H}alt-\\textbf{I}nvert-\\textbf{S}tick-\\textbf{A}nd-\\textbf{O}scillate), a GPU-native population optimizer that runs an entire sample batch simultaneously and exploits a deliberate convergence-anticonvergence oscillation cycle to escape local traps while freezing confirmed modes. The structural move is asymmetric: samples that reach true peaks are frozen (``stuck'') and preserved, while the rest keep exploring via momentum-based anti-convergence and stochastically smoothed gradients. Adaptive reseeding via two complementary strategies (Repulse Monkey and Golden Rooster) maintains population diversity throughout. On all 42 functions of the Simon Fraser University optimization benchmark suite across dimensions $d \\in \\{2, 4, 8, 16, 32, 64\\}$, \\chisao{} achieves \\textbf{100\\%} mode recovery where all CPU baselines collapse at $d \\geq 8$ on the hardest multimodal functions, at up to \\textbf{$34\\times$} speedup over basin-hopping on functions where all methods succeed (Michalewicz $d=64$) and up to \\textbf{$39\\times$} on unimodal functions (Rotated Hyper-Ellipsoid $d=64$, pure GPU dividend). All benchmarks evaluate the objective by value alone -- gradients come from finite differences -- so the reported speedups are a derivative-free worst case. Under substantial likelihood noise ($\\sigma_{\\mathrm{noise}}$ up to 1.0), mode detection remains 100\\% reliable. The algorithm is available as a standalone open-source Python package on PyPI.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "updated": "Fri, 26 Jun 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2606.26164",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2606.26164"
+      }
+    ],
+    "relevance_score": 0.24783849854211648,
+    "max_similarity": 0.11636830524158998
+  }
+]
