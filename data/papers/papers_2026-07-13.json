@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2607.08964",
+    "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+    "authors": [
+      "Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Zhichao Liu, Xiyang Wu, Anhao Li, Yue Yu, Ninghao Liu, Lichao Sun, Haotao Mi,  LeoweiLiang"
+    ],
+    "abstract": "arXiv:2607.08964v1 Announce Type: new \nAbstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving. We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks. Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively. These results reveal headroom for improvement. We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08964",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08964"
+      }
+    ],
+    "relevance_score": 0.6362172681025351,
+    "max_similarity": 0.41356664812036814
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09403",
+    "title": "Fictional Worldbuilding: Multi-Agent LLM Collaboration with Hierarchical Context Compression and Iterative Review",
+    "authors": [
+      "Jingbo Chen, He Wang, Wei Yuan, Yuqiao Lai, Zhenyan Lu"
+    ],
+    "abstract": "arXiv:2607.09403v1 Announce Type: new \nAbstract: Worldbuilding, the construction of coherent fictional worlds, is a foundational task in game design and literary creation. Large Language Models (LLMs) offer new possibilities for automated content generation, but their application to worldbuilding faces three challenges: context explosion that grows linearly with the building process, the tension between creative diversity and content consistency, and the absence of automated quality assurance. This paper presents AutoWorldBuilder, a multi-agent collaborative system that addresses these challenges through five integrated components: a structured concept network with conflict detection; a DAG-based hybrid batch scheduler that groups tasks by semantic locality; a four-layer context compression mechanism achieving approximately 90% token reduction; an iterative review system with specialized Auditor agents that improves proposal pass rates from 42% to over 85%; and a skill-driven agent architecture supporting zero-code extension with differentiated temperature configuration. Two experiments across 20 diverse worldbuilding tasks, using GPT-OSS 120B and DeepSeek v3.2 as LLM backends, demonstrate a 95.0% success rate. The system generated 56-103 self-consistent concepts per world in 18-31 minutes with zero-conflict delivery. The architectural patterns validated here, including layer-as-budget compression, semantic-locality scheduling, and separation of generation and review, transfer to the broader class of knowledge-intensive, multi-agent LLM applications.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09403",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09403"
+      }
+    ],
+    "relevance_score": 0.5396000809755018,
+    "max_similarity": 0.2870576564604391
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09153",
+    "title": "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling",
+    "authors": [
+      "Peng Kuang, Haibo Jin, Xiaoyu Han, Yanli Wang, Xiaopeng Yuan, Ye Yu, Kaidi Xu, Haohan Wang"
+    ],
+    "abstract": "arXiv:2607.09153v1 Announce Type: new \nAbstract: Process Reward Models (PRMs) have been proven to be highly effective in guiding test-time scaling (TTS) methods, which significantly boost the capabilities of LLM-based multi-agent systems. However, existing PRMs are text-based: they re-encode the entire trajectory text from scratch. In long multi-agent rollouts, the scoring cost, growing quadratically with respect to sequence length L, creates a severe computational bottleneck, severely limiting PRMs' application in long-context scenarios. To resolve this, we introduce KV-PRM, a highly efficient process reward model that eliminates the heavy text re-encoding by directly reading the KV cache produced naturally during the LLM's generation phase. By processing a single \"verify token\" against the pre-existing KV cache, KV-PRM reduces the scoring cost from O(L^2) to O(L). We formally prove that the KV cache contains strictly greater information capacity than text, and is more efficient for downstream reward modeling. Empirically, across the MATH, GSM8K, and AIME benchmarks, KV-PRM matches or strictly outperforms text-PRMs under various TTS methods such as Beam Search, MCTS, and Weighted Voting, with up to a 5,000x reduction in scoring FLOPs, a 37x reduction in latency, and a 34x reduction in per-sequence memory footprint compared to text-based PRMs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09153",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09153"
+      }
+    ],
+    "relevance_score": 0.49522173756708987,
+    "max_similarity": 0.23327703671388386
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09322",
+    "title": "LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making",
+    "authors": [
+      "Yanzhen Chen, Zihan Xu, Xiaocheng Zhang, Zhiting Fan, Weiqi Zhai, Hongxia Xu, Zuozhu Liu"
+    ],
+    "abstract": "arXiv:2607.09322v1 Announce Type: new \nAbstract: In this work, we introduce LongMedBench, a real-world EHR-based benchmark for long-horizon clinical decision-making. Prior evaluations of LLM-based medical agents have largely emphasized short-context knowledge QA and tool use. However, real-world medical care is inherently longitudinal, and clinicians must aggregate evidence across repeated visits, tests, and evolving treatments. Therefore, long-horizon interaction is essential for realistic assessment. LongMedBench is constructed via a reproducible pipeline that integrates MIMIC-IV admission records and clinical notes into time-series event streams and long-context memory datasets, enabling long-horizon, multi-session interactions between agents and a clinical environment. It comprises 335 patients, with 19.72 inpatient visits per patient on average and 44.91 medical events per visit. Guided by the long-horizon decision process, we propose an evaluation taxonomy with three suites: fact-based QA, temporal reasoning, and long-horizon decision-making. This taxonomy measures how agents understand and leverage historical patient information over extended horizons. Our experiments show that while recent LLMs can make good use of explicit timestamps, they have challenges in implicit time inference; The RAG and agent memory system can improve the performance of information retrieval tasks, but the performance of decision-making tasks is highly dependent on the model's immediate context.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09322",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09322"
+      }
+    ],
+    "relevance_score": 0.4938336151117956,
+    "max_similarity": 0.23276884985608864
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.08894",
+    "title": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
+    "authors": [
+      "Maureese Williams, Dymitr Nowicki"
+    ],
+    "abstract": "arXiv:2607.08894v1 Announce Type: new \nAbstract: Large Language Model (LLM) agents have shown promise in multi-step planning tasks, but existing approaches like LATS (Language Agent Tree Search) and ReAct rely heavily on LLM inference during planning, leading to high computational costs and stochastic behavior. We present \\textbf{GATS} (Graph-Augmented Tree Search), a planning framework that combines systematic UCB1-based tree search with a layered world model to eliminate LLM calls during inference while achieving superior planning performance. Our three-layer world model integrates: (L1) exact symbolic action matching, (L2) statistics learned from execution logs, and (L3) LLM-based prediction for unknown actions. On synthetic planning tasks with branching paths and dead-ends, GATS achieves \\textbf{100\\% success rate} compared to 92 % for LATS and 64\\% for ReAct. On a comprehensive stress test spanning 12 challenging scenarios -- including coding workflows, web navigation, and long-horizon tasks -- GATS maintains \\textbf{100\\% success} while LATS drops to 88.9 % and ReAct to 23.9%. GATS requires \\textbf{zero LLM calls per task} during planning (vs. 37 per task for LATS) and produces deterministic plans with zero variance across runs. Our results demonstrate that systematic search with learned world models can substantially outperform LLM-guided exploration for agent planning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08894",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08894"
+      }
+    ],
+    "relevance_score": 0.48987525045835606,
+    "max_similarity": 0.2262033794783404
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09195",
+    "title": "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents",
+    "authors": [
+      "Izumi Takahara, Teruyasu Mizoguchi"
+    ],
+    "abstract": "arXiv:2607.09195v1 Announce Type: new \nAbstract: Large language model (LLM) agents are increasingly expected to play a central role in AI-driven scientific discovery. Equipped with broad knowledge, flexible reasoning, and tool use, they have the potential to autonomously explore and solve scientific problems by repeatedly proposing hypotheses, testing them, and revising their beliefs in the light of the evidence. In current agents, however, these hypotheses, tests, and belief updates are buried in unstructured logs, and no mechanism lets the agent or the human researcher audit that process. Here we propose the Hypothesis Evolution Protocol (HEP), an agent harness that provides hypothesis generation, evaluation, and evolution as explicit, auditable operations. On materials-science research tasks, a HEP-equipped agent operates the hypothesis--test--evidence--belief cycle that planning-style agents lack, generalizes across research questions, and exploits the protocol more fully as the base LLM becomes more capable. These results mark a step toward auditable AI scientists, whose scientific reasoning can be inspected, verified, and built upon.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09195",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09195"
+      }
+    ],
+    "relevance_score": 0.4765977744574693,
+    "max_similarity": 0.21123741373541843
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.08837",
+    "title": "Prompt-Driven Exploration",
+    "authors": [
+      "Sunshine Jiang, John Marangola, David Zhang, Raghuram Kowdeed, Ruiyang Luo, Nitish Dashora, Richard Li, Pulkit Agrawal, Zhang-Wei Hong"
+    ],
+    "abstract": "arXiv:2607.08837v1 Announce Type: new \nAbstract: Exploration is essential to RL since a policy cannot improve by repeatedly sampling the behaviors it already prefers. Standard methods inject stochasticity in the action space, but such jitter only yields rollouts close to the original. Escaping a weak policy often requires global perturbations that action noise cannot produce. Large language models (LLMs) and vision-language-action (VLA) models offer a pathway: they condition the policy on a natural language prompt, and since the rollout follows from it, modifying the prompt induces global changes. The challenge is finding prompts that induce useful global changes. With a weak policy that rarely succeeds, reward is too sparse to select on. Our idea is to refine prompts from the rollouts themselves: a vision-language model (VLM) reasons over the rollout video, diagnoses how the policy responded, and rewrites the prompt to elicit better behavior next time. This procedure realizes posterior sampling, a classical RL exploration framework, at the level of prompts: the VLM maintains an implicit distribution over useful prompts and updates it from observed rollouts. We call this strategy Prompt-Driven Exploration (PDE). Across manipulation and reasoning tasks, PDE enables RL to learn successful policies even from zero-reward starts, and improves sample efficiency more broadly. Our website is available at https://xinyunsunshine.github.io/prompt-rl.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08837",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08837"
+      }
+    ],
+    "relevance_score": 0.47427223650142625,
+    "max_similarity": 0.20976548227596498
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09492",
+    "title": "Multimodal Reward Hacking in Reinforcement Learning",
+    "authors": [
+      "Jiayu Yao, Yiwei Wang, Anmeng Zhang, Zhe Sun, Songsong Wang, Lingrui Mei, Yuyao Ge, Shenghua Liu"
+    ],
+    "abstract": "arXiv:2607.09492v1 Announce Type: new \nAbstract: Reinforcement learning (RL) is increasingly used to align multimodal large language models (MLLMs), but higher rewards do not always imply better task performance. This risk is amplified when visual evidence is evaluated by text-only or weakly grounded rewards. We study reward hacking in MLLM RL across safety VQA, chart VQA, and stress-test settings, varying reward design, data ambiguity, model scale (2B-32B), and RL algorithm (GRPO, RLOO, DAPO). We introduce Newly Rewarded Failure Rate (NRFR), which measures failures among samples whose proxy reward improves over the SFT baseline. Outcome-only rewards cause severe hacking, reaching 48.1% Reward Hacking Rate (RHR), while NRFR exceeding RHR shows that RL creates new failures rather than merely inheriting them. Scaling reduces but does not eliminate hacking: even the 32B model retains a 54.9% worse rate under outcome-only rewards, whereas answer-aware rewards improve the oracle trend at every scale. Robustness is also algorithm- and scale-dependent: GRPO is consistently most resistant, RLOO remains vulnerable, and DAPO improves substantially from 2B to 8B. Visual-evidence rewards help only with reliable verification: keyword-based checks increase hacking, while VLM-as-judge semantic verification reduces it. Overall, multimodal reward hacking is a systematic result of optimizing imperfect rewards, and robust alignment requires rewards and verifiers that remain reliable under optimization pressure.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09492",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09492"
+      }
+    ],
+    "relevance_score": 0.46953343587219243,
+    "max_similarity": 0.20314637469386249
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09330",
+    "title": "Communication-Efficient Digital-Twin Coordination for Heterogeneous LLM Embodied Agents over Computing Power Networks",
+    "authors": [
+      "Nuocheng Yang, Sihua Wang, Zihan Chen, Tony Q. S. Quek, Changchuan Yin"
+    ],
+    "abstract": "arXiv:2607.09330v1 Announce Type: new \nAbstract: Embodied agent teams powered by heterogeneous large language models (LLMs) are being widely deployed in physical artificial intelligence such as smart factories, warehouses, and service robotics. To enable collaboration among such an agent team, efficient coordination mechanisms that operate reliably under limited network resources are required. However, existing heterogeneous LLM-agent coordination frameworks that rely on multi-round natural-language-based conversations introduce three coupled challenges. First, inter-agent dialogue incurs communication overhead that grows rapidly with team size. Second, the quality of coordination is constrained by the heterogeneous capabilities of the agent team's LLMs. Third, agents may suffer from action delays due to iterative negotiation. To address these challenges, we propose LDT-Coord, a networked coordination framework built upon a lightweight digital twin (DT). Specifically, each agent independently selects its intended action and reports both the action decision and a structured temporal constraint over shared resources to the DT server, thereby decoupling coordination performance from natural-language reasoning ability. Then, DT executes a training-free, rule-based orchestrator algorithm to resolve cross-agent conflicts and returns coordination instructions to prevent such conflicts. To further reduce communication overhead, we formulate agent reporting control as a constrained partially observable Markov decision process (C-POMDP) and solve it with the PPO-Lagrangian algorithm. Simulation results show that LDT-Coord achieves a task success rate comparable to conventional coordination methods while reducing communication overhead by more than 70x and maintaining robustness under LLM heterogeneity.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09330",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09330"
+      }
+    ],
+    "relevance_score": 0.46402680951888886,
+    "max_similarity": 0.1937538104655261
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09142",
+    "title": "MedRealMM: A Real-World Multimodal Benchmark for Chinese Online Medical Consultation",
+    "authors": [
+      "Runhan Shi, Quan Zhou, Yuqian Xu, Shuai Yang, Xin Wu, Zitong Zhou, Hui Liu, Bin Cha, Zheming Wang, Liya Li, Wei Wei, Haoyuan Hu, Jun Xu"
+    ],
+    "abstract": "arXiv:2607.09142v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly deployed in online medical consultation, yet existing benchmarks remain poorly aligned with real clinical practice. Many rely on synthetic conversations or patient simulators, omit patient-uploaded medical images, or evaluate open-ended clinical responses using multiple-choice or lexical-overlap metrics that poorly reflect clinical quality. We introduce \\textbf{MedRealMM}, a large-scale benchmark for multimodal online medical consultation built from de-identified patient-doctor interactions collected from a nationwide Chinese internet hospital. MedRealMM uses a Multimodal Clinical Challenge Point (MCCP) extraction framework to identify clinically demanding moments in authentic consultation trajectories and converts each into a standardized next-response generation task while preserving the preceding text-image context. Each instance is paired with a case-specific rubric refined by physicians that rewards clinically desirable behaviors and penalizes unsafe, unsupported, or contradictory responses. The current release contains 5,620 real-world multimodal cases spanning 64 clinical departments. We evaluate 19 general-purpose and medical-specialized LLMs, including text-only and multimodal systems. Our results show that image information is critical for reliable clinical performance and that current frontier models remain below the online physician response. Although some frontier models satisfy as many or more positive clinical criteria than physicians, they trigger more negative criteria, indicating that safety-sensitive error avoidance remains a central bottleneck. MedRealMM offers a realistic and reproducible benchmark for evaluating multimodal medical reasoning in real-world online consultation. The dataset will be publicly available on Hugging Face at https://huggingface.co/datasets/jdh-algo/MedRealMM.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09142",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09142"
+      }
+    ],
+    "relevance_score": 0.44097015499553516,
+    "max_similarity": 0.16284908114772165
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.08786",
+    "title": "Accelerating GPU Inference of Large Language Models with Moderately Unstructured Sparse Weight Matrices",
+    "authors": [
+      "Tao Lu, Haoyu Wang, Zonghui Wang, Keshen Xiang, Jiaheng Zhang, Wenzhi Chen"
+    ],
+    "abstract": "arXiv:2607.08786v1 Announce Type: new \nAbstract: With the growing deployment of large language models (LLMs), LLM inference cost has become a key challenge. Pruning techniques that introduce sparsity into weight matrices can accelerate inference. However, maintaining model quality typically limits pruning to moderate unstructured sparsity (around 50\\%). At these sparsity levels, none of the existing GPU kernels for sparse matrix multiplication (SpMM) can outperform their dense counterparts. This paper proposes an efficient GPU inference method for LLMs with moderate sparsity. We propose a three-layer matrix storage format comprising: (i) a Sparse-TC layer enabling sparse tensor cores to accelerate SpMM; (ii) a Slot-Filling layer using parallel differential distance for matrix compression while supporting low-cost on-chip decoding; (iii) a lightweight Residual Layer ensuring correct SpMM computation. Building on this format, we design a SpMM kernel that jointly utilizes sparse tensor cores and CUDA cores. This design enables an efficient execution pipeline and overlaps on-chip computation with memory access. Evaluations show that our work is the first to outperform dense matrix multiplication on modern GPUs equipped with high-bandwidth memory (HBM). It achieves up to 1.64x kernel-level speedup over SpInfer (EuroSys'25, Best paper) and up to 1.41x end-to-end speedups over FlashLLM (VLDB'24). Our source code: https://github.com/moui0/cudac.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08786",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08786"
+      }
+    ],
+    "relevance_score": 0.41374502590616813,
+    "max_similarity": 0.1340195130066668
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09076",
+    "title": "Neuro-Agentic Control: A Deep Learning-based LLM-Powered Agentic AI Framework for Controlling Security Controls",
+    "authors": [
+      "Saroj Gopali, Bipin Chhetri, Deepika Giri, Sima Siami-Namini, Akbar Siami Namin"
+    ],
+    "abstract": "arXiv:2607.09076v1 Announce Type: new \nAbstract: Cyberattacks on operational technology are increasingly causing costly downtime and physical damage, exposing the limitations of traditional rule-based monitoring in industrial IoT environments. While Large Language Models (LLMs) have strong semantic reasoning abilities to assist in decision support, their hallucinatory nature presents unacceptable safety liabilities for closed-loop control. This paper introduces a neuro-agentic control framework, a novel architecture that couples an LLM-based planner (i.e., such as Gemini 2.5 Flash-Lite) with a pre-trained Time-Series Foundation Model (TimesFM), to achieve physics-grounded autonomous defense. The paper introduces a ``Counterfactual Physics Injection'' mechanism that simulates the impact of LLM-proposed interventions within the numerical latent space of the foundation model before actuation, while allowing the system to reject hallucinatory or unsafe actions. Evaluated on an industrial dataset (e.g., the Secure Water Treatment (SWaT)) in the context of stochastic attack scenarios, the framework exhibited better performance compared to LSTM and TCN baselines. The Neuro-Agentic Loop prevented five breaches (33.3%) below the threshold versus LSTM (26.7%) and TCN (13.3%), with zero physically invalid (hallucinated) actions executed. These results demonstrate the efficacy of using foundation models as deterministic ``Sentinels'' to safeguard agentic AI in critical infrastructure.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09076",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09076"
+      }
+    ],
+    "relevance_score": 0.41037003091425694,
+    "max_similarity": 0.1264336436176608
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09474",
+    "title": "ProofCouncil: An LLM Agent for Solving Open Mathematical Problems",
+    "authors": [
+      "Johannes Schmitt, Tim Gehrunger, Jasper Dekoninck, Gergely B\\'erczi, Uri Kreitner, Liam Price, David Holmes"
+    ],
+    "abstract": "arXiv:2607.09474v1 Announce Type: new \nAbstract: Large language models (LLMs) have shown increasing promise in solving open problems in mathematics. However, their performance can be further improved through agentic workflows tailored to real-world mathematical practice. To this end, we introduce ProofCouncil, a mathematical agent that is designed to tackle open problems using an author-critic architecture. ProofCouncil served as a submission to the second batch of FirstProof, a challenge consisting of 10 real-world mathematical problems that agents must solve autonomously. Its submissions for 6 of the 10 problems were judged by the referees to be correct up to at most minor revisions, showing the best performance among participating teams. We also evaluate ProofCouncil on 30 open problems collected from mathematical researchers. Among the 21 solutions that received human feedback, 5 were judged completely correct, 2 more were judged promising pending final verification, and a further 8 contained useful partial progress. In this short paper, we describe the development of ProofCouncil and the agent-building library used to create it, which we release as open source to the community.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09474",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09474"
+      }
+    ],
+    "relevance_score": 0.4086462496978436,
+    "max_similarity": 0.12813726349826143
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.08778",
+    "title": "iLENS: Interpretable LLM-Guided Mixture-of-Experts for Neuroimaging Survival Analysis",
+    "authors": [
+      "Farica Zhuang, Seong Woo Han, Zixuan Wen, Shu Yang, Yize Zhao, Li Shen"
+    ],
+    "abstract": "arXiv:2607.08778v1 Announce Type: new \nAbstract: Alzheimer's Disease (AD) is a complex neurodegenerative disorder that continues to impact millions of people worldwide. Predicting AD conversion during the prodromal stage remains critical for disease understanding and patient care. As such, survival models are widely used for AD risk prediction, yet they are typically static predictors with limited interpretability and no capacity for natural language reasoning. In this work, we propose iLENS, an interpretable large language model (LLM) guided framework based on mixture-of-experts (MoE) for survival prediction in AD conversion. Our approach uses LLM to synthesize structured neuroimaging measurements and unstructured information to guide expert routing. Our framework demonstrates competitive predictive performance and capability in patient subtyping. Furthermore, our framework provides transparent, biologically grounded rationales for its routing decisions, bridging the gap between high-performance survival analysis and interpretable clinical decision support.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08778",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08778"
+      }
+    ],
+    "relevance_score": 0.40429418675455064,
+    "max_similarity": 0.1207109133430164
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.08779",
+    "title": "Signed Symmetric Quantization for Few-Bit Integers",
+    "authors": [
+      "Ian Colbert, Eashan Dash, Pablo Monteagudo-Lago, Juan Amboage, Srinidhi N, Giuseppe Franco, Nicholas J. Fraser, Arun Ramachandran"
+    ],
+    "abstract": "arXiv:2607.08779v1 Announce Type: new \nAbstract: The signed integer alphabet contains one more negative representable value than positive. Yet, by convention, the standard symmetric integer quantizer fixes its scale to be strictly positive, which assigns this extra representable value to the negative tail and can force clipping of positive outliers. In this work, we show that, at few-bit precision, such clipping is a non-trivial source of quantization error. Asymmetric quantization addresses this problem with a zero point, shifting the grid toward the observed data range; however, this flexibility is well-known to carry a runtime penalty. For example, in llama.cpp on an AMD EPYC(TM) \"Turin\" CPU, a 4-bit symmetric format uses up to 9% less memory with up to 2.45$\\times$ higher throughput than its asymmetric counterpart. We highlight signed symmetric quantization as a third option that retains the runtime profile of symmetric quantization without the penalty of the asymmetric format: our signed absmax grid places the extra representable value on the dominant-outlier tail through a principled and lightweight sign selection rule while keeping the zero point at zero. Our theoretical analysis offers two main results. First, we establish the signed absmax grid as conditionally bound-optimal on $\\ell_2$ quantization error, and show that the condition holds for 88-99% of weight groups across pre-trained large language models (LLMs) at low bit widths. Second, we show that negating the scale of a standard symmetric quantizer is analytically equivalent to a unit zero point shift on the same signed integer alphabet. We empirically validate our proposal on models from the Qwen3, Qwen3.5, and Llama3 families, and observe improvement in perplexity and downstream few-shot accuracy over the standard unsigned symmetric quantizer at no extra inference cost",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08779",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08779"
+      }
+    ],
+    "relevance_score": 0.3990910446686023,
+    "max_similarity": 0.11664603327832168
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.08843",
+    "title": "How are linear representations learned? Exact solutions to the dynamics of abstraction",
+    "authors": [
+      "William W. Yang, Andrew M. Saxe, Peter E. Latham"
+    ],
+    "abstract": "arXiv:2607.08843v1 Announce Type: new \nAbstract: In artificial and biological neural networks, concepts are often encoded as consistent linear directions in representation space. In deep learning, this idea is known as the linear representation hypothesis and underpins many interpretability and control methods based on linear probes, from concept detection to activation steering. Yet while prior work has studied whether such directions should exist $\\textit{after}$ training, the dynamics of how they emerge $\\textit{during}$ training remain poorly understood. Here, we develop a framework to study the alignment of concept directions during training - a process we call \"abstraction\". In a minimal linear network setting, we obtain exact solutions for the full trajectory of abstraction. These solutions reveal key analytic principles governing abstraction: (i) data and target geometry jointly determine abstraction at the end-of-learning, (ii) abstraction improves with network depth, and (iii) initialization scale controls the maximum abstraction reached during training. Extending our theory to nonlinear networks, we analyze how the choice of nonlinearity affects abstraction dynamics: erf networks approximate the linear theory, while abstraction in ReLU networks depends less on target geometry and more on input geometry. Across both, we prove a striking attenuation law: both nonlinearities weaken abstraction in activations relative to preactivations. We find evidence for this law in open models (DINOv3, Gemma 4) and apply our theory to improve linear probe generalization in LLMs. Together, our results provide a dynamical theory of abstraction with implications for interpretability and control.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08843",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08843"
+      }
+    ],
+    "relevance_score": 0.38740957460767084,
+    "max_similarity": 0.1025461315325422
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09175",
+    "title": "Scoped Verification for Reliable Long-Horizon Agentic Context Evolution under Distribution Shift",
+    "authors": [
+      "Dan C. Hsu, Luke Lu"
+    ],
+    "abstract": "arXiv:2607.09175v1 Announce Type: new \nAbstract: Deployed LLM agents rely on agentic context, the model-external textual control content assembled by an operational harness. In this work, the mutable component of that context is a persistent system-level instruction that is updated from operational experience while the model, tools, and harness remain fixed. Over long evolution horizons, flat-text maintenance makes verification increasingly difficult as accumulated instructions grow and interact. We propose Graph-Regularized Agentic Context Evolution (GRACE), which maintains the persistent instruction component as a typed semantic graph and validates proposed updates within the local typed neighborhoods of modified nodes. Accepted graph updates are reconstructed as incremental edits to the textual instruction checkpoint used at deployment. We evaluate GRACE within a fixed telecom agent harness derived from $\\tau^2$-bench under a controlled distribution-shift protocol. Across five independent replications, GRACE improves strict reliability, measured by pass^3, from the Gemini 2.5 Flash zero-shot value of 0.091 to 0.673$\\pm$0.136 at the final checkpoint. This exceeds a Gemini 3.1 Pro zero-shot reference of 0.242 on the same held-out set, while the flat-text HCE baseline finishes at 0.191$\\pm$0.051. These results identify two requirements for reliable long-horizon context evolution, a structural substrate that makes verification local and a consolidation mechanism that keeps accumulated instruction content usable.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09175",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09175"
+      }
+    ],
+    "relevance_score": 0.3592010700974394,
+    "max_similarity": 0.12839395891577063
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.08774",
+    "title": "CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions",
+    "authors": [
+      "Vanessa Figueiredo, Wilter Franceschi"
+    ],
+    "abstract": "arXiv:2607.08774v1 Announce Type: new \nAbstract: Reliability in large language model (LLM) systems is typically framed as a function of model capability. We challenge this by demonstrating that reliability is significantly influenced by \\emph{inference-time control} -- the computational layer governing task framing and context selection. We introduce \\emph{CogniConsole}, an architectural instantiation that externalizes this control into a structured interface combining programmatic coordination with bounded prompt-based reasoning. Through \\emph{controllability-oriented probes} ($N=489$) in a multi-step interactive environment, we show that increasing structural scaffolding -- from unstructured to fully scaffolded -- \\textbf{systematically reduces output variance and failure rates under a fixed model architecture}. Our results indicate that many observed failure modes, such as context drift and inconsistent constraint adherence, arise from under-specified control rather than insufficient capability. This work provides an empirical basis for treating inference-time control as a first-class abstraction, opening new directions for designing and evaluating LLM systems beyond scaling alone.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08774",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08774"
+      }
+    ],
+    "relevance_score": 0.3490542110395769,
+    "max_similarity": 0.11624517845330334
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09217",
+    "title": "OpenProver: Agentic and Interactive Theorem Proving with Lean 4",
+    "authors": [
+      "Mat\\v{e}j Kripner, Milan Straka"
+    ],
+    "abstract": "arXiv:2607.09217v1 Announce Type: new \nAbstract: In this system paper, we present OpenProver, an open-source system for LLM-driven automated theorem proving (ATP) with integrated Lean 4 formal verification. OpenProver integrates a Planner-Worker-Verifier architecture inspired by recent ATP agentic systems such as Aletheia. A Planner agent maintains a compact Whiteboard scratchpad and an unbounded Repository of intermediate findings, and decomposes mathematical work into parallel Workers.\n  OpenProver is fully open-source, offers reproducible evaluation through automatic formal verification of generated proofs, and provides an interactive terminal interface for human-guided proof search. In interactive mode, OpenProver allows the human operator to monitor and steer the proof search process, motivated by the established human-AI synergy in interactive code generation.\n  To showcase the potential for quantitative ablation experiments enabled by automatic formal verification, we evaluate OpenProver on ProofNet and compare it with a simple baseline. OpenProver is publicly available at https://github.com/kripner/OpenProver.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09217",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09217"
+      }
+    ],
+    "relevance_score": 0.33083248947987304,
+    "max_similarity": 0.1553824351604644
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.08776",
+    "title": "A Unified Approach to Interpreting Knowledge Distillation for Large Language Models via Interactions",
+    "authors": [
+      "Qingzhuo Wang, Ruiyang Qin, Zhenxin Qin, Wen Shen, Zhihua Wei"
+    ],
+    "abstract": "arXiv:2607.08776v1 Announce Type: new \nAbstract: Despite the success of knowledge distillation (KD) in Large Language Models (LLMs), the underlying mechanism behind its efficacy remains unclear. In this paper, we propose a unified approach to explore the common mechanism of various KD methods using interactions. Specifically, we decompose the output score of the LLM into the sum of numerous interactions. Each interaction represents a nonlinear relationship involving a set of input variables (e.g., words). Based on the decomposed interactions, we discover that the common mechanism underlying various KD methods is the sparsification of interactions, i.e., student models retain fewer interactions for inference while suppressing other interactions to zero effects. Furthermore, we discover that the performance variance across different KD methods arises from their capabilities in handling complex interactions. A KD method typically yields better performance if it enables the student model to achieve higher sparsity of complex interactions. Motivated by these insights, we propose a plug-and-play loss function called Complex Interaction Penalty (CIP) to explicitly enforce the sparsity of complex interactions during the distillation process. Extensive experiments demonstrate that integrating CIP consistently improves the performance of diverse KD methods on both in-domain and out-of-distribution benchmarks.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08776",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.08776"
+      }
+    ],
+    "relevance_score": 0.30962397944873815,
+    "max_similarity": 0.12922277175013738
+  }
+]
