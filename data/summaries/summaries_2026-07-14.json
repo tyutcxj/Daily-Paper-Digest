@@ -1,0 +1,282 @@
+[
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08964",
+    "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+    "authors": [
+      "Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Zhichao Liu, Xiyang Wu, Anhao Li, Yue Yu, Ninghao Liu, Lichao Sun, Haotao Mi, Leowei Liang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08964",
+    "summary": "研究问题：现有终端基准仅评估短时简单任务的最终结果，忽略中间进展和部分解决方案。\n主要方法：提出Long-Horizon-Terminal-Bench，包含46个长时任务，分解为细粒度子任务，提供密集中间奖励和部分学分。\n关键贡献：设计长时终端基准，支持密集奖励评估，测试智能体在长时规划、长上下文管理和迭代调试方面的极限。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09153",
+    "title": "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling",
+    "authors": [
+      "Peng Kuang, Haibo Jin, Xiaoyu Han, Yanli Wang, Xiaopeng Yuan, Ye Yu, Kaidi Xu, Haohan Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09153",
+    "summary": "研究问题：现有文本PRM在长多智能体场景中计算成本呈二次增长。\n主要方法：KV-PRM通过直接读取LLM生成阶段的KV缓存，仅处理单个验证令牌，将评分成本从O(L²)降至O(L)。\n关键贡献：理论上证明KV缓存信息容量大于文本，实验上在多个基准中匹配或超越文本PRM，实现高达5000倍FLOPs和37",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09403",
+    "title": "Fictional Worldbuilding: Multi-Agent LLM Collaboration with Hierarchical Context Compression and Iterative Review",
+    "authors": [
+      "Jingbo Chen, He Wang, Wei Yuan, Yuqiao Lai, Zhenyan Lu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09403",
+    "summary": "研究问题：世界构建中LLM面临的上下文爆炸、创意与一致性矛盾及缺乏自动质量保证。  \n主要方法：提出AutoWorldBuilder多智能体系统，含概念网络、DAG调度、四层上下文压缩（90% token减少）、迭代审查及技能驱动架构。  \n关键贡献：实现95%成功率，生成56-103个自洽概念，提案通过率从42%提升至85%以上。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08894",
+    "title": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
+    "authors": [
+      "Maureese Williams, Dymitr Nowicki"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08894",
+    "summary": "研究问题：LLM代理在多步规划中计算成本高、随机性强  \n主要方法：提出GATS框架，结合UCB1树搜索和三层世界模型（符号匹配、统计学习、LLM预测）  \n关键贡献：100%成功率，零LLM调用，确定性规划",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09322",
+    "title": "LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making",
+    "authors": [
+      "Zihan Xu, Yanzhen Chen, Xiaocheng Zhang, Zhiting Fan, Weiqi Zhai, Hongxia Xu, Zuozhu Liu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09322",
+    "summary": "研究问题：现有医疗代理评估缺乏长期临床决策能力。  \n主要方法：构建LongMedBench基准，基于MIMIC-IV的时序事件流和长上下文记忆数据集，提出三套评估。  \n关键贡献：提供真实世界长期临床决策评估基准，揭示LLM在隐式时间推理上的不足。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09195",
+    "title": "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents",
+    "authors": [
+      "Izumi Takahara, Teruyasu Mizoguchi"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09195",
+    "summary": "研究问题：当前LLM智能体在科学发现中假设、测试和信念更新过程不可审计。  \n主要方法：提出假设演化协议（HEP），将假设生成、评估和演化作为显式可审计操作。  \n关键贡献：HEP使智能体具备可审计的假设-测试-证据-信念循环，在材料科学任务中表现良好，迈向可审计AI科学家。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09492",
+    "title": "Multimodal Reward Hacking in Reinforcement Learning",
+    "authors": [
+      "Jiayu Yao, Yiwei Wang, Anmeng Zhang, Zhe Sun, Songsong Wang, Lingrui Mei, Yuyao Ge, Shenghua Liu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09492",
+    "summary": "研究问题：多模态强化学习中奖励欺骗现象及其影响因素  \n主要方法：提出新指标NRFR，在安全VQA等任务上测试不同奖励设计、模型规模和算法  \n关键贡献：揭示结果奖励导致严重欺骗，GRPO最鲁棒，视觉语义验证可缓解问题",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08837",
+    "title": "Prompt-Driven Exploration",
+    "authors": [
+      "Sunshine Jiang, John Marangola, David Zhang, Raghuram Kowdeed, Ruiyang Luo, Nitish Dashora, Richard Li, Pulkit Agrawal, Zhang-Wei Hong"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08837",
+    "summary": "研究问题：如何通过提示驱动实现强化学习中的有效探索。\n主要方法：利用视觉语言模型分析策略执行视频，诊断行为并重写提示以引导全局行为变化。\n关键贡献：提出提示驱动探索（PDE）方法，将后验采样框架应用于提示层面，从弱策略中学习成功策略。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09330",
+    "title": "Communication-Efficient Digital-Twin Coordination for Heterogeneous LLM Embodied Agents over Computing Power Networks",
+    "authors": [
+      "Nuocheng Yang, Sihua Wang, Zihan Chen, Tony Q. S. Quek, Changchuan Yin"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09330",
+    "summary": "研究问题：异构LLM具身智能体团队在网络资源受限下的高效协调问题  \n主要方法：提出LDT-Coord框架，基于轻量级数字孪生，智能体独立选择动作并报告结构化时间约束，由DT执行无训练规则编排  \n关键贡献：解耦协调性能与自然语言推理能力，降低通信开销和动作延迟",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09076",
+    "title": "Neuro-Agentic Control: A Deep Learning-based LLM-Powered Agentic AI Framework for Controlling Security Controls",
+    "authors": [
+      "Saroj Gopali, Bipin Chhetri, Deepika Giri, Sima Siami-Namini, Akbar Siami Namin"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09076",
+    "summary": "研究问题：工业物联网中传统规则监控的局限性及LLM幻觉对闭环控制的安全风险  \n主要方法：提出神经-智能体控制框架，结合LLM规划器与TimesFM，引入反事实物理注入机制  \n关键贡献：实现物理基础的自主防御，在SWaT数据集上优于LSTM和TCN，防止33.3%的违规",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09474",
+    "title": "ProofCouncil: An LLM Agent for Solving Open Mathematical Problems",
+    "authors": [
+      "Johannes Schmitt, Tim Gehrunger, Jasper Dekoninck, Gergely B\\'erczi, Uri Kreitner, Liam Price, David Holmes"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09474",
+    "summary": "研究问题：解决开放数学问题  \n主要方法：基于作者-评论家架构的LLM智能体ProofCouncil  \n关键贡献：在FirstProof挑战中表现最佳，在30个开放问题中取得良好效果，并开源智能体构建库",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08778",
+    "title": "iLENS: Interpretable LLM-Guided Mixture-of-Experts for Neuroimaging Survival Analysis",
+    "authors": [
+      "Farica Zhuang, Seong Woo Han, Zixuan Wen, Shu Yang, Yize Zhao, Li Shen"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08778",
+    "summary": "研究问题：阿尔茨海默病转化预测的生存分析，现有模型缺乏可解释性和自然语言推理能力。  \n主要方法：提出iLENS框架，用大语言模型合成神经影像与非结构化信息，引导混合专家路由。  \n关键贡献：实现竞争性预测与患者亚型划分，提供透明、生物学依据的推理决策。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08786",
+    "title": "Accelerating GPU Inference of Large Language Models with Moderately Unstructured Sparse Weight Matrices",
+    "authors": [
+      "Tao Lu, Haoyu Wang, Zonghui Wang, Keshen Xiang, Jiaheng Zhang, Wenzhi Chen"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08786",
+    "summary": "研究问题：加速LLM推理中中等非结构化稀疏权重矩阵的GPU推理\n主要方法：提出三层矩阵存储格式和联合利用稀疏张量核与CUDA核的SpMM内核\n关键贡献：首次在配备HBM的现代GPU上超越稠密矩阵乘法，实现高达1.64倍内核级加速",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08779",
+    "title": "Signed Symmetric Quantization for Few-Bit Integers",
+    "authors": [
+      "Ian Colbert, Eashan Dash, Pablo Monteagudo-Lago, Juan Amboage, Srinidhi N, Giuseppe Franco, Nicholas J. Fraser, Arun Ramachandran"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08779",
+    "summary": "研究问题：标准对称量化在少位精度下因正负表示不对称导致裁剪误差。\n主要方法：提出有符号对称量化，通过轻量级符号选择规则将额外可表示值分配给主导异常尾。\n关键贡献：理论证明条件最优，实验显示4位对称格式比非对称格式内存减少9%，吞吐量提高2.45倍。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09175",
+    "title": "Scoped Verification for Reliable Long-Horizon Agentic Context Evolution under Distribution Shift",
+    "authors": [
+      "Dan C. Hsu, Luke Lu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09175",
+    "summary": "研究问题：长周期代理语境演化中，平面文本维护导致验证困难  \n主要方法：提出GRACE，用类型化语义图维护指令，在局部邻域验证更新  \n关键贡献：GRACE在分布偏移下将可靠性从0.091提升至0.673，超越基线",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09142",
+    "title": "MedRealMM: A Real-World Multimodal Benchmark for Chinese Online Medical Consultation",
+    "authors": [
+      "Runhan Shi, Quan Zhou, Yuqian Xu, Shuai Yang, Xin Wu, Zitong Zhou, Hui Liu, Bin Cha, Zheming Wang, Liya Li, Wei Wei, Haoyuan Hu, Jun Xu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09142",
+    "summary": "研究问题：现有在线医疗咨询基准与临床实践脱节，缺乏真实多模态数据和临床质量评估。  \n主要方法：构建MedRealMM基准，从真实医患对话中提取多模态临床挑战点，转化为下一响应生成任务，并配以医生制定的评分细则。  \n关键贡献：提供大规模真实世界多模态医疗咨询基准，涵盖64科室5620例，评估19个LLM，推动临床对齐评估。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08774",
+    "title": "CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions",
+    "authors": [
+      "Vanessa Figueiredo, Wilter Franceschi"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08774",
+    "summary": "研究问题：LLM系统可靠性是否受推理时控制影响而非仅模型能力。  \n主要方法：提出CogniConsole架构，通过结构化接口外部化控制，进行可控性探针实验（N=489）。  \n关键贡献：证明结构脚手架系统降低输出方差和失败率，指出失败源于控制不足而非能力不足。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08843",
+    "title": "How are linear representations learned? Exact solutions to the dynamics of abstraction",
+    "authors": [
+      "William W. Yang, Andrew M. Saxe, Peter E. Latham"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08843",
+    "summary": "研究问题：线性表示在训练中如何动态涌现（抽象过程）。  \n主要方法：在最小线性网络中得到精确解，并扩展到非线性网络。  \n关键贡献：揭示了抽象的三个原则，并分析了非线性函数的影响。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.08776",
+    "title": "A Unified Approach to Interpreting Knowledge Distillation for Large Language Models via Interactions",
+    "authors": [
+      "Qingzhuo Wang, Ruiyang Qin, Zhenxin Qin, Wen Shen, Zhihua Wei"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.08776",
+    "summary": "研究问题：知识蒸馏在大语言模型中有效性的共同机制  \n主要方法：将输出分数分解为交互项，分析不同蒸馏方法对交互稀疏化的影响  \n关键贡献：发现蒸馏本质是交互稀疏化，提出复杂交互惩罚损失函数提升性能",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.09217",
+    "title": "OpenProver: Agentic and Interactive Theorem Proving with Lean 4",
+    "authors": [
+      "Mat\\v{e}j Kripner, Milan Straka"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 13 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09217",
+    "summary": "研究问题：LLM驱动的自动化定理证明  \n主要方法：Planner-Worker-Verifier架构，结合Lean 4形式验证  \n关键贡献：开源系统，支持交互式人机协同证明搜索",
+    "language": "zh"
+  }
+]
