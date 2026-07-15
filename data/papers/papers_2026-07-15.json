@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2607.09796",
+    "title": "Metadata-Free Meta-Reweighted Direct Preference Optimization under Noisy Preference Labels",
+    "authors": [
+      "Hua Qu, Yifan Li, Xiaodong Yuan"
+    ],
+    "abstract": "arXiv:2607.09796v1 Announce Type: new \nAbstract: Direct Preference Optimization (DPO) has become an important method for aligning large language models (LLMs) with human preferences because it removes the need for explicit reward modeling and reinforcement learning optimization. However, its performance depends heavily on the quality of preference data, and noisy preference data in real-world settings can weaken alignment performance. To address this issue, we propose a bilevel optimization framework and prove, under certain assumptions, that this framework can recover the DPO optimum under clean data. We further derive a prior form for the learnable weighting function under asymmetric label-flipping noise. Considering that high-quality metadata may be difficult to obtain, we propose a task-agnostic meta-knowledge-driven method that enables meta-learning even when metadata is completely unavailable. To reduce the high cost of higher-order gradients in LLM meta-learning, we combine central-difference approximation with LoRA fine-tuning and develop a scalable training scheme. Experiments on TL;DR summarization and Anthropic HH single-turn dialogue show that the proposed method improves training performance over multiple DPO baselines under different noise rates.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09796",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09796"
+      }
+    ],
+    "relevance_score": 0.5402418312155393,
+    "max_similarity": 0.29096753998677816
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09876",
+    "title": "Prompting-MammAlps: Fine-Grained Text-to-Video Retrieval for Camera-Trap Data",
+    "authors": [
+      "Valentin Gabeff, Baptiste Maquignaz, Jennifer Shan, Sepideh Mamooler, Gencer Sumbul, Blair Costelloe, Devis Tuia, Alexander Mathis"
+    ],
+    "abstract": "arXiv:2607.09876v1 Announce Type: new \nAbstract: Automatically retrieving videos from large camera-trap datasets remains challenging. Text-to-Video retrieval (TVR) methods based on large video-language models (VLMs) have potential to retrieve events of interest by describing them with simple text queries. However, current methods often lack spatiotemporal understanding and do not generalize well to ecological data. In this work, we introduce Prompting-MammAlps, the first camera-trap TVR benchmark, and propose a fine-grained and interpretable TVR method. Specifically, we trained a vision transformer to perform spatiotemporal action localization, and convert its output to structured text, describing each video. Independently, ethology-inspired queries are processed by a Large-Language Model (LLM) based coding agent to parse the structured text per video and retrieve videos accordingly. We harnessed the LLM to use functions from a custom parsing library to minimize the risk of LLM hallucinations and to improve method interpretability. This retrieval approach applied on the Prompting-MammAlps benchmark achieved a set-based F1-score of 34\\% on a test set of 135 ecologically-relevant queries and 775 candidate videos. In comparison the best zero-shot VLM achieved a F1-score of 18\\%, while also lacking interpretability. Project page: https://cnai.epfl.ch/prompting-mammalps",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09876",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09876"
+      }
+    ],
+    "relevance_score": 0.5191589751185257,
+    "max_similarity": 0.26087192016238475
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09822",
+    "title": "Memory-Conditioned Tool Calling for Camera-First Visual Agents",
+    "authors": [
+      "Xiaofan Wu (Chance AI), Xi Zeng (Chance AI), Miaoxia Chen (Chance AI), Peishan Chen (Chance AI), Shuyan Li (Chance AI), Jiyun Yao (Chance AI), Hanyong Zhong (Chance AI), Jiahao Zhu (Chance AI)"
+    ],
+    "abstract": "arXiv:2607.09822v1 Announce Type: new \nAbstract: Recognition tells an agent what is in an image; personal memory affects what is worth looking up next. In a camera-first setting the user can send only an image, so the agent must form the lookups. We study whether personal visual memory improves agent-side tool choice and tool arguments, and thereby more user-aligned multi-tool lookups. The design uses a three-layer personal visual memory (profile, short-term focus, observations) that is loaded on each turn to condition an LLM tool-calling loop under camera-first intake, and includes conflict-aware write-back intended to refresh the user model for later captures. On 800 images paired with synthetic memory blocks constructed for controlled ablation, removing the full three-layer memory block reduces tool-query relevance by 0.47 points absolute (4.21 -> 3.74 on a 5-point scale; 11.2% relative) and end-to-end utility by 0.082 absolute (0.842 -> 0.760; 9.7% relative). These results measure memory conditioning of tool policy under image-only intake with fixed synthetic blocks, not multi-session write-back from live user histories.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09822",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09822"
+      }
+    ],
+    "relevance_score": 0.5027788919623072,
+    "max_similarity": 0.24523721168234208
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09921",
+    "title": "Global Merger-Arbitrage Forecasting with Language Models",
+    "authors": [
+      "Hinal Jajal, Michal Mucha, Charles Sweat, Chris Pulman, Charlie Flanagan, Peter Anderson"
+    ],
+    "abstract": "arXiv:2607.09921v1 Announce Type: new \nAbstract: We present a language-model forecasting system for merger arbitrage, a specialized high-stakes financial setting in which the task is to predict the outcome of announced M\\&amp;A deals. Unlike prior work on judgmental forecasting with LLMs, which has focused on broad mixed-topic benchmarks and short context such as news snippets, we study a setting that requires long-context reasoning over hundreds of pages of technical documents. Our system combines expert-guided context engineering with finetuning on hindsight-guided reasoning traces derived from historical deals. Given an announced deal, it outputs a probability distribution over three mutually exclusive outcomes: closing at announced terms, a higher bid, or deal termination. On an out-of-sample set of more than 400 large deals spanning 42 countries, our finetuned system achieves the best performance of any method we evaluate, reducing class-balanced Brier score to 0.151. This is 24\\% below calibrated market-implied probabilities, 19\\% below XGBoost, and 25-42\\% below frontier language models. These results, together with ablation studies, show that LLM-based forecasting can succeed in specialized, long-context financial workflows, with hindsight-based supervision and expert-designed context playing a critical role.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09921",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09921"
+      }
+    ],
+    "relevance_score": 0.496122897326042,
+    "max_similarity": 0.23436548616218456
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09880",
+    "title": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series",
+    "authors": [
+      "Frank Nie, Ethan B. Liu, Yuan Zhu, Loe Yan, Wei Fan, Jindong Han"
+    ],
+    "abstract": "arXiv:2607.09880v1 Announce Type: new \nAbstract: Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous, making it difficult for models to identify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructed from de-identified ICU records through a principled four-stage pipeline. CLIR-Bench contains 6,600 QA instances spanning 11 clinical variables, organized into four capability dimensions and 11 tasks. Each question is linked to explicit temporal evidence and task-specific answer derivation rules, enabling evaluation of both answer accuracy and evidence use. Experiments show that existing generalist models struggle to retrieve and reason over sparse clinical evidence, highlighting the need for stronger irregular time-series reasoning methods. Our code and data are available at https://huggingface.co/datasets/winall/CLIR-Bench.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09880",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09880"
+      }
+    ],
+    "relevance_score": 0.4767364010926254,
+    "max_similarity": 0.2733371587422727
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09759",
+    "title": "ReflectWorld-MM: An Entity-Oriented Multimodal Memory System for Open-Ended Video Streams",
+    "authors": [
+      "Xiaokang Ma, Yifan Sun, Zhihong Jin, Jie Gu, Yudong Luo, Shenyi Shao, Chu Tang, Jingmin Chen, Li Pu"
+    ],
+    "abstract": "arXiv:2607.09759v2 Announce Type: new \nAbstract: Building assistants that can continually watch the world, remember what they see, and reason over their accumulated experience is a long-standing goal, and recently multimodal agents equipped with long-term memory over video streams have attracted increasing interest. Unfortunately, existing systems either keep their memory inside the model context or in a flat feature store, and organize it around frames rather than around the persistent entities a stream is really about, which confines them to bounded videos and weakens their ability to track who and what reappears over time. In this paper, we propose ReflectWorld-MM, an entity-oriented multimodal memory system for open-ended video streams. It consists of three parts. The first is a perception front-end that turns an audiovisual stream into entity-resolved observations under a bounded short-term memory. The second is a hierarchical long-term memory, grounded in human memory theory, that couples a multi-scale episodic memory, an evolving entity-centric semantic memory, and a procedural memory. The third is a complete realization, built for real-world operation, that ingests arbitrary streams and plugs into off-the-shelf assistants. Across six long-video and lifelong-memory benchmarks, ReflectWorld-MM achieves the best accuracy on all six, outperforming strong memory agents and a frontier model.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09759",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09759"
+      }
+    ],
+    "relevance_score": 0.4689757842341754,
+    "max_similarity": 0.26652851770528735
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09697",
+    "title": "Safe responses matter: Output-aware safety guardrail mitigate over-refusal in MLLMs",
+    "authors": [
+      "Jiayi Li, Kun Zhan"
+    ],
+    "abstract": "arXiv:2607.09697v1 Announce Type: new \nAbstract: Existing safety mechanisms for multimodal large language models (MLLMs) face a fundamental trade-off between safety and utility. Model fine-tuning achieves robust safety but compromises general utility. Input-side safety guardrails offer a lightweight alternative, yet they suffer from severe over-refusal, indiscriminately blocking benign queries or those the model could have safely answered through refusal or advisory responses. We identify that the root cause of over-refusal lies in the input-aware paradigm: safety guardrails make safety decisions without considering whether the model itself is capable of generating safe responses. Usually, MLLMs already possess intrinsic safety mechanisms that can transform harmful inputs into harmless outputs, but input-side safety guardrails override this capability, degrading user experience. Motivated by this insight, we propose a paradigm shift toward output-aware safety guardrails. Our method operates within the model's hidden state space to predict whether the forthcoming generation will be unsafe before it is fully produced. By training a lightweight classifier via multi-instance contrastive learning on hidden state representations, our approach distinguishes between inputs that will lead to unsafe outputs and those that will not, even when the inputs themselves contain risky elements. This enables precise intervention only when the model's actual response would be harmful. Extensive experiments demonstrate that our output-aware safety guardrail matches the safety performance of existing methods while drastically reducing over-refusal, preserving the model's utility and built-in safety capabilities. Code is available at: https://github.com/kunzhan/OutGuard",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09697",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09697"
+      }
+    ],
+    "relevance_score": 0.4375066128856797,
+    "max_similarity": 0.16006907269311094
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09693",
+    "title": "Depth-Entropy Guided Sampling for Training-Free LLM Reasoning",
+    "authors": [
+      "Zibin Meng, Peng Xie, Kani Chen"
+    ],
+    "abstract": "arXiv:2607.09693v1 Announce Type: new \nAbstract: Reinforcement learning (RL) has become the dominant paradigm for improving the reasoning capabilities of large language models, but it requires expensive training, curated data, and reward signals. Recent work shows that sampling from sharpened base-model distributions at test time recovers much of the RL gain, yet existing methods rely solely on output-layer likelihoods and ignore the transformer's internal forward-pass dynamics. We introduce Depth-Entropy Guided Sampling (DEGS), a training-free, test-time method that exploits layer-wise entropy collapse as an intrinsic quality signal. We observe that stronger reasoners -- including RL-posttrained variants -- exhibit a distinctive \"late collapse\": logit-lens decoded entropy stays elevated until deeper layers before converging. We define a per-sequence collapse depth $D(\\mathbf{x})$ and a joint objective $\\pi(\\mathbf{x}) \\propto p(\\mathbf{x})^\\alpha \\exp(\\beta D(\\mathbf{x}))$ that combines sequence likelihood with this depth-entropy structure, instantiated inside an MCMC power-sampling framework (DEGS-MCMC). Across three open-weight models and four reasoning benchmarks, this near-chance per-candidate signal compounds over the sampling trajectory into state-of-the-art training-free accuracy, with gains largest out of domain and on the harder splits -- exactly where likelihood alone falls short -- at single-digit-percent wall-clock overhead. DEGS narrowly trails an in-house GRPO reference on the math splits GRPO was trained for, yet surpasses it out of domain on GPQA for all three models, without any training, reward model, or labeled data.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09693",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09693"
+      }
+    ],
+    "relevance_score": 0.4350882051286807,
+    "max_similarity": 0.16008363147883622
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09908",
+    "title": "RouteRec: Strict Evaluation of Recommender-Agent Selection and Aggregation",
+    "authors": [
+      "Kaiji Zhou, Vladimir Kalmykov, Yue Feng"
+    ],
+    "abstract": "arXiv:2607.09908v1 Announce Type: new \nAbstract: Recommender systems increasingly face a choice among heterogeneous agents -- collaborative filters, sequential models, content-based retrievers, and LLM-based rerankers -- yet no single agent is uniformly best. We study this choice as task-aware agent ranking under cost constraints using RouteRec, a framework that compares request-level hard selection with item-level learned aggregation over four traditional recommender agents and one LLM reranker agent. On MovieLens-1M, the full quality oracle has substantial headroom (HR@10 = 0.584), confirming that useful cross-agent signal exists. Under a leakage-free 5-fold out-of-fold protocol, however, hard selection remains below BM25 (0.223 vs. 0.254), and selective LLM escalation does not improve it. The same protocol yields a different outcome for learned aggregation: its cheap-only variant matches BM25 in HR and has a higher NDCG point estimate (0.123 vs. 0.114), while gated all-agent aggregation reaches HR@10 = 0.295 with 70.2\\% LLM calls. The resulting lesson is not that routing is solved, but that request-level selection of one complete agent list is too coarse for this sparse fixed-candidate setting; item-level aggregation is the more promising action space.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09908",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09908"
+      }
+    ],
+    "relevance_score": 0.430354375456032,
+    "max_similarity": 0.15542752280399794
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09692",
+    "title": "Reference-Based Distillation Detection in LLMs",
+    "authors": [
+      "Rajat Rawat, Sizhe Chen, Akshay Anand, Michael Duan, Bob Rotsted, Sewon Min"
+    ],
+    "abstract": "arXiv:2607.09692v1 Announce Type: new \nAbstract: Model distillation -- training on outputs from stronger third-party models -- is widely used to boost performance, but raises concerns about unfair advantages and policy violations. This motivates a fundamental question: can we detect whether a model was distilled from another? We show that, while identifying a teacher model from a student in isolation is highly challenging, it becomes tractable in a reference-based setting: given a model and an earlier-generation checkpoint from the same lineage, we can identify the teacher model used to train the later checkpoint. We introduce a distillation detection method based on reference-based membership inference. By comparing how strongly a student model preferentially aligns with outputs from different candidate teachers relative to a reference checkpoint, our method identifies the most likely teacher and detects evidence of distillation. To handle unknown distillation pipelines such as hidden prompts, we infer proxy prompt templates directly from model outputs. We additionally identify a distinctive glyph-level signal specific to o1/o3 models. Evaluating distillation detection is challenging because modern model lineages are already heavily entangled. To address this, we develop a hybrid evaluation spanning both controlled distillation experiments and real-world models. Across both settings, our approach recovers the true teacher with near-perfect accuracy in single-teacher distillation scenarios, even when the underlying distillation pipeline is largely unknown. We further introduce statistical tests for both teacher attribution and distillation detection, and extend our framework to open-world settings where no teacher is guaranteed to be present among the candidates. Applying our method to contemporary models yields new evidence regarding potential distillation relationships involving QwQ, DeepSeek-R1, and GPT-OSS.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09692",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09692"
+      }
+    ],
+    "relevance_score": 0.41351421040117586,
+    "max_similarity": 0.13493263388397564
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09694",
+    "title": "Low-Rank Attention Residuals",
+    "authors": [
+      "Jonathan Su"
+    ],
+    "abstract": "arXiv:2607.09694v1 Announce Type: new \nAbstract: Attention Residuals replace the fixed residual sum with depthwise attention over previous sub-layer outputs in large language models (LLMs), but use each output as both a full-dimensional key and value. This couples routing with representation and makes depth-routing scores scale with the hidden width $d$. We propose Low-Rank Attention Residuals (LR-AttnRes), which keep full-dimensional residual values while using $r$-dimensional keys, with $r \\ll d$, for routing. Projected LR-AttnRes emits learned low-rank keys from existing output projections, decoupling routing from residual content and achieving the best validation loss among the variants tested. Sliced LR-AttnRes uses the last $r$ dimensions of each value as the routing key, removing the auxiliary key-projection path and reducing residual-side FLOPs while still improving performance. Comprehensive sweeps show that depthwise routing can be effective with far fewer dimensions than the model width. We release code and models to facilitate future research.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09694",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09694"
+      }
+    ],
+    "relevance_score": 0.4103006351632068,
+    "max_similarity": 0.1309807750499003
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09932",
+    "title": "Faithful by Design: Evaluating and Improving LLM-Generated Clinical Trial Summaries for Multi-Stakeholder Audiences",
+    "authors": [
+      "Robert Williams"
+    ],
+    "abstract": "arXiv:2607.09932v1 Announce Type: new \nAbstract: Large language models are increasingly used to summarize clinical trial results for healthcare providers, patients, and payers, but their tendency to hallucinate poses significant risks in this high-stakes context. This study introduces a benchmark evaluation framework for measuring the faithfulness of LLM-generated clinical trial summaries across three stakeholder audiences. The framework consists of 200 stratified trials drawn from the Aggregate Analysis of ClinicalTrials.gov database, evaluated using audience-specific prompt templates and a six-dimension faithfulness annotation schema. Baseline measurements were established for GPT-4o, Claude Sonnet 4.6, and Gemini 2.5 Flash across 1,800 generated summaries scored using a cross-encoder natural language inference (NLI) model. Unsupported Claims was identified as the dominant failure mode across all three models, with a mean annotation score of 1.55 out of three. A knowledge-graph-augmented retrieval system was developed and evaluated against the baseline, producing statistically significant improvements in NLI-based faithfulness scores (entailment +0.0125, faithfulness +0.0130, p < 0.0001). Improvement pathways were model-dependent, with GPT-4o improving primarily through contradiction reduction while Claude Sonnet 4.6 and Gemini 2.5 Flash improved through increased entailment.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09932",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09932"
+      }
+    ],
+    "relevance_score": 0.4102464139351513,
+    "max_similarity": 0.1269415931706587
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09706",
+    "title": "YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate",
+    "authors": [
+      "Suyash Mishra"
+    ],
+    "abstract": "arXiv:2607.09706v1 Announce Type: new \nAbstract: Language models turn a worded situation into a numeric plan, and the dominant pipelines (NL4Opt, OptiMUS, ORLM, OR-LLM-Agent) commit to a single objective and point-valued coefficients, then solve once. For decisions that allocate real budget, effort, or clinical attention, that confidence is the failure mode: every objectified number is an assumption, and a plan optimal only if the guesses are exactly right is fragile -- mimicry of computation. YUKTI changes the target of autoformulation. Its representation is a typed-proposition graph whose relationships carry shape priors, coefficient uncertainty, and provenance. YUKTI routes each stage to an exact, nonlinear, or evolutionary solver; couples stages by a distributional Pareto hand-off; and introduces Assumption-Robust Pareto Frontiers (ARPF), resampling assumptions (including structural epsilon-contamination) to score how often each action survives (rho). We prove a bound making rho an exact factor of decision regret, add auditable traceability, and synthesize a benchmark-faithful data foundation when none exists (SRJANA). We validate three ways: under controlled misspecification the robust compromise cuts mean and tail regret by over 90% versus a naive point plan; on a regulated commercial decision we optimize inside a lawful action space and price the downside in euros; and on a real public dataset of 41,188 decisions an out-of-sample backtest beats the logged status quo by 34% and a naive point rule by 4% while reducing the optimizer's curse. The solvers are standard; we claim no benchmark-SOTA win. A head-to-head shows an LLM given the correct numbers, and single-objective optimization, both incur about 47x the held-out regret of YUKTI -- an LLM is a formulator, not a solver. Under long-range causal coupling, the forward hand-off becomes unsound, locating where it must become a backward-induction causal policy.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09706",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09706"
+      }
+    ],
+    "relevance_score": 0.40085047923305833,
+    "max_similarity": 0.11909506846685368
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09743",
+    "title": "Scaffolding the Strategist: Architecture-Dependent Reasoning Interventions in Hotelling Spatial Markets",
+    "authors": [
+      "Pratyush Singh"
+    ],
+    "abstract": "arXiv:2607.09743v1 Announce Type: new \nAbstract: We investigate whether structured reasoning interventions improve the strategic economic reasoning of large language models, and whether their effects depend on model architecture. Using Hotelling's linear city model as a diagnostic vehicle, we evaluate GPT-4.1-mini (a standard instruction-following model) and GPT-5-mini (a reasoning-optimized model) under five conditions - an unscaffolded baseline and four reasoning interventions - across eight questions spanning deductive and abductive reasoning, three prompt framings, and three repetitions per condition, yielding 720 individually judged responses. We find a statistically significant crossover interaction between scaffolding type and model architecture ($t(7) = 4.79$, $p = 0.002$, $d = 1.69$): commitment scaffolding improves the standard model ($+0.21$) while degrading the reasoning model ($-0.63$), and principled separation shows the opposite pattern ($-0.40$ vs. $+0.31$). Both crossovers are individually significant (commitment: $p = 0.040$; separation: $p = 0.002$) and hold across all eight questions with 7/8 directional consistency. Adversarial stress-testing harms both models, with $2.6\\times$ greater degradation for the reasoning model ($-1.47$ vs. $-0.57$; $p = 0.038$), and the damage correlates negatively with baseline difficulty ($R^2 = 0.36$, $p = 0.014$). We further document a persistent declarative-procedural gap in which both models identify correct strategies at rates far exceeding their ability to execute them; separation fully closes this gap for the reasoning model while no intervention helps the standard model.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09743",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09743"
+      }
+    ],
+    "relevance_score": 0.389892805950118,
+    "max_similarity": 0.1637637653893394
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09665",
+    "title": "Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking",
+    "authors": [
+      "Deep Pankajbhai Mehta"
+    ],
+    "abstract": "arXiv:2607.09665v1 Announce Type: new \nAbstract: Prompt wrappers often differ only in formatting, yet they can change model scores enough to flip leaderboard conclusions. We study this variance under a token-controlled protocol and introduce two complementary metrics: the Format Sensitivity Index (FSI), the accuracy range induced by wrapper choice, and the Parseability Sensitivity Index (PSI), the corresponding range in answer parseability. Across 140,000 OpenRouter generations spanning 7 QA tasks, 5 wrapper families, and 4 instruct models from 7B to 72B parameters, we find that mean FSI varies by over 30x across models and is largely explained by compliance failures. A fixed-effects regression shows that parseability remains a strong predictor of accuracy even after controlling for task, model, and wrapper. We argue that reporting accuracy without wrapper variance and compliance is statistically fragile, and we give practical recommendations for both benchmarking and structured-output deployments.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09665",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09665"
+      }
+    ],
+    "relevance_score": 0.3895920059032379,
+    "max_similarity": 0.10532376900431421
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09999",
+    "title": "Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts",
+    "authors": [
+      "Renuka Oladri, Mohan Vamsi Varadaraju Priya, Jerry Wu"
+    ],
+    "abstract": "arXiv:2607.09999v1 Announce Type: new \nAbstract: We show that post-training quantization can silently alter how large language models reason even when task accuracy is preserved. Using a six-category failure taxonomy validated by two independent human annotators (Cohen's $\\kappa$ = 0.906), we classify 30,000 chain-of-thought outputs from five instruction-tuned LLMs (3B--14B parameters) across three quantization precisions (FP32, FP16, NF4) and four reasoning benchmarks. We find that while accuracy is robust across precisions (maximum 3.1 pp drop), Hollow Convergence (correct answers reached through incomplete or unverifiable reasoning) shows a significant size-dependent shift under NF4, dropping sharply for the two smallest models tested but remaining invariant for models at 12B parameters and above. This effect is also benchmark-specific: GSM8K is categorically immune while LogiQA and ARC-Challenge show the largest shifts. Furthermore, under NF4, Shortcut Collapse rises from 44% to 78% of wrong-answer failures in LLaMA 3.2-3B while Confidence Snowballing collapses from 15.8% to near zero, a qualitative shift invisible to accuracy metrics. Finally, we show Hollow Convergence cannot be reliably detected from surface-level text features (best F1 = 0.53), establishing it as a deployment-relevant failure mode that standard evaluation pipelines cannot catch.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09999",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09999"
+      }
+    ],
+    "relevance_score": 0.380510447846984,
+    "max_similarity": 0.15412687713927156
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09762",
+    "title": "BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking",
+    "authors": [
+      "Tianwen Zhu, Hao Wang, Yonggang Wen"
+    ],
+    "abstract": "arXiv:2607.09762v1 Announce Type: new \nAbstract: Public battery aging datasets are a critical asset for advanced health management, but their practical use is often limited by inconsistent formats, unclear schemas, and metadata scattered across repositories and publications. Current curation remains largely manual and hard to reproduce, while general-purpose data integration tools miss the domain-specific semantics of electrochemical time-series data. We present BatteryLake, a governed data lakehouse that turns raw public battery data into benchmark-ready assets through an agentic, physics-grounded curation framework, with three contributions. First, LLM agents extract metadata and synthesize dataset-specific converters, grounding every output in verbatim evidence and abstaining when none supports a value. Second, a human-in-the-loop mechanism frames verification as selective prediction and gates admitted data through 26 schema, statistical, and physical-plausibility rules. Third, we release an open benchmark of 41 datasets from over 25 institutions, with standardized SOH and RUL tasks, three split protocols, and eight baseline model families. The platform, benchmark, and curation protocol are publicly available at https://tianwen1209.github.io/batterylake/.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09762",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09762"
+      }
+    ],
+    "relevance_score": 0.37930752568269577,
+    "max_similarity": 0.21407849828165382
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09791",
+    "title": "Gauge dependence and structured-output corruption in sign-branched repetition penalties: measurements across models, inference stacks, and alternative repetition controls",
+    "authors": [
+      "Peter Hollows"
+    ],
+    "abstract": "arXiv:2607.09791v1 Announce Type: new \nAbstract: The multiplicative repetition penalty shipped across the LLM inference ecosystem (HuggingFace, vLLM, llama.cpp, and a dozen further engines) branches on the sign of each raw logit (divide positives by theta, multiply negatives). But the softmax is unchanged by adding a constant to every logit, so a model's logit zero-point is arbitrary, and the sign-branch reads that arbitrary point. The sign-branch is itself the accepted fix for an earlier bug, so the accepted fix branches on a quantity the training objective leaves unconstrained. Two measurable consequences follow. (1) The penalty is not well-defined: re-centring a model's logits by a constant is a provable no-op at theta=1, yet at a routine theta=1.3 it changes 58-96% of greedy tokens, where subtractive and normalized penalties change none; real checkpoints sit at widely different zero-points, so a fixed repetition_penalty is a different operation on every model. (2) It corrupts structured output: on 200 real-world JSON schemas, theta=1.3 drops the rate of valid, schema-conformant output from 97% to 23%. In our measurements, applying the penalty to normalized log-probabilities instead of raw logits removes both effects. HuggingFace already ships that operator (LogitNormalization); today it is off by default and applied after the penalty. This note gives the mechanism, the measurements (five models up to 7B, base and RLHF, on WikiText-103 prefixes; two code models on HumanEval and JSONSchemaBench; both effects replicated inside vLLM and llama.cpp through their own samplers on the same inputs), and the normalized variant.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09791",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09791"
+      }
+    ],
+    "relevance_score": 0.2853552899665789,
+    "max_similarity": 0.10078097426870918
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09678",
+    "title": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
+    "authors": [
+      "Zayx Shawn"
+    ],
+    "abstract": "arXiv:2607.09678v1 Announce Type: new \nAbstract: When LLM agents hand off information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without hurting accuracy, while format-restriction work finds that imposing structure degrades generation -- and neither measures what happens when a message traverses multiple hops, where copy fidelity, not one-shot generation, dominates. We introduce a controlled relay testbed: briefs of twelve programmatically generated atomic facts are re-encoded hop-by-hop in five formats (free NL, precision-instructed NL, JSON, triples, key-value) over six hops, scored by a fixed strong grader against programmatic ground truth, across two relay-capability tiers, a cognitive-load condition, and a paired-fork error injection. We find that message-format effects are tier-dependent. (i) Under faithful-relay instructions a strong relay is nearly lossless -- the documented \"telephone-game\" collapse does not occur -- and adding per-hop cognitive load leaves format-level fidelity unchanged (within +/-1.8 points) while raising generation cost by 24-53%. (ii) Under a weak (1.5B) relay the across-format spread of six-hop recall grows by a factor of 8.7 (from 2.3 to 20.5 points), driven by two opposing mechanisms -- an encoding toll paid by the rigid formats and drift resistance specific to the fixed-key JSON schema -- that flip the format ranking in transit. (iii) In a paired-fork injection, an injected wrong value, once present, persists to the final hop in 83-100% of chains in every format, closely matching each format's retention of the true value, with no detectable collateral damage to neighboring facts. Structure buys a faithful, error-localizing channel -- not an error-correcting code -- and format choice should follow the weakest relay in the pipeline.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09678",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09678"
+      }
+    ],
+    "relevance_score": 0.27945531415823943,
+    "max_similarity": 0.09454662053756371
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.09739",
+    "title": "Coresets Before Score Sets: Evaluation-Unsupervised Prompt Subset Selection for LLM Benchmarks",
+    "authors": [
+      "Jihan Yao, Gantavya Bhatt, Arnav Das, Peter Jin, Ke Bao, Qiaolin Yu, Khushi Bhardwaj, Chang Su, Jialei Wang, Yikai Zhu, Sugam Devare, Damon Mosk-Aoyama, Zhen Dong, Venkat Krishna Srinivasan, Yineng Zhang, Oleksii Kuchaiev, Jiantao Jiao, Banghua Zhu, Jeff Bilmes"
+    ],
+    "abstract": "arXiv:2607.09739v1 Announce Type: new \nAbstract: We study LLM benchmark coreset selection: selecting a small subset of prompts over multiple benchmarks whose induced model scores and rankings approximate those obtained from the full benchmark suite. In evaluation-unsupervised benchmark coreset selection (our approach), the selection algorithm uses no model evaluation outcomes, and operates on a fine granularity by producing subsets of prompts over multiple benchmarks rather than producing a sub-collection of entire benchmarks. We use submodular subset selection, and we develop and evaluate many different submodular functions for this purpose, including determinantal point process (DPP) based approaches, submodular mutual information functions, and facility location-based functions. On a new large-scale suite of 35 heterogeneous benchmarks spanning five different capability categories, 18 frontier LLMs, and over 61K prompts, we find that the facility location (FL) function operating exclusively on inexpensive semantic prompt embeddings preserves LLM scores better than twelve separate score-based and diversity-based baselines, across a range of coreset budgets. Moreover, we show our proposed objective is not limited to the evaluation-unsupervised regime: in the setting where only a handful of whole benchmarks must be selected and a large amount of model scores are available, the same objective matches or outperforms state-of-the-art baselines on the MMLU and MTEB leaderboards, while being substantially cheaper to compute. Together, our results suggest that submodularity, in general, is a strong and reliable tool for benchmark compression.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 14 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.09739",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.09739"
+      }
+    ],
+    "relevance_score": 0.2623809982261637,
+    "max_similarity": 0.13082520344087215
+  }
+]
