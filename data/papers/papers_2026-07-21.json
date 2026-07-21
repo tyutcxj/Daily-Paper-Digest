@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2607.16208",
+    "title": "ColGraphRAG: Late-Interaction Evidence Retrieval for Multimodal GraphRAG",
+    "authors": [
+      "Seonok Kim"
+    ],
+    "abstract": "arXiv:2607.16208v1 Announce Type: new \nAbstract: Graph-grounded multimodal question answering organizes text, tables, and images in a structured evidence graph, yet end-to-end accuracy depends on which multimodal assets are ranked highly enough to enter downstream reasoning; for graph-linked images, single-vector bi-encoder similarity can discard patch- and token-level structure needed for fine-grained alignment. We evaluate replacing the visual candidate-ranking operator over graph-linked image nodes with late-interaction MaxSim-style multi-vector scoring in the ColBERT/ColPali lineage, while keeping offline graph construction, text- and table-side retrieval, structured extraction, and downstream reasoning unchanged. On MultimodalQA, this change is associated with improved retrieval-stage point estimates for graph-linked image candidates and downstream QA gains, with larger movement where visual evidence matters most and mixed trends on text-dominant questions; we interpret the pattern as mechanism-level evidence for graph-linked visual evidence inclusion, while broader validation and finer graph-level diagnostics remain important future work.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16208",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16208"
+      }
+    ],
+    "relevance_score": 0.603215709049567,
+    "max_similarity": 0.365383962714003
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16199",
+    "title": "PlanFlip: Attacking Multi-Agent LLM Systems via Planning-Phase Prompt Injection",
+    "authors": [
+      "Yuhang Wang"
+    ],
+    "abstract": "arXiv:2607.16199v1 Announce Type: new \nAbstract: Multi-agent LLM systems increasingly rely on a Planner to decompose goals into sub-task sequences that downstream Executor and Critic agents execute and audit. We identify the planning phase as a critical attack surface: a single injection into the Planner's context achieves cascade amplification, corrupting all downstream sub-tasks simultaneously. We introduce PlanFlip, a framework comprising four planning-phase prompt injection attacks -- GoalSubstitution (PF-1), PriorityInversion (PF-2), ContextPollution (PF-3), and RoleConfusion (PF-4) -- each disguised as plausible tool outputs to evade keyword filters. Evaluating nine frontier LLMs across 3,479 episodes, we uncover three findings: (1) capability amplifies vulnerability -- GPT-5 achieves the highest attack success rate (ASR = 0.68), contradicting the assumption that stronger models are inherently more secure; (2) homogeneous pipelines exhibit a correlated-agent blind spot -- GPT-4o and Llama-3.3-70B show ASR near 0 yet Stealth = 1.00 and StepShift > 0, with attacks restructuring plans while the same-backbone Critic reports alignment (two independent judges confirm -0.20 to -0.32 semantic deviation, r = 0.943); (3) reasoning-augmented models resist injections -- DeepSeek-R1 achieves StepShift = 0.00 across all attacks. We propose GoalAnchorCheck (D1) and CrossAgentConsensus (D2), achieving detection rates up to 1.00 and outperforming same-backbone baselines in 15 of 16 cells. Our key insight: heterogeneous model diversity is a security prerequisite for multi-agent systems; redundancy within a homogeneous backbone provides no protection against planning-phase attacks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16199",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16199"
+      }
+    ],
+    "relevance_score": 0.5237861374753001,
+    "max_similarity": 0.2693213720500903
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16203",
+    "title": "DocOCR-Eval: A Correction-Based Framework for OCR Tool Selection Without Ground Truth",
+    "authors": [
+      "Zihan Xu, Puzhen Wu, Lawrence Chun Man Lau, Wei Liu, Sirui Li, Yifan Peng, Yihao Ding"
+    ],
+    "abstract": "arXiv:2607.16203v1 Announce Type: new \nAbstract: Document parsing is a foundational step for document understanding tasks such as visual question answering and key information extraction, as it transforms unstructured scanned images into structured representations by extracting textual, visual, and layout information. While numerous Optical Character Recognition (OCR) engines and multimodal large language models (MLLMs) have been developed for this purpose, selecting an appropriate document parsing solution for a given document collection remains challenging, particularly in label-scarce settings. In this work, we conduct a systematic evaluation of text recognition performance across a diverse set of OCR engines and state-of-the-art MLLMs on multiple scanned document benchmarks spanning different domains and languages. Motivated by the limited contextual reasoning capabilities of many OCR engines and the high cost of manual annotations, we propose DocOCR-Eval, an annotation-free evaluation framework for automatic OCR assessment and selection. DocOCR-Eval employs a three-staged correction and ranking strategy to approximate annotation-based tool ordering without ground-truth labels. We show that aggregating across multiple MLLMs progressively improves alignment with annotation-based rankings. Extensive experiments further demonstrate that reliable OCR tool selection can be achieved in realistic, label-limited settings, providing practical guidance for deploying document parsing systems across diverse real-world document collections.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16203",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16203"
+      }
+    ],
+    "relevance_score": 0.5142245343613959,
+    "max_similarity": 0.25502384733196765
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16213",
+    "title": "SelKV: Selective KV Cache Merging with Per-Token Merge-or-Drop and Attention Compensation",
+    "authors": [
+      "Soumia Bouyahiaoui, Manel Kara laouar, Aicha Boutorh, Mohamed Hadj Ameur"
+    ],
+    "abstract": "arXiv:2607.16213v1 Announce Type: new \nAbstract: Large Language Models (LLMs) generate text autoregressively, relying on a key-value (KV) cache whose memory footprint grows linearly with context length, creating a major bottleneck. Recent compression methods mitigate this cost via token merging; however, these approaches often rely on indiscriminate aggregation, which degrades representations and introduces attention sag, a mismatch where merged tokens receive the same softmax mass as individual tokens despite encoding multiple inputs. We propose a training-free, dual-component framework for KV cache compression that addresses these limitations. First, a soft cosine gate adaptively modulates merging decisions based on value-vector similarity, suppressing or discarding dissimilar tokens to preserve semantic fidelity. Second, we introduce an attention-ratio compensation mechanism that applies a decoding-time logit bias derived from prefill attention statistics, correcting the softmax imbalance induced by merging. Evaluated on LongBench (16 English datasets) while retaining only 25% of the KV cache, our framework achieves strong compressed performance against representative one-shot baselines. It is especially robust on the evaluated grouped-query attention (GQA) models, maintaining nearlossless generation quality. Furthermore, the method outperforms the full-cache baseline on complex multi-document QA tasks and delivers a 3.3x decoding speedup at 100k tokens.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16213",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16213"
+      }
+    ],
+    "relevance_score": 0.4598596610450234,
+    "max_similarity": 0.18824752107839685
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16200",
+    "title": "Deterministic Replay for AI Agent Systems",
+    "authors": [
+      "Rasheed Mudasiru"
+    ],
+    "abstract": "arXiv:2607.16200v1 Announce Type: new \nAbstract: AI agent systems that couple large language models (LLMs) with external tools and APIs are inherently non-deterministic: LLM sampling variance, external API state, CDN infrastructure headers, and execution-environment noise collectively prevent any prior agent run from being faithfully re-executed. Existing observability platforms capture execution logs but cannot reproduce a run in isolation. We present agrepl, a developer-first CLI framework for deterministic replay of agent executions. agrepl intercepts all external interactions at the transport layer via a man-in-the-middle (MITM) proxy, serialises them as structured execution traces, and replays them in a strictly isolated environment with zero outbound network access. We formalise the agent execution model, define the request-key matching function K(s), and prove the determinism invariant. We introduce a noise-aware diff algorithm classifying HTTP header divergence into signal and noise tiers. Empirical evaluation across five workloads (n = 250 replay instances) demonstrates replay fidelity F = 1.0 and a median per-step latency reduction of 98.3%. agrepl is implemented in Go, ships as a single static binary, and is released under the MIT licence.\n  Keywords: AI agents, deterministic replay, LLM debugging, reproducibility, MITM proxy, execution tracing, record/replay systems.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16200",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16200"
+      }
+    ],
+    "relevance_score": 0.4572909986732395,
+    "max_similarity": 0.18874250350391453
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16232",
+    "title": "From Weights to Words: Expressing and Editing Preference Model Inferences in Natural Language",
+    "authors": [
+      "Zachary Wojtowicz, Ayush Nayak, Jacob Andreas"
+    ],
+    "abstract": "arXiv:2607.16232v1 Announce Type: new \nAbstract: The growing use of statistical learning algorithms to infer human preferences from high-dimensional choice data runs up against a fundamental challenge: choice alternatives typically differ in many ways simultaneously, so it is generally unclear which factors actually drove an observed decision and should be credited as preferences. Compounding this problem, the opacity of these methods leaves human operators unable to inspect, contest, or correct models when they err. We introduce \\emph{weights to words}, a method that takes a dataset of choice problems as input and automatically discovers a collection of domain-relevant preference dimensions, each described in natural language and paired with a vector in the model's representational space. These dimensions address both under-determination and opacity: they can be applied to concentrate attribution on a small set of meaningful factors, and they can externalize the model's inferences in natural language so that users can inspect and edit them in real time. We first qualitatively illustrate the method's versatility on four diverse domains: moral dilemmas, movies, wines, and free-form LLM responses. We then report two pre-registered human-subjects experiments, on moral dilemmas ($N=450$) and movie selection ($N=449$), that demonstrate its benefits for learning preference models: (1) regularizing a preference model toward the learned basis increases prediction accuracy on held-out choices, and (2) incorporating participants' structured edits further improves accuracy. In head-to-head comparisons, participants prefer the method's inferred preference profiles and endorse its predictions as more accurate.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16232",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16232"
+      }
+    ],
+    "relevance_score": 0.45208272323062526,
+    "max_similarity": 0.18046932930519943
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16204",
+    "title": "Masked Diffusion Language Models are Strong and Steerable Text-Based World Models for Agentic RL",
+    "authors": [
+      "Darshan Deshpande"
+    ],
+    "abstract": "arXiv:2607.16204v1 Announce Type: new \nAbstract: Recent growth in reinforcement learning (RL) has surfaced a need for diverse, specialized training environments. Hand-curated environments with fixed task and reward difficulties become ineffective signals as model performance improves, and sparse rewards over long horizons induce mode collapse on specific workflows or tool structures. World models that simulate environment states have matched pure rollout performance, making them promising for scaling diversity on-demand. However, autoregressive (AR) world models suffer from a left-to-right bias preventing conditioning on globally interdependent state anchors such as tool schemas, prior turns, and expected outcomes. We (i) formalize text-based world modeling as a steerable transition-dynamics problem decomposed into initial state, task context, tool schemas, domain rules, and steering directives, and (ii) curate 239,403 grounded state-action trajectories spanning nine open-source environments and twelve frontier model families. We compare AR LMs and masked diffusion language models (MDLMs), showing MDLMs, via bidirectional anchor-aware denoising, achieve better coherence, groundedness, and empirically validated rollout diversity than LLMs over 4x their parameter size, at comparable inference latency. We introduce a plug-and-play GRPO training framework with deterministic state checks, and perform zero-shot transfer ablations on three OOD environments (ScienceWorld, ALFWorld, AppWorld) across three 1.2B-7B agent backbones (LFM2.5, Qwen3, Mistral), achieving up to 47% absolute gains over baselines without environment-specific fine-tuning. We further conduct behavioral analysis of failure modes under adversarial scenarios and human evaluation on realism, outcome correctness, and training utility. We open-source our work to encourage research in this direction.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16204",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16204"
+      }
+    ],
+    "relevance_score": 0.45205163489132555,
+    "max_similarity": 0.17685363862507017
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16211",
+    "title": "Accurate and Efficient Long-Term Memory for LLM Agents",
+    "authors": [
+      "Zicheng Zhao, Xinyang Guo, Luyao Lv, Menghan Wang, Ming Li, Shuaicheng Li"
+    ],
+    "abstract": "arXiv:2607.16211v1 Announce Type: new \nAbstract: LLM agents augmented with persistent memory can recall past interactions, but existing systems suffer from two limitations: flat, unstructured storage loses relational context needed for multi-hop and temporal reasoning, and reliance on expensive LLM-based classification makes them impractical for latency-sensitive deployment. Without mechanisms to validate new information against stored knowledge, these systems silently accumulate contradictions. We present MOSAIC (Memory-Organized Structured Agent for Information Collection), a structured, conflict-aware long-term memory framework for LLM agents that is substantially more accurate and efficient. MOSAIC introduces three key capabilities: (1) entity-typed graph storage with semantic classification preserving relational structure across events, personas, and relationships, enabling multi-hop and temporal reasoning over conversation history; (2) hash-accelerated dual-path retrieval replacing LLM-based classification with locality-sensitive hashing, achieving near-instantaneous lookup with negligible accuracy loss; and (3) active conflict detection at save time that cross-references new information against existing graph neighbors, triggering updates or deletions for contradictory entries. Evaluated on LoCoMo (long-conversation QA), HaluMem, and a novel clinical-guideline error compounding test, MOSAIC achieves 89.35% accuracy on LoCoMo (+27.21 pp over the best baseline), best HaluMem-Medium extraction F1(86.77%) and HaluMem-Long extraction F1 (85.84%), best QA correctness on both Medium and Long (73.10%, 70.75%), and detects 66% of injected factual conflicts-4.7 times higher than the best baseline (14%)-while hash-accelerated retrieval keeps average search latency at 0.58 s per question.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16211",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16211"
+      }
+    ],
+    "relevance_score": 0.4455438969824263,
+    "max_similarity": 0.17020605812819248
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16205",
+    "title": "It Takes 8 Tokens: Weak-to-Strong Off-Policy RL via Auxiliary Branches",
+    "authors": [
+      "Dayu Wang, Jiaye Yang, Weikang Li, Jiahui Liang, Liwei Qian, Xin Pei, Jizhou Huang"
+    ],
+    "abstract": "arXiv:2607.16205v1 Announce Type: new \nAbstract: Reinforcement learning with verifiable rewards has emerged as a standard approach for enhancing reasoning in large language models, which typically optimizes the policy by contrasting multiple self generated rollouts. However, we identify a critical support limited bottleneck in this paradigm: on challenging reasoning tasks, the target model's samples often exhibit semantic redundancy, converging into the same erroneous \"reasoning basins\" that offer negligible reward contrast for policy updates. In this paper, we propose to overcome this limitation through a weak to strong learning paradigm, where a policy's exploration is informed by a weaker but computationally efficient auxiliary model. We introduce W2SPO, an off policy RL method that injects short auxiliary segments often as brief as 8 tokens into intermediate target model trajectories and the target model then completes the reasoning path from these diverted states. Policy updates are restricted to these short inserted segments based on final verifiable rewards. Empirically, W2SPO achieves superior performance among evaluated 4B scale models on mathematical reasoning benchmarks, outperforming evaluated post trained baselines. Compared with vanilla GRPO under the same sampling budget, W2SPO improves Pass@1 from 62.3% to 64.2% while achieving a 3.55 times training speedup. These results suggest that weak auxiliary branches can induce stronger target reasoning policies by expanding local exploration support.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16205",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16205"
+      }
+    ],
+    "relevance_score": 0.44410940937628607,
+    "max_similarity": 0.1694899359678991
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16215",
+    "title": "RAIL Guard: Closing the Evaluation-to-Remediation Gap in Responsible AI for LLM Agents",
+    "authors": [
+      "Sumit Verma, Pritam Prasun, Pritish Kumar"
+    ],
+    "abstract": "arXiv:2607.16215v1 Announce Type: new \nAbstract: Existing guardrail systems for large language model agents operate as binary classifiers that block unsafe content, leaving organizations to discard failing outputs and retry from scratch. We introduce RAIL Guard, a closed-loop responsible AI pipeline that evaluates LLM outputs across eight measurable dimensions and iteratively remediates failing outputs through an evaluate-rewrite-reevaluate loop. We evaluate the pipeline across three experiments on four frontier LLMs and 4,276 content outputs plus 6,400 agent tool-call scenarios. Closed-loop remediation achieves 96.9% convergence versus 49.1% for block-and-retry, though the highest-convergence method reduces utility by 22.3%; feedback-driven self-repair achieves 86.6% convergence on fixable dimensions with no significant utility loss (p = 0.177). Pre-tool-call evaluation reduces unsafe agent executions by 33% (p = 0.007) with zero impact on task completion. We identify a key distinction between fixable dimensions that respond to remediation and structural dimensions (Transparency at 93.0%, Accountability at 92.8%, and Inclusivity at 82.5% failure) that require architectural rather than algorithmic solutions. The system is available as open-source SDKs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16215",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16215"
+      }
+    ],
+    "relevance_score": 0.4364022843082453,
+    "max_similarity": 0.16272871044932405
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16206",
+    "title": "PPO-HSC: An Exploratory Reinforcement Learning Framework Based on Wide-Area Policy Coverage Optimization",
+    "authors": [
+      "Yujie Shen, Haowen Chen"
+    ],
+    "abstract": "arXiv:2607.16206v1 Announce Type: new \nAbstract: This paper introduces PPO-HSC (Proximal Policy Optimization with High-order Sampling Coverage), an exploratory reinforcement learning framework designed to address the \"Invisible Shackles\" of mode collapse in Large Language Model (LLM) fine-tuning. While standard Reinforcement Learning from Verifiable Rewards (RLVR) effectively reinforces high-reward trajectories, it often leads models to over-optimize known solutions, sacrificing curiosity and the ability to explore broader solution manifolds. To overcome this, PPO-HSC incorporates a High-order Sampling Coverage (HSC) reward that incentivizes the discovery of \"low-similarity yet high-validity\" reasoning patterns. By maintaining a dynamic trajectory library of verified unique solutions, the framework provides a differentiable signal that rewards semantic novelty while ensuring structural rationality through a plausibility constraint. Empirical evaluations on mathematical reasoning (GSM8K, SVAMP) and code generation tasks demonstrate that PPO-HSC significantly enhances solution diversity and state-space coverage while maintaining or surpassing the accuracy and syntax integrity of state-of-the-art RL baselines.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16206",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16206"
+      }
+    ],
+    "relevance_score": 0.4336403517543985,
+    "max_similarity": 0.15711879845708046
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16197",
+    "title": "Some Large Language Models Exhibit Consistent Risk Attitudes",
+    "authors": [
+      "Bowen Sun, Rui Min, Yuxi Wang, Brian Odegaard, Qi Wang, Jing Du"
+    ],
+    "abstract": "arXiv:2607.16197v1 Announce Type: new \nAbstract: As artificial intelligence systems are deployed in open-ended, high-stakes settings, a critical dimension remains unmeasured: how perceived risk is translated into action. We test whether large language models (LLMs) exhibit systematic and consistent risk attitudes under uncertainty. We introduce a cross-domain framework that decouples contextual risk belief from categorical decision, and apply it to six representative LLMs and 100 human participants across spatial navigation, clinical triage, and financial allocation tasks. Using regression models, we extract each agents belief-to-decision mapping and quantify risk sensitivity and risk attitude bias. We find that most tested LLMs exhibit (i) robust intra-task consistency, indicating stable mappings from contextual belief to risk decision within a fixed task domain; (ii) cross-domain rank-order stability, preserving relative risk posture across tasks; and (iii) a convergence toward a restricted risk-attitude distribution relative to the broader human baseline. These results reveal risk attitude as a stable and previously uncharacterized dimension of LLM behavior, establishing a foundation for evaluating and aligning AI systems in open-ended decision-making and motivating further investigation into the origins of these intrinsic behavioral dispositions.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16197",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16197"
+      }
+    ],
+    "relevance_score": 0.4253744777633951,
+    "max_similarity": 0.14641953264101681
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16202",
+    "title": "Democratizing AI with Small Language Models: Structured Benchmarking and Parameter-Efficient Fine-Tuning for Local Deployment",
+    "authors": [
+      "Daniel Cersosimo"
+    ],
+    "abstract": "arXiv:2607.16202v1 Announce Type: new \nAbstract: AI democratization is not primarily a question of matching frontier-scale generality; it is a question of whether capable models can be selected, audited, and specialized under hardware and governance constraints that ordinary institutions can actually satisfy. This paper studies that problem through a controlled evaluation of nine open-weight language models between 135M and 3B parameters on a 1,085-example, 16-topic multiple-choice benchmark designed for structured local deployment. The benchmark emphasizes symbolic precision, constrained formatting, extraction, and short-horizon semantic decision making under a strict one-letter output protocol. A shared parameter-efficient fine-tuning pipeline then adapts a subset of models using 4-bit NF4 quantization with DoRA/LoRA-style adapters on an NVIDIA L4-class budget. In base evaluation, Qwen Coder 3B leads at 75.67% strict accuracy, followed by Qwen2.5 1.5B at 67.10%, Qwen3.5 2B at 64.98%, and Granite 3.3 2B at 64.61%. On the shared 108-example held-out fine-tuning split, adaptation improves Qwen Coder 3B by +26.85 points, SmolLM2 1.7B by +25.92, Qwen2.5 1.5B by +19.44, SmolLM2 360M by +10.18, and SmolLM2 135M by +5.55. Across ranking, topic-level heterogeneity, difficulty strata, failure composition, efficiency frontiers, and topic-conditioned transfer, the same conclusion recurs: a disciplined workflow of benchmark construction, cross-model evaluation, and low-cost specialization already makes a subset of sub-3B models viable as local experts for structured niche workloads.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16202",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16202"
+      }
+    ],
+    "relevance_score": 0.4171278378940664,
+    "max_similarity": 0.136362769814304
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16212",
+    "title": "Symbolic Augmentation Closes a Canonical-Equivalence Blind Spot in Neural Fact-Checkers",
+    "authors": [
+      "Genpei Zhang"
+    ],
+    "abstract": "arXiv:2607.16212v1 Announce Type: new \nAbstract: Large language models hallucinate numbers and units when summarizing scientific text, a failure mode that can silently invert a scientific claim. We recast the detection of such errors as typed verification: we introduce a five-class typed-quantity error taxonomy and a 1500-item benchmark, rewritten from PMC and arXiv sources and labeled by two independent LLM annotators with adjudication (Krippendorff's alpha = 0.882). A ModernBERT encoder fine-tuned on this benchmark reaches macro-F1 = 0.899, far above any off-the-shelf neural fact-checker, yet four probes expose a sharp structural blind spot: on canonical-equivalent rewrites of physically equivalent quantities (e.g., 95{\\deg}C and 368.15 K) its accuracy collapses to 36.5%. We propose Symbolic Augmentation, a training-time framework that runs the modules of a symbolic verifier in reverse to generate label-preserving augmented training data. The augmentation lifts canonical-equivalence robustness to 98.2% while slightly improving in-distribution accuracy (macro-F1: 0.899 to 0.902); the augmented encoder matches a closed-frontier LLM at no inference cost and transfers to an external benchmark (SciFact-Open binary macro-F1: 0.791 to 0.828). Two negative results sharpen the claim: symbolic features as auxiliary encoder inputs add nothing, and symbolic silver labels scale negatively under teacher noise. Together these results identify training-time augmentation as the right integration point between symbolic and learned components.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16212",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16212"
+      }
+    ],
+    "relevance_score": 0.4092200449698555,
+    "max_similarity": 0.12767466457320206
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16201",
+    "title": "Generative Ontology Induction: Domain-Agnostic Schema Discovery from Document Corpora Using Large Language Models",
+    "authors": [
+      "Sergei Sergienko"
+    ],
+    "abstract": "arXiv:2607.16201v1 Announce Type: new \nAbstract: Ontology engineering remains a critical bottleneck in knowledge-intensive AI systems. Existing automated approaches either depend on predefined schemas, operate within narrow domains, or produce unstructured outputs unsuitable for downstream pipelines.\n  We introduce Generative Ontology Induction (GOI), a domain-agnostic framework that induces a generative blueprint - entities, dimensions, properties, relationships, and constraints - from a corpus of examples and exports it as a typed graph (six node types, seven edge types) in YAML/JSON. We introduce the Node Coverage Score, a novel evaluation metric that measures the fraction of structural ontology nodes (classes, properties, and dimensions) appearing in generated outputs.\n  A controlled generative validation on four contrasting ontologies - a familiar Software Services Invoice schema, a custom Job Description Ontology, a confidential Pain-Management Clinical Visit Record Ontology, and a Professional Services Contract & Statement of Work Ontology - shows that GOI-prompted generation covers 95-100% of the structural backbone in every case; a generic three-field template holds at 97.8% on the invoice schema but drops to 52.2% on the Job Description Ontology, 62.2% on the Pain-Management ontology, and 78.3% on the Professional Services Contract ontology. The structural coverage holds regardless of how familiar the document type is to the model.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16201",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16201"
+      }
+    ],
+    "relevance_score": 0.39613499678202413,
+    "max_similarity": 0.11247886863532082
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16227",
+    "title": "LLM Unlearning for Cyber Defense: A Survey on Methods, Challenges, and Emerging Threats",
+    "authors": [
+      "Ruppikha Sree Shankar, Abhishek Bhardwaj, Arnav Doshi, Anusri Nagarajan, Troy Paulus Asia, Saptarshi Sengupta"
+    ],
+    "abstract": "arXiv:2607.16227v1 Announce Type: new \nAbstract: LLMs are increasingly deployed in security-critical systems across healthcare, finance, education, and decision support, yet their inability to forget creates serious cybersecurity, privacy, and safety risks. Sensitive personal information, copyrighted material, hazardous domain knowledge, and memorized training data remain encoded across billions of parameters long after deployment, leaving models vulnerable to extraction, jailbreak attacks, membership inference, and regulatory non-compliance. Real-world incidents, from chatbots regenerating private information to fabricated legal citations producing direct legal and financial cost, place the problem at the center of the emerging-threats landscape rather than the realm of speculation. Because retraining billion-parameter models on revised corpora is computationally infeasible, and because knowledge within an LLM is distributed and entangled across parameters rather than localized to identifiable units, LLM unlearning has emerged as the principal cyber defense response, aiming to remove or suppress targeted knowledge from a trained model without retraining and without eroding what the model should still know. A central question, however, remains unresolved. Do current methods genuinely remove knowledge, or do they only stop the model from expressing it under ordinary prompting conditions? This survey examines LLM unlearning through the lens of security, robustness, and verifiable forgetting, with primary focus on gradient-based methods, which have come to dominate the field due to their compatibility with existing training pipelines and their scalability to billion-parameter models.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16227",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16227"
+      }
+    ],
+    "relevance_score": 0.3903660097156004,
+    "max_similarity": 0.16467726276850425
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16222",
+    "title": "Fully-sensorized smart-eyewear platform for on-device Machine Learning",
+    "authors": [
+      "Andrea Giudici, Christian Veronesi, Pietro Bartoli, Mario Cali\\`o, Aurelio Teliti, Giacomo Gervasoni, Diana Trojaniello, Franco Zappa"
+    ],
+    "abstract": "arXiv:2607.16222v1 Announce Type: new \nAbstract: This paper presents ARGO, a smart eyewear platform designed to bridge ergonomic comfort, high computational throughput, and energy efficiency. Unlike cloud-dependent solutions, ARGO leverages the STM32N6 microcontroller and its integrated Neural Processing Unit (NPU) to enable on-device machine learning, minimizing latency and preserving user privacy through local data processing. The primary contribution lies in the holistic co-design of hardware, firmware, and artificial intelligence, centered on the deployment of an optimized YOLOv11 model for real-time urban obstacle recognition. To ensure compatibility with the target NPU, we introduce Head-wise Parallel Attention (HPA), an architectural refinement that enables efficient accelerator execution while preserving the original computational logic. The model is trained on the Walking On The Road (WOTR) dataset, and the final deployed configuration achieves an mAP50-95 of 24 under strict memory constraints, with a memory footprint of only 2.483 MB. The platform integrates a multimodal sensor suite, RGB cameras, Time-of-Flight sensors, microphones, and ambient sensors, and delivers 10 FPS at a continuous autonomy of ~113 minutes on a 200 mAh battery. These results demonstrate the feasibility of a high-performance, privacy-preserving, and socially acceptable assistive device, and highlight how competitive edge AI solutions increasingly demand tightly integrated, multidisciplinary co-design approaches.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16222",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16222"
+      }
+    ],
+    "relevance_score": 0.3813060477650805,
+    "max_similarity": 0.09332904178098124
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16207",
+    "title": "JUMP: Single-Pass Membership Inference on Fine-Tuned Diffusion Language Models",
+    "authors": [
+      "Yeachan Jun, Albert No"
+    ],
+    "abstract": "arXiv:2607.16207v1 Announce Type: new \nAbstract: Membership inference attacks (MIAs) test whether a candidate example appeared in a model's training data. We study MIAs for fine-tuned discrete diffusion language models (dLLMs), where membership means inclusion in the target model's fine-tuning set. Unlike autoregressive language models, dLLMs allow an attacker to choose arbitrary mask sets and obtain token distributions for all masked positions in parallel. The prior dLLM attack, SAMA, follows a natural loss-mimicking strategy by averaging reconstruction signals over many randomly sampled masks, but it uses the any-order interface only as randomization and requires many target/reference queries. We propose JUMP (Joint Uncertainty-Guided Mask Probing), a single-pass scoring attack that exploits both distinctive properties of dLLMs: any-order decodability is used to select low-reference-confidence positions, and parallel decodability is used to score all selected positions through one joint masked query per model. JUMP masks the selected positions jointly and computes a clipped target/reference reconstruction-gap statistic. On fine-tuned LLaDA-8B-Base across six MIMIR domains, JUMP improves mean ROC-AUC from 0.82 to 0.90 over SAMA and substantially improves low-FPR detection, while requiring only one selector pass and one scoring pass through each of the target and reference models.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16207",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16207"
+      }
+    ],
+    "relevance_score": 0.3798504607763763,
+    "max_similarity": 0.09174894011162321
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16228",
+    "title": "Operator-Aware Mixed-Precision Tolerance Calibration for Tensor Kernels",
+    "authors": [
+      "Dipankar Sarkar"
+    ],
+    "abstract": "arXiv:2607.16228v1 Announce Type: new \nAbstract: Most tensor-kernel correctness tests go through a fixed-shape all close-style check with hand-picked absolute and relative tolerances. The thresholds are copied across the corpus and rarely revisited. We mine the element-wise error distribution of every test case from accumulated cloud GPU runs across the 26-entry gpuemu corpus and 2 dtypes (8,076 result rows). We then ask one empirical question: what absolute tolerance would the kernel itself, observed under its correct implementation, justify?\n  The answer is much tighter than the current hand-picked atol. The largest tightening is attention_triton fp16 at $2{,}184\\times$. Restricted to the seven LLM-style buggy variants for which the corpus ships a paired correct counterpart, calibrated per-(op, dtype) tolerances raise bug-detection recall from 73.2% (1,805 of 2,467) to 82.4% (2,034 of 2,467), an absolute gain of 9.3 percentage points (+229 new detections). The control false-positive count rises from 0 to 20 out of 1,882 correct-control cases (+1.1 percentage points).",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16228",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16228"
+      }
+    ],
+    "relevance_score": 0.35949374637244946,
+    "max_similarity": 0.13271123338047086
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.16240",
+    "title": "Normalized Rewards for Preference Optimization",
+    "authors": [
+      "Shawn Im, Federico Danieli, Skyler Seto, Barry-John Theobald, Katherine Metcalf"
+    ],
+    "abstract": "arXiv:2607.16240v1 Announce Type: new \nAbstract: Direct Alignment Algorithms (DAAs) such as DPO have become a common way to post-train and align LLMs with human preferences. However, DAAs have been observed to over-optimize their implicit reward model and decrease the likelihood of preferred responses. This results in a decrease in the total likelihood assigned to responses seen in the preference dataset, potentially resulting in undesirable behavior. To counteract this undesired side-effect of DAAs, we examine the effect of using objectives that add a regularization term to maintain the total length-normalized probabilities of the chosen and rejected responses. To better understand over-optimization, we investigate how response likelihood changes are distributed over the tokens with and without regularization. We find that a significant portion of the likelihood changes are due to a small set of outlier tokens, which explains how DAAs improve generation quality despite decreasing the likelihoods of chosen responses. We apply the proposed regularization to reference-based (DPO) and reference-free (SimPO) methods and find (1) improved trade-offs between generation quality and general benchmark capability and (2) improvements in reward modeling across datasets. For example, on Llama-3.1-8B-Instruct, we see both a >20% relative increase in AlpacaEval2 scores and >9% relative performance gains on general benchmarks. Additionally, we find that the added regularization term effectively mitigates the amount of displacement within preferred responses overall, and for the outlier tokens specifically, by utilizing low-likelihood tokens.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "updated": "Tue, 21 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.16240",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.16240"
+      }
+    ],
+    "relevance_score": 0.3101341480288675,
+    "max_similarity": 0.1304034534244544
+  }
+]
