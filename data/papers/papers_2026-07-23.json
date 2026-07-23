@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2607.18664",
+    "title": "DeforM: Reasoning-Guided Physics-Aware Video Generation via Spatial-Temporal Masking",
+    "authors": [
+      "Yunyi Li, Yu Qiao, Yaohui Wang, Xinyuan Chen"
+    ],
+    "abstract": "arXiv:2607.18664v1 Announce Type: new \nAbstract: Video generation models achieve high visual quality but often struggle to generate physics-aware videos. Unlike rigid-body motion, which can be described by explicit trajectories or formulas, complex deformation dynamics remain challenging to synthesize. We observe that a lack of physical reasoning for localizing dynamic areas allows irrelevant regions to dilute the model's attention, leading to generation failure. In this paper, we propose DeforM, a reasoning-guided image-to-video generation framework that directs the model's focus toward physics-critical regions. To reason about and localize these critical regions, we introduce a VLM-guided physical reasoning module, DeforM-Reason, to identify target objects and generate spatial-temporal masks. For physical guidance, we develop two alternative strategies: DeforM-Free for training-free mechanism analysis and DeforM-Injection as a powerful training-based generator. Experimental results demonstrate that DeforM improves the realism of generated deformation scenarios, outperforming baseline models in both visual quality and physical consistency.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18664",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18664"
+      }
+    ],
+    "relevance_score": 0.5258907280711387,
+    "max_similarity": 0.2708680513322674
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18255",
+    "title": "Semantic Cooperative Games for Contribution Attribution in LLM-Based Multi-Agent Systems",
+    "authors": [
+      "Pengyi Jiang, Xiaoguang Zhu, Quanyan Zhu"
+    ],
+    "abstract": "arXiv:2607.18255v1 Announce Type: new \nAbstract: Contribution attribution has become a central problem in LLM-based multi-agent systems, where final outputs are produced through multiple agents, message exchanges, and ordered workflow dependencies. Existing attribution methods often rely on counterfactual valuation, such as removing agents or comparing score changes across altered agent subsets. In language-mediated workflows, these methods require repeated model calls, introduce high variance, and do not explicitly capture the intermediate semantic states through which agents produce, preserve, and transform task-relevant information. We propose Semantic Cooperative Games (SCG), a framework that represents a realized language flow as a semantic generation hypergraph and induces an agent-level semantic value function on this structure. We define the Semantic Shapley Value (SSV) to allocate contribution over semantic support logic, and introduce SLIC, a single-trajectory algorithm that constructs the semantic hypergraph, recovers minimal semantic supports, applies Boolean absorption, and computes SSV without rerunning agent subsets. We prove that SSV reduces to the classical Shapley value under standard set-based, fully observable, and no-order-dependence conditions. On a medical benchmark satisfying these conditions, SLIC reduces computation cost by 93.3% while remaining highly consistent with a Monte Carlo Shapley baseline. In more general multi-role workflows, SSV aligns with perturbation-induced score-drop profiles and exposes cases where semantic contribution and failure impact diverge. Overall, SLIC provides a fast, counterfactual-free, and interpretable attribution method for complex LLM-based multi-agent systems.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18255",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18255"
+      }
+    ],
+    "relevance_score": 0.48962561017568734,
+    "max_similarity": 0.2268308018921047
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18577",
+    "title": "Attention Without Grounding: Causal Evaluation of Visual Explanations in Medical VLMs",
+    "authors": [
+      "Binesh Sadanandan, Vahid Behzadan"
+    ],
+    "abstract": "arXiv:2607.18577v1 Announce Type: new \nAbstract: Attention and saliency heatmaps are widely used to explain medical Vision-Language Model (VLM) outputs on chest X-rays, yet whether they truly highlight the image evidence driving predictions has not been causally tested. We audit faithfulness via overlap with radiologist bounding boxes on PadChest (n=637), attribution mass within radiologist masks on CheXlocalize (n=643), and 16x16 patch-occlusion maps that record which regions, when hidden, change the answer. We study three MedGemma-4B variants, cross-family probes on LLaVA-RAD and Qwen3-VL-8B-Instruct, and the specialist CheXagent-2-3b, with two CXR-trained classifiers (DenseNet121, ResNet50) as positive controls. A heatmap is faithful only if the model uses the image and attention concentrates on regions whose occlusion alters the prediction. No evaluated VLM meets both criteria. MedGemma and Qwen3-VL use the image, but attention anti-correlates with patch-occlusion importance (rho < 0 with 95% bootstrap CIs below zero). LLaVA-RAD's attention correlates positively, but the model is almost text-only (99.1% text-only agreement, near-zero causal mass), so correlation ties two near-zero signals. Attention also misses annotated anatomy: overlap with true regions never beats shifted or random controls, and no method places more than 22% of its mass inside radiologist masks. The two CXR classifiers pass all metrics, indicating the failure is specific to VLM heatmaps, not the evaluation. These heatmaps are visually reassuring but not faithful; clinical explanations require controlled localization metrics and causal perturbation, not visual inspection alone.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18577",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18577"
+      }
+    ],
+    "relevance_score": 0.4669470026849768,
+    "max_similarity": 0.1992496873009636
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18241",
+    "title": "BatchDAG: LLM-Planned Execution Graphs for Scalable Ad-Hoc Analysis Over Enterprise Data",
+    "authors": [
+      "Anupreet Walia"
+    ],
+    "abstract": "arXiv:2607.18241v1 Announce Type: new \nAbstract: Large language models (LLMs) excel at analyzing individual documents but break down on exhaustive, cross-entity analytical questions over enterprise-scale datasets due to context overflow, loss of per-entity attribution, and linear latency from sequential tool calls. We present BatchDAG, a system in which an LLM generates a typed directed acyclic graph (DAG) of operations -- SQL queries, semantic searches, in-memory transforms, parallel fan-outs, and single-shot analyses -- which a deterministic engine evaluates with topological-wave parallelism and structured JSON data flow. A key optimization, entity-aware batching, groups rows by logical entity before fan-out, reducing LLM calls by up to 47x. BatchDAG is not primarily an accuracy improvement over hand-optimized pipelines; rather, it is a general-purpose orchestration layer that replaces multiple hand-engineered workflows with a single system that generates the appropriate execution strategy from natural language. In controlled experiments on 12 transcript-heavy queries, BatchDAG (3.74/5) achieves quality comparable to an expert-designed pipeline (3.25/5) and significantly outperforms a ReAct agent (3.09/5, p<0.01), with superior provenance (77% transcript evidence rate vs. 46-60% for baselines). A controlled ablation shows structured JSON intermediates reduce hallucinations by 27% versus prose summaries (paired t-test, p=0.107, n=12). The planner achieves 98.8% valid-DAG rate across 300 planning calls. In production at Brevian.ai, BatchDAG processes queries over 50,000+ meetings in under 60 seconds, with measured per-query costs of $0.02-$0.24 at published GPT-5.1 pricing.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18241",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18241"
+      }
+    ],
+    "relevance_score": 0.44642456476146397,
+    "max_similarity": 0.17286905154329815
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18673",
+    "title": "MissingBench-Verified: Probing Vision-Language Models' Inability to Detect Missing Object Parts",
+    "authors": [
+      "Wenqi Marshall Guo, Qingyun Qian, Shiyu Zhou, Guoping Luo, Shan Du"
+    ],
+    "abstract": "arXiv:2607.18673v2 Announce Type: new \nAbstract: Vision Language Models (VLMs) are well known for hallucinating non-existent objects in images. Objects with missing parts present a unique challenge for VLMs, stemming from both real-world knowledge bias and the scarcity of such images in training data. We present MissingBench-Verified, a benchmark designed to evaluate a specific and practically relevant scenario: when vision-language models fail to recognize that an essential component of an object has been removed. Across ten leading models, we observe consistent and significant failure rates that persist even when external tool evidence explicitly contradicts the model's visual perception. We further ask whether granting models access to image processing tools (e.g., cropping, contrast adjustment) enables autonomous inspection to resolve these failures. We find that existing mitigation strategies, including tool-assisted verification, autonomous visual reasoning, longer reasoning durations, and fine-tuning on an easier dataset, provide negligible improvement, indicating that this failure mode cannot be addressed through current prompting or post-hoc correction techniques. Our findings highlight a fundamental limitation of current VLM for inspection and monitoring tasks and underscore the need for architectural or training-level interventions that enable models to override internal expectations when confronted with contradictory evidence.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18673",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18673"
+      }
+    ],
+    "relevance_score": 0.4393639035154143,
+    "max_similarity": 0.15875902746513734
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18325",
+    "title": "Hazard or Anomaly? Evaluating VLMs for Understanding Dangers and Discrepancies",
+    "authors": [
+      "Murali Indukuri, Mohammad Eskandari, Sree Nitya Kollu, Stephanie Lukin, Cynthia Matuszek"
+    ],
+    "abstract": "arXiv:2607.18325v1 Announce Type: new \nAbstract: Modern safety-critical systems increasingly rely on human-robot interaction to reduce disaster risk and support decision-making during emergencies. Vision-Language Models (VLMs) are promising for these settings because they can interpret complex scenes and communicate safety-relevant information, but they still require careful evaluation to ensure reliable safety reasoning. In particular, current evaluations often frame danger recognition as a binary decision (Safe/Unsafe), making it unclear whether a model is identifying true physical hazards or merely reacting to unusual scene elements. We address this limitation by introducing an explicit distinction between hazard and anomaly, and by separately recognizing hazardous and anomalous states. We evaluate several state-of-the-art VLMs across two datasets and multiple prompting strategies to test whether this distinction changes model behavior. Our results show that VLMs frequently misinterpret anomalousness as hazardousness, revealing an over-reliance on contextual irregularity as a proxy for danger. We further show that explicitly separating anomaly from hazard provides a more informative evaluation of VLM safety reasoning and exposes failure modes that binary safety judgments can obscure. Our public dataset is available on Roboflow https://app.roboflow.com/vlm-in-context-anomaly-and-hazard-detection/camera-ready-roman-ds.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18325",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18325"
+      }
+    ],
+    "relevance_score": 0.4379891551468128,
+    "max_similarity": 0.16113596408717024
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.19523",
+    "title": "When Reasoning Narrows the Move: Diversity Collapse in LLM Game Play",
+    "authors": [
+      "Junyi Sha, Renfei Tan, David Simchi-Levi"
+    ],
+    "abstract": "arXiv:2607.19523v1 Announce Type: new \nAbstract: Supervised fine-tuning (SFT) is widely used to adapt large language models to downstream tasks, but its effect on behavioral diversity in sequential decision-making remains under-explored. We study this question in a controlled suite of deterministic board games based on tic-tac-toe variants, where optimal actions are exactly computable and diversity can be measured directly. Across state-level evaluation, arena gameplay, and training trajectories, we find that reasoning-mode generation frequently suppresses action diversity without uniformly improving action accuracy. Furthermore, standard SFT improves accuracy but often induces premature diversity collapse, which exceeds what is minimally required by the accuracy-diversity tradeoff. We then show that action augmentation, which trains on all optimal actions per state rather than a single demonstrated action, would partially mitigates this effect. Our results identify narrow-support imitation as a source of policy collapse in LLM decision-making and suggest that preserving action support during SFT is important for maintaining exploratory behavior.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.19523",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.19523"
+      }
+    ],
+    "relevance_score": 0.43268829940018344,
+    "max_similarity": 0.15834506641020268
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18256",
+    "title": "PEARL: Solver-in-the-Loop Interactive Optimization Modeling from Natural Language",
+    "authors": [
+      "Hongliang Lu, Zhong Li, Yuxuan Chen, Yuan Lan, Fan Zhang, Zaiwen Wen"
+    ],
+    "abstract": "arXiv:2607.18256v1 Announce Type: new \nAbstract: Optimization modeling is the process of translating real-world decision problems, often described in natural language, into formal mathematical formulations and executable solver code. While recent advances in large language models have shown promise in automating this process, most existing approaches remain one-shot: a model produces a formulation once, without executing it, conditioning on solver feedback, or iteratively revising errors. This stands in sharp contrast to real-world optimization modeling, which is inherently interactive and proceeds through repeated solve-debug-revise cycles. We introduce PEARL, a system for interactive optimization modeling that uses Python execution and mathematical programming solvers inside this loop. Rather than relying on a fixed repair workflow, PEARL learns when to test partial models, how to revise from solver diagnostics, and when to stop. It operates in a multi-turn tool-integrated setting where intermediate execution results, feasibility signals, and solution checks are used to improve both formulations and solver code before finalization. Across diverse optimization benchmarks, PEARL substantially improves verified solve rates over strong one-shot and tool-augmented baselines; notably, our PEARL-Qwen3-\\textbf{4B} model outperforms the much larger DeepSeek-V3.2-\\textbf{685B} in both macro- and micro-averaged accuracy on optimization modeling tasks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18256",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18256"
+      }
+    ],
+    "relevance_score": 0.4274120863765697,
+    "max_similarity": 0.15024354542903628
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18240",
+    "title": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+    "authors": [
+      "Dekun Yang"
+    ],
+    "abstract": "arXiv:2607.18240v1 Announce Type: new \nAbstract: Large language models (LLMs) can achieve strong fact-checking accuracy, yet forced binary decisions conceal a critical reliability problem: systems may issue confident verdicts even when supporting evidence is weak, sparse, or internally inconsistent. We address this issue through Evidence Chain Evaluation (ECE), a selective fact-checking framework that permits abstention via an uncertain verdict instead of requiring a true/false decision for every claim. The evaluated system is a tool-using verification agent that gathers evidence through web search, scholarly search, and executable checks, and then returns a structured verdict with confidence and source-level metadata. On ECE-Bench, ECE achieves 91.6% standard accuracy, 93.7% coverage, and 97.8% selective accuracy on answered claims. Although ECE does not outperform the strongest retrieval baseline on aggregate calibration metrics such as Expected Calibration Error, Brier score, or AURC, it delivers a clear selective-prediction trade-off: the system maintains very high accuracy on answered claims while deferring 6 of 95 cases. These deferred cases are concentrated in lower-reliability evidence settings (5/6 at source level L4), supporting the view that abstention functions as a safety-oriented mechanism for handling epistemically weak evidence. Code is available at https://github.com/ cheshireyang/ECE.git",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18240",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18240"
+      }
+    ],
+    "relevance_score": 0.4270807568471833,
+    "max_similarity": 0.14857004101556462
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.19379",
+    "title": "Bayesian Wind Tunnels for Model Selection",
+    "authors": [
+      "Siddhartha R Dalal, Vishal Misra, Abhay Parekh"
+    ],
+    "abstract": "arXiv:2607.19379v1 Announce Type: new \nAbstract: Prior work has shown that transformers can perform exact Bayesian filtering within a fixed\n  hypothesis class. Can they also perform Bayesian model selection -- identifying the correct\n  hypothesis class from data? We introduce model-selection Bayesian wind tunnels: controlled\n  environments where ground-truth posteriors over hypothesis classes are available in closed\n  form. Using fixed-point-free involutions -- whose defining property f(f(x))=x is purely\n  relational -- a 2.8M-parameter transformer achieves 0.01-bit entropy agreement with the\n  Bayesian optimum (3 seeds), with both integer tokens and opaque symbols whose meanings\n  change every episode. This extends to non-nested comparisons: involutions vs. 3-cycles\n  (where neither class is a subset of the other) achieve class-posterior MAE under 0.001,\n  demonstrating genuine model selection beyond simplicity/subset bias. We then identify a\n  sharp perceptual access condition: when the discriminative statistic requires arithmetic --\n  modular addition (rotations) or multiplication (f(x)=cx mod p) -- model selection succeeds\n  with integer tokens but fails completely with opaque symbols, and this boundary persists\n  under 112x scaling (2.8M to 316M parameters). A stationarity control confirms the operative\n  factor: opaque tokens with a fixed relabeling succeed (0.009-bit MAE), showing that stable\n  semantics, not integer identity, enable circuit compilation. Header subtask diagnostics\n  localize the failure to the composition of header inversion with arithmetic rather than\n  header parsing itself. Probing frontier LLMs on the same tasks shows qualitative Bayesian\n  behavior but a large calibration gap (~55x), measured through lossy probes and therefore\n  directional rather than exact.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.19379",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.19379"
+      }
+    ],
+    "relevance_score": 0.4197509789244502,
+    "max_similarity": 0.14435524650791073
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18260",
+    "title": "FindStatBench: Evaluating Large Language Models on Combinatorial Code Synthesis",
+    "authors": [
+      "Soham Dan"
+    ],
+    "abstract": "arXiv:2607.18260v1 Announce Type: new \nAbstract: We introduce FindStatBench, an execution benchmark for evaluating large language models on combinatorial code synthesis. Built from FindStat, it contains 2,329 tasks across 24 collections and 5.52M hidden instances, covering statistic synthesis, which maps objects to integers, and map synthesis, which maps objects to objects. Each task gives a mathematical description and at most five public input-output examples; a model must emit one Python solve function with no retrieval, tool use, execution feedback, voting, or reranking. Submissions are scored by exact sandboxed execution on held-out combinatorial objects. We evaluate eleven systems: four closed-source production models and seven open-weight models served through one inference provider. FindStatBench reveals three main patterns. First, the strongest open- and closed-source systems converge within 1 pp instance accuracy, and both an oracle over all systems and five-way sampling from one mid-tier model yield only limited task-accuracy gains. Second, examples can hurt: several classical bijections are solved perfectly with zero examples but fail under five-example prompts. Third, some failures reflect output-budget mechanics, as reasoning can exhaust the visible response before code is emitted. Overall, statistic synthesis is much easier than map synthesis, some collections remain near-zero, long prompts cause a sharp accuracy cliff, and exact symbolic rule induction remains brittle.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18260",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18260"
+      }
+    ],
+    "relevance_score": 0.4158998716809251,
+    "max_similarity": 0.13582738295544675
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18695",
+    "title": "Attributes Should Come from Images, Not Class Names: Distribution-Conditioned Attribute Selection for Vision-Language Models",
+    "authors": [
+      "Gautam Rajendrakumar Gare, Jia Shi, Zhiqiu Lin, Deepak Pathak, John Galeotti, Deva Ramanan"
+    ],
+    "abstract": "arXiv:2607.18695v1 Announce Type: new \nAbstract: A popular route to interpretable zero-shot classification asks a large language model (LLM) to describe each class name and prompts CLIP with the resulting descriptors. We show that these descriptors carry little visual evidence of their own: removing the class name from the prompt collapses ImageNet accuracy from 59.5% to 15.5%. The diagnosis is that the descriptors are conditioned on the label rather than on the images, so they describe the concept in general and mislead exactly when the data shifts; an LLM insists that strawberries are red, but every strawberry in ImageNet-Sketch is a colorless line drawing. We therefore select attributes from the target image collection instead: we score a large attribute pool against the images in CLIP's joint embedding space and keep the top-scoring attributes per class. Selected this way, class-name-free attribute prompts reach 23.8% on ImageNet (against 15.5% for LLM descriptors), the gain holds on four shifted ImageNet variants, and reselecting from the LLM's own pool isolates the selection mechanism as the cause. With one image per class, the selected attributes outperform the prompt-tuning method CoOp by 3 points while fitting in under a minute instead of 14 hours, with no learned soft prompt to obscure the decision. Because the attribute set is chosen by the data, it doubles as a readable summary of a dataset, which we use to describe distribution shift in words.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18695",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18695"
+      }
+    ],
+    "relevance_score": 0.4144074317733681,
+    "max_similarity": 0.13448171164108316
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18261",
+    "title": "When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents",
+    "authors": [
+      "Yin Li"
+    ],
+    "abstract": "arXiv:2607.18261v1 Announce Type: new \nAbstract: LLM agents are increasingly used as transaction compilers: a user states an intent in natural language, and the model emits a structured object that an API can execute. JSON Schema and provider-level structured-output modes are useful because they remove a large class of parse failures, but they do not by themselves decide whether the object is a safe, faithful transaction. We introduce OrderBench, a deterministic benchmark for restaurant ordering agents that separates syntactic validity, schema validity, status decisions, exact item semantics, constraint preservation, and unsafe acceptances. Across 2,400 Nebius Token Factory calls to four open models in prompt-only and JSON-schema modes, we find that schema-valid output can still have large semantic error rates. In the strongest model, both modes achieve 100% schema validity, yet semantic success remains near 80%; in weaker models, schema-valid unsafe acceptances occur in double digits. The result is a concrete engineering warning: structured output is a necessary interface layer, not a substitute for domain verification and fail-closed execution.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18261",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18261"
+      }
+    ],
+    "relevance_score": 0.40540224712198647,
+    "max_similarity": 0.12363842094145185
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.19361",
+    "title": "Stateful Guardrails for Multi-Turn LLM Systems: A Conversational Risk Accumulation Framework",
+    "authors": [
+      "Sanjay Mishra, Divya Chukkapalli, Ganesh R. Naik"
+    ],
+    "abstract": "arXiv:2607.19361v1 Announce Type: new \nAbstract: Most safety guardrails for large language models (LLMs) evaluate each prompt-response pair in isolation, which misses failures that arise only over a dialogue as benign turns compose into harm. We term this Conversational Risk Accumulation (CRA): gradual intent drift, fragmented assembly of prohibited instructions, and sensitivity build-up from repeated disclosures. We propose a session-layer CRA Framework that tracks three trajectory signals: semantic drift from a session anchor, a sensitivity-weighted information accumulation graph over extracted entities, and a compliance-gradient signal capturing increasing willingness to comply. For scoring, we provide (i) an unsupervised convex fusion for attribution and ablations, and (ii) CRA-Net DA, a compact learned trajectory model trained with family-adversarial objectives to reduce length and topic-coverage confounds. To benchmark CRA, we release CRA-Bench v0.1 (1,200 eight-turn sessions across three threat families with topic-matched benign twins), CRA-Bench v0.2 (LLM-paraphrased variants to reduce template artifacts), and an extended 5-family set (2,000 sessions adding persona priming and context stuffing). We introduce a trajectory-native evaluation protocol with session-level splits, mixed-set threshold calibration, Trajectory AUROC, turns-to-detection, calibrated false-positive metrics, bootstrap confidence intervals, leave-one-family-out diagnostic stress tests, and synthetic-to-human transfer checks. Claims focus on within-distribution session scoring on CRA-Bench and human-transfer subsets.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.19361",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.19361"
+      }
+    ],
+    "relevance_score": 0.4050045835037973,
+    "max_similarity": 0.12305393053483586
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18253",
+    "title": "Beyond Accuracy and Cost: Latency-Aware LLM Query Routing for Dynamic Workloads",
+    "authors": [
+      "Shivam Patel, Akaash R. Parthasarathy, Ankur Mallick, Gauri Joshi"
+    ],
+    "abstract": "arXiv:2607.18253v1 Announce Type: new \nAbstract: Modern language query routers improve inference efficiency by assigning each query to a model that balances response quality and monetary cost. However, current query routers are largely latency-agnostic and do not consider the generation latency experienced by queries at model instances. In practice, latency is often controlled by load-balancing policies such as round-robin or join-the-shortest-queue, which do not account for model accuracy or inference cost. Incorporating query latency into routing is challenging as it depends not only on the query's prompt length, but also on the current prefill and decode workload at the model instance and the scheduling and batching policy of the serving framework. We design a lightweight latency estimator that simulates autoregressive token batch processing in the serving framework and estimates the time-to-first-token (TTFT) of queries. We incorporate this latency estimator into a latency-aware router that jointly optimizes latency, accuracy, and cost when assigning queries to model instances. Our experimental results indicate that this joint optimization yields up to 40% improvement in accuracy--cost utility while maintaining the same latencies as standard load-balancing approaches.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18253",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18253"
+      }
+    ],
+    "relevance_score": 0.40289908874395863,
+    "max_similarity": 0.12233438416780244
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18246",
+    "title": "Phionyx: A Deterministic AI Runtime Architecture with Structured State Management and Pre-Response Governance",
+    "authors": [
+      "Ali Toygar Abak"
+    ],
+    "abstract": "arXiv:2607.18246v1 Announce Type: new \nAbstract: We present Phionyx, a deterministic AI runtime architecture derived from the broader Echoism interaction framework that introduces a governance-first approach to AI engineering: treating large language model (LLM) outputs as noisy sensor measurements rather than direct decisions. Unlike probabilistic agents, Phionyx enforces deterministic state evolution via a structured state vector governed by deterministic state-evolution equations, enabling reproducible behavior in applications requiring auditability and governance. The architecture integrates three layers: (1) a deterministic evaluation kernel processing noisy sensor measurements through a canonical 46-block pipeline, (2) a unified safety layer providing pre-response control and architectural privacy enforcement, and (3) a semantic time-based memory system implementing impact-weighted cache eviction. Experimental validation on single-instance deployments demonstrates approximately 31% reduction in computational overhead vs. post-hoc filtering (at 30% unsafe input ratio, simulated cost model) and up to 24% improvement in high-value data retention vs. LRU (72% vs. FIFO, same cache capacity, benchmark-verified), deterministic execution verified across 100 repeated runs with zero variance in control signals (hash-verified), and zero unplanned restarts in single-instance deployment testing (see Appendix C for methodology and scope). This paper presents the architecture, its analytic structure, and scoped experimental evidence; generalization to distributed or multi-tenant deployments remains future work.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18246",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18246"
+      }
+    ],
+    "relevance_score": 0.4026825920363876,
+    "max_similarity": 0.11827950940570718
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18254",
+    "title": "Cross-Dialect Generalization Without Retraining: Benchmarks and Evaluation of Schema-Derived Constrained Decoding for MLIR",
+    "authors": [
+      "Plawan Kumar Rath"
+    ],
+    "abstract": "arXiv:2607.18254v1 Announce Type: new \nAbstract: Multi-Level Intermediate Representation (MLIR) underlies modern ML compiler infrastructure (TensorFlow, JAX/StableHLO, PyTorch Inductor, IREE), yet appears only in trace amounts in code-LM pretraining corpora. MLIR is also extensible by design: new dialects ship per application domain, so a fine-tuned model per dialect does not scale. We ask whether inference-time priors derived mechanically from each dialect's Operation Definition Specification (ODS) can substitute for gradient-based adaptation. First, we release four natural-language-to-MLIR benchmarks across three dialects - MLIR-Spec-150, Linalg-Spec-30, StableHLO-Spec-30, and StableHLO-Held-Out-200 - totaling 410 in-scope NL-to-MLIR pairs, plus a 25-program out-of-grammar stress set and a hand-authored n=30 functional reference set, shipped under Apache-2.0 with Gebru datasheets and Croissant 1.0 metadata. Second, we build a three-layer schema-derived constraint stack: a CFG over op signatures(C1), type-domain splits from an ODS-extracted type lattice (C2), and an SSA-scope validator driving five-retry rejection sampling (C3). Porting from arith+func+memref+linalg to StableHLO required no new constraint-layer code. On dialects whose verifier semantics are dominated by structural constraints, schema-derived priors let SmolLM2-1.7B match or exceed 15B-34B code LMs at 8-25x the per-generation speed: on linalg, SmolLM2 reaches 80.0% verify-valid (three-seed mean, n=125), beating CodeLlama-34B, Granite-Code-34B, and StarCoder2-15B by 21-44 percentage points with non-overlapping CIs. On arith+func and on the templated parametric StableHLO-Held-Out-200, where verifier semantics turn on attribute values rather than structure, the same baselines match or beat the SLM; we scope these as non-win cells. We release benchmarks, decoder, all per-prompt generations, and a reproducibility Docker image.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18254",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18254"
+      }
+    ],
+    "relevance_score": 0.3970772024514478,
+    "max_similarity": 0.11432713042602793
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18259",
+    "title": "Probabilistic Concept-Aware Steering for Trustworthy LLM Inference",
+    "authors": [
+      "Brian Becker, Rui Chu, Yingjie Lao"
+    ],
+    "abstract": "arXiv:2607.18259v1 Announce Type: new \nAbstract: Steering vectors (SVs), an inference-time intervention technique for large language models (LLMs), guide the generation process by adding a concept-specific direction vector to intermediate activations during inference. However, existing SV methods frequently yield representation-incoherent behaviors that undermine interpretability and fine-grained control, largely because prior work has focused on binary positive-negative steering evaluation while employing discrete clustering metrics that fail to capture the continuous spectrum of semantic alignment. In this work, we present the Probabilistic Concept-Aware Steering (PCS) framework for LLM inference. PCS preserves original task competence while providing controllable, safety-oriented semantic bias through concept-driven steering-vector retrieval and probabilistic strength calibration.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18259",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18259"
+      }
+    ],
+    "relevance_score": 0.39616470468033127,
+    "max_similarity": 0.1118081659865205
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18508",
+    "title": "Style over Substance: A Shortcut Audit of Emotion-Description Preference Evaluation",
+    "authors": [
+      "Jiabing Yang, Yixiang Chen, Yuan Xu, Qisen Ma, Tao Yu, Peiyan Li, Yingda Li, Yan Huang, Liang Wang"
+    ],
+    "abstract": "arXiv:2607.18508v1 Announce Type: new \nAbstract: Preference over model-generated emotion descriptions is emerging as a standard evaluation metric for multimodal emotion understanding, exemplified by the MER2026 MER-Prefer track on EmoPrefer. Such benchmarks assume that predicting the preferred description requires grounded cross-modal understanding of the video. We conduct a systematic shortcut audit of EmoPrefer using content-blind probes. A simple logistic regression using only description length and generator identity, without processing the text, video, or audio, performs comparably to LoRA-finetuned 7B text and audio-visual judges (65.8 versus 66.8 WAF on EmoPrefer-V2). Generator identity is recoverable from description text with 99.5 percent accuracy, every candidate pair contrasts two distinct generators, and the human preference labels agree with a fold-exclusive per-generator win-rate prior on 66 percent of the evaluated pairs. When the human label conflicts with this prior, trained judges still follow the style prior on 63 to 80 percent of the pairs. On a length-matched subset that neutralizes verbosity bias, the tested media configurations yield no statistically significant improvement, while an ODIN-inspired diagnostic that decouples the style shortcut leaves its content head near chance. These results do not imply that human preferences are inherently stylistic or that the descriptions contain no emotional information. Instead, they show that the current scores can be reached without verifying either description against the video. We recommend source-balanced pairing, strict length control, counter-stereotypical sliced reporting, and multi-annotator consensus for future cross-generator evaluations. Code is available at https://github.com/jiabingyang01/EmoPrefer-Audit.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18508",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18508"
+      }
+    ],
+    "relevance_score": 0.33280257483982567,
+    "max_similarity": 0.15817952468073684
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.18252",
+    "title": "MILP-Evo: Closed-Loop Fully Automatic Design of MILP Solvers",
+    "authors": [
+      "Jinbiao Nie, Kewei Feng, Xiaoyuan Zhang, Shan Yin, Zizhuo Wang, Bin Dong"
+    ],
+    "abstract": "arXiv:2607.18252v1 Announce Type: new \nAbstract: Machine learning methods have shown that data-driven policies can accelerate mixed-integer linear programming (MILP) solvers, but many such approaches remain difficult to inspect, adapt, and deploy because the learned policy is represented as an external predictor or other opaque model. By contrast, explicit solver logic is easier to understand and integrate, but is usually hand-designed rather than learned from solver feedback. We study whether the automatic design of MILP solver logic can instead be cast as LLM-guided closed-loop search over executable white-box components evaluated directly by end-to-end solver behavior. To this end, we propose a closed-loop program evolution framework for MILP solver auto-design, implemented through PySCIPOpt, and instantiate it on the joint design of a cut selector and a branching rule. Candidate programs are iteratively generated, loaded into SCIP, and evaluated by direct execution on MILP instances, with the resulting feedback guiding performance-based selection, targeted repair, diagnostic reflection, and diversity-aware population maintenance. The method outputs explicit solver components that can be inspected, modified, and deployed within standard solver workflows. Across four benchmark families, we find that LLM-guided program evolution can discover competitive domain-specialized policies in several settings.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "updated": "Thu, 23 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.18252",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.18252"
+      }
+    ],
+    "relevance_score": 0.2997223168169096,
+    "max_similarity": 0.11707994681202298
+  }
+]
