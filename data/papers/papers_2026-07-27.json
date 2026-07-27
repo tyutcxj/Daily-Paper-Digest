@@ -1,0 +1,502 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2607.21596",
+    "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+    "authors": [
+      "Zeyu Ren, Ling Yue, Ran Li, Yishu Wang, Shengxiang Xu, Hanmo Liu, Shaowu Pan, Shimin Di"
+    ],
+    "abstract": "arXiv:2607.21596v1 Announce Type: new \nAbstract: Large language model agents increasingly solve complex tasks by constructing inference-time workflows that combine reasoning, tool use, and code execution. While such workflows enable flexible problem solving, the useful procedures discovered during execution are often transient: they help solve the current task but are not retained in a form that can systematically benefit future tasks. We present FlowEvo, a training-free framework that compiles successful traces into reusable skill records. Each record pairs a callable artifact with auxiliary structured guidance, and admission applies interface, replay, and safety checks where feasible. These skill records persist in a skill bank at inference time. FlowEvo is organized around three coupled mechanisms: (1)~workflow-to-skill compilation, which extracts reusable executable artifacts from successful traces; (2)~skill-to-workflow feedback, which retrieves accumulated skills to support future problem solving through either direct execution or structured context injection; and (3)~skill curation, which monitors downstream utility and suppresses skills that cause negative transfer. Through this workflow--skill--workflow feedback loop, FlowEvo enables agents to accumulate and refine task-solving capability over time without updating model parameters. Experiments on benchmarks spanning interactive environments (ALFWorld) and code/math generation (HumanEval, GSM8K) show that FlowEvo achieves the best accuracy-cost tradeoff among the evaluated baselines under our implementation settings. On ALFWorld, FlowEvo achieves an 82.8\\% success rate, 23.6 percentage points above the strongest baseline, while its average token usage per episode is less than half that of the most efficient baseline. Controlled ablations confirm that each mechanism contributes to the overall result. The code is public at https://github.com/DEFENSE-SEU/FlowEvo.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21596",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21596"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21597",
+    "title": "Risk Is Not the Target: A Monotonic Framework for Evaluating Wildfire Operational Risk Signals",
+    "authors": [
+      "Nicolas Caron, Christophe Guyeux, Maxime Coulmeau, Benjamin Aynes"
+    ],
+    "abstract": "arXiv:2607.21597v1 Announce Type: new \nAbstract: Evaluating wildfire risk systems using standard machine-learning metrics such as F1-score or IoU is fundamentally flawed: these metrics assess event prediction accuracy, not the operational coherence of a continuous risk signal. This work proposes a novel monotonic evaluation framework that measures whether increases in a predicted risk score consistently correspond to increases in observed operational load, such as number of fires, intervention time, and deployed resources. Moreover, we compare three structurally different approaches on the French Alpes-Maritimes department: the expert-based DFE index, GRU- based predictive models, and FARS, a hybrid multi-agent system combining predictive AI with LLM-based reasoning. Experimental results reveal that the DFE, despite poor classification metrics, exhibits the most balanced monotonic behavior across the full risk scale. GRU models achieve strong local monotonicity but fail to produce well-distributed risk levels. FARS inherits and reveals the structural limitations of upstream signals rather than correcting them. The central finding is a paradigm shift: a good risk model does not predict fires accurately, but one whose ordinal scale meaningfully explains operational dynamics, as proved in this paper. Code of the monotonic framework is available on github.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21597",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21597"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21600",
+    "title": "Securing Multimodal AI through Internal Information Decomposition",
+    "authors": [
+      "Jehyeok Yeon, Hyeonjeong Ha, Qiusi Zhan, Heng Ji"
+    ],
+    "abstract": "arXiv:2607.21600v1 Announce Type: new \nAbstract: Multimodal large language models introduce attack surfaces absent in unimodal systems: adversaries can distribute malicious intent across modalities to evade unimodal safeguards. This motivates using cross-modal consistency as a detection signal rather than inspecting each modality in isolation. Our key observation is that benign inputs induce compatible predictive behavior from text-only and vision-only reasoning that stabilizes when fused, whereas adversarial manipulation disrupts this consistency, causing abnormal multimodal behavior. Existing defenses that examine raw inputs or outputs overlook this internal fusion process, rendering them brittle and computationally expensive. We propose FlowGuard, a lightweight inference-time framework that detects harmful inputs by monitoring internal multimodal consistency. Unlike approaches that rely on scalar confidence metrics, FlowGuard derives FlowVectors inspired by Partial Information Decomposition that quantify cross-modal redundancy, synergy, and modality-specific dominance, capturing whether fused multimodal predictions remain aligned with unimodal semantic evidence. In a one-class classification problem trained solely on benign data, FlowGuard reduces Attack Success Rates from >90% to <15% on unseen attacks, with <3% utility loss and up to a 6 times latency reduction. Our results demonstrate that monitoring cross-modal consistency offers an efficient and effective defense for multimodal reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21600",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21600"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21602",
+    "title": "Transferable Latency Prediction for Fast LLM Screening on Heterogeneous Edge Devices",
+    "authors": [
+      "Xiaolong Tu, Vinod K. Mishra, Venkat R. Dasari, Anu G. Bourgeois, Haoxin Wang"
+    ],
+    "abstract": "arXiv:2607.21602v1 Announce Type: new \nAbstract: Accurate latency prediction is critical for deploying large language models (LLMs) on heterogeneous edge devices, where inference latency is affected by model architecture, prompt behavior, runtime backend, hardware utilization, dynamic voltage and frequency scaling (DVFS), and thermal variation. This paper presents a runtime-aware latency prediction framework for deployment-oriented LLM selection. The framework represents each inference request as a hardware-runtime-model-prompt configuration, separates inference into prefill and decode phases, and adaptively fuses static descriptors with dynamic hardware telemetry through a gated prediction model.\n  We evaluate the framework using Pixel mobile devices and validate the profiling pipeline on Jetson Nano, Orange Pi 5 Pro, and an RTX 3090-class GPU platform. On Pixel 8, the full predictor improves total-latency R-squared from 0.953 to 0.960 and decode-latency R-squared from 0.957 to 0.973 over a static-only baseline. On Pixel 8 Pro, it improves prefill-latency R-squared from -1.383 to 0.966. For cross-device transfer, calibration improves Pixel 8 Pro to Pixel 8 total-latency R-squared from -0.974 to 0.940 and decode-latency R-squared from -1.085 to 0.927. Heterogeneous profiling further shows that latency is highly device- and runtime-dependent: the same SmolLM2 model family reaches 8.42 tokens/s on Orange Pi 5 Pro but 64.38 tokens/s on an RTX 3090-class GPU. These results demonstrate that runtime-aware prediction with lightweight calibration can reduce profiling cost and support latency-aware LLM deployment across heterogeneous edge platforms.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21602",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21602"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21604",
+    "title": "AgentKVShift: Efficient KV Cache Reuse for Agentic Memory Systems",
+    "authors": [
+      "Nilesh Prasad Pandey, Jason Kong, Lanxiang Hu, Quanling Zhao, Yujie Zhao, Onat Gungor, Hao Zhang, Tajana Rosing"
+    ],
+    "abstract": "arXiv:2607.21604v1 Announce Type: new \nAbstract: Memory-augmented LLM agents maintain context across hundreds of interactions through agentic memory systems that actively curate retrieved content with LLM-generated metadata such as summaries, keywords, and tags. From an inference cost standpoint, every retrieval triggers a full re-encoding of these structured memory units into Key-Value (KV) states, which dominates prefill latency. Existing training-free KV reuse methods mitigate this by selectively recomputing a small fraction of tokens, but were designed for RAG-style raw passages and degrade on structured agentic memories. We present AgentKVShift, a training-free, probe-guided KV residual correction method that operates per retrieved memory unit. One of the crucial insights we demonstrate is that the per-memory KV reuse residual decomposes into a shared memory-level offset plus small token-wise fluctuations. Estimating this offset from a small probe set allows us to correct every reused token by a single weighted correction. Unlike prior reuse methods which decide which tokens to recompute and leave the rest of the cache stale, AgentKVShift also corrects the tokens it does not recompute, turning the refresh budget into useful signal across the entire chunk. Across four open-source LLMs spanning 3B to 32B parameters and two long-horizon agentic memory benchmarks (long-term dialogue and agentic applications), AgentKVShift achieves near full recompute performance while refreshing only 10-30% of the cache, outperforming baselines at the same recompute ratio. It requires up to 5x lower recompute to reach this near-full performance, which prior reuse methods only attain at 45-55% refresh. In this regime, AgentKVShift delivers prefill speedups of 2-3.5x over no-KV-reuse on a single A100. AgentKVShift orthogonally composes with KV cache quantization, retaining over 2x the F1 of prior reuse methods under aggressive 2- and 4-bit settings.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21604",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21604"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21609",
+    "title": "Coupled Hierarchical Search over Topology and Execution for Agentic Workflow Synthesis",
+    "authors": [
+      "Dong Li, Yanchi Liu, Xujiang Zhao, Wei Cheng, Zhengzhang Chen, Xintao Wu, Zhong Chen, Chen Zhao, Haifeng Chen"
+    ],
+    "abstract": "arXiv:2607.21609v1 Announce Type: new \nAbstract: Although structured workflows empower Large Language Models (LLMs) to tackle complex problems, automating their creation is severely hindered by a vast combinatorial search space, frequently resulting in inflexible and resource-heavy offline training dependencies. To address this, we conceptualize workflow generation as an intertwined topology-and-execution search paradigm, where the broader topological layer dictates subtask boundaries and lower-level execution outcomes actively reshape the topology itself. Building on this foundation, we introduce HierFlow, a training-free, test-time hierarchical search architecture that automates agentic workflow design by merging feedback-guided topology adjustments with a fast, MCTS-inspired tree search for sub-workflow optimization. HierFlow maximizes efficiency through an intelligent gating module that selectively triggers execution-level searches based on contextual necessity, a mechanism we further support with an in-depth analysis detailing how varying degrees of cross-task coupling impact the effectiveness of hierarchical splitting. Comprehensive testing across question answering, mathematical reasoning, and code generation benchmarks confirms that HierFlow consistently outperforms strong baselines, delivering an optimal balance of high-quality results and computational efficiency without any additional training overhead.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21609",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21609"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21610",
+    "title": "SCOPE and SCION: A Benchmark and an Auditable Reference Pipeline for Schema Induction and Fusion from Text",
+    "authors": [
+      "Miaobo Hu, Xiaobo Guo, Shuhao Hu, Bokun Wang, Rui Chen, Xin Wang, Daren Zha, Jun Xiao"
+    ],
+    "abstract": "arXiv:2607.21610v1 Announce Type: new \nAbstract: Schema graphs are an upstream bottleneck of schema-grounded information extraction and knowledge graph construction, yet most extraction systems assume the schema is already available. We introduce SCOPE (Schema Construction and Ontology-induction Pipeline Evaluation), a train-text-only benchmark for corpus-to-schema induction and optional schema fusion from raw text, built from 24 public information extraction sources (15 RE and 9 EE) normalized into evaluation-only gold schema graphs; its core event-extraction target covers event types and within-event argument roles, with inter-event links reported separately. We present SCION (Schema Construction and Induction with Ontology Normalization), an auditable reference pipeline rather than a new extraction architecture; it constructs candidate spaces from train text and restricts naming, merging, filtering, validation, and conservative fusion to candidate-linked evidence under strict JSON contracts. On the SCOPE core suite, SCION-lite attains the highest F1 among released source-schema references, Text2Onto-style, LLM-only, and matched extract-then-aggregate baselines under Literal, Fuzzy, Continuous, and Graph schema-graph metrics, while the compact open-model SCION-RL variant reduces reliance on proprietary LLM schema engineers. These results are reported against normalized typed-edge targets rather than as claims that induced schemas surpass human ontology design; the release includes evidence-linked outputs, parse/fallback logs, candidate retention/merging logs, run manifests, code, and benchmark packages at https://github.com/wandugu/paper_scion.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21610",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21610"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21612",
+    "title": "Procedural Knowledge Is Not Low-Rank: Why LoRA Fails to Internalize Multi-Step Procedures",
+    "authors": [
+      "Simon Dennis, Kevin Shabahang, Hao Guo, Rivaan Patil"
+    ],
+    "abstract": "arXiv:2607.21612v1 Announce Type: new \nAbstract: Parameter-efficient fine-tuning methods like LoRA have become the default for adapting large language models, succeeding across instruction following, style transfer, and factual adaptation. We show that for procedural knowledge--the ability to follow multi-step procedures with conditional branching through to terminal states--LoRA fails to match full fine-tuning at the ranks where it retains its efficiency advantage. In a systematic ablation (r = 16--128) on a procedural travel booking task (14 nodes), all LoRA configurations fail uniformly (task success <= 2.54 vs. 4.11 for full fine-tuning, all p < 0.001), with scores decreasing at higher ranks--despite maintaining 95--99% conversation completion rates. Cross-domain replication on Zoom support (14 nodes) and insurance claims (55 nodes) at 8B confirms the failure generalizes: LoRA underperforms full fine-tuning by 0.8--2.2 points on average at both r = 32 and r = 128, with the largest gap on the most complex procedure. Quadrupling rank from 32 to 128 provides marginal improvement but does not close the gap. SVD analysis of the weight changes produced by full fine-tuning explains why: across three domains at both 3B and 8B, the mean effective rank of the update ranges from 761 to 1,026, and rank 128 captures only 43--51% of the squared Frobenius norm. Together, these findings establish that for procedural tasks LoRA falls well short of full fine-tuning--a fundamental limitation for agentic applications.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21612",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21612"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21614",
+    "title": "Household Movement Detection in Mixed-Format Occupancy Data Using LLM-Based Entity Resolution",
+    "authors": [
+      "Sasirekha Oguri, John R. Talburt, Mert Can Cakmak"
+    ],
+    "abstract": "arXiv:2607.21614v1 Announce Type: new \nAbstract: Entity resolution (ER) typically relies on pairwise similarity comparisons between records, which limits its ability to capture indirect relationships present in demographic occupancy data. An important indirect pattern arises from household movement, where multiple individuals relocate together across addresses, but detecting such patterns is difficult due to mixed-format records, noise, duplication, and the absence of stable identifiers. This paper proposes an AI-enhanced framework for detecting indirect entity links associated with household movement in unstandardized name-address data. The approach integrates prompt-based large language model (LLM) named entity recognition for extracting personal names and addresses without extensive preprocessing, semantic text embeddings for robust similarity computation, and graph-based reasoning to infer group-level movement patterns. Experimental evaluation on SPX benchmark datasets (S8-S12) generated using the Synthetic Occupancy Generator demonstrates that incorporating indirect household movement evidence improves recall by 8-15% while maintaining high precision, yielding F1-score gains of 6-8% over a strong pairwise baseline.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21614",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21614"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21616",
+    "title": "Lost in Context: Addressing Context Anxiety in Large Language Models",
+    "authors": [
+      "Ifueko Igbinedion, Jillian Ross, Etienne Ricardez, Sertac Karaman, Eric So"
+    ],
+    "abstract": "arXiv:2607.21616v1 Announce Type: new \nAbstract: Conventional wisdom suggests that reasoning models fail when problems exceed their capabilities. However, we find that frontier reasoning models sometimes possess the necessary capabilities to solve problems but fail due to premature self-doubt -- a phenomenon informally known as context anxiety. We provide the first systematic study of context anxiety, demonstrating that it arises, in part, from a model's inability to accurately estimate the tokens required to complete a task. We also show that context anxiety leads to material efficiency losses when models operate under perceived constraints. Building on this analysis, we further show that models can learn alternative strategies for solving long-horizon problems without exhibiting context anxiety, suggesting that performance improvements may be achievable not through scaling model capabilities, but by improving models' ability to accurately assess and adapt to their own limitations.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21616",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21616"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21617",
+    "title": "Do VLMs Read or Rewrite? On Transcription Faithfulness in Vision-Language Models",
+    "authors": [
+      "Gwang Gook Lee, Kenan Emir Ak, Jay Mohta, Yan Xu, Dimitrios Dimitriadis"
+    ],
+    "abstract": "arXiv:2607.21617v1 Announce Type: new \nAbstract: Vision Language Models (VLMs) are increasingly used in place of traditional OCR pipelines for document understanding. In this paper, we show they do not always act as faithful transcribers: when text is imperfect, they often tend to rewrite it into a more plausible form - a behavior that clean-text OCR benchmarks cannot detect. We introduce FaithC4, a multilingual perturbation benchmark of 1,455 single-page documents (English, Chinese, Korean) with three perturbation families: scramble, random substitution, and visually similar substitution. We use the benchmark to evaluate 15 systems spanning general-purpose VLMs, OCR-specialized VLMs, and traditional OCR pipelines. These three categories differ in WER degradation under perturbation: general-purpose VLMs degrade by up to 4.5 points, OCR-specialized VLMs by 0.2-2 points, and traditional OCR by less than 0.6 points on English. Probing Qwen3-VL-4B layer-by-layer, we identify a consistent pattern: rewriting fires only when a perturbed word's final layer FFN representation stays close to the original encoding; when the representation diverges sufficiently, the model transcribes faithfully. Word length affects rewriting rate: short words (4-6 characters) are rewritten up to 10% of the time, with a sharp cutoff at 8 characters above which rewriting drops to 0%.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21617",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21617"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21620",
+    "title": "From Profiles to Steering Vectors: Global Sparse Priors and Local Semantic Calibration for Personalized Text Generation",
+    "authors": [
+      "Liuji Chen, Zeyu Zhang, Xinyuan Zhang, Shuai Nie, Qiang Liu, Shu Wu, Liang Wang"
+    ],
+    "abstract": "arXiv:2607.21620v1 Announce Type: new \nAbstract: Personalized text generation requires models to capture user-specific writing styles from historical data. Existing approaches based on retrieval, parameter-efficient fine-tuning, or activation steering either introduce inference and storage overhead or struggle to separate stylistic signals from semantic content. We propose GLASS, a training-free framework for personalized generation via Global-Local Activation Steering with Sparse priors. GLASS uses sparse autoencoders to extract a global user-style prior from historical responses and constructs local contrastive style vectors over clustered interaction scenarios. During inference, it jointly injects global and local vectors into different model layers, enabling context-aware personalization without retrieval or parameter updates. Experiments on LaMP and LongLaMP show that GLASS outperforms retrieval-, fine-tuning-, and steering-based baselines across ROUGE metrics and LLM-as-judge evaluations. Further analyses show that SAE-based representations are more robust to topic and length shifts, suggesting better disentanglement of stylistic information from semantic residue.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21620",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21620"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21624",
+    "title": "FBLayout: Optimizing Memory Layout for Efficient LLM Finetuning on Mobile GPUs",
+    "authors": [
+      "Kahou Tam, Wei Niu, Yu Bao, Xiaomin Ouyang, Chengzhong Xu, Li Li"
+    ],
+    "abstract": "arXiv:2607.21624v1 Announce Type: new \nAbstract: Transformer-based models have enabled unprecedented capabilities across language, vision, and multimodal tasks. On-device fine-tuning of transformer models offers a privacy-preserving path to personalized AI, yet remains inefficient on mobile GPUs due to severe memory constraints and frequent layout transformations in attention mechanism during training. Existing mobile training frameworks either use unified layouts for forward and backward passes -- leading to fragmented memory access and poor GPU utilization during backpropagation -- or rely on explicit layout conversions, which introduce significant transformation overhead.\n  To overcome this, we propose FBLayout, a layout-aware framework that co-designs tensor organization with mobile GPU platforms. FBLayout introduces: (1) a unified R-Tile layout for multi-dimensional reductions across forward/backward passes; (2) tile-based index transformation to eliminate physical data movement; and (3) activation-guided layout selection to propagate efficient layouts globally. Evaluations on seven transformer models across different mobile phones (including ARM Mali and Qualcomm Adreno GPUs) show that FBLayout achieves 2.2-5.7x speedup over MNN, TFLite, and TVM, while significantly improving cache efficiency and reducing memory footprint, enabling practical on-device large model fine-tuning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21624",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21624"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21625",
+    "title": "Trajectory-Aware Retrieval Agents for Temporal Decision- Making",
+    "authors": [
+      "Jing Wang, Jie Shen, Xing Niu"
+    ],
+    "abstract": "arXiv:2607.21625v1 Announce Type: new \nAbstract: We study the problem of decision-making from long-form, temporally structured text using large language model (LLM) agents. Standard retrievalaugmented generation (RAG) pipelines fragment chronological context into isolated snippets, discarding the temporal structure that is often critical for correct downstream decisions. We introduce TLM (Trajectory Language Model), a closed-loop agentic framework that iteratively refines the evidence set using SHAP-guided feedback. The key technical contribution is the latent growth curve model (LGCM) over retrieved chunk embeddings, which provides an interpretable mechanism for detecting trajectory trends, turning points, and information gaps. We show that, under a scorer-calibration assumption (which holds approximately in practice), the iterative refinement procedure is monotonically non-decreasing in the probability assigned to the correct label. Empirically, TLM is evaluated on three temporally grounded decision tasks: medical question answering, earnings call surprise prediction, and overnight stock gap prediction. TLM substantially outperforms both zero-shot LLM baselines and standard retrieval-augmented approaches on the medical task, and yields consistent, economically meaningful gains on the two financial tasks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21625",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21625"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21635",
+    "title": "Toward User-Conditioned Evaluation of Personal LLM Agents under Temporal Interventions",
+    "authors": [
+      "Pin Qian, Su Wang, Yihang Chen, Qiaolin Yu, Xiaoyuan Wang, Zhitong Guo, Zhicheng Wang, Junxian You"
+    ],
+    "abstract": "arXiv:2607.21635v1 Announce Type: new \nAbstract: Personal agents maintain memories, learned skills, tool configurations, and policy state that evolve with each user. Existing agent benchmarks often evaluate these capabilities in isolation: tool benchmarks test invocation under fixed APIs, memory benchmarks test recall or forgetting, and safety benchmarks test static policy compliance. We argue that personal-agent evaluation requires a different protocol: replaying the same temporal intervention across different persistent user-conditioned states and measuring how failures propagate across agent components. We formalize this requirement as four conditions: explicit temporal intervention, persistent state across the intervention, induced cross-dimensional effects, and variation in user-conditioned state. A focused audit of public benchmark protocols selected by explicit inclusion criteria identifies several close cases. Under our explicitly narrow operationalization, we did not find a protocol in that audited set satisfying all four conditions. This claim is scoped as a focused gap analysis with bounded literature coverage. This position paper proposes a minimal benchmark design and candidate reporting metrics for user-conditioned adaptation. The result is a concrete design requirement for future personal-agent evaluation, with metrics used as reporting tools for that requirement.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21635",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21635"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21653",
+    "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
+    "authors": [
+      "Jian Hu, Huiying Li, Hao Zhang, Binfeng Xu, Yifan Zhang, Shaokun Zhang, Hemil Desai, Michael Demoret, Pavlo Molchanov, Jan Kautz, Yi Dong"
+    ],
+    "abstract": "arXiv:2607.21653v1 Announce Type: new \nAbstract: Agentic reinforcement learning research is constant algorithm modification, new estimators, new pipeline stages, new rollout schemes, and in mainstream frameworks each change threads through layers of trainer, distributed backend, and rollout glue: the cost lands on the researcher at every iteration. Molt is a PyTorch-native training framework built to keep that cost small: a codebase compact and clean enough for a researcher to hold in their head, and for an AI coding assistant to read and reason about in its entirety, so the algorithm flow can be traced and changed end to end. The agent is an ordinary program, and one asynchronous loop trains multimodal and mixture-of-experts policies while never training on a token it did not generate, consistent in tokens, policy versions, and model semantics. Leanness does not cost performance: under a matched, fully asynchronous protocol, Molt is statistically comparable to a state-of-the-art Megatron-based stack. Molt is open source and provides recipes and containers at https://github.com/NVIDIA-NeMo/labs-molt.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21653",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21653"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21680",
+    "title": "Encoding Invisible Causation for Bridge Diagnostic Agents: Triple-Guided Retrieval-Augmented Fine-Tuning with QLoRA",
+    "authors": [
+      "Takato Yasuno"
+    ],
+    "abstract": "arXiv:2607.21680v1 Announce Type: new \nAbstract: Bridge infrastructure deteriorates gradually, yet its root causes---salt intrusion, freezing, fatigue cracking, and others---remain invisible to the naked eye. Expert diagnosis relies on tacit knowledge built over years of practice. We address the challenge of automating this latent causal reasoning by proposing a Damage Cause Encoder that classifies 10-class damage causes from visible damage descriptions $S_i$ for use in autonomous bridge diagnostic agents. Our approach chains three components: (i)Knowledge Triple Extraction---a large language model extracts causal triples of the form (damage $\\xrightarrow{\\mathtt{caused\\_by}}$ cause) from 15--35 diagnostic PDF manuals and indexes them in a FAISS vector store; (ii)Retrieval-Augmented Context---at training and inference time, relevant causal triples $\\mathcal{C}_i$ are retrieved and concatenated with $S_i$, converting implicit domain knowledge into explicit Encoder context; (iii)Systematic Fine-tuning Comparison---we conduct a rigorous comparison of LoRA, QLoRA, and QA-LoRA on a fixed Golden Testset (116 stratified samples), demonstrating that QLoRA achieves the optimal trade-off: identical test accuracy (87.07%) to full-precision LoRA, 11% faster inference, 72% lower GPU memory, and superior generalization across diverse unseen inputs. A controlled Golden Testset---stratified, deduplicated, and difficulty-tagged---is introduced as a reusable benchmark contribution. QLoRA further outperforms LoRA by 13 percentage points on a 100-sample diverse evaluation spanning all 10 damage cause classes.These findings enable memory-efficient, high-accuracy diagnostic agents on consumer-grade hardware for edge deployment.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21680",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21680"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21716",
+    "title": "A Defense of the Quadratic Model",
+    "authors": [
+      "Alexandru Meterez, Pranav Ajit Nair, Depen Morwani, Cengiz Pehlevan, Sham Kakade, Alex Damian"
+    ],
+    "abstract": "arXiv:2607.21716v1 Announce Type: new \nAbstract: Due to the complexity of neural network loss landscapes, optimization theory is forced to rely on idealized models, and there is generally a tradeoff between how theoretically tractable the model is, and how accurately it describes the true optimization dynamics. In this work, we stress test the simplest possible model of optimization -- the quadratic model -- and show that it can be surprisingly predictive in an LLM setting with 150M parameters and 3B training tokens. Specifically, we show that Taylor expanding the model and the loss function at intermediate checkpoints through training can accurately predict the optimization dynamics over windows that can last up to 10\\% of training. Having established this agreement, we then turn to analyzing the structure of these local quadratic optimization problems through two lenses: the Hessian spectrum and local stability. Using Lanczos quadrature with extremely deep probes, we are able to estimate the Hessian spectrum deep into the tail, and we find a surprising amount of structure in both the eigenvalues and eigenvectors, which depends on the batch size, preconditioner, and training time. We also empirically test local linear stability at intermediate checkpoints and compare it to theoretical predictions to demonstrate that optimization in LLMs typically occurs at a stochastic edge of stability, whose nature is also determined by batch size. Our results indicate the quadratic model may be a theoretically tractable proxy for pretraining optimization dynamics.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21716",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21716"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21722",
+    "title": "Be Consistent! Enhancing Robust Visual Reasoning in LVLMs with Consistency Constraints",
+    "authors": [
+      "Liqiang Jing, Xiong Zhou, Siddharth Varia, Neha Anna John, Xinya Du, Vassilis N. Ioannidis"
+    ],
+    "abstract": "arXiv:2607.21722v1 Announce Type: new \nAbstract: While Large Vision-Language Models (LVLMs) exhibit strong perceptual capabilities, they remain vulnerable in visual reasoning tasks. Existing benchmarks largely focus on symbolic mathematical or scientific problems and simple vision-centric tasks, offering limited assessment of complex visual reasoning and logical consistency, a critical requirement for reliable reasoning systems. We introduce ConVBench, a complex vision-centric reasoning benchmark in which each image is paired with two logically equivalent questions across six categories: action and state, complex counting, spatial reasoning, causal and intent understanding, commonsense reasoning, and temporal perception. To complement this benchmark, we define two evaluation metrics, logical consistency and robust accuracy, that jointly assess both the correctness and consistency of model responses. We further present ConVLM, which improves LVLM reasoning through Group Relative Policy Optimization (GRPO)-based reinforcement learning with a novel consistency reward. This method leverages automatically generated logically equivalent question-answer pairs and a dual-reward design combining accuracy- and consistency-based signals, encouraging agreement between paired responses. The framework functions effectively with or without strict answer supervision.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21722",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21722"
+      }
+    ]
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.21850",
+    "title": "SCALE: Self-Supervised Constraint-Aware Layout GEneration for Local P&R DRV Fixing at Advanced Nodes",
+    "authors": [
+      "Chia-Tung Ho, Haoyu Yang, Guanglei Zhou, Yoshi Nishi, Yaguang Li, Walker Turner, Cunxi Yu, Yiran Chen, Brucek Khailany"
+    ],
+    "abstract": "arXiv:2607.21850v1 Announce Type: new \nAbstract: As semiconductor manufacturing advances toward sub-2nm nodes, local place-and-route (P&amp;R) design-rule violation (DRV) fixing is increasingly limited by complex rule interactions, dense multi-layer routing geometries, and foundry-specific constraints. While Large Language Models (LLMs) have recently demonstrated strong capabilities in EDA scripting and documentation, their application to visual layout understanding remains largely unexplored: diagnosing DRC violations from layout imagery demands precise geometric reasoning and foundry-specific rule knowledge absent from general-purpose VLM training. We propose SCALE, a framework with a self-supervised layout-generation stage for local DRV fixing at advanced nodes. Multi-layer layout geometry is serialized into structured text, and a fine-tuned language model learns to reconstruct randomly masked polygons from surrounding BEOL context alone without violation labels. At inference, natural-language rule constraints and high-temperature sampling steer generation toward diverse, violation-prone layout variants validated by an industrial signoff DRC checker, producing DRC-annotated layout--violation pairs used to fine-tune a domain-adapted DRC-VLM. This VLM provides rule-aware geometric guidance for local DRV repair, boosting state-of-the-art agents' solve rates by +12--25% (up to 97%) on 100 real sub-2nm cases spanning enclosure, spacing, width, and color-spacing violations.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "updated": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21850",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.21850"
+      }
+    ]
+  }
+]
