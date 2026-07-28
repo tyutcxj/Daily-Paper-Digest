@@ -1,0 +1,282 @@
+[
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21604",
+    "title": "AgentKVShift: Efficient KV Cache Reuse for Agentic Memory Systems",
+    "authors": [
+      "Nilesh Prasad Pandey, Jason Kong, Lanxiang Hu, Quanling Zhao, Yujie Zhao, Onat Gungor, Hao Zhang, Tajana Rosing"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21604",
+    "summary": "研究问题：结构化智能体记忆的KV缓存重用效率低  \n主要方法：基于探针引导的KV残差校正，分解为共享偏移和逐词波动  \n关键贡献：无需训练，通过单加权校正提升缓存重用质量",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21850",
+    "title": "SCALE: Self-Supervised Constraint-Aware Layout GEneration for Local P&R DRV Fixing at Advanced Nodes",
+    "authors": [
+      "Chia-Tung Ho, Haoyu Yang, Guanglei Zhou, Yoshi Nishi, Yaguang Li, Walker Turner, Cunxi Yu, Yiran Chen, Brucek Khailany"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21850",
+    "summary": "研究问题：先进节点局部布局布线中设计规则违反的自动修复。\n主要方法：通过自监督布局生成，将多层几何序列化为文本，微调语言模型重建掩码多边形，并用DRC检查器生成标注数据。\n关键贡献：提出SCALE框架，利用自监督学习和语言模型实现无标签的DRV修复，结合自然语言约束生成多样化布局变体。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21612",
+    "title": "Procedural Knowledge Is Not Low-Rank: Why LoRA Fails to Internalize Multi-Step Procedures",
+    "authors": [
+      "Simon Dennis, Kevin Shabahang, Hao Guo, Rivaan Patil"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21612",
+    "summary": "研究问题：LoRA在程序性知识任务中为何无法匹配全参数微调效果。  \n主要方法：在旅行预订、Zoom支持和保险理赔三个程序性任务上，对LoRA（秩16-128）进行系统消融实验，并分析全微调权重变化的SVD有效秩。  \n关键贡献：发现程序性知识更新矩阵有效秩高达761-1026，秩128仅捕获43-51%信息，解释了LoRA在高阶程序推理中的根本性失败。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21620",
+    "title": "From Profiles to Steering Vectors: Global Sparse Priors and Local Semantic Calibration for Personalized Text Generation",
+    "authors": [
+      "Liuji Chen, Zeyu Zhang, Xinyuan Zhang, Shuai Nie, Qiang Liu, Shu Wu, Liang Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21620",
+    "summary": "研究问题：如何从历史数据中捕捉用户写作风格实现个性化文本生成。  \n主要方法：提出GLASS框架，利用稀疏自编码器提取全局风格先验，构建局部对比风格向量，在推理时注入不同模型层。  \n关键贡献：无需训练或检索，实现上下文感知个性化，在LaMP和LongLaMP上超越现有基线，且风格与语义分离更鲁棒。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21609",
+    "title": "Coupled Hierarchical Search over Topology and Execution for Agentic Workflow Synthesis",
+    "authors": [
+      "Dong Li, Yanchi Liu, Xujiang Zhao, Wei Cheng, Zhengzhang Chen, Xintao Wu, Zhong Chen, Chen Zhao, Haifeng Chen"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21609",
+    "summary": "研究问题：自动化LLM工作流生成受限于巨大搜索空间和资源消耗。  \n主要方法：提出HierFlow，一种无训练、测试时层次搜索架构，结合反馈引导拓扑调整与MCTS树搜索优化子工作流。  \n关键贡献：通过智能门控模块选择性触发执行搜索，分析跨任务耦合对层次拆分的影响，在问答、数学推理和代码生成任务上持续超越基线。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21616",
+    "title": "Lost in Context: Addressing Context Anxiety in Large Language Models",
+    "authors": [
+      "Ifueko Igbinedion, Jillian Ross, Etienne Ricardez, Sertac Karaman, Eric So"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21616",
+    "summary": "研究问题：大语言模型在推理时因“上下文焦虑”导致能力未充分发挥。  \n主要方法：系统分析模型因无法准确估计任务所需token数而产生过早自我怀疑的现象。  \n关键贡献：发现通过改进模型对自身局限的评估能力可提升性能，而非仅依赖扩展模型能力。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21600",
+    "title": "Securing Multimodal AI through Internal Information Decomposition",
+    "authors": [
+      "Jehyeok Yeon, Hyeonjeong Ha, Qiusi Zhan, Heng Ji"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21600",
+    "summary": "研究问题：多模态大语言模型面临跨模态攻击，现有单模态防御失效。\n主要方法：提出FlowGuard，通过内部信息分解监控跨模态一致性检测有害输入。\n关键贡献：将攻击成功率从>90%降至<15%，且效用损失<3%，速度提升6倍。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21722",
+    "title": "Be Consistent! Enhancing Robust Visual Reasoning in LVLMs with Consistency Constraints",
+    "authors": [
+      "Liqiang Jing, Xiong Zhou, Siddharth Varia, Neha Anna John, Xinya Du, Vassilis N. Ioannidis"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21722",
+    "summary": "研究问题：LVLMs在复杂视觉推理中缺乏逻辑一致性评估与优化。\n主要方法：提出ConVBench基准和ConVLM模型，通过GRPO强化学习与一致性奖励提升推理一致性。\n关键贡献：定义逻辑一致性与鲁棒准确率指标，并设计双奖励机制优化模型。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21602",
+    "title": "Transferable Latency Prediction for Fast LLM Screening on Heterogeneous Edge Devices",
+    "authors": [
+      "Xiaolong Tu, Vinod K. Mishra, Venkat R. Dasari, Anu G. Bourgeois, Haoxin Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21602",
+    "summary": "研究问题：异构边缘设备上LLM部署的延迟预测  \n主要方法：运行时感知的延迟预测框架，分离推理阶段并融合静态描述与动态硬件遥测  \n关键贡献：跨设备迁移校准显著提升预测精度，R-squared从负值提升至0.94以上",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21614",
+    "title": "Household Movement Detection in Mixed-Format Occupancy Data Using LLM-Based Entity Resolution",
+    "authors": [
+      "Sasirekha Oguri, John R. Talburt, Mert Can Cakmak"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21614",
+    "summary": "研究问题：检测混合格式人口数据中的家庭迁移间接实体关联  \n主要方法：结合LLM命名实体识别、语义文本嵌入和图推理  \n关键贡献：在SPX基准上召回率提升8-15%，F1分数提升6-8%",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21596",
+    "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+    "authors": [
+      "Zeyu Ren, Ling Yue, Ran Li, Yishu Wang, Shengxiang Xu, Hanmo Liu, Shaowu Pan, Shimin Di"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21596",
+    "summary": "研究问题：LLM代理执行任务时发现的临时流程无法被系统性地保留和复用于未来任务。\n主要方法：提出FlowEvo框架，通过工作流到技能编译、技能到工作流反馈和技能筛选三个机制，将成功执行轨迹编译为可复用的技能记录并存入技能库。\n关键贡献：实现无需训练的代理自我进化，通过工作流与技能的协同演化，使代理能持续积累和优化任务解决能力。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21680",
+    "title": "Encoding Invisible Causation for Bridge Diagnostic Agents: Triple-Guided Retrieval-Augmented Fine-Tuning with QLoRA",
+    "authors": [
+      "Takato Yasuno"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21680",
+    "summary": "研究问题：桥梁病害原因自动化诊断\n主要方法：三元组提取+检索增强+QLoRA微调\n关键贡献：QLoRA在保持87.07%准确率下，推理快11%，GPU内存降72%",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21625",
+    "title": "Trajectory-Aware Retrieval Agents for Temporal Decision- Making",
+    "authors": [
+      "Jing Wang, Jie Shen, Xing Niu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21625",
+    "summary": "研究问题：从长时结构化文本中进行时序决策  \n主要方法：TLM框架，结合SHAP反馈迭代优化证据集，使用潜在增长曲线模型检测轨迹趋势  \n关键贡献：提出可解释的时序结构建模方法，保证迭代过程单调提升正确标签概率",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21624",
+    "title": "FBLayout: Optimizing Memory Layout for Efficient LLM Finetuning on Mobile GPUs",
+    "authors": [
+      "Kahou Tam, Wei Niu, Yu Bao, Xiaomin Ouyang, Chengzhong Xu, Li Li"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21624",
+    "summary": "研究问题：移动GPU上Transformer模型微调时内存布局转换开销大  \n主要方法：提出FBLayout框架，采用统一R-Tile布局、基于Tile的索引变换和激活引导布局选择  \n关键贡献：实现2.2-5.7倍加速，提升缓存效率并减少内存占用",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21597",
+    "title": "Risk Is Not the Target: A Monotonic Framework for Evaluating Wildfire Operational Risk Signals",
+    "authors": [
+      "Nicolas Caron, Christophe Guyeux, Maxime Coulmeau, Benjamin Aynes"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21597",
+    "summary": "研究问题：现有机器学习指标无法评估野火风险信号的操作一致性。  \n主要方法：提出单调性评估框架，比较DFE指数、GRU模型和FARS混合系统。  \n关键贡献：证明风险模型应解释操作动态而非准确预测火灾。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21617",
+    "title": "Do VLMs Read or Rewrite? On Transcription Faithfulness in Vision-Language Models",
+    "authors": [
+      "Gwang Gook Lee, Kenan Emir Ak, Jay Mohta, Yan Xu, Dimitrios Dimitriadis"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21617",
+    "summary": "研究问题：VLMs在文档理解中是否忠实转录文本，还是倾向于重写。  \n主要方法：构建多语言扰动基准FaithC4，评估15个系统在文本扰动下的转录表现。  \n关键贡献：发现VLMs在文本不完美时会重写为合理形式，并揭示重写行为与模型内部表征的关系。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21635",
+    "title": "Toward User-Conditioned Evaluation of Personal LLM Agents under Temporal Interventions",
+    "authors": [
+      "Pin Qian, Su Wang, Yihang Chen, Qiaolin Yu, Xiaoyuan Wang, Zhitong Guo, Zhicheng Wang, Junxian You"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21635",
+    "summary": "研究问题：现有个人智能体基准缺乏对用户条件化状态下时间干预的评估。  \n主要方法：提出四项条件（明确时间干预、持久状态、跨维度效应、用户条件化变化），审计公开基准协议。  \n关键贡献：发现审计集内无协议满足所有条件，提出最小基准设计与报告指标。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21716",
+    "title": "A Defense of the Quadratic Model",
+    "authors": [
+      "Alexandru Meterez, Pranav Ajit Nair, Depen Morwani, Cengiz Pehlevan, Sham Kakade, Alex Damian"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21716",
+    "summary": "研究问题：检验二次模型在LLM优化中的预测能力  \n主要方法：泰勒展开损失函数，结合Hessian谱分析和局部稳定性测试  \n关键贡献：证明二次模型可预测150M参数模型10%训练窗口的动力学，揭示Hessian谱的结构性特征",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21653",
+    "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
+    "authors": [
+      "Jian Hu, Huiying Li, Hao Zhang, Binfeng Xu, Yifan Zhang, Shaokun Zhang, Hemil Desai, Michael Demoret, Pavlo Molchanov, Jan Kautz, Yi Dong"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21653",
+    "summary": "研究问题：Agentic强化学习框架修改成本高，算法流程难以端到端追踪和修改。  \n主要方法：构建PyTorch原生训练框架Molt，采用紧凑代码库和异步循环，支持多模态和混合专家策略。  \n关键贡献：实现与Megatron相当的性能，同时保持代码简洁、可读性强，便于研究人员和AI助手理解。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2607.21610",
+    "title": "SCOPE and SCION: A Benchmark and an Auditable Reference Pipeline for Schema Induction and Fusion from Text",
+    "authors": [
+      "Miaobo Hu, Xiaobo Guo, Shuhao Hu, Bokun Wang, Rui Chen, Xin Wang, Daren Zha, Jun Xiao"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 27 Jul 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.21610",
+    "summary": "研究问题：文本到模式归纳与融合的基准和可审计流程缺失。\n主要方法：构建SCOPE基准和SCION可审计管线，通过候选空间构建和严格JSON合约实现模式归纳。\n关键贡献：提出首个纯文本训练的模式归纳基准，SCION-lite在多项指标上超越现有基线。",
+    "language": "zh"
+  }
+]
