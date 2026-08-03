@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2607.28708",
+    "title": "MMFGU: Multimodal Federated Graph Unlearning",
+    "authors": [
+      "Haodong Lu, Zekai Chen, Weiwei Ji, Shihao Li, Xunkai Li, Xun Wu, Yinlin Zhu, Rong-Hua Li"
+    ],
+    "abstract": "arXiv:2607.28708v1 Announce Type: new \nAbstract: Multimodal federated graph learning enables clients to collaboratively train graph models over structural, textual, and visual signals without sharing private local data. However, the presence of heterogeneous multimodal content also makes unlearning requests more frequent and fine-grained: users may delete accounts or interactions, remove a particular image or text while retaining the associated entity, or revoke the learned correspondence between retained modalities or graph attributes. Existing federated graph unlearning mainly handles entity/relation or client removal and cannot directly satisfy these multimodal requests. They introduce three challenges: removing only the requested information without damaging retained content, preventing the target from being recovered through remaining modalities or graph neighborhoods, and stopping related traces on other clients from re-entering the global model after aggregation. To address them, we propose \\textsc{\\textbf{MMFGU}}, a multimodal federated graph unlearning framework built around target-specific representation decoupling. \\textsc{MMFGU} maps heterogeneous requests into unified target carriers, decouples requested representations while anchoring retained semantics, exposes and repairs propagated residuals with lightweight probes, and selectively purges affected clients through compact prototype and response signals. Experiments show that \\textsc{MMFGU} effectively removes requested information, preserves retained graph utility, and achieves a $\\boldsymbol{41.5\\times}$ speedup over full retraining.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28708",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28708"
+      }
+    ],
+    "relevance_score": 0.5951204093865623,
+    "max_similarity": 0.35836068257431664
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28826",
+    "title": "Distilling Knowledge from Large Language Models into Lightweight Reinforcement Learning Agents for Autonomous Cyber Operations",
+    "authors": [
+      "Konur Tholl, Fran\\c{c}ois Rivest, Mariam El Mezouar, Adrian Taylor, Ranwa Al Mallah"
+    ],
+    "abstract": "arXiv:2607.28826v1 Announce Type: new \nAbstract: Autonomous Cyber Operations (ACO) are increasingly important for defending enterprise networks as cyber threats continue to evolve in sophistication. ACO applications commonly employ Reinforcement Learning (RL) agents to learn defensive behaviors through interaction with environments. However, RL agents typically require extensive exploration during training, often resulting in unstable behavior and poor initial decision-making before converging toward effective defense strategies.\n  In this work, we investigate the use of a Large Language Model (LLM) to improve autonomous defensive decision-making within an ACO environment. Through prompt engineering rather than fine-tuning, we demonstrate that an 8-billion parameter LLM pretrained on cybersecurity data can outperform a baseline RL agent in a modified CybORG CAGE Challenge 2 environment. We then propose an online policy distillation framework that transfers the LLM's defensive policy into a lightweight RL agent containing only 64,910 parameters, reducing model size by several orders of magnitude while maintaining effective defensive capabilities. This provides a pathway toward operationalizing frontier cybersecurity models within lightweight, deployable agents.\n  To evaluate transferability, we construct CybORG scenarios ranging from 4 to 12 hosts and assess the approach across varying network configurations. We also evaluate teacher-guided RL stabilization strategies and observe that none consistently surpass the optimized teacher policy, suggesting policy-alignment limitations between reward-driven RL optimization and teacher-guided defense strategies.\n  Our results demonstrate the potential of cybersecurity-focused LLMs as sources of expertise for autonomous cyber defense, while policy distillation provides a practical path toward operationalizing frontier cybersecurity models within efficient, scalable agents.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28826",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28826"
+      }
+    ],
+    "relevance_score": 0.4944339756259376,
+    "max_similarity": 0.23340947160375178
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28969",
+    "title": "SafeNexus: Discovering and Steering Modality-Universal Safety Neurons in MLLMs",
+    "authors": [
+      "Jian Yu, Fei Shen, Cong Wang, Jian Wang, Lu Jin. Xiaoyu Du, Jinhui Tang, Tat-Seng Chua"
+    ],
+    "abstract": "arXiv:2607.28969v1 Announce Type: new \nAbstract: Although Large Language Models (LLMs) have demonstrated promising safety performance, extending them to Multimodal Large Language Models (MLLMs) exposes a significant gap between expanded multimodal capabilities and existing safety mechanisms. Current defenses remain predominantly confined to specific modal settings, thereby limiting their robustness against broader cross-modal threats. To bridge this gap, we introduce SafeNexus, a cross-modal safety alignment framework that adopts a dedicated neuron-level intervention strategy. First, we formulate a neuron localization paradigm that identifies functionally specialized neurons by characterizing intermediate-layer activation patterns and quantifying their functional salience through importance scoring. Building upon this paradigm, we exploit contrastive data to identify modality-bound safety neurons (BS-Neurons), and validate their role in regulating safety behavior within each modality via targeted suppression. Further cross-modal analysis defines modality-universal safety neurons (US-Neurons) as the shared subset of BS-Neurons identified across individual modalities, serving as the core for defending against harmful cross-modal attacks. We observe that suppressing these neurons substantially degrades safety performance across modalities, while leaving overall utility largely unaffected. Building on these insights, we propose two safety alignment strategies: activation-level safety amplifier and safety neuron calibrator. The proposed strategies enhance model safety through two distinct routes: the former amplifies the activation magnitudes of US-Neurons, while the latter selectively calibrates them via targeted fine-tuning. Extensive experiments demonstrate that our method outperforms prevailing state-of-the-art approaches on safety benchmarks spanning diverse modality combinations, while effectively preserving utility.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28969",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28969"
+      }
+    ],
+    "relevance_score": 0.47968503382972283,
+    "max_similarity": 0.21032827871334359
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28692",
+    "title": "SciToolAgent-Evo: An Ontology-Aware Self-Evolving Agent for Open-World Scientific Tool Acquisition",
+    "authors": [
+      "Yuqi Tang, Chenyi Zhou, Libin Wang, Keyan Ding, Qiang Zhang, Huajun Chen"
+    ],
+    "abstract": "arXiv:2607.28692v1 Announce Type: new \nAbstract: Large language model (LLM) agents have been increasingly adopted in scientific research for organizing and invoking specialized computational tools. However, their reliance on predefined tool spaces with static semantics limits their applicability to open-world scientific workflows, where tool requirements, capabilities, and boundaries evolve dynamically. To this end, we propose SciToolAgent-Evo, an ontology-aware self-evolving agent for open-world scientific tool acquisition. Driven by an evolving memory of skills, experiences, and an ontologized tool graph, it distills generalizable knowledge from contrastive trajectories during accumulation, whereas during inference, it formulates active requests and utilizes a LinUCB-based bandit gate to dynamically balance exploration and exploitation. Once a novel tool is acquired, its scientific ontology is completed online for seamless integration into the known graph. Moreover, we introduce OpenSciToolBench, a benchmark containing 900 realistic tasks across four difficulty levels. Extensive evaluations show that SciToolAgent-Evo achieves state-of-the-art performance, validating its robustness and generalization.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28692",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28692"
+      }
+    ],
+    "relevance_score": 0.47059468850201613,
+    "max_similarity": 0.2669295520745626
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28662",
+    "title": "An Ontology-Guided, Deduplication-Aware Extraction Layer for Knowledge Graph Construction from Heterogeneous Documents",
+    "authors": [
+      "Vaibhav Dangaich, Kevin Lewis, Kundeshwar Pundalik"
+    ],
+    "abstract": "arXiv:2607.28662v1 Announce Type: new \nAbstract: Large language models extract entities and relationships from unstructured documents fluently but inconsistently: type vocabularies fracture across documents, the same person surfaces under several name variants, relationships duplicate, and distinct individuals who share a name risk silent conflation. This paper presents the design, implementation, and empirical refinement of a production extraction layer that converts a live document stream into a validated knowledge graph aligned to a formal ontology. The system consumes document metadata from Kafka, routes PDF, spreadsheet, Office, and image content through handlers built for each format, and extracts entities and relationships in two passes using a locally hosted Qwen3.5-9B model tuned on the ontology. Its distinguishing component is ontology-guided extraction: the relevant slice of a curated ontology is retrieved live from a graph database by embedding similarity and injected into the extraction prompt, reducing catalog overhead by about 94 percent relative to static domain slices. Extracted results then pass through a refinement pipeline of five stages: deterministic cleaning, merging across chunks, a second pass for relationships, six deduplication algorithms that require no model inference, and an embedding resolution subsystem whose conflict guard no similarity score can override. Evaluation on intelligence corpora improved search recall from roughly 70 to 95 percent with no false merges, and corrected seven classes of silent quality defect, ranging from a bug that truncated source text by a single character to the systematic duplication of entities that carried title prefixes.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28662",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28662"
+      }
+    ],
+    "relevance_score": 0.46621910189003096,
+    "max_similarity": 0.19857538537091374
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28657",
+    "title": "TAPR: Enhancing LLM Performance with a Task-Aware Prompt Rewriter",
+    "authors": [
+      "Oliver Savolainen, Emanuele Bastianelli, Hosein Azarbonyad"
+    ],
+    "abstract": "arXiv:2607.28657v1 Announce Type: new \nAbstract: Large Language Models (LLMs) often require carefully crafted prompts to unlock their full potential, which can be a barrier for non-expert users. This work addresses the challenge by introducing a Task-Aware Prompt Rewriter (TAPR), a model that reformulates user prompts into task-optimized prompts with the explicit goal of improving downstream LLM performance. We train TAPR using reinforcement learning with Group Relative Policy Optimization (GRPO), where rewards are derived from LLM-as-judge evaluations of both the reformulated prompt and the corresponding task output. Experimental results on diverse tasks, such as question answering, summarization, and arithmetic reasoning, show that our method yields consistent gains over base models in prompt rewriting ability. Fine-tuning Phi-4-mini-instruct (as the base model for TAPR) produces prompts that contain clearer and more instructive language, leading to higher accuracy on established benchmarks such as Natural Questions and GSM8K. Our code is available at: https://github.com/OliverSavolainen/task-specific-prompt-rewriter",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28657",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28657"
+      }
+    ],
+    "relevance_score": 0.46436047319604484,
+    "max_similarity": 0.19365327024949572
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28677",
+    "title": "Reasoning in Real World Clinical Care: Why Large Language Models Are Not Yet Safe for Autonomous Clinical Decision Support",
+    "authors": [
+      "Shayndhan Sivanathan, Shravan Nageswaran, Mehdi Zadem, Ryaan Sultan, Nicolas von Mallinckrodt, Max Solovyev, Alexey Matyushkin, Sumon Sadhu, Gabriele C DeLuca, Sanjeeva Jeyaretna, James Hillis, Manoj Ramachandran, Prakash Jayakumar"
+    ],
+    "abstract": "arXiv:2607.28677v1 Announce Type: new \nAbstract: LLM now pass medical licensing examinations and, in curated cases, can rival physicians at diagnostic reasoning. These developments have accelerated the use of LLMs for symptom assessment and clinical decision support in diagnostic and treatment guidance, administrative documentation, and rules-based alert enhancement. This Perspective concerns the most consequential of these applications: the autonomous triage of self-presenting, undifferentiated patients, with little or no clinician in the loop. For that task, the evidence of safety does not yet exist. The gap is not in medical knowledge but in the fidelity of clinical evaluation: a model optimized to continue the most probable text is not optimized to act safely when the safe answer is the improbable must-not-miss diagnosis. Safe triage is not the selection of the most likely diagnosis; it is a sequential decision under asymmetric cost, in which the single catastrophic miss outweighs many false alarms, and the decisive signal may be one the patient has not volunteered - and that the model has not been trained to seek. The core deficit is therefore one of information gathering under uncertainty. Under incomplete histories, LLM systems may fail to show the behaviors safe triage requires: broadening the differential; seeking the missing red flag; lowering the threshold for escalation; deferring judgement until sufficient information is obtained; and escalating concern where high-harm diagnoses remain unexcluded. These modes of failure for LLMs can be difficult to detect considering that evaluations to date often use complete, well-curated, confidence-gated simulations. The application of LLMs under these conditions may be amplified by assistant-like behaviors and positive bias, including credulity, agreeableness, and miscalibration - when these are not constrained by clinical triage logic.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28677",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28677"
+      }
+    ],
+    "relevance_score": 0.4626678252186922,
+    "max_similarity": 0.19268294713602802
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28967",
+    "title": "Visual Distribution Anchoring for Efficient Prompt Tuning",
+    "authors": [
+      "Pouya Parsa, Raoof Zare Moayedi, Seongjin Choi"
+    ],
+    "abstract": "arXiv:2607.28967v1 Announce Type: new \nAbstract: Prompt tuning adapts vision--language models with few trainable parameters, but existing approaches trade off efficiency and adaptation: static textual prompts can overfit source classes, image-conditioned prompts add per-instance computation, and multimodal tuning modifies the visual branch. We propose VDA (Visual Distribution Anchoring), a training-free target adaptation framework that augments a frozen semantic classifier with class-level visual prototypes estimated offline from an unlabeled target pool. We first ask whether prototypes can be synthesized from class names. A text-to-centroid mapper reconstructs held-out source prototypes but fails under dataset shift because class names specify semantic identity, not target-domain appearance. An oracle analysis confirms that true target prototypes are highly discriminative. VDA therefore uses frozen semantic and domain-template classifiers to partition unlabeled target images into class-correlated groups. Confidence-ranked image features form normalized prototypes, fused with the semantic classifier using one global weight. Adaptation requires no target labels, target-side optimization, uniform class-prior assumption, iterative refinement, or test-query access, and yields a fixed, cacheable classifier. Controlled experiments show that class-specific partitioning drives gains and that visually local pseudo-label errors can remain useful despite being class-incorrect. Across ten ImageNet-to-target transfers, the same frozen design improves zero-shot CLIP, TCP, and MaPLe by 3.22, 3.39, and 3.35 points, respectively, improving nine of ten targets in every setting. Its visual correction further improves leakage-free PromptKD by 2.79 points, complementing zero-shot, source-prompted, multimodal-prompted, and target-distilled classifiers.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28967",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28967"
+      }
+    ],
+    "relevance_score": 0.4581752901080509,
+    "max_similarity": 0.18753288551257155
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28629",
+    "title": "OpenClaw and Ollama in Agentic AI: Toward Fully Autonomous and Scalable AI Agent Systems",
+    "authors": [
+      "Konstantinos I. Roumeliotis, Ranjan Sapkota"
+    ],
+    "abstract": "arXiv:2607.28629v1 Announce Type: new \nAbstract: The rapid transition from reactive large language models (LLMs) to persistent, action-capable systems has exposed critical gaps in the architectural understanding of Agentic AI, particularly in separating inference, orchestration, and execution layers for autonomous AI agents. Despite recent advances, unified frameworks for designing and evaluating full-stack agentic systems remain limited. This paper presents a comprehensive, layered architecture for Agentic AI, outlining the evolution from reactive LLM interfaces to persistent, goal-driven autonomous AI agents with memory, planning, and continuous execution. We analyze OpenClaw and Ollama as a full-stack Agentic AI system, where Ollama serves as the LLM inference layer and OpenClaw enables agent runtime orchestration, integrating reasoning, tool use, and action execution. A prototype experimental validation of the OpenClaw-Ollama architecture demonstrates that capabilities such as persistent memory, tool utilization, and adaptive decision-making emerge from system-level integration rather than standalone models, with performance improving consistently as architectural complexity increases. The study further examines challenges in scalability, security, privacy, governance, and evaluation of agentic systems, highlighting the need for robust benchmarking and system-level design. Future directions include scalable multi-agent architectures, distributed autonomous systems, and human-aware Agentic AI frameworks for responsible deployment. Overall, this work establishes a unified architectural foundation for Agentic AI, validates the effectiveness of full-stack autonomous AI agents, and provides a roadmap for building scalable, secure, and trustworthy agentic systems. All models, code, and datasets are publicly released to support reproducibility and benchmarking.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28629",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28629"
+      }
+    ],
+    "relevance_score": 0.4544069491965236,
+    "max_similarity": 0.18367087380247502
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28667",
+    "title": "Guarantees on Dynamical System Distinguishability for LLM Token Generation",
+    "authors": [
+      "Mohamed Akrout, Dan Wilson"
+    ],
+    "abstract": "arXiv:2607.28667v1 Announce Type: new \nAbstract: Recent work has shown that classifying large language models (LLMs)' responses can be distinguished by modeling token embeddings as trajectories of a black-box dynamical system (DS) and comparing prediction residuals of two DSs. Despite the empirical success of this dynamical approach, a theoretical understanding of why it works, how well it scales as a function of the token sequence, and when it transfers across embedding models remains lacking. We address these questions by formalizing the classification task as a binary hypothesis test between two stochastic linear DSs. We show that the total variation distance between the stationary marginal distributions of the two DSs can be arbitrarily small even when the dynamics differ substantially, which provides a fundamental accuracy floor for any classifier that ignores token dynamics. We then show that the misclassification probability of DS-based classification decays exponentially in the sequence length $L$, with the decay governed by a dynamical discriminability quantity $\\delta^2$ that captures the spectral distance between the two DSs. We also characterize cross-embedding generalization by introducing an approximate intertwining condition between embedding models and establishing a lower bound on the transferable discriminability in terms of the intertwining map's smallest singular value. Together, these results explain the empirical performance of DS-based classification and motivate further investigation into using DS theory to analyze AI systems, in contrast to the more common approach of using AI to model dynamical systems.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28667",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28667"
+      }
+    ],
+    "relevance_score": 0.4397974023136626,
+    "max_similarity": 0.16492013167960023
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28687",
+    "title": "Technological Advances in Detecting and Managing Cognitive Impairment in Older Adults: Trends, Challenges, and Future Directions",
+    "authors": [
+      "Mohammad Asif, Azizuddin Khan, Mohd Azam, Anurag Rajkumar Bombarde"
+    ],
+    "abstract": "arXiv:2607.28687v1 Announce Type: new \nAbstract: As populations age, cognitive decline from mild cognitive impairment (MCI) to dementia is a defining health challenge of the coming decades, yet routine assessment often misses its earliest signs. This article critically synthesizes recent technological advances for detecting and managing cognitive impairment in older adults, spanning neurophysiological signals (chiefly electroencephalography, EEG), structural and molecular neuroimaging (MRI and amyloid/tau PET), blood-based biomarkers, and digital markers, integrated through artificial intelligence (AI), machine learning (ML), and deep learning (DL). Beyond summarizing, it contributes a cross-disciplinary taxonomy, a methodological-rigor lens foregrounding subject- and site-independent validation, an integrative early-detection framework linking tiered screening to intervention, and comparison tables of detection methods, interventions, and risk and protective factors. EEG markers (alpha/theta changes, P300 latency) and deep models (CNNs, LSTM/BiLSTM, transformers, self-supervised EEG foundation models) report strong accuracy, yet many rest on small, single-site datasets unlikely to survive rigorous external validation. Elsewhere, gains are tangible: plasma p-tau217 has reached clinical utility, with the first blood test cleared to aid Alzheimer's diagnosis in 2025; anti-amyloid therapies (lecanemab, donanemab) are approved despite modest, contested benefits; and multidomain lifestyle prevention has matured. Wearable, remote, speech, and virtual-reality tools enable continuous, ecologically valid monitoring, and multimodal fusion improves sensitivity and specificity. Barriers remain: standardization, explainability, data privacy, and equitable, externally validated deployment. The field's near-term promise lies in trustworthy, multimodal, longitudinally validated systems linking early detection to actionable, personalized care.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28687",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28687"
+      }
+    ],
+    "relevance_score": 0.43218684891674564,
+    "max_similarity": 0.15519810327348962
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28751",
+    "title": "ReLoop-UME: Recurrent Depth with Learnable Retrieval Registers for Universal Multimodal Embedding",
+    "authors": [
+      "Shijie Wang, Xiangzhao Hao, Yueti Li, Guangyu Cao, Xinyu Tang, Haiyun Guo"
+    ],
+    "abstract": "arXiv:2607.28751v1 Announce Type: new \nAbstract: Universal multimodal embedding (UME) maps heterogeneous multimodal inputs into a shared embedding space. Existing UME models either form embeddings through single forward encoding or add computation through explicit rationale tokens and latent autoregressive states. Although token expansion can improve complex matching, serial generation increases retrieval latency and makes the final embedding depend on generated intermediate states. This raises a different question: can useful computation be expanded along model depth while keeping the token workspace fixed? We analyze positive-negative similarity separation at every layer of independently trained UME models and observe a shared progression: early layers contextualize multimodal inputs, a contiguous middle-to-late stage forms retrieval-discriminative features, and the final layers map them into the embedding space. Based on this finding, we propose ReLoop-UME, which executes the early layers once, recurrently reuses a parameter-shared retrieval-forming block, and applies the final mapping layers after the last loop. Learnable Retrieval Registers provide persistent retrieval-specific states that accumulate and exchange evidence across loops, with the final register serving as the embedding readout. On MMEB-V2 and MRMR, ReLoop-UME consistently improves retrieval across different backbones while running 44.9x faster than UME-R1 and 1.5x faster than PLUME.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28751",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28751"
+      }
+    ],
+    "relevance_score": 0.42820414866221745,
+    "max_similarity": 0.1500409466372081
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28631",
+    "title": "Can AI Evaluate AI Scientists? A Benchmarking Study of Autonomous Research Generation Systems Using Automated Multi-Model Review",
+    "authors": [
+      "Vaibhava Lakshmi Ravideshik, Mayank Kejriwal"
+    ],
+    "abstract": "arXiv:2607.28631v1 Announce Type: new \nAbstract: AI Scientist systems capable of autonomous research have the potential to significantly accelerate scientific discovery. However, evaluating and comparing the quality of AI-generated papers remains an open challenge. We propose and implement a rigorous benchmarking protocol using an automated peer-review system that harnesses frontier large language models to assess scientific papers across four core dimensions: originality, scientific rigor, clarity, and significance. We evaluate four leading AI Scientist frameworks: \\textit{Sakana AI (v1 & v2)}, \\textit{CycleResearcher}, and \\textit{Data-to-Paper}. Each framework was run on a consistent set of 15 research proposals published by a commercial autonomous AI scientist company (FARS), generating 60 papers that we evaluate alongside 15 FARS benchmark papers. Using three independent LLM reviewers (GPT-5.4, Gemini, and Claude), we find that FARS benchmark papers significantly outperform all competing frameworks, achieving mean scores of 2.14--2.47 on a 1--5 scale compared to 1.00--1.87 for other systems. Notably, FARS scores are more than 2$\\times$ higher than the next-best systems on Gemini and Claude evaluations. We find strong agreement among Gemini and Claude ($\\rho$ = 0.907, $p < 0.001$), and both correlate extremely strongly with the synthesis score ($\\rho$ = 0.961, $p < 0.001$), validating the reliability of automated evaluation. However, GPT-5.4 exhibits weaker agreement ($\\rho \\approx 0.32$), suggesting it evaluates papers using different criteria. These results establish the first quantitative benchmark for AI Scientist systems and demonstrate that multi-model LLM evaluation provides a scalable, consistent framework for assessing autonomous research quality.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28631",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28631"
+      }
+    ],
+    "relevance_score": 0.40504031076278435,
+    "max_similarity": 0.12208524972903752
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28942",
+    "title": "NeSyFS: A Neuro-symbolic Fast-Slow Thinking Framework for LLM Agent under Partial Observability",
+    "authors": [
+      "Duo Xu, Faramarz Fekri"
+    ],
+    "abstract": "arXiv:2607.28942v1 Announce Type: new \nAbstract: Recently Large Language Models (LLMs) have been increasingly deployed as autonomous agents in applications such as self-reflection, retrieval-augmented generation, and scientific discovery. In these settings, agents must act based on limited observations rather than full environmental states, leading to partial observability. This introduces several key challenges: belief state inference, task objective misalignment, and planning under uncertainty. Prior approaches typically condition actions on full or summarized action-observation histories whose redundant and irrelevant information can mislead the decision making of LLM agent. Inspired by human cognition, we propose a novel neuro-symbolic fast-slow thinking (NeSyFS) framework for LLM agent, addressing the challenges introduced by partial observability in a unified approach. We use a knowledge graph (KG) to represent the belief state, providing triplets as context for every module of NeSyFS. The fast-thinking module performs reactive action, while slow-thinking conducts a new uncertainty-aware planning by following the high-level structure of twisted sequential Monte Carlo (TSMC) algorithm. To mitigate the misalignment of task objective, a reflection module is used to reflect fast-thinking actions, and also switches to the slow-thinking module whenever reactive actions repeatedly fail. Experiments on three representative benchmarks, i.e. ALFWorld, Webshop, and ScienceWorld, demonstrate significant advantages over previous methods.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28942",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28942"
+      }
+    ],
+    "relevance_score": 0.401178622159423,
+    "max_similarity": 0.11683709459468011
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28674",
+    "title": "How Hard Does It Think? Analyzing Step-Aware Reasoning Energy in LLM Chain-of-Thought Trajectories",
+    "authors": [
+      "Hui Wei, Junda Wu, Sheldon Yu, Sizhe Zhou, Yizhu Jiao, Ming Zhong, Bowen Jin, Tong Yu, Shijia Pan, Jiawei Han, Julian McAuley"
+    ],
+    "abstract": "arXiv:2607.28674v1 Announce Type: new \nAbstract: Understanding how computational effort is allocated across individual chain-of-thought (CoT) reasoning steps remains an open challenge: existing interpretability methods rely on output-level signals or collapse processing depth into a single trajectory-level scalar, leaving step-wise effort opaque. We propose Step-Aware Reasoning Energy (SARE), a geometric framework that quantifies effort at the granularity of individual CoT steps via Centered Kernel Alignment (CKA) between Gram matrices of token hidden states across adjacent transformer layers, capturing inter-token relational structure without requiring eigenvector alignment or cluster correspondence. SARE further contextualizes this energy within reasoning's semantic progression by modeling CoT trajectories as transitions among latent semantic states. Across six reasoning benchmarks and three open-weight LLMs, we find that reasoning energy is highly non-uniform across step types, exhibiting phase-like transitions invisible to trajectory-level metrics; incorrect trajectories show systematically lower energy at critical reasoning junctions; and SARE-based features match or outperform output-based confidence baselines in most settings, indicating that internal geometric dynamics encode predictive information beyond surface-level signals.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28674",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28674"
+      }
+    ],
+    "relevance_score": 0.3919800943728131,
+    "max_similarity": 0.16753714569700537
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28696",
+    "title": "Mitigating Class-Tail Undercoverage in Medical Vision-Language Models under Clinical Shift",
+    "authors": [
+      "Mushir Akhtar, M. Tanveer"
+    ],
+    "abstract": "arXiv:2607.28696v1 Announce Type: new \nAbstract: Medical vision-language models (VLMs) can retain high observed marginal coverage after clinical shift while substantially under-covering an individual disease class. The affected class varies with acquisition protocol and backbone geometry, so source prevalence does not reliably reveal the failure. Existing localized and tail-aware conformal methods respectively adapt to test neighborhoods and source-frequency tails, leaving held-out class-wise coverage failure unmodeled. We introduce Class-Tail Adaptive Localized Conformal Deferral (CALCoDe), a post-hoc reliability layer for frozen medical VLMs. Cross-fitted validation predictions identify classes at risk of undercoverage, and a disjoint calibration split estimates their class-conditional tail thresholds. CALCoDe combines each protected threshold with a localized conformal threshold using a one-sided maximum. The resulting set contains every label admitted by the localized rule, with additional protection confined to validation-identified classes. An independently calibrated support audit defers cases with insufficient inlier support. Under exchangeability among accepted examples within each protected class, CALCoDe provides finite-sample coverage at the prespecified guard level and contains the corresponding localized conformal sets; coverage on shifted external cohorts is evaluated empirically. Among standard conformal baselines and recent VLM-specific conformal methods evaluated across two dermatology shifts (HAM10000 to ISIC 2019 and HAM10000 to PAD-UFES-20) and four frozen VLM backbones (BiomedCLIP, OpenAI CLIP ViT-B/32, PubMedCLIP ViT-B/32, and MedSigLIP-448), CALCoDe is the only approach whose observed marginal and worst-class accepted coverage both reach 0.95 in all eight settings. On HAM10000 to ISIC 2019, its average worst-class accepted coverage is 0.970, compared with 0.926 for sTACP and 0.864 for LCP-VLM.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28696",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28696"
+      }
+    ],
+    "relevance_score": 0.3911185245124943,
+    "max_similarity": 0.10793949317685393
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28678",
+    "title": "ViSAGE: Constructing Self-Correcting Memories for Long-Form Video Understanding",
+    "authors": [
+      "Xinkui Zhao, Enbo Chen, Yifan Zhang, Chang Liu, Guanjie Cheng, Naibo Wang, Yueshen Xu"
+    ],
+    "abstract": "arXiv:2607.28678v1 Announce Type: new \nAbstract: Multimodal agents operating in long-horizon environments must build and continually update multimedia memories to support entity-consistent, temporally grounded reasoning. However, existing agentic memory approaches often discard fine-grained dentity cues under aggressive compression and segment-wise processing. They also rely heavily on vector similarity retrieval, which can surface semantically related yet identity-mismatched evidence, leading to entity confusion, error propagation, and hallucinated answers.\n  We propose ViSAGE, a multimodal agentic memory framework that constructs self-correcting, entity-centric memories. Specifically, ViSAGE anchors entity identity via cross-modal binding over long temporal ranges. It then applies bidirectional memory refinement to propagate delayed identity evidence, retroactively unifying historical records and improving future reasoning. We also introduce multi-agent cross-verification to assess retrieved evidence under an identity-evidence alignment onstraint, enabling abstention instead of unsupported answers when evidence is missing. Extensive results demonstrate that ViSAGE consistently outperforms the strongest baseline, achieving 5.9% higher accuracy.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28678",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28678"
+      }
+    ],
+    "relevance_score": 0.3536451015332125,
+    "max_similarity": 0.18034112051587567
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28788",
+    "title": "EarlyDx: An Admission-Anchored Benchmark for Open-Ended Generation of Evidence-Supported ED-Encounter Diagnoses",
+    "authors": [
+      "Jiahui Li, Ruili Fang, Zishuai Liu, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou"
+    ],
+    "abstract": "arXiv:2607.28788v1 Announce Type: new \nAbstract: Clinical diagnosis at hospital admission must be made rapidly from limited, incomplete evidence. Existing diagnosis-prediction benchmarks are poorly suited to this setting: they restrict prediction to closed code sets, exclude free-text notes, and supervise with discharge diagnoses that incorporate the full inpatient course. We introduce EarlyDx, a large-scale benchmark for open-ended early diagnosis, built from 154,834 emergency department encounters in MIMIC-IV. Each encounter is restricted to records available at admission time $t_0$ and supervised by the diagnoses recorded during the ED encounter rather than at discharge. An LLM auditor further verifies every free-text label as supported, partially supported, or unsupported by that evidence; the primary evaluation scores only fully supported labels. Under a semantic LLM-as-judge protocol, no evaluated system --- frontier general, medical-specialized, or in-domain post-trained --- synthesizes admission-time evidence reliably. Zero-shot models score largely by extraction, recovering only 3-31% of diagnoses that must be inferred rather than read from the record; post-training raises inference-dependent recall to 56%, but a sizeable margin remains, and on time-critical conditions no system attains a clinician's balance of sensitivity and precision. We release the full construction and evaluation pipeline at here.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28788",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28788"
+      }
+    ],
+    "relevance_score": 0.335365806878434,
+    "max_similarity": 0.0975805578586586
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28632",
+    "title": "LLM Framework for Discovering Major Mathematical Conjectures: AI's Quest for the Next Riemann Hypothesis",
+    "authors": [
+      "Alizer Wong, Zixin Zeng, Yi Tan, Wenyuan Li, Xuhang Chen, Xingru Lai, Yang Shi, Liangsi Lu, Yanhui Chen"
+    ],
+    "abstract": "arXiv:2607.28632v1 Announce Type: new \nAbstract: Major mathematical conjectures still depend heavily on expert intuition, so a unified method for the systematic generation and validation of conjectures with substantial mathematical potential remains unavailable. We present a three stage pipeline for major conjecture discovery, with region search from explicit local evidence modules, reflective validation for foundationality, novelty, and potential significance, and formal validation in Lean 4 and Mathlib. The objective is the discovery of mathematical problems with high problem taste, namely problems whose proofs could reorganize the language of a research area and provide durable help to human mathematical research. Experiments on twenty candidates showstable passage from natural language to formal checks, with twenty out of twenty candidates passing Lean parsing and type checking, twenty out of twenty candidates not directly absorbed by exact?,twenty out of twenty candidates not automatically discharged by aesop, and no explicit duplicates or near duplicates.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28632",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28632"
+      }
+    ],
+    "relevance_score": 0.3254757219028327,
+    "max_similarity": 0.15036349151402348
+  },
+  {
+    "id": "https://arxiv.org/abs/2607.28633",
+    "title": "Topology-Aware Data Movement for Disaggregated GPU Inference",
+    "authors": [
+      "Sanjeev Rao Ganjihal"
+    ],
+    "abstract": "arXiv:2607.28633v1 Announce Type: new \nAbstract: Disaggregated LLM inference creates a datacenter networking problem that no existing system solves correctly. When prefill and decode run on separate GPU pools, the KV cache must be transferred between them. For a 70B model this is 2.6 GB per request, exceeding 100 GB/s aggregate at production scale. Yet DistServe, Splitwise, and Mooncake all use uniform RDMA, ignoring that bandwidth between two GPUs varies by 72x depending on their physical relationship: 900 GB/s via NVLink within a domain, 50 GB/s via InfiniBand across nodes, 12.5 GB/s via TCP across data centers. We design a topology-aware transfer orchestrator that discovers interconnect hierarchy at startup and selects optimal transport per transfer. Three mechanisms work together: (1) pipelined layer-by-layer transfer that overlaps transmission with ongoing prefill, hiding 60 to 85 percent of latency behind computation; (2) NVLink domain-aware placement for Mixture-of-Experts models that co-optimizes expert dispatch with KV cache locality; and (3) CXL 3.0 memory expanders as a shared overflow tier providing 6x capacity at 86x lower latency than NVMe. Full evaluation requires multi-node clusters with heterogeneous interconnects and CXL 3.0 hardware that is beyond academic resources and not yet available in GPU clouds. We present analytical bandwidth models, component implementations, and projected analysis across three architectures showing 3 to 18x transfer latency reduction over uniform RDMA.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 03 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2607.28633",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2607.28633"
+      }
+    ],
+    "relevance_score": 0.28899033570502963,
+    "max_similarity": 0.10455467829912216
+  }
+]
