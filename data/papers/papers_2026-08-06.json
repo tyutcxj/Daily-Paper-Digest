@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.04071",
+    "title": "Monte Carlo Tree Search for Table-to-Multimodal Report Generation",
+    "authors": [
+      "Teng Lin, Zhiyang Zhang, Yuyu Luo, Nan Tang"
+    ],
+    "abstract": "arXiv:2608.04071v1 Announce Type: new \nAbstract: Automatically generating professional multimodal reports comprising both textual analysis and visual charts from structured tabular data is a critical challenge in data intelligence. Existing methods suffer from fixed linear pipelines and isolated subtask processing, which hinder joint optimization of factual accuracy, visual quality, and narrative coherence. To address these issues, this paper proposes MCTS-Report, a Monte Carlo Tree Search (MCTS)-driven framework that formulates multimodal table-to-report generation as a progressive construction process over a structured search space. The core idea is to decompose report generation into atomic actions, including chapter planning, visualization task identification, chart generation, insight organization, and narrative refinement, each executed by an LLM based on dynamic reasoning conditioned on the current report state. We use an LLM to generate step-by-step reasoning and actions during MCTS, storing the reasoning trajectory in each node for context-aware, coherent report construction. To guide the search, we design a multi-dimensional reward function that jointly evaluates numerical fact consistency (via SQL), chart quality, chart-text alignment, and structural completeness, while incorporating a diversity penalty to suppress repeated charts and a precondition check to prune invalid actions. We also construct MMRBench, a comprehensive benchmark comprising real-world tables from six domains, paired with expert-refined reference report structures and verifiable key insights. Experiments on MMRBench demonstrate that MCTS-Report significantly outperforms strong baselines across structural completeness, numerical accuracy, chart-text alignment, and insight novelty, achieving a 77.9 overall score.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04071",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04071"
+      }
+    ],
+    "relevance_score": 0.5158234967083735,
+    "max_similarity": 0.25820021259481857
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04519",
+    "title": "Leak-Resistant Unlearning: A New Benchmark for Evaluating Multi-Hop Reasoning Consistency and Recovery Robustness",
+    "authors": [
+      "Haoting Qian, Qingjie Zhang, Zhicong Huang, Cheng Hong, Han Qiu"
+    ],
+    "abstract": "arXiv:2608.04519v1 Announce Type: new \nAbstract: Benchmarking machine unlearning methods is critical to understand whether sensitive knowledge is removed from large language models (LLMs) or not. Current unlearning benchmarks include mainly single-hop questions and a narrow set of multi-hop questions. Although effective, they still face two challenges. (1) Knowledge is not isolated, whereby diverse multi-hop reasoning paths can potentially induce knowledge leakage than normal queries. (2) Unlearning may be fragile: unlearned knowledge can be partially recovered through recovery attacks such as lightweight post-unlearning adaptation, making static evaluation insufficient. Therefore, in this paper, we introduce \\unlearning as a novel benchmark to understand robust LLM knowledge removal across diverse reasoning paths and recovery attacks. We experiment with this benchmark on 3 models, 6 unlearning methods, and 2 carefully curated datasets. Results show that existing methods are vulnerable to multi-hop reasoning paths and recovery attacks. We further explore the trade-off among forget quality, robustness, and model utility for LLM unlearning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04519",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04519"
+      }
+    ],
+    "relevance_score": 0.5092684523973905,
+    "max_similarity": 0.25016604078710286
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04041",
+    "title": "An Explainable LLM Agent Layer for Open-World Anomaly Detection in Oil Wells",
+    "authors": [
+      "Lucas Gouveia Omena Lopes, Thales Miranda de Almeida Vieira, Eduardo Toledo de Lima Junior, William Wagner Matos Lira"
+    ],
+    "abstract": "arXiv:2608.04041v1 Announce Type: new \nAbstract: Open-World Learning (OWL) pipelines for oil well anomaly detection have recently been shown to combine autoencoder-based detection, multiclass classification, and Mahalanobis-based novelty detection on the public 3W dataset. These pipelines answer \\textit{what happened}, but they do not explain \\textit{why the model believes it} or \\textit{what the operator should do next}, and they do not put a human-readable name on the novelty clusters they discover. This paper evaluates a Large Language Model (LLM) agent layer placed downstream of the OWL pipeline, designed as a \\textbf{companion} to the published upstream methods rather than a replacement. Using the Qwen3.5-397B-A17B Mixture-of-Experts model served via NVIDIA NIM, the agent receives structured sensor metrics and upstream classification or novelty assertions, and returns natural-language justifications, confidence-ranked critiques, and consolidated names for detected novelties. Across three studies spanning 989 real well-file segments from the 3W dataset, the agent achieved $35.1\\%$ top-1 / $63.9\\%$ top-3 (95\\% CI [56.9, 70.4]) classification on all nine classes, $71.7\\%$ top-2 validation [64.8, 77.6] with precision $0.91$ [0.84, 0.95] across 7 probed classes, and $89.7\\%$ novelty detection [87.0, 91.9] with stable cluster naming on 5 of 7 hidden classes. The agent is not a standalone classifier. Its role is to: (1) confirm upstream decisions when sensor evidence supports them, (2) justify decisions in sensor-grounded language operators can audit, (3) flag disagreement when upstream labels are implausible, and (4) name novelties so that clustered unlabeled events arrive at the engineer with a consolidated human-readable label. The goal is to close the explainability gap that currently blocks deployment of OWL pipelines in operational settings.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04041",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04041"
+      }
+    ],
+    "relevance_score": 0.49853249847341186,
+    "max_similarity": 0.23776868100370835
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04124",
+    "title": "Perception Before Reasoning: Dynamic Latent Reasoning for Video Understanding and Question Answering",
+    "authors": [
+      "Haotian Xia, Zilin Xiao, Junbo Zou, Vicente Ordonez, Hanjie Chen"
+    ],
+    "abstract": "arXiv:2608.04124v1 Announce Type: new \nAbstract: Video question answering requires models to ground language queries in visual evidence and, when necessary, reason over that evidence across time. Existing methods typically rely on long textual chain-of-thought rationales, even though many questions can be answered as soon as the relevant object, action, or frame is localized. We propose Dynamic Latent Reasoning (DyLaR), which first grounds a question in a short block of perception latents (continuous hidden states that encode query-relevant visual evidence), and then adaptively decides whether to append reasoning latents (continuous thoughts that reason over this evidence in latent space) before answering. DyLaR learns this behavior by grounding perception latents in verified visual evidence and distilling verified rationales into reasoning latents, followed by reinforcement learning that further refines when to reason. Across nine video benchmarks and four multimodal language model backbones, DyLaR improves average accuracy over same-backbone baselines while generating fewer than 20 tokens per query. On Qwen3-VL-4B, for example, DyLaR improves average accuracy over Qwen3-VL-4B-Thinking from 54.0 to 58.2 while reducing response length from 1,220.7 to 18.5 tokens per query. Ablations further show that grounded perception latents, rationale-supervised reasoning latents, and adaptive routing each improve accuracy.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04124",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04124"
+      }
+    ],
+    "relevance_score": 0.48210090683849105,
+    "max_similarity": 0.21347285836654828
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04132",
+    "title": "RUTA: Principled Visual Token Allocation via Rate-Utility Optimization",
+    "authors": [
+      "Jian Zou, Xiaoyu Xu, Zhihua Wang, Yilin Wang, Balu Adsumilli, Kede Ma"
+    ],
+    "abstract": "arXiv:2608.04132v1 Announce Type: new \nAbstract: High-resolution images and long videos provide vision-language models with rich context for multimodal reasoning and fine-grained perception, but the resulting long visual token sequences make large language model-side computation and memory costly. Existing visual token reducers often operate at prescribed rates, while recent methods adapt token counts across inputs using method-specific learned thresholds or importance predictors. We introduce RUTA, a principled Rate-Utility Token Allocation method that performs pre-LLM reduction by jointly learning which tokens to retain and how many to allocate to each image-query pair. RUTA constructs query-conditioned candidate tokens and predicts a retention probability for each candidate. During training, these probabilities parameterize independent Bernoulli gates, while their sum provides a differentiable training-time estimate of the token count for each pair. Retained tokens serve as anchors that aggregate information from non-retained tokens according to semantic affinity and spatial proximity. RUTA is optimized with a penalized rate-utility objective that balances downstream task loss against expected token usage. Averaged across five benchmarks and measured relative to each backbone's full-token baseline, RUTA uses only $2.0\\%$ and $4.2\\%$ of visual tokens while preserving $88.2\\%$ and $94.4\\%$ of task performance on LLaVA-NeXT-7B and Qwen3-VL-8B, respectively.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04132",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04132"
+      }
+    ],
+    "relevance_score": 0.47384946351605456,
+    "max_similarity": 0.20512186964031853
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04095",
+    "title": "FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents",
+    "authors": [
+      "Ben Wang, Kang Zhou, Lifan Guo, Feng Chen, Chi Zhang"
+    ],
+    "abstract": "arXiv:2608.04095v1 Announce Type: new \nAbstract: Large language model (LLM) agents are increasingly used as personalized assistants in high-stakes domains such as financial advising, yet it remains unclear whether they can maintain and update an individualized user model over long horizons. Existing personalized-memory benchmarks primarily test factual retention or rely on weakly constrained model-generated trajectories, leaving event-driven preference adaptation underexplored. We introduce FinPerMA, an event-grounded benchmark that evaluates personalized memory against frozen longitudinal investor trajectories. Its generation pipeline combines deterministic, theory-informed impact rules, controlled LLM narration, and automated quality screening; a Post-Shock checkpoint isolates whether an agent has integrated a material event into its persistent user model. On 2,994 questions from 276 personas, seven frontier LLMs and up to seven memory configurations remain far from saturated: no full-context configuration exceeds approximately 0.47 overall accuracy or approximately 39% on multiple-choice questions. Attribution analysis shows that summary-based memory often preserves factual details while losing the preference signals needed for personalization; simple retrieval can therefore outperform purpose-built memory systems, with the gap widening after shocks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04095",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04095"
+      }
+    ],
+    "relevance_score": 0.4590342061258205,
+    "max_similarity": 0.18937444973440024
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04156",
+    "title": "BrainBench: Benchmarking Large Language Models for Comprehensive EEG Understanding",
+    "authors": [
+      "Yangxuan Zhou, Sha Zhao, Yuning Chen, Chen Wu, Jiquan Wang, Shijian Li, Gang Pan"
+    ],
+    "abstract": "arXiv:2608.04156v1 Announce Type: new \nAbstract: Electroencephalography (EEG) analysis extends beyond assigning predefined labels to recordings; it requires workflows connecting natural-language instructions, signal processing, quantitative evidence, and scientific interpretation. We term this capability \\emph{comprehensive EEG understanding}. Existing evaluations, however, primarily target isolated decoding tasks or system-specific demonstrations, leaving the competence of large language models (LLMs) insufficiently quantified. We introduce \\benchmarkname{}, a unified benchmark for comprehensive, instruction-conditioned EEG understanding. It comprises four subsets---Foundational Analysis, Sleep Assessment, Neurocognitive Assessment, and Physiological Integration---covering 17 datasets, \\numcases{} tasks, and over \\numinstances{} real-data instances. Given an instruction and EEG recordings with optional physiological signals, a system must perform the analysis and produce a scientifically grounded report and, when required, artifacts. Outputs are assessed through numerical, categorical, set, sequence, semantic, and artifact validation. We evaluate \\nummodels{} representative LLMs across more than 100K executions under two paradigms: autonomous code execution with CodeAct and structured agentic analysis with BrainAgent. Results vary substantially across models, subsets, difficulty levels, and execution paradigms, showing that EEG competence depends on the model and its operationalization. \\benchmarkname{} provides a reproducible testbed for advancing LLM-based EEG understanding. The code and benchmark will be released soon, with evaluation results continuously updated.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04156",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04156"
+      }
+    ],
+    "relevance_score": 0.4580525560411085,
+    "max_similarity": 0.18533112917305783
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04127",
+    "title": "Teaching Foundation Models to Read mmWave: Pose-Guided Kinematic Representation for Human Behavior Understanding",
+    "authors": [
+      "Duo Zhang, Zhehui Yin, Zhiyun Yao, Haotong Qin, Xusheng Zhang, Hongliu Yang, Jianyu Sun, Junzhe Wang, Zizhou Fan, Michele Magno, Daqing Zhang"
+    ],
+    "abstract": "arXiv:2608.04127v1 Announce Type: new \nAbstract: Large language model agents need to perceive human behavior in physical environments. Millimeter-wave (mmWave) radar provides a privacy-friendly and contactless sensing modality, but radar observations are difficult to align with language. Existing radar-language methods often rely on synthetic data or lack explicit supervision for human body structure and motion. We present mmMind, a radar-language model that uses synchronized 3D pose as training-only supervision. A spatio-temporal radar encoder is pretrained to capture body configuration and motion dynamics, after which the pose head is removed so that inference requires radar alone. The learned radar representations are then aligned with an LLM for behavior captioning and spatio-temporal question answering. We also introduce mmMind-Bench, a real-world mmWave-language benchmark containing 17.9 hours of recordings from 23 participants across seven indoor environments. Experiments on captioning, question answering, and unseen-action generalization show that mmMind consistently outperforms existing radar-language baselines, while ablations confirm the importance of pose-guided pretraining.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04127",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04127"
+      }
+    ],
+    "relevance_score": 0.4558013321449834,
+    "max_similarity": 0.18464913212913628
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04074",
+    "title": "Spend Bits Where Queries Look: KV Cache Vector Quantization with Attention-Preserving Transforms",
+    "authors": [
+      "Samuel Fern\\'andez-Mendui\\~na, Amir Ziashahabi, Eduardo Pavez, Antonio Ortega, Salman Avestimehr"
+    ],
+    "abstract": "arXiv:2608.04074v1 Announce Type: new \nAbstract: Long-context LLM decoding reads the key-value (KV) cache at every step. Loading it takes longer than computing attention over it, so throughput is bandwidth-bound. Hence, reducing the cache size can raise both decoding speed and serving capacity. The challenge is to reduce cache size while preserving the attention products, keeping reconstruction cheap, and using a fixed per-token bit count. At two bits per element, the most competitive methods rely on orthogonal transforms. However, existing techniques are either data-oblivious or use the query statistics without deriving the transform from a distortion criterion. Moreover, they rely on transforms built on top of random or Hadamard rotations, which equalize variances across entries rather than compacting energy, and fixed-width scalar quantizers, which are suboptimal at low rates. In this paper, we formulate KV cache quantization as a transform coding problem in which distortion is the error in the attention products. We derive closed-form optimal transforms for keys and values from calibration statistics, under a high-resolution model. We show that the optimal key transform is not orthogonal and satisfies a generalized Parseval relation: the attention-aware distortion becomes mean-squared error (MSE) in the transform domain. Thus, we can use MSE-optimal vector quantizers applied directly to the transformed key coefficients. To meet the fixed-width layout requirement, we show that grouping coefficients into equal-volume partitions makes equal-size codebooks attain the variable-rate optimum under the same high-resolution model. At two bits per element, our method, termed NOVA-KV, recovers most of the long-context retrieval accuracy lost by scalar quantization methods at comparable throughput.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04074",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04074"
+      }
+    ],
+    "relevance_score": 0.4417884009930524,
+    "max_similarity": 0.16799130361922665
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04509",
+    "title": "CARGO-VL: Counterfactual Arbitration with Risk-Constrained Group Optimization for Vision-Language Models",
+    "authors": [
+      "De Jiang, Zhengyang Zhang, Kehong Yuan, Shaohua Ma"
+    ],
+    "abstract": "arXiv:2608.04509v1 Announce Type: new \nAbstract: Vision-language systems combine images with retrieved text, but these sources can disagree or jointly fail to support an answer. Reliable models must identify the trustworthy source and abstain when neither is adequate. Existing post-training objectives score instances independently and therefore do not enforce coherent behavior under counterfactual evidence changes. We introduce CARGO-VL, a group-relative framework that optimizes matched variants covering aligned, image-correct, text-correct, and both-wrong (A/V/T/N) evidence states as one bundle. Its objective couples condition-wise correctness with transition rewards for answer invariance, source equivariance, and answer-to-abstention switching, while a primal-dual controller balances unsafe answers against excessive deferral. We also contribute XMC (eXtended Modal Conflict), a four-condition conflict training resource, and evaluate transfer on CMC-Bench and Modality-Bias. Across multiple seeds, CARGO-VL improves conflict handling, unsupported-answer avoidance, and modality balance over pointwise baselines. Ablations identify complementary benefits from relational transition signals and adaptive risk control, supporting counterfactual consistency as a practical objective for reliable multimodal evidence arbitration.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04509",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04509"
+      }
+    ],
+    "relevance_score": 0.4408147213496608,
+    "max_similarity": 0.16588643211705303
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04384",
+    "title": "Improving Auto-Design of Neural PDE Solvers with a Domain-Specific Language",
+    "authors": [
+      "Shengxin Kong, Liwen Xu, Jingwen Fu"
+    ],
+    "abstract": "arXiv:2608.04384v1 Announce Type: new \nAbstract: Neural PDE solver auto-design is fundamentally a search-space representation problem. In the space of unrestricted Python programs, valid solvers form an extremely sparse subset: most candidate programs are syntactically incorrect, semantically incompatible, or numerically unstable. Direct code generation therefore forces an LLM to spend most of its search capacity navigating implementation failures rather than reasoning about solver quality. ADSL-PDE addresses this challenge by introducing a structured search state between solver concepts and executable code. It represents the functional decisions that determine a neural PDE solver (architecture, physical constraints, objectives, sampling, and optimization) while abstracting away low-level implementation details. A deterministic compiler maps each valid search state to an executable solver. In effect, ADSL-PDE reshapes the search space: it removes large regions of invalid programs, increases the density of meaningful candidates, and preserves the compositional freedom needed to discover previously unseen designs. Solver evolution can thus operate over design decisions rather than code artifacts. Built on this representation, our evolutionary agent iteratively proposes, evaluates, and refines solver search states using empirical feedback. Across multiple PDE benchmarks, ADSL-PDE improves both search efficiency and optimization stability, achieving an improvement of more than 52% within the first ten evolution iterations. These results suggest a broader principle for LLM-driven auto-design: effective agents do not merely require stronger reasoning, but rather a search representation that concentrates exploration on valid and consequential decisions.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04384",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04384"
+      }
+    ],
+    "relevance_score": 0.43875173077336604,
+    "max_similarity": 0.16470482754330973
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04458",
+    "title": "Architectural Implications of Agentic AI Workflows",
+    "authors": [
+      "Jirong Yang, Peizhe Liu, Chaojie Zhang, Jovan Stojkovic"
+    ],
+    "abstract": "arXiv:2608.04458v1 Announce Type: new \nAbstract: Agentic AI is emerging in datacenters, but its architectural implications remain unexplored. We organize agentic workflows in a taxonomy and present its first architectural characterization with a production study at Microsoft Azure and a controlled study of open-source frameworks. We show that agentic execution is fragmented and heterogeneous. Requests expand into a workflow of LLM inferences, tool invocations, and orchestration decisions that repeatedly cross the CPU-GPU boundary. Our taxonomy explains how this fragmentation turns into resource demand. As orchestration and tools run on the host, the CPU sits on the critical path. Execution structure sets the load over time, which stays low with sudden spikes. Model composition sets how evenly the workflow uses the GPUs. Diversity in tasks and tools widens this range even further. These characteristics expose architectural mismatches of conventional uniform servers. Fragmented execution strands CPU and GPU capacity despite bursty demand. Different software roles make homogeneous CPU provisioning inefficient. Finally, multiplexing many agents onto shared cores degrades microarchitectural locality. Guided by our findings, we derive implications for agentic servers and examine them through Agora, our prototype for commodity servers. Agora dynamically harvests idle CPU cores for co-located throughput work, while protecting agentic tail latency against tool spikes. It oversubscribes GPU memory by placing more agents on each GPU, prefetching the next agent's state to hide swap latency. To match the machine to the heterogeneous roles, Agora pools cores by role and applies affinity-aware scheduling to restore locality. It automatically tunes mechanisms to the workload. Agora improves utilization and server throughput while preserving agent tail latency. Our insights also identify key directions for future server architectures for agentic AI.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04458",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04458"
+      }
+    ],
+    "relevance_score": 0.43429224301267,
+    "max_similarity": 0.16136263021546635
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04130",
+    "title": "Radar4D-VLM: Proposal-Grounded Temporal 4D Radar Reasoning Across Frozen Language Models",
+    "authors": [
+      "Jiaju Han, Xuemeng Sun, Qike Zhang, Xiang Chen, Luwei Yang, Jiahuan Long, Yiwei Wei, Jiujiang Guo, Chengyin Hu"
+    ],
+    "abstract": "arXiv:2608.04130v1 Announce Type: new \nAbstract: Vision-language models for autonomous driving primarily rely on cameras and LiDAR, leaving 4D radar largely unexplored as a standalone perceptual modality despite its robustness to adverse visibility and direct measurement of radial velocity. We introduce Radar4D-VLM, a radar-only temporal vision-language model that reasons from ten consecutive 4D-radar point-cloud sweeps without camera or LiDAR input. Radar4D-VLM extracts geometrically grounded object proposals and organizes radar evidence into a compact hierarchy of object, scene, and kinematic tokens. A parameter-efficient projector maps these tokens into frozen language backbones, while auditable prediction heads jointly model object count, spatial distribution, motion state, collision risk, semantic category, and radial velocity. Radar4D-VLM combines proposal-grounded temporal object tokenization, global scene context, and explicit kinematic tokens within a unified frozen-backbone interface. On sequence-isolated K-Radar development validation, its Top-64 proposal recall reaches 98.13% at 4 m, exceeding fixed-lattice and uniform-random controls by 6.40 and 22.83 percentage points, respectively. We further evaluate 24 matched runs spanning eight frozen Qwen, Phi, Mistral, Llama, and Gemma backbones under an identical adaptation budget. The radar-token interface remains compatible across all five language-model families, while matched aligned, permuted, and no-language controls show sensor dependence but no stable direct-head gain from aligned language supervision. These results establish a reproducible foundation for radar-only multimodal scene and motion reasoning while separating interface compatibility from the benefit of language supervision.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04130",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04130"
+      }
+    ],
+    "relevance_score": 0.4321312955966857,
+    "max_similarity": 0.15504819319860383
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04285",
+    "title": "The RAIL Principles for Neurosymbolic AI: Reasoning, Assurances, Interfacing and Learning",
+    "authors": [
+      "Agnese Chiatti, Michael Cochez, Cristina Cornelio, Sebastijan Dumancic, Artur d'Avila Garcez, Luis C. Lamb, Lia Morra, Mathias Niepert, Robert Peharz, Alberto Speranzon, Maarten Stol, Annette Ten Teije, Thiviyan Thanapalasingam, Frank Van Harmelen, Emile Van Krieken, Antonio Vergari, Benjie Wang"
+    ],
+    "abstract": "arXiv:2608.04285v1 Announce Type: new \nAbstract: Neurosymbolic AI systems that integrate machine learning and symbolic reasoning are rapidly gaining attention. They complement the data-intensive statistical approaches of neural networks and language models with symbolic reasoning algorithms to function in high-stakes domains or in low-data regimes that characterize many real-world applications. We argue that the neurosymbolic combination of machine learning and formal reasoning is not a niche approach within AI, but rather includes many already successful techniques that are of crucial importance to the development of reliable, efficient and, ultimately, trustworthy systems. This perspective prompts a re-examination of the design of current AI systems. We show that many leading AI systems, including some that are not traditionally considered as neurosymbolic, can be analysed from the perspective of four principles of neurosymbolic AI design: Reasoning, Assurances, Interfacing and Learning (RAIL). Applying the RAIL framework offers a unified view of seemingly disparate AI systems, ranging from physics-aware machine learning to neuro-guided search (such as Google DeepMind's Alpha-* suite), causal learning and tool-augmented Large Language Models. Importantly, the RAIL principles will enable engineers to make better-informed and more principled decisions about the design and deployment of production-level AI systems. In this article, we introduce the RAIL principles, examine how they can be applied across major areas of AI, and illustrate how they may guide practitioners to integrate neurosymbolic methods into next-generation AI technologies.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04285",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04285"
+      }
+    ],
+    "relevance_score": 0.43038883697018876,
+    "max_similarity": 0.1522781531891953
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04154",
+    "title": "TRNet: Topography-Guided Frequency Rectification and Structure-Aware Decoding for Multimodal Paddy Rice Segmentation",
+    "authors": [
+      "Kaiwen Xiao, Chunlong Fu, Liping Zheng, Yanfeng Su"
+    ],
+    "abstract": "arXiv:2608.04154v1 Announce Type: new \nAbstract: Mapping paddy rice from very-high-resolution imagery in mountainous and hilly regions is difficult because terrain alters optical appearance and increases confusion with visually similar vegetation. We present TRNet for 0.5-m GaoJing-1 red--green--blue (RGB) imagery, a 5-m TanDEM-X digital elevation model (DEM), and derived slope. Separate visual and terrain encoders preserve modality-specific features. At an early encoder stage, Topographic Energy-Spectral Rectification applies terrain-conditioned low-frequency modulation and asymmetric high-frequency regulation to suppress steep-slope clutter and conditionally enhance compatible low-slope rice cues. The Topography-guided Paddy Structure Decoder combines semantic, rice--background boundary, and interior cues, using coarse terrain as context. Experiments used an Area A internal test set and held-out Area B, which had steeper terrain and lower rice prevalence. TRNet achieved rice intersection-over-union (IoU) values of 85.10\\% and 80.68\\%, exceeding the original Dual-Encoder U-Net by 9.15 and 18.83 percentage points, respectively. Ablation and slope-stratified results linked these gains to frequency rectification, structure learning, and fewer steep-terrain false positives. The results support coarse topography as a contextual prior for very-high-resolution paddy rice mapping.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04154",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04154"
+      }
+    ],
+    "relevance_score": 0.4268451323333664,
+    "max_similarity": 0.1504577048960266
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04077",
+    "title": "FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables",
+    "authors": [
+      "Ben Wang, Kang Zhou, Lifan Guo, Feng Chen, Chi Zhang"
+    ],
+    "abstract": "arXiv:2608.04077v1 Announce Type: new \nAbstract: Evaluating financial AI agents requires criteria aligned with real professional work. Existing rubric methods typically derive criteria from task prompts or model outputs, overlooking tacit standards visible only in practitioner deliverables. We introduce FinProBench, a benchmark for professional financial tasks, and Role-Grounded Rubric Construction (RGRC), a reusable pipeline that derives rubrics from deliverables produced by practitioners in the same role. RGRC comprises four stages: Deliverable Collection, Competency Extraction, Rubric Synthesis, and Validation. Its rubrics capture tacit standards, distinguish quality levels, and transfer across tasks within a role. Before analysis, we classified 57 occupations by deliverable genre into 30 prior-rich conventional roles and 27 prior-sparse role-specialized roles. Across all roles, Prompt-only nearly matches RGRC for conventional roles (89.2% vs. 90.7%), but RGRC substantially outperforms it for role-specialized roles (99.1% vs. 78.0%). This split indicates that prompt engineering can approximate rubrics when conventions are well represented in model priors, while professional grounding is essential for standards beyond those priors. FinProBench is built from 1,723 curated deliverables spanning 57 occupations, 8 financial sub-industries, and 161 deliverable types, and releases an initial evaluation set of 20 complete tasks covering 20 roles in 7 sub-industries. With heterogeneous LLM judges and role-level rubrics, human deliverables rank first on average (73.7 vs. 70.3, 70.2, and 69.6 out of 100), while all four systems show overlapping 95% confidence intervals and complementary strengths. Reusing rubrics at the role level reduces estimated per-task construction effort by 6.7 times relative to authoring each rubric from scratch.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04077",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04077"
+      }
+    ],
+    "relevance_score": 0.4153722596408149,
+    "max_similarity": 0.13694322941415274
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04048",
+    "title": "Recurrent Residual Quantization: A Progressive Multi-Precision Representation for LLMs",
+    "authors": [
+      "Yu Luo, Bo Dong, Wenhua Cheng, Haihao Shen"
+    ],
+    "abstract": "arXiv:2608.04048v1 Announce Type: new \nAbstract: Serving large language models (LLMs) under diverse deployment constraints requires flexible trade-offs between accuracy, memory footprint, and throughput. However, conventional quantization methods typically require a separate checkpoint for each target bit-width. We introduce Recurrent Residual Quantization (RRQ), a post-training quantization (PTQ) framework that represents weights as a low-bit quantized base together with a sequence of quantized residual corrections, enabling multiple effective precisions from a single checkpoint. Starting from a 2-bit model obtained via post-training quantization (PTQ) or round-to-nearest (RTN), RRQ progressively adds lightweight 2-bit residuals generated via RTN to construct 4-, 6-, and 8-bit representations. The method is calibration-free and avoids joint multi-bit optimization. In our Qwen3-8B setup, the full all-RTN 2-/4-/6-/8-bit package is constructed in 1,293 seconds, 3.3 times faster than the measured MatGPTQ construction. Experiments on six recent LLMs show competitive accuracy at 6 and 8 bits, with model-dependent behavior at 4 bits. The code will be made publicly available upon publication.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04048",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04048"
+      }
+    ],
+    "relevance_score": 0.39227779703196464,
+    "max_similarity": 0.16806337309304706
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04013",
+    "title": "C$^2$MOE: Consistency and Complementarity-guided Mixture of Experts for Incomplete Multimodal Emotion Learning",
+    "authors": [
+      "Yuntao Shou, Tao Meng, Wei Ai, Keqin Li"
+    ],
+    "abstract": "arXiv:2608.04013v1 Announce Type: new \nAbstract: Recent advances in Multimodal Emotion Recognition in Conversations (MERC) highlight its reliance on complete multimodal inputs. However, real-world data often suffer from missing modalities due to transmission errors or user behavior, severely degrading model performance. Existing methods enhance robustness via cross-modal consistency learning but largely ignore modality complementarity, leading to biased reconstructions. To address this limitation, we propose C$2$MOE, a novel Consistency and Complementarity-guided Mixture of Experts framework for incomplete multimodal emotion learning. Our approach unifies representation learning and missing modality imputation within a principled information-theoretic framework. Specifically, multimodal knowledge is factorized into consistency and complementarity components via interaction-aware experts. Consistency is captured by maximizing cross-modal predictability, while complementarity is preserved by maximizing conditional entropy between modalities. Building upon this decomposition, C$2$MOE introduces a dual-branch prediction mechanism for robust imputation under missing modalities. The consistency branch aligns imputed features with the joint distribution by minimizing uncertainty, and the complementarity branch exploits modality-unique cues via entropy maximization. Finally, C$2$MOE employs a learnable reweighting module that dynamically assigns importance scores to each expert's output, yielding a robust and adaptive fusion for imputation. Extensive experiments on multiple MERC benchmarks demonstrate that C$2$MOE consistently surpasses state-of-the-art methods across various missing-modality settings, validating its robustness and generalization.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04013",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04013"
+      }
+    ],
+    "relevance_score": 0.3333741923003134,
+    "max_similarity": 0.15492733386700555
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04205",
+    "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+    "authors": [
+      "Xiaomin Li, Yuexing Hao, Jianheng Hou, Jintao Huang, Qianfeng Wen, Shirley Huang, Yifan Liu, Xiaoyi Liu, Yilan Fan, Yijun Wang, Koutian Wu, Ruoqi Gao, Muhammad Ahmed Mohsin, Jing Tang, Brihi Joshi, Heming Liu, Zheyuan Deng, Zonglin Di, Sankalp Jajee, Jiuyao Lu, Zhiwei Zhang, Saksham Kapoor, Ishan Gupta, Yunhan Zhao, Chanwoo Park, Yucheng Lu, Bing Hu, Weihang Xiao, Aravind Mohan, Hanwen Xing, Runyu Zhang, Mihir Kulshreshtha, Yuanda Xu, Qianyu Zhu, Dianzhuo Wang, Yuxin Xiao, Bowen Jiang, Yongye Su, Wenhao Chai, Zuxin Liu, Lawrence Yunliang Chen, Xuandong Zhao, Ethan Ye, Shivam Patel, Jason Xie, Alex Martin Richmond, Weixiang Ding, Emre Okcular, Diya Mathew, Ziheng Wang, Rana M. Shahroz Khan, Zhejian Peng, Fang Wu, Fan Nie, Xinyang Han, Yubin Kim, Jiawei Zhang, Zhenting Qi, Huangyuan Su, Xu Pan, Abinitha Gourabathina, Hyewon Jeong, Hemanth Neelgund Ramesh, Kumail Alhamoud, Kimia Hamidieh, Zidi Xiong, Samuel Schmidgall, Pengrui Han, Yepeng Huang, Yongheng Wang, Bowen Yang, Alex Gu, Yuchu Wang, Akshay Paruchuri, Brenna Li, Hejie Cui, Jiayuan Ding, Chaosheng Dong, Jiahao Wang, Yixuan He, Chi Wang, Pamela Bhattacharya, Tianyi Peng, Paul Pu Liang, Mitchell Gordon, Yilun Du, Marinka Zitnik, James Zou, Prasanna Tambe, Philip Torr, Emily Fox, Asu Ozdaglar, Dawn Song"
+    ],
+    "abstract": "arXiv:2608.04205v1 Announce Type: new \nAbstract: Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract away human diversity and interactive behavior. We therefore introduce MatrAIx, a population-scale simulated-user evaluation infrastructure for testing AI systems and digital products with heterogeneous users. MatrAIx has three core components: First, Persona 8B contains 8.3 billion persona records represented by 1,290 categorical dimensions. Records are either sampled from a dependency graph that preserves correlated attributes or derived from human-authored profiles. We release a quality-filtered coreset of approximately 1 million personas, comprising 599,847 human-grounded and 400,000 synthetic records. Second, the MatrAIx Playground provides four environments in which diverse users evaluate and interact with digital products: Survey, AI Chatbot, Web, and App. Third, MatrAIx provides 1,010 application tasks spanning more than 25 domains, including Commerce, Software, Finance, and Healthcare. We conducted 18,189 evaluation trials across eight representative tasks. Persona agents were powered by three LLMs: Claude Opus 4.8, GPT 5.5, and Claude Haiku 4.5. The resulting feedback captures how decisions and preferences vary across persona backgrounds, including hesitation after a price increase, willingness to continue after an AI assistant fails, and latency tolerance. We conducted two main validation studies: First, a 400-trial controlled study evaluated persona adherence across ten behavioral attributes and all four environments. The declared behavior was expressed or correctly suppressed in 366 trials (91.5%). Second, human and LLM judges evaluated the extraction quality of human-grounded personas. Overall, MatrAIx provides an end-to-end infrastructure for evaluating AI systems and digital products with diverse simulated human users.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04205",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04205"
+      }
+    ],
+    "relevance_score": 0.3331447970621688,
+    "max_similarity": 0.15906122789797528
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.04066",
+    "title": "The LLM Proposes, the Executive Disposes: A Self-Verifying Agent Instrument that Dissociates Commitment Drift from Binding Drift in Long-Horizon Agents",
+    "authors": [
+      "Mohsen Arjmandi"
+    ],
+    "abstract": "arXiv:2608.04066v1 Announce Type: new \nAbstract: How do you verify a long-horizon agent when its own state and self-reports are exactly what you cannot trust? We present an agent instrument built so that verification is structural rather than post-hoc. A deterministic Executive owns all belief; a language model may only file typed proposals, and a claim is admitted only when a prediction pre-registered before acting is matched against observation by code. Two properties make the instrument a verifier of its own science, not just of the agent: every run invalidates itself when per-organ write-error, render-size, or salted-canary-echo floors are breached (four of the first eight architecture runs were invalidated, each localizing a real defect); and a render-invisible shadow reference compiles the plan the full system would have committed in every ablation cell, so drift metrics are defined even where the mechanism under test has been removed. Using this instrument we report a clean, single-variable result on a failure every long-horizon agent suffers: ablating the commitment mechanism flips goal-abandonment from 0.00 to 1.00 while binding error stays flat at 0.00 (three seeds per cell, up to 394 reference beats per run, every run gated valid). The binding channel, by contrast, does not reappear as per-beat drift when its repair is ablated -- because binding is code-owned, the failure class is structurally absorbed, its only residue appearing one layer upstream as a collapse in hypothesis formation. We report these under full disclosure that task efficacy is null (zero level completions across 52 gated runs on ARC-AGI-3), pre-registered as a structural defeater. The contribution is a verification methodology for agent development and the drift decomposition it makes measurable.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 06 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.04066",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.04066"
+      }
+    ],
+    "relevance_score": 0.3303080756800603,
+    "max_similarity": 0.15562481154463842
+  }
+]
