@@ -72,9 +72,9 @@
                     <p class="card-text small">arXiv:2608.04071v1 Announce Type: new 
 Abstract: Automatically generating professional multimodal reports comprising both textual analysis and visual charts from structured tabular data is a critical ...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：自动生成包含文本和图表的多模态报告  
-主要方法：提出MCTS-Report框架，用蒙特卡洛树搜索将报告生成分解为原子动作，由LLM动态推理执行  
-关键贡献：设计多维度奖励函数联合评估事实一致性、图表质量等，并引入多样性惩罚抑制重复图表
+                        <strong>AI 总结：</strong>研究问题：表格到多模态报告生成的联合优化问题  
+主要方法：基于蒙特卡洛树搜索的渐进式报告构建框架  
+关键贡献：提出多维度奖励函数和动态推理机制，实现事实一致性、视觉质量与叙事连贯性的联合优化
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -108,9 +108,9 @@ Abstract: Automatically generating professional multimodal reports comprising bo
                     <p class="card-text small">arXiv:2608.04519v1 Announce Type: new 
 Abstract: Benchmarking machine unlearning methods is critical to understand whether sensitive knowledge is removed from large language models (LLMs) or not. Curr...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：现有机器遗忘基准无法评估多跳推理路径导致的知识泄露及恢复攻击下的脆弱性。
-主要方法：提出Leak-Resistant Unlearning基准，包含多跳推理路径和恢复攻击测试，在3模型、6遗忘方法、2数据集上实验。
-关键贡献：揭示现有方法在多跳推理和恢复攻击下的脆弱性，并探索遗忘质量、鲁棒性与模型效用的权衡。
+                        <strong>AI 总结：</strong>研究问题：现有机器遗忘基准无法评估多跳推理路径下的知识泄露和恢复攻击脆弱性。  
+主要方法：提出Leak-Resistant Unlearning基准，包含多跳推理路径和恢复攻击测试。  
+关键贡献：揭示现有遗忘方法在多跳推理和恢复攻击下的脆弱性，并探索遗忘质量、鲁棒性与模型效用的权衡。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -144,9 +144,9 @@ Abstract: Benchmarking machine unlearning methods is critical to understand whet
                     <p class="card-text small">arXiv:2608.04041v1 Announce Type: new 
 Abstract: Open-World Learning (OWL) pipelines for oil well anomaly detection have recently been shown to combine autoencoder-based detection, multiclass classifi...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：油井异常检测管道无法解释模型判断依据及操作建议。  
-主要方法：在开放世界学习管道下游部署LLM代理层，接收传感器数据并生成自然语言解释。  
-关键贡献：实现异常分类、置信度排序及新颖性命名，在989个井段数据中达到71.7% top-2验证精度。
+                        <strong>AI 总结：</strong>研究问题：油井异常检测中OWL管道无法解释模型判断原因及操作建议。  
+主要方法：在OWL管道下游部署LLM代理层，接收传感器数据并生成自然语言解释。  
+关键贡献：实现异常分类、置信度排序及新颖性命名，在989个井段中达到71.7% top-2验证精度。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -180,9 +180,9 @@ Abstract: Open-World Learning (OWL) pipelines for oil well anomaly detection hav
                     <p class="card-text small">arXiv:2608.04124v1 Announce Type: new 
 Abstract: Video question answering requires models to ground language queries in visual evidence and, when necessary, reason over that evidence across time. Exis...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：视频问答中如何减少不必要的长文本推理。
-主要方法：提出DyLaR，先定位感知潜变量，再自适应决定是否添加推理潜变量。
-关键贡献：在9个基准上提升准确率，同时将输出降至20词以内。
+                        <strong>AI 总结：</strong>研究问题：视频问答中如何减少不必要的长链推理，仅在需要时进行推理。
+主要方法：提出DyLaR，先通过感知潜变量定位视觉证据，再自适应决定是否添加推理潜变量。
+关键贡献：在9个视频基准上，平均准确率提升且每查询生成少于20个token。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -218,7 +218,7 @@ Abstract: High-resolution images and long videos provide vision-language models 
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
                         <strong>AI 总结：</strong>研究问题：高分辨率图像和长视频导致视觉语言模型计算和内存成本过高。  
 主要方法：提出RUTA，通过率-效用优化联合学习保留哪些令牌及为每个图像-查询对分配多少令牌。  
-关键贡献：实现预LLM令牌减少，仅用2.0%令牌即可平衡下游任务损失与预期令牌使用。
+关键贡献：使用可微分的伯努利门和锚点聚合，在保持性能的同时显著减少令牌使用量。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -252,9 +252,9 @@ Abstract: High-resolution images and long videos provide vision-language models 
                     <p class="card-text small">arXiv:2608.04095v1 Announce Type: new 
 Abstract: Large language model (LLM) agents are increasingly used as personalized assistants in high-stakes domains such as financial advising, yet it remains un...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：LLM代理在金融等高风险领域能否长期维护和更新个性化用户模型。
-主要方法：提出FinPerMA基准，结合理论驱动规则、LLM叙述和自动化筛选，评估事件驱动的偏好记忆。
-关键贡献：发现前沿LLM在个性化记忆任务上远未饱和，摘要记忆易丢失偏好信号，简单检索可超越专用记忆系统。
+                        <strong>AI 总结：</strong>研究问题：LLM代理在金融领域能否长期维护和更新个性化用户模型。  
+主要方法：构建FinPerMA基准，结合理论驱动规则、LLM叙述和质量筛选，评估事件驱动的偏好适应。  
+关键贡献：发现现有模型在个性化记忆上远未饱和，摘要记忆易丢失偏好信号，简单检索优于专用系统。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -288,9 +288,9 @@ Abstract: Large language model (LLM) agents are increasingly used as personalize
                     <p class="card-text small">arXiv:2608.04156v1 Announce Type: new 
 Abstract: Electroencephalography (EEG) analysis extends beyond assigning predefined labels to recordings; it requires workflows connecting natural-language instr...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：评估大语言模型在脑电图综合分析中的能力  
-主要方法：构建包含17个数据集、多任务和真实数据实例的统一基准，通过指令驱动和代码执行范式评估  
-关键贡献：提出首个全面评估LLM在EEG分析中多维度能力的基准，覆盖数值、分类、语义等验证
+                        <strong>AI 总结：</strong>研究问题：评估大语言模型在指令驱动的综合脑电图理解能力。
+主要方法：构建包含17个数据集、多类任务的统一基准，通过数值、分类、语义等六种验证评估模型输出。
+关键贡献：首次系统量化LLM在脑电图分析中的综合能力，覆盖基础分析、睡眠评估等四大子集。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -324,9 +324,9 @@ Abstract: Electroencephalography (EEG) analysis extends beyond assigning predefi
                     <p class="card-text small">arXiv:2608.04127v1 Announce Type: new 
 Abstract: Large language model agents need to perceive human behavior in physical environments. Millimeter-wave (mmWave) radar provides a privacy-friendly and co...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：如何让基础模型理解毫米波雷达中的人类行为。  
-主要方法：提出mmMind，利用3D姿态作为训练监督，预训练时空雷达编码器，再与LLM对齐。  
-关键贡献：构建mmMind-Bench基准，在行为描述和问答任务上优于现有方法。
+                        <strong>AI 总结：</strong>研究问题：毫米波雷达与语言模型对齐困难，缺乏人体结构显式监督。  
+主要方法：提出mmMind，利用同步3D姿态进行预训练，学习时空雷达表征后移除姿态头，再与LLM对齐。  
+关键贡献：构建mmMind-Bench基准，在行为描述和问答任务上超越现有方法，验证姿态引导预训练的有效性。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -360,9 +360,9 @@ Abstract: Large language model agents need to perceive human behavior in physica
                     <p class="card-text small">arXiv:2608.04509v1 Announce Type: new 
 Abstract: Vision-language systems combine images with retrieved text, but these sources can disagree or jointly fail to support an answer. Reliable models must i...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：视觉语言系统在证据冲突时如何识别可信来源并合理弃权。
-主要方法：提出CARGO-VL框架，将四种证据状态作为一组优化，结合条件正确性与转换奖励，并用原始-对偶控制器平衡风险。
-关键贡献：引入XMC冲突训练资源，在多个基准上提升冲突处理、弃权准确性和模态平衡。
+                        <strong>AI 总结：</strong>研究问题：视觉语言系统在证据冲突或不足时如何可靠仲裁并拒绝回答。  
+主要方法：提出CARGO-VL框架，通过组相对优化匹配四种证据状态，结合条件正确性与转换奖励，并用原始-对偶控制器平衡风险。  
+关键贡献：引入XMC冲突训练资源，在多个基准上提升冲突处理、拒绝回答准确性和模态平衡，验证了反事实一致性作为可靠多模态仲裁目标的有效性。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -396,9 +396,9 @@ Abstract: Vision-language systems combine images with retrieved text, but these 
                     <p class="card-text small">arXiv:2608.04384v1 Announce Type: new 
 Abstract: Neural PDE solver auto-design is fundamentally a search-space representation problem. In the space of unrestricted Python programs, valid solvers form ...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：提升神经PDE求解器自动设计的搜索效率。  
-主要方法：提出ADSL-PDE领域特定语言，将设计决策与代码实现分离。  
-关键贡献：通过结构化搜索空间，提高有效求解器密度，支持基于设计决策的进化优化。
+                        <strong>AI 总结：</strong>研究问题：提升神经PDE求解器的自动设计效率。
+主要方法：引入领域特定语言ADSL-PDE，将设计决策与代码实现分离。
+关键贡献：重塑搜索空间，提高有效候选密度，使演化搜索聚焦于设计决策。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -432,9 +432,9 @@ Abstract: Neural PDE solver auto-design is fundamentally a search-space represen
                     <p class="card-text small">arXiv:2608.04074v1 Announce Type: new 
 Abstract: Long-context LLM decoding reads the key-value (KV) cache at every step. Loading it takes longer than computing attention over it, so throughput is band...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：长上下文LLM解码中KV缓存加载成为带宽瓶颈，需在固定比特率下压缩缓存并保持注意力乘积。
-主要方法：将KV缓存量化建模为变换编码问题，基于校准统计和注意力感知失真准则推导出最优非正交变换。
-关键贡献：提出注意力保持的变换编码方法，在每元素2比特下优于现有正交变换方案。
+                        <strong>AI 总结：</strong>研究问题：减少LLM解码中KV缓存大小以提升吞吐量，同时保持注意力乘积精度。
+主要方法：将KV缓存量化建模为变换编码问题，基于校准统计推导注意力感知的最优非正交变换。
+关键贡献：提出闭式最优变换，满足广义Parseval关系，在低比特率下优于现有正交变换方法。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -469,8 +469,8 @@ Abstract: Long-context LLM decoding reads the key-value (KV) cache at every step
 Abstract: Agentic AI is emerging in datacenters, but its architectural implications remain unexplored. We organize agentic workflows in a taxonomy and present it...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
                         <strong>AI 总结：</strong>研究问题：Agentic AI工作流的架构影响  
-主要方法：通过Azure生产研究和开源框架控制实验进行特征化分析  
-关键贡献：揭示CPU-GPU边界频繁交互、资源需求碎片化等架构不匹配问题，提出Agora原型方案
+主要方法：通过Azure生产研究和开源框架控制实验，分类并表征工作流  
+关键贡献：揭示CPU-GPU边界频繁交互、资源碎片化等架构不匹配，提出Agora原型
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -504,9 +504,9 @@ Abstract: Agentic AI is emerging in datacenters, but its architectural implicati
                     <p class="card-text small">arXiv:2608.04130v1 Announce Type: new 
 Abstract: Vision-language models for autonomous driving primarily rely on cameras and LiDAR, leaving 4D radar largely unexplored as a standalone perceptual modal...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：探索4D雷达作为自动驾驶独立感知模态的视觉语言模型。
-主要方法：提出Radar4D-VLM，从十次连续4D雷达点云扫描中提取目标提议，组织为对象、场景和运动学令牌，通过参数高效投影器映射到冻结语言模型。
-关键贡献：实现雷达单模态推理，Top-64目标提议召回率达98.13%，超越固定网格和均匀随机方法。
+                        <strong>AI 总结：</strong>研究问题：探索4D雷达作为独立感知模态在自动驾驶视觉语言模型中的应用。
+主要方法：提出Radar4D-VLM，利用十帧连续4D雷达点云提取目标提议，组织为对象、场景和运动学令牌，通过参数高效投影器映射到冻结语言模型。
+关键贡献：首次实现仅依赖4D雷达的时序视觉语言推理，在K-Radar验证集上Top-64提议召回率达98.13%，显著优于基线方法。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -540,9 +540,9 @@ Abstract: Vision-language models for autonomous driving primarily rely on camera
                     <p class="card-text small">arXiv:2608.04285v1 Announce Type: new 
 Abstract: Neurosymbolic AI systems that integrate machine learning and symbolic reasoning are rapidly gaining attention. They complement the data-intensive stati...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：如何整合机器学习与符号推理构建可靠、高效的神经符号AI系统。  
-主要方法：提出RAIL框架，从推理、保证、接口和学习四个原则分析神经符号AI设计。  
-关键贡献：揭示神经符号AI并非小众方法，而是开发可信系统的关键，并提供统一分析视角。
+                        <strong>AI 总结：</strong>研究问题：如何设计可靠、高效且可信的神经符号AI系统。
+主要方法：提出RAIL框架，整合推理、保证、接口和学习四个原则。
+关键贡献：统一分析多种AI系统，强调神经符号组合对可信AI的关键作用。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -577,8 +577,8 @@ Abstract: Neurosymbolic AI systems that integrate machine learning and symbolic 
 Abstract: Mapping paddy rice from very-high-resolution imagery in mountainous and hilly regions is difficult because terrain alters optical appearance and increa...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
                         <strong>AI 总结：</strong>研究问题：山区水稻高分辨率遥感影像分割困难  
-主要方法：TRNet，含地形能量频谱校正和地形引导结构解码器  
-关键贡献：在陡坡地形上显著提升水稻分割精度，IoU提升9-19个百分点
+主要方法：TRNet，包含地形能量频谱校正和地形引导结构解码器  
+关键贡献：在陡坡地形上减少误报，水稻IoU提升9.15%和18.83%
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -613,8 +613,8 @@ Abstract: Mapping paddy rice from very-high-resolution imagery in mountainous an
 Abstract: Evaluating financial AI agents requires criteria aligned with real professional work. Existing rubric methods typically derive criteria from task promp...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
                         <strong>AI 总结：</strong>研究问题：如何构建符合金融专业工作标准的AI智能体评估基准。
-主要方法：提出角色接地评估标准构建（RGRC）流水线，从专业从业者交付物中提取评估标准。
-关键贡献：构建FinProBench基准，证明RGRC在专业角色任务中显著优于纯提示方法（99.1% vs 78.0%）。
+主要方法：提出角色基础评估准则构建（RGRC）流水线，从从业者交付物中提取隐性标准。
+关键贡献：FinProBench基准覆盖57个职业，RGRC在专业角色上显著优于纯提示方法（99.1% vs 78.0%）。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -649,8 +649,8 @@ Abstract: Evaluating financial AI agents requires criteria aligned with real pro
 Abstract: Serving large language models (LLMs) under diverse deployment constraints requires flexible trade-offs between accuracy, memory footprint, and throughp...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
                         <strong>AI 总结：</strong>研究问题：如何在单一检查点中实现多精度LLM量化，避免为每种位宽单独存储模型。
-主要方法：提出递归残差量化（RRQ），从2位基模型开始，通过RTN逐步添加2位残差校正，构建4/6/8位表示。
-关键贡献：无需校准数据和多比特联合优化，构建速度比MatGPTQ快3.3倍，在6/8位精度上表现竞争力强。
+主要方法：提出RRQ框架，通过低比特基量与递归生成的量化残差序列，逐步构建2/4/6/8位表示。
+关键贡献：无需校准数据和多比特联合优化，构建速度比MatGPTQ快3.3倍，在6/8位精度上表现竞争力。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -684,9 +684,9 @@ Abstract: Serving large language models (LLMs) under diverse deployment constrai
                     <p class="card-text small">arXiv:2608.04013v1 Announce Type: new 
 Abstract: Recent advances in Multimodal Emotion Recognition in Conversations (MERC) highlight its reliance on complete multimodal inputs. However, real-world dat...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：多模态情感识别中缺失模态导致性能下降的问题
-主要方法：提出C²MOE框架，通过交互感知专家分解模态一致性与互补性，并采用双分支预测机制进行鲁棒插补
-关键贡献：首次在信息论框架下统一表示学习与缺失模态插补，兼顾一致性与互补性
+                        <strong>AI 总结：</strong>研究问题：多模态情感识别中缺失模态导致的性能下降问题  
+主要方法：提出C$^2$MOE框架，通过交互感知专家分解模态一致性与互补性，并设计双分支预测机制进行鲁棒插补  
+关键贡献：首次在信息论框架下统一表示学习与缺失模态插补，兼顾跨模态一致性与互补性
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -720,9 +720,9 @@ Abstract: Recent advances in Multimodal Emotion Recognition in Conversations (ME
                     <p class="card-text small">arXiv:2608.04205v1 Announce Type: new 
 Abstract: Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract a...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：人类评估AI系统和数字产品成本高、速度慢、难以规模化。  
-主要方法：构建包含83亿个智能体的模拟世界MatrAIx。  
-关键贡献：提供大规模、低成本、可扩展的AI评估与模拟平台。
+                        <strong>AI 总结：</strong>研究问题：如何低成本、可扩展地评估AI系统和数字产品  
+主要方法：构建包含83亿个智能体的仿真世界MatrAIx  
+关键贡献：提出大规模智能体仿真框架，替代传统人工评估
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -756,9 +756,9 @@ Abstract: Human evaluation of AI systems and digital products is costly, slow, a
                     <p class="card-text small">arXiv:2608.04066v1 Announce Type: new 
 Abstract: How do you verify a long-horizon agent when its own state and self-reports are exactly what you cannot trust? We present an agent instrument built so t...</p>
                     <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
-                        <strong>AI 总结：</strong>研究问题：如何验证长期任务智能体在自身状态不可信时的行为。
-主要方法：构建确定性执行器与语言模型分离的架构，通过预注册预测与代码观测匹配实现结构化验证。
-关键贡献：发现承诺漂移与绑定漂移可分离，消除承诺机制使目标放弃率从0.00升至1.00，而绑定错误保持0.00。
+                        <strong>AI 总结：</strong>研究问题：如何验证长期自主智能体在状态和自报告不可信时的行为。
+主要方法：构建确定性执行器拥有所有信念，语言模型仅提交提案，通过预注册预测与观察匹配进行结构性验证。
+关键贡献：提出自验证智能体工具，分离承诺漂移与绑定漂移，并发现承诺机制缺失导致目标放弃率从0.00升至1.00。
                     </div>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -810,7 +810,7 @@ Abstract: How do you verify a long-horizon agent when its own state and self-rep
                         <i class="bi bi-cloud"></i> 词云
                     </div>
                     <div class="card-body text-center">
-                        <img src="data/analysis/wordcloud_20260807_014948.png" class="img-fluid" alt="词云">
+                        <img src="data/analysis/wordcloud_20260807_034915.png" class="img-fluid" alt="词云">
                     </div>
                 </div>
             </div>
@@ -840,9 +840,9 @@ Abstract: Automatically generating professional multimodal reports comprising bo
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：自动生成包含文本和图表的多模态报告  
-主要方法：提出MCTS-Report框架，用蒙特卡洛树搜索将报告生成分解为原子动作，由LLM动态推理执行  
-关键贡献：设计多维度奖励函数联合评估事实一致性、图表质量等，并引入多样性惩罚抑制重复图表</p>
+                            <p class="mb-0">研究问题：表格到多模态报告生成的联合优化问题  
+主要方法：基于蒙特卡洛树搜索的渐进式报告构建框架  
+关键贡献：提出多维度奖励函数和动态推理机制，实现事实一致性、视觉质量与叙事连贯性的联合优化</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -877,9 +877,9 @@ Abstract: Benchmarking machine unlearning methods is critical to understand whet
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：现有机器遗忘基准无法评估多跳推理路径导致的知识泄露及恢复攻击下的脆弱性。
-主要方法：提出Leak-Resistant Unlearning基准，包含多跳推理路径和恢复攻击测试，在3模型、6遗忘方法、2数据集上实验。
-关键贡献：揭示现有方法在多跳推理和恢复攻击下的脆弱性，并探索遗忘质量、鲁棒性与模型效用的权衡。</p>
+                            <p class="mb-0">研究问题：现有机器遗忘基准无法评估多跳推理路径下的知识泄露和恢复攻击脆弱性。  
+主要方法：提出Leak-Resistant Unlearning基准，包含多跳推理路径和恢复攻击测试。  
+关键贡献：揭示现有遗忘方法在多跳推理和恢复攻击下的脆弱性，并探索遗忘质量、鲁棒性与模型效用的权衡。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -914,9 +914,9 @@ Abstract: Open-World Learning (OWL) pipelines for oil well anomaly detection hav
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：油井异常检测管道无法解释模型判断依据及操作建议。  
-主要方法：在开放世界学习管道下游部署LLM代理层，接收传感器数据并生成自然语言解释。  
-关键贡献：实现异常分类、置信度排序及新颖性命名，在989个井段数据中达到71.7% top-2验证精度。</p>
+                            <p class="mb-0">研究问题：油井异常检测中OWL管道无法解释模型判断原因及操作建议。  
+主要方法：在OWL管道下游部署LLM代理层，接收传感器数据并生成自然语言解释。  
+关键贡献：实现异常分类、置信度排序及新颖性命名，在989个井段中达到71.7% top-2验证精度。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -951,9 +951,9 @@ Abstract: Video question answering requires models to ground language queries in
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：视频问答中如何减少不必要的长文本推理。
-主要方法：提出DyLaR，先定位感知潜变量，再自适应决定是否添加推理潜变量。
-关键贡献：在9个基准上提升准确率，同时将输出降至20词以内。</p>
+                            <p class="mb-0">研究问题：视频问答中如何减少不必要的长链推理，仅在需要时进行推理。
+主要方法：提出DyLaR，先通过感知潜变量定位视觉证据，再自适应决定是否添加推理潜变量。
+关键贡献：在9个视频基准上，平均准确率提升且每查询生成少于20个token。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -990,7 +990,7 @@ Abstract: High-resolution images and long videos provide vision-language models 
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
                             <p class="mb-0">研究问题：高分辨率图像和长视频导致视觉语言模型计算和内存成本过高。  
 主要方法：提出RUTA，通过率-效用优化联合学习保留哪些令牌及为每个图像-查询对分配多少令牌。  
-关键贡献：实现预LLM令牌减少，仅用2.0%令牌即可平衡下游任务损失与预期令牌使用。</p>
+关键贡献：使用可微分的伯努利门和锚点聚合，在保持性能的同时显著减少令牌使用量。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1025,9 +1025,9 @@ Abstract: Large language model (LLM) agents are increasingly used as personalize
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：LLM代理在金融等高风险领域能否长期维护和更新个性化用户模型。
-主要方法：提出FinPerMA基准，结合理论驱动规则、LLM叙述和自动化筛选，评估事件驱动的偏好记忆。
-关键贡献：发现前沿LLM在个性化记忆任务上远未饱和，摘要记忆易丢失偏好信号，简单检索可超越专用记忆系统。</p>
+                            <p class="mb-0">研究问题：LLM代理在金融领域能否长期维护和更新个性化用户模型。  
+主要方法：构建FinPerMA基准，结合理论驱动规则、LLM叙述和质量筛选，评估事件驱动的偏好适应。  
+关键贡献：发现现有模型在个性化记忆上远未饱和，摘要记忆易丢失偏好信号，简单检索优于专用系统。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1062,9 +1062,9 @@ Abstract: Electroencephalography (EEG) analysis extends beyond assigning predefi
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：评估大语言模型在脑电图综合分析中的能力  
-主要方法：构建包含17个数据集、多任务和真实数据实例的统一基准，通过指令驱动和代码执行范式评估  
-关键贡献：提出首个全面评估LLM在EEG分析中多维度能力的基准，覆盖数值、分类、语义等验证</p>
+                            <p class="mb-0">研究问题：评估大语言模型在指令驱动的综合脑电图理解能力。
+主要方法：构建包含17个数据集、多类任务的统一基准，通过数值、分类、语义等六种验证评估模型输出。
+关键贡献：首次系统量化LLM在脑电图分析中的综合能力，覆盖基础分析、睡眠评估等四大子集。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1099,9 +1099,9 @@ Abstract: Large language model agents need to perceive human behavior in physica
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：如何让基础模型理解毫米波雷达中的人类行为。  
-主要方法：提出mmMind，利用3D姿态作为训练监督，预训练时空雷达编码器，再与LLM对齐。  
-关键贡献：构建mmMind-Bench基准，在行为描述和问答任务上优于现有方法。</p>
+                            <p class="mb-0">研究问题：毫米波雷达与语言模型对齐困难，缺乏人体结构显式监督。  
+主要方法：提出mmMind，利用同步3D姿态进行预训练，学习时空雷达表征后移除姿态头，再与LLM对齐。  
+关键贡献：构建mmMind-Bench基准，在行为描述和问答任务上超越现有方法，验证姿态引导预训练的有效性。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1136,9 +1136,9 @@ Abstract: Vision-language systems combine images with retrieved text, but these 
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：视觉语言系统在证据冲突时如何识别可信来源并合理弃权。
-主要方法：提出CARGO-VL框架，将四种证据状态作为一组优化，结合条件正确性与转换奖励，并用原始-对偶控制器平衡风险。
-关键贡献：引入XMC冲突训练资源，在多个基准上提升冲突处理、弃权准确性和模态平衡。</p>
+                            <p class="mb-0">研究问题：视觉语言系统在证据冲突或不足时如何可靠仲裁并拒绝回答。  
+主要方法：提出CARGO-VL框架，通过组相对优化匹配四种证据状态，结合条件正确性与转换奖励，并用原始-对偶控制器平衡风险。  
+关键贡献：引入XMC冲突训练资源，在多个基准上提升冲突处理、拒绝回答准确性和模态平衡，验证了反事实一致性作为可靠多模态仲裁目标的有效性。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1173,9 +1173,9 @@ Abstract: Neural PDE solver auto-design is fundamentally a search-space represen
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：提升神经PDE求解器自动设计的搜索效率。  
-主要方法：提出ADSL-PDE领域特定语言，将设计决策与代码实现分离。  
-关键贡献：通过结构化搜索空间，提高有效求解器密度，支持基于设计决策的进化优化。</p>
+                            <p class="mb-0">研究问题：提升神经PDE求解器的自动设计效率。
+主要方法：引入领域特定语言ADSL-PDE，将设计决策与代码实现分离。
+关键贡献：重塑搜索空间，提高有效候选密度，使演化搜索聚焦于设计决策。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1210,9 +1210,9 @@ Abstract: Long-context LLM decoding reads the key-value (KV) cache at every step
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：长上下文LLM解码中KV缓存加载成为带宽瓶颈，需在固定比特率下压缩缓存并保持注意力乘积。
-主要方法：将KV缓存量化建模为变换编码问题，基于校准统计和注意力感知失真准则推导出最优非正交变换。
-关键贡献：提出注意力保持的变换编码方法，在每元素2比特下优于现有正交变换方案。</p>
+                            <p class="mb-0">研究问题：减少LLM解码中KV缓存大小以提升吞吐量，同时保持注意力乘积精度。
+主要方法：将KV缓存量化建模为变换编码问题，基于校准统计推导注意力感知的最优非正交变换。
+关键贡献：提出闭式最优变换，满足广义Parseval关系，在低比特率下优于现有正交变换方法。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1248,8 +1248,8 @@ Abstract: Agentic AI is emerging in datacenters, but its architectural implicati
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
                             <p class="mb-0">研究问题：Agentic AI工作流的架构影响  
-主要方法：通过Azure生产研究和开源框架控制实验进行特征化分析  
-关键贡献：揭示CPU-GPU边界频繁交互、资源需求碎片化等架构不匹配问题，提出Agora原型方案</p>
+主要方法：通过Azure生产研究和开源框架控制实验，分类并表征工作流  
+关键贡献：揭示CPU-GPU边界频繁交互、资源碎片化等架构不匹配，提出Agora原型</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1284,9 +1284,9 @@ Abstract: Vision-language models for autonomous driving primarily rely on camera
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：探索4D雷达作为自动驾驶独立感知模态的视觉语言模型。
-主要方法：提出Radar4D-VLM，从十次连续4D雷达点云扫描中提取目标提议，组织为对象、场景和运动学令牌，通过参数高效投影器映射到冻结语言模型。
-关键贡献：实现雷达单模态推理，Top-64目标提议召回率达98.13%，超越固定网格和均匀随机方法。</p>
+                            <p class="mb-0">研究问题：探索4D雷达作为独立感知模态在自动驾驶视觉语言模型中的应用。
+主要方法：提出Radar4D-VLM，利用十帧连续4D雷达点云提取目标提议，组织为对象、场景和运动学令牌，通过参数高效投影器映射到冻结语言模型。
+关键贡献：首次实现仅依赖4D雷达的时序视觉语言推理，在K-Radar验证集上Top-64提议召回率达98.13%，显著优于基线方法。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1321,9 +1321,9 @@ Abstract: Neurosymbolic AI systems that integrate machine learning and symbolic 
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：如何整合机器学习与符号推理构建可靠、高效的神经符号AI系统。  
-主要方法：提出RAIL框架，从推理、保证、接口和学习四个原则分析神经符号AI设计。  
-关键贡献：揭示神经符号AI并非小众方法，而是开发可信系统的关键，并提供统一分析视角。</p>
+                            <p class="mb-0">研究问题：如何设计可靠、高效且可信的神经符号AI系统。
+主要方法：提出RAIL框架，整合推理、保证、接口和学习四个原则。
+关键贡献：统一分析多种AI系统，强调神经符号组合对可信AI的关键作用。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1359,8 +1359,8 @@ Abstract: Mapping paddy rice from very-high-resolution imagery in mountainous an
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
                             <p class="mb-0">研究问题：山区水稻高分辨率遥感影像分割困难  
-主要方法：TRNet，含地形能量频谱校正和地形引导结构解码器  
-关键贡献：在陡坡地形上显著提升水稻分割精度，IoU提升9-19个百分点</p>
+主要方法：TRNet，包含地形能量频谱校正和地形引导结构解码器  
+关键贡献：在陡坡地形上减少误报，水稻IoU提升9.15%和18.83%</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1396,8 +1396,8 @@ Abstract: Evaluating financial AI agents requires criteria aligned with real pro
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
                             <p class="mb-0">研究问题：如何构建符合金融专业工作标准的AI智能体评估基准。
-主要方法：提出角色接地评估标准构建（RGRC）流水线，从专业从业者交付物中提取评估标准。
-关键贡献：构建FinProBench基准，证明RGRC在专业角色任务中显著优于纯提示方法（99.1% vs 78.0%）。</p>
+主要方法：提出角色基础评估准则构建（RGRC）流水线，从从业者交付物中提取隐性标准。
+关键贡献：FinProBench基准覆盖57个职业，RGRC在专业角色上显著优于纯提示方法（99.1% vs 78.0%）。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1433,8 +1433,8 @@ Abstract: Serving large language models (LLMs) under diverse deployment constrai
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
                             <p class="mb-0">研究问题：如何在单一检查点中实现多精度LLM量化，避免为每种位宽单独存储模型。
-主要方法：提出递归残差量化（RRQ），从2位基模型开始，通过RTN逐步添加2位残差校正，构建4/6/8位表示。
-关键贡献：无需校准数据和多比特联合优化，构建速度比MatGPTQ快3.3倍，在6/8位精度上表现竞争力强。</p>
+主要方法：提出RRQ框架，通过低比特基量与递归生成的量化残差序列，逐步构建2/4/6/8位表示。
+关键贡献：无需校准数据和多比特联合优化，构建速度比MatGPTQ快3.3倍，在6/8位精度上表现竞争力。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1469,9 +1469,9 @@ Abstract: Recent advances in Multimodal Emotion Recognition in Conversations (ME
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：多模态情感识别中缺失模态导致性能下降的问题
-主要方法：提出C²MOE框架，通过交互感知专家分解模态一致性与互补性，并采用双分支预测机制进行鲁棒插补
-关键贡献：首次在信息论框架下统一表示学习与缺失模态插补，兼顾一致性与互补性</p>
+                            <p class="mb-0">研究问题：多模态情感识别中缺失模态导致的性能下降问题  
+主要方法：提出C$^2$MOE框架，通过交互感知专家分解模态一致性与互补性，并设计双分支预测机制进行鲁棒插补  
+关键贡献：首次在信息论框架下统一表示学习与缺失模态插补，兼顾跨模态一致性与互补性</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1506,9 +1506,9 @@ Abstract: Human evaluation of AI systems and digital products is costly, slow, a
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：人类评估AI系统和数字产品成本高、速度慢、难以规模化。  
-主要方法：构建包含83亿个智能体的模拟世界MatrAIx。  
-关键贡献：提供大规模、低成本、可扩展的AI评估与模拟平台。</p>
+                            <p class="mb-0">研究问题：如何低成本、可扩展地评估AI系统和数字产品  
+主要方法：构建包含83亿个智能体的仿真世界MatrAIx  
+关键贡献：提出大规模智能体仿真框架，替代传统人工评估</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1543,9 +1543,9 @@ Abstract: How do you verify a long-horizon agent when its own state and self-rep
                         <hr>
                         <div class="alert alert-info">
                             <h6><i class="bi bi-robot"></i> AI 总结</h6>
-                            <p class="mb-0">研究问题：如何验证长期任务智能体在自身状态不可信时的行为。
-主要方法：构建确定性执行器与语言模型分离的架构，通过预注册预测与代码观测匹配实现结构化验证。
-关键贡献：发现承诺漂移与绑定漂移可分离，消除承诺机制使目标放弃率从0.00升至1.00，而绑定错误保持0.00。</p>
+                            <p class="mb-0">研究问题：如何验证长期自主智能体在状态和自报告不可信时的行为。
+主要方法：构建确定性执行器拥有所有信念，语言模型仅提交提案，通过预注册预测与观察匹配进行结构性验证。
+关键贡献：提出自验证智能体工具，分离承诺漂移与绑定漂移，并发现承诺机制缺失导致目标放弃率从0.00升至1.00。</p>
                         </div>
                     </div>
                     <div class="modal-footer">
