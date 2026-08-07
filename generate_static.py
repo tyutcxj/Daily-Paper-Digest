@@ -20,11 +20,15 @@ def load_json(filepath):
         return None
 
 
-def generate_html(papers, summaries, analysis, today=None, all_dates=None):
+def generate_html(papers, summaries, analysis, today=None, all_dates=None, is_daily_page=False):
     """生成 HTML 页面"""
 
     if today is None:
         today = datetime.now().strftime('%Y-%m-%d')
+
+    # 根据页面位置确定路径前缀
+    daily_prefix = "" if is_daily_page else "daily/"
+    index_href = "../index.html" if is_daily_page else "index.html"
 
     # 构建日期选择器 HTML
     date_selector_html = ""
@@ -32,7 +36,7 @@ def generate_html(papers, summaries, analysis, today=None, all_dates=None):
         options = ""
         for d in all_dates:
             selected = 'selected' if d['date'] == today else ''
-            options += f'<option value="daily/{d["date"]}.html" {selected}>{d["date"]} ({d["count"]}篇)</option>'
+            options += f'<option value="{daily_prefix}{d["date"]}.html" {selected}>{d["date"]} ({d["count"]}篇)</option>'
         date_selector_html = f'''
         <select class="form-select form-select-sm date-selector" onchange="if(this.value) window.location.href=this.value">
             {options}
@@ -215,7 +219,7 @@ def generate_html(papers, summaries, analysis, today=None, all_dates=None):
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{index_href}">
                 <i class="bi bi-journal-richtext"></i> Daily arXiv
             </a>
             <div class="d-flex align-items-center">
@@ -400,7 +404,7 @@ def main():
         print(f"日期: {date_str}, 论文: {len(papers)} 篇, 总结: {len(summaries)} 篇")
 
         # 生成每日页面
-        html = generate_html(papers, summaries, analysis, today=date_str, all_dates=all_dates)
+        html = generate_html(papers, summaries, analysis, today=date_str, all_dates=all_dates, is_daily_page=True)
         daily_file = docs_daily_dir / f'{date_str}.html'
         with open(daily_file, 'w', encoding='utf-8') as f:
             f.write(html)
