@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.06694",
+    "title": "A Multi-Agent Framework for Automated Coarse-Grained Molecular Dynamics of Polymers",
+    "authors": [
+      "Joohee Choi, Junhyeong Lee, Seunghwa Ryu"
+    ],
+    "abstract": "arXiv:2608.06694v1 Announce Type: new \nAbstract: Coarse-grained (CG) molecular dynamics extends polymer simulation beyond the scales accessible to all-atom (AA) methods, but bottom-up CG modeling is laborious. The CG resolution is a design choice, so a transferable parameter set is generally not available and the potentials are derived anew for each polymer mapping. Here we present CGMas, a multi-agent framework that automates topology construction, equilibration, mapping, potential derivation, and validation from a natural-language specification of the polymer and target resolution. A large-language-model (LLM) reasoning agent infers the AA topology from polymer name, while layered self-correction resolves physical errors common to unsaturated, heteroatom-containing, and polar polymers. Downstream agents equilibrate the system, map it onto CG representation, derive potentials through Boltzmann inversion, and benchmark the model against its atomistic reference. CGMas completed all 27 homopolymer and copolymer tasks, matched the AA density to within 5% in 22, and reduced simulation from 38-88 min to 1 min, establishing agentic LLMs as a route to automated polymer coarse-graining.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06694",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06694"
+      }
+    ],
+    "relevance_score": 0.6625725516740804,
+    "max_similarity": 0.4430350621427473
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06769",
+    "title": "GraphVerse: A Comprehensive Visual Graph Reasoning Benchmark for Multimodal Large Language Models",
+    "authors": [
+      "Yuanfu Sun, Yuanhang Ren, Kang Li, Chuanhao Ji, Jiaxi Li, Jiajin Liu, Ninghao Liu, Qiaoyu Tan"
+    ],
+    "abstract": "arXiv:2608.06769v1 Announce Type: new \nAbstract: Recent Multimodal Large Language Models (MLLMs) have achieved remarkable progress across diverse vision-language tasks, creating an urgent need for more challenging benchmarks. Yet existing evaluations still provide limited insight into whether these models can truly reason over structured visual information. Visual Graph Reasoning (VGR) offers a compelling testbed for this challenge, requiring models to integrate perception, structural understanding, and multi-step reasoning over graph-based visual inputs. However, prior VGR benchmarks often reduce the task to visual perception followed by text-based reasoning, restrict evaluation to single-image settings, rely on answer-only metrics, and underrepresent realistic graph-centric scenarios. To bridge the gap, we introduce GraphVerse, a unified benchmark that jointly evaluates perception, visual reasoning, and text-based graph reasoning in MLLMs under both single-image and paired-image settings. At its core is a suite of Graph-centric Image Editing (GIE) strategies that modify graph images while preserving their semantics, turning them into active tests of visual reasoning. We further propose VGR-Score, a process-sensitive metric that evaluates reasoning quality beyond final-answer accuracy. Extensive experiments reveal several key limitations of current MLLMs in VGR, while also validating the effectiveness of GIE strategies and the transferability of GraphVerse to broader multimodal reasoning capabilities. The code is available at https://github.com/sunyuanfu/GraphVerse.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06769",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06769"
+      }
+    ],
+    "relevance_score": 0.5701319018895693,
+    "max_similarity": 0.3188082906524039
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06411",
+    "title": "Learning to Predict Middle-Layer Attention in MLLMs for Visual Token Prunin",
+    "authors": [
+      "Yuyao Sun, Tao Deng, Shuang Li, Deqing Wang, Hao Geng, Minjun Yu"
+    ],
+    "abstract": "arXiv:2608.06411v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) achieve strong performance across diverse vision-language tasks, but their efficiency is limited by the cost of processing numerous visual tokens. Visual token pruning can reduce this cost, but requires accurate token importance estimates. Recent studies have demonstrated that text-to-vision attention from middle language model layers can effectively guide visual token pruning, typically using attention from a predefined middle layer to select the visual tokens to retain. Two problems therefore remain. First, our analysis shows that the layer whose attention is most responsive to the question varies substantially across samples, making a fixed layer suboptimal. Second, obtaining attention from the appropriate middle layer requires processing numerous visual tokens through several language model layers, by which point considerable computation has already been spent. To address both problems, we propose Middle-layer Attention Prediction (MAP), which uses Question Contrastive Teacher Selection to identify a sample-specific teacher layer by contrasting attention under the original and reference questions, and distills attention from the selected layer into a lightweight predictor that estimates visual token importance from multi-modal input features. During inference, MAP combines the predicted importance scores with a diversity criterion to prune visual tokens before the first language model layer. Thus, MAP requires no attention maps for pruning and remains compatible with existing inference acceleration techniques. Across ten benchmarks on LLaVA-NeXT-7B, MAP retains 97.5% of the unpruned model performance with only 5.56% of the visual tokens, yielding a 3.09x end-to-end speedup.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06411",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06411"
+      }
+    ],
+    "relevance_score": 0.47479862279381335,
+    "max_similarity": 0.20743727205843945
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06699",
+    "title": "AgentPatch: Coarse-to-Fine Weak-Task Repair for Merging Agentic Multimodal Large Language Models",
+    "authors": [
+      "Zibo Shao, Baochen Xiong, Chengdong Xu, Linhui Xiao, Kaichen Li, Haoran Gong, Yan Li, Yaguang Song, Xiaoshan Yang"
+    ],
+    "abstract": "arXiv:2608.06699v1 Announce Type: new \nAbstract: Agentic multimodal large language models (MLLMs) extend multimodal perception and reasoning with planning, tool use, and interaction in dynamic environments. Yet current models are specialized for particular tools or environments, complicating consolidation into a single generalist. We formulate Agentic MLLM Merging and identify two challenges: asymmetric capability preservation, whereby capabilities with different interaction complexity are retained unevenly, producing weak tasks after merging, and behavior-critical forgetting, whereby losing decisive actions can derail long-horizon execution. We propose AgentPatch, a training-free coarse-to-fine repair framework. It selects a stable merged backbone, restores diluted weak-task-specific signals through Weak-Task Unique Residual Recovery, and applies an Agent-Guided Behavior-Critical Patch that recovers decisive behaviors under explicit capability protection. AgentPatch produces a single static checkpoint without routing or ensembles. Experiments across six agentic and multimodal benchmarks show that AgentPatch improves diverse merged backbones, alleviates weak-task degradation, and better balances weak-task recovery with the preservation of complementary search and agentic visual processing capabilities. Code is available at https://github.com/ziboshao/AgentPatch.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06699",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06699"
+      }
+    ],
+    "relevance_score": 0.46100665826682047,
+    "max_similarity": 0.1870353531795076
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06398",
+    "title": "EntropyMoE: Entropy-Aware Sparse Expert Routing for Tokenizer-Free LLMs",
+    "authors": [
+      "Bo Liu, Muxuab Yu, Yu Zhang, Pengfei Gao, Yongping Zhang"
+    ],
+    "abstract": "arXiv:2608.06398v1 Announce Type: new \nAbstract: Recent byte-level large language models (LLMs) have made tokenizer-free modeling increasingly competitive by grouping bytes into dynamically sized patches. However, existing byte-patch architectures still apply the same dense feed-forward computation to every patch. This uniform computation cannot adapt model capacity to variations in patch semantics and granularity. We address this limitation with EntropyMoE, a Mixture-of-Experts (MoE) architecture designed for dynamic byte patches. EntropyMoE replaces the dense feed-forward modules in the global patch Transformer with Top-K expert layers. Each dynamic patch serves as the basic unit of expert routing, and its byte coverage determines its contribution to workload accounting. The router selects experts directly from patch entropy, using the same granularity signal that underlies dynamic patch construction to organize sparse computation. Patch entropy and length jointly define the feature space for regulating expert specialization. Experiments show that EntropyMoE achieves the lowest held-out bits-per-byte among matched dense and sparse baselines while maintaining comparable downstream accuracy. These results establish patch entropy as an effective routing coordinate for sparse conditional computation and extend Mixture-of-Experts modeling beyond tokenizer-based representations.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06398",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06398"
+      }
+    ],
+    "relevance_score": 0.4562116704702863,
+    "max_similarity": 0.18944353978277664
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06407",
+    "title": "TransSLR: A Lightweight Transformer for Sign Language Recognition",
+    "authors": [
+      "Lucia Yen Wanchi, Samuel Johnny, Victor Tolulope Olufemi, Emmanuel Aaron, Moise Busogi"
+    ],
+    "abstract": "arXiv:2608.06407v1 Announce Type: new \nAbstract: Automated Sign Language Recognition for under-represented languages remains a largely unsolved problem. Central African Sign Language (CASL) exemplifies this gap: the only available bench-mark, CASL-W60, has a best reported accuracy of 69.93%, and we show that the common heuristic of fine-tuning high-resource models fails to close it. This failure stems from two compounding factors: the limited scale of available CASL data and the significant lexical and visual domain gap between CASL and large-scale corpora such as WLASL, which renders pre-trained representations largely uninformative.\n  To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder trained from scratch on 64-frame normalized pose sequences, with average pooling and a classification head. By operating on geometric keypoint representations rather than raw RGB, TransSLR achieves signer-independent generalization without relying on visual appearance. On the CASL-W60 benchmark, TransSLR establishes a new state-of-the-art accuracy of 80.39%, surpassing the prior best by +10.46%. Beyond accuracy, our encoder-only design significantly reduces computational overhead, making deployment feasible in resource-constrained environments. We conduct extensive experiments on the CASL-W60 benchmark, comparing against RGB-based and multimodal baselines, and demonstrate that TransSLR achieves state-of-the-art performance.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06407",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06407"
+      }
+    ],
+    "relevance_score": 0.44519219874195437,
+    "max_similarity": 0.16864937646206052
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06632",
+    "title": "Shape Your Feed: An LLM-based Agentic System for Conversational Recommendation",
+    "authors": [
+      "Ziyun Xu, Bosen Ding, Yue Zhang, Ji Qi, Qingyuan Song, Jizhou Huang, Liwei Wang, Jefferey Santelli, Yue Weng, Qichao Que, Zhenheng Yang, Junfeng Pan, Linhong Zhu"
+    ],
+    "abstract": "arXiv:2608.06632v1 Announce Type: new \nAbstract: Industrial recommendation systems predominantly adopt a passive ranking paradigm that infers user preferences from implicit behavioral signals (e.g., clicks, dwell time) rather than explicit, natural language inputs. As a result, users experience a persistent discrepancy between their explicit interests and what passive behavioral algorithms deliver, limiting their ability to express nuanced preferences or steer their feed in real time. To address this growing gap between how recommendations are optimized and how users wish to articulate their interests, we present Shape Your Feed (SYF), an LLM-based agentic recommendation framework that enables real-time, multimodal co-curation of content. SYF employs a three-tier architecture: (i) a Perception Flow that captures fine-grained user intent from text prompts, voice commands, and UI interactions; (ii) a Serving Flow that performs real-time agentic re-ranking and pruning of candidate items, grounded in a persistent Semantic Profile encoding evolving user preferences; and (iii) a Self-Evolution Flow that aligns system behavior with human judgments via Direct Preference Optimization (DPO) and an LLM-as-a-Judge ensemble. Offline evaluations show that SYF's alignment scoring module achieves 98.85% accuracy, substantially improving over strong few-shot baselines. Large-scale online A/B experiments on production traffic further demonstrate that SYF improves feed relevance and user sentiment, indicating a practical and scalable path toward interactive, user-steerable recommendation in industrial settings.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06632",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06632"
+      }
+    ],
+    "relevance_score": 0.43482546312261827,
+    "max_similarity": 0.16009268240048286
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06609",
+    "title": "Automated item evaluation: Predicting item acceptance and rejection using LLM-generated critiques",
+    "authors": [
+      "Hotaka Maeda, Yikai Lu"
+    ],
+    "abstract": "arXiv:2608.06609v1 Announce Type: new \nAbstract: Automated item evaluation (AIE) refers to the use of computational methods to assess item quality without requiring manual expert review or field testing of the items under evaluation. We aimed to build a near-comprehensive AIE model by predicting item acceptance and rejection from item text using historical rejection data from a large-scale standardized testing program. The dataset contained 52,759 English language arts (ELA) and mathematics items with 34% permanently rejected from future operational use. Rejection reasons included poor psychometric properties, content issues, bias and sensitivity concerns, and non-content issues. We fine-tuned a DeBERTaV3-large classifier on raw item text, a second DeBERTa classifier on Qwen3-generated item critiques, and a fusion model combining representations from both. The fusion model achieved the strongest overall performance (Accuracy = .75, F1 = .64, AUC = .80, Sensitivity = .64, Specificity = .81). Prediction for math (F1 = .73, AUC = .86) was considerably more accurate than ELA (F1 = .51, AUC = .72). Lowering the decision threshold from .5 to .25 raised average sensitivity for ELA and math to .88 and .91, while reducing specificity to .31 and .56, respectively, which may be preferable in automated item generation contexts where generating items is cheaper than evaluating them. Incorporating item critiques alongside raw item text improved performance across most rejection reasons. The model assigned higher rejection probabilities to more difficult items. However, the fusion model struggled to identify items flagged for bias, sensitivity, fairness, or accessibility, especially for ELA. These findings suggest that text-based AIE is feasible in some areas and may offer a practical tool for reducing the burden of manual review and field testing, while also underscoring the importance of human review for items with fairness concerns.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06609",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06609"
+      }
+    ],
+    "relevance_score": 0.431272627493947,
+    "max_similarity": 0.1580009217053362
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06396",
+    "title": "TEXAS: Task-Expert-Aware Supervision for Downstream Mixture-of-Experts LLM Adaptation",
+    "authors": [
+      "Guanzhi Deng, Haibo Wang, Kuan Wu, Xiangru Jian, Shing Yin Wong, Sichun Luo, Zhuoran Wang, Linqi Song"
+    ],
+    "abstract": "arXiv:2608.06396v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) language models route each token through a small subset of experts, making routing patterns useful for identifying task-relevant experts during downstream adaptation. Yet current approaches have two limitations: task experts are typically identified from aggregate routing statistics that reflect usage rather than association with successful task completion, and task-expert activations remain underexplored as signals for supervision allocation. We introduce Task-Expert-Aware Supervision (TEXAS), which combines correctness-conditioned task expert discovery with token-level supervision allocation. TEXAS compares expert activations on instances that the base model solves successfully and those it fails to solve, and retains experts more strongly activated on successful instances. During fine-tuning, it upweights answer tokens in failed instances when they activate these experts. TEXAS therefore leverages existing routing behavior without restricting adaptation to a fixed expert subset or imposing an explicit target routing distribution. Across three MoE models and six benchmarks, TEXAS achieves the best or tied-best performance in 17 of 18 settings and improves over the strongest baseline by 1.3--1.5 points on average. Ablations and further analyses validate both the discovered experts and the resulting supervision strategy.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06396",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06396"
+      }
+    ],
+    "relevance_score": 0.4290933141127745,
+    "max_similarity": 0.1546422673227464
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06402",
+    "title": "Interpretable Unsupervised Community Detection with LLM-Symbolized Structured Processes",
+    "authors": [
+      "Aoting Zeng, Kai Wang, Jianwei Wang, Yuxiang Sun, Yizhang He, Wenjie Zhang"
+    ],
+    "abstract": "arXiv:2608.06402v1 Announce Type: new \nAbstract: Community detection is a fundamental task in graph analytics that aims to identify cohesive groups of entities with similar behaviors or interests. Classic objective-driven methods struggle with complex graph structures, while deep-learning approaches improve performance at the expense of interpretability and rely on labeled data and training. Large language models (LLMs), with strong reasoning capabilities and world knowledge, are promising for interpretable, label-free community detection. To leverage these strengths, we propose LUCID, an LLM-guided, interpretable, training-free, and unsupervised community detection method. Inspired by phase-transition kinetics in natural systems, where complex structures emerge through initialization, merging, refinement, and selection, LUCID is designed as a four-stage pipeline. Within this pipeline, the LLM induces formal rules that translate implicit knowledge into explicit and interpretable logical structures. Specifically, (1) the Local-View Community Initialization stage encodes local graph structures using k-ego contexts and unsupervised node roles; (2) the Multi-factor Community Merge stage uses LLM-induced rules to iteratively merge local communities; (3) the Multi-grain Community Refinement stage applies LLM-induced coarse-to-fine rules in parallel to reduce boundary noise; and (4) the Global-view Community Selection stage identifies high-quality communities based on topological compactness and boundary clarity. Extensive experiments on real-world datasets demonstrate that LUCID, as an unsupervised approach, achieves state-of-the-art performance and consistently outperforms leading unsupervised and semi-supervised baselines.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06402",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06402"
+      }
+    ],
+    "relevance_score": 0.42804432147165505,
+    "max_similarity": 0.14965448089494604
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06564",
+    "title": "Quantization Damage Is Multiplicative, Not Additive",
+    "authors": [
+      "Zekun Wu, Swati Dhiman, Adriano Koshiyama"
+    ],
+    "abstract": "arXiv:2608.06564v1 Announce Type: new \nAbstract: Quantization is how large language models are actually deployed, and below four bits it is known to hurt. What nobody can say is which of the model's decisions will change at a given bit-width. The damage is silent: a compressed agent stops calling its tools, then loses half its safety refusals, yet benchmark scores barely move. Prior work assumes quantization adds noise of a roughly fixed size, which would make confident decisions safe. We measure the decision itself instead. The margin of a two-way decision is the model's score for the option it picks minus the score of its best alternative; we track it before and after quantization across 16 models from 8 model families, three quantization methods, and bit-widths from 8 down to 2. Quantization does not add fixed-size noise to the margin. It multiplies the margin by a factor that collapses with bit-width (median 0.86 at 4 bits, 0.33 at 3, 0.00 at 2); we call this margin shrinkage. This contraction reduces the protection a large margin affords; the model's own small biases pick the direction of failure: at 3 bits the decision to call a tool collapses toward inaction while the choice of which tool is untouched. In fitted statistical comparison, additive-noise accounts never win on the damaged tool and safety decisions. The fitted relation predicts flip rates within a median of 1.8 percentage points on held-out decisions, though no flip was used in the fit; per decision, the predicted flip probabilities are calibrated uncertainty estimates (expected calibration error 0.004 over 131,758 predictions). The same form holds in every model we measure, but the constants are each model's own and do not transfer. A small paired margin set, measured per model and bit-width, estimates which decisions break without full generative evaluation; under our cost-matched tests, nothing repairs damage more cheaply than one more bit.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06564",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06564"
+      }
+    ],
+    "relevance_score": 0.4244039355179001,
+    "max_similarity": 0.14874208248616125
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06485",
+    "title": "Do AI Personas Grow? Analyzing and Benchmarking Personality Evolution in LLM Agents After Life Events",
+    "authors": [
+      "Ming Wang, Peidong Wang, Xiaocui Yang, Daling Wang, Shi Feng, Fiona Fui-Hoon Nah, Ee-Peng Lim"
+    ],
+    "abstract": "arXiv:2608.06485v1 Announce Type: new \nAbstract: Personality-conditioned LLM agents (PC-Agents) are increasingly used in emotional support, social simulation, and role-playing, motivating the development of lifelong agents that remain coherent over extended interactions. A key component of such coherence is personality evolution: agents should undergo plausible, psychology-grounded changes as they experience life events in different contexts. Although prior work shows that LLM personalities can shift under contextual perturbations, how these shifts vary across traits, events, personas, and models remains poorly understood. We study event-induced personality change after 11 major life events, using the Big Five traits as a psychometric anchor and interpreting the resulting trajectories against longitudinal evidence from human personality psychology. Across four diagnostic axes, PC-Agents exhibit measurable trait shifts at similar rates for event-trait pairs with and without documented human change directions. Even when shifts follow the expected direction, their magnitudes usually fall below human effect-size ranges. Gender and cultural-region prompts show little moderating effect, while persona-level dispersion is compressed three- to four-fold relative to human samples. To enable systematic comparison, we introduce BFI-Adapt, a reusable benchmark for scoring the directional fidelity of event-induced personality change, and use it to rank 14 models. A validation suite shows that the measured shifts exceed no-event retest noise, remain stable under independently paraphrased prompts, exhibit limited and model-dependent convergence with scenario-based behavioral choices, and persist across intervening unrelated dialogue. Together, these checks establish the measured trajectories as robust event-conditioned response patterns. Our results suggest that current PC-Agents simulate the mean of human personality dynamics, but not its shape.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06485",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06485"
+      }
+    ],
+    "relevance_score": 0.42291911231230517,
+    "max_similarity": 0.14697001771678517
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06474",
+    "title": "WebGrader: Training LLMs for Web Development with Self-Evolving Programmatic Grader",
+    "authors": [
+      "Boshui Chen, Huiping Liu, Shaolei Zhang"
+    ],
+    "abstract": "arXiv:2608.06474v1 Announce Type: new \nAbstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collection, and semantic judgment, WebGrader issues a Pass verdict only after observing the requested transition. On WebGen-Bench, WebGrader trains an 8B policy to a 52.01% functional success rate, outperforming a matched appearance-plus-script reward by 7.88 points and surpassing o4-mini and DeepSeek-v4-flash. On WG-core-250, the policy reaches a Full Score of 44.953 and surpasses Qwen3-Coder-480B.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06474",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06474"
+      }
+    ],
+    "relevance_score": 0.4217699355203438,
+    "max_similarity": 0.14232981970867264
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06612",
+    "title": "SLED: Scalable Location Encoding via Distillation",
+    "authors": [
+      "Kevin Lane, Zhongying Wang, Esther Rolf, Morteza Karimzadeh"
+    ],
+    "abstract": "arXiv:2608.06612v1 Announce Type: new \nAbstract: The plethora of readily available geospatial data offers exciting opportunities to learn high quality representations of the planet, but the sheer size of the Earth Observations (EO), differing modalities, and different sensor types pose significant challenges in doing so. Location encoders have emerged as an efficient way of compressing EOs into location-specific embeddings. However, current state-of-the-art location encoders rely on computationally expensive CLIP-style frameworks that require large batch sizes in the 16K--32K range, suffer from false negative samples, and scale poorly with additional modalities. We introduce the Scalable Location Encoder via Distillation (SLED), a distillation-based location encoder that uses geospatial location as a binding modality to pretrain location encoders with any modality of geospatial data. The resulting location encoder framework is lightweight, modular, and can flexibly incorporate multiple modes, while eliminating the need for spatiotemporal coregistration of samples. SLED is performant with batch sizes as small as 128, enabling pretraining at a fraction of the runtime and compute costs of current state-of-the-art models. We demonstrate our approach by pretraining unimodal and multimodal SLED models on Sentinel-1, Sentinel-2, and Landsat imagery. We show that both unimodal and multimodal SLED models keep pace with or outperform existing approaches on a diverse set of 19 human-centric benchmark tasks and explore the benefits of using additional modes in pretraining.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06612",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06612"
+      }
+    ],
+    "relevance_score": 0.4170594179759696,
+    "max_similarity": 0.1350894254369534
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06501",
+    "title": "Can MLLMs Decode the Creative Leap? Introducing C4 for Cross-Concept Understanding",
+    "authors": [
+      "Ming Wang, Yuqing Zhang, Tingna Xie, Xiangju Li, Xiaocui Yang, Daling Wang, Shi Feng, Yifei Zhang"
+    ],
+    "abstract": "arXiv:2608.06501v1 Announce Type: new \nAbstract: Creative capabilities of MLLMs matter in design, communication, education, and human--AI collaboration, yet remain difficult to evaluate because explicit targets and reward signals are scarce compared with accuracy-oriented tasks. Cross-concept understanding is a core cognitive capacity underlying receptive creativity. It enables a perceiver to recover intended meaning from non-obvious but meaningful conceptual relations. We operationalize item construction as cross-concept encoding and model inference as cross-concept decoding. We introduce C4, a cognition-inspired evaluation framework for Chengyu (Chinese idiom)-based Cross-Concept Creativity. Its encoding component maps target slots to imageable substitute concepts along bridge paths in a manually annotated and third-party-reviewed cross-concept network, enabling batch generation with explicit structure, difficulty indexed by bridge count and depth, and exact answers. Using this framework, we instantiate the C4 Evaluation Set (C4-Eval), comprising 184 synthetic items and 37 human-created cross-concept chengyu figures collected from online sources. We manually construct and review cross-concept relations, bridge paths, and reasoning processes for the collected figures. Each C4-Eval item is instantiated in five task settings, yielding 884 primary answer-recovery cases. Across ten evaluated MLLMs, the strongest closed models reach 50.7% and 48.0% primary accuracy, while open-source models remain substantially lower. Candidate constraints improve accuracy sharply, but bridge hints and explanation requests provide only modest gains. These results expose a substantial gap in how current MLLMs decode creatively encoded meaning through cross-concept relations. The code is in the supplementary material.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06501",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06501"
+      }
+    ],
+    "relevance_score": 0.40270271862532603,
+    "max_similarity": 0.1205254629652468
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06429",
+    "title": "Recovering Lesion Parameters from Aphasic Picture Naming Error Profiles in Large Language Models",
+    "authors": [
+      "Yong Yang, Roger Newman-Norlund, Xiang Guan, Saeed Ahmadi, Regan Willis, Nadra Salman, Kalil Warren, Sophie Arheix-Parras, Srihari Nelakuditi, Leonardo Bonilha, Christopher Rorden, Rutvik H. Desai, Julius Fridriksson"
+    ],
+    "abstract": "arXiv:2608.06429v1 Announce Type: new \nAbstract: Interpretability methods for large language models (LLMs) describe internal state but do not directly test whether that state is causally sufficient to produce the observed behavior. In earlier work, we lesioned LLMs to produce error profiles in picture naming, a central task for assessing aphasia, and found that specific lesions produced errors resembling those of individual stroke survivors. Here we ask the inverse question: given an error profile, can the lesion parameters that produced it be recovered, and what does this inverse problem reveal about transformer computation? Lesions in LLaVA-Vicuna 13B were parameterized by layer index, modification percentage, and noise sigma across 4,840 configurations, and error profiles were characterized by a seven-category clinical taxonomy (correct, semantic, unrelated, formal, mixed, neologism, no-response). We trained a multi-task neural network to map error profiles back to perturbation parameters. The problem admitted a partial solution: across 10 independently trained inverse models, modification percentage and noise sigma were recoverable, whereas layer index was recoverable only within a neighborhood. In counterfactual validation, a fresh model instance perturbed with the recovered parameters reproduced the target behavior in 81.4% of cases. This dissociation between low layer recovery and high counterfactual fidelity is consistent with functional redundancy across transformer layers, a property not captured by standard interpretability methods. As an out-of-distribution test, we applied the trained model to picture-naming error profiles from 278 stroke survivors; recovered parameters were syndrome-discriminative, most strongly for perturbation intensity, indicating generalization beyond the training distribution. Counterfactual validation provides a general framework for LLM interpretability claims beyond inverse mapping.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06429",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06429"
+      }
+    ],
+    "relevance_score": 0.3901194539965839,
+    "max_similarity": 0.10440589975408031
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06406",
+    "title": "Deep Evidential Regression for Sparse Forest Height Estimation from Multimodal Satellite Imagery",
+    "authors": [
+      "Laura Bader, Muhammad Ammar Ahmed, Xiao Xiang Zhu, G\\\"oran Kauermann"
+    ],
+    "abstract": "arXiv:2608.06406v1 Announce Type: new \nAbstract: Accurate estimation of forest height from satellite imagery is essential for applications such as carbon accounting, biodiversity monitoring, and ecosystem management. While recent deep learning approaches provide accurate predictions, they typically do not quantify predictive uncertainty. This limitation is particularly relevant in geospatial settings characterized by sparse supervision and geographic distribution shift. In this work, we investigate Deep Evidential Regression (DER) for forest height estimation on the TreeUQ benchmark, a large-scale dataset designed for the joint estimation of tree count and average tree height at 10 m resolution, based on Sentinel-1/-2 data as well as tree inventory data over the federal state of Bavaria. To account for the extreme label sparsity of the tree inventory data, we introduce a masked evidential loss for dense geospatial prediction. Using a U-Net architecture with multimodal Sentinel-1 and Sentinel-2 inputs, the proposed approach jointly predicts tree height and associated uncertainty estimates in a single forward pass. Experimental results show that DER achieves predictive performance comparable to a deterministic U-Net while additionally providing well-calibrated uncertainty estimates. These findings demonstrate the potential of evidential learning as an efficient framework for uncertainty-aware forest structure estimation from Earth observation data.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06406",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06406"
+      }
+    ],
+    "relevance_score": 0.35471913548806033,
+    "max_similarity": 0.12102281976649805
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06516",
+    "title": "CertBind from Multimodal Connectivity to Certifiable Retrieval Decisions",
+    "authors": [
+      "Shuheng Cao, Zhenhao Zhang, Ruiqi Chen, Renjie Cao, Weijia Zhang, Siyu Zhang, Jiaxin Liu, Xiangyu Zeng, Haotian Geng, Fan Gu"
+    ],
+    "abstract": "arXiv:2608.06516v1 Announce Type: new \nAbstract: Lightweight connectors make frozen multimodal encoders composable at the representation level. Deployment exposes a second problem at the level of task decisions. A connected route can expand cross-modal reach while changing an established native retrieval capability. We introduce CertBind, a multiscale theory of certifiable composition for frozen multimodal connector graphs. At the node scale, native anchors establish the exact task identification boundary under the stated chart model. At the edge scale, contract-aware conformal ranks provide graph-wide family-wise error control. At the path scale, an overlap-aware budget and clean calibration yield a finite-sample recovery radius under declared conditions. At the query scale, this radius yields a covered top-k candidate set that becomes a point certificate when its size equals k. CertBind therefore retains supported routes as Direct, sends only flagged routes to recovery, returns Certified for decisive recovery, and returns Abstain for unresolved queries. The evaluated C-MCR shared route reduced native CLIP R@1 from 0.524 to 0.290. The production fallback recovered 0.963 +- 0.002 of clean retrieval, while the passing branch recorded a no-harm value of 1.000. CertBind extends multimodal composability from connected representations to certifiable task decisions.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06516",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06516"
+      }
+    ],
+    "relevance_score": 0.3527131829454197,
+    "max_similarity": 0.11887290856747279
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06621",
+    "title": "NxN E-valuation: Hypothesis Certification via a Conformal CRT Null",
+    "authors": [
+      "Bin Wang, Yan Zhong"
+    ],
+    "abstract": "arXiv:2608.06621v1 Announce Type: new \nAbstract: We propose NxN E-valuation, a handy, e-value-based hypothesis-certification algorithm that lets a hypothesis be verified without building any case-specific certification procedure---such as constructing a dedicated null hypothesis---as long as a large enough dataset is available. The method is especially suited to LLM-based exploration systems, where LLMs are remarkably good at proposing hypotheses but suffer badly from hallucination; this hallucination prevents us from harvesting LLM outputs directly, and existing remedies each fall short. The most common solutions include letting the LLM verify or correct itself circular verification and held-out testing (where false hypotheses can still pass via spurious correlations), among other remedies detailed in the introduction. To resolve this, NxN E-valuation exploits the naturally existing large training set and lets different samples serve as null hypotheses for one another. This design directly realizes a conditional randomization test (CRT) that certifies each hypothesis. The approach can be a universally better replacement for at least LLM circular verification and held-out-data testing, provided the LLM's generations are hypotheses that apply to each individual sample.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06621",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06621"
+      }
+    ],
+    "relevance_score": 0.32809677282504734,
+    "max_similarity": 0.1523825888717188
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.06422",
+    "title": "Sharding Prevents LLM Oversight Failures and Adversarial Exploitation",
+    "authors": [
+      "Victor Akinwande, J. Zico Kolter, Aran Nayebi"
+    ],
+    "abstract": "arXiv:2608.06422v1 Announce Type: new \nAbstract: Giving an LLM judge more compute does not necessarily make it check more requirements. When one call must return many verdicts, some decisions become weakly grounded in the evidence, even when that call receives the same token or tool budget as a panel of separate calls. Across expert-graded research replications, legal work, and clinical-trial assessments, agreement with experts falls as the number of verdicts per call grows. We identify sharding as the intervention that mitigates this failure in model-based oversight. Sharding partitions the requirements into smaller groups, assigns each group to a separate call, and aggregates the verdicts. Against a single call with the panel's full budget, sharding improves agreement while holding the model, evidence, total budget, and per-decision budget fixed. Overall, we find that a sharded weaker judge can outperform a more capable holistic judge and match that judge even when the latter receives the panel's full budget. Additionally, we find that sharding exhibits robustness against adversaries. A best-of-N adversary can hold the underlying work fixed, vary only its presentation, and increase an overloaded judge's acceptance of genuinely unmet criteria severalfold. Wherever sharding reduces baseline error, it removes this adversarial advantage, keeping over-acceptance low even as the adversary's search widens. Sharding does not address attacks that persuade the judge separately on each criterion rather than exploiting overload. In that setting, we find that debate-style opposition on top of sharding withstands such adaptive re-optimization.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.06422",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.06422"
+      }
+    ],
+    "relevance_score": 0.2706347480608351,
+    "max_similarity": 0.082190711248595
+  }
+]
