@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.11242",
+    "title": "Lost in Compaction: Evaluating Side-Constraint Loss under Context Compaction",
+    "authors": [
+      "Zhiqi Wang, Yichi Zhang, Dongwon Lee, Yuchen Yang"
+    ],
+    "abstract": "arXiv:2608.11242v1 Announce Type: new \nAbstract: When the context window is under pressure, LLM systems compact prior context to continue ongoing tasks. We identify a class of user-issued instructions, Session Constraints (SCs), such as \"do not delete any emails until I confirm,\" that are meant to constrain LLM's behavior for the remainder of a session but are silently dropped during compaction. To quantify this loss, we introduce COMPINT, an evaluation suite that evaluates compactors across three long-context scenarios: multi-turn chat, agentic trajectory, and long-horizon research.\n  Current compactors retain only 17% of injected SCs on average, and most perform worse than running the same task without compaction. Retention varies sharply with compactor, prompt, context length, SC phrasing, and injection location, showing that the loss is systematic rather than tied to any single setting. We propose an SC-aware extractor that runs alongside the compactor as a plug-and-play module, achieving over 90% retention across all three scenarios without modifying the compactor or LLM. The COMPINT evaluation suite and accompanying implementation are available at https://github.com/ZhiqiEliWang/compaction-integrity.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 13 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 13 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11242",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11242"
+      }
+    ],
+    "relevance_score": 0.516744575858581,
+    "max_similarity": 0.26270878074310033
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12515",
+    "title": "Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?",
+    "authors": [
+      "Vladyslava Rudas, Dmytro Kuzmenko"
+    ],
+    "abstract": "arXiv:2608.12515v1 Announce Type: new \nAbstract: Assessing proxemic danger from a robot's egocentric perspective is critical for safe embodied navigation in human environments and requires both visual and contextual reasoning. We evaluate three opensource vision-language models (VLMs) (\\textit{InternVL}, \\textit{Qwen-VL}, and \\textit{SmolVLM}) on the classification of egocentric robot images into four danger levels, comparing three prompting strategies and two rounds of QLoRA fine-tuning against a stratified random baseline. Without fine-tuning, all models perform near the baseline, while fine-tuning yields only modest overall improvements. However, \\textit{Qwen-VL} with an advanced prompt achieves substantially higher recall for high-danger cases than the other models. An analysis of person localization further shows that correct danger classification does not correspond to better spatial grounding, indicating that a model may produce a useful safety label without attending to the relevant region of the scene. These results show that current VLMs remain limited in fine-grained proxemic reasoning and spatial grounding, although targeted prompting and fine-tuning can improve high-danger detection in selected models.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12515",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12515"
+      }
+    ],
+    "relevance_score": 0.5087920367572729,
+    "max_similarity": 0.2478420744437355
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12689",
+    "title": "Mr3D-VL: A generalist vision language foundation model for Multiparametric 3D Magnetic Resonance Imaging",
+    "authors": [
+      "Zhi Qiao, Xintong Wu, Yichu He, Feng Shi"
+    ],
+    "abstract": "arXiv:2608.12689v1 Announce Type: new \nAbstract: Multi-parametric magnetic resonance imaging (mpMRI) is a cornerstone for brain tumor diagnosis and treatment, yet current AI models face critical limitations: their lack of natural language interaction and interpretability impedes spatial information integration and cross-modal reasoning required clinically. Key challenges arise from significant physical meaning differences across modalities, spatial misalignment due to scan intervals, and the need for complex multi-feature interpretation in tasks like glioma grading. While visual-language models (VLMs) show promise in cross-modal understanding, existing methods focus mainly on 2D image modeling, neglecting direct perception of 3D volumetric space. Although 3D VLMs have been proposed for report generation and feature alignment in 3D CT imaging, mpMRI applications demand collaborative inference across multiple imaging modalities-a requirement unmet by current solutions. To address this, we introduce Mr3D-VL, a dedicated visual-language foundation model for multi-parametric 3D MRI. With 4 billion parameters, it employs an unsupervised pre-trained shared 3D encoder and 4D rotational positional embedding for dual modality-spatial integration. Its cross-modal projection layer uses a multi-resolution feature implantation strategy to enhance feature perception across resolutions. Experimental results show significant improvements over existing 4B/7B/30B domain-specific and general-purpose models in text generation tasks, achieving a BERTScore of 0.856 for report generation, with question-answering accuracy at 0.713 and multiple-choice accuracy at 0.912.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12689",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12689"
+      }
+    ],
+    "relevance_score": 0.4844091044633493,
+    "max_similarity": 0.21510867216749624
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12627",
+    "title": "EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory",
+    "authors": [
+      "Le Zhang, Ke Sun"
+    ],
+    "abstract": "arXiv:2608.12627v1 Announce Type: new \nAbstract: Long-horizon egocentric memory transforms continuous first-person video and audio into a searchable record of past experiences. We demonstrate two bottlenecks in existing systems: indices built from context-poor captions are unreliable for agentic search, while retrieval ignores a question's temporal intent. To address both bottlenecks, we introduce EgoCITE (Egocentric Context-augmented Indexing and Time-aware Evidence retrieval), a long-horizon agentic memory framework for egocentric QA. EgoCITE comprises three components. EgoScheme uses local multimodal context to turn fragmentary video captions and speech transcripts into self-contained atomic memory indices. EgoIndex organizes complementary action, activity, utterance, and conversation representations into searchable multi-view memory indices at multiple granularities. EgoRetrv combines semantic search with question-conditioned temporal relevance scoring and curation of retrieved evidence. We evaluate EgoCITE on EgoLifeQA, EgoMem, and EgoR1-Bench in terms of answer accuracy and target-event retrieval alignment. EgoCITE improves accuracy over agentic memory baselines by at least 4.4--14.2\\% while achieving 36$\\times$ lower cost than long-context LLM agents.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12627",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12627"
+      }
+    ],
+    "relevance_score": 0.4740789668620182,
+    "max_similarity": 0.2061299575559331
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11232",
+    "title": "Backtrader-Bench: Benchmarking LLM Agents on Algorithmic Trading with Self-Generated MCQs",
+    "authors": [
+      "Ruoxi Zhao, Maziar Raissi"
+    ],
+    "abstract": "arXiv:2608.11232v1 Announce Type: new \nAbstract: Evaluating LLM coding agents in algorithmic trading is difficult because static benchmarks risk data contamination and numerical backtest outputs require ground truth from actual code execution. We present Backtrader-Bench, a framework with two complementary pipelines. A deterministic multiple-choice question (MCQ) pipeline generates questions from backtest configurations across five trading strategies, 33 templates, and three difficulty tiers, with an independent checker that re-derives every answer. A generator-solver filtering pipeline autonomously mines harder questions: a generator writes questions verified by executable code, converts them to MCQs, and discards any that a no-tool solver can answer without code execution. We evaluate 11 models without tools (10 runs each) and four with-tools configurations on a 30-question curated set. Tool-augmented agents reach 90.0% accuracy in a single pass (GPT-5.5 and Opus 4.7), outperforming the best no-tools baselines (73.0%, averaged over 10 runs) by 17 percentage points. On 38 separately mined questions, no-tools accuracy drops further, with half the models falling to roughly random-chance level (25%). Beyond evaluation, the scalable MCQ infrastructure is designed to produce a training corpus for reinforcement learning, with the ultimate goal of building a specialized agent for quantitative trading workflows.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 13 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 13 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11232",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11232"
+      }
+    ],
+    "relevance_score": 0.4709533411490344,
+    "max_similarity": 0.2041399715777979
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11249",
+    "title": "Diffuse to Compress: Leveraging Diffusion LMs for Lossless Compression",
+    "authors": [
+      "Angelo Nardone, Paolo Ferragina"
+    ],
+    "abstract": "arXiv:2608.11249v1 Announce Type: new \nAbstract: We study the problem of lossless text compression, motivated by the rapid growth in the collection and storage of digital textual data - including plain text, source code, and structured formats such as XML - and by recent advances in neural language model-based compression. In particular, recent LLM-based approaches, whether built on symbol-ranking pipelines or paired with a statistical compressor, have demonstrated compression ratios significantly superior to general-purpose compressors such as zstd, gzip, or bzip on text and code. However, these neural approaches suffer from severe throughput limitations, making them not yet practically usable.\n  For the first time in the context of lossless neural text compression, we introduce Diffusion Language Models (DLMs) as an alternative inference paradigm to autoregressive LLM-based approaches. We argue that replacing autoregressive LLMs with DLMs within the same compression framework could overcome the throughput bottleneck caused by their one-symbol-per-step limitation. However, achieving these improvements requires addressing algorithmic challenges introduced by applying DLMs to lossless compression, where the architecture allows the number and positions of symbols encoded at each forward pass to be decided independently. We design efficient and effective strategies to solve these challenges and evaluate them experimentally against LLM-based and general-purpose compressors on enwik8, a well-established textual benchmark.\n  Our results show that the newly proposed DLM-based framework advances the state of the art in lossless text compression. Moreover, as DLMs are still a relatively young paradigm, recent advances toward increasingly capable and efficient models suggest substantial room for further improvements.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 13 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 13 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11249",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11249"
+      }
+    ],
+    "relevance_score": 0.4653568190242465,
+    "max_similarity": 0.19735527756289964
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12564",
+    "title": "Scaling Automatic Research Agents via World Models",
+    "authors": [
+      "Xiyuan Yang, Sheikh Sarwar, Jingru Cheng, Zhan Shi, Duanshun Li, Huiyuan Chen, Haiyang Zhang, Chenlei Guo, Jingrui He, Zhenyu Liao"
+    ],
+    "abstract": "arXiv:2608.12564v1 Announce Type: new \nAbstract: Automating empirical research is a long-standing direction of AI. Recent automatic research (AutoResearch) agents bring this goal within reach, as modern LLMs show the capability to independently implement solutions and learn from the execution outcomes. Behind these gains, post-training (especially RL) plays a central role. In this paper, we identify a fundamental tension when scaling RL for these agents: the two components of every AutoResearch trajectory (agent generation and environment execution) scale in very different manners, since all generation shares compute through batching, while each execution occupies its exclusive sandbox and real machine time. As a result, the environment execution dominates the training cost and becomes the bottleneck as trajectories grow. To resolve this tension, we propose World Model RL (WMRL), which replaces environment execution with a world model to remove this bottleneck. Additionally, the world model can be imperfect, as its rewards are corrupted by bias and noise. Therefore, we further equip WMRL with two mitigations, Online Debiasing and Inverse-Variance Denoising, which offset the bias and suppress the noise respectively. Theoretically, we prove that both mitigations of WMRL strictly improve the convergence guarantee. Empirically, WMRL accelerates training by 3-4x on various tasks at different agent scales, while exceeding the performance of standard RL baselines. Moreover, our post-trained 4B and 9B agents outperform much larger open-weight agents of 48B and 120B on held-out benchmarks. Beyond AutoResearch, WMRL also transfers to post-training embodied VLA policies, which demonstrates the generalizability of our method.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12564",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12564"
+      }
+    ],
+    "relevance_score": 0.45393508525013276,
+    "max_similarity": 0.18411057769849756
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12419",
+    "title": "LoKiFormer: Locality-aware Attention with Decoupled Knowledge Memory for Efficient Large Language Model Pretraining",
+    "authors": [
+      "Qiuwu Chen, Zimo Liu, Yuchen Li, Ying Sun, Yifan Zhang, Zhijie Qiu, Zeng You, Ryan Dong, Simeng Ma, Yaofo Chen, Mingkui Tan"
+    ],
+    "abstract": "arXiv:2608.12419v1 Announce Type: new \nAbstract: Large language models (LLMs) have achieved remarkable breakthroughs across various applications. However, their architectures remain inefficient in pretraining due to two main limitations: (i) self-attention lacks an explicit inductive bias for locality, leading to redundant modeling of sequence-internal local information; (ii) mixture-of-experts (MoE) implicitly couples knowledge storage with computational pathways, hindering flexible access to sequence-external global knowledge. To overcome these limitations, we propose LoKiFormer, a novel LLM architecture that augments the standard decoder with two dedicated modules: 1) Local Fusion Attention (LFA), which incorporates a convolutional fusion to attention, explicitly capturing local patterns and allowing the attention to operate on more informative representations; 2) Knowledge Memory Module (KMM), which introduces a parametric key-value memory that explicitly stores global knowledge in addressable slots, decoupling storage from computation and enabling direct knowledge retrieval. Together, these modules enable LoKiFormer to achieve more efficient and effective integration of information at both levels. Experimental results show that LoKiFormer converges 1.33x faster in pre-training than baseline models, underscoring its superiority over existing LLM architectures.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12419",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12419"
+      }
+    ],
+    "relevance_score": 0.4520638977085756,
+    "max_similarity": 0.1780477365656395
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12611",
+    "title": "From Visual Widgets to UI Code: Efficient Tool-Grounded Generation",
+    "authors": [
+      "Houston H. Zhang, Tao Zhang, Li Gu, Linfeng Ye, Yuanhao Yu, Xinxin Zuo, Yang Wang, Zhixiang Chi"
+    ],
+    "abstract": "arXiv:2608.12611v1 Announce Type: new \nAbstract: Existing screenshot-to-code systems face a trade-off between flexibility and controllability. Direct multimodal generation can hallucinate visible details, whereas structured pipelines reduce such errors through component-wise decomposition, predefined templates, and customized intermediate representations. These structures, however, introduce additional generative orchestration and restrict outputs to designs covered by the representation. We investigate whether selective tool grounding can improve the fidelity--efficiency trade-off of direct widget-to-code generation. We introduce \\textbf{WidgetGen}, a lightweight tool-grounded framework that extracts observable text and color evidence, performs high-level layout and optional chart reasoning, and directly generates executable JavaScript XML (\\emph{JSX}). This design reduces reliance on component-wise generation while avoiding a fixed UI schema. Across six multimodal models and \\(1{,}000\\) held-out widgets, WidgetGen outperforms direct prompting and the structured Widget2Code pipeline on most visual reconstruction metrics, with consistent gains in area, legibility, and style. Finally, reconstruction-derived image-code pairs improve six Qwen-family open-weight models across every reported metric through supervised fine-tuning. These results establish WidgetGen as a strong lightweight baseline and show that selective evidence grounding offers an effective alternative to extensive representation constraints.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12611",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12611"
+      }
+    ],
+    "relevance_score": 0.4354514738138916,
+    "max_similarity": 0.15662183367703164
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12721",
+    "title": "VOS-Agent: The 1st Place Solution for the 8th LSVOS Challenge (MOSEv2 Track)",
+    "authors": [
+      "Canyang Wu, Jinrong Zhang, Xusheng He, Ce Bian, Xianjing Han, Jianlong Wu"
+    ],
+    "abstract": "arXiv:2608.12721v1 Announce Type: new \nAbstract: Complex video object segmentation requires robust target propagation under severe occlusion, disappearance and reappearance. Although SAM3 provides strong promptable mask propagation, a uniform inference path remains unreliable for tiny targets with insufficient visual evidence and semantic-dominated targets whose identities depend on explicit attributes. To this end, we present VOS-Agent, a collaborative framework that retains SAM3 as the shared dense segmentation module and conditionally activates specialized agents according to target characteristics. A Target Perception and Routing Agent assigns each sequence to a regular, tiny, or semantic-dominated route. Tiny targets are supported by a Visual Tracking Agent through confidence-aware box prompts, while semantic-dominated targets are handled by an MLLM-based Semantic Agent through description-guided localization and candidate verification. On the MOSEv2 test set, VOS-Agent achieves 69.82% on the official $\\mathcal{J}\\&\\dot{\\mathcal{F}}$ metric and ranks first in the MOSEv2 Track of the 8th LSVOS Challenge at ECCV 2026.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12721",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12721"
+      }
+    ],
+    "relevance_score": 0.4334273350474479,
+    "max_similarity": 0.15823104225131782
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12746",
+    "title": "Dual-Stream Cross-Anchor Correction Grounding Long-Form Captions and the Domain Limits of Object-Level Anchors",
+    "authors": [
+      "LingKai Bu"
+    ],
+    "abstract": "arXiv:2608.12746v1 Announce Type: new \nAbstract: Object hallucination in multimodal large language models arises when language priors and corpus co-occurrence bias outweigh the visual evidence, with nothing tying an individual object mention to what the image shows. Most remedies intervene at decoding time without training, yet under a unified protocol their benefit is confined to short captions;supervised fine-tuning (SFT) on a detail- rich corpus lengthens captions, but over forty percent still name absent objects. This paper proposes Dual-Stream Cross-Anchor Correction (DSCC). Unlike work that post-processes decoding, DSCC is the first to inject object-level visual anchors into the language model itself during fine- tuning: a perception stream aligns object-level hidden states at an intermediate layer to frozen text anchors by a bidirectional contrastive objective; a cognition stream lets deeper layers query those anchors by cross-attention at every generation step; and a two-stage curriculum gate couplesthem, making evidence retrieval a structural constraint at each autoregressive step. Under one backbone and one scoring protocol, experiments span long-caption hallucination, object-existence discrimination and cross-domain generalisation, with vanilla SFT on the same corpus and schedule as a length- and density-matched control, so gains are attributed layer by layer. DSCC is the only method reaching the long-caption, low-hallucination region: captions roughly 1.9 times the baseline length at 88.19% precision per object mention, the highest under a density-independent criterion. Ablations expose a synergy: the perception stream alone degrades precision yet reverses sign when stacked on the cognition stream. No universal superiority is claimed: three out-of- domain benchmarks yield a predictable, falsifiable domain-conditionality, the synergy being bound to the anchors' semantic domain and breaking on charts and optical illusions.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12746",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12746"
+      }
+    ],
+    "relevance_score": 0.43012287976709324,
+    "max_similarity": 0.15030627829997284
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11210",
+    "title": "Distribird: Literature-Informed Prior Distribution Design for Bayesian Model Calibration",
+    "authors": [
+      "Patrik P. S\\\"uli, Gy\\\"orgy Eigner, Roland Holl\\'os"
+    ],
+    "abstract": "arXiv:2608.11210v1 Announce Type: new \nAbstract: Bayesian calibration of process-based models requires a prior distribution for each model parameter. Despite decades of methodological work, researchers almost always fall back on uniform priors. The main reason is that building informative priors from scientific literature is slow and needs both domain and statistical expertise. We present \\textbf{Distribird}, an agentic web application that automates this process. Given a parameter name, physical description, and domain context, Distribird deploys a multi-agent pipeline that searches the literature, extracts and weights reported values by domain relevance, and fits a probability distribution via AIC model selection. When no literature is available, the system falls back to sensible uninformative alternatives, and clearly reports both the evidence behind and the confidence level of every prior it produces. It is designed for the problems where the models have physically interpretable parameters, where domain knowledge exists in the published literature. We evaluate the tool on 24~parameters across 10 scientific domains comparing three open-weight models (Qwen3.6 27B, Gemma 4 31B, Mistral Small 4 119B) with a single-prompt LLM baseline. On prior quality the full pipeline \\emph{matches} this baseline. Every prior is traced to the specific papers and values from which it was constructed; a built-in validity layer declines to produce priors for out-of-scope requests, whereas the single-prompt baseline returns confident but unfounded priors for them in 11 of 30~model--parameter cases; and every language-model call runs locally, so no parameter description or unpublished modelling detail is transmitted to a third-party LLM provider (only generated search terms reach the public literature databases). For scientific use, we argue these properties matter more than a marginal improvement in point-estimate accuracy.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11210",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11210"
+      }
+    ],
+    "relevance_score": 0.4209959195699203,
+    "max_similarity": 0.14308518865148237
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11220",
+    "title": "LLMs in Process Diagram Engineering: From Optimal PFDs to Validated P&IDs",
+    "authors": [
+      "Timur Zakarin, Sergei Voitov, Sergei Shumilin, Evgeny Burnaev"
+    ],
+    "abstract": "arXiv:2608.11220v1 Announce Type: new \nAbstract: Nowadays, the creation of a process flow diagram (PFD) and its subsequent transformation into a piping and instrumentation diagram (P&amp;ID) is predominantly performed manually. Applying artificial intelligence in the task could potentially lead not only to process automation and time savings, but also to financial gains by exploring numerous diagram's topology options and reducing manual labor. This research presents P&amp;ID Pilot - a practical end-to-end AI pipeline capable of handling flowsheet developing for both stages. The first stage focuses on PFD synthesis, whereas the second is directed toward modifying the generated PFD into P&amp;ID. After comparing four different methods, the hybrid approach combining genetic algorithms (GA) and large language models (LLM) is shown to generate the optimal valid PFD topology, achieving the lowest loss value among all the methods, while satisfying the required outlet flow parameters without engineering-rule violations. For the second stage, the proposed LLM-based agent successfully transforms the generated PFD into a source-grounded P&amp;ID by producing validated, executable modifications through a restricted engineering software development kit, achieving 100% execution success while maintaining compliance with domain-specific rules and reference graph structures. This unified pipeline - coupling GA/LLM-driven synthesis with an LLM-based transformation agent - offers a feasible path toward end-to-end process design automation by producing validated, deployable outputs and substantially reduces manual engineering effort.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11220",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11220"
+      }
+    ],
+    "relevance_score": 0.4061531905768236,
+    "max_similarity": 0.12371421048269785
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12570",
+    "title": "Attribute-Conditioned Multimodal Slot Factorization for Controllable Fashion Retrieval",
+    "authors": [
+      "Najmeh Forouzandehmehr, Topojoy Biswas, Evren Korpeoglu, Kannan Achan"
+    ],
+    "abstract": "arXiv:2608.12570v1 Announce Type: new \nAbstract: Fashion retrieval often requires satisfying multiple attributes at once, such as category, color, pattern, and demographic. Monolithic embeddings mix these signals into a single vector, making attribute-specific control difficult at retrieval time. Many existing semantic-ID methods provide discrete item codes, but these codes are typically optimized as item-level or residual addresses and do not expose named, independently controllable attribute slots.\n  We introduce MM-slotgate, a multimodal slot encoder that factorizes Fashion-CLIP text and image embeddings into four named attribute slots. Each slot learns its own text-image gate, so visually grounded attributes such as color and pattern can rely more on image evidence, while taxonomy-oriented attributes such as category and demographic can remain more text-driven.\n  On H&amp;M, using a combined slot-similarity and slot-logit retrieval score, MM-slotgate achieves 0.7566 macro ConstraintSatisfied@10, outperforming equal-weight multimodal fusion (0.7142) and fCLIP text-only retrieval (0.4755). The largest gain is on color, which improves from 0.321 to 0.889 (+0.568 absolute), as the learned color gate assigns 57.4% weight to image evidence. The learned gates are interpretable without modality supervision: color is image-leaning, category is text-leaning, and pattern and demographic lie near the middle.\n  The resulting slots also remain controllable: linear probes show no measured excess leakage beyond the label-correlation baseline, and quantized slot codes support targeted intervention, including a 15.3x lift for color. These results suggest that controllable fashion retrieval benefits from typed, attribute-conditioned multimodal slots rather than either a single global embedding or opaque item-level semantic IDs.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12570",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12570"
+      }
+    ],
+    "relevance_score": 0.40479941264630204,
+    "max_similarity": 0.12068495161516782
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11226",
+    "title": "Cutting AI Datacenter Energy with Reinforcement Learning: Measured Power Control of LLM Training from One GPU to the Fleet",
+    "authors": [
+      "Eliseo Curcio"
+    ],
+    "abstract": "arXiv:2608.11226v1 Announce Type: new \nAbstract: Reinforcement-learning post-training dominates modern language-model development, yet its power behavior on GPU hardware has not been characterized, and datacenters manage GPU power with workload-blind mechanisms, static caps and reactive throttling, that slow hardware indiscriminately. We instrument GRPO training with half-second power telemetry at 7B, 14B, and 72B scales on one to four A100s (380,000+ samples), and train a PPO meta-controller that adapts the workload's own generation parameters to measured power. Against the full 500-step 7B trace, the controller cuts power-limit violations by 89.8% while increasing token output by 18.1% and energy efficiency by 26.2% (tokens per MWh). Deployed live at 72B, the same controller family yields replicated null results, diagnosed as the group-size actuator losing authority under model sharding. An actuator-authority sweep shows the same parameters applied as generation concurrency retain 17-22% power authority, isolating an occupancy-versus-volume principle; a controller rebuilt on that actuator controls a live 72B rollout-generation workload across three replications: 35.7% more output than a static safe baseline at 2.27 +/- 1.08% budget violations, 87.2% fewer violations than uncontrolled operation, and the best mean throughput and energy per token among constrained controllers, with an adaptive threshold rule matching it in one of three operating conditions. Under realistic measurement windows the original 72B transients fall from 23.6% at half-second resolution to 1.6% at 30 s and zero at 5 min; a composed 16-GPU fleet shows zero violations at 30 s and longer, with peak demand at 50-56% of nameplate. For this fleet mix, roughly twofold oversubscription of nameplate appears feasible, subject to operator validation. We quantify the economic and carbon consequences and specify a low-cost operator pilot.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11226",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11226"
+      }
+    ],
+    "relevance_score": 0.390219687004013,
+    "max_similarity": 0.10686795213020281
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12592",
+    "title": "Represent, Then Generate: Multimodal-Conditioned Time-Series Generation under Irregular Missingness",
+    "authors": [
+      "Haochen Zhang, Jiaheng Guo, Yu-Chao Huang, Nicholas Knoz, Tianlong Chen"
+    ],
+    "abstract": "arXiv:2608.12592v1 Announce Type: new \nAbstract: Continuous physiological time series underpin modern clinical monitoring, yet many of the most informative signals are invasive, expensive, or simply unavailable for a given patient. Conditional generation offers a remedy: an absent signal can be synthesized from co-recorded signals and routine clinical variables. Existing generators, however, are built around a single conditioning modality and degrade when forced to handle the heterogeneous, irregularly missing mix of time-variant signals and static covariates seen in practice. We propose ReCoGen (Represent Conditions, then Generate), a two-stage framework that decouples multimodal condition representation from target generation. Stage I trains one masked autoencoder per modality, distilling each time-variant condition into a compact and missingness-tolerant token sequence. Stage II trains a flow-matching generator that fuses these tokens with static conditions to synthesize the target signal. Across three physiological benchmarks, including continuous glucose monitoring on AI-READI and arterial blood pressure generation on MIMIC-III and MIMIC-IV, ReCoGen attains the best downstream utility on all sixteen (dataset, task, metric) settings, surpassing six representative conditional generators; on thirteen of them its utility also reaches or exceeds the utility measured on the real signal, a reference we read as an approximate anchor rather than a ceiling. Ablations trace the gains to the conditioning path: learnable cross-attention over the frozen per-modality encoders, and a dual token-plus-AdaLN route for the static conditions. ReCoGen thus turns routinely collected signals into informative surrogates for invasive or unavailable ones, a step toward less invasive, lower-cost continuous clinical monitoring.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12592",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12592"
+      }
+    ],
+    "relevance_score": 0.3869796402814647,
+    "max_similarity": 0.16300199327410275
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11215",
+    "title": "Poor Man's Agentic Modeling: Simulating Large LLM-Agent Societies on a Laptop",
+    "authors": [
+      "Igor Itkin"
+    ],
+    "abstract": "arXiv:2608.11215v1 Announce Type: new \nAbstract: Simulating societies of many large language model (LLM) agents is expensive, yet the questions asked of such simulations are usually macroscopic: phase behaviour, stylised facts, and scaling with the number of agents $N$, not the cognition of any single agent. We turn a statistical-physics observation into a method: replace each LLM agent by a low-parameter model fitted from a few hundred to a few thousand cheap queries, then run the society at any $N$ on a laptop. Whether this works is decided before the simulation runs, chiefly by what each agent perceives. We introduce an [interaction order x memory] taxonomy that maps perception and memory to an effective theory and a predicted $N$-trend of the surrogate error. We validate it on a faithful reimplementation of the LLM macroeconomy EconAgent and seven further named LLM simulations, with agent decisions cloned from genuine LLM elicitations (primarily DeepSeek) for a few dollars; the predicted error trends hold cell by cell, and the two refuted predictions, both on a strongly saturating response and traced to its curvature, are themselves matched quantitatively by the theory with no free parameters.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11215",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11215"
+      }
+    ],
+    "relevance_score": 0.3787271278307818,
+    "max_similarity": 0.1531533435689199
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11231",
+    "title": "LinearKV: One Cached State Suffices for Position-Independent Caching in Hybrid LLMs",
+    "authors": [
+      "Yirui Liu, Ruoling Qi, Longwen Wang, Xuaner Wu, Jian Chen, Yuxin Jin, Jiawei Shao, Xuelong Li"
+    ],
+    "abstract": "arXiv:2608.11231v1 Announce Type: new \nAbstract: LLM serving is increasingly accelerated by position-independent caching (PIC). Existing PIC methods, however, are built for full-attention models, where a token-indexed KV cache underlies its core operations: matching reusable token chunks, concatenating their KV entries, and selectively recomputing a few tokens to restore cross-chunk context. Hybrid LLMs break these primitives---they replace most attention layers with linear recurrences that expose only a fixed-size state, leaving no token-indexed KV to concatenate or to locally repair. This raises a natural question: can PIC benefit hybrid models, and what would it take? We present LinearKV, a training-free hybrid-PIC framework. Its key insight is a \\emph{decoupled initialization}: each linear layer maps its $K$ matched local states to a single initial state, while full-attention layers concatenate their KV as before. LinearKV is therefore compatible with existing PIC methods, reusing their token selection and recomputation as-is. Under this framework, we find that a \\emph{single cached state} suffices as the linear layer's initializer. The algebraically principled alternative---composing all $K$ cached states into the exact full-prefix state, as concurrent work HYPIC does---is unnecessary and, on some architectures, even harmful. We compare the two across three hybrid models and three PIC selectors. On the two GDN models the two tie, both recovering most of full quality (up to $92\\%$); on the Mamba-2 model, exact composition instead collapses under every selector---under EPIC, for instance, it recovers only $46.6\\%$ of full quality, versus $86.8\\%$ for a single cached block initializer. A single state initializer is also cheaper, cutting time-to-first-token to $0.46\\times$ full prefill versus a further $5$--$17\\%$ overhead for exact composition; results hold across LongBench QA and RULER at 8K--32K.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11231",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11231"
+      }
+    ],
+    "relevance_score": 0.3670632517692163,
+    "max_similarity": 0.13837225505210946
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11219",
+    "title": "From Monolithic to Modular: Segment-level Automatic Prompt Optimization",
+    "authors": [
+      "Nikita Kulin, Viktor Zhuravlev, Artur Khairullin, Sergey Muravyov, Ilya Makarov, Daniil Sukhorukov, Ekaterina Averkova"
+    ],
+    "abstract": "arXiv:2608.11219v1 Announce Type: new \nAbstract: Automatic Prompt Optimization (APO) often rewrites prompts monolithically, which can improve one behavior while degrading others. We present SAPO, a segment-level APO method that decomposes prompts into role, context, tasks, and output format, then applies targeted improvements based on top-5 and bottom-5 examples. The optimization loop uses one LLM with static meta-prompts and structured outputs for segmentation, weakness analysis, and candidate generation. We describe a train/validation protocol and a two-stage generation process: (1) segment-level diagnosis and recommendation extraction, (2) candidate synthesis constrained by weak/strong segment signals. Using the evaluation setup across SQuADv2, TweetEval, XSUM, CommonGen, and GSM8K on GPT-3.5-Turbo and GPT-4o-mini, SAPO achieves the best average score against Zero-shot and strong APO baselines including APE, OPRO, EvoPrompt, GEPA, and StraGO.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11219",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11219"
+      }
+    ],
+    "relevance_score": 0.3401468860966118,
+    "max_similarity": 0.10479030961170156
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.11207",
+    "title": "Dynamic Governance of Multi-LLM Agent Systems for Collaborative Conversational Outcomes",
+    "authors": [
+      "Alexander Liss, Nicholas Desmond, Santiago Gil Gallego"
+    ],
+    "abstract": "arXiv:2608.11207v1 Announce Type: new \nAbstract: When two LLM agents with structurally opposed objectives interact across multiple turns, the absence of a shared goal function produces not competition but collapse: the visitor capitulates, the site agent stops varying its approach, and the conversation terminates without achieving either agent's stated objective. This paper asks whether a control-theoretic governance layer can substitute for that missing goal function. The Experience Orchestrator (EO) addresses this in a simulated financial services environment where a site agent guides a visitor toward advisor contact while the visitor maintains psychologically realistic resistance. EO governs the joint trajectory through three mechanisms: a Contextual Bandit (CB) that selects content arms calibrated from real-world web analytics, a PID controller that enforces behavioral consistency via dynamic schema constraints, and a POMDP belief tracker that maintains a probabilistic model of visitor intent. Across 60,000 simulations, EO achieves a +32 percentage point lift in high-intent advisor contact rate (78.1% vs. 46.1% over a naive LLM control), with CB variant selection accounting for 97% of between-factor outcome variance -- confirming that the governance policy, not environmental initial conditions, determines where trajectories end up. Persona-level analysis reveals two distinct regimes: for visitors with no natural inclination toward conversion, the governance layer is the difference between a functional system and a non-functional one; for visitors already near alignment, a naive LLM's empathetic defaults are largely sufficient. All findings are conditional on LLM-to-LLM simulation. The PID controller has not been calibrated against real human unpredictability, and validating EO on live traffic is the critical next step.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 14 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.11207",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.11207"
+      }
+    ],
+    "relevance_score": 0.3190365933601196,
+    "max_similarity": 0.1409948355019311
+  }
+]
