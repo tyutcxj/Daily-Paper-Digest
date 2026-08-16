@@ -1,0 +1,326 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.12371",
+    "title": "Multi-Agent Scheduling with LLM-Assisted Contract Net Negotiation for Stream Processing in Mobile Edge Computing",
+    "authors": [
+      "Sabeur Lajili, Zaki Brahmi"
+    ],
+    "abstract": "arXiv:2608.12371v1 Announce Type: new \nAbstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling. This paper proposes \\emph{MAS-DecStream}, whose main contribution is \\emph{LLM-MR-CNP}: an extension of the classical Contract Net Protocol with semantic CFP formulation, progressive context disclosure, multi-round proposal revision, negotiation memory, and deterministic validation. Edge-cluster agents refine natural-language offloading proposals from local observations, predicted resource states, and qualitative runtime context, while hard resource and QoS constraints remain deterministic. Experiments derived from the Alibaba ASI Trace evaluate the extension at three levels: single- versus multi-round CNP, rule-based versus LLM-assisted refinement, and fixed-model single- versus multi-round negotiation. Under the evaluated configurations, MAS-DecStream reduces latency violations to 3\\%, eliminates resource overcommitment, reaches a conflict-resolution rate of 0.91 with 20 agents, and improves utility by up to 22\\% over the multi-round rule-based baseline. A separate 25-case evaluation shows model- and prompt-dependent accuracy--cost trade-offs. The results provide initial evidence that multi-round CNP refinement is the principal protocol-level gain, with LLM assistance adding value for qualitative and uncertain runtime context.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12371",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12371"
+      }
+    ],
+    "relevance_score": 0.5327259561048938,
+    "max_similarity": 0.28254913974991624
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12585",
+    "title": "Reasoning Jury: Multi-Model Consensus for Evaluating Reasoning Traces",
+    "authors": [
+      "Congchao Wang, Diwakar Singh, Qiaozi Gao, Spyros Matsoukas, Yang Liu, Mahdi Namazifar"
+    ],
+    "abstract": "arXiv:2608.12585v1 Announce Type: new \nAbstract: Improving reasoning LLMs requires the ability to judge the quality of long reasoning traces for effective reasoning data curation, strong training signals during reinforcement learning, and an in-depth understanding of reasoning behaviors during model performance evaluation. Additionally, surfacing reasoning mistakes that the model makes would enable improving the model's performance at runtime through providing feedback. Due to the difficulty of this complex task on long reasoning traces, single-model judges (even frontier models) do not do well at identifying reasoning defects. Additionally, leveraging frontier models during online training of reasoning LLMs is generally prohibited due to guardrails in terms of use. In this work, we introduce Reasoning Jury, a system that replaces the single judge with a jury of LLMs and a moderated consensus mechanism, to improve the fidelity of judgments for identifying reasoning defects. In reasoning jury, defects of a reasoning trace and their severity are surfaced through a deliberation where a moderator conducts a discussion amongst the jury where the jurors critique each other's judgments and get to modify their initial votes. The moderator derives a consensus through deliberation amongst jurors or consolidation of judgements. We show that Reasoning Jury with a jury of open-weight models (e.g., gpt-oss-120b) is able to significantly outperform frontier models (opus-4.6, sonnet-4.6, and gemini-3.1-pro) at correctly identifying reasoning defects. Besides accuracy performance improvements, the aggregated cost of the jury (initial verdicts, deliberations, consolidation, etc.) is a fraction (8 to 15%) of the cost of running frontier models in LLM-as-a-judge setup. We also show how these judgements can be leveraged to understand failure modes of reasoning LLMs on benchmarks, which allows much deeper understanding of a model's performance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12585",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12585"
+      }
+    ],
+    "relevance_score": 0.46926017654426,
+    "max_similarity": 0.19974133702258184
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12426",
+    "title": "Large Language Models Can Follow Instructions, But Not Many at Once: Phase Transitions in Compositional Constraint Satisfaction",
+    "authors": [
+      "Mariya I. Vasileva"
+    ],
+    "abstract": "arXiv:2608.12426v1 Announce Type: new \nAbstract: Large language models are increasingly deployed in settings that require simultaneous adherence to multiple explicit constraints - reasoning structure, safety boundaries, output schemas. Individual constraints are handled proficiently, but the compositional regime, where many must hold jointly, remains poorly characterized: how rapidly does performance degrade, what governs the degradation, and can the collapse be mitigated? We introduce Constraint Saturation Evaluation (CSE), a procedurally generated benchmark that systematically varies the number of simultaneous constraints (k), with every constraint scored by a deterministic, rule-based verifier and zero LLM-judge involvement: 15 models, 36 constraint types, 369,753 checks at k=1-12. Three findings emerge. First, per-constraint pass rate decays gradually and predictably, while the chance of satisfying all k constraints collapses - a model passing individual constraints at ~41% at k=8 succeeds on all eight just 5.7% of the time. Second, constraints do not degrade equally: structural constraints lose 2x more baseline capability per added constraint than lexical ones, ordered by a comprehension-maintenance gap that separates constraints requiring sustained tracking from binary decisions immune to composition. Third, failures are nearly independent, which is what makes the accumulation multiplicative; the residual coupling that does exist tracks shared output features rather than pairwise interference - a wrong sentence count fails every constraint that reads it. Reliable instruction following breaks down beyond 5-6 simultaneous constraints: probe-level success falls below 50% at 7 constraints for the strongest model, and at 3 or fewer for 12 of 15.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12426",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12426"
+      }
+    ],
+    "relevance_score": 0.41891014897067713,
+    "max_similarity": 0.14298299749353316
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12590",
+    "title": "Auditable agentic AI for evidence-grounded thyroid ultrasound diagnosis and reporting",
+    "authors": [
+      "Haifan Gong, Shiyu Chen, Bodong Wang, Yuqi Wang, Shijie Wang, Guoliang You, Xinyu Xiong, Haowei Wang, Mingzhi Mao, Dexing Kong, Qinghua Liu, Wei Lou, Fei Chen, Guanbin Li"
+    ],
+    "abstract": "arXiv:2608.12590v1 Announce Type: new \nAbstract: Thyroid ultrasound diagnosis requires coordinated lesion localization, measurement, risk stratification and reporting, yet most AI systems address these tasks in isolation and provide limited support for clinical review. We present ThyroidXAgent, a clinician-interactive agentic AI system that coordinates specialized diagnostic tools and stores their outputs as an auditable case-level evidence record. The system was developed using OpenThyroidDB, a multicentre, multitask resource integrating approximately 0.3 million ultrasound images and 24,000 paired reports, and was evaluated on 28,458 non-overlapping test cases, including 8,721 cases from 35 centres in the private NHC-MISD-TUS cohort. Across heterogeneous datasets, ThyroidXAgent achieved a mean Dice score of 87.21 percent for nodule segmentation and a mean AUROC of 0.9466 for benign-malignant classification. The same workflow supported lymph-node metastasis prediction and follicular versus papillary thyroid carcinoma classification, with AUROCs of 0.864 and 0.805, respectively. For report generation, evidence-grounded assembly outperformed multimodal language-model baselines across three cohorts. ThyClinScore, a lesion-level clinical semantic metric introduced here, showed the strongest correlation with a location-aware language-model judge. ThyroidXAgent improved physician classification accuracy, increased report diagnostic consistency from 70.3 percent to 86.2 percent, and reduced segmentation and reporting time by 35.9 percent and 27.4 percent, respectively. These findings support auditable, clinician-correctable agentic AI for thyroid ultrasound diagnosis and reporting.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12590",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12590"
+      }
+    ],
+    "relevance_score": 0.41476695096887,
+    "max_similarity": 0.1349737280526902
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12368",
+    "title": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
+    "authors": [
+      "Octavian M. Machidon, Alina L. Machidon, Vojko Strahovnik, Mateja Centa Strahovnik, Jonas Miklav\\v{c}i\\v{c}, Marko Robnik \\v{S}ikonja"
+    ],
+    "abstract": "arXiv:2608.12368v1 Announce Type: new \nAbstract: Agreement with human judgments is a common proxy for evaluating the alignment of large language models (LLMs). Yet agreement in final labels does not show that human annotators and models rely on the same moral grounds. Two agents may reach the same judgment while appealing to different principles, contextual assumptions, or interpretations of the situation.\n  We test this distinction using a curated 500-item ETHICS-derived benchmark spanning five domains of moral judgment, with new human annotator and LLM annotations of both final labels and supporting rationales. Across frontier and open model families, agreement with human annotator majority labels is often high. However, rationale-level analysis reveals systematic divergence in the moral grounds expressed by human annotators and models. In particular, models redistribute attention across categories such as harm, respect, promise-keeping, justice, desert, and excuse relevance, even when their final labels match the human annotator majority.\n  Our results show that agreement should not be treated as equivalent to alignment. Label-based evaluation can therefore be misleadingly reassuring unless complemented by analysis of the reasons, principles, and moral priorities expressed in model judgments.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12368",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12368"
+      }
+    ],
+    "relevance_score": 0.40384528227941824,
+    "max_similarity": 0.1229663804942124
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12373",
+    "title": "Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese",
+    "authors": [
+      "Rian Touchent (ALMAnaCH)"
+    ],
+    "abstract": "arXiv:2608.12373v1 Announce Type: new \nAbstract: Large language models are increasingly used in strategic and advisory contexts, yet their safety alignment is typically evaluated in English only. We test nine models from six providers and ask whether the language of a prompt can change a model's decision in a high-stakes scenario. We use single-turn game-theoretic vignettes in which a model advises a nuclear-armed nation on whether to strike a defenseless opponent. The prompt is intentionally amoral and strategically identical across languages. We find that Japanese prompts reduce launch rates in the Claude model family: Claude Sonnet 4.6 drops from 40% to 0% in scenarios where the strike is unnecessary and from 93% to 17% in contested scenarios, with minimal effect when the strike is strategically rational. The effect extends to Gemini Pro 3.1 (53% to 13%). A cross-language experiment isolates the mechanism: when instructed to reason in Japanese in an English prompt, launch rates drop from 93% to 37%. It is the language the model is asked to reason in, not the language of the input, that drives the effect. When reasoning in Japanese, models spontaneously generate moral vocabulary (''moral cost'', ''millions of lives'') that is entirely absent from the prompt. Five other models show no language effect, but they launch in nearly every condition regardless of language. The effect requires a model that already hesitates in English. These results show that LLM safety behavior is language-dependent, and that evaluating in English alone can miss both risks and safeguards encoded in other languages.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12373",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12373"
+      }
+    ],
+    "relevance_score": 0.40253773266006776,
+    "max_similarity": 0.1184533362952569
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12345",
+    "title": "Diagnostic Foundation for Evaluating LLMs' Research Integrity as Co-Scientists",
+    "authors": [
+      "Yash Tripathi, Silu Sharma, Sai Sidhanth Manoharan Jayanthi, Shivank Garg, Lin Li"
+    ],
+    "abstract": "arXiv:2608.12345v1 Announce Type: new \nAbstract: Language models are increasingly deployed as co-scientists, yet their ability to uphold research integrity under institutional pressure remains unmeasured. We introduce IntegrityBench, a benchmark evaluating misconduct classification, ethical action reasoning and artifact-grounded decision making across 36 paired tasks under a 5-level implicit-explicit pressure protocol spanning 3 domains and 4 research stages. Evaluating 18 frontier model variants, we find that under peak pressure, models fail roughly 1 in 3 integrity-critical decisions, and neither scale nor reasoning ability reliably mitigates this. Explicit pressures induce compliance with misconduct, while implicit contextual reframing more often causes over-refusal of legitimate research tasks. Interestingly, models failing to classify research requests accurately perform equally or better on artifact-grounded decision making (85.7 vs. 79.4), suggesting the three facets are structurally dissociated and correct ethical action does not require accurate classification. Frontier models can thus appear helpful while harbouring integrity failures that create two distinct deployment risks: facilitating research misconduct and eroding trust in AI-assisted research.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12345",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12345"
+      }
+    ],
+    "relevance_score": 0.39651865768173467,
+    "max_similarity": 0.11257836029588117
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12385",
+    "title": "Dual-Flow Transformers: Decoupling the Primary Prefill Path from Additional Decode Computation",
+    "authors": [
+      "Liming Liu, Mingze Wang, Tuo Zhao"
+    ],
+    "abstract": "arXiv:2608.12385v1 Announce Type: new \nAbstract: As large language models serve more requests, cumulative inference cost is becoming increasingly important relative to one-time training cost. The two inference phases stress hardware differently: prompt prefill is parallel and typically compute-bound, whereas autoregressive decode is sequential and often memory-bandwidth-bound. Conventional width or depth scaling increases both costs together because every added layer is evaluated in both phases. We ask whether additional learned computation can instead be allocated to continuation prediction while preserving the prompt-wide primary computation and a single persistent key-value (KV) cache. We introduce the Dual-Flow Transformer. Its primary flow is a complete causal language model that processes the prompt and writes the KV cache. The auxiliary flow is omitted during prompt processing and activated only from the final prompt position onward, adding continuation-prediction computation without writing persistent state or influencing the primary flow. The two flows share major attention, MLP, and output matrices, while using separate token embeddings and lightweight coupling. Sharing weights and the primary cache also creates opportunities to reuse loaded weights and cached keys and values during grouped execution. Across matched-token comparisons, Dual-Flow achieves lower validation loss across architectures and data configurations. In MoE models, the separation makes primary and auxiliary expert fan-outs independent controls over prompt cost, continuation cost, and predictive quality. We study two regimes: increasing decode computation at fixed prefill expert computation, and reallocating a fixed decode expert budget between the two flows. These experiments expose a prefill-decode-quality trade-off and demonstrate the potential of phase-specific expert allocation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12385",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12385"
+      }
+    ],
+    "relevance_score": 0.38654188708020987,
+    "max_similarity": 0.10180803351405601
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12574",
+    "title": "Trie Automata for Constrained Decoding over Large Finite Sets",
+    "authors": [
+      "Xingzi Xu, Karim Bouyarmane"
+    ],
+    "abstract": "arXiv:2608.12574v1 Announce Type: new \nAbstract: Large language models increasingly need to generate structured outputs that conform to predefined schemas, with one common constraint being selection from a finite set of valid strings. Current constrained decoding systems handle this through general-purpose grammar compilation, which becomes prohibitively slow as the number of valid values grows into the thousands, a cardinality wall. We introduce the trie automaton, a specialized mechanism that exploits finite-set structure (shared prefixes, bounded depth, known cardinality) via Aho-Corasick multi-pattern matching to precompute per-node token masks. The trie achieves 7X faster per-step valid-token computation (0.65 us vs. 5.8 us) compared to XGrammar, one of the primary backends in vLLM and SGLang, and 2--6.5X faster compilation at K >= 300. Because precomputed masks enable a stateless serving path that bypasses the guided decoding pipeline, this advantage compounds in batch serving: end-to-end vLLM throughput reaches 219 req/s vs. XGrammar's 7.5 req/s at batch size 256 (29X). The 29X combines the algorithmic speedup with integration-path savings that only precomputed masks can unlock. Across seven tokenizer families (32K--262K vocabulary), the trie maintains sub-100ms compilation up to K = 10,000 and flat per-step cost regardless of set size, while guaranteeing 100% output validity.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12574",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12574"
+      }
+    ],
+    "relevance_score": 0.3662657691461722,
+    "max_similarity": 0.13804098884363178
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12389",
+    "title": "Learning to Adapt Cross-Domain Preferences via Meta-LoRA for LLM Personalization",
+    "authors": [
+      "Xuefei Wang, Jun Han, Zixuan Wang, Qingkai Zeng, Xiao Wang, Ruijie Wang, Jianxin Li"
+    ],
+    "abstract": "arXiv:2608.12389v1 Announce Type: new \nAbstract: Cross-domain zero- or few-shot personalization aims to generate user-preferred responses in unseen conversational domains from only a handful of target-domain interactions. Existing adaptation methods struggle to calibrate update magnitude under sparse evidence and thus overfit, whereas history-transfer methods often entangle user preferences with source-domain artifacts, yielding unreliable personalization priors and negative transfer. To calibrate adaptation to evidence quality, we propose PAC-Bayes-regularized Meta-LoRA, which uses a meta-learned LoRA initialization as both the adaptation start and prior center, while adjusting update strength according to support-set size and predictive uncertainty. This limits overfitting under sparse or ambiguous evidence while permitting stronger personalization as evidence grows. Controlled adaptation alone does not determine which preferences should transfer across domains or how they should be expressed. We therefore functionally decompose personalization priors into user and domain components, using a human-readable prompt for stable preferences and topology-preserving soft tokens for domain-specific hidden-space conditioning. Experiments across multiple benchmarks and personalization tasks show consistent gains over strong baselines. On HiCUPID, our method reduces cross-domain win-rate degradation by 47.9% relative to the best competing baseline and improves win rate by 110.2% under unseen-user cold start.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12389",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12389"
+      }
+    ],
+    "relevance_score": 0.3438252860029573,
+    "max_similarity": 0.171537942790315
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12522",
+    "title": "$\\varepsilon$-MemEvo: Adaptive Cross-Task Memory Transfer for LLM Program Evolution",
+    "authors": [
+      "Aofan Liu, Shiyuan Song, Yiyan Qi"
+    ],
+    "abstract": "arXiv:2608.12522v1 Announce Type: new \nAbstract: LLM-based program evolution systems such as FunSearch and AlphaEvolve have shown strong ability to discover novel algorithms, but typically optimize each task in isolation, discarding search experience after completion. We introduce $\\varepsilon$-MemEvo, a framework for cross-task knowledge transfer in LLM program evolution. $\\varepsilon$-MemEvo stores prior experience as task-agnostic tactic memories: compact natural-language summaries of successful algorithmic strategies rather than raw code, enabling transfer across tasks with different APIs and evaluators. To avoid negative transfer from semantically mismatched memories, $\\varepsilon$-MemEvo uses an adaptive injection gate that decides whether retrieved memories should be injected, and at what intensity. We evaluate $\\varepsilon$-MemEvo on 8 diverse optimization benchmarks spanning mathematical optimization and systems engineering, using a content-level Leave-One-Out protocol that excludes target-task memory entries. On the primary GPT-5 backbone, $\\varepsilon$-MemEvo improves AUCC over AdaEvolve on all 8 tasks, with a mean relative gain of +8.7%, and improves early-stage convergence by +9.4% on average. Ablations show that naive memory injection can fail catastrophically, while adaptive gating remains safe across all five ablation tasks. The data-updated posterior is interpretable in observed states: it favors skip during improving search and shifts from skip to hint across early and late plateaus. These gains incur less than 1% computational overhead.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12522",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12522"
+      }
+    ],
+    "relevance_score": 0.31102843283538584,
+    "max_similarity": 0.12862306668250786
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.12599",
+    "title": "Dead text or binding clause? Measuring and restoring constraint influence in black-box LLM dialogues",
+    "authors": [
+      "Haoyuan Zhu"
+    ],
+    "abstract": "arXiv:2608.12599v1 Announce Type: new \nAbstract: Multi-turn dialogues let users revoke constraints as easily as impose them, but revocation does not reliably take effect: models keep enacting withdrawn requirements (occasionally beneath comments asserting their removal), a failure we call \\emph{behavioral relapse}, or revocation inertia. No existing instrument measures this influence per clause, predicts it before delivery, or repairs it under matched budgets. \\sysname{} closes the three gaps through the model API alone: a contract ledger pairs every constraint with an executable checker, records revocations as tombstones, and compiles the net constraint state ahead of time into a single specification; a sequential ablation probe measures per-clause adherence and incremental behavioral effect; a repair ladder operates under token- and attempt-matched budgets. On \\dataname{} (\\NTasks{} HumanEval tasks, \\NClauses{} verified checkers), relapse at an 8B operating point climbs from \\ScaleDelayedMTwo{} to \\ScaleDelayedMEight{} as constraint load grows, while stronger models sit at floor. Under matched checkers, model, and budget, ahead-of-time compilation significantly reduces relapse against a no-ledger verifier-retry baseline (\\RestoreDiff{}, 95\\% CI \\RestoreDiffCI{}, $p$ \\RestoreDiffP{}); adaptive ladder interventions stacked on top add no detectable gain (95\\% confidence excludes gains $\\geq$ \\LadderExcludedGain{}). The probe predicts relapse before delivery (AUROC \\AurocPrimary{}); a one-sentence tombstone note recovers about a third of the compilation effect and survives a placebo control. At \\CostDeliveryFactor{} delivery overhead and \\CostTotalHedged{} of API compute for every result, revocation failure becomes a measurable, predictable, and repairable property of dialogue state rather than an invisible one.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 15 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.12599",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.12599"
+      }
+    ],
+    "relevance_score": 0.273518643168021,
+    "max_similarity": 0.08691099221015545
+  }
+]
