@@ -1,0 +1,575 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2608.14309v1",
+    "title": "Spatial Message Passing in Language Space for Pathology Image Interpretation",
+    "authors": [
+      "Jing-Cheng Yang",
+      "Hao-Jung Wang",
+      "Jinhao Du",
+      "Yang Hu",
+      "Ming-shan Tsai",
+      "Jens Rittscher",
+      "Bin Li"
+    ],
+    "abstract": "Multimodal Large Language Models (MLLMs) can generate pathological descriptions from histological images, but gigapixel Whole Slide Images (WSIs) exceed their visual context limits. The standard tiling workaround makes WSIs tractable yet severs the tissue neighborhoods that define tumor-stroma interfaces and morphology. We introduce Spatial Language Message Passing (SLMP), a framework that performs spatial reasoning entirely in language space, human-readable by construction. SLMP represents a WSI region as a spatial text graph: tiles are nodes initialized with MLLM descriptions, and edges encode spatial adjacency. For each tile, an LLM refines its description by integrating language messages from adjacent tiles under a shared aggregation policy that, on the tile grid, acts as an adaptive local kernel operating on text rather than learned embeddings. This policy is an inspectable prompt that can be refined from model-observed tissue phenotypes via textual gradients, enabling automatic semantic optimization from local cellular context to broader tissue morphology without fine-tuning MLLM weights. On representative HER2 and CAMELYON16 regions, SLMP improves tile-level tumor description accuracy in settings spanning general-purpose and pathology-specialized backbones, with gains of +3.3 to +19.6 percentage points. Random-neighbor ablations confirm that these gains stem from spatial context rather than additional text alone, and inspecting the optimized policies reveals interpretable, tissue-specific decision rules. Besides, without any weight updates or fine-tuning the backbone MLLM, SLMP substantially improves general-purpose MLLMs and narrows its gap to pathology-specialized counterparts, offering a transparent and flexible mechanism for incorporating spatial reasoning into MLLM-based pathology analysis.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-08-14T13:48:15Z",
+    "updated": "2026-08-14T13:48:15Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14309v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14309v1"
+    ],
+    "relevance_score": 0.5137639244094656,
+    "max_similarity": 0.25484249624621486
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14446v1",
+    "title": "Wyvern: An Agentic Framework for Generating Grounded Multimodal Reports",
+    "authors": [
+      "Beatrice Alessandra Motetti",
+      "Emilien Guandalino",
+      "Daniele Jahier Pagliari",
+      "Alessio Burrello",
+      "Lorenz K. Müller",
+      "Konstantin Berestizshevsky",
+      "Lukas Cavigelli"
+    ],
+    "abstract": "In the current artificial intelligence-driven innovation era, the pace of knowledge growth is accelerating, and is hard to keep up with. While generative models are increasingly used to synthesize content, they often lack in information grounding. To address these peculiarities of our time, we propose Wyvern, a multi-agent framework for the automated generation of grounded, multimodal technical reports. Wyvern allows for the generation of multimodal outputs, integrating images, tables, and text with supporting references in a unified report. Additionally, a particular focus is placed on the grounding of the content, with the implementation of a claims auto-revision stage. We conduct a human evaluation study to assess the quality of our proposed framework. The results show that the figures' informativeness is perceived as superior to that of a recent baseline in 87% of cases. Furthermore, Wyvern's reports are rated as more useful than those produced by three alternative methods in 63% to 100% of instances. We also carry out automatic evaluations showing that Wyvern gains up to 2.3$\\times$ in citation recall and 1.6$\\times$ in citation precision with respect to the baselines.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-08-14T16:31:43Z",
+    "updated": "2026-08-14T16:31:43Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14446v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14446v1"
+    ],
+    "relevance_score": 0.5062532282785551,
+    "max_similarity": 0.2463520616008381
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14452v1",
+    "title": "SheetCompass: Hierarchical Relation Graphs for Agentic Spreadsheet Reasoning",
+    "authors": [
+      "Panjing He",
+      "Mingyue Cheng",
+      "Yucong Luo",
+      "Li Li",
+      "Xiaohan Zhang"
+    ],
+    "abstract": "Spreadsheets are widely used to organize, analyze, and manipulate semi-structured data, yet automated spreadsheet reasoning remains challenging for large language models (LLMs). Real-world workbooks often contain implicit cross-table associations, fine-grained column dependencies, and complex spatial layouts. Existing methods typically flatten these multidimensional structures into sequential strings, losing important intra-sheet boundaries and inter-sheet semantics. Consequently, LLMs cannot exploit the global spatial context that human experts naturally use when inspecting spreadsheets. We propose SheetCompass, a graph-guided and memory-driven agentic framework for spreadsheet reasoning and automation. SheetCompass explicitly models structural relationships within and across worksheets while maintaining task-relevant information in memory, enabling agents to reason more effectively over complex workbooks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-08-14T16:39:16Z",
+    "updated": "2026-08-14T16:39:16Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14452v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14452v1"
+    ],
+    "relevance_score": 0.4784142842424721,
+    "max_similarity": 0.2107351027071606
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14498v1",
+    "title": "Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training",
+    "authors": [
+      "Hanfeng Lu",
+      "Tianyu Feng",
+      "Suyi Li",
+      "Yuheng Zhao",
+      "Wei Gao",
+      "Shaopan Xiong",
+      "Ju Huang",
+      "Siran Yang",
+      "Jiamang Wang",
+      "Lin Qu",
+      "Wei Wang"
+    ],
+    "abstract": "Vision-language models (VLMs) enable embodied agents to reason and act from visual observations and language instructions. Reinforcement learning (RL) post-training enhances these capabilities using task feedback, but current on-policy RL runtimes execute rollout, reference scoring, and actor training in strict serial phases. While effective for text-only RL, this phase-granular execution is wasteful for VLMs, where processing dense video inputs and prompt prefixes occupies a large fraction of each phase. Because prefix processing is independent of the generated response, it can be run alongside rollout decoding, which leaves GPU compute capacity underutilized, without breaking synchronous on-policy semantics.   We present Rollplex, a runtime that decomposes the reference and training phase and moves the prefix computation into the rollout decode window. Realizing this schedule requires more than concurrent kernel launches: naive colocation of Qwen2.5-VL-32\\,B requires roughly 165\\,GiB per GPU, while rollout and training prefer different tensor-parallel (TP) degrees and weight layouts. Rollplex addresses these constraints with two mechanisms. Phase-aware memory management controls HBM residency according to producer--consumer lifetimes. Parallelism-aware weight sharing uses the same physical storage for layout-compatible tensors across distinct TP degrees and reconstructs only incompatible tensors, avoiding a complete second actor copy. On 32 H800 GPUs, Rollplex achieves $1.23\\times$--$1.30\\times$ speedup over serial colocation and $1.57\\times$--$2.24\\times$ over disaggregation under the same GPU budget, while preserving the synchronous RL update.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-08-14T17:13:34Z",
+    "updated": "2026-08-14T17:13:34Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14498v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14498v1"
+    ],
+    "relevance_score": 0.4782269621953591,
+    "max_similarity": 0.2131281048015241
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14399v1",
+    "title": "Whose doctor does the AI recommend? An algorithm audit of reputation and demographic signals in large language model-assisted physician choice",
+    "authors": [
+      "Syeda Anshrah Gillani",
+      "Mirza Samad Ahmed Baig"
+    ],
+    "abstract": "Patients increasingly ask large language model (LLM) assistants which doctor to see, making these systems AI infomediaries: algorithms that intermediate one person's choice among other people and thereby decide, silently and at scale, which physicians become visible. We report a prespecified randomized algorithm audit of what causally moves those recommendations. Seven models (six open-weight; gpt-4o-mini) each chose among five synthetic family-medicine physician cards whose attributes were independently randomized across 3,024 choice sets, three patient personas, nine prompt paraphrases and nine experimental arms, yielding 40,068 scored responses; gender and ethnicity were signaled through names following correspondence-audit methodology. Reputation signals dominate: raising a rating from 3.9 to 4.7 increases choice probability by 31.4 percentage points (pp), and raising the fee from $90 to $190 lowers it by 20.0 pp. Demographic parity is rejected, but not in the direction human audit studies predict: female-signaled names gain 2.5 pp, and Hispanic-, South-Asian- and Black-signaled names gain 1.3-2.9 pp over White-signaled names, tilts worth $7-$14 per visit in fee-equivalent terms, and a content-free first-listed position is worth $11. Yet models mentioned gender or ethnicity in at most 0.03% of their stated reasons and abstained in 0.39% of trials, so these effects are invisible in the models' own explanations, and transparency obligations relying on model self-report would not detect them. One reasoning model failed the prespecified auditability gate outright. The frozen design makes the audit repeatable: any new model can be assessed against identical stimuli, making recurring behavioural audit, rather than self-reported explanation, the monitoring technology fit for purpose.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-08-14T15:39:10Z",
+    "updated": "2026-08-14T15:39:10Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14399v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14399v1"
+    ],
+    "relevance_score": 0.4551186756680098,
+    "max_similarity": 0.1859475970707964
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14286v1",
+    "title": "Seeing Red, Thinking Bad: Color Bias in Vision Language Models",
+    "authors": [
+      "Kohsuke Ide",
+      "Ryousuke Yamada",
+      "Yoshihiro Fukuhara",
+      "Hirokatsu Kataoka",
+      "Yutaka Satoh"
+    ],
+    "abstract": "Vision language models (VLMs) are increasingly used in industrial decision-making systems, such as recruitment support and recommendation. This motivates careful analysis of how VLMs process visual and textual information. In this work, we study how VLMs interpret text rendered as an image, and investigate the influence of visual styling biases. To this end, we introduce Stealth Visual Prompts, which subtly change visual styling of text, such as color and contrast, while preserving semantic content. Using these prompts, we systematically control the visual styling of words in text and measure their impact on the analysis performed by VLMs. We further analyze how such visual perturbations affect the latent representations of the vision encoder. From our experiments, we observed that coloring positive words in green consistently shifts sentiment predictions toward a positive direction. As a result, VLMs often fail to properly account for negative words present in the text. Our analysis suggests that this behavior is correlated with changes in the latent representations of the vision encoder induced by color variations. In addition, we show that reducing text--background contrast increases reliance on visually salient cues and leads to more incorrect Visual Question Answering (VQA) outputs. These results suggest that the visual styling of rendered text can guide VLMs' interpretation in ways that diverge from human semantic understanding.   Project page: https://github.com/KohsukeIde/color-bias-vlm",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-08-14T13:14:58Z",
+    "updated": "2026-08-14T13:14:58Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14286v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14286v1"
+    ],
+    "relevance_score": 0.44250022148634915,
+    "max_similarity": 0.16525437040067686
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14385v1",
+    "title": "DeaMoE: Efficient MoE Structure for Fast Small-Batch Decoding",
+    "authors": [
+      "Zewen Jin",
+      "Shen Fu",
+      "Zeping Duan",
+      "Shannon Wang",
+      "Weihao Wu",
+      "Chengjie Tang",
+      "Congkun Ai",
+      "Ping Gong",
+      "Zijian Dai",
+      "Youhui Bai",
+      "Cheng Li"
+    ],
+    "abstract": "Mixture-of-Experts (MoE) models have been widely adopted in real-time interactive applications such as coding assistants, real-time audio-video interaction systems. To meet the extremely low response latency requirements of these scenarios, practitioners commonly employ small-batch decoding, under which MoE inference becomes memory-bound and is severely bottlenecked by expert weight loading. However, this bottleneck has received limited attention, and existing solutions such as post-training weight compression or fine-grained expert design during pre-training either degrade model accuracy or introduce additional computation and communication overhead. To tackle this issue, we propose DeaMoE, a decoding-efficient MoE architecture, in which the experts are grouped into several departments, and the experts belonging to the same department share most parameters since they come from the same professional field, and additionally each expert contains a few private parameters to reflect its uniqueness. Moreover, we design customized two-stage routing strategy for DeaMoE to avoid redundant loading, under which DeaMoE greatly improves the efficiency during LLM decoding. Compared with vanilla MoE, DeaMoE reduces per-step loaded weights by up to 50.9% and achieves up to 1.33 end-to-end TPOT speedup for the pre-trained 7B model on A40, and up to 2.00x and 1.97x peak speedup for DeepSeek-V3 on A40 and H100 in microbenchmarks.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-08-14T15:25:32Z",
+    "updated": "2026-08-14T15:25:32Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14385v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14385v1"
+    ],
+    "relevance_score": 0.4387289054843746,
+    "max_similarity": 0.16496880481220136
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14320v1",
+    "title": "AnchorBench: A Multi-Pathway Benchmark for the Anchoring Effect in LLMs",
+    "authors": [
+      "Yiderigun Borjigin",
+      "Alexander Hermann",
+      "Christian Cyron",
+      "Roland Aydin"
+    ],
+    "abstract": "The anchoring effect is a cognitive bias in which an initial reference value shifts a later judgment toward itself. This effect is well established in human judgment and decision-making, and recent work suggests that large language models (LLMs) exhibit similar behavior. However, existing work on anchoring in LLMs typically evaluates only a narrow set of anchor pathways and rarely distinguishes irrelevant from plausible anchors. We introduce AnchorBench, a benchmark for the anchoring effect in LLMs that evaluates multiple anchor pathways under an explicit anchor relevance axis. Across fourteen models, including ten open-weight models and four frontier API models, and a large set of controlled prompts, we find that (1) anchoring is strongly pathway-dependent, (2) plausible anchors usually induce larger shifts than irrelevant ones when introduced through stronger pathways, (3) anchor influence generally weakens as the anchor moves farther from the evidence-supported answer, most clearly on External and RAG, and (4) high task accuracy on the anchor-free control condition (Acc$_{10}$: answers within 10 points of gold) does not guarantee robustness: even frontier API models above 95% control accuracy remain susceptible to plausible anchors.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-08-14T14:04:42Z",
+    "updated": "2026-08-14T14:04:42Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14320v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14320v1"
+    ],
+    "relevance_score": 0.4382276740977763,
+    "max_similarity": 0.16464786604390244
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14391v1",
+    "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+    "authors": [
+      "Shuo Liang",
+      "Yixing Ma",
+      "Pengfei Zhou",
+      "Xingyan Chen",
+      "Zihan Mei",
+      "Manting Li",
+      "Feihan Chen",
+      "Zhiwen Wang",
+      "Bin Xu",
+      "Haotian Zhang",
+      "Jiajun Song",
+      "Shiya Su",
+      "Run Liu",
+      "Zhenghang Ni",
+      "Yifa Yu",
+      "Jintao Hong",
+      "Bolong Feng",
+      "Yifei Liu",
+      "Zirui Zhang",
+      "Jingxuan Zhang",
+      "Songlin Zhao",
+      "Yifan Bai",
+      "Kang Tan",
+      "Yizhe Liu",
+      "Junhao Du",
+      "Yongtao Ge",
+      "Zhaopan Xv",
+      "Xinyuan Zhang",
+      "Mengru Ma",
+      "Chunhua Shen",
+      "Wei Wang",
+      "Yang You",
+      "Zheng Zhu",
+      "Kaipeng Zhang",
+      "Wangbo Zhao"
+    ],
+    "abstract": "Recent video generators can fabricate realistic depictions of wars, disasters, public emergencies, and other real-world crises, creating substantial risks of misinformation. Existing benchmarks, however, provide limited evidence on detector and generator behavior in such settings, including how detectability varies with generation conditions, how people perceive generated videos, and whether detectors remain reliable during social dissemination. To address this gap, we introduce RA-Bench, a benchmark for AI-generated video detection that uses Real videos as Anchors. RA-Bench contains 17,886 videos, comprising 1,830 real-video anchors across 10 social-risk categories and 16,056 generated clips from four open-source and five closed-source generators. Based on RA-Bench, we organize our evaluation along three dimensions. We first assess detector generalization across seven traditional detectors, ten zero-shot multimodal models under three review settings, and two MLLMs specifically fine-tuned on AI-generated video detection. Across these methods, none of the three detector families generalizes consistently across RA-Bench instances. We then examine how detectability varies with generation quality, conditioning information, and sampling seeds. These analyses show that generation properties affect detector families differently, while source-level detection patterns remain stable across seeds. Finally, we study human authenticity judgments and detector reliability during social dissemination. We find that videos that mislead people are also difficult for current detectors, and that social dissemination makes detection harder. Together, these findings show that current methods struggle to detect realistic AI-generated videos, highlighting the need for detectors robust to evolving video generators.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-08-14T15:32:56Z",
+    "updated": "2026-08-14T15:32:56Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14391v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14391v1"
+    ],
+    "relevance_score": 0.4338124419527468,
+    "max_similarity": 0.15775331984809274
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14377v1",
+    "title": "A Survey of Large Models in Sports",
+    "authors": [
+      "Yichen Xu",
+      "Jianzhe Ma",
+      "Chuhan Wang",
+      "Zhonghao Cao",
+      "Liangyu Chen",
+      "Wenxuan Wang",
+      "Qin Jin"
+    ],
+    "abstract": "Sports have witnessed growing global enthusiasm in recent years, serving as a vital force for physical health, cultural exchange, social connection, and economic growth. The rapid advancement of large models, particularly (multimodal) large language models (M)LLMs, has demonstrated transformative potential to reshape sports understanding, analysis, and interaction across diverse domains. This paper presents a comprehensive survey of large models in sports, including (i) an overview of tasks and applications across different participant groups; (ii) a detailed analysis of sports-related datasets and benchmarks; and (iii) a critical discussion of current challenges and future directions. Our goal is to establish a foundation for advancing research and practical development of large-model-driven sports intelligence. An open-source GitHub repository is maintained at: https://github.com/Road2Redemption/Awesome_Large_Models_In_Sports1.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-08-14T15:17:54Z",
+    "updated": "2026-08-14T15:17:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14377v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14377v1"
+    ],
+    "relevance_score": 0.41914813811645235,
+    "max_similarity": 0.20015189730374158
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14377v1",
+    "title": "A Survey of Large Models in Sports",
+    "authors": [
+      "Yichen Xu",
+      "Jianzhe Ma",
+      "Chuhan Wang",
+      "Zhonghao Cao",
+      "Liangyu Chen",
+      "Wenxuan Wang",
+      "Qin Jin"
+    ],
+    "abstract": "Sports have witnessed growing global enthusiasm in recent years, serving as a vital force for physical health, cultural exchange, social connection, and economic growth. The rapid advancement of large models, particularly (multimodal) large language models (M)LLMs, has demonstrated transformative potential to reshape sports understanding, analysis, and interaction across diverse domains. This paper presents a comprehensive survey of large models in sports, including (i) an overview of tasks and applications across different participant groups; (ii) a detailed analysis of sports-related datasets and benchmarks; and (iii) a critical discussion of current challenges and future directions. Our goal is to establish a foundation for advancing research and practical development of large-model-driven sports intelligence. An open-source GitHub repository is maintained at: https://github.com/Road2Redemption/Awesome_Large_Models_In_Sports1.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-08-14T15:17:54Z",
+    "updated": "2026-08-14T15:17:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14377v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14377v1"
+    ],
+    "relevance_score": 0.41914813811645235,
+    "max_similarity": 0.20015189730374158
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14403v1",
+    "title": "CRAFT: Constrained Reward via Attention Fine-Tuning for Subject Personalization without Composed Targets",
+    "authors": [
+      "Jihun Park",
+      "Kyoungmin Lee",
+      "Jongmin Gim",
+      "Hyeonseo Jo",
+      "Jaeyeul Kim",
+      "Han Zou",
+      "Zhenpeng Zhan",
+      "Yan Zhang",
+      "Sunghoon Im"
+    ],
+    "abstract": "Subject-driven image personalization---generating new images that preserve the identity of one or several reference subjects in novel scenes---is a foundational capability for modern visual content creation. It is currently dominated by generalized methods that fine-tune a pretrained multimodal diffusion transformer (MMDiT) on hundreds of thousands to millions of paired \\emph{(reference, composed-target)} examples, where each composed target is a synthesized image of the subject in a novel scene. Producing such targets demands a costly multi-stage curation pipeline---LLM-based prompt generation, T2I-based composed-target synthesis, reference-subject extraction, VLM-based quality filtering, and correspondence labeling---and tightly couples each method to a particular target synthesizer and curation choice. We introduce \\emph{CRAFT} (Constrained Reward via Attention Fine-Tuning), a single-step ReFL framework that fine-tunes a pre-trained \\emph{reference-aware} MMDiT via LoRA adapters using a compact reference-only data construction---$10$K reference images and subject masks, with no composed-target supervision. CRAFT realizes a \\emph{Where to look} principle: attention-level rewards align noise- and phrase-token attention with the correct reference subject, and the resulting per-subject attention masks gate a pixel-level identity reward to keep image-space supervision consistent with the learned attention routing. Applied to FLUX.2-klein-9B, CRAFT achieves state-of-the-art performance on XVerseBench \\rev{while using no composed-target supervision---only $10$K reference-only samples, whereas prior generalized methods require $150$K to over $2$M composed-target pairs}. The same recipe transfers to other reference-aware backbones, consistently improving performance. Project page: https://jihun999.github.io/projects/CRAFT/.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-08-14T15:44:07Z",
+    "updated": "2026-08-14T15:44:07Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14403v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14403v1"
+    ],
+    "relevance_score": 0.4068658928464517,
+    "max_similarity": 0.12426861007957077
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14528v1",
+    "title": "Handover of In-Context Learning State Across Session Boundaries",
+    "authors": [
+      "Masahiro Kato",
+      "Taka Kato"
+    ],
+    "abstract": "This study investigates the methodological and theoretical properties of session handover in applications that use large language models. A task may continue in a new session when the context reaches the model's input limit, when the application restarts, or when another agent is asked to finish the task. The application must then decide which information from the earlier session to pass on. We formulate handover as the transfer of a task-relative in-context learning (ICL) state and distinguish exact recovery of earlier material from preservation of the target distribution. Under an exogeneity condition, predictive equivalence characterizes the coarsest deterministic sufficient handover and gives a fixed-length bit requirement. The analysis isolates the effects of the memory constraint, the writer, and the continuation procedure, and quantifies the cost of writing before the realized downstream query is known. We propose a three-part record that stores decisions and constraints exactly, uses task-justified statistics for repeated evidence, and retains original observations whose effect is not preserved by those statistics. Gaussian linear regression gives an exact finite-dimensional handover and finite-bit perturbation bounds, while nonparametric regression gives upper and lower bounds that relate memory to squared prediction error. These results provide a theory and method for deciding what a handover must retain and how its memory requirement depends on the continuation task.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-08-14T17:47:13Z",
+    "updated": "2026-08-14T17:47:13Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14528v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14528v1"
+    ],
+    "relevance_score": 0.383364559562667,
+    "max_similarity": 0.15717483323311396
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14397v1",
+    "title": "LLMs Don't Pay for the Jump",
+    "authors": [
+      "Paras Balani",
+      "Subhrakanta Panda"
+    ],
+    "abstract": "Zahavy [2026] argues that Large Language Models, despite their capabilities in induction and deduction, cannot perform the abductive \"Jump\" that produced Einstein's equivalence principle, and attributes this limitation to the absence of embodied simulation. Zheng-Xin [2026] and Farmer [2026] question whether embodiment is necessary for abduction, pointing to alternative routes to General Relativity and forms of abduction that require no sensorimotor grounding. Max Planck resolved the blackbody radiation problem in 1900. Planck's move to E = hν required no embodied simulation. It was motivated by a mathematical consequence of classical theory, an infinite predicted energy for a finite measured quantity, that could not be physically accepted. We show that neither induction nor deduction could have produced the postulate and argue that its adoption required a coupling between epistemic error and physical cost. We formalize this distinction through thermodynamic coupling and show that fixed-weight transformer inference lacks such coupling, regardless of model scale. This is consistent with empirical results showing that output entropy remains nearly unchanged across tasks with sharply increasing causal difficulty, even as accuracy falls from 100% to 17%. We therefore argue that the missing ingredient in machine abduction may lie deeper than embodiment: a system must have some physical mechanism through which epistemic error becomes costly enough to force revision.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-08-14T15:36:35Z",
+    "updated": "2026-08-14T15:36:35Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14397v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14397v1"
+    ],
+    "relevance_score": 0.3636235025040803,
+    "max_similarity": 0.07333066109445777
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14401v1",
+    "title": "Offline Deep Q* Estimation with Diffusion Models",
+    "authors": [
+      "Xiaohong Chen",
+      "Yuling Jiao",
+      "Lican Kang",
+      "Jerry Zhijian Yang",
+      "Chen Zhong"
+    ],
+    "abstract": "In offline RL, estimating the optimal action-value function $Q^*$ can be formulated as solving the optimal Bellman equation based solely on offline observations. A fundamental challenge is that the reward function and transition kernel are unknown, so the optimal Bellman operator is not directly observable from data. To address this issue, we propose a novel framework that decouples operator estimation from value function learning. In this approach, we first formulate conditional diffusion models to estimate the reward law and transition kernel, which induces a data-driven approximation of the optimal Bellman operator. We then plug these estimators into the Bellman equation and obtain a deep estimator of $Q^*$ by minimizing the empirical Bellman residual over a neural network function class. Theoretically, we first establish sharp nonasymptotic convergence rates for learning the optimal Bellman operator through an end-to-end analysis of conditional diffusion estimation in total variation distance. We then establish the oracle value-stage rate $\\widetilde{\\mathcal O}\\bigl(n^{-\\frac{2β}{d_x+d_a+2β}}\\bigr)$ for the excess Bellman residual risk. Finally, under a concentrability condition, we translate this residual bound into an $L^2$ convergence rate of $\\widetilde{\\mathcal O}\\bigl(n^{-\\fracβ{d_x+d_a+2β}}\\bigr)$ for the resulting deep estimator of $Q^*$, where $d_x$ and $d_a$ denote the dimensions of the state and action spaces, respectively, and $β$ denotes the Hölder smoothness index of $Q^*$. Importantly, our theoretical analysis does not rely on completeness assumptions commonly used in deep RL theory. Extensive numerical experiments demonstrate the effectiveness of the proposed method and its strong empirical performance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-08-14T15:41:03Z",
+    "updated": "2026-08-14T15:41:03Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14401v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14401v1"
+    ],
+    "relevance_score": 0.36228265850754937,
+    "max_similarity": 0.13396563951436197
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14389v1",
+    "title": "GBU-Palm: A Multimodal Video Dataset and Benchmark for Palm Presentation Attack Detection",
+    "authors": [
+      "Yingjie Ma",
+      "Zitong Yu",
+      "Wei Jia",
+      "Ajay Kumar",
+      "Linlin Shen"
+    ],
+    "abstract": "Existing palm presentation attack detection (PAD) datasets are often limited by static imagery, restricted acquisition conditions, or insufficient multimodal video data, hindering systematic evaluation across environments, modalities, and attack types. We present GBU-Palm, a large-scale multimodal video dataset and benchmark containing 21,326 videos from 105 subjects and 210 palms across six acquisition environments, including bona fide, Print, and Replay presentations, with 6,310 synchronized RGB-NIR samples. We construct leakage-controlled protocols that separate palm identity and attack lineage and benchmark four representative video architectures under environment-matched and held-out-environment settings. Results reveal substantial architecture-dependent degradation under environmental shift and show that RGB-NIR fusion does not consistently outperform RGB-only input. We further analyze model behavior through true accept (TA), true reject (TR), false accept (FA), and false reject (FR) decomposition, spectral masking, temporal-order intervention, and frozen-backbone NIR probing, revealing distinct failure patterns and evidence utilization across architectures. GBU-Palm provides a unified and challenging benchmark for developing and evaluating robust multimodal palm PAD methods under cross-environment conditions.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-08-14T15:31:48Z",
+    "updated": "2026-08-14T15:31:48Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14389v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14389v1"
+    ],
+    "relevance_score": 0.35598093433317013,
+    "max_similarity": 0.12273692336906931
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14361v1",
+    "title": "Local and Global Regimes of Geometric Complexity in Language Model Representations",
+    "authors": [
+      "Arwa Osman",
+      "Marco Baroni",
+      "Iuri Macocco"
+    ],
+    "abstract": "Intrinsic dimensionality (ID) is widely used to probe the representational complexity of language models, but it remains unclear whether ID differences reflect properties of language itself or artefacts of how the underlying dataset was constructed. In this paper, we focus specifically on how lexical diversity, the number of unique last-token items present in a dataset, affects ID estimates of that dataset. We find a scale-dependent transition between two regimes: at low lexical diversity, conditions with fewer unique final words produce higher ID, while at high lexical diversity, this ordering reverses, and conditions with more unique words produce higher ID. We derive an exact, parameter-free formula for the point at which this reversal occurs, which matches the observed transition point at every scale tested. On the one hand, our results highlight how care must be taken when interpreting the intrinsic dimensionality of a set of representations as a straightforward cue of their complexity. On the other hand, our discovery of the two ID regimes reveals a general principle of organisation of linguistic data in LLMs that sheds new light on their inner manifold structures.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-08-14T15:01:24Z",
+    "updated": "2026-08-14T15:01:24Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14361v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14361v1"
+    ],
+    "relevance_score": 0.3416775489371348,
+    "max_similarity": 0.10739128379967368
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14329v1",
+    "title": "A Four-Axis Trustworthiness Benchmark for LLM-as-Judge in Principle-Based Regulation",
+    "authors": [
+      "Dipankar Sarkar"
+    ],
+    "abstract": "Principle-based regulation, with evaluative standards such as \"fair, clear, and not misleading\" or \"deliver good outcomes\", cannot be reduced to binary predicates, and LLM-as-judge is increasingly used as the substitute. Our position is that any such judge must be evaluated on four axes: accuracy, paraphrase robustness, adversarial robustness, and calibration. We release Principle-Bench, 168 cryptoasset financial-promotion scenarios mapped to two UK FCA principles, with paraphrase, adversarial keyword-stuffing, and boundary perturbations authored under a pre-registered rubric; the first benchmark covering all four axes for principle-based regulation. We also introduce Ceca (Calibrated Exemplar-Cluster Assessment): a calibrated, auditable assessor that emits exact per-exemplar counterfactual attributions. Across keyword counting, three sentence-transformer embedders, an open-weight LLM-judge, and a calibrated cascade, no method dominates all four axes. A 120B LLM-judge, strongest on benign inputs, loses 47 accuracy points (0.74 to 0.27) on keyword-stuffed Consumer Duty inputs: \"compliance theatre.\" A second judge from a different model family agrees only at Cohen's kappa = 0.16 on that split, localising the failure to the model rather than the corpus. Any deployment-grade LLM-judge for principle-based regulation must report per-principle adversarial deception and post-hoc calibration alongside aggregate accuracy.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-08-14T14:20:38Z",
+    "updated": "2026-08-14T14:20:38Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14329v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14329v1"
+    ],
+    "relevance_score": 0.26733416079089195,
+    "max_similarity": 0.07981748224265027
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14457v1",
+    "title": "Information Satisfaction: A Reader-Centered Axis for Summarization Evaluation",
+    "authors": [
+      "Isabel Cachola",
+      "William Walden",
+      "Reno Kriz",
+      "Mark Dredze"
+    ],
+    "abstract": "The majority of work on summarization evaluation focuses on general summary quality (e.g., ROUGE, BERTScore) or specific desired properties (e.g., readability, factuality). However, these metrics fail to measure the utility of a summary to an individual user. For example, a biomedical researcher learning about the latest vaccine research will have different informational needs from a family doctor. Query-focused summarization captures part of this need, but in practice, users rarely state everything relevant in a query: a single short query is likely inadequate to distinguish the needs of a researcher from those of a physician. By contrast, a reader's background or persona (their role and expertise) is comparatively stable across queries and recovers much of this missing context, which makes it a practical signal for assessing whether a summary satisfies that reader's needs. In this work, we assess how sensitive popular summarization metrics are to both informational and persona differences, and find that many popular metrics, including strong LLM-as-judge metrics, fail basic perturbation tests of informational content. We additionally conduct an expert human evaluation, measuring summary preferences based on information satisfaction given a specific person's background and use case. We find that both traditional and LLM-based metrics are insufficient measures of information satisfaction and agree poorly with human judgment.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-08-14T16:41:23Z",
+    "updated": "2026-08-14T16:41:23Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14457v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14457v1"
+    ],
+    "relevance_score": 0.2417692107919572,
+    "max_similarity": 0.10710398192505527
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.14425v1",
+    "title": "Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations",
+    "authors": [
+      "Toby D. Pilditch"
+    ],
+    "abstract": "LLM evaluations often use fixed sampling budgets, testing every item the same number of times even after estimates are precise. We introduce optstop, a precision-based adaptive stopping framework that treats evaluation as a sequential measurement problem: keep sampling where uncertainty remains high, and stop where estimates are precise or stable enough. The framework builds on hierarchical Bayesian inference, supports binary, ordinal, and continuous outcomes, and keeps every benchmark item eligible for sampling, without requiring a calibrated item bank. It runs live or retrospectively, and includes a safeguard that samples more cautiously as measured performance approaches zero, where rare successes matter most. In an illustrative 200-item, 10-epoch evaluation, it removes 57%-97% of planned trials across nine validation settings, with overall conclusions equivalent to the full run. These results show that LLM evaluation compute can be allocated by uncertainty rather than by fixed repetition counts, with the magnitude of savings depending on evaluation design.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-08-14T16:06:41Z",
+    "updated": "2026-08-14T16:06:41Z",
+    "pdf_url": "https://arxiv.org/pdf/2608.14425v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2608.14425v1"
+    ],
+    "relevance_score": 0.22512354343323987,
+    "max_similarity": 0.08885850158785998
+  }
+]
