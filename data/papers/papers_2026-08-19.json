@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.14563",
+    "title": "Forward Pass Domain Adaptation (Without Cross-Layer Backpropagation)",
+    "authors": [
+      "Rivaan Patil, Simon Dennis, Hao Guo, Kevin Shabahang"
+    ],
+    "abstract": "arXiv:2608.14563v1 Announce Type: new \nAbstract: Forward-Pass-Only MLP training (FPO) adapts large language models without a backward pass through the model body, achieving 2.7--3.2x the throughput of standard fine-tuning at ~40% less peak training memory, while leaving off-domain benchmarks within seed-noise of baseline, a property that full-network fine-tuning does not reliably reproduce. FPO rests on a single empirical observation: at late layers of a transformer, the output-layer prediction error approximates the true gradient with cosine similarity 0.47--0.59 across six public models we survey. We introduce a two-minute diagnostic that quantifies this approximation per layer for any model, identifying where late-layer adaptation is viable. Informed by the diagnostic, FPO computes a single error signal at the output and applies it to each target layer. No signal is propagated between layers, and no autograd graph is constructed at any point. We evaluate FPO on three model families (OLMo-2-7B, Qwen3-8B, Falcon3-7B). Across all three, FPO produces in-domain perplexity improvement and leaves MMLU, ARC-Challenge, HellaSwag, and Winogrande within seed-noise of baseline. Localizing SFT to FPO's target layers to enter this regime is also feasible, but at 2.2x the wall-clock cost of FPO.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14563",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14563"
+      }
+    ],
+    "relevance_score": 0.5055019399976903,
+    "max_similarity": 0.24966978560609865
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14584",
+    "title": "Multi-Modal Generative Fuzzy System: Fuzzy Inference Guided Large Model Interactive Question Answering Framework",
+    "authors": [
+      "Hailong Yang, Jianqi Wang, Guanjin Wang, Zhaohong Deng"
+    ],
+    "abstract": "arXiv:2608.14584v1 Announce Type: new \nAbstract: In Multimodal Question Answering (MQA), models are required to jointly encode and integrate heterogeneous information from multiple modalities, including text, images, and speech, to perform complex semantic reasoning and decision making. Despite recent advances, existing approaches, including traditional deep learning models and Large Models (LMs) or prompt-based frameworks, continue to face several critical challenges. First, modality bias arises from discrepancies in feature distributions across different modalities, which limits effective cross modal collaborative understanding. Second, many questions require knowledge drawn from multiple domains, introducing significant uncertainty. Third, current methods often rely on shallow semantic matching, resulting in limited reasoning depth an reduced interpretability. To address these issues, inspired by the traditional fuzzy system (FS) framework, we propose a fuzzy-inference-guided multimodal generative architecture termed the Multi-Modal Generative Fuzzy System (MMGFS). The main contributions of MMGFS are two folds. First, it alleviates modality bias through a multimodal collaborative rumination mechanism. Second, it introduces fuzzy rules and a multi-hop inference mechanism to support cross-domain knowledge fusion and hierarchical reasoning, thereby strengthening uncertainty modelling and deepening semantic understanding. We conduct comprehensive evaluations on open-domain question answering datasets, including MultimodalQA and WebQA, as well as domain-specific benchmarks, including BioMol-VQA and EHRxQA. Experimental results demonstrate that MMGFS consistently outperforms existing methods across multiple datasets. It effectively mitigates modality bias and question uncertainty while achieving superior performance in answer accuracy, consistency, and generalization.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14584",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14584"
+      }
+    ],
+    "relevance_score": 0.48045934605945523,
+    "max_similarity": 0.20845672881077879
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14718",
+    "title": "VideoGAIA: A Benchmark for General AI Assistants on Agentic Video Understanding",
+    "authors": [
+      "Fan Zhang, Guangming Yao, Jinyang Wu, Hao Wu, Zheng Lian, Xinyu Geng, Jingdong Chen, Yi Yuan, Pheng-Ann Heng"
+    ],
+    "abstract": "arXiv:2608.14718v1 Announce Type: new \nAbstract: Video understanding is a fundamental task for evaluating the capabilities of multimodal large language models (MLLMs). However, existing leading models have already achieved approximately 90% accuracy on the Video-MME leaderboard, suggesting that conventional single-turn video understanding tasks are becoming increasingly saturated and insufficient for assessing the intelligence of advanced MLLMs. Towards this end, we introduce VideoGAIA, an agentic video understanding benchmark for general artificial intelligence (AI) assistants. Moving beyond one-shot video question answering, VideoGAIA formulates video understanding as a multi-turn, tool-augmented interaction process, where models must iteratively perceive videos, invoke external tools, gather complementary information, and integrate multimodal evidence across turns. VideoGAIA contains 271 model-human co-designed tasks covering diverse and complex real-world scenarios. Each video-question-answer instance is independently verified by three human experts to ensure both correctness and appropriate difficulty. All evaluated MLLMs, including frontier models such as GPT-5.5 and Kimi-K3, achieve less than 60% accuracy on VideoGAIA, highlighting its value as a high-quality and timely benchmark for evaluating next-generation MLLMs. We hope that VideoGAIA will facilitate the transition from conventional video understanding toward agentic video understanding.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14718",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14718"
+      }
+    ],
+    "relevance_score": 0.478459811203883,
+    "max_similarity": 0.210352659996317
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14587",
+    "title": "An Agentic Framework Using Rules and LLMs for Embedding and Annotating Descriptive Document Layouts: A Plant Science Use Case",
+    "authors": [
+      "Nicolas Turenne, Youcef Sklab, Eric Chenin, Jean-Daniel Zucker"
+    ],
+    "abstract": "arXiv:2608.14587v1 Announce Type: new \nAbstract: Background: Recent advances in information retrieval (IR) leverage both dense and sparse representations, large language models (LLMs), and specialized retrieval models to improve ranking accuracy, relevance, and cross-lingual performance. Complementary techniques such as passage indexing, document layout analysis, and semantic knowledge representation further enhance retrieval effectiveness by capturing fine-grained contextual and structural information. Emerging agentic LLM frameworks extend these capabilities by enabling planning, iterative reasoning, tool use, and multi-agent collaboration, thereby broadening applications across diverse domains. These frameworks also emphasize rigorous evaluation, ethical considerations, and trustworthiness, ensuring responsible deployment in real-world settings. We propose a modular, agent-based pipeline for botanical trait extraction. Optical character recognition (OCR) converts PDFs into machine-readable text, while segmentation and indexing organize content by genus and species. Rule-based parsers extract structured botanical traits, and ensembles of large language models (LLMs) expand trait vocabularies and resolve ambiguities. This approach ensures accurate species recognition, scalable annotation, and explainable integration of textual botanical descriptions, enabling robust and interpretable data extraction across large botanical corpora. Results: Using three regional botanical datasets, our system extracted 55,737 trait annotations across 4,961 species, averaging 9.1 traits per species. Integration of LLM-based enrichment improved coverage for 75% of traits, increasing total annotations by 59%. While the choice of OCR engine had a minor effect on species recognition, overall annotation counts remained stable, demonstrating the robustness, scalability, and reliability of the pipeline for large-scale botanical trait extraction.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14587",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14587"
+      }
+    ],
+    "relevance_score": 0.47665704165794415,
+    "max_similarity": 0.2059354169845818
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14610",
+    "title": "When Do LLMs Apply the Wrong Law? Diagnosing LLM Failures in Temporal Legal Reasoning",
+    "authors": [
+      "Yiqian Huang, Shuyuan Zheng, Qianying Liu, Shaowen Peng, Yuntao Kong, Kotaro Funakoshi, Chuan Xiao, Manabu Okumura, Yang Cao"
+    ],
+    "abstract": "arXiv:2608.14610v1 Announce Type: new \nAbstract: Legal reasoning tasks such as legal judgment prediction (LJP) require identifying the temporally correct version of the law governing a case -- a capability we term temporal applicable-law determination. However, whether large language models (LLMs) can reliably perform this task remains unexplored. In this paper, we construct a benchmark to evaluate LLMs on temporal applicable-law determination, and systematically investigate why they fail at temporal legal reasoning. Our experiments reveal four key findings. First, LLMs exhibit a strong bias toward applying the most recently enacted law, regardless of when the legally relevant facts occurred. Second, this bias does not stem from an inability to understand that laws have temporal scope, nor from a lack of knowledge about historical statutes. Third, we provide behavioral evidence that reinforcement-learning-shaped explicit reasoning may be a key mechanism: while improving general reasoning ability, it reduces the diversity of reasoning paths, causing models to converge on applying the current law. Fourth, this produces a counterintuitive inverse relationship: models with stronger general reasoning ability tend to perform worse on temporal legal reasoning. Our findings offer concrete guidance for future work on improving LLM performance in temporally grounded legal reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14610",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14610"
+      }
+    ],
+    "relevance_score": 0.460514349974361,
+    "max_similarity": 0.19001082889597473
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14579",
+    "title": "SKILL: Self-correcting Knowledge-guided Iterative Large Language Model Agent for Logic Optimization",
+    "authors": [
+      "Rui Yang"
+    ],
+    "abstract": "arXiv:2608.14579v1 Announce Type: new \nAbstract: Logic synthesis optimization poses significant challenges due to exponentially growing search spaces, sparse reward signals, and diverse logic structures. Traditional expert-designed flows lack adaptability, while reinforcement learning (RL) methods often suffer from low sample efficiency and limited interpretability. We introduce SKILL, a Self-correcting Knowledge-guided Iterative Large Language Model Agent that unifies multi-agent LLM reasoning and RL-based environment interaction for automated synthesis optimization. SKILL coordinates three specialized LLMs: GPT-4o for strategic planning, Claude Sonnet 4 for detailed reasoning, and Gemini 2.5 Pro for efficient analysis with a PPO-based RL agent that learns actionable policies through direct interaction with synthesis tools. A novel self-correcting module monitors environment feedback (PDA metrics), detects suboptimal behaviors, and invokes LLM-guided recovery strategies. Evaluations on IWLS, OpenCores, and EPFL benchmarks show SKILL achieves a 12.4 % PDA improvement over expert flows and 86.3% success rate on logic systems up to 500K gates.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14579",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14579"
+      }
+    ],
+    "relevance_score": 0.45258962706002726,
+    "max_similarity": 0.18028525280383734
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14558",
+    "title": "The Unwritten Benchmark: A New Challenge for Multimodal Machine Learning in Abstract Perceptual Reasoning",
+    "authors": [
+      "Garima Arya Yadav, Nilay Yilmaz, Yezhou Yang"
+    ],
+    "abstract": "arXiv:2608.14558v1 Announce Type: new \nAbstract: Current multimodal models have demonstrated remarkable proficiency in recognizing static visual and auditory content. However, their capacity for abstract perceptual reasoning, inferring unseen information from dynamic, generative processes, remains a critical and underexplored frontier. In this paper, we introduce The Unwritten Benchmark, a new challenge designed to probe this abstract perceptual and cognitive ability. We define the core task as acousto-kinematic word inference: models must decipher words, across 3 different writing styles, being written solely from the audio of pen scratches and the video of hand movements, without any visible ink trace. Our evaluation results reveal a profound gap between human and machine performance: while human participants achieve high ordered letter accuracy (over 80%), leading Multimodal Machine Learning Models, including GPT-4o and Gemini 2.5-Pro, struggle significantly, failing to surpass 10%. Furthermore, we identify a paradoxical fusion effect in the models, where providing both modalities often degrades performance rather than improving it. This finding indicates a fundamental breakdown in their ability to synthesize complementary perceptual cues for this cognitive task. These findings highlight significant limitations in both cross-modal causal reasoning and the understanding of the micro-kinematics essential for such cognitive and intuitive perceptual reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14558",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14558"
+      }
+    ],
+    "relevance_score": 0.4482929673145559,
+    "max_similarity": 0.17423194205552556
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14585",
+    "title": "Euclid-Omni : A Unified Neuro-Symbolic Framework for Plane Geometry",
+    "authors": [
+      "Zhaoyu Li, Hangrui Bi, Youyuan Zhang, Wenjie Ma, Zenan Li, Zhaolei Zhang, Xujie Si, Kaiyu Yang"
+    ],
+    "abstract": "arXiv:2608.14585v1 Announce Type: new \nAbstract: Euclidean geometry is a compelling testbed for AI reasoning, as it demands the combination of intuitive diagram understanding, axiomatic deduction, and algebraic computation. Yet, existing approaches typically address only a subset of these abilities or struggle with competition-level problems. We introduce \\textit{Euclid-Omni}, a unified neuro-symbolic framework that couples a formal geometry system with Large Language Models (LLMs) and Vision-Language Models (VLMs) to tackle both calculation- and proving-style problems, in formal and natural languages, up to Olympiad-level difficulty. At its core, we develop \\textit{Euclidea}, a versatile symbolic geometry solver that automatically generates reasoning steps through deductive inference and algebraic computation. Building on this, we develop a data-generation pipeline that synthesizes symbolic problems and solutions, renders diagrams, and translates them into natural language, producing large-scale, diverse datasets for training LLMs and VLMs across a wide range of reasoning settings. Experiments show that VLMs trained on our synthetic data achieve superior performance on calculation tasks, and that LLMs combined with \\textit{Euclidea} are competitive with state-of-the-art systems on Olympiad-level proving problems, despite using orders of magnitude less compute and training data. Code and scripts are publicly available at https://github.com/20171130/Euclid-Omni",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14585",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14585"
+      }
+    ],
+    "relevance_score": 0.44036145956853484,
+    "max_similarity": 0.16216276267585072
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14588",
+    "title": "The Hallucination Snowball: Modeling Error Propagation as State Transitions in Multi-Agent LLM Pipelines",
+    "authors": [
+      "Prabhjot Singh, Bhushan Pawar"
+    ],
+    "abstract": "arXiv:2608.14588v1 Announce Type: new \nAbstract: Sequential multi-agent LLM pipelines chain specialized agents without verification at handoffs, creating a structural flaw with measurable and severe consequences. We show that hallucinations injected at Stage 1 do not merely persist; they transform: raw numerical facts become derived computations, then narrative prose, then editorially approved conclusions. At each transformation, detectability degrades near-irreversibly. We formalize this as the hallucination snowball effect, a first-order Markov process over four states (Raw Fact $\\to$ Derived $\\to$ Narrative $\\to$ Invisible) with empirically measured per-boundary escape probabilities of 24.6%, 48.3%, and 89.3%. Across 346 automatically injected hallucinations in a 4-agent financial analysis pipeline on FinanceBench, gpt-4o detection drops from 72.0% at Stage 1 to 50.9% at Stage 4, and 23.7% of hallucinations survive completely undetected in the final output. Even the strongest model tested (Qwen3.5-397B-A17B, 87.0% at Stage 1) faces a structural ceiling; projected Stage 4 detection is only ${\\sim}$60--65%. Critically, boundary gates using identical RAG verification tools reduce hallucination survival from 58.4% to 16.2% versus end-of-pipeline checking (Cohen's $h = -0.911$, $p < 0.000001$), while end-checking alone achieves merely 2.3 pp improvement over no verification. When you verify matters more than whether you verify. Our model predicts survival for $n$-agent linear pipelines and prescribes optimal verification resource allocation: invest at $S_1{\\to}S_2$ first, where 75.4% of hallucinations are still catchable, not at $S_3{\\to}S_4$ where 89.3% have already escaped.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14588",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14588"
+      }
+    ],
+    "relevance_score": 0.4335431706495758,
+    "max_similarity": 0.16008637309390542
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14551",
+    "title": "Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews",
+    "authors": [
+      "Arya Rahgozar, Pouria Mortezaagha"
+    ],
+    "abstract": "arXiv:2608.14551v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used for title-abstract screening in systematic reviews, but their decisions lack calibrated uncertainty. We show that an auxiliary BERT+GCN classifier supplies a structured uncertainty signal that improves LLM screening efficiency, and we identify the prompt-delivery strategy that maximises the benefit-to-cost ratio.\n  We evaluate five LLM prompt-delivery conditions on eight drug-class datasets from the Cohen (2006) benchmark using 3 seeds x 5-fold stratified cross-validation (600 fold-level results). A BERT+GCN model trained per fold classifies each test paper as INCLUDE, EXCLUDE, or MAYBE via two spectral tests (algebraic radical and categorical paradox). Conditions vary information content (none / label / full scores), selectivity (all papers vs. MAYBE only), and timing (proactive vs. reactive two-pass). A cross-model pilot against gpt-4.1-mini on three datasets tests cross-generation transfer.\n  Three findings: (i) Full-context delivery yields significant gains in F1 (+0.011, paired Wilcoxon p=0.008) and WSS@95 (+0.050, p=0.039) at a 1.28x token-cost premium, while preserving recall. (ii) MAYBE-only routing is Pareto-optimal: highest mean recall (0.92) and AUC-ROC (0.54) at only 1.05x baseline cost -- one sixth of full-context overhead. (iii) The two-pass design escalates 22.2% +/- 8.8% of records yet never revises its decision (0% flip rate across all datasets and folds), giving decisive evidence that current instruction-tuned LLMs cannot self-triage. The cross-model pilot shows an identical +0.8% recall uplift for both LLM generations. A per-paper ablation across 20,796 observations shows the dual paradox test reduces empirically to a one-line logit-gap criterion. We release the full pipeline; the 600-run experiment replays in under one hour from cached LLM responses.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14551",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14551"
+      }
+    ],
+    "relevance_score": 0.43021071674288236,
+    "max_similarity": 0.1531324978813171
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14740",
+    "title": "From Dense Prediction to Visual Editing: Structured Supervision for Unified Image and Video Creation",
+    "authors": [
+      "Zhefan Rao, Bin Zou, Haoxuan Che, Xuanhua He, Chong Hou Choi, Yanheng Li, Rui Liu, Qifeng Chen"
+    ],
+    "abstract": "arXiv:2608.14740v1 Announce Type: new \nAbstract: Unified image and video creation requires a model to follow diverse instructions while preserving identity, geometry, and temporal structure from visual context. However, semantic-only conditioning and creation-only training do not explicitly supervise the local structure needed for precise, temporally consistent editing. We therefore formulate depth and surface-normal prediction as image-form denoising targets, using these dense tasks as structured visual supervision within the same creation interface. Our framework decouples semantic interpretation from spatially aligned visual injection while sharing one multimodal diffusion transformer (MMDiT) backbone across all tasks. Mutual Context Attention (MCA), a paired-video data-construction procedure, and a progressive training curriculum then connect the learned structural cues to temporally localized editing and reference-conditioned creation. A single checkpoint obtains the highest overall score in the reported comparison of unified systems (4.15); adding dense supervision improves OpenVE Overall from 3.98 to 4.06 and Local Add from 3.92 to 4.18. These results support a deliberately bounded conclusion: perception-oriented dense supervision transfers useful structural knowledge to downstream creation, especially editing locality and preservation; we do not claim superiority as a standalone dense predictor.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14740",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14740"
+      }
+    ],
+    "relevance_score": 0.4290779042234164,
+    "max_similarity": 0.15240423011697257
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14552",
+    "title": "Large Language Models Show Metacognitive Sensitivity in Medical Reasoning",
+    "authors": [
+      "Ahmad Nazzal"
+    ],
+    "abstract": "arXiv:2608.14552v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly evaluated and used in medicine, but clinical usefulness depends on answer accuracy and whether confidence tracks evidence quality and uncertainty. We developed a controlled, psychophysics-inspired clinical benchmark to test diagnostic choice and confidence behavior in a medical LLM. The benchmark focused on probable Alzheimer-type neurocognitive disorder (AT-NCD) versus depression-related cognitive impairment (DRCI). We generated 45 synthetic vignettes varying evidence strength, conflicting evidence, and missing information. Each vignette was presented under three prompt variants, yielding 135 trials. In a pilot run with gpt-4.1-nano, all trials produced valid structured outputs. Across forced-choice trials, diagnostic accuracy was 93.5%, mean confidence was 78.4%, and AUROC2 was 0.876. Confidence increased with evidence distance from the diagnostic boundary, decreased when information was missing, and remained higher on correct than incorrect trials after adjustment for evidence strength and prompt format. These findings indicate partial metacognitive sensitivity rather than globally uninformative confidence. However, errors clustered in moderate, conflicting AT-NCD cases, where the model shifted toward DRCI and retained more confidence than empirical accuracy justified. Model comparison suggested that confidence quality should be measured directly rather than inferred from benchmark accuracy or model capability alone. This study establishes a reproducible framework for evaluating evidence sensitivity, metacognitive sensitivity, and localized calibration failure in medical LLMs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14552",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14552"
+      }
+    ],
+    "relevance_score": 0.42290795273146065,
+    "max_similarity": 0.14432278466890003
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14649",
+    "title": "Discrete Diffusion Language Models Are Training-Free Multi-Label Classifiers",
+    "authors": [
+      "Pawan Kumar"
+    ],
+    "abstract": "arXiv:2608.14649v1 Announce Type: new \nAbstract: We present dLLM-SetScore, a training-free method that uses discrete masked-diffusion language models for multi-label text classification. For each candidate label, it asks a short yes/no question and compares the probabilities of the two answer tokens at one masked position. The method uses no task-specific fine-tuning or training on textual-entailment datasets; a 200-example labelled validation slice selects thresholds, temperature, and prompt wording.\n  We first show that placing all labels in one prompt creates a strong slot-position asymmetry: the first answer slot is predicted positive on $99.4\\%$ of GoEmotions examples and $100\\%$ of Reuters examples. Per-label scoring places every label in the same syntactic position, making predictions invariant to label order and avoiding this artifact. We evaluate LLaDA-8B and Dream-7B on six datasets against NLI models, an autoregressive LLM, SetFit, and supervised classifiers. On the five datasets shared by both diffusion families, Instruct checkpoints improve macro-F1 in 9 of 10 comparisons and micro-F1 in 8 of 10, although these comparisons do not identify the cause. Within our protocol, LLaDA-Instruct records the highest training-free values for both Reuters and ECtHR metrics. We prove permutation invariance, characterize thresholded decisions under weighted Hamming loss, and derive shortlist ceilings for recall and F1. An exploratory local Joint Set Refinement step lowers F1 from biased and unbiased initializations and is retained as a negative result.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14649",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14649"
+      }
+    ],
+    "relevance_score": 0.4224949675039386,
+    "max_similarity": 0.14492850448106556
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14721",
+    "title": "AeroGround: A Comprehensive Benchmark for Aerial-Ground Collaborative Reasoning",
+    "authors": [
+      "Shenghong Yi, Lin Zhang, Muzian Li, Jiakang Yuan, Haoyu Zhang, Peng Ye, Jiayuan Fan, Huafeng Qin, Tao Chen"
+    ],
+    "abstract": "arXiv:2608.14721v1 Announce Type: new \nAbstract: Vision-language models (VLMs) have been widely employed in understanding and reasoning tasks for unmanned aerial vehicles (UAVs). Existing UAV benchmarks primarily focus on aerial-view scenarios. However, whether current VLMs can perform well on understanding and reasoning tasks in aerial-ground collaborative scenarios which are practical in real-world applications like rescue and infrastructure inspection remains underexplored. To address this gap, we introduce AeroGround, a comprehensive benchmark for evaluating VLMs in aerial-ground collaborative reasoning. AeroGround is built upon a simulated aerial-ground dataset containing approximately 29,000 multimodal observation groups from diverse open environments, and provides 2,250 high-quality question-answering instances covering cross-view correspondence, spatial understanding, and reasoning. Experiments on 16 pretrained VLMs, together with two domain-adapted variants, reveal a substantial gap between current models and human performance: the best model achieves an average accuracy of 54.4%, whereas humans reach 93.3%. By systematically revealing the strengths and limitations of existing models in aerial-ground collaborative reasoning, AeroGround provides a foundation for developing more capable aerial-ground collaborative embodied intelligence systems.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14721",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14721"
+      }
+    ],
+    "relevance_score": 0.41624875010045176,
+    "max_similarity": 0.1347620212103769
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14577",
+    "title": "HarmProfile: Characterizing Harmful Distributions in Frontier LLMs",
+    "authors": [
+      "Zhouyuan Ma, Yutao Wu, Hanxun Huang, Xiang Zheng, Xiao Liu, Yixin Cao, Zuxuan Wu, Xingjun Ma, Yu-Gang Jiang"
+    ],
+    "abstract": "arXiv:2608.14577v1 Announce Type: new \nAbstract: Frontier large language models (LLMs) safety evaluation has largely treated harmful generation as an attack outcome rather than as an object of analysis. Consequently, little is known about the harmful outputs produced during model misbehavior, partly because large-scale, high-quality collections of frontier-LLM misbehavior are difficult to obtain. To address this gap, we introduce HarmProfile, a content-centric benchmark dataset that collects model misbehavior across diverse harm categories and model families, and defines the resulting harmful-output distribution as a model-level risk profile. The premise is that, just as linguistic behavior can be characterized from an utterance corpus, model risk can be characterized from the content, severity, and variation of its safety failures. HarmProfile contains over 80,000 validated artifacts from 23 frontier LLMs across 13 model families, organized into 15 harm categories and 57 subcategories. Using this corpus, we find that frontier LLMs reliably produce harmful content at scale, yet exhibit distinct risk profiles; both harmfulness and diversity grow with model capability, suggesting that frontier LLMs may appear safe yet harbor increasingly dangerous knowledge beneath the alignment surface. Our source code is available at https://github.com/fresh-ma/HarmProfile .",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14577",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14577"
+      }
+    ],
+    "relevance_score": 0.41264094001910934,
+    "max_similarity": 0.1310488061009574
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14617",
+    "title": "Calibrated Trust, Not Sharper Prediction: An Empirical Test of Uncertainty Fusion",
+    "authors": [
+      "Surya Saka"
+    ],
+    "abstract": "arXiv:2608.14617v1 Announce Type: new \nAbstract: A recurring proposal in legal AI is to improve case-outcome prediction by fusing uncertainty tools (evidence graphs with belief propagation, sequential Bayesian odds updating, Dempster-Shafer combination, and conformal prediction) into one pipeline. We test this on 1,000 real European Court of Human Rights cases from LexGLUE and FairLex, predicting whether the Court found a Convention violation from the case's fact paragraphs. We compare three families across two frontier LLMs (Claude Opus 4.8 and GPT-5.5) as per-fact evidence estimators: (A) the raw LLM, (B) the LLM routed through the fusion pipeline, and (C) a term-frequency baseline through the same pipeline. Across roughly 4,750 tests we find: (1) on discrimination (AUROC around 0.83) the pipeline yields no improvement over either the raw LLM or the baseline; a frontier LLM used directly is the strongest single discriminator. (2) Naively composing an LLM with Bayesian-odds and Dempster-Shafer fusion more than doubles calibration error (ECE from about 0.16 to 0.46) via a prior-mismatch mechanism that replicates across both models. (3) Dempster-Shafer fusion is actively unsafe on long chains, committing confidently to wrong labels at below-chance accuracy; we recommend removing it. (4) The pipeline's genuine value is operational: routed through a conformal selective-prediction layer, the system decides which cases to automate and which to escalate. After removing Dempster-Shafer, recalibrating, and applying class-conditional risk control on the full 1,000-case set, the tuned engine auto-clears at 96.8 percent accuracy with 0.5 percent errors escaping and 96.3 percent caught for review, versus 85.9 / 3.8 / 72.1 for an untuned baseline. The contribution of such pipelines in law is calibrated trust, not sharper prediction.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14617",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14617"
+      }
+    ],
+    "relevance_score": 0.40737295592217393,
+    "max_similarity": 0.12787020214008793
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14566",
+    "title": "Position: Evaluations of AI Moral Reasoning Still Miss Half of the Picture",
+    "authors": [
+      "Aidan Kierans, Ritam Dutt, Kaley Rittichier, Shiri Dori-Hacohen, Avijit Ghosh"
+    ],
+    "abstract": "arXiv:2608.14566v1 Announce Type: new \nAbstract: Recent work on evaluating the moral competence of large language models (LLMs) has focused primarily on what we call the moral value problem, i.e., whether model outputs align with human moral values. In contrast, the moral norm problem, i.e., whether models can identify and correctly apply context-sensitive moral norms, remains underexplored. We posit that this imbalance stems from the field's reliance on descriptive ethics frameworks, such as Moral Foundations Theory and Kohlberg's stages of moral development, which emphasize value representation over normative application. We review existing benchmarks and evaluation methods, and show that they cluster heavily around the value problem, while discussion regarding normative ethics remains underrepresented. We identify three crucial gaps: (i) the absence of high-quality ground-truth data for moral norms and their applications, (ii) insufficient evaluation of intermediate reasoning processes, and (iii) limited attention to the identification of morally relevant features in context. Subsequently, we propose a research agenda that includes the development of standardized formal representations for normative theories, the construction of expert-annotated datasets capturing norm application, and evaluation protocols that explicitly distinguish between values-level and norms-level competence. Our goal is to encourage a more systematic study of normative reasoning in LLMs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14566",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14566"
+      }
+    ],
+    "relevance_score": 0.4048074396830879,
+    "max_similarity": 0.120362614670104
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14644",
+    "title": "DUET: Dual-Teacher On-Policy Distillation via Same-Weight Disagreement for Prohibition Compliance",
+    "authors": [
+      "Zihan Li, Feifei Li, Wenhui Que"
+    ],
+    "abstract": "arXiv:2608.14644v1 Announce Type: new \nAbstract: Real-world LLM deployments increasingly rely on runtime-injected prohibitions--enterprise policies, PII redlines, tool boundaries--that vary per request and per tenant. Conventional post-training is structurally ill-suited: SFT hides the violation signal in compliant labels, and DPO's sequence-level preferences mismatch token-localized violations. We propose DUET, a token-selective on-policy distillation method for prohibition compliance. DUET pairs a teacher that sees the prohibition (positive) with an identical-weight teacher that does not (negative). Because the two teachers differ only in prohibition visibility, their per-token disagreement isolates the prohibition's causal effect--yielding a clean supervision signal uncontaminated by model capacity or mismatch. This disagreement drives two complementary mechanisms: signal cleaning, which discards agreement tokens as redundant or prefix-corrupted, and preference-directed learning, which pushes the student away from the negative teacher and toward the positive one at token granularity, embedding DPO-style optimization directly into OPD without offline preference data. We construct an industrial Prohibition-Compliance benchmark spanning five task families covering explicit-refusal, paraphrase robustness, and over-refusal. Across 1.5B-8B Qwen variants, DUET achieves 72.3-85.2% violation compliance while preserving 88-93% normal utility, dramatically outperforming teacher model and other distillation baselines. External evaluation on SysBench confirms improved safety alignment with minimal degradation on GSM8K and MATH-500.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14644",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14644"
+      }
+    ],
+    "relevance_score": 0.39532647729104725,
+    "max_similarity": 0.11266929979866998
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14614",
+    "title": "DumpsterCluster: From Dumpster Diving to Serving LLaMA-70B on $60 GPUs",
+    "authors": [
+      "Zeyu Cao, Xuan Guo, Cheng Zhang, Cheuk Hang Lau, Ilia Shumailov, Yiren Zhao"
+    ],
+    "abstract": "arXiv:2608.14614v1 Announce Type: new \nAbstract: As AI datacenters retire functional GPUs, vast quantities of still capable accelerators enter secondary markets. This paper investigates whether these retired GPUs can find a productive afterlife to form a DumpsterCluster that can serve modern LLM inference, and under what conditions such repurposing is economically viable and environmentally sustainable. We physically built a 128-GPU DumpsterCluster from scratch using only second-hand components and ran it for one year. At current market prices (\\$22K for the DumpsterCluster vs. \\$600K for an 8-GPU B200 system), the economic advantages are substantial. Through pipeline-parallel optimizations, our V100 based DumpsterCluster achieves competitive LLaMA-70B throughput, validating production viability. However, our deployment reveals critical context dependencies. Older GPUs consume significantly more energy per token, making total cost of ownership favorable only in regions with inexpensive electricity. Under grid-average carbon intensity, second-hand systems can produce approximately 4x higher total carbon emissions per token for 8B models, and over 40x for 70B models, compared to current-generation hardware. These findings show that GPU afterlife is not universally sustainable - hardware repurposing must be strategically coupled with low carbon energy sources. When deployed in regions with favourable energy economics and clean electricity, second-hand GPUs offer a viable pathway for expanding AI capacity while advancing affordability, energy security, and environmental responsibility.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14614",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14614"
+      }
+    ],
+    "relevance_score": 0.3827641909142249,
+    "max_similarity": 0.09699682945083038
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.14590",
+    "title": "Toward Safe LLM Agents: A Survey of Specification, Verification, and Enforcement",
+    "authors": [
+      "Pierre Dantas, Lucas Cordeiro, Ehsan Nowroozi, Tihanyi Norbert"
+    ],
+    "abstract": "arXiv:2608.14590v1 Announce Type: new \nAbstract: LLM agents increasingly perform irreversible real-world actions, including database updates, API calls, file operations, and autonomous use of tools. However, no existing system provides formally grounded, task-level safety guarantees for the plans these agents generate. Research remains fragmented across specification, verification, and enforcement, limiting understanding of the strengths and limitations of existing approaches. To address this gap, we conducted a PRISMA 2020 systematic review of 38 studies published between 2022 and 2026 and retrieved from six academic databases. Our analysis reveals four key findings. First, the specification bottleneck remains the primary challenge: natural-language-to-formal translation achieves only 24% to 35% semantic correctness, undermining downstream verification. Second, runtime monitoring is the most mature enforcement strategy, reducing unsafe actions by 40% to 65% in controlled settings, but it does not provide complete safety guarantees. Third, the verifier tax shows that blocking 94% of unsafe actions can still result in less than 5% safe task completion because agents exploit alternative unsafe paths. Finally, no existing approach simultaneously achieves soundness, scalability, semantic correctness, and task-level safety preservation. We contribute a three-level taxonomy, a comparative analysis of existing techniques, a synthesis of evidence on the verifier tax, and a ten-problem research agenda for trustworthy agentic AI.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 18 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.14590",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.14590"
+      }
+    ],
+    "relevance_score": 0.33988233760023323,
+    "max_similarity": 0.16554743845694064
+  }
+]
