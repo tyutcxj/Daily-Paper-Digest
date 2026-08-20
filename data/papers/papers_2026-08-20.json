@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.16926",
+    "title": "Data-DPO: Direct Preference Optimization for Target Model Data Selection in LLM Post-Training",
+    "authors": [
+      "Peng Sun, Yi Yang, Antong Zhang, Chunxiao Li, Yanbo Wang, Dianbo Liu, xin chen, Kai Yu, Lu Chen, Tianfan Fu"
+    ],
+    "abstract": "arXiv:2608.16926v1 Announce Type: new \nAbstract: Data selection in supervised fine-tuning aims to select a small set of effective samples from large-scale candidate data, reducing training cost while preserving model performance. However, existing methods usually treat data value as a relatively static property, and pay limited attention to the compatibility between data and the capability distribution of the target model. To address this issue, we propose Data-DPO, a target model-oriented SFT data selection method. Data-DPO observes the local training feedback of the target model on different samples through one-step probing, transforms activation differences among samples into pairwise data preferences, and trains a lightweight reward model to learn target-model-aware data preferences. In the final selection stage, Data-DPO further combines target model preference, external quality scores, and marginal diversity to construct a more stable and effective training subset. Experimental results on Vision-Flan and LLaVA-CoT show that Data-DPO consistently outperforms existing data selection baselines under multiple data budgets and stably surpasses full data training performance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16926",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.16926"
+      }
+    ],
+    "relevance_score": 0.5617909477749051,
+    "max_similarity": 0.3153625780755225
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.16890",
+    "title": "GxP-Agent: Process-DAG Topology for Reliable Clinical Trial Programming with LLM Agents",
+    "authors": [
+      "Jaime Yan"
+    ],
+    "abstract": "arXiv:2608.16890v1 Announce Type: new \nAbstract: Clinical trial programming -- transforming study protocols into analysis-ready datasets under CDISC standards -- is a bottleneck in regulatory submissions, yet LLM-based code generation fails catastrophically on this task: across 11 single-shot attempts with five frontier models, none produces a valid subject-level analysis dataset. We introduce GxP-Agent, a multi-agent system that encodes regulatory process ordering as a directed acyclic graph (DAG), decomposing monolithic dataset generation into 15 domain-specific nodes executed by worker agents with pharmaverse skill context, validation gates, and conditional retry. On CDISC-Bench, a new execution-based benchmark built from the FDA pilot submission CDISCPilot01 (254 subjects, 49 ground-truth ADSL variables), GxP-Agent with Claude Sonnet 4.6 achieves 100% structural match (49/49 variables, 254 correct records) across three independent runs, compared to 59.2% for the best retrieval-augmented baseline and 0% for all single-agent and flat multi-agent approaches. The DAG topology also enables weaker models: GPT-4.1 achieves 59.2% mean structural match under the same DAG, where it scores 0% under every other architecture. The approach generalizes to ADAE (adverse events; 9-node branching DAG, 55 variables, 1,191 records), achieving 100% structural match on the first attempt. These results demonstrate that encoding domain process knowledge as graph topology -- rather than relying on LLM reasoning alone -- is a key enabler for reliable, GxP-compliant clinical trial programming.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16890",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.16890"
+      }
+    ],
+    "relevance_score": 0.48803457172874215,
+    "max_similarity": 0.22274691720667256
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17129",
+    "title": "PROBE: Manipulation-Grounded Visual Question Answering with VLM Agents",
+    "authors": [
+      "Vineet Bhat, Siyi Chen, Alex Zook, Xuning Yang, Stan Birchfield, Valts Blukis, Jonathan Tremblay"
+    ],
+    "abstract": "arXiv:2608.17129v1 Announce Type: new \nAbstract: Vision-language Models (VLMs) excel at 2D grounding, spatial reasoning and agentic tool-based planning in static scenes. However, consider asking a home robot \"Is my medication still in the cabinet?\" The answer may be physically hidden behind a row of containers that must first be moved aside. Answering such questions in real-world cluttered environments requires reasoning in dynamic scenes: distractors must be manipulated to reveal occluded objects, and each action changes the scene the model must reason over. We formalize this setting as Manipulation-Grounded Visual Question Answering (MG-VQA) and introduce PROBE, a framework for benchmarking and finetuning VLM agents on such tasks. We first develop PROBE-Sim, a high-fidelity tabletop simulator with everyday objects and a robot manipulator equipped with grasping and pushing tools. PROBE-Sim is used to create PROBE-Bench: an evaluation suite of 150 tasks across 6 question types on cluttered tabletop scenes, where a VLM perceives, picks up or pushes objects before answering. We observe consistent trend across all frontier VLMs: agentic tool-based methods outperform their perception-only baselines (8.0% on average) across all task types. We further design PROBE-Agent, a finetuning recipe to distill successful trajectories from a powerful teacher foundation model to a smaller open-weight model using a mixed data recipe that encourages manipulation-efficient question answering. PROBE Agent finetuned models outperform their off-the-shelf agent baseline (11.5% on average) and demonstrate positive transfer to unseen objects and a held-out task. We validate sim-to-real transfer by deploying PROBE-Agent finetuned policies in real-world tabletop environments.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17129",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17129"
+      }
+    ],
+    "relevance_score": 0.4830883881885714,
+    "max_similarity": 0.2144774562210735
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17050",
+    "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+    "authors": [
+      "Mingyuan Li, Guangsheng Yu, Xu Wang, Shaoxiong Ji"
+    ],
+    "abstract": "arXiv:2608.17050v2 Announce Type: new \nAbstract: Methods for improving knowledge use in large language models typically fall into two regimes. Non-parametric retrieval offers flexible access to external knowledge, but adds retrieval latency, context overhead, and only shallow integration with the backbone. Parametric adaptation is efficient at inference time, but entangles knowledge with model weights and can be hard to update, audit, or transfer. Engram-style hashed memory occupies a middle regime: it stores learned information in an external, addressable table, yet consumes that table through a small learned reader. This raises a basic question: when such a memory is moved across backbones, what matters more, the frozen memory itself or the target-side reader? We study this question through cross-model frozen-memory extraction, in which a memory trained on a source model is frozen and attached to a different target model, with only a lightweight reader trained. Ablations show that learned memory content and correct addressing both matter, but the transferred table becomes useful only through a reader aligned to the target model. In downstream question answering tasks, a dual-layer, four-branch reader nearly closes the gap between same-model and cross-model reuse, achieving an average score of 38.8 under our controlled evaluation protocol. Moreover, when the provider reader is directly compatible with the target interface, the frozen artifact can provide substantial utility without target-side training, while optional reader adaptation yields further improvement. These results suggest that Engram can serve as a reusable external knowledge artifact, provided that the target has access to a compatible reader interface; target-side adaptation can further improve alignment when direct reader reuse is insufficient.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17050",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17050"
+      }
+    ],
+    "relevance_score": 0.4746480616056913,
+    "max_similarity": 0.2081752295835853
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.16927",
+    "title": "Hierarchical Data Selection via Manifold Coverage and Sparse Feature Coverage in LLM Post-training",
+    "authors": [
+      "Peng Sun, Yi Yang, Antong Zhang, Chunxiao Li, Yanbo Wang, Dianbo Liu, xin chen, Kai Yu, Lu Chen, Tianfan Fu"
+    ],
+    "abstract": "arXiv:2608.16927v1 Announce Type: new \nAbstract: As supervised fine-tuning data continues to scale, selecting high-value subsets from large candidate pools is crucial for reducing training cost and improving model performance. Existing methods often measure diversity directly in the original embedding space, where geometric metrics entangle dominant semantic directions, fine-grained supervision differences, and local noise. We address this limitation by formulating data selection as a coarse-to-fine hierarchical coverage problem and propose MASS. MASS learns low-dimensional principal manifold coordinates with a dense autoencoder for coarse semantic grouping, and then performs quality-aware sparse feature coverage within each group using a TopK sparse autoencoder. Experiments on Vision Flan and LLaVA-CoT show that MASS consistently outperforms strong data selection baselines across multiple budgets, and in several settings matches or surpasses full data training with only a small subset of data.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16927",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.16927"
+      }
+    ],
+    "relevance_score": 0.4585093188100768,
+    "max_similarity": 0.18794084898412214
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17289",
+    "title": "PlanPO: Group Planning-Aware Policy Optimization for Multi-Turn Agentic LLMs",
+    "authors": [
+      "Dayang Liang, Liyuan He, Xuan Feng, Shuxin Li, Bo An, Yunlong Liu"
+    ],
+    "abstract": "arXiv:2608.17289v1 Announce Type: new \nAbstract: Group-relative policy optimization has emerged as a key paradigm for training agentic large language models (LLMs) on multi-turn interactive tasks. However, most existing variants fail to distinguish advantages among successful trajectories even when these trajectories differ substantially in their interaction efficiency. For instance, circuitous successes are often assigned the identical outcome reward, causing advantage collapse and severe performance bottlenecks. To this end, we propose Group Planning-aware Policy Optimization (PlanPO), a simple yet effective RL method for learning generalizable planning abilities beyond task-specific high-quality behavior patterns. Specifically, PlanPO introduces coarse-to-fine advantage signals, which capture the relative differences in trajectory-level lengths and turn-level response lengths conditioned on successful trajectories sampled for the same task. Within the group-relative optimization structure, this enables agents to actively learn generalizable and deliberate behaviors spanning interaction planning and textual generation from high-quality rollouts, without degenerating into vanilla length minimization. Experimentally, PlanPO improves over GRPO by 27.2\\% on average across the challenging multi-turn benchmarks ALFWorld, WebShop, and SciWorld, outperforming recent powerful baselines while incurring negligible additional training cost.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17289",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17289"
+      }
+    ],
+    "relevance_score": 0.4573208541619721,
+    "max_similarity": 0.1873956867313541
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17150",
+    "title": "KnowSim: Evaluating Information Calibration in LLM Assistants with User Simulators that Learn",
+    "authors": [
+      "Yoonjoo Lee, Hyoungwook Jin, Tae Soo Kim, Shaoyang Zhang, Philippe Laban, Q. Vera Liao"
+    ],
+    "abstract": "arXiv:2608.17150v1 Announce Type: new \nAbstract: To effectively collaborate with users on knowledge-intensive tasks, Large Language Models (LLMs) must perform information calibration: matching content to a user's evolving understanding and cognitive capacity. Yet user simulators used to evaluate and train LLMs do not explicitly model user knowledge so they neither produce realistic interactions across knowledge levels nor reflect how interactions unfold as that knowledge evolves. To close this gap, we introduce KNOWSIM, an evaluation framework built around a user simulator that maintains explicit knowledge states, represented as a graph of Information Units with prerequisite relationships, that evolve under update rules grounded in learning theory. KNOWSIM computes three metrics (Knowledge Gain, Delivery Calibration, Cognitive Overload) directly from the knowledge state trajectory, reflecting key mechanistic aspects of information calibration. We validate KNOWSIM against 705 human-AI sessions across two domains, stratified by knowledge level: its rankings align significantly with human judgments (73-74% sign agreement), outperforming three baseline simulators. Applied to 9 LLMs, KNOWSIM reveals that the best model shifts by user knowledge level, revealing aptitude-treatment interactions invisible to standard evaluation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17150",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17150"
+      }
+    ],
+    "relevance_score": 0.44479907126816565,
+    "max_similarity": 0.1704655443774999
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.16929",
+    "title": "Mr.Dec: Daily-Scale Longitudinal Multimodal Modeling for 30-Day Readmission Prediction",
+    "authors": [
+      "Minjun Kim, Jong Hak Moon"
+    ],
+    "abstract": "arXiv:2608.16929v1 Announce Type: new \nAbstract: Predicting 30-day hospital readmission is essential for assessing patient stability and optimizing healthcare resources. As clinical risk evolves with the accumulation of evidence during hospitalization, capturing these dynamic trajectories is essential. However, many existing approaches compress the complex longitudinal history into fixed representations, often losing the granular, day-level clinical signals that reflect a patient's evolving physiological state. To address this, we propose Mr.Dec (Multimodal Readmission-risk prediction Decoder), which models each admission as a natural chronological sequence of daily multimodal events. By leveraging a Transformer Decoder, Mr.Dec integrates daily Electronic Health Record(EHR) updates and intermittent Chest X-ray(CXR) findings in a time-aligned stream, reflecting the actual clinical workflow. To ensure robustness, we utilize Disease-Specific Supervised Contrastive Learning as an auxiliary regularization to induce a diagnosis-aware structure in the latent space. Evaluations on the MIMIC-IV and MIMIC-CXR datasets show that Mr.Dec achieves state-of-the-art performance by preserving the integrity of the clinical sequence. Furthermore, our model identifies \"Critical Days\" within an admission, providing actionable and clinically grounded interpretations for real-time risk stratification. Code is available at: https://github.com/yejix-ai/MR.DEC",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16929",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.16929"
+      }
+    ],
+    "relevance_score": 0.4379315193677431,
+    "max_similarity": 0.16379521025728697
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17067",
+    "title": "DiSCO: Defending text-to-image generation through distribution-guided contrastive prompt optimization",
+    "authors": [
+      "Tong Zhang, Motasem Alfarra, Carlos Hinojosa, Christos Louizos, Bernard Ghanem"
+    ],
+    "abstract": "arXiv:2608.17067v1 Announce Type: new \nAbstract: As text-to-image generative models advance, they raise critical safety concerns, particularly the generation of Not-Safe-For-Work (NSFW) content such as violence and nudity, further exacerbated by red-teaming adversarial attacks. Existing defenses predominantly operate under white-box assumptions, relying on text encoder optimization, weight editing, or inference-time intervention, and fundamentally cannot scale to proprietary models. Black-box alternatives based on LLM prompt rewriting offer broader applicability, yet fail in a critical regime we identify as the \\textit{benign adversarial} problem: prompts that are linguistically safe but still trigger harmful generation due to the model's learned data distribution. We propose DiSCO, a zero-shot, strictly black-box defense that operates entirely at the prompt level as a plug-and-play module, requiring no model retraining, fine-tuning, or access to model internals. DiSCO performs distribution-guided suffix expansion via beam search, optimized through contrastive scoring over safe and unsafe image pools generated by the target model itself, with iterative adaptive feedback until safe content is produced. We demonstrate that DiSCO consistently enhances the safety of both undefended and defended models on the I2P benchmark under multiple red-teaming attacks, achieving 37.7% and 25.13% ASR reduction, respectively, while maintaining semantic fidelity and improving image coherence. As a black-box, architecture-agnostic module, DiSCO can be readily applied to any text-to-image system without necessitating any changes to the model itself.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17067",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17067"
+      }
+    ],
+    "relevance_score": 0.4345367730527529,
+    "max_similarity": 0.15623985258710527
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17051",
+    "title": "Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss",
+    "authors": [
+      "Daniel Palacios, Matthew Brady Neeley, Angel Adetomike Otto, Shalini Dhamodharan, John P. Woodhouse, Chi-fan Lin, Mark Zobeck, Zhandong Liu, Hyun-Hwan Jeong"
+    ],
+    "abstract": "arXiv:2608.17051v1 Announce Type: new \nAbstract: Secondary use of electronic health records requires de-identification, yet existing systems miss \\emph{institutionally situated} protected health information (PHI) such as hospital abbreviations, building names, and internal codes whose status is locally determined. We ask whether large language models (LLMs) with in-context learning (ICL) can close this gap and control the precision--recall trade-off.\n  On 100 annotated pediatric oncology notes (5,322 PHI spans) from Texas Children's Hospital, we benchmarked eight LLMs against two purpose-built systems (Stanford TiDE, OpenMed PII) and two pattern-based baselines. Each LLM ran under three prompts of increasing specificity: (1) a HIPAA-aligned baseline, (2) baseline plus the institutional PHI categories it missed, and (3) prompt 2 plus instructions against over-redacting clinical content. We then compared 14~multi-agent and ensemble configurations against the best single prompt, with recall the primary safety metric.\n  LLMs outperformed the purpose-built systems (best F1=0.918$\\pm$0.001 vs.\\ TiDE 0.779), with advantages concentrated in contextual categories. Naming the missed categories recovered 79\\% (48/61) of them, and discouraging over-redaction restored precision. No agentic architecture beat calibrated single-pass prompting (F1 0.906--0.907), but LLM outputs surfaced 414~candidate annotation gaps; re-annotation confirmed 227~PHI spans, against which the final prompt reached recall=0.981 (F1=0.907$\\pm$0.002).\n  Well-calibrated ICL resolves both the institutional PHI gap and the precision--recall trade-off in one LLM call per note. LLMs cost more to run than traditional methods, but that cost buys a way to audit the reference standard.\n  LLMs are a legitimate, adaptable alternative to purpose-built de-identification systems; institution-specific prompt development should be the primary adaptation strategy.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17051",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17051"
+      }
+    ],
+    "relevance_score": 0.4301639593738156,
+    "max_similarity": 0.1537108318501413
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17044",
+    "title": "The 10th AI City Challenge",
+    "authors": [
+      "Zheng Tang, Shuo Wang, David C. Anastasiu, Ming-Ching Chang, Anuj Sharma, Quan Kong, Munkhjargal Gochoo, Jun-Wei Hsieh, Tomasz Kornuta, Zhedong Zheng, Renran Tian, Judah Goldfeder, Fulgencio Navarro, Yuxing Wang, Yizhou Wang, Sameer Satish Pusegaonkar, Anqi Li, Nalin Dadhich, Ridham Kachhadiya, Dhanishtha Patil, Haoquan Liang, Jiajun Li, Han Zhang, Yilin Zhao, Zaid Pervaiz Bhat, Shuyu Yang, Ashutosh Kumar, Rong Wang, Rafael Martin Nieto, Peter Christiansen, Ahmed Abduljawad, Mohanrasu Shanmugam, Nadeem Shaik, Sujit Biswas, Xunlei Wu, Vidya Murali, Rama Chellappa"
+    ],
+    "abstract": "arXiv:2608.17044v1 Announce Type: new \nAbstract: The 10th AI City Challenge, held with ECCV 2026, marks a decade of community benchmarking for intelligent transportation, smart cities, and physical AI. Since its 2017 start with vehicle detection, classification, and tracking, the challenge has grown into a broad benchmark suite for multi-camera perception, multimodal reasoning, synthetic-to-real learning, generative forecasting, and privacy-preserving evaluation. The 2026 edition continued this growth with 325 registered teams, up from 245 in 2025, and participation from 26 countries and regions, up from 15. Its six primary tracks cover multi-camera 3D perception, transportation safety captioning and VQA, traffic anomaly reasoning, text-based person anomaly search, generative traffic video forecasting, and cross-city object detection. Track 3 further includes two out-of-domain leaderboards, submitted as Tracks 7 and 8, for fisheye traffic-violation understanding and pedestrian situated-intent VQA. This paper summarizes the challenge setup, datasets, evaluation protocols, leaderboard results, and workshop papers. Across tracks, successful systems combine foundation models with geometric grounding, retrieval or reranking, synthetic-data design, domain adaptation, and controlled inference.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17044",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17044"
+      }
+    ],
+    "relevance_score": 0.4295764260679569,
+    "max_similarity": 0.15045149857918527
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.16975",
+    "title": "Margin-Regularized Structured Semantic Alignment for Brain-Language Correspondence",
+    "authors": [
+      "Jiaqi Wang, Huawen Hu, Shu Zhang"
+    ],
+    "abstract": "arXiv:2608.16975v1 Announce Type: new \nAbstract: With the rapid advancement of large language models, brain-language decoding has achieved remarkable progress. However, it remains unclear whether decoded content genuinely reflects neural representations or is largely reconstructed by the language model itself. This ambiguity limits interpretability and hinders the investigation of intrinsic brain-language correspondence. To address this challenge, we propose MD-SigLIP. This margin-regularized structured semantic alignment framework directly aligns brain embeddings with text embeddings in a shared semantic space, enabling retrieval-based decoding. This formulation enables explicit modeling of the correspondence between neural representations and language semantics. Building upon duplicate-aware sigmoid contrastive learning, we introduce a listwise margin-regularized term that enforces structured ranking constraints between positive semantic clusters and negative samples. By modeling multi-positive semantic structure and margin-based ordering simultaneously, the method captures the manifold organization of language embeddings reflected in neural signals. Experiments demonstrate state-of-the-art retrieval performance under both full-vocabulary and subset evaluation settings.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16975",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.16975"
+      }
+    ],
+    "relevance_score": 0.4288552655056241,
+    "max_similarity": 0.14925883725503
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17124",
+    "title": "A decodability criterion predicts when hidden-state selection beats majority voting in large language models",
+    "authors": [
+      "Zhixiang wang, Ziliang Hong, Ulas Bagci"
+    ],
+    "abstract": "arXiv:2608.17124v1 Announce Type: new \nAbstract: Combining the answers a large language model (LLM) samples for a question into one decision is a test-time information fusion problem, usually solved by majority voting. Voting is unreliable on difficult questions, where the sampled answers share correlated errors, so the wrong answer can win and drawing more samples makes the decision worse. Selecting a candidate by reading a correctness signal from the model's hidden states is a promising alternative, but its accuracy varies across models and tasks, and no measure indicates when it can be trusted. In this paper, we propose CASE (Correctness-Axis SElection), a dynamic selection combiner that trains a linear gate on the answer-token hidden state and selects the highest-scoring candidate. Its main contribution is decodability, a leakage-free measure of how well the gate ranks a question's correct candidates above its incorrect ones, which predicts whether hidden-state selection will outperform voting. A conventional probe appears accurate only because of question-identity leakage, which vanishes under question-grouped evaluation. On held-out data, decodability predicts the accuracy gain of selection over voting with a Pearson correlation r=0.75 and a decision threshold near AUC=0.60. Across general and medical LLMs, CASE improves over voting by up to 19 points on medium-difficulty questions and 16.8 points on hard questions. Decodability depends on the aligned knowledge a model must recall, not on its scale, and its prediction transfers to an unseen scientific domain within 3.8 points. It thus provides a practical criterion, measurable in advance for a given model and task, for choosing between learned selection and majority voting.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17124",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17124"
+      }
+    ],
+    "relevance_score": 0.41920629512063795,
+    "max_similarity": 0.13862480900231017
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17270",
+    "title": "Do LLMs Know a Good Hypothesis When They See One? Logit-Based Energy Scoring Outperforms Prompted LLM-as-Judge for Scientific Hypothesis Ranking",
+    "authors": [
+      "Swati Rajwal, Sanjay Das, Tirthankar Ghosal"
+    ],
+    "abstract": "arXiv:2608.17270v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used for scientific hypothesis generation. However, evaluating generated hypotheses remains a challenge for trustworthy AI-enabled scientific workflows. Existing approaches often use LLMs as judges or rely on semantic similarity, which can favor familiar ideas over novel ones. We propose a logit-based energy scoring method that evaluates hypotheses using a language model's intrinsic confidence rather than comparative judgment. We benchmarked seven language models on 1,323 papers across 12 disciplines. Each paper was paired with its hypothesis and fifteen incorrect alternatives. Intrinsic scoring reached 33.0% Hit@1 pooled across both scorers, compared with 16.6% for prompted listwise ranking. The strongest configuration, a 1-billion-parameter model using logit-based energy scoring, reached 53.1%, though this was the maximum across 14 model-by-scorer combinations selected post hoc. Overall, intrinsic model confidence shows potential for scientific hypothesis evaluation. This study also motivates future research on confidence-based methods for trustworthy AI-enabled scientific discovery.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17270",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17270"
+      }
+    ],
+    "relevance_score": 0.41809148691402853,
+    "max_similarity": 0.13867415846642006
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.16972",
+    "title": "MultiSigBERT: Beyond Survival Analysis through Multimodal and Sequential Modeling in Oncology",
+    "authors": [
+      "Paul Minchella, St\\'ephane Chr\\'etien, Guillaume Metzler, Lo\\\"ic Verlingue, R\\'emi Vaucher"
+    ],
+    "abstract": "arXiv:2608.16972v1 Announce Type: new \nAbstract: Machine learning has become an essential component of modern healthcare, where the integration of heterogeneous data sources offers unprecedented opportunities to improve clinical decision-making. Electronic Health Records (EHR) contain complementary information -- including narrative clinical reports, numerical measurements, and structured variables -- yet most survival models remain limited to a single modality or fail to exploit the temporal nature of patient trajectories. We propose MultiSigBERT, a unified framework for multimodal sequential survival modeling in oncology based on path signature representations. Here, narrative medical reports (free-text) are converted into sentence embeddings by extracting and averaging contextual word embeddings. These representations are then compressed via modality-specific PCA and concatenated with structured covariates to form joint temporal trajectories which are then encoded using the Signature transform, a tool from Rough Paths theory that efficiently captures higher-order temporal interactions across modalities without supervision needed. The computed Signature features are finally incorporated as high dimensional features into a LASSO-regularized Cox model to estimate individualized risk scores. The performance of our novel MultiSigBERT pipeline is illustrated on the analysis of a real-world oncology cohort from the L\\'eon B\\'erard Center, comprising over 120,000 medical reports and structured records from more than 2,500 patients. The model achieves a concordance index of 0.743 (sd 0.029) on an independent test set, demonstrating the benefit of jointly modeling multimodal temporal dynamics together with patient-level geometric structure for survival prediction.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16972",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.16972"
+      }
+    ],
+    "relevance_score": 0.41732688180773325,
+    "max_similarity": 0.13645094117596876
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17151",
+    "title": "Lymphocyte Mimicry Correction via Region-Level Tissue Reasoning and Unbalanced Optimal Transport",
+    "authors": [
+      "Xiang Li, Yuqi Wang, Casey C. Heirman, Jihye Heo, Kyle J. Lafata"
+    ],
+    "abstract": "arXiv:2608.17151v1 Announce Type: new \nAbstract: Cell mimicry arises when different cell types appear morphologically similar. Human pathologists resolve this ambiguity using surrounding tissue context, whereas current vision models either lack contextual reasoning (cell foundation models) or cannot operate at the cell level (pathology MLLMs). We present Loki-OT, which propagates region-level tissue reasoning to individual cell predictions via Unbalanced Optimal Transport, using MLLM-derived density priors as soft guidance for ambiguous cell reassignment. Loki-OT is motivated by the observation that pretrained cell foundation model features already encode discriminative information, including tissue context, but standard cell-level supervision fails to use tissue context effectively. The resulting transport plan is distilled into a lightweight student MLP classifier that learns context-aware decision boundaries within the pretrained feature space. On the independent TCGA-BRCA cohort, Loki-OT achieved lower patient-level MAE than the fully supervised in-domain PanopTILs classifier and improved F1 in epithelium-rich mimicry tissues, using 278 weak region-level MLLM estimates built on a general-domain cell foundation model. Code: https://github.com/xiangli980/Lymphocyte_Mimicry_Correction_via_Loki_OT",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17151",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17151"
+      }
+    ],
+    "relevance_score": 0.41731767779860024,
+    "max_similarity": 0.1359232775700156
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17183",
+    "title": "Benchmarking the Benchmarks: Evaluating Automated Safety Benchmarks for Small Language Models",
+    "authors": [
+      "Nyamtulla Shaik, Fengjun Li, Bo Luo"
+    ],
+    "abstract": "arXiv:2608.17183v1 Announce Type: new \nAbstract: Small Language Models (SLMs) are increasingly deployed in resource-constrained, privacy-sensitive settings, where safety and bias failures can cause security and societal risks. However, existing AI safety\\slash security\\slash compliance benchmarks are designed for large language models that may not transfer reliably to SLMs. We therefore ask: Can these benchmarks effectively and reliably evaluate SLMs? To answer this question, we conduct a large-scale assessment of the effectiveness and robustness of these automated pipelines by evaluating five widely used benchmark suites across 26 open-source SLMs under a unified judging rubric, which assigns a score of 0, 1, or 0.5 to harmful, safe, or ambiguous/irrelevant responses, respectively. Across the benchmarks, ambiguous judgments dominate and correlate with prompt complexity and model architecture, indicating that {\\em LLM-centric safety benchmarks are insufficient as standalone evidence for SLM safety assessment}. In general, the ambiguity rate increases with lexical density, output perplexity, and output length and decreases with lexical sophistication, self-coherence, and reply-prompt similarity. This reveals a capability-safety confound that mixes model capability with apparent safety. Since ambiguity is prevalent, aggregate mean-score leaderboards are mathematically brittle: model rankings change significantly under reasonable ambiguity treatments, even when the underlying outputs remain unchanged.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17183",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17183"
+      }
+    ],
+    "relevance_score": 0.40558958064711914,
+    "max_similarity": 0.12229353655337116
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17063",
+    "title": "J-Miner: Recovering Executable Decision Knowledge from Language-Model Classifiers",
+    "authors": [
+      "Yunfan Gao, Xinyi Huang, Tao Sheng, Haorui Song, Yun Xiong, Haofen Wang"
+    ],
+    "abstract": "arXiv:2608.17063v1 Announce Type: new \nAbstract: Large language models can be fine-tuned into specialized classifiers that perform well across diverse text tasks and make complex judgments, but they typically expose only final labels, leaving the decision knowledge acquired through fine-tuning implicit within the model. We study how to mine this internal decision knowledge from a fine-tuned classifier and encode it in an executable representation that can be inspected, validated, and reused beyond the source classifier. We introduce J-Miner, which mines text-level named concepts by aggregating vocabulary-aligned internal signals across layers and token positions, and uses the classifier's own predictions to learn executable decision rules over them. This process distills local internal readouts into an explicit classifier-level knowledge representation. Across multiple classification tasks, J-Miner rules reproduce up to 98.3\\% of source-classifier decisions and achieve 6.0--29.5 percentage points higher behavioral fidelity than equally compact rules learned from input words. Further analysis shows that the named concepts reflect internal semantic evidence associated with task decisions, while the learned rules consolidate these distributed signals into inspectable decision structures. The resulting decision knowledge also transfers to lightweight standalone students: using about 1/24 as many parameters as the source classifiers, they reconstruct and execute the representation from raw text while retaining 99.8\\% of the source classifiers' mean task accuracy. These findings show that task-specific decision knowledge can be faithfully represented in an explicit, executable form and reused beyond the classifier in which it was learned.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17063",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17063"
+      }
+    ],
+    "relevance_score": 0.3967490897780984,
+    "max_similarity": 0.11085739023944521
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17170",
+    "title": "Synthesizing Feature Extractors: An Agentic Approach for Algorithm Selection",
+    "authors": [
+      "Hai Xia, Carlos Ans\\'otegui, Stefan Szeider"
+    ],
+    "abstract": "arXiv:2608.17170v1 Announce Type: new \nAbstract: Algorithm selection for constraint satisfaction problems requires extracting features that capture problem structure. Manually designing feature extractors demands deep domain expertise and quickly becomes a bottleneck when new problem classes appear. We present an automated approach that uses Large Language Models (LLMs) in an agentic check--fix--verify loop to synthesize executable Python scripts that act as interpretable, problem-specific feature extractors. Given a high-level MiniZinc model and an instance, the LLM agent generates code that constructs a typed graph representation and computes structural properties such as graph density, variable clustering, and constraint tightness. We evaluate our approach on three combinatorial problems (vehicle routing, car sequencing, fixed-length error-correcting codes) with a portfolio of five state-of-the-art solvers. The synthesized extractors yield algorithm selectors that consistently outperform both expert-curated mzn2feat features (up to $8.3$ percentage points (pp) test-set accuracy on FLECC) and the best transformer-based trans2feat variants. In the meanwhile, the synthesized feature extractors remain inspectable.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17170",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17170"
+      }
+    ],
+    "relevance_score": 0.39283875497065934,
+    "max_similarity": 0.10672604627240466
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.17282",
+    "title": "DeAR: Decentralized Agentic Reasoning via Capability Grounding and Collaborative Thought Navigation",
+    "authors": [
+      "Xing Wei, Changmeng Zheng, XiaoYong Wei, Xiufen Ye, Qing Li"
+    ],
+    "abstract": "arXiv:2608.17282v1 Announce Type: new \nAbstract: Existing agentic reasoning systems typically rely on centralized protocols. This design introduces routing bottlenecks and static role allocations that often fail when handling complex multimodal queries. We propose DeAR (Decentralized Agentic Reasoning), a framework that shifts from central control to autonomous peer-to-peer collaboration. DeAR is built on three mechanisms: (1) decentralized capability grounding for query-dependent agent specialization, (2) thought map navigation for targeted peer interactions, and (3) topology update for adaptive error correction. Evaluations across 9 diverse multimodal reasoning and text-based QA benchmarks indicate that DeAR consistently outperforms recent baseline methods, validating that decentralized and adaptive collaboration among agents enhances accuracy in knowledge-intensive reasoning tasks. The source code will be available at https://open_upon_acceptance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "updated": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17282",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.17282"
+      }
+    ],
+    "relevance_score": 0.2991372199771635,
+    "max_similarity": 0.17477794222212553
+  }
+]

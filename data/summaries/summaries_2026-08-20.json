@@ -1,0 +1,282 @@
+[
+  {
+    "paper_id": "https://arxiv.org/abs/2608.16890",
+    "title": "GxP-Agent: Process-DAG Topology for Reliable Clinical Trial Programming with LLM Agents",
+    "authors": [
+      "Jaime Yan"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16890",
+    "summary": "研究问题：LLM在临床试验编程中生成有效数据集失败。\n主要方法：提出GxP-Agent，将监管流程编码为DAG，分解为15个领域节点，由工人代理执行。\n关键贡献：在CDISC-Bench上实现100%结构匹配，优于所有基线方法。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.16926",
+    "title": "Data-DPO: Direct Preference Optimization for Target Model Data Selection in LLM Post-Training",
+    "authors": [
+      "Peng Sun, Yi Yang, Antong Zhang, Chunxiao Li, Yanbo Wang, Dianbo Liu, xin chen, Kai Yu, Lu Chen, Tianfan Fu"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16926",
+    "summary": "研究问题：现有数据选择方法忽视数据与目标模型能力分布的兼容性。  \n主要方法：通过单步探测获取模型训练反馈，转化为成对数据偏好训练轻量奖励模型，结合偏好、质量与多样性选择数据。  \n关键贡献：提出目标模型导向的Data-DPO方法，在多个数据预算下稳定超越全量训练及现有基线。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17129",
+    "title": "PROBE: Manipulation-Grounded Visual Question Answering with VLM Agents",
+    "authors": [
+      "Vineet Bhat, Siyi Chen, Alex Zook, Xuning Yang, Stan Birchfield, Valts Blukis, Jonathan Tremblay"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17129",
+    "summary": "研究问题：动态场景下机器人需通过操作揭示遮挡物才能回答的视觉问答任务（MG-VQA）。  \n主要方法：提出PROBE框架，包含高保真仿真器PROBE-Sim和150项任务的评估套件PROBE-Bench，测试VLM代理的感知与操作能力。  \n关键贡献：发现基于工具代理的方法比纯感知基线平均提升8.0%，并设计了PROBE-Agent微调方案。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17050",
+    "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+    "authors": [
+      "Mingyuan Li, Guangsheng Yu, Xu Wang, Shaoxiong Ji"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17050",
+    "summary": "研究问题：跨模型记忆迁移中，冻结记忆本身与目标端阅读器哪个更重要。  \n主要方法：通过跨模型冻结记忆提取实验，训练轻量级阅读器适配目标模型。  \n关键贡献：发现目标端阅读器对齐是关键，双四分支阅读器几乎消除跨模型与同模型复用差距。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.16927",
+    "title": "Hierarchical Data Selection via Manifold Coverage and Sparse Feature Coverage in LLM Post-training",
+    "authors": [
+      "Peng Sun, Yi Yang, Antong Zhang, Chunxiao Li, Yanbo Wang, Dianbo Liu, xin chen, Kai Yu, Lu Chen, Tianfan Fu"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16927",
+    "summary": "研究问题：LLM后训练中如何从大规模候选池中高效选择高价值数据子集。  \n主要方法：提出MASS，通过密集自编码器学习低维流形坐标进行粗粒度语义分组，再用TopK稀疏自编码器进行细粒度稀疏特征覆盖。  \n关键贡献：在Vision Flan和LLaVA-CoT上，MASS以少量数据匹配或超越全量训练效果，优于现有基线方法。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17289",
+    "title": "PlanPO: Group Planning-Aware Policy Optimization for Multi-Turn Agentic LLMs",
+    "authors": [
+      "Dayang Liang, Liyuan He, Xuan Feng, Shuxin Li, Bo An, Yunlong Liu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17289",
+    "summary": "研究问题：多轮交互任务中，现有策略优化方法无法区分成功轨迹的效率差异，导致优势坍塌和性能瓶颈。\n主要方法：提出PlanPO，引入粗到细的优势信号，捕捉轨迹长度和回合响应长度的相对差异，在组相对优化中学习可泛化的规划能力。\n关键贡献：PlanPO在ALFWorld等基准上平均比GRPO提升27.2%，有效学习高效行为而不退化为简单长度最小化。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17150",
+    "title": "KnowSim: Evaluating Information Calibration in LLM Assistants with User Simulators that Learn",
+    "authors": [
+      "Yoonjoo Lee, Hyoungwook Jin, Tae Soo Kim, Shaoyang Zhang, Philippe Laban, Q. Vera Liao"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17150",
+    "summary": "研究问题：评估LLM助手在知识密集型任务中的信息校准能力。  \n主要方法：构建KNOWSIM框架，使用用户模拟器维护显式知识状态图，基于学习理论更新规则计算三个指标。  \n关键贡献：验证了模拟器与人类判断高度一致，揭示了不同知识水平下最佳模型存在差异。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.16929",
+    "title": "Mr.Dec: Daily-Scale Longitudinal Multimodal Modeling for 30-Day Readmission Prediction",
+    "authors": [
+      "Minjun Kim, Jong Hak Moon"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16929",
+    "summary": "研究问题：预测30天再入院风险，捕捉住院期间动态临床轨迹。\n主要方法：提出Mr.Dec模型，利用Transformer解码器处理每日多模态事件序列，结合疾病特异性监督对比学习。\n关键贡献：实现最先进性能，识别“关键日”提供可解释的临床洞察。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17067",
+    "title": "DiSCO: Defending text-to-image generation through distribution-guided contrastive prompt optimization",
+    "authors": [
+      "Tong Zhang, Motasem Alfarra, Carlos Hinojosa, Christos Louizos, Bernard Ghanem"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17067",
+    "summary": "研究问题：文本到图像模型生成NSFW内容的安全防御问题。  \n主要方法：基于分布引导的对比提示优化，通过束搜索扩展后缀，利用目标模型生成的安全/不安全图像池进行对比评分。  \n关键贡献：提出零样本、严格黑盒的即插即用防御模块，无需模型重训练或内部访问。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17051",
+    "title": "Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss",
+    "authors": [
+      "Daniel Palacios, Matthew Brady Neeley, Angel Adetomike Otto, Shalini Dhamodharan, John P. Woodhouse, Chi-fan Lin, Mark Zobeck, Zhandong Liu, Hyun-Hwan Jeong"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17051",
+    "summary": "研究问题：现有去标识化系统常遗漏机构特定的受保护健康信息（如医院缩写、建筑名称等）。\n主要方法：使用大语言模型结合上下文学习，通过逐步增强提示词（HIPAA基线、添加遗漏类别、防止过度删除）来识别PHI。\n关键贡献：LLMs在召回率和F1分数上显著优于专用系统，通过命名遗漏类别可恢复79%的缺失PHI。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17044",
+    "title": "The 10th AI City Challenge",
+    "authors": [
+      "Zheng Tang, Shuo Wang, David C. Anastasiu, Ming-Ching Chang, Anuj Sharma, Quan Kong, Munkhjargal Gochoo, Jun-Wei Hsieh, Tomasz Kornuta, Zhedong Zheng, Renran Tian, Judah Goldfeder, Fulgencio Navarro, Yuxing Wang, Yizhou Wang, Sameer Satish Pusegaonkar, Anqi Li, Nalin Dadhich, Ridham Kachhadiya, Dhanishtha Patil, Haoquan Liang, Jiajun Li, Han Zhang, Yilin Zhao, Zaid Pervaiz Bhat, Shuyu Yang, Ashutosh Kumar, Rong Wang, Rafael Martin Nieto, Peter Christiansen, Ahmed Abduljawad, Mohanrasu Shanmugam, Nadeem Shaik, Sujit Biswas, Xunlei Wu, Vidya Murali, Rama Chellappa"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17044",
+    "summary": "研究问题：智能交通与智慧城市的多摄像头感知、多模态推理等挑战  \n主要方法：通过六个竞赛赛道涵盖3D感知、安全描述、异常推理、文本搜索、视频预测和跨城市检测  \n关键贡献：举办第十届AI城市挑战赛，推动十年社区基准测试，参与团队和地区数量显著增长",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.16975",
+    "title": "Margin-Regularized Structured Semantic Alignment for Brain-Language Correspondence",
+    "authors": [
+      "Jiaqi Wang, Huawen Hu, Shu Zhang"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16975",
+    "summary": "研究问题：解码内容是否真实反映神经表征或由语言模型重构  \n主要方法：提出MD-SigLIP框架，通过边缘正则化结构化语义对齐直接匹配脑与文本嵌入  \n关键贡献：引入列表式边缘正则项，建模多正例语义结构与排序约束，提升检索性能",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17124",
+    "title": "A decodability criterion predicts when hidden-state selection beats majority voting in large language models",
+    "authors": [
+      "Zhixiang wang, Ziliang Hong, Ulas Bagci"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17124",
+    "summary": "研究问题：如何判断隐藏状态选择是否优于多数投票\n主要方法：提出CASE方法，训练线性门控基于答案标记隐藏状态选择候选\n关键贡献：提出可解码性指标，预测隐藏状态选择相对多数投票的准确率增益",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17270",
+    "title": "Do LLMs Know a Good Hypothesis When They See One? Logit-Based Energy Scoring Outperforms Prompted LLM-as-Judge for Scientific Hypothesis Ranking",
+    "authors": [
+      "Swati Rajwal, Sanjay Das, Tirthankar Ghosal"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17270",
+    "summary": "研究问题：如何评估LLM生成的科学假设质量  \n主要方法：提出基于logit的能量评分方法，利用模型内在置信度评估假设  \n关键贡献：能量评分在假设排序上达到33.0% Hit@1，优于提示词排序的16.6%",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17183",
+    "title": "Benchmarking the Benchmarks: Evaluating Automated Safety Benchmarks for Small Language Models",
+    "authors": [
+      "Nyamtulla Shaik, Fengjun Li, Bo Luo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17183",
+    "summary": "研究问题：现有安全基准能否有效评估小型语言模型（SLMs）  \n主要方法：统一评分标准评估5个基准套件在26个开源SLM上的表现  \n关键贡献：发现LLM安全基准对SLM评估不足，模糊判断占主导且存在能力-安全混淆",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17063",
+    "title": "J-Miner: Recovering Executable Decision Knowledge from Language-Model Classifiers",
+    "authors": [
+      "Yunfan Gao, Xinyi Huang, Tao Sheng, Haorui Song, Yun Xiong, Haofen Wang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17063",
+    "summary": "研究问题：从微调后的语言模型分类器中提取可执行的决策知识。\n主要方法：J-Miner通过聚合跨层和跨位置的词汇对齐内部信号挖掘文本级命名概念，并利用分类器预测学习可执行决策规则。\n关键贡献：规则可复现98.3%的分类器决策，行为保真度比同等简洁的输入词规则高6.0-29.5个百分点。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.16972",
+    "title": "MultiSigBERT: Beyond Survival Analysis through Multimodal and Sequential Modeling in Oncology",
+    "authors": [
+      "Paul Minchella, St\\'ephane Chr\\'etien, Guillaume Metzler, Lo\\\"ic Verlingue, R\\'emi Vaucher"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.16972",
+    "summary": "研究问题：如何整合多模态时序数据提升肿瘤生存预测  \n主要方法：提出MultiSigBERT框架，用路径签名编码多模态时序特征，结合LASSO-Cox模型  \n关键贡献：首次将路径签名理论用于多模态时序生存建模，无需监督即可捕捉跨模态高阶时序交互",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17151",
+    "title": "Lymphocyte Mimicry Correction via Region-Level Tissue Reasoning and Unbalanced Optimal Transport",
+    "authors": [
+      "Xiang Li, Yuqi Wang, Casey C. Heirman, Jihye Heo, Kyle J. Lafata"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17151",
+    "summary": "研究问题：细胞形态相似导致的淋巴细胞误识别问题。  \n主要方法：通过不平衡最优传输将区域组织推理传播到细胞预测，利用MLLM密度先验修正模糊细胞。  \n关键贡献：在TCGA-BRCA上实现低于全监督方法的患者级MAE，并提升上皮组织中的F1分数。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17170",
+    "title": "Synthesizing Feature Extractors: An Agentic Approach for Algorithm Selection",
+    "authors": [
+      "Hai Xia, Carlos Ans\\'otegui, Stefan Szeider"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17170",
+    "summary": "研究问题：自动为约束满足问题合成可解释的特征提取器以选择算法。  \n主要方法：利用大语言模型在检查-修复-验证循环中生成Python脚本，构建类型图并计算结构属性。  \n关键贡献：合成提取器在三个组合问题上优于专家特征和Transformer方法，且保持可检查性。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2608.17282",
+    "title": "DeAR: Decentralized Agentic Reasoning via Capability Grounding and Collaborative Thought Navigation",
+    "authors": [
+      "Xing Wei, Changmeng Zheng, XiaoYong Wei, Xiufen Ye, Qing Li"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 19 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.17282",
+    "summary": "研究问题：现有集中式代理推理系统存在路由瓶颈和静态角色分配问题。\n主要方法：提出DeAR框架，通过去中心化能力定位、思维图导航和拓扑更新实现自主协作。\n关键贡献：在9个多模态基准测试中优于基线方法，验证了去中心化自适应协作的有效性。",
+    "language": "zh"
+  }
+]
