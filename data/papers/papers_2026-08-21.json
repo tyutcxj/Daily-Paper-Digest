@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.18339",
+    "title": "From Inference to Adaptation: A Unified Optimal Transport View of Vision Language Model",
+    "authors": [
+      "Qi Yu, Zhichen Zeng, Katherine Tieu, Xiyuan Yang, Ruizhong Qiu, Yuchen Yan, Lihui Liu, Yanjun Zhao, Lingjie Chen, Jingrui He, Hanghang Tong"
+    ],
+    "abstract": "arXiv:2608.18339v1 Announce Type: new \nAbstract: Vision-language models (VLMs) have demonstrated remarkable zero-shot capabilities yet remain sensitive to real-world distribution shifts during inference. Although significant efforts are devoted to adapting VLMs at test time, they rely heavily on noisy pseudo-labels predicted directly from raw embedding similarities during inference, which are unreliable under distribution shift and mislead the adaptation. To avoid noise amplification, existing works craft coarse-grained surrogate objectives during adaptation, which fail to explicitly model sample-level relationships across different modalities, creating objective mismatch with inference, thus leading to marginal performance improvement. In this work, we aim to bridge the detached objectives of inference and adaptation for VLMs, and propose a principled VLM TTA method called \\algname. For VLM inference, we formulate the zero-shot image classification task as a cross-modal alignment problem encoded via a Wasserstein OT formulation, providing robust pseudo-labels at the sample-level to effectively adapt VLMs. For VLM adaptation, we adopt a soft-label InfoNCE loss to adapt VLMs based on the OT-induced pseudo-labels, leveraging fine-grained supervisions to explicitly model relationships of individual image-text pairs via contrastive learning, which empowers accurate inference at the same granularity. Moreover, we theoretically reveal that the InfoNCE loss can be neatly reformulated as a Wasserstein OT formulation, thereby unifying the objectives of the inference and adaptation of VLMs to achieve their mutual benefits. Extensive experiments demonstrate the effectiveness and efficiency of our methods, outperforming the best-performing methods by up to 7% with state-of-the-art efficiency.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18339",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18339"
+      }
+    ],
+    "relevance_score": 0.5077171542017406,
+    "max_similarity": 0.24790934568955328
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18104",
+    "title": "Self-Evolving Agents as Dynamic Graph Transformation: A Survey and New Perspective",
+    "authors": [
+      "Yuanyuan Xu, Wenjie Zhang, Yin Chen, Xuemin Lin, Ying Zhang"
+    ],
+    "abstract": "arXiv:2608.18104v1 Announce Type: new \nAbstract: Large language model (LLM)-based agents are increasingly becoming self-evolving systems that persist across interactions, maintain memories, use tools, acquire skills, refine workflows, and coordinate with other agents. These capabilities make agent states structural and dynamic: entities, relations, attributes, dependencies, and execution structures change with new evidence, feedback, and environmental conditions. Existing graph-agent surveys typically treat graphs as support structures for agent functions rather than as evolving substrates, while self-evolving-agent surveys focus on agent-level mechanisms and rarely discuss graph topology evolution. Thus, the coupling between evolving agent state and dynamic graph topology remains underexplored. This survey connects these two research lines by framing \\textit{agent evolution as dynamic graph transformation}. We model agent state as a dynamic graph, where memories, tools, skills, workflows, and inter-agent relations are represented as typed nodes, edges, and subgraphs updated through schema-constrained rewrites. Based on this formulation, we organize existing dynamic-graph-based methods for self-evolving agents into four taxonomies: node/feature evolution, edge/topology evolution, subgraph activation, and cross-component co-evolution. Building on this taxonomy, we propose dynamic graph learning as reusable infrastructure for self-evolving agents and map nine dynamic-graph-learning subfields to agent-evolution capabilities, discussing their adaptations and possible failure modes. Finally, we discuss five types of graph-aware evaluation and governance protocols from a dynamic-graph perspective, which complement end-task evaluation. The goal is to provide a compact structural lens for designing and governing self-evolving agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18104",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18104"
+      }
+    ],
+    "relevance_score": 0.503805651166417,
+    "max_similarity": 0.24635411988287126
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18410",
+    "title": "Role-Conditioned Sub-Token Routing for Efficient Vision-Language-Action Policies",
+    "authors": [
+      "Wei Jiang, Wei Wang"
+    ],
+    "abstract": "arXiv:2608.18410v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models process long multimodal token sequences, making inference expensive in both memory and computation. Existing efficiency methods mainly reduce visual tokens, but aggressive token pruning becomes fragile because removing a token discards its entire representation. Sub-token compression provides a complementary alternative by retaining more tokens while reducing their value width. However, directly applying sub-token compression to VLA policies is less effective because information important for perception, language understanding, and control is distributed differently across the multimodal representation.\n  We introduce Role-Conditioned Sub-Token Routing (RoleSub), which learns how to compress the value representations of retained tokens. After visual token reduction, RoleSub partitions each retained value representation into groups in an orthogonal space and uses a lightweight router to determine which groups should be preserved. The routing decision is conditioned on the token representation, a learned latent role representation, and language context. The same mechanism can also be applied to language values, allowing visual and language representations to be compressed without removing additional tokens.\n  We evaluate RoleSub on OpenVLA-OFT-7B across the four LIBERO suites. At matched visual-KV budgets, RoleSub outperforms a trained token-only control in 33 of 36 settings, with the largest gains under aggressive compression. Combining visual and language compression reduces total KV to 9.2--11.3% of the original while retaining strong control performance on most tasks. These results show that reducing the representation within retained tokens provides an effective complement to token pruning for aggressive VLA compression.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18410",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18410"
+      }
+    ],
+    "relevance_score": 0.4562343343229703,
+    "max_similarity": 0.18617139352188455
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18080",
+    "title": "Large Language Models in Mental Health: A Systematic Review of Applications, Innovations, and Ethical Challenges",
+    "authors": [
+      "Yisong Chen, Yifan Gao, Sijing Yu, Chuqing Zhao, Yang Lu"
+    ],
+    "abstract": "arXiv:2608.18080v1 Announce Type: new \nAbstract: We present a review on the applications of large language models (LLMs) in health, e.g., social media analysis, clinical conversational agents, therapy support tools, prompt engineering, multimodal learning, and ethical considerations. We integrate findings from interdisciplinary studies utilizing diverse data sources such as social media posts, electronic medical records, and multimodal inputs to enable early detection of depression, suicide risk assessment, personalized therapy support, and psychoeducational content generation. Our review highlights advancements in LLM models and annotation strategies that enhance interpretability and clinical relevance, while we also emphasize the critical role of prompt engineering for domain adaptation. We also discuss emerging multimodal fusion techniques integrating text, speech, and sensor data for improved mental health diagnosis and monitoring. Finally, we address ongoing ethical, sociotechnical, and regulatory challenges, and advocate frameworks to ensure safe, equitable, and accountable deployment of LLMs in real-world mental health care.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18080",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18080"
+      }
+    ],
+    "relevance_score": 0.4524586613319716,
+    "max_similarity": 0.17830202779791238
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18309",
+    "title": "XRF-to-Optical Field-of-View Localization with Vision Language Models",
+    "authors": [
+      "Xiangyu Yin, Tatjana Paunesku, Letonia Copeland-Hardin, Martina Ralle, Zichao Wendy Di, Si Chen, Gayle E. Woloschak, Barry Lai, Mathew J. Cherukara, Stefan Vogt"
+    ],
+    "abstract": "arXiv:2608.18309v1 Announce Type: new \nAbstract: Registering images acquired with different microscopy modalities is essential for relating complementary measurements of the same specimen. In correlative X-ray fluorescence (XRF) and optical microscopy, the XRF map often covers only a small region of an optical image acquired from the same or an adjacent tissue section. Field-of-view (FOV) localization is necessary but can be difficult when appearance and structure differ across modalities. Here we evaluate training-free vision language model (VLM) localization on two datasets representing same-section high-correspondence and adjacent-section low-correspondence imaging. We test unconstrained and metadata-constrained search and compare VLMs with geometric controls, classical template matching, and two alternative training-free approaches (DINOv2 and multiGradICON). Direct VLM prompting produced content-dependent spatial signals but was not reliable alone. Classical matching was most accurate when cross-modal structure was preserved but failed in the low-correspondence collection. A proposal-and-verify workflow used repeated VLM predictions as candidates and image-based similarity to select the final location. This workflow recovered useful localization in the low-correspondence regime.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18309",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18309"
+      }
+    ],
+    "relevance_score": 0.4479392405577999,
+    "max_similarity": 0.1755801823164556
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18078",
+    "title": "Position: Collusion Risks Among AI Reasoning Agents Justify Certification Requirements for Making Market Decisions",
+    "authors": [
+      "Matthew Riemer, Tommaso Tosato, Amin Memarian, Maximilian Puelma Touzel, Glen Berseth, Irina Rish, Guillaume Dumas"
+    ],
+    "abstract": "arXiv:2608.18078v1 Announce Type: new \nAbstract: This position paper argues that AI agents with chain-of-thought reasoning capabilities are predisposed to exhibit collusive behavior and should be required to obtain behavioral certification before making decisions that affect economic markets. This is because integrating these agents into society could collapse the legal evidentiary distinction between competition and collusion among independent firms without eroding the economic harm distinction. Experiments with DeepSeek-R1 agents in the Bertrand oligopoly pricing domain reveal a tendency towards tacit collusion that persists even when humans prompt the agents not to collude. We further show that the chain-of-thought of these agents can be steered toward either extremely collusive or highly competitive behavior in a way that is not semantically detectable by another LLM analyzing the reasoning traces. As a result, deploying reasoning agents for market decisions leads to collusive economic outcomes without any evidence of conspiracy or intent. Thus, certification based on observed behavior in representative situations is necessary to prevent collusion. We provide preliminary evidence that such agents can be steered in a generalizable way toward efficient competitive equilibria. However, developing a comprehensive behavioral certification will be required before these models can be deployed in real-world markets while ensuring their stability and efficiency.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18078",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18078"
+      }
+    ],
+    "relevance_score": 0.4367792204844587,
+    "max_similarity": 0.16398163336571234
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18142",
+    "title": "Efficient Adaptation of LLMs for Hate Speech Detection in Low-Resource Languages: A Comparative Study on Roman Urdu",
+    "authors": [
+      "Toneema Zubair, Muhammad Junaid Asif, Faisal Kamiran, Hafiz Hassan Saeed, Rana Fayyaz Ahmad"
+    ],
+    "abstract": "arXiv:2608.18142v1 Announce Type: new \nAbstract: It is challenging to detect hate speech in Low Resource Languages (LRLs) because of the absence of annotated data, the informality of its language structure, and the lack of standardized grammar. A good example of such a challenge is Roman Urdu which is broadly used by South Asians on social media and has a high variation while lacking contextually consistent spellings. The objective of this paper is to conduct a comprehensive assessment of Large Language Models (LLMs) for Hate Speech Detection (HSD) in Roman Urdu script and fine-tune these models using the Parameter-Efficient Fine-Tuning (PEFT) method called Low-Rank Adaptation (LoRA). To evaluate zero-shot inference, we benchmarked it against PEFT on different transformer models, including Mistral, LLaMA, Falcon, and multilingual BERT. Experiments are conducted on the PURUTT (Parallel Urdu and Roman Urdu Corpus for Toxic Comments and Transliteration) dataset with over 72,000 annotated comments. The results suggest that zero shot models perform moderately (F1 = 0.56), but updating a small fraction of the model trainable parameters improves the classification performance significantly (F1 > 0.93). Our results have shown that PEFT delivers outstanding performance alongside excellent computational efficiency, making it highly suitable for low-resource language processing tasks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18142",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18142"
+      }
+    ],
+    "relevance_score": 0.4340390312062913,
+    "max_similarity": 0.1571629425942618
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18386",
+    "title": "TTSD-FAR: Test-Time Self-Distillation with Fisher-Anchored Restoration for Missing-Modality Emotion Recognition in LVLMs",
+    "authors": [
+      "Muhammad Haseeb Aslam, Alessandro Koerich, Marco Pedersoli, Ali Etemad, Eric Granger"
+    ],
+    "abstract": "arXiv:2608.18386v1 Announce Type: new \nAbstract: Large video-language models (LVLMs) have shown remarkable performance on multimodal tasks like multimodal emotion recognition (ER) in the wild. ER is inherently multimodal, requiring a joint understanding of facial expressions, vocalizations, language, biosignals, and gestures. However, real-world deployment remains challenging: modalities may be missing or noisy at test time. Partial observations can be viewed as a distribution shift relative to the complete-modality distribution. SOTA TTA methods based on entropy minimization or perplexity reduction do not transfer to autoregressive LVLMs, while retrieval augmented generation (RAG) degrades when the observed modality is weak. Because no ground-truth supervision exists to verify individual updates, adaptation across this stream risks accumulating drift and degrading once the model departs from a reliable solution. An effective solution must therefore adapt to arbitrary missing-modality patterns and remain effective during continual adaptation. We address both jointly with Test-Time Self-Distillation (TTSD), a parameter-efficient framework in which a frozen teacher, trained on complete modalities, guides an adaptive low-rank student via self-distillation, updating only a negligible number of parameters. Stability is built into this same loop through Fisher-Anchored Restoration (FAR), which monitors Fisher information stability to detect convergence versus drift and restores the student toward the teacher's anchor when distributional shifts are identified. Our experiments on MELD, DFEW, and BAH under 0%-50% missing modalities show that this unified adaptation-restoration design consistently outperforms entropy-based adaptation, RAG, and perplexity-based generation over long adaptation horizons, where baselines without restoration progressively degrade while TTSD-FAR remains consistent.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18386",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18386"
+      }
+    ],
+    "relevance_score": 0.4315744053809421,
+    "max_similarity": 0.15341980747199402
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18311",
+    "title": "FedCoRe: Target-Adaptive Completion for Missing Modalities in Healthcare Federated Learning",
+    "authors": [
+      "Holger R. Roth, Ziyue Xu, Peter Cnudde"
+    ],
+    "abstract": "arXiv:2608.18311v1 Announce Type: new \nAbstract: Federated multimodal models often assume every site has every modality, although hospitals differ in access to EHRs, chest radiographs, and ECGs. We study this setting on a MIMIC-derived respiratory deterioration task with simulated FL clients and introduce FedCoRe (Federated Cross-Modal Representation Completion). FedCoRe learns representation- or logit-space corrections rather than generating synthetic ECGs or CXR images. When a client observes a modality that may be missing at deployment, it evaluates the same example with and without that modality to obtain paired supervision. Only clients with such pairs update the completion module, and validation may retain the unchanged prediction. We freeze the trained multimodal predictor during evaluation so that measured differences come only from completion. Hiding ECG reduced AUROC by about 0.085; paired-example FedAvg restored 0.0415 AUROC, or 49.0% of the lost performance. We therefore report two distinct effects: paired-example FedAvg partially recovers the missing-ECG gap, while validation-selected completion is a task-specific classifier-logit correction rather than literal ECG recovery. For CXR, effect-aware completion recovers 52.8% of the loss in a controlled test where CXR is hidden. Paired-example FedAvg transfers part of this effect, but validation keeps the no-completion baseline for deployment cases whose inputs lack CXR. Thus, FedCoRe should be read as a validation-gated completion/correction framework: it can recover missing-modality signal in supported settings, but it should be deployed only when paired examples and validation evidence support that modality.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18311",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18311"
+      }
+    ],
+    "relevance_score": 0.42608803822954167,
+    "max_similarity": 0.14995085042734424
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18085",
+    "title": "Persona-Guided LLM Agents for Task-Oriented Dialogue",
+    "authors": [
+      "Maryam Shoaeinaeini, Brent Harrison, A. B. Siddique"
+    ],
+    "abstract": "arXiv:2608.18085v1 Announce Type: new \nAbstract: Prior work has shown that large language models (LLMs) can express diverse personality traits in open-ended text generation. However, it remains unclear whether they can do so in a goal-directed dialogue without compromising task completion, and whether adapting to the user's personality improves the interaction quality. We study these questions in task-oriented dialogue (TOD), where a system helps a user accomplish a goal via multi-turn interaction. We build a training-free framework that simulates a TOD interaction between two LLMs: a user agent that exhibits a target personality and a system agent that adapts to the user while completing the task. To isolate the effect of adaptation, we vary how much the system knows about the user's personality across three conditions. In Neutral, the system receives no personality information. In Try, it infers the personality from dialogue cues. In Oracle, it is given the personality explicitly. We evaluate GPT-4o, Qwen3-Next-80B, and Gemini 2.0 Flash on Hotel and Restaurant dialogues from the Schema-Guided Dialogue (SGD) dataset, across the Big Five traits and their opposite poles. We find that the user agent can express personality while the system maintains strong task performance, although some traits are realized far less reliably than others. Adapting to the user's personality improves constraint satisfaction, inform rate, and user satisfaction, but lowers truthfulness, revealing a trade-off between personalization and task-grounding. Oracle's gains grow when the target trait is strongly expressed, whereas Try's gains are largely insensitive to realization strength. Overall, cue-based adaptation in Try best resolves this trade-off and offers a more reliable route to personality-aware TOD without fine-tuning.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18085",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18085"
+      }
+    ],
+    "relevance_score": 0.41140260266594003,
+    "max_similarity": 0.13099491714843006
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18111",
+    "title": "Solving Is Not Drawing: A Benchmark for Diagrammatic Reasoning in Olympiad Geometry",
+    "authors": [
+      "Hsien Xin Peng, Anthony Kim, Alvin Li, Calvin Supasanya, Shivank Garg, Kevin Zhu"
+    ],
+    "abstract": "arXiv:2608.18111v1 Announce Type: new \nAbstract: Foundation models such as GPT and Claude now solve olympiad-level mathematics with remarkable proficiency, so much so that geometry problem solving has become a standard proxy for their mathematical reasoning. Yet solving a geometry problem and drawing the figure it depends on are not the same skill: progress often hinges on a faithful diagram with the right auxiliary constructions and incidences, and it is unclear that a model which reasons its way to the answer can also produce one. A growing collection of benchmarks, including MathVista, and MathVerse, measures whether models reach the correct answer, but to our knowledge, none isolate the distinct ability to construct the diagram itself, leaving this capability unmeasured. We introduce an open-source benchmark that targets this gap: 954 self-contained olympiad geometry problems, with a 297-problem hard subset, each paired with its solution and a human-authored, high-fidelity diagram in renderable Asymptote code, together with a suite of text-, code-, image-, VLM-, and constraint-based metrics for what we term diagrammatic reasoning. Evaluating current foundation models reveals a pronounced gap between solving and drawing: their diagrams are markedly less faithful, with an average compile success rate of only 36.14\\%. Strong mathematical reasoning, we find, does not imply the ability to construct accurate geometric diagrams. Our benchmark and dataset can be accessed at https://huggingface.co/datasets/max98765/hard_geometry_problems_with_diagrams.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18111",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18111"
+      }
+    ],
+    "relevance_score": 0.4094783053733638,
+    "max_similarity": 0.12700591941901584
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18131",
+    "title": "Safety Alignment Illusion: The Cross-Lingual Safety Gap in LLMs",
+    "authors": [
+      "Namya Bhatnagar"
+    ],
+    "abstract": "arXiv:2608.18131v1 Announce Type: new \nAbstract: Current safety alignment training for Large Language Models (LLMs) are heavily English-centric. When such safety filters fail for non-English languages, the consequences are immediate and user-facing: voice assistants and spoken dialogue systems may produce stereotype-reinforcing outputs, bypassing the standard English-focused safety alignments and propagating harmful bias to non-English speaking communities. For spoken language technologies deployed across India's linguistically diverse population, this represents a critical failure mode. To address this cross-lingual gap, we introduce INCLUDE (Indian Cultural Lens for Understanding and Detecting Embedded Biases), a multilingual evaluation benchmark designed to quantify Indian-centric socio-cultural biases. INCLUDE consists of 2,604 prompts spanning six prompt languages: English, Hindi, Bengali, Marathi, Tamil, and Hinglish (Hindi-English code-mix). We evaluate ten open- and closed-source LLMs against this benchmark, analyzing 14,988 bias scores. Our statistical results reveal two key findings. First, Bengali yielded the highest average bias score in open-source models. Second, English demonstrated a notable reversal, producing the lowest bias in open-source models but the highest bias in closed-source models.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18131",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18131"
+      }
+    ],
+    "relevance_score": 0.40305492708131474,
+    "max_similarity": 0.12062430887689082
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18188",
+    "title": "A systematic review of machine learning techniques to address diagnosis and treatment of autism: challenges and opportunities",
+    "authors": [
+      "Rafael Mu\\~noz-Terol, Jes\\'us Peral, Sandra Amador, David Gil"
+    ],
+    "abstract": "arXiv:2608.18188v1 Announce Type: new \nAbstract: Autism spectrum disorder (ASD) is a developmental disability characterized by challenges in social interaction and communication. As the causes of ASD remain unclear, identifying relevant features and hidden correlations is crucial for early diagnosis. This systematic review evaluates 55 studies from 2017 to 2023 on the application of machine learning (ML) techniques to ASD. The primary objective is to examine recent ML applications in ASD research, identifying trends, techniques, and datasets that enhance diagnosis and treatment. Supervised learning methods dominate, as they align well with ASD diagnostic needs; however, the role of deep learning is expanding with greater data availability. Emerging techniques based on hybrid methods, where unsupervised, deep learning, and fuzzy logic could be included, will be interesting to observe in the future. The review highlights key challenges and opportunities, particularly the need for models that can integrate complex data -such as genetic and clinical information- to improve diagnostic accuracy and treatment outcomes. Additionally, incorporating innovative data sources, like wearable devices and biometric sensors, could enable continuous and non-intrusive monitoring, providing a more holistic understanding of ASD. Findings emphasize that addressing current challenges requires interdisciplinary collaboration and expanded datasets tailored to ASD. Future ML models will benefit from broader multimodal data integration, enabling researchers to more comprehensively address the complexities of ASD.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18188",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18188"
+      }
+    ],
+    "relevance_score": 0.3989657305903378,
+    "max_similarity": 0.17633865172805865
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18317",
+    "title": "Reproducible Multimodal Affordance Prediction",
+    "authors": [
+      "Tommaso Apicella, Alessio Xompero, Andrea Cavallaro"
+    ],
+    "abstract": "arXiv:2608.18317v1 Announce Type: new \nAbstract: Affordance prediction is the identification of potential actions an agent can perform on a target object from multimodal inputs. Affordance prediction methods are difficult to evaluate and compare due to heterogeneous problem formulations, inconsistent dataset annotations, incomplete reporting of experimental protocols, and limited information about deployment conditions. These limitations challenge fair benchmarking and performance comparison. To promote transparency, we propose the Affordance Sheet, a documentation detailing task formulation with its input modalities, model architectures and training information, datasets, and experimental protocols. Affordance Sheets enable reproducible benchmarking and reliable evaluation of affordance models for real-world scenarios, including generalisation to novel conditions and human safety.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18317",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18317"
+      }
+    ],
+    "relevance_score": 0.3964604372375734,
+    "max_similarity": 0.17317576281122707
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18263",
+    "title": "SIGMA: Symmetry-aware, Intelligent, Geometric, Multi-objective Adaptive Control for Robust, Dependable Traffic Management",
+    "authors": [
+      "Pratham Payra, Jagadish B, Tanmay Sen, Tanujit Chakraborty"
+    ],
+    "abstract": "arXiv:2608.18263v1 Announce Type: new \nAbstract: Traffic signal control is a complex sequential decision-making problem requiring real-time adaptation and trade-offs among throughput, delay fairness, signal stability, and emergency vehicle priority. Existing RL methods often fix objectives, ignore dynamic priority changes, and fail to generalize across geometrically similar intersections.We propose SIGMA (Symmetry-aware, Intelligent, Geometric, Multi-objective Adaptive traffic control), an RL framework enhanced with a large language model (LLM) for adaptive objective tuning and orientation-invariant learning. SIGMA converts natural-language emergency commands into priority vectors for a multi-objective actor-critic controller, avoiding manual reward engineering. Rotational augmentation improves transferability across four-way intersections, while offline-to-online learning ensures stable initialization and gradual adaptation to changing traffic.We define reliability properties covering emergency service levels, graceful degradation under LLM failures, and demand sensitivity, validated via bootstrap statistics. Evaluated in SUMO on four Kolkata-based urban intersections against fixed-time, actuated, and DQN controllers, SIGMA reduces average/emergency waiting times and queue lengths, and boosts throughput. Ablation studies confirm robustness to component failures and geometric rotations. Overall, SIGMA offers a reliable, language-guided, multi-objective traffic control system with statistical reliability assurance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18263",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18263"
+      }
+    ],
+    "relevance_score": 0.39054774079871646,
+    "max_similarity": 0.10555768812600062
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18167",
+    "title": "Adversarial Review: Structured Disagreement for Grounded Agentic Code Review",
+    "authors": [
+      "Eric S. Qiu, Joyce Gill"
+    ],
+    "abstract": "arXiv:2608.18167v1 Announce Type: new \nAbstract: Early multi-agent LLM systems often used role-separated teams, yet scaling agent count yields diminishing returns on repository-level coding tasks. Recent alternatives treat agents as passive tools (subagents), yet this removes the benefits of agent interaction entirely. We study whether a subagent paradigm can support a middle ground: minimal agentic cooperation without the overhead of large multi-agent teams. We introduce Adversarial Review (AR), a minimal cooperative code-review protocol in which a main coding agent works with a reviewer and a critic agent. The reviewer evaluates code, while the critic audits the review through structured disagreement before the main agent edits. On LiveCodeBench, AR achieves the highest pass rate among tested methods, outperforming a five-agent baseline while using only three agents. On SWE-PRBench, naive AR exposes a false-consensus failure mode, where agents converge on agreement without sufficient evidence, but a single prompt iteration that adds disagreement explicitly achieves the highest F1 among tested methods. On SWE-bench Verified, AR also shows improvements over the baselines on repository-level coding tasks. Together, AR demonstrates that cooperative code review does not require many agents or complex communication structures: it requires that disagreement be minimal, structured, and evidence-grounded.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18167",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18167"
+      }
+    ],
+    "relevance_score": 0.38569140028841153,
+    "max_similarity": 0.2230844482248201
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18084",
+    "title": "Compiler-Guided Adaptive Proof Search with Cross-Model Synergy on Context-Dependent Theorem Proving",
+    "authors": [
+      "Zhuo Liu, Ding Yu, Hangfeng He"
+    ],
+    "abstract": "arXiv:2608.18084v1 Announce Type: new \nAbstract: Theorem proving in real-world Lean 4 projects is challenging because proofs often depend on project-specific context. While iterative refinement can use compiler errors to repair failed proofs, reusing failed attempts requires careful search control: some proofs provide better starting points than others, and later revisions may degrade a partially correct proof. We propose a compiler-guided proof search framework that balances exploration and exploitation. It explores diverse starting points through dual-model generation and stagnation-triggered resampling, while exploiting promising proof states through current-best refinement guided by compiler-grounded pairwise comparison. Experiments on seven real-world Lean 4 projects from miniCTX-v2 show that our method achieves a better effectiveness--efficiency tradeoff than pass@k baselines. Within the pass@32 budget, our method improves average pass rate by 12.8 percentage points while reducing LLM calls by 21.9%.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18084",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18084"
+      }
+    ],
+    "relevance_score": 0.38381791039040536,
+    "max_similarity": 0.0967796550341955
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18093",
+    "title": "Abliteration Mitigation via Refusal Aliases",
+    "authors": [
+      "Nathan Truong"
+    ],
+    "abstract": "arXiv:2608.18093v1 Announce Type: new \nAbstract: Abliteration, the removal of refusal capabilities from large language models by projecting weight matrices orthogonal to an extracted refusal direction, has emerged as a prominent safety concern through its ability to bypass post-training alignment using only a small set of contrastive prompts. We find that existing defenses commonly overlook the cause of abliteration; that is, how easily the refusal direction can be extracted. To hinder this process, we introduce a weight-editing method that obscures the refusal signal by applying rank-$k$ updates to residual stream writer matrices while replacing refusal-inducing activations with random aliases and correcting downstream reader matrices to preserve the model's original behavior. On Llama-3-8B, AMRA improves post-abliteration refusal scores by $2.16$ points over the undefended baseline with less than $0.5$ percentage points of MMLU degradation. On Gemma-2-9B, it improves the post-abliteration refusal by $14.70$ points over the baseline while keeping harmful output rates similar to the baseline, albeit at a greater utility cost.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18093",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18093"
+      }
+    ],
+    "relevance_score": 0.3442831022590278,
+    "max_similarity": 0.11131949689915208
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18092",
+    "title": "Position: Multi-Agent Systems Should Prioritize Concurrency Control",
+    "authors": [
+      "Xin Yang, Letian Li, Zimo Ji, Terry Jingchen Zhang, Wenyuan Jiang"
+    ],
+    "abstract": "arXiv:2608.18092v1 Announce Type: new \nAbstract: LLM-based multi-agent systems (MAS) promise scalable collaboration, yet adding agents often reduces reliability. This position paper argues that many MAS failures are fundamentally concurrency control problems: agents concurrently read and write shared state, and long LLM inference windows amplify the risk of stale reads, lost updates, and inconsistent outcomes. Failure modes commonly attributed to coordination or communication breakdowns can be mapped directly onto classical concurrency anomalies. We contend that MAS frameworks should address these failures through explicit concurrency control mechanisms: conflict detection, isolation guarantees, and structured access to shared resources. Concurrency control should be a first-class design concern, not an afterthought.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18092",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18092"
+      }
+    ],
+    "relevance_score": 0.30493246133530943,
+    "max_similarity": 0.18764168612594467
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18091",
+    "title": "Self- and Other-Labels Induce Bidirectional Bias in LLM Judges",
+    "authors": [
+      "Songeun Chae, Min Kim, Donghoon Jung, Seojin Choi, Seohyon Jung"
+    ],
+    "abstract": "arXiv:2608.18091v1 Announce Type: new \nAbstract: As LLM-as-a-judge systems become increasingly widespread, self-preference in LLMs -- the tendency to favor one's own outputs -- raises growing concerns about evaluation reliability. However, it has been studied predominantly on generated text, where stylistic features and response quality are inevitably conflated. As a result, existing measurements cannot separate genuine self-preference from these confounds. We address this by changing the object of evaluation: instead of judging generated text, ten LLMs assess narrative constraint selections, which carry no model-specific stylistic fingerprint yet retain a recoverable model-specific signature. We run two experiments that yield distinct findings. Under blind evaluation, self-preference largely disappears once selection quality and evaluator severity are controlled. It vanishes on three of four rubric dimensions and reverses on the fourth, where judges rate their own selections as less original. Under matched quality, however, self- and other-labels alone -- without naming any model -- shift scores bidirectionally: LLM judges inflate scores for self-labeled selections and deflate those for other-labeled ones regardless of the selection's actual source. We make two contributions: 1) authorship attribution is a distinct driver of evaluation bias, and 2) open-ended, ground-truth-free tasks can serve as controlled instruments for studying LLM judge behavior.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 20 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18091",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18091"
+      }
+    ],
+    "relevance_score": 0.29148207296074424,
+    "max_similarity": 0.1689595939359193
+  }
+]
