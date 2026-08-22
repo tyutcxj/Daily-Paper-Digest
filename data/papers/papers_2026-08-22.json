@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.19447",
+    "title": "Quantifying Event Impacts on Time Series via Multiscale Contrastive Learning",
+    "authors": [
+      "Yiming Sun, Shengyu Chen, Zhengzhang Chen, Haoyu Wang, Xiaowei Jia, Haifeng Chen"
+    ],
+    "abstract": "arXiv:2608.19447v1 Announce Type: new \nAbstract: Shocks that spread through the web, such as cybersecurity breach disclosures, can abruptly disrupt financial time series and cause substantial abnormal losses. While these events are disclosed as discrete records through news reports, regulatory filings, or public databases, their consequences unfold through continuous market dynamics. This creates an event-conditioned impact prediction problem: given pre-event market history and limited event metadata, the goal is to estimate short-term post-disclosure abnormal loss rather than reconstruct the full post-event trajectory. However, most time-series forecasting models focus on endogenous regularities such as trend, seasonality, and autocorrelation, and thus struggle with rare and heterogeneous external events. The challenge is further amplified by sparse high-impact events and background market noise. We introduce EventTime, a multi-resolution framework that combines long-horizon market context, short-horizon pre-event dynamics, and event metadata. It incorporates an event fusion module that couples temporal representations with event attributes to identify relevant recent market patterns. To mitigate sparse supervision, EventTime further introduces a dynamic contrastive objective that constructs event- and time-series-aware positive and negative pairs during training. We also construct SECURE, a real-world dataset aligning cybersecurity incidents with stock-market time series and structured and LLM-derived semantic features. Experiments show that EventTime consistently outperforms state-of-the-art time-series and event-aware baselines in estimating post-event financial losses. Further analyses demonstrate more event-sensitive representations, greater robustness to incomplete metadata, and more interpretable estimates of short-term market impact following cybersecurity disclosures.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19447",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19447"
+      }
+    ],
+    "relevance_score": 0.5662981315339662,
+    "max_similarity": 0.3248750606850459
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19297",
+    "title": "Holtercare-Bench: A Multimodal Benchmark for Evaluating Long-Term Dynamic ECG Analysis",
+    "authors": [
+      "Yihan Xie, Hanwen Cui, Runze Ye, Juekai Lin, Haoyang Wang, Jinhao Mao, Bo Zhang, Wenqiao Zhang, Xiaogang Guo, Jun Xiao, Lei Zhang"
+    ],
+    "abstract": "arXiv:2608.19297v1 Announce Type: new \nAbstract: While multimodal large language models (MLLMs) excel in medical applications, most of them favor static images or short-term signals. In the critical field of dynamic electrocardiograms (ECG), models struggle with complex temporal reasoning and diagnostic report generation due to a lack of high-quality datasets and benchmarks. To address this, we introduce (i) Holtercare-23K, a large-scale multimodal dynamic ECG dataset comprising 22,980 QA pairs derived from 788 clinical Holter records and featuring a novel signal-video-text tri-modal alignment. Based on this dataset, we present (ii) Holtercare-Bench, a multimodal benchmark that evaluates models on temporal localization, clinical diagnosis, and global summarization. Zero-shot evaluations of leading MLLMs reveal a significant performance gap in processing ultra-long pathological sequences. However, fine-tuning representative models yields substantial improvements. This work illuminates the limitations of current MLLMs in electrophysiology and provides a foundational benchmark for long-term medical MLLMs. Our project is available at https://github.com/ZJU4HealthCare/Holtercare-Bench.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19297",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19297"
+      }
+    ],
+    "relevance_score": 0.5178193968099871,
+    "max_similarity": 0.25625816892999603
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19380",
+    "title": "CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios",
+    "authors": [
+      "Sparsh Garg, Yi-Wen Chen, Vijay Kumar B G, Abhishek Aich"
+    ],
+    "abstract": "arXiv:2608.19380v1 Announce Type: new \nAbstract: While modern autonomous driving systems excel at perception tasks such as object detection and trajectory prediction, they lack the high-level causal reasoning required to interpret traffic accidents. In particular, determining responsibility, such as identifying who is at fault and which traffic rule was violated, remains largely unexplored in current benchmarks. To this end, we introduce CAViAR (Causal Accident Video and Incident Analysis Repository), a human-annotated dashcam benchmark comprising 2,249 real-world accident videos collected from CarCrashDataset (CCD) and Nexar. Each video is annotated with structured labels spanning environmental conditions, accident type, causal explanation, apparent At-Fault Agent, affected agent, and apparent rule-violation category. We benchmark state-of-the-art vision-language models (VLMs), including Cosmos-Reason2, Qwen3-VL, and InternVL3. Once class imbalance is accounted for with majority/random baselines and balanced metrics, perceptual competence is uneven--lighting is nearly solved, whereas weather and road-condition accuracy fall at or below the majority-class baseline---and all models degrade sharply on accident type and responsibility reasoning. Overall, CAViAR exposes a practical Perception--Reasoning Gap: current VLMs may recognize salient context, but do not reliably map visible agent actions to annotated rule-relevant responsibility categories in safety-critical driving scenarios. Code, annotation schema, prompts, and evaluation scripts are available at: https://github.com/nec-labs-ma/CAViAR",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19380",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19380"
+      }
+    ],
+    "relevance_score": 0.5164498747014179,
+    "max_similarity": 0.25688063313600884
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18104",
+    "title": "Self-Evolving Agents as Dynamic Graph Transformation: A Survey and New Perspective",
+    "authors": [
+      "Yuanyuan Xu, Wenjie Zhang, Yin Chen, Xuemin Lin, Ying Zhang"
+    ],
+    "abstract": "arXiv:2608.18104v1 Announce Type: new \nAbstract: Large language model (LLM)-based agents are increasingly becoming self-evolving systems that persist across interactions, maintain memories, use tools, acquire skills, refine workflows, and coordinate with other agents. These capabilities make agent states structural and dynamic: entities, relations, attributes, dependencies, and execution structures change with new evidence, feedback, and environmental conditions. Existing graph-agent surveys typically treat graphs as support structures for agent functions rather than as evolving substrates, while self-evolving-agent surveys focus on agent-level mechanisms and rarely discuss graph topology evolution. Thus, the coupling between evolving agent state and dynamic graph topology remains underexplored. This survey connects these two research lines by framing \\textit{agent evolution as dynamic graph transformation}. We model agent state as a dynamic graph, where memories, tools, skills, workflows, and inter-agent relations are represented as typed nodes, edges, and subgraphs updated through schema-constrained rewrites. Based on this formulation, we organize existing dynamic-graph-based methods for self-evolving agents into four taxonomies: node/feature evolution, edge/topology evolution, subgraph activation, and cross-component co-evolution. Building on this taxonomy, we propose dynamic graph learning as reusable infrastructure for self-evolving agents and map nine dynamic-graph-learning subfields to agent-evolution capabilities, discussing their adaptations and possible failure modes. Finally, we discuss five types of graph-aware evaluation and governance protocols from a dynamic-graph perspective, which complement end-task evaluation. The goal is to provide a compact structural lens for designing and governing self-evolving agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18104",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18104"
+      }
+    ],
+    "relevance_score": 0.5038001907178847,
+    "max_similarity": 0.24635411988287126
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19323",
+    "title": "Improved Confidence Estimates for Black-Box Large Language Models",
+    "authors": [
+      "Sokhna Diarra Mbacke, Mouloud Belbahri, Gabriel Loaiza-Ganem"
+    ],
+    "abstract": "arXiv:2608.19323v1 Announce Type: new \nAbstract: Uncertainty quantification (UQ) is essential for the safe deployment of large language models (LLMs). Existing methods, from verbalized confidence to ones requiring multiple generations, are often zero-shot and produce scores quantifying uncertainty without the need for labelled data. Nonetheless, in practice one must always evaluate their performance on a dataset of interest before deployment. In this work we show that, by leveraging this dataset, we consistently outperform these existing scores. Specifically, we build simple classifiers that predict LLM response correctness by using these scores and the correctness of similar queries as features. Our method produces minimal computational overhead, making it a cheap and straightforward enhancement for UQ in LLMs for real-world applications.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19323",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19323"
+      }
+    ],
+    "relevance_score": 0.4634724025784307,
+    "max_similarity": 0.19435092431622542
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19200",
+    "title": "Transformer Models for Text Summarization: A Comparative Study of BART, BERT, and RoBERTa",
+    "authors": [
+      "Daisy Aptovska, Vinayak Elangovan"
+    ],
+    "abstract": "arXiv:2608.19200v1 Announce Type: new \nAbstract: Text summarization refers to the task of condensing a document into a shorter version while preserving its key information. Automatic text summarization (ATS), driven by advancements in natural language processing (NLP), has developed rapidly in recent years. ATS methods are commonly categorized by input type (such as single-document or multi-document summarization) and by output type (extractive, abstractive, and hybrid). This article presents a focused review of modern summarization techniques with an emphasis on transformer based models and large language models (LLMs), specifically BERT, RoBERTa and BART. It examines their architectures, pretraining strategies, and their suitability for extractive and abstractive summarization tasks.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19200",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19200"
+      }
+    ],
+    "relevance_score": 0.45846633914645063,
+    "max_similarity": 0.18862476790180788
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19463",
+    "title": "LLM as Detector: An In-context Learning Approach for Tabular Anomaly Detection",
+    "authors": [
+      "Tu Anh Hoang Nguyen, Dang Nguyen, Thuc Duy Le, Trung Le, Sunil Gupta"
+    ],
+    "abstract": "arXiv:2608.19463v1 Announce Type: new \nAbstract: Anomaly detection in tabular data is challenging because abnormal samples often arise as violations of cross-feature dependencies rather than simple marginal deviations. Existing detectors rely on geometric or reconstruction signals, while prior LLM-based approaches mainly fine-tune LLMs with normal samples or generate synthetic anomalies. We propose LLM-Detector, a framework that utilizes the in-context learning capacity of LLMs for structured, prompt-conditioned scoring synthesis, enabling LLMs to derive anomaly detection logic from structured normal-state knowledge. Specifically, normal training data are converted into statistical summaries, causal dependencies, and distilled prototypes that are organized into a prompt for code generation. The resulting scoring engine evaluates statistical deviation, structural inconsistency, and density-based abnormality then computes an anomaly score for each test sample. We evaluate LLM-Detector on 24 tabular datasets, comparing against 15 SOTA baselines. Results show consistent improvements across both mixed-type and continuous-only settings. Moreover, this design eliminates the need for LLM fine-tuning or neural network training, reducing computational cost and enabling practical anomaly detection in real-world tabular systems.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19463",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19463"
+      }
+    ],
+    "relevance_score": 0.4575246413439262,
+    "max_similarity": 0.18591701302378294
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18080",
+    "title": "Large Language Models in Mental Health: A Systematic Review of Applications, Innovations, and Ethical Challenges",
+    "authors": [
+      "Yisong Chen, Yifan Gao, Sijing Yu, Chuqing Zhao, Yang Lu"
+    ],
+    "abstract": "arXiv:2608.18080v1 Announce Type: new \nAbstract: We present a review on the applications of large language models (LLMs) in health, e.g., social media analysis, clinical conversational agents, therapy support tools, prompt engineering, multimodal learning, and ethical considerations. We integrate findings from interdisciplinary studies utilizing diverse data sources such as social media posts, electronic medical records, and multimodal inputs to enable early detection of depression, suicide risk assessment, personalized therapy support, and psychoeducational content generation. Our review highlights advancements in LLM models and annotation strategies that enhance interpretability and clinical relevance, while we also emphasize the critical role of prompt engineering for domain adaptation. We also discuss emerging multimodal fusion techniques integrating text, speech, and sensor data for improved mental health diagnosis and monitoring. Finally, we address ongoing ethical, sociotechnical, and regulatory challenges, and advocate frameworks to ensure safe, equitable, and accountable deployment of LLMs in real-world mental health care.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18080",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18080"
+      }
+    ],
+    "relevance_score": 0.4524526949593156,
+    "max_similarity": 0.17830202779791238
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19598",
+    "title": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment",
+    "authors": [
+      "Jiawei Feng, Jiancan Wu, Xingyu Zhu, Junkang Wu, Xiang Wang, Xiangnan He"
+    ],
+    "abstract": "arXiv:2608.19598v1 Announce Type: new \nAbstract: Direct Preference Optimization (DPO) has emerged as an effective approach for aligning large language models (LLMs) with human preferences. However, its adaptation to multimodal settings remains unexplored. Through representational analysis, we identify a key limitation in multimodal preference optimization, which we term visual insensitivity: models often fail to distinguish between images and those with critical visual context removed. Our theoretical analysis further uncovers two manifestations of this problem, namely Across-Image Insensitivity and Within-Image Insensitivity. To address these challenges, we propose Perception-Enhanced Alignment DPO (PEA-DPO), a framework for multimodal LLMs alignment, which explicitly leverages visual preference signals to overcome visual insensitivity. We further provide a theoretical analysis demonstrating that PEA-DPO provably mitigates both failure modes. Empirical results demonstrate that PEA-DPO enhances sensitivity to visual context while preserving the language modeling capacity of the base model. Evaluations across three hallucination benchmarks using MLLMs of varying scales show that PEA-DPO effectively mitigates visual insensitivity, achieves stronger multimodal alignment, and substantially reduces hallucinations.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19598",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19598"
+      }
+    ],
+    "relevance_score": 0.4418305281731528,
+    "max_similarity": 0.1653207471935627
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18078",
+    "title": "Position: Collusion Risks Among AI Reasoning Agents Justify Certification Requirements for Making Market Decisions",
+    "authors": [
+      "Matthew Riemer, Tommaso Tosato, Amin Memarian, Maximilian Puelma Touzel, Glen Berseth, Irina Rish, Guillaume Dumas"
+    ],
+    "abstract": "arXiv:2608.18078v1 Announce Type: new \nAbstract: This position paper argues that AI agents with chain-of-thought reasoning capabilities are predisposed to exhibit collusive behavior and should be required to obtain behavioral certification before making decisions that affect economic markets. This is because integrating these agents into society could collapse the legal evidentiary distinction between competition and collusion among independent firms without eroding the economic harm distinction. Experiments with DeepSeek-R1 agents in the Bertrand oligopoly pricing domain reveal a tendency towards tacit collusion that persists even when humans prompt the agents not to collude. We further show that the chain-of-thought of these agents can be steered toward either extremely collusive or highly competitive behavior in a way that is not semantically detectable by another LLM analyzing the reasoning traces. As a result, deploying reasoning agents for market decisions leads to collusive economic outcomes without any evidence of conspiracy or intent. Thus, certification based on observed behavior in representative situations is necessary to prevent collusion. We provide preliminary evidence that such agents can be steered in a generalizable way toward efficient competitive equilibria. However, developing a comprehensive behavioral certification will be required before these models can be deployed in real-world markets while ensuring their stability and efficiency.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18078",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18078"
+      }
+    ],
+    "relevance_score": 0.43677490679177,
+    "max_similarity": 0.16398163336571234
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18142",
+    "title": "Efficient Adaptation of LLMs for Hate Speech Detection in Low-Resource Languages: A Comparative Study on Roman Urdu",
+    "authors": [
+      "Toneema Zubair, Muhammad Junaid Asif, Faisal Kamiran, Hafiz Hassan Saeed, Rana Fayyaz Ahmad"
+    ],
+    "abstract": "arXiv:2608.18142v1 Announce Type: new \nAbstract: It is challenging to detect hate speech in Low Resource Languages (LRLs) because of the absence of annotated data, the informality of its language structure, and the lack of standardized grammar. A good example of such a challenge is Roman Urdu which is broadly used by South Asians on social media and has a high variation while lacking contextually consistent spellings. The objective of this paper is to conduct a comprehensive assessment of Large Language Models (LLMs) for Hate Speech Detection (HSD) in Roman Urdu script and fine-tune these models using the Parameter-Efficient Fine-Tuning (PEFT) method called Low-Rank Adaptation (LoRA). To evaluate zero-shot inference, we benchmarked it against PEFT on different transformer models, including Mistral, LLaMA, Falcon, and multilingual BERT. Experiments are conducted on the PURUTT (Parallel Urdu and Roman Urdu Corpus for Toxic Comments and Transliteration) dataset with over 72,000 annotated comments. The results suggest that zero shot models perform moderately (F1 = 0.56), but updating a small fraction of the model trainable parameters improves the classification performance significantly (F1 > 0.93). Our results have shown that PEFT delivers outstanding performance alongside excellent computational efficiency, making it highly suitable for low-resource language processing tasks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18142",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18142"
+      }
+    ],
+    "relevance_score": 0.43403503424689366,
+    "max_similarity": 0.1571629425942618
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19285",
+    "title": "Clustering and Token Denoising for Faster and More Robust VLMs",
+    "authors": [
+      "Baptiste Rossigneux, Inna Kucher, Vincent Lorrain, Emmanuel Casseau"
+    ],
+    "abstract": "arXiv:2608.19285v1 Announce Type: new \nAbstract: Recent Visual-Language Models (VLMs) have enhanced the capabilities of pre-trained LLMs by adding vision tokens alongside text, with approaches like LLaVA showing impressive results. However, the computational burden of processing up to 576 or 729 visual tokens makes edge deployment challenging. While various token pruning techniques require retraining, some are training-free and thus can easily adapt to architecture changes. We introduce ClustRS, a two-part, training-free algorithm for robust token pruning. Its first component is an attention-weighted, clustering algorithm that selects representative tokens from each semantic cluster. The second component, Residual Shrinkage, is a one-pass denoising step on the selected tokens. These training-free lightweight steps make LLaVA ready for real-world data, improving robustness to a wide range of image-noise types and intensities. Experimental results on the ScienceQA-IMG and MM-VET benchmarks show our method outperforms attention- and diversity-based methods by up to 20\\% under extreme noise and token conditions (reducing tokens by 97\\%, down to 16 tokens) on LLaVA 1.5 7b and achieves exceptional results on LLaVA-OneVision, where we match baseline performance with fewer than one-third of their tokens under mild noise conditions. Our study demonstrates a simple yet powerful alternative to both score-only and diversity-only pruning rules, paving the way for compute-efficient and noise-resilient VLM deployment.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19285",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19285"
+      }
+    ],
+    "relevance_score": 0.4191434840050924,
+    "max_similarity": 0.13908593136903208
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18111",
+    "title": "Solving Is Not Drawing: A Benchmark for Diagrammatic Reasoning in Olympiad Geometry",
+    "authors": [
+      "Hsien Xin Peng, Anthony Kim, Alvin Li, Calvin Supasanya, Shivank Garg, Kevin Zhu"
+    ],
+    "abstract": "arXiv:2608.18111v1 Announce Type: new \nAbstract: Foundation models such as GPT and Claude now solve olympiad-level mathematics with remarkable proficiency, so much so that geometry problem solving has become a standard proxy for their mathematical reasoning. Yet solving a geometry problem and drawing the figure it depends on are not the same skill: progress often hinges on a faithful diagram with the right auxiliary constructions and incidences, and it is unclear that a model which reasons its way to the answer can also produce one. A growing collection of benchmarks, including MathVista, and MathVerse, measures whether models reach the correct answer, but to our knowledge, none isolate the distinct ability to construct the diagram itself, leaving this capability unmeasured. We introduce an open-source benchmark that targets this gap: 954 self-contained olympiad geometry problems, with a 297-problem hard subset, each paired with its solution and a human-authored, high-fidelity diagram in renderable Asymptote code, together with a suite of text-, code-, image-, VLM-, and constraint-based metrics for what we term diagrammatic reasoning. Evaluating current foundation models reveals a pronounced gap between solving and drawing: their diagrams are markedly less faithful, with an average compile success rate of only 36.14\\%. Strong mathematical reasoning, we find, does not imply the ability to construct accurate geometric diagrams. Our benchmark and dataset can be accessed at https://huggingface.co/datasets/max98765/hard_geometry_problems_with_diagrams.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18111",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18111"
+      }
+    ],
+    "relevance_score": 0.407416368977212,
+    "max_similarity": 0.12443398813014048
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19201",
+    "title": "Automatic bioinformatic software named entity recognition from literature",
+    "authors": [
+      "Hao Xuan, Rithvij Pasupuleti, Ben Liu, Haishuo Sun, Jun Zhang, Zijun Yao, Cuncong Zhong"
+    ],
+    "abstract": "arXiv:2608.19201v1 Announce Type: new \nAbstract: Bioinformatics software and databases are essential components of modern life science research, yet their mentions in the scientific literature are often inconsistent and difficult to systematically identify at scale. The lack of a comprehensive and up-to-date catalog of bioinformatics resources hinders efforts toward automated biomedical knowledge extraction and streamlined data analysis. Here we present SNAIL, a hybrid named entity recognition framework designed to automatically identify bioinformatics software and database (SW/DB) names from biomedical texts. SNAIL integrates complementary lexical and semantic modeling strategies. The lexical component captures orthographic patterns and contextual cues characteristic of SW/DB names, while the semantic component leverages contextual embeddings generated by transformer-based language models such as SciBERT, combined with an explicit token-masking strategy to enhance entity-focused representations. A large training corpus was constructed automatically through a hybrid pipeline that integrates citation-hinted extraction with large language model-assisted distillation. Evaluation on two independent benchmark datasets and real-world research articles demonstrates that SNAIL substantially outperforms existing approaches, including domain-specific methods such as bioNerDS2 and general-purpose large language models such as ChatGPT, Gemini, Grok and Claude. Applying SNAIL to large-scale literature analysis further reveals distinct journal-level preferences across bioinformatics subfields. These results demonstrate that SNAIL provides an accurate and scalable solution for identifying bioinformatics resources in scientific texts and enables systematic meta-analysis of tool usage and research trends.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19201",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19201"
+      }
+    ],
+    "relevance_score": 0.403301433213935,
+    "max_similarity": 0.11769264363713303
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18131",
+    "title": "Safety Alignment Illusion: The Cross-Lingual Safety Gap in LLMs",
+    "authors": [
+      "Namya Bhatnagar"
+    ],
+    "abstract": "arXiv:2608.18131v1 Announce Type: new \nAbstract: Current safety alignment training for Large Language Models (LLMs) are heavily English-centric. When such safety filters fail for non-English languages, the consequences are immediate and user-facing: voice assistants and spoken dialogue systems may produce stereotype-reinforcing outputs, bypassing the standard English-focused safety alignments and propagating harmful bias to non-English speaking communities. For spoken language technologies deployed across India's linguistically diverse population, this represents a critical failure mode. To address this cross-lingual gap, we introduce INCLUDE (Indian Cultural Lens for Understanding and Detecting Embedded Biases), a multilingual evaluation benchmark designed to quantify Indian-centric socio-cultural biases. INCLUDE consists of 2,604 prompts spanning six prompt languages: English, Hindi, Bengali, Marathi, Tamil, and Hinglish (Hindi-English code-mix). We evaluate ten open- and closed-source LLMs against this benchmark, analyzing 14,988 bias scores. Our statistical results reveal two key findings. First, Bengali yielded the highest average bias score in open-source models. Second, English demonstrated a notable reversal, producing the lowest bias in open-source models but the highest bias in closed-source models.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18131",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18131"
+      }
+    ],
+    "relevance_score": 0.40305116560348636,
+    "max_similarity": 0.12062430887689082
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19666",
+    "title": "MUST-PET: MUltimodal Self-supervised learning across Tracers for whole-body PET/CT-based lesion segmentation",
+    "authors": [
+      "Bashirul Azam Biswas, Amartya Bhattacharya, Biratal Raj Wagle, Matthew E. Maeder, James B. Yu, Indrani Bhattacharya"
+    ],
+    "abstract": "arXiv:2608.19666v1 Announce Type: new \nAbstract: Deep learning-based whole-body PET-CT lesion segmentation can support cancer staging, treatment planning, and response assessment, but generalization is limited by scarce annotations and domain shifts. Self-supervised learning (SSL) can address these challenges but remains underexplored in pan-cancer, multi-tracer PET-CT. In this work, we propose MUST-PET (MUltimodal Self-Supervised learning across Tracers), a multimodal, multi-tracer SSL framework for generalizable whole-body PET-CT lesion segmentation. MUST-PET is trained and validated on a diverse, multi-institutional collection of pan-cancer PET-CT scans acquired with FDG and prostate-specific membrane antigen (PSMA)-targeted radiotracers. MUST-PET uses context-aware masked reconstruction, where one modality is partially masked and reconstructed using complementary information from both PET and CT. The pretrained model is subsequently fine-tuned with labeled samples and evaluated for reconstruction quality, lesion segmentation, label efficiency, and generalizability across independent held-out datasets. MUST-PET reduces reconstruction error, improves lesion segmentation over training from scratch, and performs well with limited labeled data and on unseen external datasets, demonstrating the potential of multi-tracer SSL for label-efficient, generalizable whole-body PET-CT. segmentation.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19666",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19666"
+      }
+    ],
+    "relevance_score": 0.39238436719102354,
+    "max_similarity": 0.16820203550390708
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19376",
+    "title": "Does Marginal Coverage Guarantee Class-Conditional Safety for Zero-Shot VLMs Under Shift?",
+    "authors": [
+      "Jai Kumar Sharma, Amartya Dutta"
+    ],
+    "abstract": "arXiv:2608.19376v1 Announce Type: new \nAbstract: Split-conformal prediction provides marginal coverage under exchangeability and is increasingly used as an abstention layer for zero-shot vision-language models (VLMs). We audit this practice under deployment shift for CLIP, OpenCLIP, and SigLIP across ImageNet and non-ImageNet settings. Marginal coverage can remain relatively high while class-conditional tail coverage collapses: on ImageNet-Sketch, worst-class coverage falls to $\\approx 0$ and 10-12% of classes lie below a finite-sample null floor, despite marginal coverage of about 0.86. The failure is aligned with target-domain class accuracy but is not predicted by the source-domain diagnostics we test. Source-side Mondrian calibration improves the in-distribution tail but does not transfer, while clustered conformal and Conf-OT improve marginal or average metrics without recovering the worst-class tail. Target-side class calibration substantially lifts the tail, but requires labels for every class and remains set-size-intensive. We further identify a 2-3$\\times$ cross-family efficiency gap and show that native SigLIP sigmoid scores remove APS's probability-mass interpretation. The findings persist across the tested model scale, pretraining corpus, prompt, miscoverage level $\\alpha$, and shifted non-ImageNet settings. Marginal conformal coverage should therefore be treated as an average reliability statistic, not as a safety guarantee for the class tail.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19376",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19376"
+      }
+    ],
+    "relevance_score": 0.38969669970259874,
+    "max_similarity": 0.1065108531302953
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18167",
+    "title": "Adversarial Review: Structured Disagreement for Grounded Agentic Code Review",
+    "authors": [
+      "Eric S. Qiu, Joyce Gill"
+    ],
+    "abstract": "arXiv:2608.18167v1 Announce Type: new \nAbstract: Early multi-agent LLM systems often used role-separated teams, yet scaling agent count yields diminishing returns on repository-level coding tasks. Recent alternatives treat agents as passive tools (subagents), yet this removes the benefits of agent interaction entirely. We study whether a subagent paradigm can support a middle ground: minimal agentic cooperation without the overhead of large multi-agent teams. We introduce Adversarial Review (AR), a minimal cooperative code-review protocol in which a main coding agent works with a reviewer and a critic agent. The reviewer evaluates code, while the critic audits the review through structured disagreement before the main agent edits. On LiveCodeBench, AR achieves the highest pass rate among tested methods, outperforming a five-agent baseline while using only three agents. On SWE-PRBench, naive AR exposes a false-consensus failure mode, where agents converge on agreement without sufficient evidence, but a single prompt iteration that adds disagreement explicitly achieves the highest F1 among tested methods. On SWE-bench Verified, AR also shows improvements over the baselines on repository-level coding tasks. Together, AR demonstrates that cooperative code review does not require many agents or complex communication structures: it requires that disagreement be minimal, structured, and evidence-grounded.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18167",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18167"
+      }
+    ],
+    "relevance_score": 0.3856875869134339,
+    "max_similarity": 0.2230844482248201
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.19492",
+    "title": "Beyond Multimodal Alignment: Certifying Physical Language through Response Substitution and Ordered Execution",
+    "authors": [
+      "Kaizhen Tan, Xin Xu, Siru Tao, Yixiao Li, Hanzhe Hong, Yang Feng, Heqing Du"
+    ],
+    "abstract": "arXiv:2608.19492v1 Announce Type: new \nAbstract: World models increasingly treat compact multimodal representations as interfaces between perception and physical interaction, yet existing probes do not establish whether different sensors carry the same executable meaning or whether that meaning survives a new action composition. We introduce an operational capability hierarchy and the Disjoint-Bridge Operator-Substitution Certificate (DBOSC), which asks whether independently trained modality compilers enter a frozen response chart interchangeably on evidence outside their training panels. On Cluster Haptic, audio and acceleration representations of the same unseen surface are 4.5x closer in response space than wrong-surface pairings, with the gap holding for all 19 held-out surfaces; unsealing withheld responses confirms that every branch predicts the physics better than the population chart. We then test ordered execution in a controlled elastoplastic system with complementary modality blind spots. At the pre-registered budget, the prerequisite refuses the stack because the frozen executor cannot advance even an exact chart coordinate through a held-out program. At a converged budget, the same rank-three chart executes those programs (oracle NMSE 0.18), fusion improves on both modalities, and 14 of 16 registered checks pass; the two failures arise because a diagonal restriction of the fused information matrix performs as well as the full one. Clearing the gate is a property of the executor, not the chart: an executor emitting whole programs instead of shared per-step dynamics is 38x worse than an entity-blind predictor on the same chart. A matching non-identifiability result explains why compression and fusion alone cannot determine an unseen composition law. These results separate attribute access, response substitution, fusion closure, and ordered execution into distinct, separately testable achievements.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.19492",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.19492"
+      }
+    ],
+    "relevance_score": 0.38509542575599387,
+    "max_similarity": 0.0984028393176757
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.18092",
+    "title": "Position: Multi-Agent Systems Should Prioritize Concurrency Control",
+    "authors": [
+      "Xin Yang, Letian Li, Zimo Ji, Terry Jingchen Zhang, Wenyuan Jiang"
+    ],
+    "abstract": "arXiv:2608.18092v1 Announce Type: new \nAbstract: LLM-based multi-agent systems (MAS) promise scalable collaboration, yet adding agents often reduces reliability. This position paper argues that many MAS failures are fundamentally concurrency control problems: agents concurrently read and write shared state, and long LLM inference windows amplify the risk of stale reads, lost updates, and inconsistent outcomes. Failure modes commonly attributed to coordination or communication breakdowns can be mapped directly onto classical concurrency anomalies. We contend that MAS frameworks should address these failures through explicit concurrency control mechanisms: conflict detection, isolation guarantees, and structured access to shared resources. Concurrency control should be a first-class design concern, not an afterthought.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "updated": "Fri, 21 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.18092",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.18092"
+      }
+    ],
+    "relevance_score": 0.30492971556679693,
+    "max_similarity": 0.18764168612594467
+  }
+]
