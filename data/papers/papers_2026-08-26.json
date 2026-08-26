@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.21577",
+    "title": "Anchoring Bias: A Persistent Fairness Backdoor Attack against MLLMs under Continual Learning",
+    "authors": [
+      "Yuyang Luo, Kai Shu"
+    ],
+    "abstract": "arXiv:2608.21577v1 Announce Type: new \nAbstract: Multimodal Large Language Models (MLLMs) are increasingly deployed in high-stakes domains where fairness is a critical safety requirement. In practice, these models are continually updated through continual learning (CL) to adapt to evolving tasks and data distributions. Prior work has shown that backdoor attacks can manipulate MLLM responses through hidden triggers, but naively implanted backdoors degrade as models undergo subsequent updates of CL. Although fairness has emerged as a central concern for MLLM deployment, whether backdoor-induced fairness violations can survive CL remains unexplored, leaving two critical questions unanswered: (1) whether a backdoor can reliably induce fairness violations in MLLMs, and (2) whether such fairness-targeted backdoors can persist through continual learning. We bridge this gap by proposing Persistent Fairness Backdoor Attack (PFBA) to inject persistent and group-specific discrimination into MLLMs. Specifically, PFBA achieves this through two novel mechanisms. The Latent Space Fairness Reinforcement reshapes the model's deep feature geometry by anchoring privileged-group representations to preserve utility while repelling and clustering targeted-group representations to sustain discrimination, and the Continual Learning Simulation iteratively optimizes the trigger against simulated parameter drift to ensure backdoor persistence across future updates. Extensive experiments demonstrate that PFBA induces severe fairness disparities that persist across continual learning rounds, evading standard backdoor defenses. The data and code are publicly available at https://github.com/lyygua/PFBA.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21577",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21577"
+      }
+    ],
+    "relevance_score": 0.5695634259161896,
+    "max_similarity": 0.32809832686841506
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21438",
+    "title": "DesignAgent3D: Interactive 3D Scene Editing via Designer-like Multimodal Reasoning",
+    "authors": [
+      "Xiujin Liu, Tianyu Yang, Yilun Zhao, Xiangliang Zhang"
+    ],
+    "abstract": "arXiv:2608.21438v1 Announce Type: new \nAbstract: Text guided 3D scene editing provides an intuitive interface for modifying reconstructed environments, but remains difficult because natural language design requests are often semantically underspecified and must be grounded in cluttered 3D scenes. Existing methods typically formulate the task as one-shot conditional generation from a single prompt, failing to resolve ambiguous user intents or achieve precise spatial grounding. Consequently, they suffer from severe object localization drift, tracking failure under occlusions, and the notorious multi-view \"sticker effect.\" To overcome these limitations, we present DesignAgent3D, an interactive multimodal agentic framework that reformulates 3D scene editing as a designer-like Plan-Perceive-Act paradigm. The agent first plans by interacting with the user to clarify underspecified design goals, then perceives by grounding the intended edit to specific objects or regions in the 3D scene, and finally acts by applying controlled visual modifications while preserving scene consistency. The edits are further integrated into the underlying 3D representation, supporting persistent and multi-view consistent novel-view rendering. Extensive experiments across both NeRF and 3D Gaussian Splatting backbones demonstrate that DesignAgent3D significantly outperforms state-of-the-art baselines, delivering superior semantic intent alignment, impeccable spatial localization accuracy, and high-fidelity multi-view consistency.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21438",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21438"
+      }
+    ],
+    "relevance_score": 0.5396824282968549,
+    "max_similarity": 0.2891741000876501
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21431",
+    "title": "Boosting Knowledge-based Visual Question Answering with Structured Context Reasoning",
+    "authors": [
+      "Qiyou Liu, Yong Zhang, Jianjie Luo, Zhenguo Yang, Yi Yu"
+    ],
+    "abstract": "arXiv:2608.21431v1 Announce Type: new \nAbstract: Knowledge-based Visual Question Answering aims to answer questions about an image by integrating external knowledge with visual and textual information. Recent approaches often rely on in-context learning to prompt Large Language Models (LLMs) with multimodal context in a zero-shot or few-shot manner. However, we observe that directly concatenating heterogeneous visual descriptions and retrieved knowledge into long, unstructured prompts often degrades reasoning performance, due to both excessive irrelevant context and the lack of explicit relational structure. In this paper, we propose an LLM-based Structured Context Reasoning (SCoRe) framework that infers both explicit and implicit relationships for prediction. SCoRe consists of three stages: Context Acquisition, which generates diverse visual notes and retrieves explicit knowledge via an efficient two-stage multimodal retrieval strategy; Context Selection, which filters relevant visual, explicit, and implicit knowledge using LLM-guided selection; and Context Compression, which performs Relational Logic Distillation (RLD) to transform raw text into explicit entity-relation triplets. These relational triplets serve as a concise and structured prompt for final answer prediction. Extensive experiments on the OK-VQA and A-OKVQA benchmarks demonstrate that SCoRe consistently outperforms state-of-the-art methods.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21431",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21431"
+      }
+    ],
+    "relevance_score": 0.5191192202798061,
+    "max_similarity": 0.25700055915894926
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21408",
+    "title": "Hate Speech Classification In Roman Urdu: A Comparative Study On Parameter Efficient Fine-Tuning And Prompt Engineering",
+    "authors": [
+      "Toneema Zubair"
+    ],
+    "abstract": "arXiv:2608.21408v1 Announce Type: new \nAbstract: Due to the widespread accessibility of the internet and social media, toxic and hateful con-tent has grown exponentially, causing significant distress and negative societal impacts. Ro-man Urdu, a low-resource language used in Pakistan and among Urdu-speaking communities worldwide, presents additional challenges because of its informal grammar, inconsistent sen-tence structures, and multiple variations in word spellings. This research aims to identify the most effective techniques for hate speech classification in such low-resource settings with limited data. To address this, the study investigates and compares the latest approaches, in-cluding prompt tuning, parameter-efficient fine-tuning (PEFT) using LoRA, and prompt en-gineering, under various experimental configurations. To achieve this objective, four exper-iments were designed. The first experiment involved direct inferencing with LLMs without any fine-tuning, to evaluate how well these models understand Roman Urdu in a zero-shot setting, especially given limited data. The second experiment utilized parameter-efficient fine-tuning (PEFT) with LoRA, which updates only a small subset of parameters, thereby reducing computational cost. The third experiment explored prompt tuning with both mixed and manually crafted prompts, using very small sets of training examples relative to the entire dataset, making it computationally efficient as well. Finally, the fourth experiment applied prompt engineering through zero-shot and few-shot learning, relying solely on care-fully designed instruction prompts for classification without further training.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21408",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21408"
+      }
+    ],
+    "relevance_score": 0.5088160689239614,
+    "max_similarity": 0.2516529421000914
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21443",
+    "title": "Text-Guided Visual Dependency Graph Learning with Cross-Modal Attention Priors",
+    "authors": [
+      "Fei Wang, Yutong Zhang, Yang Ye, Jinxian Chen, Wang Wenshuai, Xiong Wang"
+    ],
+    "abstract": "arXiv:2608.21443v1 Announce Type: new \nAbstract: Estimating interpretable conditional-dependence structures from multimodal visual-linguistic features remains largely unexplored. We propose CM-GLasso (Cross-Modal Graphical Lasso), a framework that bridges vision-language representation learning and sparse Gaussian Graphical Models. CM-GLasso introduces three key components: (i) a text visualization strategy that renders class-attribute descriptions as images and processes them through the same SigLIP-2 vision encoder as natural images, yielding prototype-indexed patch-level attention footprints in a shared feature coordinate system; (ii) a cross-attention distillation mechanism that condenses high-dimensional patches into a small set of semantic graph nodes, whose attention-footprint similarities yield cross-modal structural priors for non-uniform L1 penalization; (iii) a joint ADMM formulation that estimates shared and class-specific precision components within a single convex objective, avoiding the need to first estimate and then decompose separate class-wise graphs. The learned sparse graph topologies directly support a parameter-free, precision-based classification rule and a lightweight topology-aware segmentation head. Extensive experiments on eight benchmarks demonstrate that CM-GLasso achieves competitive or superior performance compared with strong feature-based and task-specific baselines. Under the matched controlled protocol, it attains the highest average classification accuracy (91.97%) and the highest segmentation mIoU among the controlled baselines on VOC (74.75%) and ADE20K (64.01%), while also yielding explicit sparse conditional-dependence graphs with common-specific decomposition.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21443",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21443"
+      }
+    ],
+    "relevance_score": 0.46304042437254656,
+    "max_similarity": 0.19121808111293429
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21375",
+    "title": "SchemaRouter: Field-Aware Tool Routing for Efficient Heterogeneous Agentic RAG",
+    "authors": [
+      "Yong-eun Cho"
+    ],
+    "abstract": "arXiv:2608.21375v1 Announce Type: new \nAbstract: Heterogeneous agentic retrieval-augmented generation (RAG) systems increasingly orchestrate external APIs, internal databases, vector stores, and graph stores. Exposing all tool descriptions to an LLM agent, or selecting tools only by vector similarity, causes two costly failures: over-fetching, which increases payload size, token use, and latency, and under-fetching, which omits fields needed to answer the query.\n  We present SchemaRouter, a lightweight routing layer that represents tools, endpoints, parameters, response fields, domain concepts, units, provenance, and license policies as a schema graph. Given a query, SchemaRouter emits an executable tool plan specifying which tools to call and which fields to retrieve. A small LLM extracts intent, concepts, and source constraints, while field selection is deterministic over the graph through intent-group projection and concept-field matching with an alias layer.\n  On a materials-science benchmark of 110 queries, SchemaRouter achieves answer accuracy of 0.71, matching fetch-everything within overlapping confidence intervals and exceeding prompt-all's 0.66, though their intervals overlap. It uses 227 retrieved-context tokens versus 2,066 for fetch-everything and achieves 2.7x lower end-to-end latency than prompt-all. It also obtains the best tool-exact rate of 0.93 and parameter validity of 1.0. SchemaRouter grounds provenance and license information in 62 percent of answers, compared with approximately 0 percent for all baselines.\n  We also find that minimizing selected-field count is counterproductive: it reduces answer accuracy to 0.56 with negligible token savings, while recall-preserving projection restores top accuracy. SchemaRouter improves efficiency, schema-size-independent scaling, and verifiable provenance/license-grounded answering at competitive accuracy.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21375",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21375"
+      }
+    ],
+    "relevance_score": 0.4571372678867353,
+    "max_similarity": 0.18536281081015096
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21445",
+    "title": "ViTexSZ: Heterogeneous Vision-Text Knowledge Distillation for EEG Seizure Detection",
+    "authors": [
+      "Chenxi Liu, Mingzhao Li, Yicong Liu, Hao Miao, Hongyuan Zhang, Ziyi Chen, Gaofeng Meng"
+    ],
+    "abstract": "arXiv:2608.21445v1 Announce Type: new \nAbstract: Automated seizure detection from electroencephalography (EEG) is essential for continuous neurological monitoring, particularly for subclinical epileptic seizures that may exhibit only subtle electrographic changes. Existing time-series methods are often designed for fixed EEG channel configurations, thereby limiting their applicability to heterogeneous EEG recordings with irregular channel layouts. Although visual and language modeling offer promising alternatives, aligning heterogeneous EEG representations with clinical semantics remains challenging. We introduce ViTexSZ, a heterogeneous Vision-Text knowledge distillation framework for EEG seizure detection. ViTexSZ converts EEG recordings into structured waveform images and introduces a query-based multi-channel alignment module that maps source-dependent visual features into a unified token space. A heterogeneous teacher further integrates the aligned EEG representations with clinical prompts through a multimodal large language model, associating high-level clinical semantics with seizure-related evidence. Vision-text knowledge distillation then transfers the teacher representations to a lightweight student during detection. Experiments on four EEG seizure datasets demonstrate the generalizability of ViTexSZ across both subclinical and general seizure detection scenarios, achieving the highest accuracy on all datasets and relative improvements of up to 12.9% over the second-best baselines, showing its effectiveness.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21445",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21445"
+      }
+    ],
+    "relevance_score": 0.4386800614691233,
+    "max_similarity": 0.16094144389020884
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21504",
+    "title": "ChemDIRT: A Diversified Instruction, Representation, and Task Benchmark for Robust Chemistry-LLM Evaluation",
+    "authors": [
+      "Eric Inae, Tim Gunn, Chris Bond, Meng Jiang"
+    ],
+    "abstract": "arXiv:2608.21504v1 Announce Type: new \nAbstract: The rapid advancement of large language models (LLMs) has led to increasing interest in their application to scientific domains such as chemistry. However, existing chemistry benchmarks often provide only a narrow view of model capability, focusing on limited task sets while overlooking robustness to variations in problem formulation and chemical representation. As a result, reported performance may overestimate a model's true ability to reason consistently across realistic settings. To address this challenge, we introduce ChemDIRT (Diversified Instruction, Representation, and Task Benchmark), a comprehensive evaluation framework designed to assess the robustness of chemical reasoning in LLMs. ChemDIRT systematically measures model performance across variations in instructions and molecular representations while spanning eight categories of chemistry tasks. By evaluating both accuracy and consistency under these controlled perturbations, ChemDIRT provides a more reliable assessment of model reasoning capabilities than conventional single-format benchmarks. We benchmark a diverse set of open- and closed-source LLMs, revealing substantial prompt sensitivity, representation dependence, and uneven performance across task families.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21504",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21504"
+      }
+    ],
+    "relevance_score": 0.4374070356410248,
+    "max_similarity": 0.15968922358837156
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21430",
+    "title": "Evaluating Multimodal Narrative Understanding of Popular Hollywood Films",
+    "authors": [
+      "David Bamman, Kent K. Chang, Allison Cooper, Juishan Hsu, Reina Kushihashi, Madison Mar, Arnav Podichetty, Rachael Samberg, Ipek Nil Sancak, Yuhan Shao"
+    ],
+    "abstract": "arXiv:2608.21430v1 Announce Type: new \nAbstract: Multimodal language models increasingly show promise for enabling the large-scale computational analysis of film, opening up new avenues for learning about film history and the evolution of narrative techniques. But the creation of stable benchmarks built around Hollywood films is complicated by copyright protections. In this work, we address these concerns directly, by building a new collection of Hollywood films defined by two criteria: box office popularity (where we publish the first large-scale, open collection of weekly box office earnings reported by Variety magazine from 1922-1979); and likely public domain status (by researching copyright registrations and renewals in the US Catalog of Copyright Entries). We build a new multimodal MCQ benchmark on top of this collection that focuses on narrative elements that directly evaluate the abilities of models to inform meaningful research on film narrative; we find that many vision-language models struggle on this task (with many performing at near-chance levels of accuracy), while audio-visual models (including those that use audio in captioning scenes) reach a maximum accuracy of 61.1%, well below human-level performance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21430",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21430"
+      }
+    ],
+    "relevance_score": 0.43657473227151394,
+    "max_similarity": 0.16082339403290155
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21393",
+    "title": "Spyre-Accelerated Retrieval-Augmented Generation on IBM LinuxONE: A Cloud-Native Architecture for Secure, High-Throughput Enterprise AI Inference",
+    "authors": [
+      "Sandeep Bokkasam, Pankaj D"
+    ],
+    "abstract": "arXiv:2608.21393v1 Announce Type: new \nAbstract: Running large language models inside enterprise environments has always bumped up against a practical wall: the data lives in one place, the AI horsepower sits somewhere else, and moving sensitive records between the two creates real headaches around latency, security, and regulatory exposure. IBM's Spyre accelerator PCIe inference card built for LinuxONE and the broader IBM Z family changes that equation.\n  In this paper we lay out a six-subsystem RAG architecture that runs entirely on IBM LinuxONE, using Spyre for generative inference, the Telum II on-chip accelerator for lightweight classification tasks, and Red Hat OpenShift for container orchestration. Every piece of the pipeline from query intake through vector retrieval, prompt assembly, LLM inference, compliance filtering, and response delivery stays within a single LinuxONE system, so sensitive data never has to leave the hardware perimeter.\n  We walk through the design choices behind each subsystem, dig into the Spyre compilation and serving stack, explain how LinuxONE's Secure Execution technology extends confidential-computing guarantees to AI workloads, and benchmark the architecture against cloud-GPU and on-premises alternatives. Early analysis points to end-to-end RAG latencies under two seconds and up to a 20x reduction compared to off-platform inference, all while keeping the strong encryption and auditability posture that regulated industries actually need.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21393",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21393"
+      }
+    ],
+    "relevance_score": 0.43113945520543207,
+    "max_similarity": 0.15281902614703058
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21501",
+    "title": "Let Credit Follow Computation: Architecture-Aware Credit Transport for Large Language Model Reinforcement Learning",
+    "authors": [
+      "Qifan Shi, Zhaolu Kang, Chenghua Zhu"
+    ],
+    "abstract": "arXiv:2608.21501v1 Announce Type: new \nAbstract: Credit assignment in large-language-model reinforcement learning (LLM RL) can be separated into three objects: evidence about success, a transport operator that converts this evidence into token-level advantages, and an update geometry that turns advantages into policy changes. Recent work has greatly improved evidence, sampling, and update geometry, but the transport operator is usually architecture-agnostic. Fixed-discount GAE applies a stationary geometric kernel along token time; group-relative methods broadcast an outcome statistic across an entire response. Neither operator represents the trajectory-specific computation used by the Transformer policy itself. We introduce computation-conditioned credit transport (CCT), a general framework in which a detached statistic of the behavior policy's internal computation parameterizes the causal kernel that transports downstream value through a rollout. Our concrete algorithm, CompPO, maps native attention concentration to a bounded per-token retention gate, uses the gate in both the one-step bootstrap and a path-dependent generalized-advantage trace (Comp-GAE), and co-designs a transport-aligned critic (TAC) that reuses the actor's hidden states and routing information without a second same-scale Transformer. The task reward and clipped PPO policy objective remain unchanged; a constant gate recovers fixed-coefficient GAE. Across five Qwen3-4B seeds, CompPO reaches 61.4% final held-out accuracy (95% CI [60.8,62.0]) versus 53.8% [52.9,54.7] for tuned GRPO. Neither Comp-GAE with a standard critic (55.2%) nor TAC with a fixed gate (56.4%) matches the full model (interaction +2.4 [1.9,2.9]). Shuffle and position controls confirm trajectory-specific alignment; CompPO is stable in 10/12 PPO-grid runs versus 3/12. Frozen evaluation improves over GRPO by 4.3 and 3.9 greedy pass@1 macro points on Qwen3-4B and Llama-3.1-8B-Instruct.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21501",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21501"
+      }
+    ],
+    "relevance_score": 0.4157169919127993,
+    "max_similarity": 0.1346812359602095
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21447",
+    "title": "BIMScript: Material-Aware Structured Scene Programs for BIM Ingestion",
+    "authors": [
+      "Prakash Kondibhau Naikade, Thomas B. Moeslund, Andreas M{\\o}gelmose"
+    ],
+    "abstract": "arXiv:2608.21447v1 Announce Type: new \nAbstract: Structured-language models such as SceneScript reconstruct a scene as a short program of parametric commands, an inherently editable and semantically explicit representation. We ask three questions that stand between such models and their most compelling application, automated ingestion of existing buildings into BIM tools, studied here on synthetic scans: \\emph{what} is the scene made of, \\emph{how fast} can it be produced, and \\emph{exactly where} is each element. BIMScript answers all three within one grammar. First, we extend the layout language with per-element \\emph{material} and \\emph{condition} attributes, supervised by a vision-language-model material-passport corpus we build over 100k synthetic scenes (1.9M pseudo-labeled elements), and route image appearance to the material tokens through a lifted-feature point encoder. Second, we show that autoregressive decoding of these programs is dominated not by compute but by kernel-launch and host-synchronization overhead, and remove it with an output-exact CUDA-graph decoder (1.9 vs 6.4\\,ms/step, $3.4\\times$) plus a grammar-parallel, tolerance-verified draft-and-verify scheme that exploits the deterministic entity schema. Third, we address the model's 5cm token-grid granularity with training-free geometric snapping and a hybrid discrete--continuous decoder head that regresses a sub-bin offset, and measure how much of the residual error each recovers. Because each command maps one-to-one onto a native Revit object, we validate direct ingestion into a BIM authoring tool end to end with a working add-in and its IFC4 export, and the same program's language form is designed to support LLM-driven, sustainability-aware reasoning over the built asset.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21447",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21447"
+      }
+    ],
+    "relevance_score": 0.4132043488983366,
+    "max_similarity": 0.13191277975634824
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21473",
+    "title": "Class-Conditioned Gaussian Mixture Modeling for Imbalanced Time Series Quantification",
+    "authors": [
+      "Md Shahriar Kabir, Mayesha Maliha R. Mithila, Anne H. H. Ngu, Myl\\`ene C. Q. Farias, Byron Gao"
+    ],
+    "abstract": "arXiv:2608.21473v1 Announce Type: new \nAbstract: Quantification, estimating class prevalences in bags of unlabeled instances is vital in domains where aggregate statistics are more important than individual instance labels, such as biosignal monitoring, fall detection, and activity recognition. We investigate this issue in the challenging setting of imbalanced time series data and develop CC-GMNet-TS, a class-conditioned Gaussian mixture quantifier that combines a Transformer-based feature extractor with per-class latent mixtures. Unlike previous mixture-based quantifiers, which use a single Gaussian mixture shared by all classes, CC-GMNet-TS assigns each class its own compact mixture in a bounded latent space and scores segment embeddings against these class-specific components to create bag-level representations that emphasize rare but informative patterns. Bags are constructed from labeled pools using the Artificial Prevalence Protocol (APP) and prior shift bag sampling (PShift) to cover a wide range of class prevalence scenarios, and the model is trained end-to-end with a quantification-oriented loss. Experiments on three benchmarks: EMG Data for Gestures, SmartFallMM, and UCI-HAR show that CC-GMNet-TS achieves lower error across the three benchmarks compared to traditional aggregators and recent deep quantifiers, while ablations confirm the contributions of both the Transformer backbone and class-conditioned mixtures during PShift.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21473",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21473"
+      }
+    ],
+    "relevance_score": 0.4114352360599566,
+    "max_similarity": 0.13325231687600111
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21362",
+    "title": "KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference",
+    "authors": [
+      "Srihari Unnikrishnan"
+    ],
+    "abstract": "arXiv:2608.21362v1 Announce Type: new \nAbstract: Transformer-based large language models (LLMs) incur high prefill latency because key-value (KV) tensors must be recomputed for each request. Existing prefix-caching systems reduce this cost but require prompts to share a leading contiguous prefix, limiting effectiveness when shared content appears at arbitrary positions. We present KVBoost, a chunk-level KV cache reuse system for HuggingFace-compatible decoder models that enables reuse regardless of content position. KVBoost introduces a dual-hash keying scheme that separates positional identity (prefix hash) from content identity (content hash), supporting both exact and approximate cache matches. To address attention boundary errors from independently cached chunks, KVBoost employs two repair strategies: SelectiveRecompute, which re-encodes boundary regions, and CacheBlendRecompute, which identifies and recomputes high-deviation tokens after a probe pass. The system further incorporates asymmetric KV quantization (int8/int4), adaptive chunk boundary splitting, and importance-weighted eviction under a fixed memory budget. Evaluated on Qwen/Qwen2.5-3B over 1,000 bug-localization samples, KVBoost achieves a 4.49x reduction in time-to-first-token (142.4 ms vs.\\ 639.1 ms) and outperforms prefix caching by 16%, with no loss in accuracy (99.2% vs.\\ 99.1%). KVBoost provides a practical, memory-bounded inference acceleration layer compatible with RoPE-based models without architectural modification.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21362",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21362"
+      }
+    ],
+    "relevance_score": 0.4105045260083954,
+    "max_similarity": 0.12878867350508091
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21530",
+    "title": "Multimodal Injury Risk and Performance Prediction in Tennis Using Weighted Ensemble Learning",
+    "authors": [
+      "Weihao Qu, Dongyang Wang, Ling Zheng, Francisco E. Alvarez, Shobharani Polasa, Jiacun Wang"
+    ],
+    "abstract": "arXiv:2608.21530v1 Announce Type: new \nAbstract: Machine learning has had a positive impact on the sports industry, with one of its most promising applications being the prediction of athlete performance and injury risk. Recent advances have employed state-of-the-art models to improve prediction accuracy, yet progress remains limited by data availability and the reliance on subjective observations or expert assessments. To address these limitations, researchers in sports such as soccer, basketball, and wrestling have begun integrating heterogeneous data sources, such as wearable device readings, with traditional subjective assessments. However, similar multimodal approaches remain underexplored in tennis. In this work, we propose a multimodal weighted ensemble learning framework, Predictive Athlete Readiness for Tennis (PART), to monitor athlete wellness and estimate near-term injury risk in tennis players. PART processes a wide range of inputs, including physiological metrics, training and match data, sleep information from wearable devices, self-reported questionnaires, vertical jump assessments, and motion analysis from match-play videos. From these modalities, specialized machine learning and deep learning models independently extract four athlete-specific characteristics: overall wellness, injury risk, physical capability, and playing style. To overcome the complexity of combining these diverse modalities, PART employs a supervised weighted ensemble integration strategy, assigning adaptive weights to each predictive model based on its reliability. Evaluation of multimodal data collected from nine collegiate tennis players demonstrates that PART achieves strong performance in monitoring athlete wellness and estimating near-term injury susceptibility. Beyond collegiate athletes, the framework also shows promise for recreational tennis players, offering personalized insights to mitigate injury risk and optimize performance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21530",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21530"
+      }
+    ],
+    "relevance_score": 0.4096288212574992,
+    "max_similarity": 0.18648036673596807
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21374",
+    "title": "LitReview Arena: Evaluating Literature Review Agents with Battle-Style Peer Review Platform",
+    "authors": [
+      "Ruotong Zhao, Zhiyu Chen, Xurui Liu, Haidong Xue, Dong Liang, Jigao Fu, Wu YanBiao, Yuanyi Zhen, Fengli Xu, Yong Li"
+    ],
+    "abstract": "arXiv:2608.21374v1 Announce Type: new \nAbstract: Literature reviews are essential to scientific progress, but rigorously evaluating automatically generated reviews remains difficult because many aspects of research utility depend on expert judgment rather than reference-overlap metrics. We introduce LitReview Arena, a battle-style evaluation platform with a structured protocol tailored to literature review quality: domain experts with AI paper-writing experience compare anonymized drafts, are matched to topics within their expertise, and provide dimension-wise outcomes over five literature-review-specific criteria. From this protocol, we collect approximately 3k expert judgments, each containing five dimension-wise outcomes, and show that even the strongest current systems win only 23.0% of decisive matches against human drafts on overall utility, while agentic LLMs such as Sonar Deep Research substantially outperform base language models by over 60%. We further find that existing LLM-as-a-judge methods are substantially misaligned with human experts (Spearman's rho=0.467), especially on synthesis-heavy criteria such as paper structure and research suggestions. Using the collected preference data, we provide an expert-calibrated evaluator, LitJudge, which improves alignment to Spearman's rho=0.78, comparable to inter-expert consistency; code and data are publicly available at https://github.com/VanellopeAsher/LitReview-Arena.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21374",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21374"
+      }
+    ],
+    "relevance_score": 0.4046102499723806,
+    "max_similarity": 0.1225919889662605
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21570",
+    "title": "A Reproducible, License-Aware Distillation Recipe for CPUDeployable Safety Classification",
+    "authors": [
+      "Edson Rodrigues da Cruz Filho, Paulo Ricardo Ferreira Neves, Paulo Henrique Eleuterio Falsetti, Jo\\~ao Vitor Pavan, Ian Degaspari, Henrique Vieira Laturrague, Patrick Vieira Laturrague, Guilherme Nielsen Dias, Marccello Wilson Perez Berto, Gustavo Voltani Von Atzingen"
+    ],
+    "abstract": "arXiv:2608.21570v1 Announce Type: new \nAbstract: Deploying a safety layer for large language models on commodity hardware is constrained by the guards available to do it: current open guard models hold between 1 and 9 billion parameters, are oriented toward the graphics processing unit, and answer in seconds per request on a central processing unit. This paper presents a reproducible, license-aware knowledge-distillation recipe addressing that constraint. A strong open guard labels a corpus of roughly 97,000 prompts, drawn from 24 public datasets, into seven safety categories aligned to a public hazard taxonomy, and a fleet of small students spanning lexical, shallow, encoder and generative architectures is trained to reproduce that signal. The corpus is partitioned at the license boundary, so that a deployable and a research model differ only in their training data and the cost of that restriction becomes measurable. Every model is scored against an independent gold benchmark of 6,361 rows over four slices, labeled apart from the teacher and including a slice of harmless prompts that makes over-defense measurable. The distilled students match the teachers on adversarial text within overlapping confidence intervals and reduce false alarms on harmless prompts, the smallest generative student reaching 3.8% against 4.8% for the 8-billion-parameter teacher, while the encoder classifies in roughly 24 ms per request on CPU. Per-class rebalancing is the only decisive ingredient of the recipe. No superiority over the distilled guards is claimed; on the clean reference slice they remain ahead.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21570",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21570"
+      }
+    ],
+    "relevance_score": 0.385209940458006,
+    "max_similarity": 0.09854954903200604
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21382",
+    "title": "There Is No Neutral Harness: Modern LLM Leaderboards Are Manufactured by Config-Fragile Items",
+    "authors": [
+      "V. S. Raghu Parupudi"
+    ],
+    "abstract": "arXiv:2608.21382v1 Announce Type: new \nAbstract: Multiple-choice benchmarks fix the questions and the correct answers, but not the harness: the order of the options, the wording of the prompt, and whether a language model's answer is read from generated text or from per-option likelihoods. Work on this harness sensitivity reports it as aggregate score variance, leaving unexamined which items the variance falls on and whether they are the items that separate one model from the next. We treat the evaluation harness of large language models (LLMs) as an independent variable and resolve its effect to single items. We introduce the \\textit{fragility grid}: 12 open-weight instruction-tuned LLMs from 4 families answer the same 3{,}679 items from 4 benchmarks (ARC, HellaSwag, MMLU, TruthfulQA) under 26 equally defensible harness configurations, recording one correctness bit for every model, item, and configuration. The comparison is matched, since the items, the weights, and the greedy decoding stay fixed while only the harness varies. Under the grid a model's score is a band rather than a point: gemma4-31b scores between 31 and 89 percent depending only on the harness. Three results follow. On the items that two adjacent models both answer stably the pair is tied, and config-fragile items carry 95.7 percent of a pair's gap on average. Four of the 12 models reach rank one under some configuration, so the harness selects the winner. Item discrimination, the property that benchmark-compression methods maximize, correlates with fragility at 0.28 (95 percent CI 0.25 to 0.30), so compression keeps the fragile items rather than removing them. The scoring choice, not the option order that protocols usually fix, is the load-bearing axis. We release the per-item records and the analysis script, from which every number regenerates on a CPU in seconds, and we position the fragility grid as a check a leaderboard can run before it reports an order.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21382",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21382"
+      }
+    ],
+    "relevance_score": 0.3815783683952484,
+    "max_similarity": 0.0961761240151072
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21379",
+    "title": "RIACT: A Responsible AI System for Personalized Study Habit Tracking and Early Burnout Signal Detection in University Students",
+    "authors": [
+      "Ria Sidhu"
+    ],
+    "abstract": "arXiv:2608.21379v1 Announce Type: new \nAbstract: Student burnout is highly prevalent in higher education, with reported rates ranging from 12% to over 70% and consistently exceeding those of the working population - yet it is typically identified only retrospectively, after academic decline has already occurred. A contributing factor is that students have little structured visibility into their own study behaviour, and existing productivity tools record activity without interpreting it. This paper presents RIACT (Record, Insight, Analyze, Coach, Track), a web-based application that combines structured study session logging with a hybrid AI architecture to surface personalized insights and early burnout signals. Students log sessions by location and time; the system computes net focus time by accounting for breaks, detects burnout signals through transparent, deterministic rules operating on week-over-week behavioural comparisons, and uses a large language model - constrained to a fixed output schema - to contextualize patterns and generate personalized recommendations. The design embeds responsible AI principles throughout: warnings are governed by auditable rules rather than model judgement, all output is framed as an observation rather than a diagnosis and data collection is limited to self-logged behavioural fields. We describe the system's design rationale, situate it within the literature on student burnout and explainable AI in education and propose an evaluation framework for validating its behavioural signals against established burnout instruments.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21379",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21379"
+      }
+    ],
+    "relevance_score": 0.2880647008786672,
+    "max_similarity": 0.10287821172357277
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.21444",
+    "title": "Agentic AI for Safety-critical Multi-drone Systems: Challenges and Opportunities",
+    "authors": [
+      "Timothy Merritt, Alejandro Jarabo-Pe\\~nas, Juan Bravo-Arrabal, Maria-Theresa Bahodi, Anders Lyhne Christensen"
+    ],
+    "abstract": "arXiv:2608.21444v1 Announce Type: new \nAbstract: Multi-drone systems are increasingly positioned for safety-critical missions such as search and rescue (SAR) and critical infrastructure monitoring. Yet, real-world adoption remains constrained not only by autonomy performance, but by the difficulty of integrating agentic behavior into professional work: operators must understand, trust, and govern automation under uncertainty, time pressure, and accountability. This position paper synthesizes the ambitions and lessons from two ongoing efforts: NAMUR, which explores LLM-supported robot control in SAR and firefighting contexts, and PERSIST, which explores persistent drone operations for monitoring and security at critical infrastructure sites. We argue that agentic AI should be approached as a socio-technical design problem, where interfaces, oversight mechanisms, and evaluation practices are as critical as algorithms. We outline a human-centered, participatory, and iterative research approach aimed at uncovering stakeholder needs, shaping agent capabilities through successive prototypes, and producing transferable proof-of-concept systems and evaluation strategies for other safety-critical contexts.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "updated": "Tue, 25 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.21444",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.21444"
+      }
+    ],
+    "relevance_score": 0.22105985773511855,
+    "max_similarity": 0.14324643902829365
+  }
+]
