@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.23740",
+    "title": "AgentRoom: Concurrent Multi-Agent Coding in a CRDT-Backed Shared Workspace",
+    "authors": [
+      "Seonglae Cho, Donghyun Lee"
+    ],
+    "abstract": "arXiv:2608.23740v1 Announce Type: new \nAbstract: Concurrent multi-agent coding promises division of labor across modules, robustness through redundancy, and parallel exploration at the natural granularity of multi-file projects. Realtime collaborative editing protocols solve this coordination problem for human teams via Conflict-free Replicated Data Types (CRDTs), but the LLMs underneath generate one token at a time and existing multi-agent coding systems inherit this serial limit: they either sequence agents through phase handoffs or pool independent samples without coordination, and a single agent abandons up to half of hard tasks with a one-file stub-and-exit. AgentRoom is a realtime collaborative editing protocol for concurrent coding agents. Its runtime layer exposes file-level claim, status, and broadcast as MCP tools on a CRDT-merged shared filesystem. Five frontier coding-CLI models ran four backend coding tasks, with cross-language checks in Python DevBench and Rust+axum. For CLI-stable models, AgentRoom with 2 agents abandons fewer tasks than Solo and has less run-to-run variation. At matched-compute, one positive mean LLM-judge contrast puts AgentRoom over parallel-merge. The other contrast, a bundle probe, puts full AgentRoom above each partial case: an ordering rather than a percentage split. Coordination, not parallelism or CRDT-merge, bears the load.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23740",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23740"
+      }
+    ],
+    "relevance_score": 0.5302877798651819,
+    "max_similarity": 0.2790543881083811
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.24949",
+    "title": "Demystifying Reinforcement Learning Post-Training of Language Models",
+    "authors": [
+      "Donovan Clay, Saket Gollapudi, Sankar Harilal, Min Jang, Jacob Morrison, Sewoong Oh, Natasha Jaques"
+    ],
+    "abstract": "arXiv:2608.24949v1 Announce Type: new \nAbstract: Reinforcement learning (RL) post-training has emerged as a powerful framework for enhancing the capabilities of large language models (LLMs), enabling impressive reasoning, math, and coding capabilities. Yet for many researchers and practitioners, the principles behind classical RL remain a \"black box\". In this work, we deconstruct the RL post-training algorithm, investigating each step to clarify what is actually happening beneath the surface. By isolating the mechanics of RL with Verifiable Rewards in a controlled and simplified environment, we examine how RL outcomes are shaped by the base model's prior distribution, the granularity of the reward signal, the diversity of the prompt distribution, and model scale. We use the entropy of the policy's output distribution as a lens to compare the distributions learned through pretraining, SFT, and RL post-training, revealing how each stage shapes model certainty. Our investigation sheds light on how these choices interact to affect post-training success. For example, we show that the effect of so-called 'spurious rewards' depends on the prompt distribution used for post-training. We also provide insight into why the success of RL post-training depends on whether the base model already places sufficient probability mass on the desired behavior, linking it to the classical concept of exploration in RL. Ultimately, we provide this primer as a resource to those in the NLP community wishing to incorporate RL as a tool in their toolbox.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.24949",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.24949"
+      }
+    ],
+    "relevance_score": 0.5121537638930557,
+    "max_similarity": 0.25798837398399527
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23622",
+    "title": "LLM Agents Perform Controlled Experiments Using Simulation Models",
+    "authors": [
+      "Yuchen Xia, Michael Weyrich, Nasser Jazdi, Johannes St\\\"umpfle, Johannes Sigel, Akshay Narla, Gavin K. Reynolds, Anna Jawor-Baczynska, Pol Llopart"
+    ],
+    "abstract": "arXiv:2608.23622v1 Announce Type: new \nAbstract: Large language models (LLMs) have shown strong capabilities in reasoning, planning, and tool use, but many scientific and engineering tasks require more than plausible text and code generation. They require understanding how a system responds to intervention, which in practice depends on controlled experimentation. In this work, we propose a multi-agent framework that enables LLM agents to conduct controlled experiments with scientific simulation models for pharmaceutical process design. Given a user query and a baseline configuration, the system constructs a structured task representation, designs experiments, executes comparative simulation, interprets the resulting outcomes, and synthesizes evidence-based recommendations for process parameter optimization. By coupling language models with high-fidelity simulation models in an interactive agent framework, the proposed system supports reasoning through intervention, comparison, and observation. As a result, it produces more specific and actionable outputs than language-only reasoning. In an industrial application setting, this advantage is reflected in higher output specificity as well as improved user-rated correctness and helpfulness. Ablation studies and visualized case analyses further demonstrate the effectiveness and practical utility of simulation-integrated experimental reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23622",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23622"
+      }
+    ],
+    "relevance_score": 0.5061357695437793,
+    "max_similarity": 0.24405564088775217
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.24945",
+    "title": "FAMPWQ: Fisher Information-based Adaptive Mixed Precision Weight Quantization for Effective LLM Inference",
+    "authors": [
+      "Gongwei Lee, Ji Liu, Juncheng Jia, Ji Wu"
+    ],
+    "abstract": "arXiv:2608.24945v1 Announce Type: new \nAbstract: Recent years have witnessed remarkable achievements of Large Language Models (LLMs) in multiple domains, while the excessive resource requirements of LLMs hinder the deployment on resource-constrained devices. Although model quantization stands out as an effective approach, conventional quantization approaches typically incur severe performance degradation due to uniform bit-width or simple heuristic sensitivity evaluation. In this paper, we propose a novel Fisher information-based Adaptive Mixed Precision Weight Quantization approach, i.e., FAMPWQ, which performs layer-adaptive weight quantization for effective LLM inference on commodity GPUs. First, we propose a system model with a novel Fisher information metric to measure the layer-wise sensitivity to quantization. Second, we propose a reinforcement learning-based bit-width allocator in FAMPWQ, which generates an adaptive bit-width allocation strategy based on the Fisher information sensitivity metric. Extensive experiments on 7 models and 5 benchmarks demonstrate that FAMPWQ significantly outperforms 7 baseline approaches in terms of PPL (up to 3.39 smaller), accuracy (up to 6.87% higher), and LLM-as-a-judge comparison (up to 76% win rate).",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.24945",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.24945"
+      }
+    ],
+    "relevance_score": 0.46046695840145246,
+    "max_similarity": 0.1891830144221134
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23811",
+    "title": "Generating Biomedical Fact-Checking Reports with RL-Enhanced Agentic Search",
+    "authors": [
+      "Jiongxiao Wang, Dingli Ma, Chaoqun Ni"
+    ],
+    "abstract": "arXiv:2608.23811v1 Announce Type: new \nAbstract: Automated fact-checking is essential for ensuring the reliability of public health information, yet the biomedical domain poses unique challenges. Validating biomedical claims requires rigorous interpretation of scientific literature, assessment of retrieved evidence, and comprehensive justification toward the conclusion. Although Large Language Models (LLMs) enhanced by Retrieval-Augmented Generation (RAG) and agentic search perform automated fact-checking in a retrieve-then-verify paradigm, current methods still output isolated prediction labels, lacking explanatory depth and offers limited utility for human understanding. To bridge this gap, we introduce an LLM-based agent named BioCheck Agent that generates structured biomedical fact-checking reports with agentic search. Rather than merely outputting supported or refuted labels, our agent synthesizes final conclusions with retrieved evidence and rigorous analysis. To ensure domain-specific accuracy, BioCheck Agent exclusively searches high-quality scientific literature in PubMed, utilizing advanced Boolean search operators. Recognizing that direct prompting often results in hallucinations and low-quality reports, especially for lightweight open-source models, we further propose the Evidence-Grounded Group Relative Policy Optimization (EG-GRPO) to perform reinforcement learning on BioCheck Agent with a task-specific reward that incentivizes advanced search behavior and high-quality evidence retrieval while penalizing hallucinations. Our experimental results show that compared to the base model Qwen3.5-4B, BioCheck Agent with EG-GRPO improves label prediction accuracy on SciFact by 9.95%. Furthermore, it achieves a 3.7% higher evidence quality score and a 19.63% lower evidence hallucination rate, demonstrating its ability to generate biomedical fact-checking reports with improved accuracy and quality.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23811",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23811"
+      }
+    ],
+    "relevance_score": 0.4444527426647362,
+    "max_similarity": 0.16654367818327445
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23644",
+    "title": "Ethical LLM-Assisted Research: A Framework for Responsible Delegation, Verification, and Epistemic Value",
+    "authors": [
+      "Kalin Stoyanov"
+    ],
+    "abstract": "arXiv:2608.23644v1 Announce Type: new \nAbstract: Large language models (LLMs) are becoming routine instruments of scientific research, assisting with literature synthesis, hypothesis development, coding, and formal reasoning. Their use raises a central epistemic question: when parts of scientific reasoning are delegated to an artificial system, what conditions must remain under human control for the resulting knowledge claims to retain epistemic legitimacy and accountable authorship? This paper develops a normative and conceptual framework for analyzing such delegation. Scientific reasoning is treated as a distributed process in which the origin of a contribution may vary between human and machine, while responsibility for its acceptance into the scientific record remains human. The framework distinguishes content origin $O(g)$, completion of human verification $V(g)$, responsibility assignment $R(g)$, accountable human ownership $M(g)$, and epistemic outcome $E(g)$. These constructs separate the provenance of a claim from the process by which it is checked, the epistemic outcome of that checking, and the human responsibility attached to its disposition. The central proposition is that the ethical boundary of LLM-assisted research is determined primarily by adequate verification and accountable human ownership rather than by the degree of machine involvement itself. On this basis, the paper develops the notion of an \\emph{epistemic audit}: a structured record of delegation, verification, provenance, and responsibility intended to make AI-assisted reasoning transparent and reviewable. The resulting framework provides a formal vocabulary for distinguishing responsible cognitive delegation from the transfer or neglect of epistemic responsibility in scientific research.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23644",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23644"
+      }
+    ],
+    "relevance_score": 0.4404022031825282,
+    "max_similarity": 0.16831032675646576
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.24954",
+    "title": "AFDBench: A Reasoning-First AI Scientist for NationalWeather Service Forecast Discussions",
+    "authors": [
+      "Manmeet Singh, Somnath Luitel, Prabhjot Singh, Manraaj Banga, Naveen Sudharsan, Josh Durkee"
+    ],
+    "abstract": "arXiv:2608.24954v1 Announce Type: new \nAbstract: Large language models (LLMs) hallucinate numerical values when generating high-stakes meteorological text, posing risks for weather communication. We present AFDBench, an AI meteorologist that generates professional Area Forecast Discussions (AFDs) by reasoning through structured AI weather forecast data from Google's WeatherNext 2. We introduce AFDBench, the first benchmark for evaluating generative meteorological reasoning, comprising 7,732 expert written discussions from 13 National Weather Service (NWS) offices paired with real AI weather forecast inputs, and three complementary metrics: Met-Align (numerical accuracy), Style-Align (professional dialect adherence), and Input-Grounding (fidelity to source weather data). Zero-shot evaluations reveal that open-source LLMs achieve low Style-Align (~0.33) and moderate Input-Grounding (~0.88), failing to write in the professional NWS register or faithfully use their input data. We apply Group Relative Policy Optimization (GRPO) with domain-specific rewards targeting temperature accuracy, synoptic correctness, and format compliance. On 1,033 held-out samples from two unseen NWS offices, GRPO nearly doubles Style-Align from 0.318 to 0.619 and improves Input-Grounding from 0.881 to 0.940, demonstrating that reinforcement learning teaches a 7B-parameter model to write like a professional meteorologist and faithfully interpret AI weather data.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.24954",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.24954"
+      }
+    ],
+    "relevance_score": 0.43334691695396454,
+    "max_similarity": 0.1573572996306436
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23646",
+    "title": "MolEmb: Multimodal Large Language Models Can Be Strong Molecular Embedding Models",
+    "authors": [
+      "Xinjian Zhao, Xiangru Jian, Yaoyao Xu, Xiaozhuang Song, Wei Pang, Lei Bai, Tianshu Yu"
+    ],
+    "abstract": "arXiv:2608.23646v1 Announce Type: new \nAbstract: Molecular embedding models can serve as foundational infrastructure for computational chemistry and drug discovery, where reusable vector representations support property prediction, virtual screening, and retrieval. Most molecular encoders are specialist models built around a single molecular view, producing unconditional vectors with no language interface for varying the representation. We ask whether multimodal large language models (MLLMs), which natively process images, text, and symbolic inputs, can instead serve as \\emph{general molecular embedding models} that produce embeddings conditioned on both a molecular profile and a natural-language semantic context. We introduce \\textbf{MolEmb}, a lightweight framework that adapts MLLMs by aligning molecular profiles with textual descriptions in a shared embedding space using a bidirectional contrastive objective. The resulting embedding model is competitive on molecular property prediction and supports cross-modal molecule--text retrieval in the same space. We further introduce \\textbf{MolCAR}, a diagnostic benchmark for context-aware retrieval, and find that context-aware molecular embedding is primarily a data property of the supervision. These results suggest that MLLMs are not merely chemistry assistants or generators, but a viable and extensible route to general molecular embedding models.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23646",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23646"
+      }
+    ],
+    "relevance_score": 0.4313991374333239,
+    "max_similarity": 0.1515042941174095
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23568",
+    "title": "RENDER: Controlling Reader-Facing Evidence in LLM Memory Evaluation",
+    "authors": [
+      "Yuan Si, Simeng Han, Daming Li, Jialu Zhang"
+    ],
+    "abstract": "arXiv:2608.23568v1 Announce Type: new \nAbstract: Memory and RAG evaluations often treat the answering model's input as an implementation detail, even though systems may render the same history as a memory entry, summary, typed record, or raw excerpt. We introduce RENDER, a benchmark control that fixes the conversation while varying the reader-facing artifact. RENDER combines a five-level packet ladder, localizing when answer-bearing content enters the input, with deterministic templates approximating ChatGPT-style entries, LangChain summaries, MemGPT-style typed records, and raw conversation. On 500 LongMemEval questions and nine models, matched-budget resolved packets beat recency-truncated raw dialogue by 42.4-72.6 points. In deployed-style templates, best-worst spread is 24.6-48.8 points per model; under the primary scorer, ChatGPT-style entries have higher point estimates than raw conversation on 7 of 9 models. Judge rescoring preserves the positive aggregate effect, but model-specific significance is mixed. Three models scoring 0 percent on formal ledger packets answer the same facts from natural-language entries at 45.4-53.4 percent. The effect persists under retrieval noise and transfers to HotpotQA, suggesting that memory/RAG evaluations should report or control the reader-facing artifact.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23568",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23568"
+      }
+    ],
+    "relevance_score": 0.4231403420880393,
+    "max_similarity": 0.14615186391105428
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.24946",
+    "title": "MacroAgent: Regularity-Aware Macro Legalization with LLM-Agent-Designed Contour Algorithms",
+    "authors": [
+      "Jiaxi Jiang, Xufeng Yao, Yuxuan Zhao, Yuntao Lu, Peiyu Liao, Zuodong Zhang, Yibo Lin, Bei Yu"
+    ],
+    "abstract": "arXiv:2608.24946v1 Announce Type: new \nAbstract: Macros constitute a large part of the core area in modern very large-scale integration (VLSI) designs. Moreover, macro positions have a significant impact on the final quality of result (QoR), and macro legalization is typically the final step in determining the macro positions. However, existing approaches related to macro legalization either lack robustness or incur substantial computational costs or neglect the regularity between macros. To address these limitations, we introduce MacroAgent. The novel framework is a four-stage approach: clustering, contour generation, template matching, and inter-cluster refinement. We propose leveraging Large Language Models (LLMs) to discover multiple, effective heuristic regularity-aware contour algorithms. This framework successfully generates robust and effective algorithmic solutions for macro legalization. Compared with state-of-the-art macro legalization works, experimental results on TILOS and Chipyard benchmarks demonstrate a 2 to 8 fold improvement in layout regularity, a 3% to 5% reduction in routed wirelength with comparable congestion after global routing, and significantly better robustness with an acceptable runtime. Furthermore, end-to-end evaluation through Cadence Innovus place-and-route confirms that the regularity improvements translate into tangible PPA gains, including 2.9% lower routed wirelength and 68.3% TNS improvement over the DREAMPlace macro legalization baseline; it also achieves 1.8% lower routed wirelength when integrated into the Innovus macro placement flow.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.24946",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.24946"
+      }
+    ],
+    "relevance_score": 0.4118750169138685,
+    "max_similarity": 0.1283141522758129
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23640",
+    "title": "Auditing the Synthetic Memoir: Measuring Scene-Level Confabulation in LLM-Generated Autobiography Against the Documented Record of the Life It Describes",
+    "authors": [
+      "Heather Renze"
+    ],
+    "abstract": "arXiv:2608.23640v1 Announce Type: new \nAbstract: When a large language model (LLM) is asked to write a person's life, how much of what it writes actually happened? We present a scene-level case-study audit - the first quantified audit of LLM-generated autobiography against a subject-specific ground-truth corpus that we are aware of, based on an unsystematic literature search. The subject and the author of this paper are the same person: a 366-day \"page-a-day\" book of first-person anecdotal entries was drafted with a conversational LLM whose documented inputs were a template, two exemplar days, and each day's quote - not her corpus - and every day was subsequently audited at the anecdote-scene level against an independent verification corpus using a four-level rubric fixed before analysis. We define the verification-failure rate as the share of days not rated VERIFIED (scene positively corroborated): 354 of 366 days fail, 96.7% (Wilson 95% CI 94.4-98.1%). Only 12 days contain a corroborated scene; 19 days (5.2%) assert claims actively contradicted by the record; the dominant failure mode is grounded drift - real people, employers, and settings inside invented scenes - though its measured share varies across raters. Independent re-rating replicates the headline (no evidence the original rate was inflated) while showing that the four-way taxonomy has only fair-to-moderate reliability. Regenerating the same days with current named models reproduces 100% verification failure under the same inputs; grounding generation in the subject's corpus significantly improves the verification rate while leaving substantial residual failure (83.3%). We contribute the measurement, a reusable audit instrument whose WEAK/UNVERIFIED boundary we show to be unreliable, and a grounding remedy with quantified effect.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23640",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23640"
+      }
+    ],
+    "relevance_score": 0.41019161162226714,
+    "max_similarity": 0.1313049054687104
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23666",
+    "title": "Gated Activation Steering for Reducing Sycophancy & Hallucination in Medical Question Answering",
+    "authors": [
+      "Himanshu Tripathi, Subash Neupane, Shaswata Mitra, Sudip Mittal, Noorbakhsh Amiri Golilarz, Shahram Rahimi"
+    ],
+    "abstract": "arXiv:2608.23666v1 Announce Type: new \nAbstract: Sycophancy and hallucination are persistent failure modes of Large Language Models (LLMs) across domains. However, it becomes particularly consequential in clinical question answering, where responses must remain grounded in the provided context and robust to user pressure. Hallucination can introduce information that is unsupported by the context, while sycophancy can cause a model to abandon a previously correct answer when challenged by the user. Existing approaches, such as prompt-based safeguards and always-on activation steering, often address these behaviors separately or apply interventions broadly across turns, which can unnecessarily deteriorate responses that were already correct. To address these limitations within a single framework, we employ Inference Time Intervention (ITI) to jointly control both behaviors by learning separate steering directions for hallucination and sycophancy from contrastive clinical pairs and applying them to causally verified attention heads. During runtime, behavior-specific gates then determine when intervention is needed: the hallucination component mitigates unsupported claims, while the sycophancy component mitigates answer shifts caused by user pressure. We evaluate this framework on clinical questions grounded in EHR data while keeping the model weights frozen. Across all evaluation settings, we conducted 15,900 model-response runs. Across 600 pressure trajectories for the 4-billion-parameter model, the unsteered model caved in 570 cases. At the same time, gated steering helped it last longer in 551 of them. It held its ground under pressure at levels comparable to those of models with more than 100 billion parameters, showing that targeted inference-time steering can improve robustness without intervening at every turn.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23666",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23666"
+      }
+    ],
+    "relevance_score": 0.40330262187175286,
+    "max_similarity": 0.11866103957784488
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23807",
+    "title": "Serving Masked Diffusion LLMs: Characterization and Design Principles from Real Hardware",
+    "authors": [
+      "Farhana Amin, Sabiha Afroz, Mona Moghadampanah, Dimitrios S. Nikolopoulos"
+    ],
+    "abstract": "arXiv:2608.23807v1 Announce Type: new \nAbstract: Masked diffusion language models (dLLMs) can in principle generate text faster than autoregressive (AR) models, since they denoise many tokens at once. Recent systems have begun building serving infrastructure for dLLMs, but none first measure how these models behave under real, concurrent serving load. Serving systems built without this grounding risk carrying over assumptions from AR serving that may not hold for dLLMs. We characterize dLLM serving to close this gap, using LLaDA-8B-Instruct with a D2F (Discrete Diffusion Forcing) LoRA adapter on a single NVIDIA H200 GPU, evaluated on GSM8K and HumanEval. We report three findings. First, request difficulty, the number of denoising steps a request needs, is discrete rather than continuous: requests fall into 11 fixed step-count levels (178 + 29k), and no signal we test predicts the level before generation starts (best R2 = 0.150). Second, benchmarks with short generation budgets below 320 tokens understate serving variance, since requests are cut off before the latency spread appears. Third, only 24% of single-request wall-clock time is GPU computation; the rest is CPU-side dispatch overhead. Batching mainly helps by amortizing this overhead: sharing one forward pass per denoising step improves throughput by 16.0x at batch size 16 over a per-request-dispatch baseline. We also argue structurally that output quality should not degrade with batch size, stating three assumptions this rests on; we measure 74 to 76% GSM8K accuracy at single-request scale. Finally, we derive a batch-timeout rule for fixed-fill synchronized batching under Poisson arrivals. Together, these results show that serving diffusion language models needs parallelism at the level of each denoising step, which differs from AR serving in how admission and eviction interact with an already shared forward pass.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23807",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23807"
+      }
+    ],
+    "relevance_score": 0.4009284417183062,
+    "max_similarity": 0.11968149119478971
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.24940",
+    "title": "When Does Frequency Decomposition Benefit Physics-Informed Neural Networks? A Preliminary Ablation Study",
+    "authors": [
+      "Shubham Rai"
+    ],
+    "abstract": "arXiv:2608.24940v1 Announce Type: new \nAbstract: Partial differential equations (PDEs) often have high-frequency and multi-scale features that neural networks struggle to approximate. Physics-Informed Neural Networks (PINNs) build the governing equations directly into training, but suffer from spectral bias: they learn low-frequency components faster than high-frequency ones. Techniques such as Fourier feature embeddings and sinusoidal activations address this, but most studies assume they help across the board without checking which spectral regimes actually benefit. We introduce a dual-branch, spectrally-gated architecture (DBSG-PINN) that splits low- and high-frequency components into separate subnetworks joined by an adaptive gate, and use it to run a partially controlled ablation of frequency decomposition and spectral routing. We test this on five one-dimensional benchmark PDEs, ranging from smooth, single-scale problems to oscillatory, multi-scale ones. Frequency decomposition helps most on the spectrally complex benchmarks, cutting relative $L_2$ error by up to $59.2\\%$ on a multimodal wave problem, but gives little benefit on smoother PDEs. On one benchmark (1D Wave), it performs substantially worse than a simpler fixed-combination variant. The gate's benefit scales with how spectrally rich the target solution is: the full model's advantage over the ablations is largest on multi-scale benchmarks and smallest (or negative) on single-scale ones, consistent with the gate exploiting frequency structure rather than acting as noise,though we do not directly visualize or quantify its spatial activations in this study. All results come from a single training seed across five 1D benchmarks, so we present this as an exploratory study meant to raise questions rather than answer them, and outline the additional seeds and benchmarks needed to test whether the pattern holds.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.24940",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.24940"
+      }
+    ],
+    "relevance_score": 0.38511414543263467,
+    "max_similarity": 0.2245068552177942
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.24947",
+    "title": "CAT-GS: Balanced Multimodal Learning via Calibrated Gating and Fusion Surgery",
+    "authors": [
+      "Mahir Shahriar Tamim, Sharjil Khan, Md. Samiul Alim, Tanvir Ahmed Khan, Shafin Rahman, Nabeel Mohammed"
+    ],
+    "abstract": "arXiv:2608.24947v1 Announce Type: new \nAbstract: End-to-end training of multimodal neural networks often exhibits unstable neural dynamics characterized by three coupled failure modes that degrade learning: (i) modality imbalance, where one branch dominates gradient-based optimization; (ii) unstable gating, where noisy confidence cues induce erratic modality selection; and (iii) fusion interference, where modality-specific gradients conflict at the shared fusion layer. We propose CAT-GS (Calibrated, Adaptive, Thresholded Gating with Fusion Surgery), a neural dynamics-based optimization controller for intelligent computing applications. CAT-GS operates during backpropagation without modifying model architectures, fusion modules, or task losses. Through calibration of teacher-derived reliability via temperature scaling and EMA smoothing, CAT-GS stabilizes neural dynamics using a margin-thresholded policy to switch between warm-up dropout, weak-modality prioritization, and weak-biased blending, stabilizes gradient magnitudes under aggressive gating via capped gradient-budget renormalization, and applies fusion-only PCGrad to reduce destructive cross-modal interference at the primary shared bottleneck. We evaluate CAT-GS on audio--visual multimodal pattern recognition benchmarks (CREMA-D, AV-MNIST, and VGGSound), a tri-modal setting (UR-FUNNY), controlled synthetic data (CG-MNIST), and additional cross-domain benchmarks (AVE and CMU-MOSI). CAT-GS improves or matches fused multimodal accuracy against strong imbalance-aware baselines (including OGM-GE, G$^2$D, and UMT) across settings, and yields smoother gating behavior with fewer conflicting fusion gradients.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.24947",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.24947"
+      }
+    ],
+    "relevance_score": 0.3698715890689403,
+    "max_similarity": 0.14009670293800155
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.24938",
+    "title": "ExFold: Unified Expert Folding for Training-Free MoE Prefill-Decode Acceleration",
+    "authors": [
+      "Juntong Wu, Yifei Liu, Junyi Chen, Siqi Fan, Chaoran Feng, Minghao Li, Liujie Zhang, Weihang Chen, Li Yuan"
+    ],
+    "abstract": "arXiv:2608.24938v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) models scale capacity for strong quality while keeping per-token compute bounded through sparse expert activation. Yet low-latency MoE serving is increasingly challenging, because it spans two inference phases with fundamentally different bottlenecks: prefill is dominated by token-wise expert computation, whereas decode is constrained by memory traffic from the batch-wise activated expert set. However, existing training-free acceleration methods optimize only a single resource proxy, either the experts each token executes or the experts a batch activates, and either discard the excluded experts' contribution or leave it only implicitly approximated. In this paper, we propose ExFold, a unified training-free expert-folding framework for jointly accelerating MoE prefill and decode. ExFold casts both prefill and decode as one budgeted output-approximation problem: execute only a phase-specific constrained expert set while projecting the contribution of budget-excluded experts onto retained experts using calibrated scalar projectors. Motivated by the observation that many expert outputs are directionally aligned but differ in magnitude, ExFold calibrates a pairwise scalar-projector matrix on unlabeled data and uses it at inference time to fold excluded expert contributions into retained experts. Under this view, prefill acceleration becomes token-level Top-K folding, and decode acceleration becomes batch-level expert-pool folding. The two phases differ only in how retained experts are selected, while excluded contributions are recovered by one shared folding mechanism. We implement ExFold as a plug-and-play plugin in vLLM, with a lightweight expert-folding CUDA kernel, delivering up to 1.41x TTFT and 2.45x TPOT speedups while retaining about 99% of the original average quality.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.24938",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.24938"
+      }
+    ],
+    "relevance_score": 0.36929019070416486,
+    "max_similarity": 0.1437584156467802
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23632",
+    "title": "Function-Level Execution Feedback for Code Preference Optimization",
+    "authors": [
+      "Idris Nechnech, Sehwan Kim, Jimin Seo, Yeongoon Kim, Minhae Oh, Sangwoo Hong, Jungwoo Lee"
+    ],
+    "abstract": "arXiv:2608.23632v1 Announce Type: new \nAbstract: Process supervision has improved mathematical reasoning, where intermediate steps are naturally expressed as chains of thought. In code generation, however, process supervision remains underexplored because there is no standard notion of a step. Supervision can target lines, reasoning traces, or program states, making it unclear what to label and optimize. We propose STEP-KTODER, a framework for code preference optimization that defines steps as module-level functions in decomposed multi-function programs and assigns binary correctness labels via automatically generated unit tests. Our method provides a code-specific instantiation of stepwise KTO, combining function-level process supervision with outcome-level feedback on the full program. We evaluate on HumanEval(+), MBPP(+), BigCodeBench, and LiveCodeBench, showing that STEP-KTODER improves over outcome-only KTO and DPO. Further analysis shows that execution-based labels are essential: LLM-as-a-judge annotations systematically over-predict function failures, corrupt positive step labels, and degrade downstream preference optimization. Code is available at: https://github.com/inechnech/STEP-KTODER.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23632",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23632"
+      }
+    ],
+    "relevance_score": 0.35460514094298606,
+    "max_similarity": 0.12269116140631235
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23631",
+    "title": "TRACE: Transition-Aware Residual Control for Multi-Objective Materials Discovery",
+    "authors": [
+      "Kang Zhou, Yujia Tong, Yong Tao, Jingling Yuan"
+    ],
+    "abstract": "arXiv:2608.23631v1 Announce Type: new \nAbstract: Multi-objective materials discovery with LLM agents is often limited not only by how many candidates can be proposed, but by how effectively each costly property evaluation informs the next search step. Existing agents mainly store evaluated candidates and their scores, so they know which materials succeeded but not which executable edits caused useful property changes. This makes local refinement difficult when objectives compete and an edit that improves one property may damage another. We propose TRACE, a transition-aware residual control framework that treats evaluated edits as the basic unit of feedback. TRACE records each local refinement as a parent-edit-child transition with observed property deltas, aggregates transition evidence to estimate reusable edit effects, and ranks future edits by their predicted ability to reduce the current candidate's remaining constraint violations while avoiding damage to already satisfied objectives. In a controlled same-backbone comparison, TRACE improves over LLEMA, the state-of-the-art LLM-agent baseline, raising macro-average hit rate from 18.13\\% to 25.96\\%.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23631",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23631"
+      }
+    ],
+    "relevance_score": 0.32913031235141327,
+    "max_similarity": 0.09268070838032452
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23670",
+    "title": "Automata from Agent Traces: Failure and Next-Step Prediction",
+    "authors": [
+      "Seonglae Cho, Franklin Cardenoso Fernandez, Umar Mohammed, Zekun Wu, Kleyton Da Costa, Ilham Wicaksono, Adriano Koshiyama"
+    ],
+    "abstract": "arXiv:2608.23670v1 Announce Type: new \nAbstract: LLM-based agents execute multi-step tasks, but their behavioral structure remains opaque: long unstructured traces resist the safety auditing and runtime monitoring that deployment requires. Existing approaches operate per-trace or success-only, so they miss the cross-run topology that links next-step and failure prediction. To recover that shared structure, we collapse an entire trace corpus into a single, compact finite-state machine (FSM) that serves as a structural substrate for the otherwise unpredictable behavior of LLM agents. Across twelve public datasets, the FSMs are compact (7-43 states), replay held-out data at >=0.997 fitness with near-identical topology across splits, and build in milliseconds. This substrate addresses both prediction goals. For next-step prediction, FSM-state context outperforms Agent Workflow Memory on every ground-truth-matched dataset. For failure prediction, per-state behavioral features reach held-out AUROC up to 0.94, and an online monitor ranks failing runs above passing ones from a partial trace, triggering early stopping well before completion. Behavioral topology thus appears shaped more by the deployment harness than by the LLM, providing a model-agnostic structural primitive for safety auditing and runtime monitoring.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23670",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23670"
+      }
+    ],
+    "relevance_score": 0.32908428237156223,
+    "max_similarity": 0.15346543001407748
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.23706",
+    "title": "Do LLMs Understand Limit Order Book Dynamics?",
+    "authors": [
+      "Junxiao Chen, Paul Glasserman"
+    ],
+    "abstract": "arXiv:2608.23706v1 Announce Type: new \nAbstract: A large language model (LLM) trained on synthetic limit order book (LOB) data achieves near perfect scores in generating valid sequences of LOB events. However, the LLM's implicit world model fails to learn the state of the LOB. This deficiency leads to biased estimates and spurious predictability in using the LLM to forecast future LOB events. Our analysis uses novel tests of an LLM's world model, extending prior work from deterministic settings to the stochastic dynamics needed for the LOB.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "updated": "Thu, 27 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.23706",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.23706"
+      }
+    ],
+    "relevance_score": 0.2938791089284484,
+    "max_similarity": 0.17301052526767807
+  }
+]
