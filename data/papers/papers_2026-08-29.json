@@ -1,0 +1,218 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.26317",
+    "title": "Modality Maturity Index: A benchmark for assessing multimodal capabilities of omni models",
+    "authors": [
+      "Rohit Patel, Dieuwke Hupkes, Sloan Strader"
+    ],
+    "abstract": "arXiv:2608.26317v1 Announce Type: new \nAbstract: Frontier language models are increasingly marketed as omni systems that can perceive and respond across modalities. Existing evaluation frameworks, however, focus almost exclusively on bimodal understanding, typically text plus one other modality. We propose the Modality Maturity Index (MMI), a benchmark designed to evaluate the multimodal capabilities of large language models across five modalities (text, image, audio, video and document) and combinations of up to three modalities in both inputs and outputs. MMI consists of 893 questions, each carefully crafted to require the model to demonstrate its understanding of multiple input modalities and to generate responses that incorporate various output formats. The questions are designed to be self-contained, with clear expectations for the correct modality or mix of modalities required for an accurate response. Every MMI prompt carries human-authored rubric criteria for each output modality expected in the response; a model's MMI Value expresses the average of the per-modality scores for each prompt. Because low scores can reflect either failure to generate a modality (lack of presence) or failure to generate correct content, we introduce also a supplementary Modality Presence Score (MPS), a per-prompt F1 over the expected output modalities. Applying MMI to five frontier multimodal models, we find that the MPS ranges from only 15.6 (Claude Opus 4.6) to 34.9 (GPT-5.4). Given the low availability of returned modalities to even grade, we report MPS as our main result pending model improvements. To assess the viability of judging output correctness with LLM judges and rubrics, we run a separate experiment with custom generation tools. On the assets that generates, we find that an LLM judge applying the rubrics agrees with rubric-blind human annotators (who score the outputs directly and never see the criteria) on 70.8% of judgments.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.26317",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.26317"
+      }
+    ],
+    "relevance_score": 0.5071784308243267,
+    "max_similarity": 0.24721942365321045
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.26238",
+    "title": "Procedura: Agentic 3D Modeling with Procedural Control",
+    "authors": [
+      "Youtian Lin, Yikang Yang, Zhanpeng Hu, Mengqi Zhou, Feihu Zhang, Xun Cao, Jiaheng Liu, Yao Yao"
+    ],
+    "abstract": "arXiv:2608.26238v1 Announce Type: new \nAbstract: Native 3D generators now recover impressive mesh geometry from a single image. However, a dense mesh stays soft where a machined object should be sharp, it carries no part decomposition, and it exposes no parameter a user could edit. To address this, we explore the paradigm of 3D shape as code, leveraging and scaling the coding ability of an LLM for 3D modeling. We introduce Procedura, a novel 3D modeling agent framework that writes an object as a procedural assembly, a parametric program whose named parts are joined by typed, machine-checkable mates. From a text prompt, the agent plans the object as an assembly graph and writes the program part by part, solving each placement from the mated frames rather than guessing it, and admitting a part only once compile, mate, and connectivity checks pass. A decoupled vision critic then refines the assembly one diagnosed fix at a time. Moreover, the same graph carries per-part materials and a simulator-validated articulation. We evaluate on P3D-Bench under its assembly judge, and with the same judge on MechBench-36, our hard-surface benchmark. On both, Procedura outperforms state-of-the-art native 3D generators and every prior 3D-code agent on judged quality, produces the sharpest edges of any method we evaluate, and is the only one whose output is an editable, part-structured program.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.26238",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.26238"
+      }
+    ],
+    "relevance_score": 0.5058639710227818,
+    "max_similarity": 0.24941432001650407
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.26355",
+    "title": "Finding the Right Evidence: Factor-Guided Coarse-to-Fine Reasoning for Long Videos",
+    "authors": [
+      "Baixuan Xu, Yinyui Xu, Tianshi Zheng, Zhaowei Wang, Weiqi Wang, Haochen Shi, Jiayu Liu, Qing Zong, Xiyu Ren, Xinyu Geng, Zhitao He, Yangqiu Song"
+    ],
+    "abstract": "arXiv:2608.26355v1 Announce Type: new \nAbstract: While LVLMs rapidly improve, long-video question answering still remains challenging: relevant evidence is sparse, and question-relevant context often fails to provide cues that discriminate the correct answer from plausible alternatives. Diagnostic analysis on a manually annotated subset of MMR-V shows that prior agentic systems substantially improve cue retrieval over direct VLM inference yet fail to achieve a corresponding gain in answer accuracy, indicating that the bottleneck lies in option-discriminative evidence rather than topical relevance alone. We propose PACE (Progressive Acquisition of Critical Evidence), a factor-guided framework for long-video evidence acquisition. PACE proceeds in two stages: it first indexes clip-level descriptions guided by question-derived factors without observing the candidate answers; it then uses the candidate answers to derive contrastive cues and queries the index for verification. On MMR-V with the open-source Qwen3-VL backbone, PACE achieves 42.6% accuracy, outperforming direct inference and prior agentic baselines including Deep Video Discovery (DVD). On the same diagnostic subset, PACE recovers 66.9% of the annotated cues, providing empirical evidence that its gains are associated with improved evidence recovery rather than stronger answer-side priors alone. Consistent gains over DVD on LVBench, Video-MME, EgoSchema, and LongVideoBench suggest that option-aware evidence acquisition transfers beyond MMR-V. Code is available at https://github.com/HKUST-KnowComp/PACE.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.26355",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.26355"
+      }
+    ],
+    "relevance_score": 0.4868488547073708,
+    "max_similarity": 0.2212512079417597
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.26517",
+    "title": "HUG-VIS: A Multimodal Benchmark for Human-centered Understanding and Generation in Visual Intelligence",
+    "authors": [
+      "Fei Ma, Zebang Cheng, Minghui Li, Hongbo Xu, Yuyong Tan, Yihua Shao, Hanling Wang, Zhou Liu, Yuqing Gao, Dong Wang, Long Ma, Laizhong Cui, Nicu Sebe, Qi Tian"
+    ],
+    "abstract": "arXiv:2608.26517v1 Announce Type: new \nAbstract: Visual intelligence seeks to perceive, interpret, and synthesize the visual world and is central to modern computer vision. Human-centered visual intelligence is especially demanding because it studies people as expressive, socially situated subjects whose meaning is rarely conveyed by appearance alone. It couples vision with audio and language across four representative tasks: human emotion recognition, human video generation, human voice cloning, and human video matting. Yet existing resources remain task-specific, providing modalities and annotations for individual problems rather than a shared foundation coordinating understanding and generation. This limits multimodal signal use and broader research. We address this gap with HUG-VIS, a unified benchmark for Human-centered Understanding and Generation in Visual Intelligence. It contains 8,400 seated half-body videos of 30 professional actors, each performing the same 280 emotion-action-prompt assignments under a controlled Mandarin studio protocol, with synchronized video, audio, text, and alpha mattes. We evaluate diverse open- and closed-source models across the four tasks under a unified zero-shot protocol using automatic metrics, criterion-specific mean opinion scores, and multiple cross-task analyses. Results show that (i) linguistic content dominates current emotion recognition, while purely visual affect recognition is weakest; (ii) in video generation and voice cloning, automatic metrics and human judgment agree overall but differ in their top rankings, requiring joint reporting; (iii) boundary fidelity under motion is the main remaining obstacle for human matting; and (iv) task difficulty varies across emotions, models, and metrics, with notable cross-task correlations. The dataset and results are available at https://github.com/GML-MMGroup/HUG-VIS.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.26517",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.26517"
+      }
+    ],
+    "relevance_score": 0.46009720937827403,
+    "max_similarity": 0.1865594599114064
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.26495",
+    "title": "Video-FLAIR: Not Whether to Reason, But How",
+    "authors": [
+      "Yogesh Kulkarni, Pooyan Fazli"
+    ],
+    "abstract": "arXiv:2608.26495v1 Announce Type: new \nAbstract: Multimodal queries can require different types of reasoning. Some can be answered via perceptual reasoning, extracting information directly from the visual signal, while others require compositional reasoning that combines observations or deliberative reasoning that evaluates competing hypotheses. However, many existing methods apply a uniform reasoning strategy across queries, leading to unnecessary computation on simple tasks and insufficient reasoning on complex ones. We introduce Video-FLAIR, a training framework that learns to select the appropriate reasoning mode for each query using reinforcement learning. During training, the model generates responses under all three modes for the same prompt, enabling direct comparison. A composite reward compares these responses to favor the most effective one based on correctness, grounding, and cost, while discouraging unsupported or misaligned deliberation. This yields a supervision signal for learning adaptive reasoning without per-query annotations. Video-FLAIR improves accuracy over the Qwen2.5-VL base model by +5.4 on MathVista, +4.8 on Video-Holmes, and +4.8 on Video-MMMU, while reducing average token usage to 95 compared to 417 for always-thinking baselines.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.26495",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.26495"
+      }
+    ],
+    "relevance_score": 0.45596623012569104,
+    "max_similarity": 0.1829815817862792
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.26500",
+    "title": "Systematic Literature Review of Machine Learning Models and Applications for Text Recognition",
+    "authors": [
+      "Nuzhat Khan, Ab Al-Hadi Ab Rahman, Shahriyar Masud Rizvi, Ibrahim Yousef Alshareef, Muhammad Nadzir Marsono, Muhammad Paend Bakht, Mohd Shahrizal Rusli, Shahidatul Sadiah"
+    ],
+    "abstract": "arXiv:2608.26500v1 Announce Type: new \nAbstract: Optical Character Recognition (OCR) for text recognition using machine vision has significantly improved, particularly when handling heterogeneous textual data. Traditional OCR models struggle with script variations, writing styles, and degraded documents. Advancements in technology are leading to new AI models with improved architecture for handling multiple languages and complex data formats. Despite this progress, a comprehensive evaluation of OCR advancements remains limited. Based on the established preferred reporting items for systematic reviews and meta-analysis (PRISMA) guidelines, this literature review presents an extensive assessment of OCR research to trace the evolution of AI models over the past decade. It explores the transition in AI models, application domains, data types, linguistic coverage, and challenges. Through a detailed analysis of 97 selected studies published during January 2015 - January 2025, key OCR models are identified, and their performance, strengths, and limitations are analyzed. The findings highlight how OCR technologies have evolved to address structured and unstructured text, scene text recognition, and multilingual processing. Unresolved challenges include limited resources for underrepresented languages, high variability in handwritten text, visual similarity among characters, and constraints in real-time OCR applications. To address these issues, several promising approaches are proposed. Key suggestions include self-supervised learning, multimodal AI, automated machine learning (AutoML), AI-assisted postprocessing, tiny machine learning (TinyML), and the creation of joint corpora for script matching. The future recommendations aim to enhance OCR accuracy and tackle the challenges identified for real-time industrial applications. This study will guide future research and establish a foundation for OCR field.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.26500",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.26500"
+      }
+    ],
+    "relevance_score": 0.44694044359740914,
+    "max_similarity": 0.1729877498147119
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.26580",
+    "title": "Visual Information-Guided Parallel Decoding for Diffusion Multimodal Large Language Models",
+    "authors": [
+      "Insu Lee, Wooje Park, Wonseok Shin, Jinwoo Son, Byonghyo Shim"
+    ],
+    "abstract": "arXiv:2608.26580v1 Announce Type: new \nAbstract: Diffusion multimodal large language models (dMLLMs) have recently emerged as a new decoding paradigm for multimodal generation. Starting from a fully masked sequence, dMLLMs progressively decode the sequence by unmasking a subset of the remaining masked positions at each step. Since the selected tokens serve as the prediction context for subsequent steps, deciding which tokens to decode is crucial to the quality of the final output. The most common strategy prioritizes tokens based on a certainty measure that tends to favor tokens frequently observed in the training data. Recent approaches instead order tokens according to their influence on subsequent predictions, but do not explicitly account for the input image. We propose the Visual Information-Guided Sampler (VIG-Sampler), which prioritizes tokens based on their attention to image tokens. We further impose a constraint that penalizes candidate tokens whose image-attention distributions are similar to those of previously selected tokens, thereby increasing the information gain of the decoded subset. Extensive experiments on 7 captioning and VQA benchmarks with 3 open-source dMLLMs demonstrate the effectiveness of VIG-Sampler, which outperforms the Info-Gain Sampler by an average of 19.3 CIDEr points across the captioning benchmarks and surpasses it on COCO Caption while using only half as many decoding steps.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.26580",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.26580"
+      }
+    ],
+    "relevance_score": 0.4271987912372943,
+    "max_similarity": 0.14755222461082756
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.26632",
+    "title": "Who Remains, What Changes: Identity Anchored Composed Gait Retrieval",
+    "authors": [
+      "Jingchen Fei, Zengbin Wang, Yukun Liu, Muyi Sun, Shibiao Xu, Man Zhang"
+    ],
+    "abstract": "arXiv:2608.26632v1 Announce Type: new \nAbstract: Gait recognition has achieved remarkable progress, yet existing methods remain confined to rigid visual matching and often overlook the potential of natural language instructions for interactive retrieval. In this paper, we introduce Composed Gait Retrieval (CoGR), a novel task that retrieves a target gait sequence based on a reference sequence and a natural language modification query. To address the absence of existing datasets for this task, we design an automated annotation pipeline powered by large vision-language models (VLMs) to construct the first gait-language datasets: Language-Augmented CCPG and Language-Augmented CASIA-B. Building on this, we propose ComposeGait, an identity-anchored composition framework designed to prevent the identity drift that arises when generic composed retrieval follows the instruction but returns the wrong person. Its Part-aware Identity Adapter (PIA) aggregates multi-frame, part-aware identity evidence into a sample-specific ID token. We inject the ID tokens into both branches of a shared Q-Former to preserve identity, while excluding the ID-token outputs from the final retrieval embeddings. Joint identity and task-adapted composed-retrieval objectives optimize this space end to end. We evaluate ComposeGait on both benchmarks and show that it achieves the best R@1 among the compared methods, reaching 72.38% on Language-Augmented CCPG and 83.61% on Language-Augmented CASIA-B. These results establish ComposeGait as a strong baseline for CoGR. The datasets and code will be made publicly available.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "updated": "Sat, 29 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.26632",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.26632"
+      }
+    ],
+    "relevance_score": 0.41807913681606934,
+    "max_similarity": 0.13249858119660843
+  }
+]
