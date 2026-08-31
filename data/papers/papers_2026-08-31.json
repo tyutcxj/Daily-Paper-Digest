@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.27580",
+    "title": "LongGuard: Mechanistic Analysis and Training-Free Mitigation of Long-Context Failure in Safety Guardrails",
+    "authors": [
+      "Ziyang Chen, Xing Wu, Songlin Hu"
+    ],
+    "abstract": "arXiv:2608.27580v1 Announce Type: new \nAbstract: Safety guardrails serve as the last line of defense against harmful inputs and outputs of large language models (LLMs), yet they are trained and evaluated almost exclusively on short text. We present LongGuard, a framework that evaluates, mechanistically analyzes, and mitigates long-context guardrail failure. We formulate the task as Safety Needle-in-a-Haystack (SafetyNIAH) over a 0.25k-32k length grid; across 15 mainstream guardrails, unsafe recall drops monotonically by more than 50% on average, and a paired Benign-Fill vs. Needle-Repeat design attributes the failure to proportional dilution of the unsafe needle rather than to absolute length. A three-layer attention-logit-behavior analysis on six guardrails locates the mechanism: attention mass on the unsafe needle is diluted, the unsafe-over-safe logit margin is compressed in lockstep, and the detection decision collapses accordingly, with this attention->logit->behavior chain remaining consistent after partialling out length. We further isolate a sparse set of guard-specialized retrieval heads that exhibit partial specificity relative to their base models. Building on the analysis, we propose two training-free mitigations - Chunked Detection (CD) and Attention-Head Sharpening (AHS) - and a deployment protocol, Context-Aware Hyperparameter Routing (CAHR), that selects configurations by context length and audit side. Across five benchmarks spanning synthetic data, long-context attacks, and reasoning-model outputs, CAHR-CD and CAHR-AHS improve the six-guardrail average by 22% and 13%, respectively. Code and data are available online.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27580",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27580"
+      }
+    ],
+    "relevance_score": 0.5275228070739086,
+    "max_similarity": 0.2743565894725089
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27893",
+    "title": "CommerceVibe: Learning to Design E-Commerce Creatives as Executable Visual Code via Dual-Feedback Reinforcement Learning",
+    "authors": [
+      "Yajiao Xu, Jin Zhang, Jiangbo Ai, Tao Jiang, Mo Xu, Lina Huang, Chengfu Huo"
+    ],
+    "abstract": "arXiv:2608.27893v1 Announce Type: new \nAbstract: High-quality e-commerce creatives are essential for presenting products and conveying marketing messages. Recent diffusion models enable scalable creative generation and produce visually compelling images, but their flattened raster outputs often contain distorted text and inconsistent product details, requiring refinement before deployment. Moreover, without explicit structure, the resulting creatives are difficult to edit and reuse, while complex design requirements remain challenging to encode as verifiable training signals. To address these challenges, we present CommerceVibe, which represents creatives as executable visual code and formulates generation as conditional HTML/CSS program synthesis. Given product images, design requirements, and product information, it produces renderable, editable, and reusable creatives. We further introduce dual-feedback reinforcement learning, in which rule-based feedback evaluates rendered programs for text readability, product visibility, and layout validity, while visual feedback from a vision-language model (VLM) assesses rendered creatives against input specifications across six perceptual and commercial dimensions. Together, these complementary feedback signals improve both constraint satisfaction and perception-dependent quality. We perform supervised fine-tuning (SFT) of Qwen3.5-9B on over 28,000 e-commerce examples, followed by dual-feedback reinforcement learning. On a 1,300-case benchmark, the optimized CommerceVibe model achieves a weighted score of 94.0/100, compared with 87.3 for the SFT-only variant, and outperforms strong external models. Blind evaluations by five e-commerce design experts further validate these improvements. CommerceVibe supports controllable, editable, and scalable e-commerce creative production.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27893",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27893"
+      }
+    ],
+    "relevance_score": 0.5091899887664464,
+    "max_similarity": 0.2507773547180515
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27477",
+    "title": "Benchmarking General Mobile Assistants in Challenging Real-World Scenarios",
+    "authors": [
+      "Yiqi Zhu, Feiyu Gao, Jiaxing Fan, Jiahui Zeng, Minggang Wu, Chenliang Li, Haiyang Xu, Peng Li, Ming Yan, Yang Liu"
+    ],
+    "abstract": "arXiv:2608.27477v1 Announce Type: new \nAbstract: Graphical user interfaces have emerged as an important environment for evaluating autonomous AI agents on multimodal interactive tasks. Existing benchmarks such as AndroidWorld and MobileWorld provide strong foundations for mobile agent evaluation, but their application coverage and task design do not yet fully capture the diversity and complexity of realistic mobile use. We present GMA, a benchmark for evaluating general mobile assistants in challenging real-world scenarios. GMA introduces seven applications based on open-source projects, spanning domains such as lifestyle sharing and travel planning, and 300 tasks across four difficulty tiers, from atomic actions to complex multi-step workflows. We evaluate eight frontier models and find that performance declines substantially as task complexity increases, with current agents remaining far from reliably handling realistic user requirements. We further conduct controlled ablation studies of agent harness choices, including context retention and explicit state tracking, under a shared environment, model setting, and task taxonomy. Results show that appropriate harness design can meaningfully improve performance, particularly on demanding workflows, while the effectiveness of specific designs can vary across foundation models. Overall, GMA complements existing benchmarks by expanding application coverage and task complexity, providing a challenging testbed for evaluating mobile agents and studying how harness design supports reliable execution in complex mobile workflows.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27477",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27477"
+      }
+    ],
+    "relevance_score": 0.47597112309278145,
+    "max_similarity": 0.20892966121119141
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27871",
+    "title": "Temporal Tree of Thought: Reasoning-Guided Visual Cue Search for Long-Video Understanding",
+    "authors": [
+      "Ziling Huang, Shin'ichi Satoh"
+    ],
+    "abstract": "arXiv:2608.27871v1 Announce Type: new \nAbstract: Long-video understanding remains challenging for Multimodal Large Language Models (MLLMs) due to limited context length. Uniform sampling may miss crucial moments, while agent-based frame video understanding methods often evaluate frames independently, overlooking the temporal organization of videos. Ideally, evidence selection should mimic how humans answer questions about long videos: first locating the relevant segment from the global context, then zooming into local objects and details. We propose Temporal Tree of Thought T^3, a training-free framework for adaptive coarse-to-fine long-video understanding. T^3 constructs a question-agnostic hierarchical temporal tree via recursive temporally constrained clustering, where each node represents a contiguous segment with an informative key frame. During inference, T^3 performs an answer-retrieve-explore loop: it reasons over coarse representative frames, generates a search statement when evidence is insufficient, and expands relevant branches for finer-grained evidence. This process adaptively shifts the search target from temporal regions to specific objects and visual details to help video understanding. Experiments on VideoMME, LongVideoBench, and LVBench show that T^3 improves Qwen2.5-VL-7B by 0.5%, 4.6%, and 4.4%, respectively, under the same frame budget, demonstrating the effectiveness of structured temporal reasoning.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27871",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27871"
+      }
+    ],
+    "relevance_score": 0.473763262443223,
+    "max_similarity": 0.20494669859937675
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27512",
+    "title": "Quantization-Triggered Backdoors in Language Models: Cross-Quantizer Transferability and the Validation--Deployment Gap",
+    "authors": [
+      "Jacopo Dardini, Claudio Stanzione, Giordano Col\\`o, Giuseppe Fenza"
+    ],
+    "abstract": "arXiv:2608.27512v1 Announce Type: new \nAbstract: Post-training quantization is often treated as a semantically neutral optimization for edge deployment of Large Language Models. When a full-precision source checkpoint is evaluated and quantization is applied downstream without equivalent re-evaluation, this workflow creates a structural validation--deployment gap: because quantization is a many-to-one mapping over parameter space, source-precision certification does not guarantee behavioral equivalence in the deployed configuration. We formalize this gap through Quantization Behavioral Equivalence Classes (QBECs) and prove that QBEC membership does not imply behavioral equivalence, providing a theoretical basis for quantization-triggered backdoor attacks. Building on a three-stage adversarial fine-tuning framework, we embed latent malicious payloads into models that satisfy the source-precision checks used in our evaluation, yet activate targeted adversarial behavior upon INT8 or 4-bit compression. We evaluate this threat in two operationally motivated scenarios, tactical machine translation and political content analysis, extending prior work from decoder-only causal LMs to multilingual encoder-decoder sequence-to-sequence models. Results show that backdoored translation models move from zero measured friend--foe corruption at repaired FP16 to up to 85.02% inversion after quantization, and that a paired stance classifier measures an ideological shift of up to $\\Delta\\mathrm{Bias}=0.33$ upon compression. A cross-quantizer transferability analysis further shows that attack persistence varies across quantization schemes and model architectures, rather than being determined by nominal bit-width alone. These findings demonstrate that source-precision auditing alone does not rule out quantization-triggered behavior and that the final deployed configuration must be included in behavioral certification for trustworthy edge AI.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27512",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27512"
+      }
+    ],
+    "relevance_score": 0.46239474124554203,
+    "max_similarity": 0.19410429737298798
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27750",
+    "title": "The Calls are Coming from Inside the Model: Investigating Probe-based Detection of Tool-Calling Errors in LLMs",
+    "authors": [
+      "Eric Yeats, Brendan Kennedy, Loc Truong, John Buckheit, Jung Lee, Jesse Friedbaum, John Emanuello, Henry Kvinge"
+    ],
+    "abstract": "arXiv:2608.27750v1 Announce Type: new \nAbstract: The hidden states of large language models (LLMs) are known to capture rich information relating to model knowledge and behavior that can be hard to extract from examination of input and output alone. As LLM-based systems increasingly interface with the external world, one area of concern is detecting incorrect or improper use of tools. Motivated by this, we study the effectiveness of using linear probes to detect incorrect tool-calls, measuring probe efficacy across 18 tool-calling LLMs evaluated on the Berkeley Function Calling Leaderboard. Overall, we find that probing is an effective means to catch a range of different tool-calling errors, including errors arising from using an argument that has the wrong value but the correct type, which might not be recorded by standard logging frameworks. Important factors in success include model size, probing layer, and model post-training type. We also show that probes are capable of generalizing to novel types of errors, which is critical in real world deployments.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27750",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27750"
+      }
+    ],
+    "relevance_score": 0.4569811650331047,
+    "max_similarity": 0.18725570579816933
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27460",
+    "title": "Accelerating LLM Inference via Vector Index Based Output Embeddings",
+    "authors": [
+      "Martin Loretz, Sepp Hochreiter"
+    ],
+    "abstract": "arXiv:2608.27460v1 Announce Type: new \nAbstract: Large output embedding matrices create a significant memory bandwidth bottleneck during autoregressive decoding, especially for compact LLMs with large multilingual vocabularies. We reformulate the output projection followed by top-k token selection as a maximum inner product search over token embeddings and replace the dense vocabulary projection with an HNSW-based vector index. The resulting output head retrieves only a small candidate set of high-scoring tokens and can be integrated into existing decoding pipelines by scattering retrieved logits into a sparse full-vocabulary tensor. On CPU inference with Gemma 3, Llama 3.2, and Qwen 3 models, our method substantially accelerates the output projection and improves end-to-end batch-size-one decoding throughput by up to 82% for Gemma 3 270M, while preserving generation quality under AlpacaEval evaluation. These results suggest approximate retrieval is a practical alternative to dense output projections in latency-sensitive small-batch decoding.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27460",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27460"
+      }
+    ],
+    "relevance_score": 0.4526587333478179,
+    "max_similarity": 0.1835081975655697
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27462",
+    "title": "Sledgehammer or Scalpel? A Fine-grained Adaptive Framework for Implicit Hate Speech",
+    "authors": [
+      "Han Wang, Yuhu Cheng, Xuesong Wang, Yi Zhu"
+    ],
+    "abstract": "arXiv:2608.27462v1 Announce Type: new \nAbstract: Unlike explicit attacks with obvious profanity, implicit hate speech hides malice within seemingly compliant expressions through metaphors and contextual hints, making its detection in online content review challenging. While existing PLM- or LLM-based methods perform well, they typically apply a single reasoning process to all samples. This overlooks fine-grained linguistic nuances and causes unnecessary computation for simpler cases. We observe that online hate speech is not monolithic but manifests in varied forms. We therefore define three fine-grained categories: Shallow, Targeted, and Context-Dependent. Accordingly, we propose Fine-grained Adaptive Implicit Hate speech Detection (FAID), a novel framework that first performs fine-grained classification and then adapts to specific categories. Specifically, for Shallow samples with surface-identifiable intents, the framework adopts lightweight prompt-tuning for rapid classification; for Targeted comments that bind malicious intent to concealed targets, we design knowledge augmentation to iteratively refine the model and reveal hidden targets; for Context-Dependent comments lacking background information, we utilize an agentic framework that automatically generates prompts to evolve context, infer missing background information and identify ambiguous malicious intents. This adaptive architecture focuses computational resources on complex implicit samples while avoiding redundant reasoning for shallow samples. Experiments on four benchmark datasets demonstrate that FAID significantly outperforms SOTA baselines.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27462",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27462"
+      }
+    ],
+    "relevance_score": 0.4427605788933866,
+    "max_similarity": 0.16746942781658405
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27461",
+    "title": "SciReC: Diagnostic Evaluation of Multimodal, Multi-Turn Relational Reasoning with Adaptive Interaction",
+    "authors": [
+      "Nilay Yilmaz, Naga Sai Abhiram Kusumba, Stella Wenxing Liu, Yezhou Yang"
+    ],
+    "abstract": "arXiv:2608.27461v1 Announce Type: new \nAbstract: Relational reasoning requires the process of perceptual understanding, comparing, and integrating the underlying relationships between concepts. This ability consists of multiple categories, such as analogical, structural, and cause-effect, each capturing a different aspect of higher-order understanding. To examine the performance of multimodal large language models (MLLM) on these relational inference tasks, we developed SciReC, a model-adaptive multimodal academic dialog benchmark. As the relational reasoning process involves multiple representations and various factors (visual understanding, exhibiting knowledge, and memory recall), we propose DMRA, a deficit-based diagnostic framework that quantifies the contribution of these components to identify the primary cause of unsuccessful cases. Claude 4.6 achieved the best performance on the overall relational score with 73\\%, followed by GPT 5.4 with 68\\%. Performance trends indicate that open-source models achieve their lowest scores on spatial relations, while proprietary models struggle more with hierarchical and sequential relations. Across domains, model performance is lowest on Astronomy and highest on Psychology. The results of DMRA reveal that relational reasoning is the primary source of error across all models, followed by memory limitations.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27461",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27461"
+      }
+    ],
+    "relevance_score": 0.4353398530535092,
+    "max_similarity": 0.15610320496964508
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27866",
+    "title": "Iron: Intent-Aligned and Retrospective Dual Learning Framework for Enhancing Generalist Virtual Agents",
+    "authors": [
+      "Jiahe Ying, Wendong Bu, Kaihang Pan, Bingchen Miao, Siyu Chen, Wen Wang, Xueming Jiang, Juncheng Li, Siliang Tang"
+    ],
+    "abstract": "arXiv:2608.27866v1 Announce Type: new \nAbstract: Achieving virtual agents capable of automating tasks across diverse digital environments remains a pivotal challenge in Embodied AI. While Multimodal Large Language Models (MLLMs) offer enhanced visual perception and reasoning, their agentic deployment faces three challenges: costly data annotation, imprecise action-intent alignment, and inefficient exploration from discarded failed trajectories. To address these, we introduce Iron, an intent-aligned, self-improved, and annotation-efficient framework for training GUI agents. Iron employs a novel dual learning strategy that utilizes a stepwise cycle-consistent (SCC) reward to achieve fine-grained alignment between low-level actions and high-level intents, thereby improving instruction grounding and intent understanding. Concurrently, Iron introduces a hindsight reproduction mechanism to repurpose failed trajectories for training, improving both learning efficiency and task diversity. Extensive experiments demonstrate that Iron-trained generalist agents consistently improve performance on cross-environment and cross-device tasks, outperforming models trained with three times more data. Iron also achieves a substantial 25.06% relative improvement on unseen web tasks, with further gains observed on inherently complex tasks, demonstrating the feasibility of building more capable virtual agents.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27866",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27866"
+      }
+    ],
+    "relevance_score": 0.43442794486494435,
+    "max_similarity": 0.1548389441347061
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27549",
+    "title": "Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning",
+    "authors": [
+      "Hanyang Wang, Yimo Cai, Weiliang Chen, Jiawei Chi, Haowen Sun, Qiyu Dai, Yi-Hsin Hung, Xingzhuo Guo, Jinshan Ren, Runmao Yao, Ziwei Liu, Mingsheng Long, Yueqi Duan, Jun Gao, Jiangran Lyu, Fangfu Liu, Jialong Wu"
+    ],
+    "abstract": "arXiv:2608.27549v1 Announce Type: new \nAbstract: Physical understanding and reasoning depend on forming compact and generalizable representations of the world. While modern vision-language models can recognize and explain diverse physical events, they often lack explicit representations of the underlying mechanisms-such as object states, physical parameters, and governing dynamics-needed for reliably reasoning how the world evolves and responds to interventions. In this work, we introduce Code-as-World, a paradigm that represents physical worlds through executable world representations. By expressing physical composition, dynamic evolution, and visual appearance as executable code, Code-as-World provides a compact, quantitatively grounded, and controllable abstraction of the physical world. To construct such representations from multimodal observations, such as natural-language descriptions or real-world videos, we develop an agentic discovery loop inspired by abductive reasoning, where an agent proposes, executes, renders, verifies, and iteratively refines executable world hypotheses. As a concrete application, we use verified executable worlds to provide scalable physical supervision for training vision-language models on quantitative physical reasoning. Experiments show that Code-as-World-VL achieves state-of-the-art performance on QuantiPhy and surpasses leading proprietary models, highlighting the potential of executable world representations as a scalable foundation for physical intelligence.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27549",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27549"
+      }
+    ],
+    "relevance_score": 0.41947808705302575,
+    "max_similarity": 0.1406101055249279
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27646",
+    "title": "If Agents Were Angels, No Governance Would Be Necessary: Out-of-Band Policy Enforcement at a Trusted Tool Boundary",
+    "authors": [
+      "Marc Millstone, Tyler Akidau, Johannes Br\\\"uderl, Marat Pekker"
+    ],
+    "abstract": "arXiv:2608.27646v1 Announce Type: new \nAbstract: Give an agent a human's credential and it inherits the person's reach without the judgment that limits its use. It can sweep every reachable record into model context, where hidden instructions steer its next call, and every request stays credential-valid while the agent exceeds its job or absorbs a secret. Prompts are a brittle guardrail: one fallible reasoner interprets the task and enforces its limits.\n  We present Out-of-Band Policy Enforcement (OBPE), a trusted boundary outside agent reasoning. It authorizes the typed operation and resource, narrows the query before the backend call, then filters records and fields or masks values in the response. Semantic gating can deny or hold an authorized call on argument values or external state. A data policy owner sets the maximum grant; agent policy can only narrow it. We prove, under stated conditions, that the policy plan is order-independent and agent policy cannot widen the ceiling. Field removal covers one execution; masking and history rules claim less.\n  We release an HTTP proxy prototype simplified from our production system, with conformance tests tying its typed Cedar policy core to the model. Against Jira and ServiceNow mocks, our benchmark compares prompted agents with and without OBPE on four models, including 20 adaptive red-team tasks. A trace failure means protected data entered agent context, an exact value appeared in the answer, or a forbidden effect completed. In 3,621 trials it fell from 57.6% to 0.2%, a cluster-weighted reduction of 41.2 points [95% CI: 27.7, 54.9]; fulfillment fell from 79.1% to 60.9%, while paired safe-useful completion rose 21.8 points [9.5, 35.2]. Some answers reconstructed a value that never entered context or used filtered row counts as an oracle: shaping one execution is not noninterference. Write controls, durable approval, and temporal and aggregate policies lie outside this evaluation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27646",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27646"
+      }
+    ],
+    "relevance_score": 0.41835287310708014,
+    "max_similarity": 0.1405341058418043
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27472",
+    "title": "LLM-Augmented Causal Discovery: Probabilistic Fusion of Edge Existence and Orientation",
+    "authors": [
+      "Neville K. Kitson, Anthony Constantinou"
+    ],
+    "abstract": "arXiv:2608.27472v1 Announce Type: new \nAbstract: Bayesian network structure learning (BNSL) from observational data struggles with orientation identifiability, while large language models (LLMs) offer broad but often unreliable causal knowledge. We propose combining these complementary sources through a novel representation, termed Probabilistic Dependency Graphs (PDGs). In a PDG, each edge is associated with a distribution over directed, undirected, and absent states, enabling fusion via weighted averaging. We evaluate this approach on 26 benchmark networks, combining ensembles of three BNSL algorithms (FGES, Tabu, PC) with three LLMs (Gemini, Claude, GPT) across multiple prompts and random seeds. A simple 50/50 fusion improves F1 over the better of either source alone in 22 of 26 networks, with a statistically significant mean improvement of $0.056$ $(p<0.001)$. Analysis reveals that the two sources play complementary roles: BNSL contributes a high-recall edge skeleton (80\\% vs 60\\% for LLM), while LLM contributes accurate edge orientation (96\\% vs 77\\% for BNSL). Our results show that representing both sources as probabilistic uncertainty over edge existence and orientation is a practical and effective way to improve causal graph accuracy.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27472",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27472"
+      }
+    ],
+    "relevance_score": 0.41707614465418535,
+    "max_similarity": 0.1370867393236467
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27465",
+    "title": "The Effect of Emotional Context on Large Language Models' Endorsement of Premature Decisions: Comparing Emotional Vulnerability Across Six Commercial Models",
+    "authors": [
+      "Cheolho Shin, Yoojin Han, Donghun Shin, Kunho Lee"
+    ],
+    "abstract": "arXiv:2608.27465v1 Announce Type: new \nAbstract: As large language models (LLMs) are increasingly used for everyday decision-making advice, whether a model shifts the direction of its advice according to the user's emotional state has become an important safety problem. We test whether emotional expression increases a model's endorsement (encouragement to proceed) when a user, holding the same objective information, is overconfident about a premature decision (e.g., quitting a stable job on weak evidence). As a key control, we include a no-emotion multi-turn (neutral) condition that holds factual content and the number of conversational turns constant, isolating the effect of emotion from that of conversation length. We exposed six commercial models (top-tier and mid-tier models from OpenAI, Anthropic, and Google) to three scenarios (career change, business expansion, emigration) across three conditions (cold/neutral/distress) with six repetitions each, yielding 324 conversations, and measured endorsement strength (0-100) via an eight-item rubric-based automated scoring. Emotional expression significantly increased endorsement (neutral 18.6 to distress 31.5, +12.9 points; mixed-effects $\\beta = +12.9$, $p < .001$; Cohen's d = 0.51), and this was not explained by conversation length (cold-neutral difference non-significant, $p = .083$). Critically, the vulnerability varied by individual model rather than by price tier: five of six models showed a significant emotion effect, including the top-tier flagships Gemini 3.1 Pro and GPT-5.5, while only Claude Opus showed no significant change. Results were reproduced with an independent non-Google judge model ($\\rho = .89$) and agreed in rank with two human coders ($\\rho = .70$). Through a controlled design that separates emotion from conversational context, we show that emotional context increases LLM sycophancy even in top-tier flagship models.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27465",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27465"
+      }
+    ],
+    "relevance_score": 0.4122838471000033,
+    "max_similarity": 0.13063673747211935
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27548",
+    "title": "Nemotron 3.5 Content Safety Moderator: A Compact Multimodal, Multilingual, and Reasoning Enabled Content Safety Moderator",
+    "authors": [
+      "Varun Singh, Anuj Doshi, Makesh Narsimhan Sreedhar, Shaona Ghosh, Katherine Luna"
+    ],
+    "abstract": "arXiv:2608.27548v1 Announce Type: new \nAbstract: Safety moderation for deployed AI applications is moving beyond text-only prompts: systems increasingly need to judge images, documents, screenshots, and generated responses under policies that vary across domains. Existing guardrails usually cover only part of this setting, making it difficult to combine broad coverage, custom policy control, and low compute cost. We present Nemotron 3.5 Content Safety Moderator, also referred to as Nemotron 3.5 CS in this paper for brevity, a compact 4B vision-language safety moderator that jointly classifies user prompts, images, and assistant responses across 12 languages. Nemotron 3.5 CS returns safety labels for latency-sensitive moderation and can additionally produce concise reasoning traces that apply supplied custom policies and identify violated categories when reasoning is requested. We also release a multimodal and multilingual safety dataset for guard training, spanning human-labeled real-image moderation, benign vision-language and document tasks, synthetic rare-risk and jailbreak cases, and custom-policy examples. Across evaluations spanning multimodal safety, text moderation, multilingual robustness, custom-policy following, benign false positives, and latency, Nemotron 3.5 CS demonstrates a practical coverage tradeoff: it adds image-conditioned and policy-conditioned moderation while remaining broadly competitive with specialized guard models. These results suggest that compact vision-language moderators can serve as deployable front-line safety components, with reasoning used selectively for audit and policy review.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27548",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27548"
+      }
+    ],
+    "relevance_score": 0.4109914228610931,
+    "max_similarity": 0.12751710023397161
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27753",
+    "title": "What Can Low Resource Languages Learn From Each Other?",
+    "authors": [
+      "Achyuth P, Kahaan Shah, Chetan Arora"
+    ],
+    "abstract": "arXiv:2608.27753v1 Announce Type: new \nAbstract: Despite the rapid advancement of Vision-Language Models (VLMs), their linguistic reach remains largely confined to high-resource languages, leaving the majority of the world's 7,000+ living languages on the wrong side of a growing digital divide. This disparity is especially pronounced in Optical Character Recognition (OCR), where low-resource scripts lack the massive datasets required for traditional scaling laws. We investigate OCR adaptation in extreme data-scarce regimes (<10K real and <250K synthetic images), demonstrating that conventional fine-tuning strategies often reach a performance ceiling. Our key finding reveals a structural inefficiency in language-specific adaptation: while higher layers of specialized models diverge to capture unique script nuances, the lower layers learn redundant, highly similar features. Motivated by this observation, we propose PSMC (Pre-train, Specialize, Merge, and Co-train), a data-efficient framework that capitalizes on a cross-script \"transfer effect\". Our approach first derives language-specific experts from a high-resource base model, then employs task arithmetic to fuse these experts into a unified, high-performance multilingual back- bone. Extensive evaluation across 10 Indian scripts (supporting 20+ languages) shows that PSMC achieves a ~2% average improvement in Word Recognition Rate (WRR) over individual specialist models without increasing parameter count. Our results indicate that joint training in the merged latent space facilitates a constructive knowledge transfer that benefits all constituent scripts, providing a scalable pathway for inclusive VLM development. Source code and datasets will be released post publication.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27753",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27753"
+      }
+    ],
+    "relevance_score": 0.40407747833115404,
+    "max_similarity": 0.11914576202611003
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27506",
+    "title": "Thinking Costs Tokens: When More Structure is Worth the Price",
+    "authors": [
+      "Thomas Nolasque, John Grey, Calista Pham, Ankit Vani"
+    ],
+    "abstract": "arXiv:2608.27506v1 Announce Type: new \nAbstract: Adding inference structure to a language model lets it search, verify, and revise, but these actions consume the very budget they are supposed to use well. In this paper, we investigate whether there exists a token-budget threshold, below which the overhead of planning and verification hurts performance and above which it helps. We evaluate two systems on FinQA and TAT-QA financial reasoning tasks, using GPT-5.4 mini across 14 budget tiers ranging from 250 to 42,000 output-equivalent tokens. The first system is a monolith, which is a single LLM call. The second is a verified search architecture that adds planning, label-blind checking, and repair capabilities. We run 1,000 cases for a total of 28,000 completed cells. Both systems score 0% at the two lowest tiers, where neither can fit a complete prompt. At 1,000 tokens, the monolith reaches 18% accuracy while verified search scores near 0%, since the planning overhead leaves no room for an answer. From 1,500 tokens onward, verified search surpasses the monolith and maintains a consistent advantage, reaching approximately 44% at the highest tiers while the monolith reaches approximately 40%. The crossover occurs between 1,000 and 1,500 output-equivalent tokens, confirmed by a strict intersection-union test ($p \\le 0.001$ at both endpoints).",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27506",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27506"
+      }
+    ],
+    "relevance_score": 0.3879240525113123,
+    "max_similarity": 0.16559029514835982
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27795",
+    "title": "uScenes: A Multimodal RGB and 3D Sonar Dataset for Underwater Robot Perception",
+    "authors": [
+      "Trung Tien Dong, Zhenqi Wu, Aditya Penumarti, Zi-Hao Zhang, Micaiah Bartlett, Jane Shin, Xiaomin Lin"
+    ],
+    "abstract": "arXiv:2608.27795v1 Announce Type: new \nAbstract: Robust perception is essential for the deployment of autonomous underwater robots. However, optical cameras become unreliable under poor illumination and backscatter. Forward looking (2D) acoustic sensors remain effective under these conditions, but they measure range and bearing while leaving elevation unresolved, creating an ambiguity that prevents individual sonar returns from being localized in three dimensional (3D) space. This complicates the sensor use for 3D scene understanding and precise object detection. We introduce \\textbf{uScenes}, a multimodal underwater dataset containing synchronized 3D multibeam sonar point clouds and RGB imagery. The dataset contains 110 scenes and 95,834 synchronized observation, representing 277.6 minutes of data collected across multiple field sessions. uScenes establishes a foundation for underwater sensor fusion, cross modal representation learning and 3D scene understanding. Code and datasets are given at https://github.com/era-research-lab/uScenes.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27795",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27795"
+      }
+    ],
+    "relevance_score": 0.3659249299546508,
+    "max_similarity": 0.26038125987997596
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27678",
+    "title": "SegBench-GC: Testing Segmentation Invariance in Multi-Step Offline Goal-Conditioned Reinforcement Learning",
+    "authors": [
+      "Musa Shams"
+    ],
+    "abstract": "arXiv:2608.27678v1 Announce Type: new \nAbstract: Offline goal-conditioned reinforcement learning (GCRL) often uses trajectory structure for future-goal sampling and multi-step targets, yet logged trajectories may be partitioned for administrative reasons that do not correspond to termination. We introduce SegBench-GC, a controlled stress test of segmentation invariance that holds transitions, source trajectories, goal sampling, optimization settings, and evaluation fixed while varying only artificial backup boundaries and whether those boundaries retain continuation value. Continuation-valid targets (CVT) provide the segmentation-consistent control: reward accumulation stops at an artificial cut, but the target bootstraps from its stored successor. In a matched-count PointMaze study with 35,000 artificial cuts, three segmentation realizations, and three optimization seeds, final 50-episode-per-task success is 50.5% uncut, 39.1% with CVT, and 19.1% when the same cuts are treated as absorbing; across segmentation realizations, naive mean success ranges from 4.8% to 31.9%. An independent published n-step baseline (n=25) from the Decoupled Q-Chunking codebase shows the same failure on Puzzle-4x5: 47.2% uncut, 58.5% CVT, and 0.27% naive across three optimization seeds. A target-level diagnostic verifies the analytic target difference to numerical precision, and learned-critic diagnostics show a large optimistic shift under naive handling while CVT remains approximately aligned with the uncut critic. CVT applies standard continuation bootstrapping rather than a new Bellman rule; the contribution is the controlled benchmark, failure isolation, and cross-learner evidence that administrative segmentation can materially change multi-step offline GCRL.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27678",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27678"
+      }
+    ],
+    "relevance_score": 0.3582858481695531,
+    "max_similarity": 0.19009390820057595
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27463",
+    "title": "Rating the Raters: Rasch Measurement Theory for LLM Evaluation",
+    "authors": [
+      "Pratik S. Sachdeva, Nathan Boudol"
+    ],
+    "abstract": "arXiv:2608.27463v1 Announce Type: new \nAbstract: LLMs now sit on every side of evaluation: as examinees scored on benchmarks, judges of other models' outputs, and raters of human-generated content. Each paradigm can be viewed as a measurement problem, where a latent property of an object is probed with items from an instrument (e.g., benchmark) by raters. Standard evaluation practices often neglect the contributions of each core component to the end result, limiting our understanding of what is being measured. Rasch measurement theory (RMT) is well-suited to this kind of problem. RMT decomposes ordinal ratings into separable facets on a common scale. It further provides a battery of diagnostics that can identify miscalibrated measurements and rater biases. We present a case study of RMT applied to the LLM-as-rater paradigm using the Measuring Hate Speech corpus, whose construct was itself built under RMT. We fit a series of many-facet Rasch models to annotations from nine LLMs spanning families and capability levels. Our analyses show that LLMs systematically differ from human raters in severity, item-level calibration, question-order robustness, target-identity sensitivity, and rating scale use, which all would be obscured by standard evaluation practice. Overall, we argue that RMT belongs in the toolkit for evaluating LLM-as-examinee, -judge, and -rater paradigms.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "updated": "Mon, 31 Aug 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27463",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27463"
+      }
+    ],
+    "relevance_score": 0.310285039726099,
+    "max_similarity": 0.12933559459023042
+  }
+]
