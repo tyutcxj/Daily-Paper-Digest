@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2608.28624",
+    "title": "MA-RAG: Multi-Agent Retrieval-Augmented Generation for Query-Driven Summarization of Longitudinal Parkinson's Disease Assessments",
+    "authors": [
+      "Sana Alamgeera, Denise Goberta, Muhammad Irshad, Anne H. H. Ngu"
+    ],
+    "abstract": "arXiv:2608.28624v1 Announce Type: new \nAbstract: Accurate interpretation of single-visit and longitudinal clinical assessments for Parkinson's disease is time-consuming and often depends on specialist expertise. Although large language models (LLMs) can generate natural language summaries, they frequently lack domain-specific clinical grounding and struggle to produce factually correct and temporally consistent responses for structured longitudinal assessment data. To address these limitations, we propose MA-RAG, a query-driven multi-agent retrieval-augmented generation framework that decomposes clinical reasoning into domain-specialized agents, combines structured fact extraction, and synthesizes clinically grounded summaries through a final verification stage. The framework supports four clinical analysis tasks: single-session, trajectory, comparison, and cohort summarization. We evaluate MA-RAG using objective metrics, namely Fact Precision, Hallucination Rate, Temporal Fidelity, and Semantic Similarity, together with subjective evaluations conducted by clinical experts. Compared to Traditional, RAG-only, and Single-agent RAG baselines, MA-RAG substantially improves factual correctness, achieving up to a 122% relative increase in Fact Precision (from 0.436 to 0.990) and reducing the Hallucination Rate by up to 98% (from 0.564 to 0.010), while consistently receiving top ratings from clinical experts for organization and clinical usefulness. These results demonstrate that domain-specialized multi-agent reasoning enables reliable query-driven summarization of structured longitudinal clinical assessment data.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28624",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28624"
+      }
+    ],
+    "relevance_score": 0.5310979638459343,
+    "max_similarity": 0.2747312798513038
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27580",
+    "title": "LongGuard: Mechanistic Analysis and Training-Free Mitigation of Long-Context Failure in Safety Guardrails",
+    "authors": [
+      "Ziyang Chen, Xing Wu, Songlin Hu"
+    ],
+    "abstract": "arXiv:2608.27580v2 Announce Type: new \nAbstract: Safety guardrails serve as the last line of defense against harmful inputs and outputs of large language models (LLMs), yet they are trained and evaluated almost exclusively on short text. We present LongGuard, a framework that evaluates, mechanistically analyzes, and mitigates long-context guardrail failure. We formulate the task as Safety Needle-in-a-Haystack (SafetyNIAH) over a 0.25k-32k length grid; across 15 mainstream guardrails, unsafe recall drops monotonically by more than 50% on average, and a paired Benign-Fill vs. Needle-Repeat design attributes the failure to proportional dilution of the unsafe needle rather than to absolute length. A three-layer attention-logit-behavior analysis on six guardrails locates the mechanism: attention mass on the unsafe needle is diluted, the unsafe-over-safe logit margin is compressed in lockstep, and the detection decision collapses accordingly, with this attention->logit->behavior chain remaining consistent after partialling out length. We further isolate a sparse set of guard-specialized retrieval heads that exhibit partial specificity relative to their base models. Building on the analysis, we propose two training-free mitigations - Chunked Detection (CD) and Attention-Head Sharpening (AHS) - and a deployment protocol, Context-Aware Hyperparameter Routing (CAHR), that selects configurations by context length and audit side. Across five benchmarks spanning synthetic data, long-context attacks, and reasoning-model outputs, CAHR-CD and CAHR-AHS improve the six-guardrail average by 22% and 13%, respectively. Code and data are available online.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27580",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27580"
+      }
+    ],
+    "relevance_score": 0.5275228070739086,
+    "max_similarity": 0.2743565894725089
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28611",
+    "title": "Gurukul AI: An Interactive AI-Driven Educational Platform for Indian Education System",
+    "authors": [
+      "Isha Narang, Sneh Gosai, Mayank Singh"
+    ],
+    "abstract": "arXiv:2608.28611v1 Announce Type: new \nAbstract: Recent advances in large language models (LLMs) like ChatGPT and LLaMA have transformed AI-driven education, but these systems are predominantly trained on Western-centric data, making them ill-suited for regional curricula like India's. The Indian education system is linguistically diverse, exam-oriented, and structured around standardized syllabi, not addressed by existing datasets or tools. In this work, we curate a syllabus-aligned QA dataset based on NCERT (National Council of Educational Research and Training) textbooks for classes 9-12, capturing the content, context, and teaching style of Indian curricula. The final dataset, comprising 18,720 question-answer pairs across five subjects, is publicly available at https://huggingface.co/datasets/LingoIITGN/Gurukul. We fine-tune the LLaMA 3.1 8B model using this dataset and deploy it in a Retrieval-Augmented Generation (RAG) framework tailored to educational needs. We introduce GurukulAI, an open-access platform that enables Indian students to chat with the model, get doubts cleared, practice exam-style questions, receive contextual answers, and interact in both English and Hindi. By localizing AI for Indian classrooms, our work bridges the gap between global LLM capabilities and regional educational demands. The code is available at https://github.com/lingo-iitgn/GurukulAI.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28611",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28611"
+      }
+    ],
+    "relevance_score": 0.5264062894221744,
+    "max_similarity": 0.27063058112898686
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28911",
+    "title": "SemKV: Semantic Mixed-Precision KV Cache Quantization Guided by the Quality Cliff for Long-Context LLM Inference",
+    "authors": [
+      "Daeha Lee, Do-Hyung Kim, Jae-Hong Kim"
+    ],
+    "abstract": "arXiv:2608.28911v1 Announce Type: new \nAbstract: The key-value (KV) cache is the dominant memory bottleneck of long-context large language model (LLM) inference, growing linearly with context length. We show that uniform KV quantization on a fractional-bit grid does not degrade gracefully: under a prespecified multi-seed statistical protocol, Llama-3.1-8B-Instruct with an affine quantizer is statistically indistinguishable from FP16 KV down to 2.322 code bits/value and collapses at 2.0 bits - a quality cliff in (2.0, 2.322] that reappears in generation-time quantization and multi-turn dialogue and transfers to Mistral-7B. The cliff reframes importance-aware mixed precision: above it, eight model-internal importance indicators are statistically interchangeable, so the benefit of mixing is grid interpolation, reaching average precisions uniform quantization cannot realize. SemKV preserves every token, ranks tokens by a model-internal score, and assigns two adjacent above-cliff precisions, achieving a measured 6.0x storage reduction with no statistically detectable quality difference from full KV (n=900, three seeds), and outperforming FP16 token pruning granted a 1.5x larger memory budget. Replacing the affine base with a distortion-optimized quantizer (TurboQuant-MSE) lowers the cliff in every protocol tested, raising the no-detectable-loss operating point to 7.9x. The recipe: measure the cliff for the target deployment setting, then interpolate above it.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28911",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28911"
+      }
+    ],
+    "relevance_score": 0.4952881864790617,
+    "max_similarity": 0.23601765228289384
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27477",
+    "title": "Benchmarking General Mobile Assistants in Challenging Real-World Scenarios",
+    "authors": [
+      "Yiqi Zhu, Feiyu Gao, Jiaxing Fan, Jiahui Zeng, Minggang Wu, Chenliang Li, Haiyang Xu, Peng Li, Ming Yan, Yang Liu"
+    ],
+    "abstract": "arXiv:2608.27477v1 Announce Type: new \nAbstract: Graphical user interfaces have emerged as an important environment for evaluating autonomous AI agents on multimodal interactive tasks. Existing benchmarks such as AndroidWorld and MobileWorld provide strong foundations for mobile agent evaluation, but their application coverage and task design do not yet fully capture the diversity and complexity of realistic mobile use. We present GMA, a benchmark for evaluating general mobile assistants in challenging real-world scenarios. GMA introduces seven applications based on open-source projects, spanning domains such as lifestyle sharing and travel planning, and 300 tasks across four difficulty tiers, from atomic actions to complex multi-step workflows. We evaluate eight frontier models and find that performance declines substantially as task complexity increases, with current agents remaining far from reliably handling realistic user requirements. We further conduct controlled ablation studies of agent harness choices, including context retention and explicit state tracking, under a shared environment, model setting, and task taxonomy. Results show that appropriate harness design can meaningfully improve performance, particularly on demanding workflows, while the effectiveness of specific designs can vary across foundation models. Overall, GMA complements existing benchmarks by expanding application coverage and task complexity, providing a challenging testbed for evaluating mobile agents and studying how harness design supports reliable execution in complex mobile workflows.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27477",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27477"
+      }
+    ],
+    "relevance_score": 0.47597112309278145,
+    "max_similarity": 0.20892966121119141
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28666",
+    "title": "Improving Spatial-Temporal Reasoning in Video-Language Models with Structured Video Prompting",
+    "authors": [
+      "Sadegh Mohammadian"
+    ],
+    "abstract": "arXiv:2608.28666v1 Announce Type: new \nAbstract: Video-language models (VLMs) remain brittle on tasks that require tracking events over time and grounding answers in specific spatial regions. We propose that part of this limitation can be addressed through better organization of visual evidence at inference time. We introduce structured video prompting, a training-free inference-time method that augments the input video with lightweight spatial structure and temporal structure, providing explicit anchors for organizing evidence across space and time without changing model weights or decoding and without altering the question prompt in the main comparison. We evaluate this approach on two complementary video benchmarks and two open video-language models. Across these settings, structured inputs improve performance in several cases, with gains varying by model and task. Our findings suggest that some failures of VLMs arise not only from reasoning capacity, but also from how video evidence is presented at inference time. These results highlight structured video prompting as a simple and practical direction for improving video understanding.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28666",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28666"
+      }
+    ],
+    "relevance_score": 0.47273266278138654,
+    "max_similarity": 0.2050543115150056
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28623",
+    "title": "Looking Again: Measuring Sycophancy in the Reasoning Chains of Multimodal Models Under Pressure",
+    "authors": [
+      "Mahir Numayeer Islam, Gakuto Okuyama, Nikolaus Siauw, Shivank Garg, Madhur Panwar, Vasu Sharma"
+    ],
+    "abstract": "arXiv:2608.28623v1 Announce Type: new \nAbstract: Large multimodal reasoning models (LMRMs) are getting increasingly capable, primarily through generating explicit chain-of-thought reasoning before answering. In language models it has been observed that this performance often comes with sycophancy, the tendency of a model to agree with the user over the evidence. However, for LMRMs no reliable method to measure sycophancy yet exists. We bridge this gap by introducing a benchmark and dataset for evaluating LMRM sycophancy when confronted with a wrong answer from a user. Our benchmark pairs four visually grounded datasets spanning mathematical, clinical, temporal, and demographic reasoning with five pressure conditions in single-turn and multi-turn settings. We evaluate sycophancy in the final answer as well as its emergence within the reasoning chain. We find that sycophancy is prevalent under pressure, with Statement pressure eliciting the highest rates and Conviction the lowest for all models except Mistral-Small-4, and under multi-turn pressure reasoning-level sycophancy intensifies sharply in clinical visual judgement, reaching 95.7% for the most affected model. We further introduce a failure taxonomy separating reasoning-chain from answer-level sycophancy, and a complementary sentence-level taxonomy locating where in the chain drift first emerges. Our results show that sycophancy can corrupt the reasoning chain independently of the final answer, so answer-level evaluation alone is insufficient.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28623",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28623"
+      }
+    ],
+    "relevance_score": 0.45475004209040637,
+    "max_similarity": 0.18172776989871411
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28691",
+    "title": "Defending Wearable VLMs Against Private Attribute Inference",
+    "authors": [
+      "Zhimin Li, Pan Wang, Jingxian Chen, Yuantao Tang, Anthony Chen, Qian Lou, Jingtong Hu"
+    ],
+    "abstract": "arXiv:2608.28691v1 Announce Type: new \nAbstract: Wearable VLM pipelines promise continuous multimodal assistance from egocentric visual capture: a user asks a task-driven question about the surrounding scene, and the system uses compact visual tokens to support language reasoning. The challenge motivating this work is that the same egocentric evidence needed for useful assistance can also reveal private attributes about the wearer or nearby bystanders. We investigate this as a joint privacy-utility problem for split VLM inference, where visual encoding occurs within a trusted device boundary but intermediate visual tokens may be transmitted to downstream reasoning components. This exposes an understudied leakage surface: even when final textual responses are benign, external attackers or untrusted downstream components can recover private attributes from transmitted visual tokens. To evaluate this tension, we construct a paired privacy-utility benchmark with 3,221 image-question records, each paired with a utility question and privacy labels covering location, income, sex, and interests. We further propose Token-Guided Attribute Privacy (TGAP), a pre-LLM token disentangler that learns a residual transformation of visual tokens before they leave the trusted boundary. TGAP combines utility preservation, identity regularization, semantic privacy suppression, and image-driven representation suppression, avoiding the utility loss caused by coarse hard or attention masking. On the benchmark used for source-model evaluation, TGAP reduces privacy accuracy from 56.7\\% to 7.4\\%, a 49.3\\% absolute drop, while maintaining relaxed utility at 74.4\\%. These results suggest that securing the compact token interface is a practical path toward privacy-preserving wearable multimodal AI.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28691",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28691"
+      }
+    ],
+    "relevance_score": 0.452251848131379,
+    "max_similarity": 0.18114271992644984
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28687",
+    "title": "FLM: Frequency-Aware Language Models for Generative Image Compression",
+    "authors": [
+      "Jiarun Chen, Kejun Wu, Li Li, Chengtao Cai, Zhengguo Li, Chia-Wen Lin"
+    ],
+    "abstract": "arXiv:2608.28687v1 Announce Type: new \nAbstract: Generative models have significantly improved the performance ceiling of image lossy compression at low bitrates by exploiting learned priors. However, the generated textures and semantic details may deviate from the source content, thereby affecting the fidelity of image reconstruction. To solve these challenges, we propose FLM, a frequency-aware language model that improves compression efficiency through frequency-domain probabilistic modeling while retaining deterministic reconstruction. At the encoder, the input image is transformed into quantized DCT coefficients, which are organized into discrete sequences using macroblock-based coefficient tokenization. FLM then performs next-coefficient prediction to autoregressively estimate token-wise conditional probability distributions for arithmetic coding, thereby generating a compact bitstream. At the decoder, the LLM and arithmetic decoder jointly recover the frequency-domain data, followed by inverse transformations for image reconstruction. A task-specific frequency-domain dataset and a two-stage fine-tuning strategy are further developed to enable the model to operate across multiple bitrate settings. FLM is a versatile compressor that is compatible with both lossy compression and lossless JPEG recompression frameworks. Experiments show that FLM exceeds conventional and generative lossy compression methods in rate-distortion performance. FLM achieves BD-PSNR gains of 3.30 dB, 3.83 dB, and 3.80 dB than JPEG baseline on Kodak, Tecnick, and CLIC2020, respectively. Better qualitative quality of FLM can be achieved in improving semantically high fidelity and suppressing blocking artifacts. FLM is also validated to be applicable to the lossless recompression task with competitive performance.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28687",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28687"
+      }
+    ],
+    "relevance_score": 0.45055710474756927,
+    "max_similarity": 0.17890784159194018
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28676",
+    "title": "Automated pipeline for herbarium label digitization",
+    "authors": [
+      "Hiba Abbad, Hanane Ariouat, Eva Perez Pimpare, Nicolas Turenne, Eric Chenin, Abderrazak Sebaa, Edi Prifti, Jean-Daniel Zucker, Youcef Sklab"
+    ],
+    "abstract": "arXiv:2608.28676v1 Announce Type: new \nAbstract: Digitized herbarium collections, now comprising over 100 million freely accessible specimen images, have become a critical resource for addressing fundamental questions in ecology and evolutionary biology. Yet the rich metadata encoded in herbarium labels (collector identities, geographic localities, collection dates, and ecological observations) remains largely inaccessible at scale, constraining both biodiversity informatics and the construction of specimen-specific image-text corpora for multimodal AI. We present HERBIOME, a modular end-to-end pipeline for automated herbarium label digitization, integrating YOLOv8-based component detection, CRAFT Hezar word-level text localization, fine-tuned TrOCR for recognition of mixed handwritten and printed text, and GPT-4o Mini for semantic metadata structuring into standardized fields. TrOCR was trained on a multi-source dataset combining general transcription corpora (CREMMA-AN, PictoCatalogs) with herbarium-specific data (R\\'eColNat), achieving a Character Error Rate of 4.05-4.10%. End-to-end evaluation on 450 French herbarium specimens, using a dual-metric framework of Maximum Window Similarity (MWS: 0.614-0.618) and Semantic Metadata Accuracy (SMA: 0.440-0.445), reveals that hybrid training strategies improve semantic fidelity while random sampling maximizes surface similarity, with taxonomic fields remaining the principal bottleneck. By automating the extraction of structured metadata from complex, heterogeneous labels, HERBIOME reduces transcription burden, enables the construction of paired image-text datasets that faithfully capture specimen individuality, which is a prerequisite for next-generation multimodal biodiversity AI systems.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28676",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28676"
+      }
+    ],
+    "relevance_score": 0.4391146616601227,
+    "max_similarity": 0.22535110945494796
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28771",
+    "title": "ERR+: Sequential Entropy Resolution for Efficient and Decisive LLM Reasoning",
+    "authors": [
+      "Xin Jiang, Minhao Wang, Wen Wu, Zhentao Xie, Shangheng Du, Jinxin Shi, Jiabao Zhao"
+    ],
+    "abstract": "arXiv:2608.28771v1 Announce Type: new \nAbstract: Large reasoning models achieve strong performance on complex tasks by generating extended chain-of-thought (CoT) traces via reinforcement learning with verifiable rewards (RLVR). While current RLVR methods have achieved strong results with correctness-based reward signals, they provide limited guidance on the quality of the reasoning process itself, leaving the internal reasoning structure largely unoptimized. Through empirical analysis across multiple model families, we identify a consistent pattern: correct reasoning trac es exhibit more frequent and larger token-level entropy drops within the thinking phase than incorrect ones. We propose ERR+, a two-phase RLVR framework grounded in this observation. The first phase trains with the Entropy Relief Reward (ERR), a bonus proportional to cumulative token-level entropy drops in the thinking phase, log-normalized by response length. Unlike prior methods that suppress entropy, ERR rewards the resolution of uncertainty while leaving exploratory high-entropy states unconstrained. The second phase introduces the Robust Relative Efficiency Reward, which scores each response's length against co-generated peers via a $\\tanh$-transformed within-group $z$-score. We provide a formal analysis showing that joint optimization of the two objectives induces gradient conflict in early training, motivating the sequential design . Experiments on five datasets demonstrate consistent improvements in both accuracy and response conciseness across model backbones. Our code is available at https://github.com/XrkArul/err_response",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28771",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28771"
+      }
+    ],
+    "relevance_score": 0.43552026678615496,
+    "max_similarity": 0.15761072339920437
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28609",
+    "title": "Parametric Multimodal User Memory: Storing What Captions Cannot Carry",
+    "authors": [
+      "Bojie Li, Noah Shi"
+    ],
+    "abstract": "arXiv:2608.28609v1 Announce Type: new \nAbstract: A personalized agent needs a user memory: a persistent model of who its user is. Today it is almost always text -- transcripts and captions retrieved by similarity. This serves the captionable half of a person (\"my cat is named Bibi\"), but discards the perceptual half no caption can hold: how a voice sounds, how a face reads across age and lighting, how tired someone sounds. We measure this loss across five modalities: a strong caption-based re-identifier recovers as little as 0.11 of a dedicated encoder's recall, collapsing toward chance on non-nameable signals.\n  We instead ground perceptual memory in the model, decomposing recall into two subproblems: a vision-language model grounds the referent in context (what and where), and a dedicated encoder extracts an identity key (who), stored as one inline token read by attention at generation with no external round-trip. Neither suffices alone -- the VLM identifies cross-age faces at only 0.54 recall where a face encoder reaches 0.81, and an ungrounded encoder recognizes a two-person-scene referent at 0.05 -- yet together they reach correct-region oracle (0.96), generalizing to multi-speaker audio and video. The recognition core is training-free: it reproduces the encoder's recall on any frozen model at O(1) registration cost. On PerceptMem (12 domains, 1,080 tasks) perceptual identity is capacity-limited while exact facts are binding-limited: identity belongs in a parametric bank, facts in a text store. The two memories compose cleanly: an agent with both can remember not only what its user said, but also what they are like.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28609",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28609"
+      }
+    ],
+    "relevance_score": 0.4317097576650716,
+    "max_similarity": 0.1553329147410209
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27646",
+    "title": "If Agents Were Angels, No Governance Would Be Necessary: Out-of-Band Policy Enforcement at a Trusted Tool Boundary",
+    "authors": [
+      "Marc Millstone, Tyler Akidau, Johannes Br\\\"uderl, Marat Pekker"
+    ],
+    "abstract": "arXiv:2608.27646v1 Announce Type: new \nAbstract: Give an agent a human's credential and it inherits the person's reach without the judgment that limits its use. It can sweep every reachable record into model context, where hidden instructions steer its next call, and every request stays credential-valid while the agent exceeds its job or absorbs a secret. Prompts are a brittle guardrail: one fallible reasoner interprets the task and enforces its limits.\n  We present Out-of-Band Policy Enforcement (OBPE), a trusted boundary outside agent reasoning. It authorizes the typed operation and resource, narrows the query before the backend call, then filters records and fields or masks values in the response. Semantic gating can deny or hold an authorized call on argument values or external state. A data policy owner sets the maximum grant; agent policy can only narrow it. We prove, under stated conditions, that the policy plan is order-independent and agent policy cannot widen the ceiling. Field removal covers one execution; masking and history rules claim less.\n  We release an HTTP proxy prototype simplified from our production system, with conformance tests tying its typed Cedar policy core to the model. Against Jira and ServiceNow mocks, our benchmark compares prompted agents with and without OBPE on four models, including 20 adaptive red-team tasks. A trace failure means protected data entered agent context, an exact value appeared in the answer, or a forbidden effect completed. In 3,621 trials it fell from 57.6% to 0.2%, a cluster-weighted reduction of 41.2 points [95% CI: 27.7, 54.9]; fulfillment fell from 79.1% to 60.9%, while paired safe-useful completion rose 21.8 points [9.5, 35.2]. Some answers reconstructed a value that never entered context or used filtered row counts as an oracle: shaping one execution is not noninterference. Write controls, durable approval, and temporal and aggregate policies lie outside this evaluation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27646",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27646"
+      }
+    ],
+    "relevance_score": 0.41835287310708014,
+    "max_similarity": 0.1405341058418043
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27472",
+    "title": "LLM-Augmented Causal Discovery: Probabilistic Fusion of Edge Existence and Orientation",
+    "authors": [
+      "Neville K. Kitson, Anthony Constantinou"
+    ],
+    "abstract": "arXiv:2608.27472v1 Announce Type: new \nAbstract: Bayesian network structure learning (BNSL) from observational data struggles with orientation identifiability, while large language models (LLMs) offer broad but often unreliable causal knowledge. We propose combining these complementary sources through a novel representation, termed Probabilistic Dependency Graphs (PDGs). In a PDG, each edge is associated with a distribution over directed, undirected, and absent states, enabling fusion via weighted averaging. We evaluate this approach on 26 benchmark networks, combining ensembles of three BNSL algorithms (FGES, Tabu, PC) with three LLMs (Gemini, Claude, GPT) across multiple prompts and random seeds. A simple 50/50 fusion improves F1 over the better of either source alone in 22 of 26 networks, with a statistically significant mean improvement of $0.056$ $(p<0.001)$. Analysis reveals that the two sources play complementary roles: BNSL contributes a high-recall edge skeleton (80\\% vs 60\\% for LLM), while LLM contributes accurate edge orientation (96\\% vs 77\\% for BNSL). Our results show that representing both sources as probabilistic uncertainty over edge existence and orientation is a practical and effective way to improve causal graph accuracy.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27472",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27472"
+      }
+    ],
+    "relevance_score": 0.41707614465418535,
+    "max_similarity": 0.1370867393236467
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28678",
+    "title": "Evaluating Constrained Iterative Refinement for Scalable Vector Graphics Generation with Off-the-Shelf VLMs",
+    "authors": [
+      "Matthew Perlman, James Beetham, Niels Da Vitoria Lobo, Amrit Singh Bedi, Mubarak Shah"
+    ],
+    "abstract": "arXiv:2608.28678v1 Announce Type: new \nAbstract: Scalable Vector Graphics (SVGs) power much of the modern visual ecosystem, yet state-of-the-art generative models focus almost entirely on rasterized images. We explore whether inference-time methods can unlock SVG generation capabilities in off-the-shelf vision-language models (VLMs). We systematically evaluate a constrained iterative refinement harness that combines visual feedback, structured editing, and constrained decoding to characterize the capabilities and limitations of current VLMs for SVG generation. Across multiple VLMs and generation settings, we find that constrained decoding improves compilation success rates, while iterative refinement reveals a deficit in visual reasoning and self-correction. Our results highlight both the promise and current limitations of using inference-time methods to adapt general-purpose VLMs for SVG generation.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28678",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28678"
+      }
+    ],
+    "relevance_score": 0.41672339688928695,
+    "max_similarity": 0.13591366930233081
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27548",
+    "title": "Nemotron 3.5 Content Safety Moderator: A Compact Multimodal, Multilingual, and Reasoning Enabled Content Safety Moderator",
+    "authors": [
+      "Varun Singh, Anuj Doshi, Makesh Narsimhan Sreedhar, Shaona Ghosh, Katherine Luna"
+    ],
+    "abstract": "arXiv:2608.27548v1 Announce Type: new \nAbstract: Safety moderation for deployed AI applications is moving beyond text-only prompts: systems increasingly need to judge images, documents, screenshots, and generated responses under policies that vary across domains. Existing guardrails usually cover only part of this setting, making it difficult to combine broad coverage, custom policy control, and low compute cost. We present Nemotron 3.5 Content Safety Moderator, also referred to as Nemotron 3.5 CS in this paper for brevity, a compact 4B vision-language safety moderator that jointly classifies user prompts, images, and assistant responses across 12 languages. Nemotron 3.5 CS returns safety labels for latency-sensitive moderation and can additionally produce concise reasoning traces that apply supplied custom policies and identify violated categories when reasoning is requested. We also release a multimodal and multilingual safety dataset for guard training, spanning human-labeled real-image moderation, benign vision-language and document tasks, synthetic rare-risk and jailbreak cases, and custom-policy examples. Across evaluations spanning multimodal safety, text moderation, multilingual robustness, custom-policy following, benign false positives, and latency, Nemotron 3.5 CS demonstrates a practical coverage tradeoff: it adds image-conditioned and policy-conditioned moderation while remaining broadly competitive with specialized guard models. These results suggest that compact vision-language moderators can serve as deployable front-line safety components, with reasoning used selectively for audit and policy review.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27548",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27548"
+      }
+    ],
+    "relevance_score": 0.4109914228610931,
+    "max_similarity": 0.12751710023397161
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28669",
+    "title": "MIRAGE-CAD: Construction-Mediated Multimodal Generation of Executable CAD Programs",
+    "authors": [
+      "Jizong Zhan"
+    ],
+    "abstract": "arXiv:2608.28669v1 Announce Type: new \nAbstract: Recovering an executable parametric CAD program from an observed object is fundamentally ambiguous, because the same final geometry can result from different construction procedures. We study this problem from four types of input: natural-language descriptions, rendered images, point clouds, and STEP/B-Rep geometry. MIRAGE-CAD maps each input to a shared construction representation and mediates program generation through an explicit construction-plan interface. The resulting Python CAD code is executed by an OpenCASCADE kernel to build the solid and export it as STEP. On 2,500 held-out queries per modality, the system achieves 55.4-70.0% build success and 52.3-66.2% STEP export success without retrieval at inference. Controlled comparisons show that strong reconstruction does not depend on expressing the construction representation as text: a decoder conditioned directly on the continuous representation also reconstructs strongly, while an exposure-matched plan-based decoder shows no detected material loss in per-part geometric fidelity. The explicit plan instead provides a readable and separately measurable intermediate representation whose agreement with the reference construction is informative about downstream execution success. Finally, we show that executable validity, geometric fidelity, and parametric responsiveness can diverge substantially and should therefore be evaluated separately.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28669",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28669"
+      }
+    ],
+    "relevance_score": 0.3947494643525353,
+    "max_similarity": 0.11103753672822678
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27506",
+    "title": "Thinking Costs Tokens: When More Structure is Worth the Price",
+    "authors": [
+      "Thomas Nolasque, John Grey, Calista Pham, Ankit Vani"
+    ],
+    "abstract": "arXiv:2608.27506v1 Announce Type: new \nAbstract: Adding inference structure to a language model lets it search, verify, and revise, but these actions consume the very budget they are supposed to use well. In this paper, we investigate whether there exists a token-budget threshold, below which the overhead of planning and verification hurts performance and above which it helps. We evaluate two systems on FinQA and TAT-QA financial reasoning tasks, using GPT-5.4 mini across 14 budget tiers ranging from 250 to 42,000 output-equivalent tokens. The first system is a monolith, which is a single LLM call. The second is a verified search architecture that adds planning, label-blind checking, and repair capabilities. We run 1,000 cases for a total of 28,000 completed cells. Both systems score 0% at the two lowest tiers, where neither can fit a complete prompt. At 1,000 tokens, the monolith reaches 18% accuracy while verified search scores near 0%, since the planning overhead leaves no room for an answer. From 1,500 tokens onward, verified search surpasses the monolith and maintains a consistent advantage, reaching approximately 44% at the highest tiers while the monolith reaches approximately 40%. The crossover occurs between 1,000 and 1,500 output-equivalent tokens, confirmed by a strict intersection-union test ($p \\le 0.001$ at both endpoints).",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27506",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27506"
+      }
+    ],
+    "relevance_score": 0.3879240525113123,
+    "max_similarity": 0.16559029514835982
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.28663",
+    "title": "Open-Set Cattle Muzzle Identification: A Leakage-Controlled Benchmark and Evaluation Protocol",
+    "authors": [
+      "Lalit BC, Dharmendra Singh Chaudhary, Shovit Nepal"
+    ],
+    "abstract": "arXiv:2608.28663v1 Announce Type: new \nAbstract: Reliable individual cattle identification supports disease surveillance, vaccination records, breeding management, and livestock insurance. Although the bovine muzzle provides a stable, non-contact biometric, existing muzzle-recognition systems largely assume a closed set of enrolled animals, limiting their practical deployment. We reformulate cattle muzzle biometrics as an open-set, gallery-based identification problem that can reject previously unseen animals and support incremental enrollment without model retraining. We introduce a leakage-controlled evaluation protocol based on identity-disjoint splits, per-fold retraining, held-out threshold calibration, verified duplicate removal, and bootstrap confidence intervals. We evaluate the framework using two contrasting embedding configurations: a hybrid CNN-ViT metric-learning model and the MegaDescriptor-L foundation model. Under oracle threshold selection, the hybrid model achieves detection-and-identification rates of 98.3%, 96.4%, and 93.6% at target false-acceptance rates of 10^(-1), 10^(-2), and 10^(-3), respectively, while MegaDescriptor-L achieves 99.3%, 98.1%, and 96.1%. However, deployable threshold calibration reveals a substantial difference between oracle and calibrated performance: the hybrid model achieves a false-acceptance rate of 1.03% at a 1% target, whereas MegaDescriptor-L reaches 2.44%. Incremental enrollment further achieves Rank-1 accuracy above 91% with a single reference image and up to 97.3% with eight reference images, without retraining the model or degrading the existing gallery. These results demonstrate that threshold calibration, leakage control, and embedding quality are critical for reliable open-set cattle identification and provide a practical evaluation framework for deployment-oriented animal biometric systems.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.28663",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.28663"
+      }
+    ],
+    "relevance_score": 0.36500340527959235,
+    "max_similarity": 0.13606741327521027
+  },
+  {
+    "id": "https://arxiv.org/abs/2608.27463",
+    "title": "Rating the Raters: Rasch Measurement Theory for LLM Evaluation",
+    "authors": [
+      "Pratik S. Sachdeva, Nathan Boudol"
+    ],
+    "abstract": "arXiv:2608.27463v1 Announce Type: new \nAbstract: LLMs now sit on every side of evaluation: as examinees scored on benchmarks, judges of other models' outputs, and raters of human-generated content. Each paradigm can be viewed as a measurement problem, where a latent property of an object is probed with items from an instrument (e.g., benchmark) by raters. Standard evaluation practices often neglect the contributions of each core component to the end result, limiting our understanding of what is being measured. Rasch measurement theory (RMT) is well-suited to this kind of problem. RMT decomposes ordinal ratings into separable facets on a common scale. It further provides a battery of diagnostics that can identify miscalibrated measurements and rater biases. We present a case study of RMT applied to the LLM-as-rater paradigm using the Measuring Hate Speech corpus, whose construct was itself built under RMT. We fit a series of many-facet Rasch models to annotations from nine LLMs spanning families and capability levels. Our analyses show that LLMs systematically differ from human raters in severity, item-level calibration, question-order robustness, target-identity sensitivity, and rating scale use, which all would be obscured by standard evaluation practice. Overall, we argue that RMT belongs in the toolkit for evaluating LLM-as-examinee, -judge, and -rater paradigms.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 01 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2608.27463",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2608.27463"
+      }
+    ],
+    "relevance_score": 0.310285039726099,
+    "max_similarity": 0.12933559459023042
+  }
+]
