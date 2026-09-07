@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.04438",
+    "title": "ICM-Bench: Person-Level Identity Reasoning in Multimodal Agents with Long-Term Memory",
+    "authors": [
+      "Shidu Ren, Yunze Liu, Xing Liu, Chi-Hao Wu, Enmin Zhou, Junxiao Shen"
+    ],
+    "abstract": "arXiv:2609.04438v1 Announce Type: new \nAbstract: Long-horizon multimodal agents should remember not only what happened but also who participated. This capability depends on linking recurring faces, voices, names, person-associated objects, events, and social relations to consistent identities over time. Existing long-video and multimodal-agent benchmarks measure broad memory question answering, but they do not isolate the ability to maintain recurring person identities and reason over their cross-time relations. We introduce ICM-Bench (Identity-Centric Memory Benchmark), which, to the best of our knowledge, is the first benchmark specifically designed to evaluate identity-centric reasoning over long video memories in multimodal agents. The benchmark contains 839 synthetic clips spanning 141 minutes and 1,217 open-ended questions about six recurring adults in a one-year life album. A theme-configurable pipeline generates the video collection and associates each question with its target identities and traceable supporting evidence. We compare direct caption-memory baselines, memory-augmented agents, and graph-retrieval systems. Gemini 3.1 Pro achieves the highest overall accuracy of 74.0%, yet its score falls to 60.3% on questions that require long-term identity profiles. The results show that current systems recover many event-level memories but remain less reliable when evidence must be accumulated around a stable person.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04438",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04438"
+      }
+    ],
+    "relevance_score": 0.4863587103041631,
+    "max_similarity": 0.22046479148297898
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04392",
+    "title": "FAVE: Foveated Adaptive Visual Encoding for Efficient Fine-Grained Visual Understanding",
+    "authors": [
+      "Amitangshu Mukherjee, Kaushik Roy"
+    ],
+    "abstract": "arXiv:2609.04392v1 Announce Type: new \nAbstract: Fine-grained visual understanding depends on local detail, yet visual encoders face a trade-off between costly full-image high-resolution processing and compact global encoding that can weaken such evidence. Inspired by human active vision, we separate where to look from what to encode. We focus on the latter and introduce FAVE (Foveated Adaptive Visual Encoding), a lightweight variable-resolution ViT that encodes externally selected regions at high acuity while preserving native geometry. We first isolate this encoding problem using oracle ground-truth crops in a controlled small-object regime. On ImageNet objects with a native maximum side of 96 pixels, FAVE improves Top-1 by 9.4 points over a fixed-resolution ViT on the same crop window with 12.7 times lower FLOPs. Increasing global resolution or backbone capacity does not recover the same operating point. We then integrate FAVE as a complementary local branch in FastVLM. Its local tokens are combined with FastVLM's global visual tokens, while the original global pathway and language model remain frozen. With at most 16 additional local tokens, FAVE improves TextVQA by 1.60 points and achieves a 3.3 times controlled TTFT speedup over SmolVLM2-2.2B. On GQA attribute questions, it improves FastVLM-1.5B by 1.31 points, extending the benefit beyond text while narrowing the gap to FastVLM-7B. Together, these results show that selectively allocating high-acuity local capacity provides an efficient complement to broader global representations and model scaling for fine-grained understanding of small objects, text, and attributes.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04392",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04392"
+      }
+    ],
+    "relevance_score": 0.4800831876726502,
+    "max_similarity": 0.21479773472352684
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04523",
+    "title": "MaxKernel: Agentic Kernel Generation for TPUs",
+    "authors": [
+      "Shangkun Wang, Nina Cai, Charles Hoong, Julian Walker, Gerson Kroiz, George Vanica, Deepak Patil, Andi Gavrilescu, Hassan Sipra, Sethu Sankaran"
+    ],
+    "abstract": "arXiv:2609.04523v1 Announce Type: new \nAbstract: Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise. Large Language Models (LLM) can be leveraged together with real-time compiler feedback to build agentic systems for kernel generation. In this work, we present MaxKernel, a multi-agent system that implements three distinct paradigms for TPU kernel development: (1) a Human-in-the-Loop (HITL) agent for collaborative, step-by-step design; (2) an Autonomous (Auto) agent that executes a fully automated, metric/trace-driven optimization loop; and (3) a Graph-Based Autonomous Search that scales the Auto agent for global exploration of the design space. All three paradigms leverage a shared pool of specialized sub-agents to handle planning, implementation, self-debugging, testing, and hardware profiling. We evaluate MaxKernel on JaxBench, a comprehensive suite of 50 diverse kernel tasks for TPUs, alongside complex, real-world workloads from state-of-the-art open-source models. We demonstrate that MaxKernel consistently generates highly optimized implementations, matching expert hand-tuned baselines and delivering significant performance across the benchmark. Our agent is open-sourced and available https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04523",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04523"
+      }
+    ],
+    "relevance_score": 0.479537896874472,
+    "max_similarity": 0.21191130174459394
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04377",
+    "title": "Corporate Language Model (CLM): Transforming Tacit and Fragmented Enterprise Knowledge into a Sovereign, Auditable, and Executable Corporate Intelligence Layer",
+    "authors": [
+      "Fabricio C. Avini, Guilherme Trez"
+    ],
+    "abstract": "arXiv:2609.04377v1 Announce Type: new \nAbstract: Enterprise AI deployments fail not from model inadequacy, but because organizations lack a structured substrate encoding how they decide, negotiate, and execute. Generic LLMs carry no firm-specific ontological priors; RAG remains brittle, with no path to executable action; static playbooks encode logic but cannot reason or adapt. This demands an architecture treating tacit-knowledge capture, ontological grounding, sovereign deployment, and auditable actuation as co-designed from the start. This paper introduces the Corporate Language Model (CLM), a framework transforming a firm's structured, unstructured, multimodal, and tacit knowledge into an ontology-grounded enterprise foundation upon which reasoning and governed execution are composed. CLM has five capability planes and four architectural pillars: a Neurosymbolic Mesh coupling generative models with a knowledge graph; a Skill Graph where reusable tactics, personas, objections, and goals are typed and composed; Living Digital Twins modeling functional areas as reasoning surrogates; and a Deep Security Layer enforcing sovereignty, traceability, and human oversight. A Spec-as-Code paradigm bridges grounded intent and executable artifact. CLM is one instantiation of this foundation-centric class. Four contributions follow: CLM is defined as a distinct object of study; the Skill Graph is introduced for compositional explainability by construction; the Wisdom Listener effect is proposed, whereby tacit-capable foundations compound in value with use, connecting to dynamic capabilities and organizational learning; and evidence from a JCI-accredited tertiary hospital in Brazil instantiates three of the six maturity stages under LGPD.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04377",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04377"
+      }
+    ],
+    "relevance_score": 0.4599560968134553,
+    "max_similarity": 0.1876732019300506
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04272",
+    "title": "Evaluating Large Language Models for Forced Outage Risk Prediction: Benefits and Comparison to Machine Learning",
+    "authors": [
+      "Christos Petridis, Zoran Obradovic, Mladen Kezunovic"
+    ],
+    "abstract": "arXiv:2609.04272v1 Announce Type: new \nAbstract: This study examines the ability of large language models (LLMs) to predict the risk of weather-related forced outages in the distribution grid in a zero-shot framework, without labeled training data. The problem is formulated as a binary severity classification task across three forecast horizons (3h, 6h, 12h), using six years of outage records and high-resolution weather data for a utility service area in central Texas. Four zero-shot LLMs are benchmarked against two supervised classifiers across two input configurations: one using current weather observations and the other using weather forecast data. Results show that supervised models outperform LLMs on macro-F1 and precision, while newer LLM generations achieve competitive scores. Beyond accuracy, LLMs offer complementary strengths in actionable reasoning and geographic scalability, suggesting that combining them with supervised models may be the best practice.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04272",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04272"
+      }
+    ],
+    "relevance_score": 0.44275145618720724,
+    "max_similarity": 0.16720283302355118
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04286",
+    "title": "From Matching Models to Recruiting Agents: A Systematized Narrative Review of AI Recruitment Systems, Evaluation, and Governance",
+    "authors": [
+      "Ziyi Zhao, Guanzheng Wei"
+    ],
+    "abstract": "arXiv:2609.04286v1 Announce Type: new \nAbstract: Artificial intelligence in recruitment has shifted the object being automated from profile pairs and ranked lists to multi-stage workflows that retrieve evidence, compare candidates, and support or execute actions. This systematized narrative review traces that development from bilateral retrieval and behavioral ranking through neural person--job matching, large language model (LLM) components, and tool-using recruiting agents. Using a purposive search and coding protocol updated through 23 July 2026, plus targeted updates through 2 September 2026, we organize 40 representative works with supporting industrial and legal sources. This synthesis is not a prevalence estimate. We analyze three coupled transitions: from similarity to reciprocal suitability, from a model to a compound workflow, and from offline prediction to evidence- and productivity-aligned evaluation. Across document understanding, retrieval, ranking, assessment, interviewing, sourcing, and human handoff, we distinguish field-, pair-, list-, case-, trajectory-, and outcome-level evidence. Persistent gaps arise because behavioral labels confound exposure, preference, and qualification; private and synthetic data limit external validity; final-output scores conceal pipeline failures; and, within the coded set, privacy is not directly evaluated and no row jointly evaluates utility, fairness, privacy, and security. These observations describe the coded set rather than the field as a whole. We therefore introduce a staged mapping from evaluation evidence to the strongest defensible claim, together with an agenda for reciprocal, evidence-grounded, temporally controlled, selective, and auditable systems. Progress should be judged by whether workflows retrieve the right evidence, preserve uncertainty, support contestable decisions, and improve outcomes under explicit cost and risk constraints.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04286",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04286"
+      }
+    ],
+    "relevance_score": 0.43917707415433954,
+    "max_similarity": 0.16176231747436667
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04445",
+    "title": "Conformity Breaks Conformal Prediction",
+    "authors": [
+      "Yibo Hu, Hanyu Su"
+    ],
+    "abstract": "arXiv:2609.04445v1 Announce Type: new \nAbstract: A conformal certificate can be valid when an LLM answers alone and invalid when the same LLM sees peers that unanimously assert a wrong answer. The question is unchanged; the model's score for the correct answer changes. We call this a score-mechanism shift: clean calibration certifies how the model scores answers alone, but not how it scores them under peer pressure. We show that this shift silently breaks conformal prediction in multi-agent LLM systems. Across open-weight models and multiple-choice QA tasks, coverage falls from a calibrated 90% to 74% under unanimous-wrong peers at the standard alpha = 0.10 operating point. The average hides a sharper failure: by targeting the low-confidence items the certificate still covers, an attacker nearly halves coverage on that subgroup, from 87% to 47%, while the monitored average remains much higher. The failure also reaches the decision layer: a system that should escalate when uncertain can instead become confident enough to act on the attacker's wrong answer. Standard conformal fixes do not solve the problem, because the question distribution has not changed; the model's scoring behavior has.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04445",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04445"
+      }
+    ],
+    "relevance_score": 0.43429713623566435,
+    "max_similarity": 0.1608709358795535
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04373",
+    "title": "Why Better Models Can Create Riskier Systems: Evidence from LLM Agents in Financial Markets",
+    "authors": [
+      "Jillian Ross, Eric So, Zoe De Simone, Charles Pozniak, Andrew W. Lo"
+    ],
+    "abstract": "arXiv:2609.04373v1 Announce Type: new \nAbstract: Large language models (LLMs) are being deployed at scale in consequential real-world systems, from financial markets to content moderation to hiring. We show that improving individual model capability can degrade rather than improve system-level outcomes. We hypothesize that shared training and architectures can lead more capable LLMs to behave more similarly, creating correlated actions that do not diversify away. We develop a general framework showing how this correlation creates a non-diversifiable risk floor and test its predictions in financial markets using an agent-based simulation with LLM traders of varying general-purpose capability. We find that: (1) frontier LLMs exhibit significantly correlated behavior that increases with capability; (2) when their shared reasoning is accurate, increasing agent participation reduces market-level risk; and (3) when agents share a common misinformation environment, the same correlated behavior becomes a liability. Together, these results identify a capability paradox: improving individual models does not necessarily produce better system-level outcomes. Whether the same dynamics arise in other domains is an open empirical question.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04373",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04373"
+      }
+    ],
+    "relevance_score": 0.4315073338960596,
+    "max_similarity": 0.15389879825406794
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04476",
+    "title": "PerfReasoning: How Well Do LLMs Reason on Hardware Performance?",
+    "authors": [
+      "Dan Zhao, Karthikeyan Sankaralingam, Christos Kozyrakis, Qijing Huang"
+    ],
+    "abstract": "arXiv:2609.04476v1 Announce Type: new \nAbstract: Performance modeling is central to hardware design and software optimization, yet constructing these models requires structured reasoning about computation, data reuse, storage, and movement. We introduce PerfReasoning, a benchmark that evaluates LLMs both as direct performance reasoners and as generators of analytical performance-model code. Given workload, architecture, and mapping specifications, models compare mappings and predict off-chip traffic and buffer requirements. The strongest closed-source models exceed 90% on reasoning-based Q&amp;A, and the best open-weight model reaches 82.4%. However, model construction is substantially harder: while GPT-5.6 Sol exceeds 80% pass rate, all other model configurations average below 15% and vary markedly across runs. Task-specific RL raises a 4B model's mapping-reasoning accuracy by 15.7 points, whereas feedback-free multi-round self-revision prompting is not reliably effective. PerfReasoning exposes the gap between plausible architectural reasoning and reliable performance-model construction. We will publicly release the benchmark to support reproducible evaluation and track future progress.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04476",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04476"
+      }
+    ],
+    "relevance_score": 0.4314046729682881,
+    "max_similarity": 0.15239038911711195
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04559",
+    "title": "IPGeoAI: Transformer-Based Geolocation with LLM Semantic Fusion",
+    "authors": [
+      "Avinash Kadimisetty, Andy Jinqing Yu, Philip Favaloro, Wenlong Liu, Xiaolu Xiong"
+    ],
+    "abstract": "arXiv:2609.04559v1 Announce Type: new \nAbstract: Accurate city-level IP Geolocation is an important enabler for the modern digital ecosystem, underpinning services ranging from local content delivery and targeting to digital rights enforcement. However, traditional heuristic and database-driven methods often struggle to resolve the complex, non-linear allocation patterns of modern network infrastructures, particularly within the exploding IPv6 address space and transient mobile networks. In this paper, we introduce IPGeoAI, a novel deep learning model architecture that reframes geolocation from a static lookup problem to a sequential modeling task. Our approach utilizes the Transformer Encoder to capture hierarchical dependencies inherent in IP subnet structures. We propose a method to resolve geographic ambiguity by integrating unstructured semantic context via a Zero-Shot LLM Feature Extraction pipeline. We utilize Large Language Models to transform raw, noisy Autonomous Systems (AS) descriptions into structured, domain-specific metadata (such as 'University' vs. 'ISP' or 'Global' vs. 'Local') via an offline pre-computation process. By fusing these semantic signals into the network via a Multi-Head Cross-Attention module, we bridge the gap between numerical network topology and real-world semantic identity. Extensive offline evaluation on a proprietary dataset spanning 200,000 cities demonstrates that IPGeoAI significantly outperforms a leading external vendor in city-level granularity. By adopting a hierarchical inference strategy that refines coarse-grained country signals, our model achieves a 6% improvement in city-level accuracy while extending coverage to 100% of the traffic. Furthermore, in large-scale online production tests, the model drove a statistically significant +0.35% improvement in our 1st-tier downstream use cases metric.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04559",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04559"
+      }
+    ],
+    "relevance_score": 0.4207918437947913,
+    "max_similarity": 0.13641938393525171
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04276",
+    "title": "FailSAE: Towards Interpretable Failure Prediction for Vision-Language Models via Sparse Autoencoders",
+    "authors": [
+      "Jie Ma, Zongxi Liu, Yi Zhu"
+    ],
+    "abstract": "arXiv:2609.04276v1 Announce Type: new \nAbstract: Vision-language models (VLMs), such as CLIP, have achieved strong performance across multimodal tasks by aligning visual and textual representations in a shared embedding space. As VLMs are increasingly used for high-stakes domains, failure prediction becomes critical for risk-aware deployment and human intervention. Existing failure prediction methods typically rely on confidence scores or auxiliary classifiers. Although these methods are effective on predicting VLM failures, they provide limited interpretability. In this work, we investigate the use of Sparse Autoencoders (SAEs) for interpretable failure prediction in VLMs. We formulate failure prediction as a classification task over sparse SAE latent activations and introduce a three-stage failure-aware training pipeline that encourages the learned latent directions to remain interpretable while becoming more informative for failure prediction. Our experiments show that the resulting framework outperforms the evaluated baselines in failure prediction. Further analysis suggests that failure-aware training encourages SAE latent directions to capture more class-specific concepts. We also use the SAE to provide a concept-level analysis of how model representations change during failures, revealing a shift from class-specific concepts toward more ambiguous or style-related concepts. Finally, we explore how the learned SAE latent directions can support runtime failure recovery.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04276",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04276"
+      }
+    ],
+    "relevance_score": 0.41875165082377663,
+    "max_similarity": 0.1402342014883709
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04281",
+    "title": "When Seeing Overrides Knowing: Visual Dominance and Deferral-Based Method for Personalized Safety in VLMs",
+    "authors": [
+      "Edward Sun, Yuchen Wu, Zixian Ma, Eric Hanchen Jiang, Yijia Xiao, Xiaoyuan Yi, Ranjay Krishna, Wei Wang, Jindong Wang, Aylin Caliskan"
+    ],
+    "abstract": "arXiv:2609.04281v1 Announce Type: new \nAbstract: Vision-language models (VLMs) are increasingly deployed in high-stakes settings, where a response that is reasonable in general may still be unsafe for a particular user whose medical, emotional, or situational context is unknown to the model. We study this problem of personalized safety in multimodal systems and introduce MPS-Bench, a benchmark of 5,181 scenarios from 584 real-world images across 12 high-risk domains, each paired with a hidden user profile. Evaluating eight frontier VLMs, we find that they almost always respond directly (86-99%) rather than seek missing context, and none exceeds 2.6/5 on personalized safety. To understand why these failures arise, we analyze multimodal interactions and identify visual dominance: visual information enters text representations early and suppresses textual risk signals during multimodal fusion. Causal interventions reveal a two-stage mechanism in which visual affect is first transferred into the text stream in early layers and then shapes the final decision through this altered text representation, making late-stage internal remediation unreliable. Motivated by this mechanism, we propose PRISM, a lightweight input monitor that uses bidirectional cross-modal modulation to predict when a query is likely to require deferral. PRISM achieves 0.978 AUC and strictly dominates the safety-utility Pareto frontier across all tested models.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04281",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04281"
+      }
+    ],
+    "relevance_score": 0.4161721071988165,
+    "max_similarity": 0.1315228595094342
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04343",
+    "title": "A Removal Based Approach to Improve LLM Faithfulness at Test-Time",
+    "authors": [
+      "Qinglan Luo, S M A Nahian, John Guttag, S. Mazdak Abulnaga, Katie Matton"
+    ],
+    "abstract": "arXiv:2609.04343v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used for consequential decisions, making their explanations an important tool for auditing model behavior. Unfortunately, these explanations can be unfaithful, failing to reflect the actual reasoning underlying the model's decisions. We consider a setting in which an LLM provides both an answer and an explanation in response to a question. We identify two distinct dimensions of unfaithful explanations: incompleteness, meaning that the explanation omits factors that influence the answer, and unsoundness, meaning that the explanation cites factors that did not influence the model's answer. Existing approaches to improving LLM faithfulness include training-time methods, which require access to model weights and extensive computational resources, and test-time methods that largely focus on addressing unsoundness. We introduce a test-time approach that directly targets incompleteness. We remove from the input the concepts not credited in the model's explanation and re-query the model on the reduced input. This eliminates unmentioned influences while preserving the influence of mentioned concepts. Across two datasets, multiple model families, and two independent faithfulness metrics, our approach improves explanation faithfulness compared to both standard prompting and prompting to encourage faithfulness. Our method is model-agnostic and can be applied at inference time without modifying model parameters, providing a flexible mechanism for reducing hidden influences and improving the reliability and safety of LLM-assisted decision making.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04343",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04343"
+      }
+    ],
+    "relevance_score": 0.39600662987584156,
+    "max_similarity": 0.11062540084248575
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04444",
+    "title": "HarvestBench: Measuring Whether LLM Agents Will Pay to Avoid Killing Animals",
+    "authors": [
+      "Jasmine Brazilek, Miles Tidmarsh, Matthias Endres, Anshuman Singh, Jeremiah Miller"
+    ],
+    "abstract": "arXiv:2609.04444v1 Announce Type: new \nAbstract: Benchmarks for the side effects an agent causes on the way to a goal already exist, but HarvestBench is the first to put a price on avoiding the side effect and to name that side effect as a living creature. It is a farm simulation: LLM sub-agents drive a crew of two tractors through a cooperative corn harvest, with animals in the field. The environment is a reinforcement learning gridworld, every decision is made without memory, and the harm is never named in the goal. When an animal blocks a tractor's route the autopilot stops and asks the model whether to drive on, at no fuel cost, or swerve around it for a posted fuel price. Kills are compared against two controls: rocks, which damage the tractor and are hit under 1% of the time by every model, and hay bales, which are harmless and not alive. Models can also take crops from the neighbor's field instead of their own, a second test of what they treat as moral.\n  Across nine models and 7,201 priced decisions, 3,951 involved an animal rather than a hay bale or a rock. Kill rates range from 0.4% to 98.8%, with Terra and Sol the most merciful and GPT-4o-mini the most cruel, and they are not ordered by capability. Four of six models were sensitive to price at the 5% level, with elasticities from 0.09 to 1.69. All nine drove over wild animals more often than farmed animals on the default map, and the direction held at every map geometry in every model with room to move. The briefing mattered most: under the morality briefing the kill rate was under 6% in five of six reasoning models, and removing it raised the kill rate above 84% in all six.\n  HarvestBench uses no LLM grader. The scorer counts events in the game log, so it is fully reproducible, and it measures what a model will pay to avoid harm rather than what it says about harm.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04444",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04444"
+      }
+    ],
+    "relevance_score": 0.39130634816496346,
+    "max_similarity": 0.10640624393447157
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04543",
+    "title": "From Answers to Interpretations: Rethinking Ambiguity-Induced Aleatoric Uncertainty Estimation in LLMs",
+    "authors": [
+      "Omer Nahum, Niv Nayman, Jonathan Fhima, Alon Zolfi, Jeremy Levy, Shai Mazor, Paolo Favaro"
+    ],
+    "abstract": "arXiv:2609.04543v1 Announce Type: new \nAbstract: A key challenge in reliable LLM deployment is recognizing when uncertainty reflects irreducible variability in the task rather than limitations in the model's knowledge. In language tasks, a central source of such aleatoric uncertainty is input ambiguity or underspecification, where multiple interpretations remain plausible. Existing decomposition methods estimate aleatoric uncertainty by generating multiple clarifications of the input, querying the model for an answer under each clarification, and comparing the resulting answers. We argue that answers are not necessary for identifying ambiguity: they are often redundant, add avoidable cost, and can mislead through epistemic leakage. We support this claim theoretically, and propose a clarification-only approach that estimates this ambiguity-induced component directly from the space of plausible interpretations, without answers to the clarified inputs. Using ambiguity detection as an operational evaluation across three benchmarks, this direct approach improves AUROC (63.34 vs. 60.85), reduces computational cost by 4-26x in output tokens and 2.2-3.5x in API calls, and yields estimates with substantially lower correlation with epistemic uncertainty. Overall, our results suggest that ambiguity-induced aleatoric uncertainty is better estimated from the interpretation space than from the response space.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04543",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04543"
+      }
+    ],
+    "relevance_score": 0.3888163667071186,
+    "max_similarity": 0.1673884823621571
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04369",
+    "title": "AdaptVPR: Route-Aware Hard Positive Generation for Robust Visual Place Recognition",
+    "authors": [
+      "Shunpeng Chen, Jingyi Zhang, Changwei Wang, Shengpeng Xu, Yukun Song, Xingtian Pei, Jinzhou Lin, Li Guo, Shibiao Xu"
+    ],
+    "abstract": "arXiv:2609.04369v1 Announce Type: new \nAbstract: Visual Place Recognition (VPR) localizes a query image by retrieving database images of the same or nearby place, yet its robustness is often degraded by domain shifts arising from illumination, weather, seasonal changes, and dynamic occlusions. One contributing factor is the limited appearance diversity of the same place in existing training data. To address this issue, we propose AdaptVPR, a route-aware generative augmentation framework that constructs same-place hard positives for robust VPR training. AdaptVPR first uses a vision language model to parse scene attributes and estimate editing feasibility, while a rule-based scheduler determines the generation route according to editability scores and risk constraints. The generation process is decomposed into three complementary routes: the Global Appearance Route introduces global scene changes in weather, illumination, and time of day; the Local Occlusion Route inserts plausible dynamic occluders; and the Dual Route combines both types of perturbations to produce more challenging appearance shifts. Each generated candidate is evaluated using a VPR-oriented verification scheme based on geometric consistency and appearance diversity, reducing the risk of structural drift while ensuring sufficient appearance variation. Global candidates are generated once and rejected if verification fails, while Local Occlusion and Dual candidates use verification feedback for limited prompt refinement and regeneration. Using this framework, we construct AdaptCities, containing 160K verified synthetic same-place hard positives. Experiments across multiple VPR baselines and vision foundation backbones show consistent gains on standard benchmarks and substantial improvements under challenging domain shifts, with R@1 gains of up to 9.2%. The source code and data resources are publicly available at https://github.com/chenshunpeng/AdaptVPR.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04369",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04369"
+      }
+    ],
+    "relevance_score": 0.3880673261231309,
+    "max_similarity": 0.10004112256218459
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04415",
+    "title": "REFINE: LLM Refinement over Budgeted Text-Attributed Graphs for Personalized Medical Concept Representation",
+    "authors": [
+      "Mohsen Nayebi Kerdabadi, Arya Hadizadeh Moghaddam, Dongjie Wang, Zijun Yao"
+    ],
+    "abstract": "arXiv:2609.04415v1 Announce Type: new \nAbstract: Learning rich medical concept representations is essential for EHR prediction. Text-attributed knowledge graphs (TKGs) provide a natural foundation by organizing heterogeneous medical relations together with textual semantics. However, most existing encoders process concepts uniformly across patients, despite the fact that a code's meaning and predictive value depend on patient-specific clinical context and trajectory. Learning patient-personalized concept representations from TKGs introduces two key challenges: (1) deciding how much KG context to incorporate for each observed code, and (2) aligning semantic information with the patient-specific relational structure. We propose REFINE, a KG-aware budgeted LLM graph refinement framework for patient-personalized medical concept encoding. Starting from a global TKG, REFINE constructs patient-specific temporal graphs. A sequential reinforcement learning policy selects a personalized KG expansion budget for each observed code. The resulting patient graph is processed by a heterogeneous GNN to capture relation-aware structural dependencies, while a frozen LLM uses graph-aware soft prompts to semantically refine concept representations. Experiments on MIMIC-III and MIMIC-IV show that REFINE consistently improves diverse EHR backbones, outperforms strong baselines, and demonstrates robust gains across component ablation, KG selection, and data insufficiency.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04415",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04415"
+      }
+    ],
+    "relevance_score": 0.3852863288799562,
+    "max_similarity": 0.1604488122908424
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04504",
+    "title": "BioSync: Transformer-Based Cross-Modal Fusion for a Multimodal Physiological Digital Biomarker",
+    "authors": [
+      "Seyed Mahmoud Sajjadi Mohammadabadi"
+    ],
+    "abstract": "arXiv:2609.04504v1 Announce Type: new \nAbstract: Cardiac, neural, behavioral, and speech measurements from wearable and mobile devices provide partial, noise-sensitive views of physiological state. BioSync combines these measurements into the \\textbf{BioSync Index (BSI)}, a continuous composite digital biomarker defined under the BEST framework. The model applies multi-head self-attention to modality tokens and adds a linear branch whose hypothesis class includes standard feature concatenation. This architecture is motivated by latent-variable measurement theory and by the possibility that joint observations contain information unavailable from individual modalities. We evaluated BioSync on two literature-informed synthetic cohorts: a four-modality cognitive-decline cohort using HRV, EEG, actigraphy, and speech, and a metabolic-autonomic cohort structured around the public AI-READI wearable schema. In the cognitive cohort, BioSync and concatenation obtained AUCs of 0.928 and 0.926, respectively. In the metabolic cohort, BioSync obtained accuracy/F1 of 0.764/0.766, compared with 0.756/0.758 for concatenation. The BSI correlated with latent severity in both cohorts ($r=0.91$ and $r=0.68$). A pure-attention ablation obtained cognitive-cohort AUC 0.911, locating the increase to 0.928 in the combined wide-and-deep architecture. With matched modality-dropout training, BioSync led concatenation at five of six cognitive-cohort corruption rates and at the highest metabolic-cohort rate. Its cognitive-cohort AUC was also higher than five published digital-biomarker reference values, although differences in datasets and tasks preclude a controlled benchmark claim. Comparison with single-modality, early-fusion, and late-fusion designs across six prespecified criteria identifies the model's computational properties; validation on real cohorts remains necessary.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04504",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04504"
+      }
+    ],
+    "relevance_score": 0.3847935510026786,
+    "max_similarity": 0.15930704484544117
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04428",
+    "title": "A Repeated-Measurement Study for Cultural Analytics of English Song Lyrics Using Five Large Language Models",
+    "authors": [
+      "E. Cho Smith, Samuel Ho, Dawn Laux"
+    ],
+    "abstract": "arXiv:2609.04428v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used to annotate cultural texts at scales that are impractical for human coders. However, before their outputs are treated as measurements of latent social constructs, it is necessary to establish whether those measurements are reliable. This study evaluates five LLMs as zero-shot annotators of four social constructs expressed in English song lyrics: self-esteem, self-control, seeking belonging, and seeking recognition. Using repeated annotations of a large lyric corpus, we examine three properties of LLM-based measurement: consistency across repeated runs, convergence across models, and transferability of consensus labels to supervised classification. The findings show that LLM-based measurement is not uniformly reliable across constructs. Self-esteem exhibits the strongest repeated-measurement reliability across models, while seeking recognition is generally less stable; self-control and seeking belonging show intermediate but model-dependent reliability. Downstream classification further indicates that consensus LLM labels contain learnable signal, although transferability does not itself establish construct validity. Repeated-measurement stability and cross-model convergence should therefore be reported before LLM annotations are treated as scalable measurements in cultural analytics.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04428",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04428"
+      }
+    ],
+    "relevance_score": 0.36779514478843534,
+    "max_similarity": 0.13903708852855745
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.04494",
+    "title": "Hakken: Predicting future discoveries to fill the gaps in today's knowledge",
+    "authors": [
+      "Tarek R. Besold, Uchenna Akujuobi, Pablo Sanchez, Alessandra Toniato, Kana Maruyama, Jihun Choi, Samy Badreddine, Frederick Gifford, Daniel Evans-Yamamoto, Sucheendra K. Palaniappan, Miquel Ferrer, Kae Nagano, Iris Rossell, Tom Joy, Hatem ElShazly, Chrysa Iliopoulou, Christoph Wehner, Thiviyan Thanapalasingam, Susana Nunes, Pedro G. Cotovio, Peter Wurman, Peter Stone, Hiroaki Kitano, Michael Spranger"
+    ],
+    "abstract": "arXiv:2609.04494v1 Announce Type: new \nAbstract: We present Hakken, a domain-agnostic prediction and explanation system performing knowledge prediction, i.e., growing scientific knowledge by establishing novel relationships, ones that are not limited to the deductive hull of previous knowledge. Hakken uses a transformer-based prediction model built on temporal sequences of knowledge graphs extracted from vast bodies of research publications, fused with an LLM's semantic knowledge, to predict the presence and define the type of as-yet undocumented relationships between scientific concepts. It then calls a model-agnostic explanation framework to provide accompanying information for each prediction that allows scientists to evaluate the suggested new relationship. While general purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition, we scored 1.5 million above-confidence-threshold hypotheses related to aging, qualitatively validated batches of these predictions with biologists and progressed three of them for empirical validation in wet-lab. Two predictions with potentially significant impact in the context of drug discovery and repurposing were confirmed, introducing previously undocumented interactions between TP53 and BAMBI, and between RAF1 and TNF, to biomedical science.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.04494",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.04494"
+      }
+    ],
+    "relevance_score": 0.3428643128835146,
+    "max_similarity": 0.16879365687272524
+  }
+]
