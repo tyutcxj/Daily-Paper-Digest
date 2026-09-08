@@ -1,0 +1,518 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2609.05388v1",
+    "title": "Think-Verify-Revise: Neuro-Symbolic Visual Reasoning with Vision-Language Models and Dynamic Logic Tensor Networks",
+    "authors": [
+      "Homayoun Afshari",
+      "Pietro Basci",
+      "Alessandro Russo",
+      "Lia Morra"
+    ],
+    "abstract": "Visual reasoning tasks require a system to jointly perceive visual content and apply formal relational constraints---a combination that neither pure neural nor purely symbolic approaches handle well in isolation. This paper proposes a Neuro-Symbolic (NeSy) framework that closes this gap by tightly coupling a Vision-Language Model (VLM) for automatic First-Order Logic (FOL) rule induction with a Dynamic Logic Tensor Network (D-LTN) for differentiable rule verification, in a closed iterative feedback loop. The VLM receives a small set of labelled visual examples and proposes candidate FOL rules conforming to a strict grammar (Think); the D-LTN is automatically assembled from these rules at runtime and evaluates them grounding on CNN-produced visual embeddings (Verify); and verification failures are fed back to guide the VLM's next hypothesis (Revise). Evaluated on the ViSudo-PC benchmark across four visual domains (MNIST, EMNIST, KMNIST, FMNIST), the system induces valid Sudoku constraint rules using only three training examples as visual context. The proposed method achieves AUC scores matching or outperforming previous methods (NeuPSL, LTN), showing the potential for automatic rule discovery through VLM. Code is available at https://github.com/homayoun-afshari/nesy.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-04T17:39:47Z",
+    "updated": "2026-09-04T17:39:47Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05388v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05388v1"
+    ],
+    "relevance_score": 0.5292409401890193,
+    "max_similarity": 0.2754746618858248
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05369v1",
+    "title": "Towards Neuro-Symbolic Procedural Reasoning for Long-Horizon Vision-Language-Action Manipulation",
+    "authors": [
+      "Vivek Chavan",
+      "Yahuan Shi",
+      "Oliver Heimann",
+      "Kevin Haninger",
+      "Jörg Krüger"
+    ],
+    "abstract": "Vision-language-action (VLA) models can execute short manipulation skills, but remain brittle in long-horizon procedures requiring persistent task state, dependency-aware reasoning, conditional decisions, and reliable grounding. We investigate a neuro-symbolic framework that combines learned VLA control with explicit task graphs and multimodal procedural memory. Task graphs encode action dependencies, valid transitions, and branch conditions, while memory maintains the active step, completed actions, textual context, and task-relevant visual evidence. Together, these structures guide object selection, destination grounding, subgoal dispatch, and verification of expected state transitions. Human demonstrations provide additional spatial and temporal guidance through gaze or saliency cues. To isolate their effect on policy learning, our initial study bypasses cross-view gaze transfer and directly annotates pseudo-gaze in robot-view teleoperation videos. The resulting guidance is used during VLA fine-tuning and inference. We study two long-horizon manipulation domains, workspace clearing and surgical-instrument handling, which require ordered execution, visually grounded decisions, and conditional branching. We evaluate correct-object and destination selection, subtask completion, task progress, step-order consistency, complete-task success, and procedural or execution mistakes. This work positions structured symbolic reasoning and demonstration-derived visual guidance as complementary mechanisms for reliable long-horizon VLA manipulation.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-04T17:14:50Z",
+    "updated": "2026-09-04T17:14:50Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05369v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05369v1"
+    ],
+    "relevance_score": 0.5144523749893771,
+    "max_similarity": 0.2561088318743741
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05235v1",
+    "title": "PRICE: A Systematic Study of LLM Adaptation Choices for Bitcoin Price Forecasting",
+    "authors": [
+      "Maryam Fakhari",
+      "Mehran Safayani"
+    ],
+    "abstract": "Cryptocurrency markets exhibit extreme volatility and non-stationary dynamics that challenge conventional forecasting methods. Although Large Language Models (LLMs) have shown promise for time series forecasting, the combined effects of adaptation choices remain largely unexplored in financial settings. This study introduces PRICE, a structured approach for adapting LLMs to short-term Bitcoin price forecasting. Built on a 4-bit quantized LLaMA-3 8B model, PRICE investigates how fine-tuning, numerical representation, prompting, inference, and decoding jointly influence forecasting performance. PRICE integrates Parameter-efficient fine-tuning with Low-Rank Adaptation (LoRA), Recursive multi-step inference, Integer-rounded numerical representation, Context-Task-Format (CTF) prompting, and Exact zero-temperature decoding. Ablation studies show that each component contributes to forecasting accuracy and reliability. LoRA enables efficient training on limited hardware, recursive inference improves accuracy, integer-rounded values reduce errors, CTF prompting outperforms Chain-of-Thought, Implicit Chain-of-Thought (iCoT), and few-shot prompting, and zero-temperature decoding improves stability during recursive forecasting. Comparative evaluation against eight transformer-based and time-series foundation models shows that PRICE achieves the lowest forecasting errors on both validation and test sets while maintaining robust performance across evaluation periods. Despite being based on a model primarily pretrained on text rather than time-series data, PRICE achieves competitive or superior performance relative to specialized foundation models. These findings demonstrate that adaptation choices critically determine the accuracy and robustness of LLMs for numerical time-series forecasting.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-09-04T15:01:38Z",
+    "updated": "2026-09-04T15:01:38Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05235v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05235v1"
+    ],
+    "relevance_score": 0.4899508858800534,
+    "max_similarity": 0.22630525816163277
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05395v1",
+    "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+    "authors": [
+      "Dain Kim",
+      "Eungi Cho",
+      "Kyumin Kim",
+      "Shinyeong Noh",
+      "Kyuseong Lim"
+    ],
+    "abstract": "Data-sovereignty regulations increasingly require public institutions to deploy open-source, on-premise LLM agents that chain multiple tool-calls across live government APIs. However, open-source models consistently underperform in this multi-step setting, and no existing benchmark measures the gap. We introduce the Korean Open Public API Benchmark (KOPA-Bench), comprising 145 real-world tasks. To close this gap, we present EDGE, an Execution-grounded Dynamic Graph for tool-calling data synthEsis driven by live execution. EDGE builds a graph of how each tool's output can feed another's input, keeps only the links that succeed when actually called against the live APIs, and traverses these verified links to synthesize executable multi-step trajectories. Fine-tuned via GRPO on the resulting dataset, our 9B model nearly matches the untuned 27B model from the same family, improving substantially not only on KOPA-Bench but also on the BFCL benchmark.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-04T17:44:52Z",
+    "updated": "2026-09-04T17:44:52Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05395v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05395v1"
+    ],
+    "relevance_score": 0.48703749546809794,
+    "max_similarity": 0.2859929701432321
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05395v1",
+    "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+    "authors": [
+      "Dain Kim",
+      "Eungi Cho",
+      "Kyumin Kim",
+      "Shinyeong Noh",
+      "Kyuseong Lim"
+    ],
+    "abstract": "Data-sovereignty regulations increasingly require public institutions to deploy open-source, on-premise LLM agents that chain multiple tool-calls across live government APIs. However, open-source models consistently underperform in this multi-step setting, and no existing benchmark measures the gap. We introduce the Korean Open Public API Benchmark (KOPA-Bench), comprising 145 real-world tasks. To close this gap, we present EDGE, an Execution-grounded Dynamic Graph for tool-calling data synthEsis driven by live execution. EDGE builds a graph of how each tool's output can feed another's input, keeps only the links that succeed when actually called against the live APIs, and traverses these verified links to synthesize executable multi-step trajectories. Fine-tuned via GRPO on the resulting dataset, our 9B model nearly matches the untuned 27B model from the same family, improving substantially not only on KOPA-Bench but also on the BFCL benchmark.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-09-04T17:44:52Z",
+    "updated": "2026-09-04T17:44:52Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05395v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05395v1"
+    ],
+    "relevance_score": 0.48703749546809794,
+    "max_similarity": 0.2859929701432321
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05405v1",
+    "title": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+    "authors": [
+      "Ji Soo Lee",
+      "Xilun Chen",
+      "Pierce Chuang",
+      "Ashish Shenoy",
+      "Jason Wei",
+      "Dohwan Ko",
+      "Hyunwoo J. Kim",
+      "Benoit Corda"
+    ],
+    "abstract": "Recent advances in wearable sensing enable continuous monitoring of physiological and behavioral signals, yet existing benchmarks rarely evaluate whether AI systems can reason over a real user's longitudinal wearable record. We introduce WearableQA, a benchmark comprising 4,084 10-option multiple-choice questions constructed from the wearable time series, blood biomarkers, and demographics of 200 real users, each with up to 500 days of daily measurements. WearableQA preserves authentic wearable distributions that include device noise and inter-individual variability. To evaluate distinct reasoning capabilities, we introduce 16 question types organized along two complementary axes: data versus health reasoning, which distinguishes computation over longitudinal measurements from physiological interpretation; and single- versus cross-signal reasoning, which separates reasoning about individual signals from the integration of multiple signals. To construct reliable questions at scale, we adopt a dual-grounding framework that combines literature-grounded physiological findings with statistically validated population-grounded physiological patterns. This enables the capture of meaningful relationships observed in real-world wearable data. Evaluation of 14 proprietary and open-source LLMs demonstrates that WearableQA effectively differentiates model capabilities, with performance ranging from 19.6% to 72.9% against a 10% chance baseline. Moreover, WearableQA remains far from solved: most models achieve accuracies below 60%. Overall, WearableQA provides a realistic and diagnostic benchmark for evaluating LLM reasoning over real-world wearable data.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-09-04T17:52:37Z",
+    "updated": "2026-09-04T17:52:37Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05405v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05405v1"
+    ],
+    "relevance_score": 0.4617681972830925,
+    "max_similarity": 0.1898722313793349
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05224v1",
+    "title": "First Things First: Teaching LLM-Based Agents to Prioritize Must-Haves before Nice-to-Haves",
+    "authors": [
+      "Tianjie Ju",
+      "Xinyue Xu",
+      "Wanxuan Sun",
+      "Lingxiao Diao",
+      "Gongshen Liu",
+      "Zhuosheng Zhang",
+      "Cheng Yang"
+    ],
+    "abstract": "Recent progress in multimodal large language models (MLLMs) has fueled significant enthusiasm in their potential to act as autonomous agents for real-world tasks. However, scenarios requiring agents to fulfill users' complex, structured requirements remain largely underexplored. In this work, we examine reasoning tasks under three distinct requirement scenarios: (i) Must-have requirements uniquely determine a unique feasible solution; (ii) Multiple answers satisfy the must-have requirements and are prioritized via the nice-to-have requirements; and (iii) No candidate solution satisfies the must-have requirements, in which case the agent should abstain from generating a response. We evaluate state-of-the-art MLLMs on 3,649 carefully constructed problems that reflect realistic service scenarios, including e-commerce, booking, and map-based or ride-hailing. Our evaluation reveals that existing MLLMs exhibit catastrophic failures in all scenarios. They frequently misinterpret task requirements, violate must-have requirements, and produce invalid solutions. To address this critical gap, we propose First Things First Reinforcement Learning FTF-rl that explicitly optimizes reasoning over multi-priority user requirements. Experimental results show that our method substantially improves the task success rate compared to strong baselines. Moreover, FTF-rl yields general effectiveness on popular logical and mathematical reasoning tasks, including LogicVista, MathVision, and InfoQA. Our findings suggest that enhancing requirement-aware reasoning capability provides a simple yet effective pathway to improve generalization of MLLM agents. Code and dataset are available at https://github.com/claire62/FTF-RL.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-04T14:54:30Z",
+    "updated": "2026-09-04T14:54:30Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05224v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05224v1"
+    ],
+    "relevance_score": 0.45907304246630964,
+    "max_similarity": 0.18770186313115786
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05335v1",
+    "title": "The History Is the Detector: Executing CVE Patch History, End-to-End",
+    "authors": [
+      "Qiushi Wu",
+      "Kevin Eykholt",
+      "Youngja Park",
+      "Xiaokui Shu",
+      "Dhilung Kirat",
+      "Douglas Lee Schales",
+      "Ian Molloy"
+    ],
+    "abstract": "Public vulnerability databases collect rich information about known software flaws, including their weakness types, affected components, and related patches. Fixing commits provide the exact code changes that removed these flaws. While these records capture why the original code was unsafe, they are documented mainly for human inspection rather than automated reuse. Consequently, the same unsafe conditions may still exist elsewhere in code without a known advisory, leaving much of this detection knowledge unused.   We present BUGSTONE-E2E, a framework that transforms vulnerability history into executable detection rules and validates their findings. First, BUGSTONE-E2E mines reusable rules from verified fixing commits, capturing scan anchors, fix semantics, and CVE provenance and organizing them by CWE and language. Second, detection follows a funnel-shaped pipeline: early stages process a large pool of candidates using lightweight analysis, while later stages apply increasingly capable and expensive models to a shrinking set of targets. Specifically, BUGSTONE-E2E first enumerates call sites matching rule anchors using Tree-sitter, then removes benign sites using lightweight heuristics without LLM calls. Next, LLM-based agents inspect the remaining candidates guided by the rule. Following this inspection, the system re-triages surviving candidates and builds runtime verifications, then generates scope-checked patches validated via two-sided differential tests. Using 19,325 high-severity CVEs from 2022 to 2026, BUGSTONE-E2E identifies 2,710 fixing commits and constructs 1,033 detection rules across 56 CWE families, packaged into 172 skills. When applied across 14 programs, it produced runtime evidence for 644 findings. These results demonstrate that CVE history can be turned into an executable workflow, transforming past vulnerabilities into reproducible detection and repair.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-04T16:40:22Z",
+    "updated": "2026-09-04T16:40:22Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05335v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05335v1"
+    ],
+    "relevance_score": 0.4559283333729852,
+    "max_similarity": 0.18663071932588665
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05239v1",
+    "title": "Cross-Domain Tracker Adaptation Without Target-Domain Labels via Vision-Language Agents",
+    "authors": [
+      "Daniel Davila",
+      "Ravikumar Balakrishnan",
+      "Mike Cochran"
+    ],
+    "abstract": "We present a system that uses a Vision-Language Model (VLM) as a diagnostic agent for adapting a detect-to-track pipeline to a new target domain without access to target-domain labels. Rather than optimizing against annotated metrics, the VLM directly inspects rendered tracking outputs, identifies visual failure modes, and recommends parameter updates through an iterative tuning loop. We first demonstrate that ground-truth-supervised hyperparameter transfer can be brittle. On MOT17->MOT20, applying a source-derived oracle configuration reduces mean HOTA by 0.090, from a target-domain ceiling of 0.357, to 0.267. Without using any target-domain labels, our VLM-based tuner recovers 67.8% of this lost headroom, finishing within 0.029 HOTA of the target ceiling; on the highest-density target sequence, it recovers up to 86.7%. We further show that label-free Bayesian optimization with handcrafted proxy objectives struggles under large domain shifts and can degrade configurations that are already strong. In contrast, the VLM tuner acts selectively: when its visual diagnosis reveals no clear failure mode, it declines to modify the configuration, preserving performance on easy transfers while improving hard ones. Finally, we characterize the conditions under which this approach succeeds, namely, when domain shift manifests through exposed detection-level parameters, versus where it is less effective, such as MOT17->DanceTrack, where the source oracle is already near-optimal.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-04T15:05:22Z",
+    "updated": "2026-09-04T15:05:22Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05239v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05239v1"
+    ],
+    "relevance_score": 0.44770917997291415,
+    "max_similarity": 0.1761735650764634
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05381v1",
+    "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+    "authors": [
+      "Matthias Busch",
+      "Marius Tacke",
+      "Sviatlana V. Lamaka",
+      "Mikhail L. Zheludkevich",
+      "Christian J. Cyron",
+      "Roland C. Aydin",
+      "Christian Feiler"
+    ],
+    "abstract": "Large language models (LLMs) are increasingly evaluated on molecular property benchmarks, but accuracy cannot distinguish a model that predicts a property from one that retrieves a published number. We audit 22 frontier models on 12 regression benchmarks for verbatim retrieval and find that it is widespread but relatively benchmark-specific: on five datasets more than $50\\%$ of the LLMs show verbatim retrieval, while on the remaining datasets it appears only in isolated cells. We run our experiments at two reasoning levels and find that reasoning changes retrieval. The same experiments, on the same molecules and with the same prompt, are flagged $89\\%$ more often at the higher reasoning level than at the lowest one. Finally, we test a way to interrupt retrieval in our most contaminated cases, and find that the strongest models in some cases still recognise a combination of transformed SMILES strings and original labels. Furthermore, suppressing retrieval moves the prediction errors of the different models closer together in relative terms, while their differing use of verbatim retrieval spreads them apart. This indicates that the general predictive capability of an LLM is not determined solely by the amount of memorised values. This work provides an overview of the amount and depth of verbatim retrieval in molecular regression benchmarks using LLMs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-04T17:32:48Z",
+    "updated": "2026-09-04T17:32:48Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05381v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05381v1"
+    ],
+    "relevance_score": 0.43596346515165635,
+    "max_similarity": 0.15574012675534704
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05351v1",
+    "title": "MEOX: Compact Multimodal Mixture-of-Experts for Earth Observation",
+    "authors": [
+      "Mohanad Albughdadi"
+    ],
+    "abstract": "Recent advances in Earth Observation representation learning accommodate heterogeneous sensors and missing observations, often through larger architectures. We present MEOX (Multimodal Earth Observation with eXperts), a multimodal masked autoencoder with a 2.939 million-parameter encoder and 3.115 million parameters in total. Sensor-specific adapters, explicit validity signals, and a shared sparse-expert block preserve modality-dependent processing before a learned patch-wise fusion. Four metadata tokens then accompany a single spatial sequence through fourteen further encoder blocks. Shared expert projections with private low-rank residuals constrain parameter growth, while rotary attention supports downstream spatial grids different from pretraining. The model is pretrained on 1.228 million MMEarth64 samples using modality-balanced masked reconstruction and structured sensor dropout. Frozen transfer is evaluated on six GEO-Bench tasks at both 64 and 224 pixels. The model reaches 64.42% mean intersection-over-union on cashew segmentation at 64 pixels and 90.56% average accuracy on EuroSAT at 224 pixels, exceeding the corresponding reported CSMoE results. BigEarthNet finetuning reaches 72.95% micro-average precision. Routing diagnostics distinguish expert participation, spatial dependence, modality association, and functional contribution. A held-out WorldCover probe measures a 0.64-percentage-point benefit from metadata, while retrieval separates same-sensor semantics from cross-sensor alignment. These results demonstrate sensor-flexible representation learning and strong task transfer using a compact parameter budget.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-04T16:59:36Z",
+    "updated": "2026-09-04T16:59:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05351v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05351v1"
+    ],
+    "relevance_score": 0.4219757366020898,
+    "max_similarity": 0.14323307277691003
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05401v1",
+    "title": "Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models",
+    "authors": [
+      "Wonje Jeung",
+      "Sangyeon Yoon",
+      "Hyesoo Hong",
+      "Yoonjun Cho",
+      "Dongjae Jeon",
+      "Bumjun Kim",
+      "Jean Oh",
+      "Youngjae Yu",
+      "Albert No"
+    ],
+    "abstract": "Vision-language models are increasingly used as reward functions for robotic learning, but this role requires paraphrase invariance: the same trajectory should receive the same reward under semantically equivalent goal descriptions. We show that current VLM reward models often violate this property. Paraphrasing the instruction alone can substantially change predicted progress scores, and can even flip identical robot behavior between failure and success. To measure this failure mode, we introduce ROBORMBENCH, a benchmark with 2,390 real-robot trajectories, ground-truth progress labels, and 21,673 verified paraphrases spanning lexical, syntactic, and action-goal rewrites. Across proprietary and open-source VLMs, paraphrase-induced instability is widespread and severe, grows under more divergent rewrites, and is not reliably reduced by scale or explicit reasoning. Dedicated reward models trained with trajectory-grounded supervision are substantially more stable. These results show that paraphrase robustness is a core requirement for reliable VLM-based reward modeling in robotics.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-09-04T17:47:58Z",
+    "updated": "2026-09-04T17:47:58Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05401v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05401v1"
+    ],
+    "relevance_score": 0.41035696248872433,
+    "max_similarity": 0.12989648080975458
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05221v1",
+    "title": "A Verifier-Guided Explainable Reasoning Framework with Gold-Anchored QLoRA, Task-Aware Mixture-of-Experts, and Group-Relative RLVR",
+    "authors": [
+      "Thi Kim Trang Vo",
+      "Nam Tien Le",
+      "Thi Kim Nguyet Vo",
+      "Minh Khang Tran",
+      "Duy Phuong Tran"
+    ],
+    "abstract": "Large language models (LLMs) show strong reasoning ability, but their explanations can remain inconsistent, weakly grounded, or difficult to verify. We propose a verifier-guided explainable reasoning framework for transparent educational question answering that combines gold-anchored QLoRA, task-aware symbolic routing, and group-relative RLVR. Qwen2.5-3B-Instruct is first adapted with field-weighted QLoRA supervision anchored to authoritative answers. A lightweight router then assigns logic problems to a FOL/Z3 verifier and physics problems to a formula- and unit aware symbolic solver. Verifier feedback is further used to support candidate evaluation, self-revision, and reward construction during RLVR. Candidate responses are evaluated along three complementary dimensions: P1 for answer correctness, P2 for evidence or unit consistency, and P3 for reasoning depth and explainability. At inference, gold-free self-consistency aggregates multiple candidate responses before an optional question-only physics verifier performs conservative system-level correction. On 438 held-out examples, RLVR increases P3 from 50.68% to 72.20%, while hybrid P1 remains approximately stable at 55.94%. Self-consistency improves model only P1 from 48.86% to 50.23%, with symbolic verification providing the remaining hybrid gain. These results indicate that RLVR primarily strengthens explicit reasoning structure, while symbolic verification complements the neural policy by improving answer reliability at the system level.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-09-04T14:52:06Z",
+    "updated": "2026-09-04T14:52:06Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05221v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05221v1"
+    ],
+    "relevance_score": 0.4047905703200307,
+    "max_similarity": 0.12133263690619697
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05314v1",
+    "title": "Large Language Models for HVAC Operations in Building Energy Systems: A Critical Review of Methods, Applications, and Deployment Readiness",
+    "authors": [
+      "Alexander Neubauer",
+      "Tianzhen Hong",
+      "Han Li",
+      "Mengbo Yu",
+      "Amin Darbandi",
+      "Yannick Fürst",
+      "Martin Kriegel"
+    ],
+    "abstract": "Building automation systems generate rich sensor data yet remain insight-poor because heterogeneous point naming, missing metadata, and fragmented documentation obstruct their operational use. This systematic review analyses and codes 66 peer-reviewed studies on large language models (LLMs) for HVAC operations published between 2023 and March 2026. Each study is classified across five application families and three LLM method families and assessed for evidence realism, deployment readiness, and the responsibility boundary between the LLM and physical HVAC decisions. The corpus is concentrated in building energy modelling (BEM, 32 of 66 papers), while load forecasting remains too sparse for subfield-level conclusions. Only four studies reach pilot-level evidence, and none reports sustained operational deployment. No study was classified as ready-now for industry adoption; three were near-term and 63 research-only. Nevertheless, several bounded, human-in-the-loop uses merit near-term trials, including point-name normalisation, document-grounded operator support, BEM workflow assistance, and advisory interfaces around physics-based controllers. Conventional machine learning (ML), model predictive control (MPC), reinforcement learning (RL) and ontology-based tools remain more adopted for high-frequency control, short-horizon numerical forecasting, and well-posed ontology mapping, while autonomous agentic operation and unvalidated occupant proxies remain research-stage. Current evidence therefore supports LLMs primarily as semantic and workflow layers rather than autonomous HVAC controllers. Future work should prioritise field-validated benchmarks, orchestration evaluation under operational constraints, and LLM-MPC/RL architectures with bounded latency and verifiable safety properties.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-04T16:08:05Z",
+    "updated": "2026-09-04T16:08:05Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05314v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05314v1"
+    ],
+    "relevance_score": 0.4043411483628539,
+    "max_similarity": 0.11987697410267283
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05314v1",
+    "title": "Large Language Models for HVAC Operations in Building Energy Systems: A Critical Review of Methods, Applications, and Deployment Readiness",
+    "authors": [
+      "Alexander Neubauer",
+      "Tianzhen Hong",
+      "Han Li",
+      "Mengbo Yu",
+      "Amin Darbandi",
+      "Yannick Fürst",
+      "Martin Kriegel"
+    ],
+    "abstract": "Building automation systems generate rich sensor data yet remain insight-poor because heterogeneous point naming, missing metadata, and fragmented documentation obstruct their operational use. This systematic review analyses and codes 66 peer-reviewed studies on large language models (LLMs) for HVAC operations published between 2023 and March 2026. Each study is classified across five application families and three LLM method families and assessed for evidence realism, deployment readiness, and the responsibility boundary between the LLM and physical HVAC decisions. The corpus is concentrated in building energy modelling (BEM, 32 of 66 papers), while load forecasting remains too sparse for subfield-level conclusions. Only four studies reach pilot-level evidence, and none reports sustained operational deployment. No study was classified as ready-now for industry adoption; three were near-term and 63 research-only. Nevertheless, several bounded, human-in-the-loop uses merit near-term trials, including point-name normalisation, document-grounded operator support, BEM workflow assistance, and advisory interfaces around physics-based controllers. Conventional machine learning (ML), model predictive control (MPC), reinforcement learning (RL) and ontology-based tools remain more adopted for high-frequency control, short-horizon numerical forecasting, and well-posed ontology mapping, while autonomous agentic operation and unvalidated occupant proxies remain research-stage. Current evidence therefore supports LLMs primarily as semantic and workflow layers rather than autonomous HVAC controllers. Future work should prioritise field-validated benchmarks, orchestration evaluation under operational constraints, and LLM-MPC/RL architectures with bounded latency and verifiable safety properties.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-09-04T16:08:05Z",
+    "updated": "2026-09-04T16:08:05Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05314v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05314v1"
+    ],
+    "relevance_score": 0.4043411483628539,
+    "max_similarity": 0.11987697410267283
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05363v1",
+    "title": "Distill Globally, Adapt Locally: Reasoning Distillation and Product-Type Test-Time Training for Scalable Trade-Up Recommendation",
+    "authors": [
+      "Siliang Liu",
+      "Mohammad Ghasemi",
+      "Sapan Patel",
+      "Amin Banitalebi-Dehkordi"
+    ],
+    "abstract": "Trade-up recommendation identifies higher-quality alternatives that preserve a customer's purchase intent while offering upgraded benefits. Large language models (LLMs) can reason about such distinctions, but applying them directly to hundreds of millions of product pairs is operationally impractical. We introduce a two-level framework that distills LLM reasoning into an efficient non-generative student and adapts its decision boundary to product-type-specific trade-up criteria. At Level 1, a retrieval-augmented few-shot LLM teacher generates structured relation labels and natural-language rationales. These rationales supervise a compact embedding-pair classifier through alignment and contrastive objectives; at inference, the student uses only two precomputed 768-dimensional product embeddings, with no LLM calls or text generation. On a fixed human-annotated benchmark of 8,352 pairs, a 15.5M-parameter four-class reasoning-distilled student achieves AUC 0.924 (95% CI [0.918, 0.929]), compared with 0.912 for the four-class label-only student. At Level 2, product-type test-time training (PT-TTT) uses few-shot demonstrations to optimize lightweight category-specific adapters over the frozen student. PT-TTT improves AUC from 0.924 to 0.941 and average precision from 0.920 to 0.940. On a 100K-pair proxy catalog, the distilled student on a single eight-GPU machine is approximately 5,000x faster and 10,000x lower in estimated cost than direct LLM inference.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-09-04T17:08:50Z",
+    "updated": "2026-09-04T17:08:50Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05363v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05363v1"
+    ],
+    "relevance_score": 0.3997866795434817,
+    "max_similarity": 0.11470184491592358
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05274v1",
+    "title": "How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method",
+    "authors": [
+      "Konstantin Grotov",
+      "Valentin Malykh"
+    ],
+    "abstract": "LLM agents deployed for software engineering fail expensively: they act confidently wrong, and bad actions are recognized only after costly execution and retry. We present Speculative Uncertainty (SU), a method that recovers a predictive failure signal for a black-box agent from its output tokens alone, with no access to logits, weights, activations, or repeated sampling. Inverting speculative decoding, a small open-weight draft model scores the agent's already-generated trajectory in a single forward pass. From these speculative cross-likelihoods we extract phase-aware features by separating the reasoning and action spans, and calibrate them against a verifiable objective. SU produces a failure-likelihood score that any downstream policy, such as routing, human intervention, or extra test-time compute, can consume directly. To show the signal is actionable, we instantiate one such policy, a pre-execution veto gate, on software engineering agents Qwen3-Coder-480B and closed-source Claude 3.5 Sonnet, cutting execution error rate by 6-8 percentage points and token cost by 14-19% in deployment, transferring to out-of-distribution benchmarks without retraining, and generalizing across agent models.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-09-04T15:30:22Z",
+    "updated": "2026-09-04T15:30:22Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05274v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05274v1"
+    ],
+    "relevance_score": 0.3912544986088157,
+    "max_similarity": 0.10647221076677346
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05385v1",
+    "title": "Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence",
+    "authors": [
+      "Urja Pawar",
+      "Rajitha Ramanayake",
+      "Nabeel Kemal",
+      "Ashwin Kandath",
+      "Owen O'Neill",
+      "Guillaume Bourgeon",
+      "Houssem Chatbri"
+    ],
+    "abstract": "LLM decision components that can operate within agent workflows often produce action-relevant recommendations or judgements together with explanations. Operators may use the named factors to monitor a system, diagnose errors, or decide when to escalate an output. Such use assumes that the explanations agree with the component's observable decision behaviour. We test two interpretations of the named factors: necessity, meaning that changing a factor would change the output, and sufficiency, meaning that retaining it while removing other changeable information would preserve the output. We evaluate these interpretations in two synthetic use cases: recommending advisors to clients and judging prompts for harmfulness or risk. Models return an output and the top three factors that most influenced it. Controlled black-box interventions estimate a necessity score for each factor by measuring how often changing it changes the output, and a sufficiency score by measuring how often retaining it preserves the output. Across eight models from the Claude, GPT, and Gemini families, the mean Spearman correlations between the cited ranking and the necessity and sufficiency scores are 0.349 and 0.354 for advisor recommendation, and 0.431 and 0.580 for prompt monitoring. Furthermore, an uncited factor scores above the lowest-scoring cited factor in 57.6% of advisor responses under necessity and 58.1% under sufficiency; the corresponding prompt-monitoring rates are 25.8% and 8.9%. The cited top three contain useful information but do not reliably identify the three factors with the strongest measured influence under necessity or sufficiency. The framework provides a black-box reliability check for explanations used in agent oversight while remaining scoped to individual LLM decisions.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-04T17:37:17Z",
+    "updated": "2026-09-04T17:37:17Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05385v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05385v1"
+    ],
+    "relevance_score": 0.3843951261474282,
+    "max_similarity": 0.10071207987592275
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.05370v1",
+    "title": "When LLM Decompilers Recompile More and Preserve Less",
+    "authors": [
+      "Chang Liu",
+      "Edward Raff",
+      "Kristopher Micinski"
+    ],
+    "abstract": "Decompilation recovers high-level source from compiled machine code and serves as a foundation for security tasks such as vulnerability detection and malware analysis. Traditional decompilers like Ghidra and Hex-Rays expose whatever they cannot resolve as visible placeholders and often emit pseudocode that will not compile or execute; LLM-based decompilers produce clean, idiomatic C and are now judged almost entirely by recompilability and re-executability: whether the output builds and passes its shipped input/output tests. We show that these metrics can reward the wrong path: a function may recompile and pass every shipped test yet diverge on other legitimate inputs, and a disclosed vulnerability may disappear from the recompiled code with no visible trace of the crash. Neither failure is caught by existing suites.   To address this gap, we propose Decompile-Diverge, a behavioral comparison oracle not relying on fixed or hand-crafted tests: for each function it synthesizes a driver, grows a fuzzing corpus from the reference, and reruns the decompiled code on the same inputs to detect changes in the function's behavior. Across eight systems in nine configurations on established LLM decompilation corpora, candidates that pass every shipped test still diverge from the original on our input corpus: 4.9% overall, and as many as 13% for a single system. On 300 real GitHub library functions and 287 CVE-grounded functions, recompilability and behavioral agreement can come apart: the strongest refinement LLM lifts Ghidra's build rate from 75% to 90%, while its Matched rate falls from 74% to 62%; on disclosed vulnerabilities, up to one tenth exhibit Crash Absence in its output. Source-level analysis traces this divergence to introduced fields, types, callees, and guards that replace the visible unknowns traditional tools leave behind.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-04T17:16:18Z",
+    "updated": "2026-09-04T17:16:18Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.05370v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.05370v1"
+    ],
+    "relevance_score": 0.2851600175705569,
+    "max_similarity": 0.09973146955634833
+  }
+]
