@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.09528",
+    "title": "MotionBlind: Probing the Illusion of Motion Understanding in Video-LLMs",
+    "authors": [
+      "Dhairya Bhatia, Bishoy Galoaa, Oliver Fritsche, Shahid Kamal, Muhammad Obaidullah Abdul Salam, Umer Saleem, Om Rastogi, Frania Felix Chettiar, Nesli Erdogmus, Sarah Ostadabbas"
+    ],
+    "abstract": "arXiv:2609.09528v1 Announce Type: new \nAbstract: Video large language models (Video-LLMs) are increasingly used as the perceptual front end of world models, a role that assumes they can read motion: how fast something moves, which way it travels, how hard it is pushed. We show they cannot. A Video-LLM can watch two clips of the same person in the same room, name every object in both, and still fail to say which clip moves faster. We introduce MotionBlind, a contrastive benchmark of self-recorded video for physically grounded motion(speed, magnitude, and direction), the variables a world model must predict. Each instance is a pair of near-identical clips that differ only in motion. Each clip carries two complementary yes/no questions, giving four items per instance, and a model earns credit only if all four are correct. We report Instance Accuracy(IAcc), which has a 6.25% chance floor. Single-frame, appearance, and language-only shortcuts all collapse to it. MotionBlind complements the recent TimeBlind benchmark. We run a controlled study of six open and two frontier Video-LLMs, varying whether the video is present, whether frames are shown in the correct temporal order, and how frames are sampled (1 to 24 frames, four selection strategies). Open models sit near the 6.25% floor, and scale does not help. Removing the video drops every model to zero IAcc, and shuffling frames collapses IAcc to chance, so the task genuinely needs video in order. Neither more frames nor smarter frame selection closes the gap, because these change which frames are seen, not whether motion is read. Only Gemini3.1 Pro clears the benchmark overall, and even it fails on speed. A frontend that cannot tell two speeds of the same action apart is not yet a trustworthy source of supervision, reward, or evaluation for a world model.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09528",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09528"
+      }
+    ],
+    "relevance_score": 0.6674253376596786,
+    "max_similarity": 0.4501489205550523
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09565",
+    "title": "Multi-Agent Agentic Graph Learning via Structural Signatures",
+    "authors": [
+      "Liang Qu, Jianxin Li, Hua Wang"
+    ],
+    "abstract": "arXiv:2609.09565v1 Announce Type: new \nAbstract: Agentic graph learning (AGL) has recently achieved promising results on graph reasoning tasks, where an agent powered by a large language model (LLM) sequentially samples the graph as evidence to support its final prediction. Existing methods either employ a single agent or orchestrate multiple role-based agents to reason and learn over the entire graph, but both essentially rely on a shared reasoning policy across different graph regions, which can be suboptimal for graphs with heterogeneous structural and semantic patterns. Inspired by the progress of multi-agent collaboration on complex reasoning tasks, a natural remedy is to let multiple agents own different memory and collaborate; however, applying this paradigm to graphs directly faces two challenges. First, existing AGL methods typically verbalize graph structures into natural-language descriptions for LLM agents, making the reasoning process sensitive to the ordering of structural information and thereby breaking the permutation-invariant nature of graphs. Second, incorporating increasingly large sampled neighborhoods leads to rapidly growing contexts. To address these challenges, this paper introduces a multi-agent agentic graph learning (i.e., MAAGL) framework. MAAGL partitions the graph into communities and assigns an independent agent to each community for region-specific specialization. MAAGL represents structural and semantic evidence separately. Structural evidence is summarized by a dynamically updated structural signature that is permutation-invariant and fixed in size, while semantic evidence is filtered to the top-k nodes ranked by relevance. Based on historical trajectories with similar signatures, agents estimate their confidence and trigger debate-style collaboration when needed. Extensive experiments on four benchmark datasets show that MAAGL outperforms SOTA AGL methods.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09565",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09565"
+      }
+    ],
+    "relevance_score": 0.5350748543488497,
+    "max_similarity": 0.28072603803577956
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09647",
+    "title": "Black-Box Red Teaming of Agentic AI: A Taxonomy-Driven Framework for Automated Risk Discovery",
+    "authors": [
+      "Divyanshu Kumar, Nitin Aravind Birur, Tanay Baswa, Sahil Agarwal, Prashanth Harshangi"
+    ],
+    "abstract": "arXiv:2609.09647v1 Announce Type: new \nAbstract: Agentic systems are rapidly moving to production, where they read untrusted inputs, call tools with real permissions, and act autonomously, expanding the security surface beyond chat-only models. Yet standard evaluations remain single-turn and fail to capture multi-step agent vulnerabilities. We present a systematic black-box framework for risk-aware agent evaluation requiring only basic system descriptions. Our approach introduces: (1) a seven-domain taxonomy mapping observable behaviors to risk categories, (2) fully automated SAGE-RT red teaming producing 120 adversarial scenarios per domain, and (3) human-validated evaluation using LLM judges. Empirical validation across two agent architectures (CrewAI and AutoGen) with four base models reveals alarming patterns: 56.25\\% average governance risk, 65\\% privacy risk in multi-agent configurations, and agent behavior vulnerabilities reaching 85\\%. Our black-box approach effectively identifies critical architectural vulnerabilities without privileged access, providing a scalable path toward safer agent deployments.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09647",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09647"
+      }
+    ],
+    "relevance_score": 0.5344601664206992,
+    "max_similarity": 0.2842898270322946
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09203",
+    "title": "OpenDiscoveryTrace: Process Traces for Evaluating AI Scientist Workflows",
+    "authors": [
+      "Aayam Bansal, Keertan Balaji"
+    ],
+    "abstract": "arXiv:2609.09203v1 Announce Type: new \nAbstract: Existing benchmarks for autonomous AI scientists evaluate only final outputs---generated code, hypotheses, or papers---yet discard the reasoning process by which those outputs were obtained. This makes it impossible to audit scientific methodology, diagnose failure modes, or distinguish systematic reasoning from fortunate guessing. We present \\textbf{OpenDiscoveryTrace}, a public dataset of 558 complete AI scientific agent trajectories that captures how models reason, not just what they produce. Each trajectory records a structured 9-field-per-step trace---including thoughts, tool calls, observations, errors, revision triggers, and self-reported confidence---as models execute 124 scientific tasks spanning drug discovery, materials science, genomics, and scientific literature analysis. The dataset covers seven models: three frontier models (GPT-5.4, Claude Opus 4.6, and Gemini 3.1 Pro; 124 trajectories each, fully balanced across domains and difficulty levels) and four open-weight models (Qwen2.5-7B, Mistral-7B-v0.3, Phi-3.5-mini, and Qwen2.5-1.5B; 30 each), plus 60 live-retrieval variant trajectories. Pilot analysis on 363 LLM-judged trajectories reveals that process traces expose behavioral differences invisible to output-only evaluation: all three frontier models achieve comparable success rates (84--89%), yet Claude Opus 4.6 produces 30$\\times$ more errors than GPT-5.4 (2.5 vs. 0.08 per trajectory, $p < 0.0001$, Cliff's $\\delta = 0.613$), with qualitatively different error profiles---66.7% tool misuse for Claude versus 83.6% reasoning errors for GPT-5.4. We define five benchmark tasks with baselines from logistic regression, random forests, LSTMs, and Transformer models. The dataset, trace schema, agent harness, and benchmark definitions are publicly available under CC BY 4.0 to support research on process-level evaluation, scientific agent auditing, and AI governance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09203",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09203"
+      }
+    ],
+    "relevance_score": 0.5235941086095188,
+    "max_similarity": 0.26933590576075117
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09664",
+    "title": "PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations",
+    "authors": [
+      "Hyojeong Yu, Hyukhun Koh, Minsung Kim, Yunah Jang, Kyomin Jung"
+    ],
+    "abstract": "arXiv:2609.09664v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly deployed as personalized assistants that interact with users over extended periods of time. As conversations grow longer, relying on full interaction histories becomes increasingly inefficient and unreliable: long contexts introduce substantial computational overhead, making it difficult for models to consistently identify and utilize the most relevant information for the current request. These challenges have motivated memory systems that structure and retrieve user-specific information. In realistic interactions, users often seek practical guidance such as recommendations, planning, and decision support. Unlike factual recall tasks, personalized guidance requires models to integrate information across multiple past conversations and reason about changing user preferences and experiences. However, existing conversational memory evaluations mainly focus on retrieval and factual recall. To study this challenge, we introduce PRAGMA, a benchmark for evaluating personalized guidance in long-term conversations. PRGAMA contains curated longitudinal conversation histories, evidence annotations, and guidance scenarios grounded in evolving user contexts and incorrect user assumptions. Experiments across retrieval systems, memory systems, and long-context models reveal that current systems struggle both to recover the appropriate conversational evidence and to effectively use it for personalized guidance. Our results highlight the need for memory architectures that support robust conversational retrieval and memory-grounded reasoning beyond evidence recall.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09664",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09664"
+      }
+    ],
+    "relevance_score": 0.48279951641267366,
+    "max_similarity": 0.21816165329981002
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09184",
+    "title": "Evidence-Order Calibration for Selective Visual Reasoning under Progressive Loss of Question-Critical Evidence",
+    "authors": [
+      "Muhamathu Ameer Ali Aacaas Muhamath"
+    ],
+    "abstract": "arXiv:2609.09184v1 Announce Type: new \nAbstract: Vision-language model (VLM) confidence may change in aggregate when visual evidence is degraded while remaining structurally inconsistent within individual examples. We study answer-level reliability along five-step, question-conditioned evidence-loss trajectories. Using a frozen Qwen2.5-VL-3B-Instruct model, we construct 176 accepted GQA-derived trajectories (880 masking conditions) by progressively masking scene-graph-localized question-critical regions. Native sequence confidence has an evidence monotonicity violation rate (EMVR) of 0.436, and 92.0% of trajectories contain at least one adjacent violation. A matched non-critical-region control shows that full critical masking reduces accuracy by 28.2 percentage points, compared with 0.6 points for equally sized non-critical masks; the paired difference is 27.6 points (95% CI [20.0, 34.7]). We train a lightweight post-hoc reliability head on frozen hidden states, sequence confidence, and entropy. Adding evidence-order supervision to binary cross-entropy (BCE) reduces masking EMVR from 0.330 to 0.303 (paired difference -0.027, 95% CI [-0.044, -0.010]). The same mask-trained objective reduces EMVR from 0.449 to 0.402 on held-out question IDs under unseen local Gaussian blur (difference -0.0468, 95% CI [-0.0739, -0.0199]). AUROC, Brier, and AURC differences between the two learned heads are statistically inconclusive, and native confidence remains stronger for selective-risk ranking. The results separate evidence-order consistency from conventional correctness discrimination rather than establishing generic confidence superiority.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09184",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09184"
+      }
+    ],
+    "relevance_score": 0.45950342675491124,
+    "max_similarity": 0.1906012625430198
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09187",
+    "title": "AgenticGen: Reward-Guided Agentic Video Generation for Advertising",
+    "authors": [
+      "Xingyuan Bu, Chengru Song, Hao Zhou, Tao Zhou, Dong Li, Wei Li, Shilong Li, Hao Shi, Yongxin Guo, Donghao Zhou, Qiangpeng Yang, Shilei Wen"
+    ],
+    "abstract": "arXiv:2609.09187v1 Announce Type: new \nAbstract: Advertising video generation is not only a video synthesis task, but also a product-conditioned reasoning problem whose success is measured by online business metrics. Recent video foundation models can generate realistic clips from multimodal conditions, yet they do not optimize how a product should be transformed into an effective advertisement or how future generation should be improved from online business feedback. To close this loop, we propose AgenticGen, a reward-guided agentic framework that decomposes advertising video generation into two trainable reasoning stages, strategy selection and draft generation, thereby exposing optimization targets that online business feedback can supervise. AgenticGen learns a performance-based reward from accumulated online feedback and a complementary rubric-based reward aligned with human quality standards, then uses them to supervise policy optimization. DPO first moves the agentic policies toward online preferences, and GRPO further refines both stages with process and outcome rewards. Offline experiments validate the reward models and successive policy optimization. Online A/B experiments in the TikTok advertising system show that AgenticGen after DPO and GRPO improves CTR by 2.72%, CVR by 2.63%, and Advv by 9.61% over the SFT baseline.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09187",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09187"
+      }
+    ],
+    "relevance_score": 0.4372559288007079,
+    "max_similarity": 0.1636027948961109
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09166",
+    "title": "X-CoSD: Communication-Efficient Cross-Vocabulary Collaborative Speculative Decoding",
+    "authors": [
+      "Jaeduk Lee, Wan Choi"
+    ],
+    "abstract": "arXiv:2609.09166v1 Announce Type: new \nAbstract: This paper investigates collaborative speculative decoding (CoSD), a distributed large language model (LLM) inference framework in which an on-device small language model (SLM) drafts candidate tokens and a server LLM verifies them. Existing CoSD methods assume a shared vocabulary between the SLM and the LLM and incur substantial communication load because residual resampling requires token distribution exchange between the user device and the edge server. To address these limitations, we propose cross-vocabulary CoSD (X-CoSD), a lossless and communication-efficient CoSD framework for heterogeneous SLM-LLM vocabularies. X-CoSD is built on hybrid resampling (HR), which splits residual resampling across the common-vocabulary region on the device and the LLM-only region on the server, so that distribution transmission is required only for the common-vocabulary region. We further propose X-CoSD-E, an enhanced variant based on server resampling with device verification (SR-DV), in which the server sends only replacement candidates sampled from the server LLM and their corresponding probabilities for local verification at the device. We prove that both X-CoSD and X-CoSD-E preserve the server LLM distribution, and experiments show that they significantly improve token generation speed while maintaining generation quality comparable to that of the server LLM.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09166",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09166"
+      }
+    ],
+    "relevance_score": 0.4304417352314166,
+    "max_similarity": 0.15540565888937008
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09396",
+    "title": "VANTAGE-Bench: Evaluating the Infrastructure AI Gap in Vision-Language Models",
+    "authors": [
+      "Zaid Pervaiz Bhat, Nimra Nayyar, Arihant Jain, Lap Fung Chan, John Suchanek, Yu Wang, Varun Praveen, Tomasz Kornuta, Vidya Nariyambut Murali"
+    ],
+    "abstract": "arXiv:2609.09396v1 Announce Type: new \nAbstract: As Vision-Language Models (VLMs) advance toward physical deployment, the focus has remained on action-oriented Embodied AI evaluated on subject-centric consumer video. This overlooks a pervasive class of Physical AI: Infrastructure AI, which relies on fixed cameras for open-loop insights like safety monitoring and operational logging. We introduce VANTAGE-Bench, a benchmark measuring this \"Infrastructure AI Gap.\" It spans three operational domains (Logistics, Transportation, and Smart Spaces), unifies image and video evaluation across semantic, spatial, temporal, and spatio-temporal capabilities, and moves beyond multiple-choice to eight task formulations including dense captioning and spatio-temporal grounding. It adds a single-pass trajectory protocol for Single Object Tracking and, to our knowledge, the first such evaluation on fixed-camera infrastructure video, scored against specialist trackers. Annotation spans three regimes over 3,346 media assets: 3,342 video-task annotations, 4,281 image-grounding annotations, and 27,404 detection boxes.\n  Evaluating 17 models zero-shot, we find the shortfall relative to consumer-centric benchmarks is concentrated, not general. Event verification, referring expressions, and temporal localization fall roughly 9 to 24 points at every model scale, while video question answering stays within 5.3 points of VideoMME and 2D spatial pointing shows no shortfall against BLINK. The temporal pillar is weakest in absolute terms: no system exceeds 55.7 mIoU on temporal localization or 37.3 SODA_c on dense video captioning. On tracking, frontier models come within roughly 5 points of specialist trackers over short horizons but separate as the horizon extends. Open-weight models lead 2D object localization outright, so neither scale nor proprietary access explains the pattern. Data, evaluation harness, and leaderboard: https://vantage-bench.org/",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09396",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09396"
+      }
+    ],
+    "relevance_score": 0.42904651589317194,
+    "max_similarity": 0.15036837401628406
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09417",
+    "title": "Vision-language models know more about agriculture than they show and rubric-grounded verifications close the gap",
+    "authors": [
+      "Earl Ranario, Jared Smith, Lars Lundqvist, Urmil Jatin Chandarana"
+    ],
+    "abstract": "arXiv:2609.09417v1 Announce Type: new \nAbstract: Vision-language models (VLMs) show promise for agricultural classification, but zero-shot performance on disease, pest, damage, quality, and species identification remains poor, and it is unclear whether this reflects weak visual features or a failure to connect them to domain knowledge. We build a benchmark of 116 datasets, 834 classes, and 8,324 images spanning these tasks to isolate where the gap arises. Linear probing shows VLM vision encoders already encode agricultural features nearly as separable as a self-supervised DINOv3 baseline, ruling out weak visual representations as the primary bottleneck. Conditioning each model on an oracle reference description (an upper bound on its parametric knowledge) closes most of the gap left by an unaided lower bound, showing VLMs already know more about agriculture than they show. To close this gap without an oracle description at inference time, we structure test-time reasoning around a fixed, per-task diagnostic rubric: the model generates $K$ candidate responses and a Probabilistic Pivot Tournament (PPT) verifier, scored pairwise against the rubric, selects the best one. This nearly doubles judged F1 over the lower bound and matches or exceeds the upper bound on several tasks, notably pushing Gemma 4 E4B-it's disease F1 to 0.71, above its own upper bound of 0.60. However, the verifier's letter-scale confidence score has the opposite of its intended effect: filtering to its most confident predictions does not improve accuracy and correlates negatively with correctness across every model and pool size tested, so the score cannot serve as a measure of predictive uncertainty, and most of the observed gain likely comes from rubric-grounded generation rather than pairwise verification.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09417",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09417"
+      }
+    ],
+    "relevance_score": 0.4270071772739935,
+    "max_similarity": 0.14709240419695283
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09186",
+    "title": "M2LG-DG: A Multi-modal Local-Global Domain Generalization Framework for Cross-site Major Depressive Disorder Classification",
+    "authors": [
+      "Muhammad Asif Hasan, Yanming Zhu, Xuefei Yin, Alan Wee-Chung Liew"
+    ],
+    "abstract": "arXiv:2609.09186v1 Announce Type: new \nAbstract: Classification models based on resting-state functional magnetic resonance imaging (rs-fMRI) often show lower performance at imaging sites not included during model development, which can limit their use in clinical settings. Domain generalization (DG) addresses this issue by learning representations from source sites that remain effective for unseen target sites. However, existing DG approaches for psychiatric disorder classification commonly rely on a single imaging modality and may not fully account for site-specific acquisition effects on the learned representation space. Subjects scanned at the same site share scanner hardware, acquisition settings, and preprocessing characteristics, which can cause representations to reflect acquisition conditions rather than diagnostic information. In this work, we present M2LG-DG, a source-only multimodal local-global framework for cross-site major depressive disorder (MDD) classification. The framework employs a dual-stream rs-fMRI encoder, where the global pathway models inter-regional dependencies through self-attention and the local pathway performs graph-constrained aggregation over functional connectivity-derived brain graphs. Imaging and non-imaging representations are decomposed into shared and private components and integrated through bidirectional cross-attention with a learned modality gate. A cross-site supervised contrastive objective forms positive pairs from same-class subjects acquired at different source sites, encouraging the fused representation to preserve diagnostic information across acquisition domains. On four held-out REST-meta-MDD sites, M2LG-DG achieves an AUC of 69.48% and exceeds the closest comparison method by 2.18 percentage points. Experiments on the Autism Brain Imaging Data Exchange (ABIDE) dataset further support its applicability to other psychiatric neuroimaging classification tasks.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09186",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09186"
+      }
+    ],
+    "relevance_score": 0.42145282171858206,
+    "max_similarity": 0.14189738324781512
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09163",
+    "title": "World-Time Compute with Verified Code World Models",
+    "authors": [
+      "James Schwoebel, Ingrida Semenec, Jenia Rousseva, Marcos Ortiz, Collin Overbay, Christopher Klaus, Anderson Edmond, Manish Bhatt, Rome Thorstenson, Jessica Tsai, Martin G. Frasch"
+    ],
+    "abstract": "arXiv:2609.09163v1 Announce Type: new \nAbstract: LLMs generalize across a domain only after seeing many real, labeled examples, which most domains lack. We study a way to manufacture it cheaply. When a domain's dynamics can be written as code, one template instantiates into many world models: executable, verifiable programs over symbolic state, each an inexhaustible source of exactly-labeled trajectories. Fine-tuning an LLM on trajectories through many such worlds, which we call world-time compute, a training-time analogue of test-time compute, lifts generalization to held-out worlds it never trained on (synthesized world families). Gains are largest where capability is scarcest: +29 points at 0.5B; the largest model's lift is within noise, consistent with saturation. Labels can be trusted because the worlds are verified code: synthesized-then-checked dynamics are exact over 20-step rollouts and answer 10x out-of-distribution probes exactly (100%), whereas per-step LLM and MLP predictors compound error and collapse. Unlike domain randomization, each world is independently authored and verified; a corrupted-label control shows label exactness, not task variety, drives the gains. On real benchmarks (ARC-AGI grids, List Functions, CLRS) the same lever holds as per-world test-time training. On List Functions the harder cross-world form holds: one adapter trained on 128 disjoint worlds reaches 40% on held-out worlds versus 6% for a corrupted-label control (+34 points, CI [29, 39]). The gain is a saturating regularity, not a law: largest for few-step reasoning and small/weak models, fading for long chains, perception-induced tasks, and saturated tasks; cross-task transfer is weak without shared skill. Worlds are authored and served by OpenWorld, a zero-dependency framework (companion paper). Scope: symbolic state; pixel-native domains remain territory of learned models. All code, recipes, and this manuscript regenerate from one repository.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09163",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09163"
+      }
+    ],
+    "relevance_score": 0.4167475718595082,
+    "max_similarity": 0.13644940249753057
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09625",
+    "title": "From State Synchronization to Cognitive Self-Evolution: An Operational Architecture for Cognitive Digital Twins",
+    "authors": [
+      "Haoran Gao, An Li, Zhen Li, Jun Cai"
+    ],
+    "abstract": "arXiv:2609.09625v1 Announce Type: new \nAbstract: As Digital Twin (DT) systems evolve beyond state synchronization toward task-oriented and knowledge-driven operation, Cognitive Digital Twins (CDTs) have emerged as an extension that incorporates cognitive capabilities into twin operation. Existing CDT studies often focus on specific enabling techniques, such as learning modules, knowledge graphs, and large language models, while providing limited insight into how cognition can be systematically integrated into DT architectures. To address this issue, this paper proposes a four-layer CDT architecture consisting of the physical layer, digital-twin layer, cognitive layer, and task layer. The proposed architecture establishes a self-evolving closed operational loop spanning these four layers, in which physical states are synchronized into digital representations, cognition constructs task-specific cognitive models through knowledge, memory, and attention, and task-level decisions are generated under practical constraints. Operational feedback further refines cognitive experience and updates relationships and annotations in the digital representation, enabling subsequent task interpretation, initiation, and reasoning to evolve with system operation. Based on this framework, two representative operation modes are characterized: user-request-driven cognition and self-driven cognition. We further discuss key enabling mechanisms and deployment challenges associated with semantic communication, knowledge querying, task orchestration, and closed-loop synchronization. A lightweight simulation study illustrates reliable closed-loop task feasibility under limited semantic information and improved operational efficiency through accumulated task experience. The proposed framework provides a structured foundation for the design and development of future CDT systems.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09625",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09625"
+      }
+    ],
+    "relevance_score": 0.4159307232561809,
+    "max_similarity": 0.13358326732915976
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09206",
+    "title": "MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads",
+    "authors": [
+      "Meng'en Qin, Junye Chen, Jucheng Liu, Youlu Xing, Song Wang, Ruize Han"
+    ],
+    "abstract": "arXiv:2609.09206v1 Announce Type: new \nAbstract: Multimodal Large Language Models (MLLMs) often struggle with hallucinations, thus hindering their reliable practical applications. Existing attention-based mitigation methods mainly rely on indirect signals (e.g., attention weights) that fail to accurately reflect the actual information shift underlying hallucination generation. In this paper, we propose HEAL, Head-lEvel information disentAnglement and caLibration for identifying and mitigating hallucinations. HEAL first employs causal noise intervention on multi-head outputs to filter out causally redundant heads. Subsequently, it disentangles information distribution within the remaining heads via the counterfactual Difference-in-Differences, categorizing heads into four types. Through analysis, we observe: hallucinations happen when information distribution drifts away from a healthy equilibrium in synergy heads, not strongly correlated with the quantity or strength of modality-specific heads. Motivated by this insight, HEAL injects dynamic information calibration factors into the value vectors of synergy heads, and actively regulates visual-language dependencies, steering the output distribution towards factual evidence. Extensive experiments demonstrate that HEAL effectively reduces hallucinations across multiple MLLMs, offering a simple and interpretable pathway to enhance model trustworthiness.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09206",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09206"
+      }
+    ],
+    "relevance_score": 0.4003471168883437,
+    "max_similarity": 0.1166628648253108
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09241",
+    "title": "Distribution-Consistent Inference for Dynamic Sparse Mixture-of-Experts",
+    "authors": [
+      "Dohyeon Kim, Bedionita Soro, Sung Ju Hwang"
+    ],
+    "abstract": "arXiv:2609.09241v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) architectures have emerged as a powerful paradigm for scaling model capacity while preserving efficient inference in large foundation models. However, most MoE models use a fixed top-$k$ expert selection policy, assigning the same expert budget to every token even when fewer experts may be sufficient. Inference-time dynamic top-$k$ routing can reduce computation without retraining, but existing methods often overlook the distributional shift caused by deviating from the training-time routing configuration. We show that reducing the number of activated experts consistently increases the RMS scale and variance of SMoE outputs, inducing a representation mismatch that contributes to downstream performance degradation in addition to the loss of expert capacity. To address this correctable component, we propose Layer-wise Distribution Alignment (LDA), a lightweight inference-time correction that uses layer-wise calibration statistics to align reduced-routing representations with the default configuration. Across multiple SMoE LLMs, benchmarks, and routing strategies, LDA recovers much of the performance lost induced by the distributional shift under reduced routing while preserving sparse-inference efficiency with negligible overhead.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09241",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09241"
+      }
+    ],
+    "relevance_score": 0.39103868475642656,
+    "max_similarity": 0.16916259161576574
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09264",
+    "title": "StochBench: A Domain-Specific Benchmark for Stochastic Processes in Lean",
+    "authors": [
+      "Idan Davidovich, Debargha Ganguly, Vikash Singh, Vipin Chaudhary"
+    ],
+    "abstract": "arXiv:2609.09264v1 Announce Type: new \nAbstract: Leading benchmarks for formal theorem proving with large language models are small collections drawn from competition math, such as the IMO and Putnam, that poorly represent field-specific applications. We introduce StochBench, a Lean 4 benchmark of 450 graduate stochastic-processes problems at varying abstraction levels, each paired with its natural-language source. Addressing a field underrepresented in Mathlib, it covers finite and countable Markov chains, renewal processes, random walks, martingales, stopping times, queues, Brownian motion, stochastic calculus, weak convergence, and Poisson and continuous-time Markov processes. Our Opus 4.8-based agent achieves a 34.9% proof rate (157/450) under a 15-minute per-problem limit. StochBench better represents domain-specific applied mathematics while remaining challenging for advanced provers.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09264",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09264"
+      }
+    ],
+    "relevance_score": 0.3733646506490695,
+    "max_similarity": 0.14698311257414293
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09657",
+    "title": "RESCUE-BENCH: Towards Relation-Aware Multi-Party Emotional Support Conversation Systems",
+    "authors": [
+      "Haichuan Hu, Yang Xiao, Mingni Tang, Jiawen Duan, Quanjun Zhang, Congqing He, Hao Zhang, Jiashuo Wang, Johan F. Hoorn, Wenjie Li"
+    ],
+    "abstract": "arXiv:2609.09657v1 Announce Type: new \nAbstract: Existing emotional support conversation systems mainly focus on one-on-one seeker-supporter interactions and individual emotional states, leaving interpersonal relations in multi-party scenarios underexplored. In this work, we introduce relation-aware emotional support conversation, a new task that evaluates whether LLMs can capture and utilize the evolving dynamics of relationships to offer more effective emotional support. We construct RESCUE (Relation-aware Emotional Support Conversation Understanding and Evaluation Benchmark) from real couple and family interview conversations, containing 191 samples, 7,079 annotated turns, and 1,064.8 minutes of video. Based on rich annotations of socio-emotional and support-related dynamics, RESCUE defines six tasks that evaluate two core capabilities required for relation-aware emotional support: Relational Understanding and Relation-Sensitive Support. Experiments with ten LLMs show that current models perform relatively well on tasks relying on local emotional or intervention cues, but struggle with relation-intensive tasks such as relation pattern prediction, viewpoint prediction, and support strategy prediction. These findings reveal the limitations of current LLMs in modeling interpersonal relations and making relation-sensitive support decisions.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09657",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09657"
+      }
+    ],
+    "relevance_score": 0.34657169640360985,
+    "max_similarity": 0.11388171485238632
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09578",
+    "title": "CityPlanner: A Sandbox Agent for Executable Urban Planning",
+    "authors": [
+      "Wentao Zhang, Jingyuan Wang, Zetong Zhou, Yifan Yang, Wenrui Wang"
+    ],
+    "abstract": "arXiv:2609.09578v1 Announce Type: new \nAbstract: Urban planning is a real-world spatial optimization problem that requires selecting feasible actions from large candidate spaces under practical objectives such as cost and service quality. Existing optimization and reinforcement learning methods are effective for fixed formulations, but often depend on task-specific representations and constraint handling. We propose \\emph{CityPlanner}, a sandbox-agent framework for executable urban planning. CityPlanner introduces \\emph{UrbanSandbox}, a unified file-based environment where agents inspect task files, generate plans, run evaluators, and revise decisions based on executable feedback. To make learning tractable, we further propose atomic-task reinforcement learning, which decomposes long sandbox trajectories into \\emph{BuildPlan} for initial construction and \\emph{ImprovePlan} for feedback-based refinement. Experiments on a real-world benchmark show that CityPlanner consistently outperforms heuristic, task-specific RL, and general LLM-agent baselines. Ablations verify the contributions of UrbanSandbox, atomic-task RL, and iterative deployment. We release the code and dataset at https://anonymous.4open.science/r/co-agent-C1C8",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09578",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09578"
+      }
+    ],
+    "relevance_score": 0.3086209752396687,
+    "max_similarity": 0.18739396483254678
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09428",
+    "title": "XAI-Arena: Can LLMs Assess the Quality of XAI Explanations?",
+    "authors": [
+      "Yanfei Hu Fleischhauer, Alona Zharova, Nadja Klein, Stefan Feuerriegel"
+    ],
+    "abstract": "arXiv:2609.09428v1 Announce Type: new \nAbstract: Evaluating the quality of explanations produced by explainable AI (XAI) methods remains challenging because existing approaches often rely on subjective human judgment, limiting reproducibility, scalability, and comparability between studies. We examine whether LLMs can serve as a reproducible and scalable mechanism to make comparative assessments of the quality of XAI explanations. We introduce XAI-Arena, an LLM-as-a-judge framework for scalable, reproducible, multidimensional, and stakeholder-sensitive evaluation of XAI explanation quality. XAI-Arena then allows us to compare XAI explanations along various dimensions, namely, perceived simplicity, clarity, task adequacy, trust calibration, actionability, transparency, faithfulness, and overall interpretability. We then benchmark XAI explanation methods across various datasets, machine learning models, and stakeholder personas. Human validation shows a strong positive association between LLM-generated and human ratings (Spearman's rho=.693, p<.001). Together, LLM-based evaluations can capture systematic differences in XAI explanation quality and provide a scalable and reproducible framework for comparative assessment of XAI explanations.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09428",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09428"
+      }
+    ],
+    "relevance_score": 0.3059729584292791,
+    "max_similarity": 0.12459678644758448
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.09458",
+    "title": "ContractEval: Query-Conditioned Execution Matching for Procedural Instruction Conformance",
+    "authors": [
+      "Praphul Singh, Shanu Kumar, Akshat Agarwal, Ganesh Kumar"
+    ],
+    "abstract": "arXiv:2609.09458v1 Announce Type: new \nAbstract: As LLM agents move from answering questions to carrying out procedures, failures can be unwarranted rather than visibly wrong: the final response looks acceptable even though the system skipped the check, branch, dependency, or invariant that made the answer justified. Output-only evaluation sees the answer, and trace-aware judging sees activity, but neither identifies which obligations were active for the query. We introduce CONTRACTEVAL, a diagnostic framework for making those active obligations explicit. It represents procedural instructions as query-active obligations and matches them against response or trace evidence, turning omissions, wrong branches, ordering errors, extra actions, invariant breaches, and output-contract violations into distinct conformance failures. On a controlled suite of audited procedural contracts, output-only and trace-aware LLM judges miss many injected structural failures; under gold expected and observed graphs, ContractEval detects and localizes all of them. LLM-backed extraction preserves much of this signal but remains calibration-sensitive. ContractEval is therefore not a compliance guarantee; it makes procedural conformance auditable rather than implicit in final-answer quality.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "updated": "Thu, 10 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.09458",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.09458"
+      }
+    ],
+    "relevance_score": 0.2737273788951503,
+    "max_similarity": 0.14809070005179967
+  }
+]
