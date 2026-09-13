@@ -1,0 +1,644 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2609.11929v1",
+    "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+    "authors": [
+      "Haiwen Diao",
+      "Jiahao Wang",
+      "Chenjing Ding",
+      "Hanming Deng",
+      "Jiangnan Chen",
+      "Ruixi Zhang",
+      "Ruohui Wang",
+      "Wenwen Tong",
+      "Xiangyu Fan",
+      "Yubo Wang",
+      "Yue Zhu",
+      "Yuwei Niu",
+      "Zhengqi Bai",
+      "Zhiqian Lin",
+      "Zhitao Yang",
+      "Zhongang Cai",
+      "Bo Yang",
+      "Chen Feng",
+      "Chengguang Lv",
+      "Guangjia Liu",
+      "Guanlin Wang",
+      "Hanyu Zhang",
+      "Haojia Yu",
+      "Hongcan Xiao",
+      "Hongli Wang",
+      "Huan Wu",
+      "Huaping Zhong",
+      "Jian Fang",
+      "Jianan Fan",
+      "Jiaqi Li",
+      "Jiefan Lu",
+      "Jing Zuo",
+      "Jingcheng Ni",
+      "Junxiang Xu",
+      "Linjun Dai",
+      "Mutian Xu",
+      "Peishen Yan",
+      "Penghao Wu",
+      "Ruijie Mao",
+      "Ruisi Wang",
+      "Shihao Bai",
+      "Shuang Yang",
+      "Shuya Yang",
+      "Shuyan Zheng",
+      "Silei Wu",
+      "Siying Li",
+      "Tao Chu",
+      "Tianbo Zhong",
+      "Tongxi Zhou",
+      "Weichao Luo",
+      "Weichen Fan",
+      "Wenhao Jia",
+      "Wenjie Gao",
+      "Xiangli Kong",
+      "Yan Li",
+      "Yang Yong",
+      "Zimo Wen",
+      "Zixuan Qian",
+      "Wenxiu Sun",
+      "Ruihao Gong",
+      "Quan Wang",
+      "Lewei Lu",
+      "Lei Yang",
+      "Ziwei Liu",
+      "Dahua Lin"
+    ],
+    "abstract": "We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and generates visual content within an encoder-free and VAE-free architecture. We strengthen its visual interface through spatially coherent patch reconstruction and scale its training with carefully curated generation and editing data, improved task formulation, structural prompt enhancement, and native resolutions of up to 4K. For post-training, we optimize specialized experts for visual aesthetics, bilingual text rendering, infographic generation, and image editing, and consolidate their capabilities through multi-expert on-policy distillation. Across extensive evaluations, SenseNova-U1.5 largely advances image fidelity, text rendering, complex composition, multi-reference editing, and interleaved generation, while improving instruction following and preserving subject identity, geometry, and unmodified regions. Despite limited exposure to structured formats in its generation data, SenseNova-U1.5 generalizes effectively to long, complex, and structured visual instructions, further proving that multimodal understanding can transfer to visual planning and creation. Together, these findings position native unified modelling as a promising path towards systems that perceive, reason and create within a fully end-to-end framework. We will open-source training code, including supervised fine-tuning, reinforcement learning, and on-policy distillation.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-10T17:59:55Z",
+    "updated": "2026-09-10T17:59:55Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11929v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11929v1"
+    ],
+    "relevance_score": 0.5138496469925725,
+    "max_similarity": 0.2545594819590326
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11916v1",
+    "title": "Can Edge-Deployable Vision-Language Models Identify Species?",
+    "authors": [
+      "William Zhou",
+      "Mayukha Siripuram",
+      "Xiao Yan",
+      "Ziqi Liu",
+      "Yi Ding"
+    ],
+    "abstract": "Camera traps often run in the field on edge hardware with limited or no connectivity, making small, locally-deployable vision-language models (VLMs) -- not frontier-scale ones -- the practically relevant class to evaluate for species identification. We test whether models in this deployment-relevant 2--8B range carry genuine taxonomic knowledge, evaluating four such VLMs (Qwen3-VL 2B/4B/8B, Gemma3 4B) against the domain-specific specialist BioCLIP (300M parameters) on a 96-species task, comparing clean iNaturalist photographs against camera-trap imagery from 6 LILA.science collections, on two independently-sampled evaluation sets. All models identify species far above chance, but every model -- general-purpose or specialist -- degrades sharply on field imagery (domain gaps of 9.6--26.6 percentage points, consistent across taxonomic levels and both evaluation sets), indicating the degradation reflects general image legibility rather than fine-grained discrimination failure. BioCLIP substantially outperforms every VLM tested (by 33.2--59.2 percentage points across an expanded 200-image sample for every model) despite its far smaller size, suggesting the gap reflects specialized training data rather than model scale; yet BioCLIP's own domain gap (18.0 points) is statistically indistinguishable from the best VLM's (22.3 points), suggesting the clean-to-field degradation itself is a property of the image-quality shift rather than a general-purpose-model weakness. Under open-set prompting, 5.9--9.6% of responses are syntactically valid but taxonomically nonexistent species names; the relative fabrication-rate ranking across models replicates exactly across both evaluation sets, a more robust finding than any single point estimate.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T17:57:32Z",
+    "updated": "2026-09-10T17:57:32Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11916v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11916v1"
+    ],
+    "relevance_score": 0.49115435989982303,
+    "max_similarity": 0.22861013901600213
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11582v1",
+    "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+    "authors": [
+      "Suho Yoo",
+      "Hyunjong Ok",
+      "Jongmin Choi",
+      "Jihoo Jung",
+      "Joon Son Chung"
+    ],
+    "abstract": "As Omni-modal large language models (Omni-LLMs) take in audio, video and text together, their KV cache memory cost grows. KV cache quantization is the de facto approach in text-only LLMs, but its application to Omni-LLMs remains unexplored. In this paper, we analyze how TurboQuant, a representative rotation-based KV cache quantization method, behaves on multimodal caches and identify two critical issues: temporal key drift and heterogeneous value geometry. To address these, we propose OmniKVQuant, a training-free framework that (i) sets the key quantization range over each short window of the input stream; and (ii) rotates values separately per modality. On Qwen2.5-Omni and Qwen3-Omni, OmniKVQuant enables 2-bit KV caches while substantially preserving performance across seven audio-visual benchmarks. We further provide a fused Triton decode kernel that unpacks the 2-bit cache during attention, so no dense FP16 cache is ever built. Code: https://github.com/kaistmm/OmniKVQuant",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-10T14:14:12Z",
+    "updated": "2026-09-10T14:14:12Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11582v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11582v1"
+    ],
+    "relevance_score": 0.4878170816585917,
+    "max_similarity": 0.22601781132481535
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11878v1",
+    "title": "Domain-Specific Hallucination Detection in Large Language Models",
+    "authors": [
+      "Varun Teja Chundru",
+      "Debasmita Biswas"
+    ],
+    "abstract": "Large language models generate fluent text that can contain unfaithful claims -- a phenomenon known as hallucination. We present a multi-signal detection pipeline combining fine-tuned DeBERTa-v3 classification, Monte Carlo (MC) Dropout uncertainty quantification, and temperature-scaled calibration for response-level hallucination detection. Evaluated on the HaluEval benchmark, our pipeline achieves F1=0.915 and AUROC=0.977 on general-domain tasks, with per-task F1 scores of 0.97 (QA), 0.96 (Summarization), and 0.82 (Dialogue). MC Dropout inference further improves accuracy to 93.2%. A context ablation study confirms the model performs genuine entailment reasoning rather than exploiting surface patterns, with summarization F1 dropping 24% when knowledge context is removed. Learning curve analysis reveals that 25% of training data captures 77% of full-data performance. Beyond detection, we apply Direct Preference Optimization (DPO) to a Qwen2.5-0.5B generator, reducing its hallucination rate from 85.5% to 37.7% (55.9% relative reduction) as measured by our detector. Cross-domain evaluation on the SciFact biomedical benchmark shows that general-domain training transfers poorly (F1=0.52), motivating domain-specific fine-tuning. PubMedBERT fine-tuned on SciFact achieves F1=0.63 and AUROC=0.81, demonstrating that domain-matched pre-training is the strongest adaptation strategy. Code and models are available at https://github.com/varunteja99/hallucination-detection-nlp",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T17:45:36Z",
+    "updated": "2026-09-10T17:45:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11878v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11878v1"
+    ],
+    "relevance_score": 0.45396576351374196,
+    "max_similarity": 0.17997741480721272
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11878v1",
+    "title": "Domain-Specific Hallucination Detection in Large Language Models",
+    "authors": [
+      "Varun Teja Chundru",
+      "Debasmita Biswas"
+    ],
+    "abstract": "Large language models generate fluent text that can contain unfaithful claims -- a phenomenon known as hallucination. We present a multi-signal detection pipeline combining fine-tuned DeBERTa-v3 classification, Monte Carlo (MC) Dropout uncertainty quantification, and temperature-scaled calibration for response-level hallucination detection. Evaluated on the HaluEval benchmark, our pipeline achieves F1=0.915 and AUROC=0.977 on general-domain tasks, with per-task F1 scores of 0.97 (QA), 0.96 (Summarization), and 0.82 (Dialogue). MC Dropout inference further improves accuracy to 93.2%. A context ablation study confirms the model performs genuine entailment reasoning rather than exploiting surface patterns, with summarization F1 dropping 24% when knowledge context is removed. Learning curve analysis reveals that 25% of training data captures 77% of full-data performance. Beyond detection, we apply Direct Preference Optimization (DPO) to a Qwen2.5-0.5B generator, reducing its hallucination rate from 85.5% to 37.7% (55.9% relative reduction) as measured by our detector. Cross-domain evaluation on the SciFact biomedical benchmark shows that general-domain training transfers poorly (F1=0.52), motivating domain-specific fine-tuning. PubMedBERT fine-tuned on SciFact achieves F1=0.63 and AUROC=0.81, demonstrating that domain-matched pre-training is the strongest adaptation strategy. Code and models are available at https://github.com/varunteja99/hallucination-detection-nlp",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-09-10T17:45:36Z",
+    "updated": "2026-09-10T17:45:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11878v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11878v1"
+    ],
+    "relevance_score": 0.45396576351374196,
+    "max_similarity": 0.17997741480721272
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11899v1",
+    "title": "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding",
+    "authors": [
+      "Weitong Cai",
+      "Hang Zhang",
+      "Yukai Huang",
+      "Yiqiao Xie",
+      "Shan Gao",
+      "Jiankang Deng",
+      "Songcen Xu",
+      "Jifei Song",
+      "Zhensong Zhang"
+    ],
+    "abstract": "Long-video understanding on edge devices must reason over hours of content under tight compute and bandwidth budgets. Subsampling visual tokens loses temporal structure, while text-only video memories lose fine-grained visual attributes. We observe a visual-textual duality: language memories carry long-range temporal structure better than dense frames, while pixels remain decisive for attribute-level perception. Building on this insight, we propose Caption-once, Frames-onDemand (CFD), a budget-aware edge-cloud agentic framework. The edge runs a single offline captioning pass that builds a dual-track narrative index, an event-level story skeleton plus a clip-level micro-log, cached and reused across queries without re-captioning. At query time, a cloud-side MLLM reasons over the index in a story-first loop centered on a lightweight Visual-Need Router: a per-query gating module that triggers bounded keyframe retrieval only for perceptual questions (appearance, on-screen text, attribute disambiguation) and keeps temporal-structural questions in language space. The router turns visual access into a first-class, query-conditioned cost, capping per-query frame consumption regardless of video length. Experiments on long-video benchmarks demonstrate strong accuracy-efficiency trade-offs while substantially reducing online visual processing.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-10T17:53:59Z",
+    "updated": "2026-09-10T17:53:59Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11899v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11899v1"
+    ],
+    "relevance_score": 0.45012170995084694,
+    "max_similarity": 0.1756737038265012
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11864v1",
+    "title": "RetroThinker: Enabling Retrospective Thinking in Speech LLMs",
+    "authors": [
+      "Yi-Jen Shih",
+      "Puyuan Peng",
+      "Abdelrahman Mohamed",
+      "David Harwath"
+    ],
+    "abstract": "Speech large language models (SpeechLLMs) offer reduced latency and retain paralinguistic nuances that are typically lost in cascaded automatic speech recognition (ASR) and text-based LM architectures. However, they continue to lag behind text-only LLMs on complex reasoning tasks, while real-time spoken interaction imposes strict latency constraints. Although prior works employ Chain-of-Thought (CoT) and concurrent reasoning to enhance reasoning capabilities without inducing prohibitive delays, an inherent accuracy-latency trade-off persists. In this paper, we investigate whether a streaming SpeechLLM can dynamically revise its reasoning traces on the fly. We introduce RetroThinker, a multi-stage post-training framework that equips the Moshi model to self-verify and forward-correct CoT steps during inference. RetroThinker combines supervised fine-tuning (SFT) on curated retrospective thinking data with length-based direct preference optimization (DPO) to optimize retrospective during early reasoning (i.e., reasoning concurrently while the user speaks). Evaluated on the GSM8K benchmark, RetroThinker significantly improves the accuracy-latency trade-off over non-retrospective baselines, achieving an 11% absolute accuracy gain at a comparable latency.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T17:41:53Z",
+    "updated": "2026-09-10T17:41:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11864v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11864v1"
+    ],
+    "relevance_score": 0.42572329836107603,
+    "max_similarity": 0.14661337024518128
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11860v1",
+    "title": "Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models",
+    "authors": [
+      "Rodion Krjutškov",
+      "Eduard Barbu",
+      "Nikos Sakkas",
+      "Sofia Yfanti"
+    ],
+    "abstract": "Energy consumption forecasting relies on increasingly complex machine learning (ML) models, such as Genetic Programming-based symbolic regressors, whose predictions can be difficult for facility managers and building operators to interpret. Explainable Artificial Intelligence (XAI) techniques address this opacity, but traditional XAI dashboards require substantial technical expertise and provide limited flexibility for dynamic, context-aware inquiry. Conversational XAI systems offer a promising alternative; however, previous approaches, such as TalkToModel, were constrained by rigid custom grammars and achieved only 76.8% intent-parsing accuracy. This paper introduces the Explainability Assistant, an open-source conversational XAI system that leverages the function-calling capabilities of modern Large Language Models (LLMs) to overcome these limitations. The system achieves 94% intent-parsing accuracy, supports flexible natural language interaction, and adapts to different ML problem types without task-specific fine-tuning. We present the system's architecture and report results from a comparative evaluation conducted with energy domain specialists, contrasting the Explainability Assistant with a traditional XAI dashboard. The evaluation suggests improved usability and consistent task accuracy, with all experts unanimously preferring the conversational interface for practical use.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T17:40:11Z",
+    "updated": "2026-09-10T17:40:11Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11860v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11860v1"
+    ],
+    "relevance_score": 0.418111144124238,
+    "max_similarity": 0.13827512906406822
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11860v1",
+    "title": "Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models",
+    "authors": [
+      "Rodion Krjutškov",
+      "Eduard Barbu",
+      "Nikos Sakkas",
+      "Sofia Yfanti"
+    ],
+    "abstract": "Energy consumption forecasting relies on increasingly complex machine learning (ML) models, such as Genetic Programming-based symbolic regressors, whose predictions can be difficult for facility managers and building operators to interpret. Explainable Artificial Intelligence (XAI) techniques address this opacity, but traditional XAI dashboards require substantial technical expertise and provide limited flexibility for dynamic, context-aware inquiry. Conversational XAI systems offer a promising alternative; however, previous approaches, such as TalkToModel, were constrained by rigid custom grammars and achieved only 76.8% intent-parsing accuracy. This paper introduces the Explainability Assistant, an open-source conversational XAI system that leverages the function-calling capabilities of modern Large Language Models (LLMs) to overcome these limitations. The system achieves 94% intent-parsing accuracy, supports flexible natural language interaction, and adapts to different ML problem types without task-specific fine-tuning. We present the system's architecture and report results from a comparative evaluation conducted with energy domain specialists, contrasting the Explainability Assistant with a traditional XAI dashboard. The evaluation suggests improved usability and consistent task accuracy, with all experts unanimously preferring the conversational interface for practical use.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-09-10T17:40:11Z",
+    "updated": "2026-09-10T17:40:11Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11860v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11860v1"
+    ],
+    "relevance_score": 0.418111144124238,
+    "max_similarity": 0.13827512906406822
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11900v1",
+    "title": "MindTopo: Can Foundation Models Reason in Topological Space?",
+    "authors": [
+      "Yunfei Ge",
+      "Anbang Liu",
+      "Qineng Wang",
+      "Johnalbert Garnica",
+      "Jianwen Lyu",
+      "Zihan Wang",
+      "Reuben Tan",
+      "Jianfeng Gao",
+      "Ruohan Zhang",
+      "Yining Hong",
+      "Jiajun Wu",
+      "Manling Li"
+    ],
+    "abstract": "Spatial reasoning depends not only on metric properties such as distance, angle, and shape, but also on topological relations that remain invariant under continuous deformation. Cognitive science identifies these relations as foundational to spatial understanding, yet foundation-model evaluations largely focus on metric or viewpoint-dependent relations. We introduce MindTopo, a benchmark of topological intuition across five properties grounded in cognitive science and formal topology: continuity, separation, order, enclosure, and knots. MindTopo evaluates each property at two cognitive levels. Reasoning asks a model to identify topological relations or infer how they change. Planning instantiates a foundation model as a closed-loop agent whose policy selects environment actions. MindTopo contains 11,030 instances across 13 procedurally generated task types with controllable difficulty. We benchmark 14 MLLMs and study agent configurations augmented with image and video generation, including 3 video generative models in planning settings. Every MLLM performs better on reasoning than on planning, and the best-performing model remains far below observed human performance. On Qwen3-VL-2B-Instruct, supervised fine-tuning and reinforcement learning improve reasoning more than planning. Generated observations retain local cues and reach plausible endpoints, but audited rollouts do not reliably follow environment dynamics or preserve topology across transitions. Our website is at https://mind-topo.github.io/",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T17:54:32Z",
+    "updated": "2026-09-10T17:54:32Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11900v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11900v1"
+    ],
+    "relevance_score": 0.4095722969161959,
+    "max_similarity": 0.12622284470281614
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11900v1",
+    "title": "MindTopo: Can Foundation Models Reason in Topological Space?",
+    "authors": [
+      "Yunfei Ge",
+      "Anbang Liu",
+      "Qineng Wang",
+      "Johnalbert Garnica",
+      "Jianwen Lyu",
+      "Zihan Wang",
+      "Reuben Tan",
+      "Jianfeng Gao",
+      "Ruohan Zhang",
+      "Yining Hong",
+      "Jiajun Wu",
+      "Manling Li"
+    ],
+    "abstract": "Spatial reasoning depends not only on metric properties such as distance, angle, and shape, but also on topological relations that remain invariant under continuous deformation. Cognitive science identifies these relations as foundational to spatial understanding, yet foundation-model evaluations largely focus on metric or viewpoint-dependent relations. We introduce MindTopo, a benchmark of topological intuition across five properties grounded in cognitive science and formal topology: continuity, separation, order, enclosure, and knots. MindTopo evaluates each property at two cognitive levels. Reasoning asks a model to identify topological relations or infer how they change. Planning instantiates a foundation model as a closed-loop agent whose policy selects environment actions. MindTopo contains 11,030 instances across 13 procedurally generated task types with controllable difficulty. We benchmark 14 MLLMs and study agent configurations augmented with image and video generation, including 3 video generative models in planning settings. Every MLLM performs better on reasoning than on planning, and the best-performing model remains far below observed human performance. On Qwen3-VL-2B-Instruct, supervised fine-tuning and reinforcement learning improve reasoning more than planning. Generated observations retain local cues and reach plausible endpoints, but audited rollouts do not reliably follow environment dynamics or preserve topology across transitions. Our website is at https://mind-topo.github.io/",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-10T17:54:32Z",
+    "updated": "2026-09-10T17:54:32Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11900v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11900v1"
+    ],
+    "relevance_score": 0.4095722969161959,
+    "max_similarity": 0.12622284470281614
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11708v1",
+    "title": "Language-Augmented Semantic Priors for B-Spline Surface Fitting",
+    "authors": [
+      "Yunzhong Lou",
+      "Yusheng Luo",
+      "Jiahao Li",
+      "Yu Song",
+      "Xiangdong Zhou"
+    ],
+    "abstract": "The use of B-splines and Non-Uniform Rational B-Splines surfaces constitutes the mathematical foundation of contemporary computer-aided design (CAD) systems. Despite long-term progress, geometric kernels in traditional CAD still rely heavily on predetermined heuristic initialization for surface fitting and parameterization. Meanwhile, the procedural semantics and design intent encoded in modeling histories are largely ignored during geometry generation. This disconnect creates a gap between high-level design intent and solver-executable geometric configuration, often leading to suboptimal and semantically inconsistent fitting results. To bridge this gap, we introduce LASP, a Language-Augmented Semantic Priors framework that leverages large language models (LLMs) to infer structured, solver-usable B-spline priors from procedural modeling histories. Rather than modifying the geometric kernel itself, LASP operates as a semantic reasoning layer above existing solvers. It first translates modeling histories into rich textual descriptions that capture design intent, geometric context, and functional relationships, and then uses a fine-tuned LLM to predict structured B-spline prior parameters. LASP is trained through a two-stage scheme that combines local geometric regularities with long-range contextual dependencies, producing priors that are both interpretable and semantically coherent. This approach furnishes inductive signals that direct the conventional B-spline fitting process toward solutions that more accurately encapsulate the intended design objectives and demonstrate heightened semantic coherence. Compared to traditional machine learning schemes, the experiments demonstrate that language-driven reasoning can serve as a powerful inductive bias for geometric solving, establishing a new paradigm of language-guided geometric optimization in modern CAD systems.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-10T15:27:31Z",
+    "updated": "2026-09-10T15:27:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11708v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11708v1"
+    ],
+    "relevance_score": 0.40578669151374225,
+    "max_similarity": 0.12252232543013573
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11859v1",
+    "title": "From Parameters to Answers: How LLMs Retrieve and Use Their Internal Knowledge",
+    "authors": [
+      "Wenkang Wei",
+      "Yuan Fang",
+      "Renhe Jiang",
+      "Hong Cheng",
+      "Xingtong Yu"
+    ],
+    "abstract": "How does a language model's dependence on query-routing information and target knowledge change as it answers a question? We study this question through layerwise interventions on the hidden state at the end of the question. Across Qwen, Llama, and Gemma, we compare country-continent questions with noun, adjective, and code answers while keeping several fitted measurements distinct. A pair-conditioned request direction describes which country is queried in natural single-country questions; a global request direction describes first- versus second-country requests in paired questions; separate selection candidates test control among contents already available in the hidden state. A diagnostic reanalysis of frozen Qwen natural-question states shows that the pair-conditioned direction grows stronger before interventions on it begin to alter later fitted knowledge, with this causal window opening while answer-supporting content is still forming. The paired three-model trajectories are not uniform: Gemma shows a partially overlapping mid-layer routing-content profile, whereas Llama has no sustained routing-effect window under the same gates. In the paired protocol, dependence on the global request direction decreases from fixed earlier to later layer sets while dependence on fitted content persists. A matched Qwen comparison shows that the pair-conditioned direction retains a late effect, so this operational handoff concerns the global fitted direction rather than all request information. These results separate early readability, natural strength, causal steering, and later content dependence.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T17:39:55Z",
+    "updated": "2026-09-10T17:39:55Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11859v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11859v1"
+    ],
+    "relevance_score": 0.4019643436226873,
+    "max_similarity": 0.12039076672815333
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11872v1",
+    "title": "Evaluating Time-Series Foundation Models and Multimodal Dietary Context for CGM Forecasting",
+    "authors": [
+      "Bowen Zhang",
+      "Hsiu-Wen Cheng",
+      "Hongyu Yang",
+      "Evie L. Shen",
+      "Joleen Vansomphone",
+      "Yuna Li",
+      "Kerry Zhou",
+      "Zitian Qu",
+      "Suning Zhao",
+      "Xiangning Deng",
+      "Hua Zhou",
+      "Jin J. Zhou"
+    ],
+    "abstract": "Continuous glucose monitoring (CGM) provides high-frequency measurements of glucose dynamics and enables short-term glucose forecasting for diabetes management. Although time-series foundation models have shown strong general forecasting ability, their effectiveness for CGM prediction and the added value of multimodal dietary context remain unclear. We conduct a comprehensive empirical study using eight public CGM datasets spanning Type 1 diabetes, Type 2 diabetes, and non-diabetes populations. Under a unified protocol across multiple context lengths and prediction horizons, zero-shot foundation models did not consistently outperform strong task-specific baselines such as Elastic Net and PatchTST. In contrast, lightweight fine-tuning substantially improved forecasting performance. For example, fine-tuned Chronos-Bolt reduced RMSE by 6.5%-18.4% in the T1D cohort and by 8.6%-18.2% in the non-diabetes/T2D cohort, with comparable improvements in both in-distribution and out-of-distribution test settings. We further evaluate multimodal dietary context using CGMacros, which provides temporally aligned CGM signals, food images, and macronutrient records. A residual-based fusion framework reduced overall RMSE by approximately 3% and postprandial RMSE by approximately 15% relative to the CGM-only baseline. Moreover, Chronos-based CGM representations were more strongly correlated with observed postprandial glucose increments than representations from LSTM and CatBoost, even after those models incorporated additional dietary modalities, suggesting that pretrained temporal representations better preserve meal-induced excursion patterns. These findings show that foundation models require CGM-specific adaptation for reliable forecasting and that dietary context provides clinically meaningful signals beyond CGM alone, especially during postprandial periods.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-09-10T17:43:29Z",
+    "updated": "2026-09-10T17:43:29Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11872v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11872v1"
+    ],
+    "relevance_score": 0.4006199898200606,
+    "max_similarity": 0.17686710992653526
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11769v1",
+    "title": "Recognizing Is Not Reversing: A Controlled Inversion Test of Fact-Preserving News Framing",
+    "authors": [
+      "Yi Liu"
+    ],
+    "abstract": "Large language models (LLMs) are increasingly used to analyze and rewrite news, yet current framing studies mainly evaluate generation, detection, or whether rewritten text appears more neutral. They do not directly show whether a model can undo a known framing transformation while keeping the facts fixed. We introduce a controlled inversion test over three established textual realizations of framing: evaluative lexis, agency realization, and information salience. Across 60 news articles and three intervention strengths, this yields 540 paired variants with preserved atomic facts and recorded edits. Across Qwen, DeepSeek, and Kimi, factual preservation remains near 0.84, whereas intervention reversal is 0.044--0.068. Even when both framing type and direction are recognized correctly, pooled reversal reaches 0.071. These results reveal a clear separation between factual fidelity, framing recognition, and framing inversion: recognizing how an article is framed does not imply that the framing can be undone.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T16:23:51Z",
+    "updated": "2026-09-10T16:23:51Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11769v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11769v1"
+    ],
+    "relevance_score": 0.3890366157306191,
+    "max_similarity": 0.10497662350847803
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11877v1",
+    "title": "Biology-in-the-loop: Amortized Adaptive Hit Discovery in CRISPR Screens",
+    "authors": [
+      "Carl Edwards",
+      "Edward De Brouwer",
+      "Xiner Li",
+      "Namkyeong Lee",
+      "Ehsan Hajiramezanali",
+      "Anne Biton",
+      "Sara Mostafavi",
+      "Gabriele Scalia"
+    ],
+    "abstract": "Many biological discovery problems require experiments to be selected sequentially under constrained budgets. CRISPR screening is a prominent example, as exhaustive perturbation testing is often infeasible and candidate perturbations must instead be prioritized over multiple experimental rounds. Despite the importance of this problem, existing benchmarks for adaptive hit discovery remain limited in scale and diversity. Here, we introduce AssayBench-Loop, a large-scale benchmark for adaptive hit discovery comprising 1,389 CRISPR screens across five phenotype categories. Beyond enabling systematic evaluation, its scale makes it possible to learn acquisition strategies across historical experiments. Building on this resource, we introduce AssayLoop, a sequential experimental design framework combining AssayFormer, a transformer-based amortized acquisition policy trained across historical screens to adapt from experimental feedback, with LLM-derived biological priors through an adaptive handoff. In this view, completed experiments become training data for learning how accumulated evidence should guide what to test next, while LLMs provide prior biological knowledge to seed the search. We further introduce AssayLLM, showing that the same principle can be extended directly to an LLM through task-specific post-training. On temporally held-out screens, AssayLoop achieves a 5.67-fold enrichment over random selection and recovers 27.7% of hits after assaying approximately 5% of the candidate library, outperforming existing adaptive-design methods and standalone LLMs, and AssayFormer alone. Performance improves with increasing historical training data and transfers to phenotype categories excluded from training. These results demonstrate the value of learning acquisition policies across historical experiments and combining them with broad biological priors for efficient adaptive hit discovery.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T17:45:18Z",
+    "updated": "2026-09-10T17:45:18Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11877v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11877v1"
+    ],
+    "relevance_score": 0.35128595045385286,
+    "max_similarity": 0.17960111644790602
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11673v1",
+    "title": "Multimodal Taxonomic Conditioning for Generative Plankton Imagery",
+    "authors": [
+      "Daniela Ivanova",
+      "Ozgu Goksu",
+      "Nicolas Pugeault"
+    ],
+    "abstract": "Automated plankton imaging produces severely long-tailed datasets, where the rare taxa of greatest ecological interest have too few images to train or evaluate classifiers reliably. We generate synthetic plankton imagery conditioned on taxonomy: a CLIP encoder is adapted on a large plankton corpus with a ranked contrastive objective extended to deep, ragged taxonomies, then frozen to condition a parameter-efficient diffusion transformer. We evaluate synthetic sample quality on distributional fidelity and downstream classifier utility.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-09-10T15:08:53Z",
+    "updated": "2026-09-10T15:08:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11673v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11673v1"
+    ],
+    "relevance_score": 0.3372138135556772,
+    "max_similarity": 0.10262336839539792
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11873v1",
+    "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+    "authors": [
+      "Yi Duan",
+      "Ying Liu",
+      "Zirui Tang",
+      "Haodong Chen",
+      "Jun Zhou",
+      "Yumou Liu",
+      "Bangrui Xu",
+      "Yukai Wu",
+      "Sidi Chen",
+      "Yuhan Zhou",
+      "Haoyu Wang",
+      "Xiaoyou Yu",
+      "Shaokun Han",
+      "Xuzhou Zhu",
+      "Le Zhou",
+      "Bolin Lu",
+      "Wei Zhou",
+      "Jiachen Liu",
+      "Nuozhou Fang",
+      "Jiaxin Tian",
+      "Ruoyu Chen",
+      "Yuxuan Li",
+      "Kai Zuo",
+      "Kaiyan Zhang",
+      "Jiantao Qiu",
+      "Conghui He",
+      "Guoliang Li",
+      "Bowen Zhou",
+      "Zhiyuan Liu",
+      "Zhoufutu Wen",
+      "Jihua Kang",
+      "Xuanhe Zhou",
+      "Fan Wu"
+    ],
+    "abstract": "Recursive self-improvement (RSI) enables AI systems to turn experience and feedback into persistent changes that improve both their capabilities and the process of future improvement. We first use the Headroom-Closed Index (HCI) to reveal the problems of existing LLMs, then introduce the RSI concept and its development roadmap: from improvement-execution autonomy, improvement-strategy autonomy, experience-acquisition autonomy, and environment-adaptation autonomy, to recursive meta-improvement. Next we examine RSI across scenarios (e.g., scientific discovery, embodied intelligence, software engineering), highlighting their distinct requirements and development speeds. Drawing on diverse industry practices and preliminary empirical evidence, we connect RSI research with practical systems and identify key challenges to achieving genuine RSI.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-09-10T17:44:23Z",
+    "updated": "2026-09-10T17:44:23Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11873v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11873v1"
+    ],
+    "relevance_score": 0.21199746450475296,
+    "max_similarity": 0.13494815917072664
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11873v1",
+    "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+    "authors": [
+      "Yi Duan",
+      "Ying Liu",
+      "Zirui Tang",
+      "Haodong Chen",
+      "Jun Zhou",
+      "Yumou Liu",
+      "Bangrui Xu",
+      "Yukai Wu",
+      "Sidi Chen",
+      "Yuhan Zhou",
+      "Haoyu Wang",
+      "Xiaoyou Yu",
+      "Shaokun Han",
+      "Xuzhou Zhu",
+      "Le Zhou",
+      "Bolin Lu",
+      "Wei Zhou",
+      "Jiachen Liu",
+      "Nuozhou Fang",
+      "Jiaxin Tian",
+      "Ruoyu Chen",
+      "Yuxuan Li",
+      "Kai Zuo",
+      "Kaiyan Zhang",
+      "Jiantao Qiu",
+      "Conghui He",
+      "Guoliang Li",
+      "Bowen Zhou",
+      "Zhiyuan Liu",
+      "Zhoufutu Wen",
+      "Jihua Kang",
+      "Xuanhe Zhou",
+      "Fan Wu"
+    ],
+    "abstract": "Recursive self-improvement (RSI) enables AI systems to turn experience and feedback into persistent changes that improve both their capabilities and the process of future improvement. We first use the Headroom-Closed Index (HCI) to reveal the problems of existing LLMs, then introduce the RSI concept and its development roadmap: from improvement-execution autonomy, improvement-strategy autonomy, experience-acquisition autonomy, and environment-adaptation autonomy, to recursive meta-improvement. Next we examine RSI across scenarios (e.g., scientific discovery, embodied intelligence, software engineering), highlighting their distinct requirements and development speeds. Drawing on diverse industry practices and preliminary empirical evidence, we connect RSI research with practical systems and identify key challenges to achieving genuine RSI.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-09-10T17:44:23Z",
+    "updated": "2026-09-10T17:44:23Z",
+    "pdf_url": "https://arxiv.org/pdf/2609.11873v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2609.11873v1"
+    ],
+    "relevance_score": 0.21199746450475296,
+    "max_similarity": 0.13494815917072664
+  }
+]
