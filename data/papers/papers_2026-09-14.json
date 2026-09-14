@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.12265",
+    "title": "GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs",
+    "authors": [
+      "Zixiang Xu, Yanbo Wang, Chenxi Wang, Lang Gao, Zirui Song, Yue Huang, Zhaorun Chen, Xiangliang Zhang, Xiuying Chen"
+    ],
+    "abstract": "arXiv:2609.12265v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly asked to reason over structured data such as graphs, yet how reliably they can carry out multi-step graph algorithms in language remains unclear. Existing evaluations tend to use simple tasks on small graphs, to score code generation rather than reasoning over the graph itself, or to fix a single input format. We introduce Graph Theory Bench (GT Bench), a benchmark covering 24 classical graph problems in 44 task-structure settings, with over 100,000 examples across four representations: natural language, structured language, adjacency list, and adjacency matrix. Evaluating eight LLMs on GT Bench shows that accuracy is strongly tied to the input representation, that the best representation shifts with graph density, size, and topology as well as with the model, and that this sensitivity persists, attenuated, in the strongest reasoning models. Building on these observations, we propose the Graph Theory Agent (GTA), which pairs a preference-trained representation selector with plan-and-decompose scaffolding around a frozen executor LLM. GTA lifts Phi-4 from 53.5% to 69.1% on the benchmark's easy split and from 33.0% to 41.5% on its hard split, outperforming eight prompting and agent baselines, and transfers without retraining to GraCoRe and NLGraph. Code for benchmark generation and evaluation: https://github.com/xzx34/GTA. The project homepage is available at https://xzx34.github.io/gta/.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12265",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12265"
+      }
+    ],
+    "relevance_score": 0.5450876656554831,
+    "max_similarity": 0.29334174714038325
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12397",
+    "title": "UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation",
+    "authors": [
+      "Danning Zhang, Yijing Lin, Shuhan Zhuang, Mengqi Huang, Shaojin Wu, Shancheng Fang, Zhendong Mao"
+    ],
+    "abstract": "arXiv:2609.12397v1 Announce Type: new \nAbstract: Multi-modal image generation, particularly subject-driven customization, has garnered growing attention in recent years. Despite the rapid advancement of generative models, their evaluation remains largely lagging. Existing methods, whether embedding-based or Multi-modal Large Language Model (MLLM)-based, evaluate alignment with each modal condition in isolation, which contradicts the simultaneous condition alignment objective of multi-modal image generation, leading to poor consistency with human judgments. To address this challenge, we propose UFO, the first unified framework for omni-condition alignment simultaneous evaluation. Specifically, UFO introduces a novel Atomized Chain-of-Evaluation paradigm, \\emph{i.e.}, it first decomposes omni-condition alignment into a sequential chain of fine-grained, disentangled Atomic Evaluation Units (AEUs), categorizes them into distinct modality-relevance classes, and then employs general or dedicated functional calls for accurate verification of different AEU types. Experimental results demonstrate that UFO achieves the highest correlation with human evaluation preferences, delivering an average improvement of 15.25\\%. Furthermore, we present UFO-Bench, a dedicated benchmark designed to holistically evaluate the performance of existing customization models under the diverse mutual interactions of textual and visual conditions.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12397",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12397"
+      }
+    ],
+    "relevance_score": 0.5009219812404123,
+    "max_similarity": 0.2386404366073263
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12320",
+    "title": "AIM: A Privacy-Aware Interoperable Memory Framework for Multi-Agent Multi-User LLM Systems",
+    "authors": [
+      "Zachary Johnson, Nigel Boachie Kumankumah, Somya Chatterjee, Tejas Sathyamurthi, Min Chen, Xinyi Alice Li, Xiao Wang, Emily Morgan Gelchie, Jessica Lin, Sadid A. Hasan, Sulaiman Vesal"
+    ],
+    "abstract": "arXiv:2609.12320v1 Announce Type: new \nAbstract: Traditional large language models (LLMs) are scoped to individual user sessions, limiting their knowledge to a single conversation and preventing them from learning user preferences that evolve over time. Existing agentic memory systems address this limitation but generally operate at the individual-user level, restricting the public knowledge that could be shared across users to improve downstream responses. We introduce AIM (Agentic Interoperable Memory), a unified, privacy-aware memory framework that enables multi-agent, multi-user LLM systems to persistently manage private and shared memory. AIM dynamically classifies information as private, scoped to one user and inaccessible to others, or public, accessible to all users. It enforces index-level access controls so that private memories are retrievable only by their owner, protecting sensitive data while allowing beneficial shared knowledge to improve coordination and consistency. We also introduce MUMBench (Multi-User Memory Benchmark), a dataset of multi-user interactions containing private and shareable information across four domains. To our knowledge, MUMBench is the first public dataset designed to evaluate multiple memory operations, including retrieval, creation, update, and deletion, in a multi-user environment. Across three independent runs on MUMBench, AIM achieves 96.0% visibility classification accuracy, 58.8% strict operation accuracy, and 70.5% state-aware operation accuracy.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12320",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12320"
+      }
+    ],
+    "relevance_score": 0.49633435548870186,
+    "max_similarity": 0.23440245500358609
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12035",
+    "title": "Reading the Whole Heart: Latent-Attention Masked Autoencoders for Multimodal Cardiac Representation Learning",
+    "authors": [
+      "Andrea Agostini, Simon B\\\"ohi, Moritz Vandenhirtz, Samuel Ruiperez-Campillo, Max Kr\\\"ahenmann, Silke M\\\"uhlstedt, Irene Cannistraci, Ece \\\"Ozkan Elsen, Julia E. Vogt, Thomas M. Sutter"
+    ],
+    "abstract": "arXiv:2609.12035v1 Announce Type: new \nAbstract: Cardiovascular diagnosis rests on integrating complementary modalities, like ECG, echocardiography, chest radiographs, and clinical variables, each capturing distinct but correlated aspects of cardiac physiology. Yet most medical foundation models remain modality-specific, combining modalities only for finetuning or post-training. This discards the cross-modal evidence clinicians naturally integrate and ignores the structure within each modality. We introduce Latent-Attention Masked Autoencoders (LAMAE), a multimodal, structure-aware masked autoencoder that jointly learns patient-level representations during self-supervised pretraining. Rather than fusing modalities post hoc, LAMAE exchanges information directly in the latent space through a shared latent-attention module operating over a study-view-entity hierarchy, enabling aggregation of variable observations and graceful handling of missing modalities. Pretrained on over 1.2 million MIMIC-IV hospital stays, LAMAE outperforms modality-specific pretraining and strong contrastive and vision-language baselines across multimodal hospital-stay tasks, such as in-hospital mortality, ICD-10 and DRG coding, and length of stay, while remaining competitive on unimodal tasks. These gains persist even when only a single modality is available at test time, showing that modeling both intra- and inter-modal structure yields more robust, transferable representations.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12035",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12035"
+      }
+    ],
+    "relevance_score": 0.49503075674198804,
+    "max_similarity": 0.23293833337023165
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12202",
+    "title": "QuPAINT: Physics-Aware Multimodal Reasoning for Quantum Material Characterization",
+    "authors": [
+      "Sankalp Pandey, Xuan-Bac Nguyen, Hoang-Quan Nguyen, Tim Faltermeier, Nicholas Borys, Hugh Churchill, Khoa Luu"
+    ],
+    "abstract": "arXiv:2609.12202v1 Announce Type: new \nAbstract: Characterizing two-dimensional (2D) quantum materials by optical microscopy requires localizing exfoliated flakes and determining their layer thickness from subtle optical contrast and interference color to select suitable flakes for device fabrication. However, models face synthetic-to-real domain shifts and variation across materials, substrates, laboratories, and imaging conditions. We present QuPAINT, a physics-aware multimodal framework for transferable quantum flake characterization. The Synthetic Materials Framework (Synthia) generates diverse synthetic microscopy images while preserving layer-dependent optical behavior. Using these images, we construct QMat-Instruct, a multimodal instruction dataset with image-specific reasoning traces generated from verified annotations and constrained to observable optical cues. QuPAINT integrates these signals through Physics-Informed Attention (PIA), which injects substrate-relative optical priors into the visual representation to support grounded multimodal reasoning. For evaluation, we introduce QF-Bench, to our knowledge, the largest real-world benchmark for this problem, spanning diverse microscopy and substrate conditions. Using its verified annotations, we study counting, visual grounding, reasoning quality, confidence calibration, and transfer to an unseen material. QuPAINT-8B substantially outperforms prior methods and establishes state-of-the-art performance for both general and monolayer flake detection. Additional experiments show that image-grounded supervision improves strict spatial grounding and confidence calibration while preserving robust general flake detection on the unseen material.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12202",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12202"
+      }
+    ],
+    "relevance_score": 0.46094198352339255,
+    "max_similarity": 0.1894474111091679
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.11956",
+    "title": "Performance, Efficiency and Collapse -- Advantages and Challenges in Offline Post-training of Code LLMs",
+    "authors": [
+      "Abhinav Anand, Sanjana Reddy Pachika, Shweta Verma, Mira Mezini"
+    ],
+    "abstract": "arXiv:2609.11956v1 Announce Type: new \nAbstract: Post-training with reinforcement learning (RL) is a critical phase in the development of code-generating large language models (LLMs), as it ensures adherence to instructions and the production of functionally correct code. This process typically requires computationally intensive code sample generation from Transformer-based LLMs and substantial GPU-CPU communication for sequence verification. To address these computational challenges, this work examines whether RL-based post-training can be performed entirely offline by leveraging existing datasets rather than generating new samples. The findings indicate that, with only a few hours of training, zero-shot code generation performance of LLMs can be substantially improved without online sampling. Additionally, offline RL produces performance gains across models ranging from 0.5B to 7B parameters, although the extent of improvement varies among model families.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.11956",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.11956"
+      }
+    ],
+    "relevance_score": 0.4529969507813758,
+    "max_similarity": 0.18154850627187272
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.11993",
+    "title": "FINESSE: An Agent-Based Simulator and Benchmark Dataset for Multimodal Financial Event Sequences",
+    "authors": [
+      "Tyler Farnan, Benjamin Eng, Adam Abate, Xirui Hou, Rizal Fathony, Nam H. Nguyen, Senthil Kumar"
+    ],
+    "abstract": "arXiv:2609.11993v1 Announce Type: new \nAbstract: Machine learning research in financial services is limited by the scarcity of representative open-source datasets. Existing resources are often narrowly focused on a single modality or task and fail to reflect the structured, multimodal, and dynamic nature inherent to many problems in financial services.\n  In this paper, we introduce FINESSE, a Financial Event Sequence Simulation Environment, an agent-based simulation framework for generating synthetic, structured datasets composed of multiple interdependent event streams. Each stream corresponds to a distinct financial behavior such as transactions, payments, account status changes, and policy interventions, each with unique action spaces, schemas and variable types. These streams are coupled through agents' latent evolving states, enabling the simulation of temporally rich interactions.\n  We also introduce FINESSE-Bench, a benchmark dataset generated by the simulator, supporting four representative tasks: balance forecasting, transaction fraud detection, missed payment prediction, and next event prediction. We report baseline results using methods from time series forecasting, event sequence modeling, temporal graphs, and temporal point processes. We release the FINESSE framework, including the simulator and dataset to accelerate research on structured, multimodal event sequence modeling challenges in financial services.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.11993",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.11993"
+      }
+    ],
+    "relevance_score": 0.44784055712991816,
+    "max_similarity": 0.17545941565818846
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12078",
+    "title": "Feature Recovery for Object Understanding After Irreversible Fire Damage",
+    "authors": [
+      "Aditi Tiwari, Sofia Stoica, Savya Khosla, David Forsyth, Heng Ji"
+    ],
+    "abstract": "arXiv:2609.12078v1 Announce Type: new \nAbstract: Objects in post-fire environments often undergo irreversible physical transformations that change their geometry, material state, and visual appearance. Detecting and identifying these remnants is critical for locating hazards, reconstructing pre-incident contents, and inventorying losses. Unlike standard image corruptions, these degradations affect the physical structure of the object itself. To study this setting, we introduce TRACE, a transformation-aware benchmark for post-fire object understanding. TRACE contains 21.4K real-image-grounded synthetic scenes and paired object-level pristine-to-degraded progressions spanning 499 object identities across 189 categories. We define five tasks targeting localization and pre-degradation understanding: degraded-object detection, pristine-state recovery and retrieval, original material recovery, pristine description generation, and functional reasoning. Existing models degrade sharply with severity. From the least to the most severe level, RF-DETR mAP decreases by 71% relative, while InternVL3.5 retrieval R@1 falls from 93.85 to 28.11. To address this, we propose the Feature Recovery Module (FRM), a plug-and-play module that maps degraded encoder features to pristine-aligned representations while keeping the host frozen. Trained only with paired feature supervision, FRM improves scene-level detection, CLIP/SigLIP2 feature recovery, and all four object-level VLM tasks, with larger gains under more severe degradation. Across VLM hosts and severity levels, relative gains average 12.5% for retrieval, 20.1% for material recovery, 13.2% for description generation, and 12.4% for functional reasoning.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12078",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12078"
+      }
+    ],
+    "relevance_score": 0.44163971894252374,
+    "max_similarity": 0.1655434744414056
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12410",
+    "title": "A Multimodal Explainable Deep Learning Framework for Alzheimer's Disease Diagnosis using 3D Magnetic Resonance Imaging and Clinical Data",
+    "authors": [
+      "Yusuf Brima, Marcellin Atemkeng, Lakshmana Rao Namamula, Antoine Vacavant"
+    ],
+    "abstract": "arXiv:2609.12410v1 Announce Type: new \nAbstract: Dementia is a major and growing global health burden, with Alzheimer's disease (AD) accounting for most cases. Timely and accurate diagnosis is central to managing this burden and increasingly depends on integrating complementary clinical and imaging information. Multimodal deep learning can combine these modalities for AD diagnosis, but how its explanations behave across modalities, fusion strategies, and cohorts remains unclear. We developed an explainable multimodal framework pairing a 3D CNN encoder for T1-weighted MRI with a feedforward network for harmonized clinical and demographic data, comparing varied model setups on three-way and pairwise diagnostic tasks using 6,479 internal records from the ADNI and 1,703 independent records from the OASIS-3. On ADNI, the tabular-only model achieved the highest three-class AUC-ROC of 0.879 and best discriminated cognitively normal (CN) versus mild cognitive impairment (MCI; 0.903), while cross-attention performed best for MCI versus AD (0.861); CN versus AD was highly discriminative overall. On OASIS-3, the vision-only model performed best (three-class AUC-ROC 0.910); CN versus MCI remained difficult, and no fusion strategy consistently outperformed single modalities across tasks and cohorts. SHAP and Integrated Gradients identified the MMSE as the dominant tabular feature in both cohorts, with global feature rankings agreeing strongly in ADNI ($\\rho=0.94$) and OASIS-3 ($\\rho=0.96$); CAM-based explanations, however, changed with model configuration and cohort. These findings show that multimodal performance and explanations are task, modality, fusion, and cohort-dependent: a dominant cognitive signal persisted across cohorts, but feature contributions and CAM explanations did not, underscoring the need to evaluate explainability under cohort shift rather than as a stable, intrinsic property.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12410",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12410"
+      }
+    ],
+    "relevance_score": 0.4354515308368117,
+    "max_similarity": 0.1592700942432173
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12107",
+    "title": "Extracting Dataset Mentions in Forced Displacement and FCV Documents: A Weakly Supervised Framework with LLM-Based Label Refinement",
+    "authors": [
+      "Rafael Macalaba, Aivin V. Solatorio, Patrick Michael Brock, Olivier Dupriez"
+    ],
+    "abstract": "arXiv:2609.12107v1 Announce Type: new \nAbstract: Development and humanitarian organizations produce and support surveys, administrative registries, and other data resources to inform research, policy, and operations, yet systematically identifying where these datasets are referenced remains difficult. Such references are dispersed across research papers, project documents, humanitarian reports, and other unstructured text, limiting both the ability to trace data use and to identify potential gaps in data availability or dissemination. We present a weakly supervised framework for adapting dataset extraction to forced displacement and Fragile, Conflict, and Violence (FCV) documents without first constructing a large manually labeled training corpus. A lightweight model trained on general research literature generates candidate dataset mentions from unlabeled domain documents, which a frontier large language model (LLM) reviews in context, validating or rejecting candidates and correcting their extraction boundaries. The resulting annotations are supplemented with targeted synthetic and contrastive examples and used to fine-tune the lightweight model for large-scale extraction. We evaluate the resulting model on an independent gold-standard benchmark of 1,706 text passages spanning research, humanitarian, and operational documents. Across the full benchmark, the model achieves 74.1\\% precision and 70.5\\% recall at the mention level; among passages containing dataset references, precision reaches 89.5\\%. At the passage level, the model achieves 88.2\\% accuracy and 88.6\\% specificity in distinguishing passages with dataset references from those without them. These results demonstrate a practical approach for constructing domain-specific supervision when labeled data are limited, and provide a technical foundation for larger-scale analysis of data use and potential gaps in the displacement data landscape.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12107",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12107"
+      }
+    ],
+    "relevance_score": 0.4299463287317014,
+    "max_similarity": 0.15003650849745495
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.11961",
+    "title": "On-Device Language Models for Privacy-Preserving Stress Prediction: A Multimodal Evaluation on Mobile Health",
+    "authors": [
+      "Ibukunoluwa Soyebo, Alyssa Donawa, Rodrigo Aguilar Barrios, Brice Patchou, Corey E. Baker"
+    ],
+    "abstract": "arXiv:2609.11961v1 Announce Type: new \nAbstract: Stress is a pervasive determinant of mental health and a key target for mobile health interventions. On-device language models (ODLMs) offer privacy-preserving inference without cloud dependency, yet their feasibility for health prediction under mobile resource constraints remains underexplored. We evaluate ODLMs for multi-modal stress prediction using zero-shot prompting, measuring predictive accuracy alongside latency and throughput. Our results show that objective sensor features marginally outperform subjective self-reports on average, and that lightweight sub-2B models achieve low latency with predictable resource usage. Our findings highlight both the promise and the practical constraints of ODLMs for mobile mental health.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.11961",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.11961"
+      }
+    ],
+    "relevance_score": 0.42723399032486764,
+    "max_similarity": 0.1511129859753339
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.11995",
+    "title": "Explainable Prediction from Mobile Sensing Data through LLM-guided Concept Integration",
+    "authors": [
+      "Yuning Wang, Iman Azimi, Amir M. Rahmani, Pasi Liljeberg"
+    ],
+    "abstract": "arXiv:2609.11995v1 Announce Type: new \nAbstract: Mobile sensing enables longitudinal monitoring of behavioral and physiological patterns in everyday settings. However, accurate prediction remains challenging in small-cohort health-sensing studies, where task-specific outcome supervision is limited relative to heterogeneous sensing data. Interpretability is also important, as model outputs should reflect meaningful behavioral and physiological patterns rather than predictive scores alone. We develop a Concept-Integrated Transformer (CIT) with LLM-guided concept supervision for explainable prediction from mobile sensing data. CIT uses a pretrained large language model to generate baseline-aware concept abnormality targets with confidence weights without manual concept annotation. Across two longitudinal datasets, CIT achieves the highest F1 score on AFFECT (0.756) and ties for the highest on a PHQ-9 dataset (0.765). The learned concept scores also reveal interpretable behavioral and physiological patterns; in AFFECT, sleep quantity and quality show the clearest difference between high and low negative affect groups. These findings support LLM-guided concept integration for accurate and interpretable prediction in small-cohort mobile sensing studies.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.11995",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.11995"
+      }
+    ],
+    "relevance_score": 0.41841421192512085,
+    "max_similarity": 0.14023352428042424
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12162",
+    "title": "Can LLMs in Draft-Verify-Revise Pipelines Resolve Deictic Ambiguity?",
+    "authors": [
+      "Obinna I. Ekekezie"
+    ],
+    "abstract": "arXiv:2609.12162v1 Announce Type: new \nAbstract: Draft-verify-revise is a common LLM orchestration pattern for scaling inference-time compute. One LLM drafts, a second critiques the draft and provides feedback, and a third uses that feedback to revise the draft into the final output. As context cascades between stages, LLMs at different stages can resolve a context-dependent expression such as \"previous\" differently. When that happens, the expression undergoes a deictic shift, a change in what it refers to. This phenomenon was studied with a synthetic dataset of 10 base examples, each rendered in three conditions. Holding the shared components constant, the conditions varied whether the draft stage LLM (the assistant) or the verify stage LLM (the grader) resolved the expression correctly, and how much independent reasoning the revise stage LLM (the meta-evaluator) needed to determine which reading was correct. Six models from three providers were tested across 21 reasoning effort configurations using e-values for sequential testing, in a primary experiment and an ablation experiment that removed error classification labels from the grader's feedback. A separate LLM analyzed the meta-evaluator's stated rationale for each wrong verdict. Balanced accuracy (the unweighted mean of sensitivity and specificity) ranged from 0.156, below chance, to near-perfect. GPT-5.2 rose from 0.156 without reasoning to 0.942 at its highest reasoning effort level, while Gemini 3 Pro stayed above 0.94 at every level. Gemini 3 Pro at low reasoning effort outscored GPT-5.2 at xhigh reasoning effort for roughly 5% of the cost per trial. When the meta-evaluator erred, it tended to rely on surface cues rather than operational reasoning. Context engineers implementing draft-verify-revise pipelines should be wary of deictic shifts and make the intended referent explicit at each stage.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12162",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12162"
+      }
+    ],
+    "relevance_score": 0.41279830076631874,
+    "max_similarity": 0.13292650097755612
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.11955",
+    "title": "R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration",
+    "authors": [
+      "Dhruv Dixit, Paritosh Pandey"
+    ],
+    "abstract": "arXiv:2609.11955v1 Announce Type: new \nAbstract: Large language models are increasingly used for automated fact checking, but end-to-end prompting often entangles evidence retrieval, reasoning, and uncertainty estimation, making failures difficult to diagnose and confidence difficult to trust. We present R2VC, a modular retrieve, reason, verify, calibrate architecture for evidence-grounded fact checking with citations and abstention. R2VC combines hybrid sparse+dense retrieval over Wikipedia, a supervised fine-tuned and DPO-aligned generator that produces diverse structured verdict candidates, an external NLI cross-encoder for evidence-based candidate selection, and a lightweight sequence-level calibrator for confidence estimation and selective abstention. On FEVER, an 8B backbone with R2VC achieves 13.74% higher accuracy than baseline. Ablation studies show that verifier-based candidate selection and confidence calibration are the largest contributors to performance. Removing candidate selection drops FEVER accuracy to 76.24%, while removing calibration nearly doubles the Brier score to 0.161. A manual analysis of 250 errors further shows that retrieval failures, especially wrong-entity evidence, remain the dominant bottleneck. Together, these results show that modular fact-checking pipelines can substantially improve both predictive accuracy and confidence reliability in open-domain verification.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.11955",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.11955"
+      }
+    ],
+    "relevance_score": 0.4086822881931083,
+    "max_similarity": 0.1258811665627792
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12286",
+    "title": "T-GADE: Thermodynamical Generative-AI-Driven Evolution of LLM Artifacts",
+    "authors": [
+      "Kyoko Ogawa, Naoki Mori"
+    ],
+    "abstract": "arXiv:2609.12286v1 Announce Type: new \nAbstract: Integrating evolutionary computation and large language models (LLMs) requires control of population diversity as well as generative capability. Among LLM outputs, those with explicit structure, such as a description paired with code, are structured artifacts; we use artifact for short. We propose T-GADE, which evolves these artifacts by extending thermodynamical genetic algorithms through LLM-based genetic operators and artifact-level diversity evaluation. A common free-energy objective supports generational and steady-state updates, with Fermi-type occupancy excluding repeated genotypes and Bose-type occupancy permitting them. We establish exact one-member removal and conditions for recovering the zero-temperature survival rule of Evolution of Heuristics (EoH). On the online bin-packing task studied in the EoH paper, excess measures relative bin-count overhead above a volume lower bound. Training excess uses search instances; transfer excess uses instances with another bin capacity. Generational Bose-type T-GADE at $T=0.003$ reduced median training excess by approximately 29%, from 1.152% to 0.815%, over 20 runs per configuration (two-sided Mann-Whitney $p=0.042$, Cliff's $\\delta=0.378$). Validation selection among its two highest-ranked final candidates reached the same median transfer excess as EoH, 0.496%. These results demonstrate the utility of thermodynamical selection and validation-based use of retained artifacts.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12286",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12286"
+      }
+    ],
+    "relevance_score": 0.4018189123106102,
+    "max_similarity": 0.1194620671401484
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12105",
+    "title": "Language Is an Insufficient Substrate for Quantitative Reasoning, and Consequential Domains Need Large Quantitative Models",
+    "authors": [
+      "Reuben Vandeventer, David Imrem, David J. Wild"
+    ],
+    "abstract": "arXiv:2609.12105v1 Announce Type: new \nAbstract: The prevailing assumption in applied machine learning is that progress on consequential quantitative decisions such as pricing risk, allocating capital, triaging patients, or containing a network intrusion will follow from progress in large language models (LLMs). A language model is trained on a representation of the world that was produced by human description; description is a lossy encoding of the quantitative record, and the loss is irreversible: no downstream model, at any scale, can recover from a description what the description did not encode. We formalize this as a property of the representation on which a model is trained rather than of the model capacity, and we identify three further properties that consequential settings demand of a model and that a language substrate cannot supply by construction: reproducibility, lineage from every output back to the source records that produced. it, and calibrated uncertainty. We argue that these properties define a distinct model class, which we call the Large Quantitative Model (LQM).",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12105",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12105"
+      }
+    ],
+    "relevance_score": 0.40015957798440077,
+    "max_similarity": 0.11662513931162612
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12181",
+    "title": "Physics as the label for measuring and correcting materials reasoning in multimodal models",
+    "authors": [
+      "Hasan Kurban, Rasul Khanbayov, Mustafa Kurban"
+    ],
+    "abstract": "arXiv:2609.12181v1 Announce Type: new \nAbstract: Vision-language and language models increasingly interpret materials data, yet benchmarks report that they hallucinate invalid properties and violate physical law. Evaluation matches final answers to scarce human labels, while discovery agents verify final proposals or density functional theory (DFT) execution. Neither measures the physical consistency of a model's reasoning chain. Materials data carries its own physics, making a large class of materials reasoning verifiable without annotation. We introduce MatPCR, a label-free benchmark whose programmatic oracles check diffraction geometry through Bragg's law, scale bars, spectral peaks, and Materials Project-grounded checks of near-hull stability, computed band-gap class, and net magnetization. We define the Physical-Consistency Rate over image and structure inputs; introduce Constraint-Grounded Self-Verification, an agentic loop whose gain survives self-refinement and equal-compute re-prompting controls; release an open verifier useful in distribution but near chance on all six held-out constraint types; and derive an exact identity for how oracle error displaces the reported rate.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12181",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12181"
+      }
+    ],
+    "relevance_score": 0.3833503197854323,
+    "max_similarity": 0.09623036980940618
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12122",
+    "title": "Quantifying Consonant Contributions to Word Intelligibility via Acoustic Masking",
+    "authors": [
+      "Eunjung Yeo, Kwanghee Choi, Krupaben Kothadia, Visar Berisha, Julie M. Liss, David R. Mortensen, David Harwath"
+    ],
+    "abstract": "arXiv:2609.12122v1 Announce Type: new \nAbstract: Consonants contribute unequally to whether a word is understood. Given the limited time available for therapy, ranking consonants by contribution to intelligibility helps prioritize intervention targets in motor speech disorders. However, measuring this contribution relies on perceptual studies that are difficult to scale. This paper presents a scalable method that measures consonant contribution using acoustic masking. We silence one consonant at a time in an isolated word and test whether an automatic speech recognition (ASR) model still recognizes the word. We define a consonant's contribution score as the proportion of its masked instances for which the word becomes misrecognized, which we refer to as the mask-induced misrecognition rate (MMR). We validate MMR against two linguistic factors previously reported to correlate with consonant contribution, namely phoneme frequency and functional load. We apply this analysis across four languages, English, Spanish, German, and Czech, using three ASR architectures, MMS (encoder-only), Whisper (encoder-decoder), and Qwen3-ASR (LLM-based). Using partial Spearman correlations, we find that phoneme frequency correlates negatively with MMR while functional load correlates positively. In other words, more frequent consonants are less disruptive when masked, whereas consonants carrying more lexical contrast are more disruptive. Further cross-language analysis shows that consonant rankings are not consistent, indicating that consonant contribution is language-dependent.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12122",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12122"
+      }
+    ],
+    "relevance_score": 0.35060167200190984,
+    "max_similarity": 0.12064599607896853
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.12002",
+    "title": "Can We Trust LLM Judges: A Study of Capability-Dependent Biases and Multi-Judge Ensemble for Bias Calibration",
+    "authors": [
+      "Gemma Zhang, Prachi Badarayani, Asmi Kumar, Sadid Hasan, Sulaiman Vesal"
+    ],
+    "abstract": "arXiv:2609.12002v1 Announce Type: new \nAbstract: LLMs are increasingly used as automated judges for model training and evaluation, yet individual judges exhibit systematic biases that undermine reliability. Much of prior work has studied biases in pairwise LLM-as-a-judge settings; in this paper, we focus on absolute scoring tasks, which mirror more realistic use cases. Across four benchmarks and six models (36 judge-examinee pairs), we show that a model's task accuracy strongly predicts its judging accuracy (Pearson $r \\geq 0.90$ on most models) and inversely predicts its directional bias ($r \\leq -0.83$), but that accuracy alone does not ensure fair evaluation: more capable examinee models consistently receive more lenient judgments from all judges ($r \\geq 0.83$). To address this, we propose calibrated weighted majority voting (WMV), an ensemble evaluation method that aggregates multiple LLM judges weighted by online estimates of their false-positive and false-negative rates. We introduce a disagreement-based estimator that derives these error rates purely from inter-judge agreement patterns, requiring no ground-truth labels or task metadata. In a simulated experiment with shifting task distributions, our label-free WMV tracks an oracle with perfect error-rate knowledge to within 0.5 percentage points on average, outperforming both individual judges and unweighted majority voting. These results demonstrate that principled multi-judge calibration can simultaneously improve accuracy and correct for systematic leniency without requiring labeled data, offering a scalable path to reliable automated evaluation as model capabilities increase.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.12002",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.12002"
+      }
+    ],
+    "relevance_score": 0.3376809319747979,
+    "max_similarity": 0.10093588970416392
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.11957",
+    "title": "Look Before You Leap: Pre-Action Verification for LLM Agents",
+    "authors": [
+      "Asaad Althoubi"
+    ],
+    "abstract": "arXiv:2609.11957v1 Announce Type: new \nAbstract: An LLM agent acts on the world by emitting actions: shell commands to run, edits to apply. A wrong action does not always fail loudly; it can fail silently, producing a plausible but incorrect effect that raises no error. We argue that a cheap deterministic check, run before an action takes effect, is an effective and underused form of agent oversight, and we study it across two action modalities in one framework. The idea is to fix an action's correct effect by construction, before any executor runs, so that silent failure is measured directly and the verifier may abstain rather than guess. For shell commands, a static verifier over 9930 commands and 482 tools catches 95.8% of invalid commands at a 10.0% false-positive rate. Its syntax and binary checks are oracle-exact, giving zero false positives while catching half of all errors; the flag check is bounded only by help-text coverage and accounts for every false positive. For code edits, a benchmark of 640 edits over 224 files isolating the apply step exposes a sharp split. Content-anchored formats such as search/replace and diff fail cleanly, whereas location-anchored formats fail silently: line numbers corrupt 99.1% of files under a one-line shift, and function-name edits hit the wrong function 12.7% of the time. In both settings a refuse-when-unsure policy turns silent failures into recoverable ones at a tunable cost in applicability: selective grounding reaches 0.958 recall at 7.0% false positives, and an anchor-and-verify applier records one silent misapplication in 8320 trials (0.01%). We release both benchmarks, the verifiers, and the guards.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.11957",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.11957"
+      }
+    ],
+    "relevance_score": 0.23915263093798123,
+    "max_similarity": 0.1055476734273308
+  }
+]
