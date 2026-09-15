@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.13240",
+    "title": "ArtSociety: Multi-Agent Multimodal Collaboration for Art Emotion Understanding",
+    "authors": [
+      "Jian Li, Fanfan Ji, Jinxiang Lai, Ying Tai, Jian Yang, Xiao-Tong Yuan, Chengjie Wang, Yabiao Wang"
+    ],
+    "abstract": "arXiv:2609.13240v1 Announce Type: new \nAbstract: The AffectiveArt Multidimensional Art Emotion Understanding task asks to jointly predict an artwork's fine-grained emotion (12 classes, 1549:1 head-to-tail ratio), binary valence/arousal, and five attribute-grounded descriptions -- sub-tasks that exhibit strong empirical trade-offs, so the single-model solutions we tried do not jointly optimize all of them well. We present ArtSociety, a multi-agent framework that assembles heterogeneous multimodal experts -- a DINOv2-Giant vision agent (A1), a scene-grounded CoT fine-tuned MLLM (A2), and three closed-source reasoning agents (A3-A5) -- and coordinates them with two training-free controllers: (i) a rare-class-aware voting arbiter that lowers the agreement threshold for tail emotions, exploiting decorrelated error patterns across agent families; and (ii) a description-first reasoning agent whose DESCRIBE-then-CLASSIFY chain of thought forces visual evidence before label commitment, yielding near-perfect grounded descriptions. A task-routing policy directs the hard emotion task to the full five-agent ensemble while assigning the near-saturated valence/arousal and generative description tasks to the single strongest reasoning agent. On the official test set (1,000 artworks), ArtSociety achieves an Overall Score of 0.8870 (Classification 0.7789, Description 0.9952). An eleven-variant ablation study reveals that, once method and scale saturate at around 0.76, the decisive gains come from agent collaboration and data-side supervision -- a 30B MoE model trained on older data does not outperform an 8B model trained on better data. Code is available at https://github.com/swordlidev/ArtSociety",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13240",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13240"
+      }
+    ],
+    "relevance_score": 0.5332691061621309,
+    "max_similarity": 0.2783201553837003
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13192",
+    "title": "Evaluating LLM-Generated Rules for Heart Disease Prediction",
+    "authors": [
+      "Feisal Alaswad, Batoul Aljaddouh, Maher Alrahhal, Wafaa Al Nassan, Talal Bonn"
+    ],
+    "abstract": "arXiv:2609.13192v1 Announce Type: new \nAbstract: This study compares traditional machine learning models and Large Language Model (LLM)-generated rule-based systems for heart disease prediction using the UCI Heart Disease dataset. Several classifiers, including Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Naive Bayes, Decision Tree, and Random Forest, were evaluated alongside rule-based systems generated using GPT-4o and Claude Sonnet 4.6. Model performance was assessed using accuracy, precision, recall, and F1-score metrics. Experimental results show that traditional machine learning models consistently outperform LLM-generated rule-based systems in predictive performance. Random Forest achieved the best overall performance with 90.2% accuracy, a precision of 0.829, perfect recall of 1.0, and an F1-score of 0.906. Naive Bayes followed closely with 88.5% accuracy and an F1-score of 0.881. In contrast, the LLM-generated rule models achieved lower performance, with Claude Sonnet 4.6 reaching 80.3% accuracy (F1-score: 0.833) and GPT-4o obtaining 70.5% accuracy (F1-score: 0.690). Despite the performance gap, the LLM-generated rules provide interpretable IF-THEN diagnostic logic that enhances explainability and transparency in clinical decision-making. These findings highlight the trade-off between predictive performance and interpretability in medical artificial intelligence systems. The complete implementation of all experiments, including machine learning models and LLM-derived rule classifiers, is publicly available in the GitHub repository at https://github.com/FeisalAlaswad/LLM-Rule-ML-Heart-Disease-Prediction .",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13192",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13192"
+      }
+    ],
+    "relevance_score": 0.515809916454007,
+    "max_similarity": 0.26114682018274693
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13228",
+    "title": "Don't Just Look, Intervene: Perturbation Based Region Labeling for VQA Images",
+    "authors": [
+      "Marko Jojic, Zhaonan Li, Ben Zhou"
+    ],
+    "abstract": "arXiv:2609.13228v1 Announce Type: new \nAbstract: Vision Language Models (VLMs) should rely on visual evidence that directly determines the correct answer, but supervision for grounding visual reasoning is often expensive to obtain manually or tied to dataset-specific annotation primitives. We instead introduce model-causal visual evidence as an annotation target, defined as the set of image regions whose counterfactual intervention changes a model's answer distribution for a given image-question pair. Based on this principle, we introduce Counterfactual Search for Grounding Regions (CSGR). CSGR is a scalable pipeline that proposes candidate regions, perturbs them, measures their effect on answer sensitivity, and aggregates this evidence across multiple judges to approximate answer-critical regions in VQA data. To assess whether CSGR annotations contain a useful supervision signal, we plug them into three existing grounding-aware training routines: attention steering, Visual CoTfinetuning, and latent visual reasoning. These experiments test whether the proposed annotation scheme can provide a useful supervision signal across multiple ways of consuming region labels, rather than introducing a new way of using them. Across competing automatic region-labeling mechanisms, CSGR annotations provide the most consistent gains over Cross Entropy-only finetuning in both in-domain and out-of-domain evaluations, indicating that the proposed labeling scheme captures useful region-level information.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13228",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13228"
+      }
+    ],
+    "relevance_score": 0.4992891727395482,
+    "max_similarity": 0.2354462951786339
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13436",
+    "title": "Toward Self-Adaptive Physical AI: Can LLM Agents Manage Long-Horizon Physical Tasks?",
+    "authors": [
+      "Varun Kaushik, Yayun Tan, Xiaofan Yu"
+    ],
+    "abstract": "arXiv:2609.13436v1 Announce Type: new \nAbstract: Large Language Model (LLM) agents offer a promising path toward autonomously managing long-term physical tasks without human intervention. However, physical tasks require agents to continuously observe the environment, make consequential actions, and remain effective as the environment changes. Existing approaches either require substantial data and retraining, or primarily focus on agents operating in the virtual world. In this work, we explore the feasibility of building a self-adaptive physical AI agent that manages long-term physical tasks in a zero-shot manner and adapts to environmental changes without human intervention. We design a multi-agent framework that integrates planning, tool calling, observation, and verification, and evaluate it on agricultural tasks against reinforcement learning (RL) agents under different weather patterns. Our results show that zero-shot LLM agents can achieve comparable management outcomes to RL agents under the same weather pattern and adapt more effectively than RL when evaluated under a shifted environment, highlighting a promising path toward self-adaptive physical AI agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13436",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13436"
+      }
+    ],
+    "relevance_score": 0.4849340811847682,
+    "max_similarity": 0.22267328339408046
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13250",
+    "title": "Evaluation of MLLM-Agnostic Plug-and-Play Keyframe Selection Methods for Long Video Understanding",
+    "authors": [
+      "Dilip Sarkar, Md. Safayet Islam, Liang Liang"
+    ],
+    "abstract": "arXiv:2609.13250v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) cannot process every frame of a long video because of limitations in visual-token and computational budgets. Three primary approaches have been proposed to enhance their long-video understanding capabilities: (i) Retraining an MLLM on a large video corpus and/or extending its input length; (ii) Training an adapter for a specific MLLM that takes the entire video and the query as input and selects the most relevant video frames; and (iii) Developing a training-free, plug-and-play (PaP) adapter that is MLLM-agnostic. We refer to the third approach as PaP keyframe selection. A PaP method may use only candidate video frames without considering the query, or it may use both candidate video frames and the query. The first approach is prohibitively expensive. The second approach requires substantial training time and computational resources, but it is accessible to many because an adapter contains significantly fewer trainable parameters than an entire MLLM. The third approach has the lowest computational cost and is therefore broadly accessible. To the best of our knowledge, only five PaP methods have been reported within the past year. All of these methods have been evaluated on one or more video question-answering benchmarks and have demonstrated improvements in long-video understanding. However, the methods were evaluated on different benchmarks using different MLLMs. We present a comprehensive evaluation of these five methods using three MLLMs across three long-video understanding benchmarks. Our results show that QAaF achieves the best performance in 13 of the 15 aggregate evaluation settings, while FOCUS ranks second overall. These results provide a common experimental reference for comparing training-free keyframe-selection methods for MLLMs.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13250",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13250"
+      }
+    ],
+    "relevance_score": 0.481859277464968,
+    "max_similarity": 0.21586893710245136
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13185",
+    "title": "LLMs or Naive Bayes? Old Gems or New Ways",
+    "authors": [
+      "Mohammad Firas Sada, Dmitry Mishin, John Graham, Seungmin Kim, Mahidhar Tatineni, Frank W\\\"urthwein"
+    ],
+    "abstract": "arXiv:2609.13185v1 Announce Type: new \nAbstract: Large language models (LLMs) prompt a recurring question in research computing: should classical methods like Naive Bayes (NB) be retired? We benchmark Complement Naive Bayes against zero-shot and few-shot LLMs spanning four model families and a 37x range in scale (27B to a 1T-parameter mixture-of-experts) across text classification tasks. LLMs dominate only in zero-data regimes (98.0% vs 88.2% on Amazon Polarity sentiment), and even that win is contamination-prone: on a low-contamination sentiment task NB beats the zero-shot LLM (81.7% vs 73.0%). However, once labeled data is available (e.g., AG News), NB reaches 89.1% accuracy, statistically indistinguishable from the zero-shot 27B LLM (89.0%) and better than the 397B frontier model (84.8%), at thousands of samples/sec on a commodity CPU. Fine-tuned DistilBERT reaches 90.6% but at far lower throughput than NB at batch size 1 (Table 2). Our measured GPU throughput analysis shows small-LLM batched inference is 40-486x slower than NB CPU inference (the multiplier depends strongly on the host CPU), exposing a structural gap bounded by memory bandwidth, with roughly two orders of magnitude lower energy per sample. For resource-constrained HPC practitioners performing text classification with labeled data, NB remains the optimal choice. We show the decision line is task-dependent (NB reaches LLM parity around $N \\sim 10^4$ labels for topic classification, while zero-data sentiment favors the LLM at all N tested) and provide a Kubernetes Helm operator that automates model selection using configurable thresholds and verifiable Prometheus metrics.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13185",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13185"
+      }
+    ],
+    "relevance_score": 0.4791928935597597,
+    "max_similarity": 0.21299109880691025
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13195",
+    "title": "Machine Unlearning for Speech Question Answering in Large Audio-Language Models",
+    "authors": [
+      "Zhe Liu"
+    ],
+    "abstract": "arXiv:2609.13195v1 Announce Type: new \nAbstract: Large Audio-Language Models (LALMs) have recently shown strong capabilities in speech understanding and question answering (QA), but they also inherit privacy risks from large-scale training data, including the unintended memorization of sensitive information. In this work, we study machine unlearning for speech QA in LALMs, a setting that is more challenging than prior work on text-based Large Language Models (LLMs) or Automatic Speech Recognition (ASR) due to the tight coupling between acoustic perception and factual knowledge. We present and evaluate multiple unlearning strategies, including gradient ascent, task arithmetic, and alignment-based fine-tuning methods that enforce safe refusal responses, to remove private knowledge while still preserving performance on core capabilities. Through extensive experiments on speech QA datasets, we show that these unlearning methods can reduce the privacy leakage rate by up to 80% while maintaining near-neutral performance on non-private speech QA and general speech understanding benchmarks.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13195",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13195"
+      }
+    ],
+    "relevance_score": 0.47711391237893763,
+    "max_similarity": 0.20694642015714948
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13457",
+    "title": "TimeThink: Eliciting Compositional Reasoning in Timeseries Large Language Models",
+    "authors": [
+      "Sudarshan Regmi, Arvind Pillai, Yu Yvonne Wu, Yuliang Chen, Bibek Panthi, Tess Z. Griffin, Michael V. Heinz, Lisa Marsch, Nicholas C. Jacobson, Andrew Campbell"
+    ],
+    "abstract": "arXiv:2609.13457v1 Announce Type: new \nAbstract: Timeseries multimodal large language models (TS-MLLMs) have recently begun leveraging the reasoning capabilities of large language models (LLMs) for question-answering tasks. However, these models often fail to capture dynamic temporal patterns, providing only implicit reasoning that lacks the underlying explanations critical for high-stakes applications like healthcare. While reinforcement learning (RL)-based timeseries language models aim to address this, they often fall short because they are trained on narrow, in-distribution data and struggle with out-of-distribution compositional questions. To address these challenges, we present TimeThink, a synthetic framework for eliciting compositional timeseries reasoning. Core timeseries primitives (e.g., trend, seasonality) are domain-independent and can be deterministically generated. Guided by this premise, TimeThink first designs a synthetic data generator that produces atomic and composite question-answer pairs, providing objective ground truth with reasoning traces. Building on this framework, TimeThink employs a reinforcement learning with verifiable rewards (RLVR) training strategy that encourages explicit reasoning. Unlike template-reliant methods, this approach enables the model to learn the underlying logic of composition rather than simply imitating traces. Extensive experiments show that TimeThink, trained only on synthetic data, significantly outperforms strong baselines on both synthetic and real-world benchmarks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13457",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13457"
+      }
+    ],
+    "relevance_score": 0.46877759937503705,
+    "max_similarity": 0.19516216219427682
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13149",
+    "title": "BudgetBench: A Budget-Tiered Protocol and Pilot Harness for Memory Strategy Evaluation in Local Large Language Model Agents",
+    "authors": [
+      "Aditya Karnam Gururaj Rao, Arjun Jaggi"
+    ],
+    "abstract": "arXiv:2609.13149v1 Announce Type: new \nAbstract: For local large language model agents, active context is a scarce resource: memory capacity, prefill latency, cache growth, and service objectives all constrain how many input tokens each call can afford. We present BudgetBench, an active-budget protocol and reference harness that treats the per-call input-token budget as the independent variable when comparing memory strategies. Holding the model, task, sampler, and decoding fixed, it sweeps budgets over 2K, 4K, 8K, 16K, and 32K tokens and records quality, budget utilization, latency, and, as a first-class outcome, budget-violation rates. The core contribution is this reusable measurement surface: a swappable MemoryStrategy contract, explicit budget enforcement, deterministic or versioned graders, prompt-audit metadata, and reproducibility artifacts, released at https://github.com/aviskaar/budgetbench.\n  We substantiate the protocol with pilot studies rather than final rankings. Across a local qwen2.5:1.5b pilot (89 items each on SWE-bench Verified and LongBench v2), a hosted 50-item Qwen3 30B-A3B LongBench replication with exact tokenization, and a 500-item LongMemEval oracle study scored by the official GPT-4o evaluator, the harness exposes budget-compliance failures, non-monotonic quality curves, and operating points that single-budget evaluation hides. The budgeted-versus-full-context direction remains unresolved: the local slice is near-null and the hosted replication favors full context in point estimate. We report results transparently, including that the early pilot's tokenizer approximation undercounts some served-model prompts, so its violation rows are tokenizer-approximation diagnostics, not claim-bearing results; all timings are operational diagnostics. The reusable contribution is the protocol, harness, and failure-reporting discipline needed to scale fixed-budget memory-strategy evaluation.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13149",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13149"
+      }
+    ],
+    "relevance_score": 0.4537826106094281,
+    "max_similarity": 0.1843338302022657
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13225",
+    "title": "Part Grounding, Not Action Knowledge: Locating the Bottleneck in VLM Affordance Prediction",
+    "authors": [
+      "Sarthak Sattigeri"
+    ],
+    "abstract": "arXiv:2609.13225v1 Announce Type: new \nAbstract: Benchmarks agree that vision-language models reason poorly about low-level manipulation, but an aggregate accuracy score does not say which step fails. We separate two steps that affordance questions conflate: identifying which part of an object to act on, and knowing what action that part requires. Across 19 articulated objects we asked eight models, spanning three developers, what motion a robot should apply. Under an open prompt, push was produced once in 64 evaluations where it was correct, despite being correct for 8 of 19 objects and appearing in the offered label set every time. Inspecting the outputs showed why: models described a different part than the one being scored, e.g. explaining how to pick up a camera rather than press its button. Naming the target part raises action accuracy by 0.32 to 0.63 for every model, from 0.158-0.474 to 0.684-0.947, and push recall from 0-1/8 to 7-8/8. No model beats a constant answer that ignores the image under the open prompt; once the part is named, all eight do. Asked to describe the same part in free prose with no label set, models produce pressing language for 6 to 8 of 8. These results are hard to reconcile with missing action knowledge, and instead point to part grounding as the dominant bottleneck, a pattern that holds across all three model families and does not diminish with capability. Naming the part supplies the grounding variable, so this bounds what a perfect part detector would offer rather than demonstrating a general model of mechanics. Two supporting results agree: on real photographs only three of eight models localize grasp points better than a constant baseline, and on rendered objects none do. We also document two measurement errors of our own, a threshold that let a constant baseline score 0.929 and a labelling rule wrong on 4 of 19 objects, both caught only by testing our numbers against trivial alternatives.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13225",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13225"
+      }
+    ],
+    "relevance_score": 0.4442941087503844,
+    "max_similarity": 0.17047604117727327
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13463",
+    "title": "Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures",
+    "authors": [
+      "Harsh Raj, David Lee, Anas Mahmoud, Renxiong Wang, Razvan-Gabriel Dumitru, Chenguang Wang, Tong Zhao, Yunzhong He, Darvin Yi, Vipul Gupta"
+    ],
+    "abstract": "arXiv:2609.13463v1 Announce Type: new \nAbstract: The increasing deployment of AI agents in long-horizon tasks yields massive execution logs. Diagnosing failures within these records is crucial for reliability, as it transforms outcome-level signals into actionable interventions. The sheer scale of the data renders human review impractical, driving the need for automated root-cause attribution (RCA). However, automated RCA methods using LLMs suffer from low diagnostic accuracy, especially as execution traces grow larger. They struggle because relevant information is often sparse, distributed across distant actions, and disconnected from the visible failure, reducing root-cause attribution to a massive search problem. Existing RCA methods typically rely on one-shot LLM judgments to diagnose failures from execution traces. While effective for shorter trajectories, these judges tend to settle on a plausible diagnosis early, leaving critical evidence in longer traces unexamined. We introduce Continual Search, an iterative framework that nudges the judge, over successive turns, to keep searching for unresolved diagnostic evidence. We evaluate Continual Search across four existing RCA benchmarks. Recognizing the lack of massive execution traces in current benchmarks, we introduce MegaRCA-Mix to evaluate RCA at scale. MegaRCA-Mix provides a challenging testbed of 50 human-annotated failure trials spanning long-horizon, execution-heavy tasks. Across multiple benchmark suites and model families, Continual Search consistently improves attribution performance. On MegaRCA-Mix, for example, it improves GPT-5.5's F1 score by more than 40\\%, from $0.349$ to $0.498$. More interestingly, within the same model family, lower-tier models can even surpass their higher-tier counterparts, demonstrating that effective search supersedes raw model scale.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13463",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13463"
+      }
+    ],
+    "relevance_score": 0.42108830893804244,
+    "max_similarity": 0.1421854152731366
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13422",
+    "title": "Vibe Patenting: Evaluating LLM Judges for Professional Patent-Drafting Agents",
+    "authors": [
+      "Toshiaki Koike-Akino, Vlad Blaykhman, Ye Wang, Jing Liu, Gene V. Vinokur"
+    ],
+    "abstract": "arXiv:2609.13422v1 Announce Type: new \nAbstract: LLM judges are increasingly used to evaluate and improve AI-generated outputs, yet their reliability for complex professional work remains unclear. We study this problem through Vibe Patenting, an end-to-end patent-drafting testbed for AI-agent evaluation. A separately-invoked LLM judge evaluates generated patent drafts and provides structured feedback for iterative revision. Across multiple inventions and drafting-agent configurations, judge-guided revision consistently improves judge-assessed quality, while unguided revision tends to saturate. Notably, iterative judge feedback enables a low-reasoning agent to approach the performance of a substantially more expensive high-reasoning agent. Stronger models and increased reasoning generally improve judge-assessed drafting quality, while domain-specific agentic workflows provide further gains. We validate the judge against independent evaluation by a professional patent attorney and find meaningful but strongly metric-dependent agreement and systematic calibration differences. These results highlight both the utility and limitations of LLM judges as evaluators and optimization signals for complex professional workflows.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13422",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13422"
+      }
+    ],
+    "relevance_score": 0.4205700853654557,
+    "max_similarity": 0.14262624697880813
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13395",
+    "title": "Task-Aware Federated Fine-Tuning for MoE-based Large Language Models",
+    "authors": [
+      "Tingqi Wang, Hongyu Ke, Haoxin Wang, Rafal Angryk, Zhipeng Cai"
+    ],
+    "abstract": "arXiv:2609.13395v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) has become a widely adopted architecture for Large Language Models (LLMs), as it improves model capacity while limiting computational overhead through sparse expert activation. This property makes MoE-based LLMs particularly attractive for resource-constrained distributed environments. However, federated fine-tuning of MoE-based LLMs remains challenging under heterogeneous client data. Since clients often correspond to different task preferences, directly aggregating their local updates may weaken expert specialization and introduce conflicting update directions on shared experts. To address these challenges, we propose FedTAR, a task-aware federated fine-tuning method for MoE-based LLMs. FedTAR establishes the association between local updates and task preference via routing outputs. Specifically, we apply Singular Value Decomposition (SVD) to both routing features and local updates to extract low-dimensional task coordinates and update directions. Based on the task coordinates, FedTAR performs intra-cluster aggregation among clients with similar task preferences and inter-cluster aggregation across different task groups. The aggregated update is then reconstructed through the learned task-to-update mapping, ensuring that the final update remains aligned with task-specific optimization directions. In this way, FedTAR preserves expert specialization and mitigates destructive interference among heterogeneous clients. We evaluate FedTAR on four benchmark tasks under different non-IID settings. Experimental results demonstrate that FedTAR consistently outperforms strong federated fine-tuning baselines and achieves state-of-the-art performance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13395",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13395"
+      }
+    ],
+    "relevance_score": 0.41514527759511777,
+    "max_similarity": 0.13314392293035482
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13425",
+    "title": "ReCAST: Reward Credit Assignment across Timesteps for Online Diffusion Reinforcement",
+    "authors": [
+      "Yihang Chen, Yuanhao Ban, Kuei-Chun Kao, Cho-Jui Hsieh"
+    ],
+    "abstract": "arXiv:2609.13425v1 Announce Type: new \nAbstract: Training diffusion models with multiple rewards requires distinguishing user preference from reward informativeness. User preference determines how much each reward should contribute to the overall objective; reward informativeness determines when its feedback is useful during denoising. Some rewards can meaningfully evaluate a sample as soon as global structure emerges, but others become informative only when the sample is nearly clean. To address both questions jointly, we propose ReCAST (Reward Credit ASsignment across T}imesteps), the first method, to our knowledge, for per-reward, timestep-dependent credit assignment in diffusion reward fine-tuning. ReCAST separates user preferences from temporal allocation through a reward-by-timestep weight matrix $W$, whose row sums match the user-specified reward budgets $\\lambda$, while its column sums are equal, assigning the same total weight to each denoising step. Under these marginal constraints, ReCAST allocates weight according to each reward's informativeness, quantified by its R\\'enyi discriminability gain at each step. These gains telescope to the total discriminability between the reward-induced positive policy and the current policy, providing a basis for temporal credit assignment. We evaluate ReCAST by training SD3.5-Medium under two distinct four-reward settings, each across five reward budgets $\\lambda$. ReCAST improves the training rewards in one setting and matches them in the other, improves every held-out judge in both, and is preferred by an independent LLM-as-a-Judge. Together, these results show that ReCAST yields improvements that generalize beyond the training rewards and support its core principle: assigning each reward greater weight at the denoising timesteps where its feedback is most informative.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13425",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13425"
+      }
+    ],
+    "relevance_score": 0.4146456049935236,
+    "max_similarity": 0.13872319196759836
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13470",
+    "title": "OrchSLM: Probing the Dynamics of Small Language Model Orchestration",
+    "authors": [
+      "Chengxi Zhang, Yu Yao"
+    ],
+    "abstract": "arXiv:2609.13470v1 Announce Type: new \nAbstract: Although large language models (LLMs) have demonstrated remarkable capabilities, their reliance on cloud-scale infrastructure poses fundamental challenges for deployment in agentic pipelines, including latency, privacy, connectivity, and substantial computational cost. Small language models (SLMs) offer a compelling alternative: recent studies suggest that many repetitive and narrowly scoped subtasks in agentic workloads may be better served by specialized SLMs than by monolithic LLMs. However, the limited capacity and context windows of SLMs can constrain long-horizon reasoning and interaction-heavy orchestration strategies such as iterative verification and debate. This motivates a complementary, non-interactive paradigm in which heterogeneous SLMs independently generate candidate solutions and a router orchestrates their cached samples without further model interaction. To further understand the mechanisms of such orchestration, we introduce OrchSLM, a routing framework that unifies existing non-interactive orchestration methods and exposes their underlying design choices as controllable parameters. Using OrchSLM as a systematic probe, we reveal how orchestration behavior emerges from diverse knobs, including the task structure, model-pool composition, and multi-agent consensus.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13470",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13470"
+      }
+    ],
+    "relevance_score": 0.40858651899897513,
+    "max_similarity": 0.12437383841066904
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13559",
+    "title": "Carbon-Aware Routing for Function Calling in Edge-Cloud LLM Systems",
+    "authors": [
+      "Aikaterini Maria Panteleaki, Varatheepan Paramanayakam, Spyros Tragoudas, Iraklis Anagnostopoulos"
+    ],
+    "abstract": "arXiv:2609.13559v1 Announce Type: new \nAbstract: Large Language Models (LLMs) with function-calling capabilities are becoming critical for modern agentic AI systems. Nevertheless, current deployments typically route inferences to powerful cloud-based models, incurring significant energy use and carbon emissions. We address this sustainability challenge with a carbon-aware routing framework that distributes function-calling queries across a three-tier edge-cloud architecture, combining edge and cloud LLMs on heterogeneous hardware. At its core, a lightweight k-NN predictor operating in a unified semantic-lexical embedding space estimates query-specific accuracy, delay, and power consumption on each edge tier. These predictions are then combined with real-time grid carbon intensity to route every query to the lowest-emission tier capable of executing it successfully. Evaluated on state-of-the-art function-calling benchmarks and LLM families, our framework matches cloud-level accuracy while reducing operational carbon emissions by $4\\times$ on average.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13559",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13559"
+      }
+    ],
+    "relevance_score": 0.38929488520524536,
+    "max_similarity": 0.10236987149240026
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13543",
+    "title": "Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents",
+    "authors": [
+      "Grace Chang Yuan, Xiaoman Zhang, Sung Eun Kim, Luyang Luo, Pranav Rajpurkar"
+    ],
+    "abstract": "arXiv:2609.13543v1 Announce Type: new \nAbstract: LLM agents are predominantly benchmarked on short, single-task trajectories, yet real deployments run for hours under contention, surfacing a different class of failures. We use the Clinical Environment Simulator (CES), in which an agent manages an entire emergency-department shift under continuous time and resource pressure, as a testbed: long-horizon execution failures manifest measurably in a single rollout under structured, multi-dimensional grading. On CES, current agents reach the correct diagnosis in most cases yet fail to deliver complete and timely critical actions, revealing an execution gap. We attribute this gap to three long-horizon failure modes, each operationalized as a per-trace counter: instruction-adherence drift, treatment incompleteness, and a severity-equity gap in timeliness. We then introduce Asclepius, an adaptive agent scaffolding with a self-evolving harness that rewrites the operating manual between shifts from trace-level feedback, an externalized clinical skills library for high-stakes regimen knowledge, and three isolated subagents that partition per-turn decisions across the patient queue. On held-out batches never observed during harness evolution, Asclepius improves critical-action correctness by 22% (p = 0.024) over a strong baseline agent framework while preserving diagnostic accuracy, with consistent gains across five LLM judges from three model families; on the full ten-batch set, improvements reach 25% on critical actions and 13% on timeliness. The three failure modes form a coupled bottleneck: decisive reductions appear only when all three components act together.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13543",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13543"
+      }
+    ],
+    "relevance_score": 0.363232941727449,
+    "max_similarity": 0.1957982297811206
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13237",
+    "title": "Occlusal Geometry in Closed Form for Orthodontic Report Generation",
+    "authors": [
+      "Ajo Babu George, Govind Arun, Sidharth N Krishna, Uma Ranjan"
+    ],
+    "abstract": "arXiv:2609.13237v1 Announce Type: new \nAbstract: Orthodontic report generation from intraoral data is normally cast as multimodal captioning, yet the released Bite2Text scan pairs are supplied already registered in occlusion, which makes several core occlusal quantities directly measurable rather than inferable. The system reported here exploits that property: an anatomical frame is recovered per case from arch taper and arch closure instead of the stated RAS convention, which does not hold across the release, and each arch is reduced to an occlusal ridge profile in arch-angle coordinates yielding overbite, overjet, midline deviation, transverse overlap, crossbite extent, cusp interdigitation lag, and the occlusal curves in closed form. Gradient boosting maps 31 such measurements onto 13 template fields, a field being predicted only where patient-level cross-validation beats its own majority baseline, and a deterministic renderer emits the corpus six-part narrative; a ConvNeXt-Tiny classifier over the five standardised photographic views is fused per field, raising mean field accuracy from 0.601 to 0.683. Reimplementation of the challenge evaluator shows that its BLEU-4 and METEOR are local variants whose F-mean weights recall nine to one, that two clinicians agree on 47 percent of findings for the same patient, and that a constant report consequently outscores a genuine second clinician report by 0.165 captioning. Held-out scores reach BLEU-4 0.458 and METEOR 0.677 against intraoral scan references and 0.278 and 0.507 against photograph references, and the submitted system placed third in the ODIN 2026 Bite2Text test phase at 0.2680 and 0.4629, within 0.022 BLEU-4 of first, running on CPU in under ten seconds per case. The dataset and code are available at https://github.com/GIND123/ODIN_toothfairy4",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13237",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13237"
+      }
+    ],
+    "relevance_score": 0.3418338376262906,
+    "max_similarity": 0.17088437959660613
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13475",
+    "title": "Grounded Adjudication of Variations across Extracted TimeLines (GAVEL): Comparing Clinical Timelines Against Their Case Reports",
+    "authors": [
+      "Jack Cummins, Sayantan Kumar, Ketan Tamirisa, Jeremy C. Weiss"
+    ],
+    "abstract": "arXiv:2609.13475v1 Announce Type: new \nAbstract: Existing pipelines for clinical timeline extraction from case reports are evaluated using an expert reference and are limited by imperfect reference annotations and imprecise event alignment. We developed GAVEL, an LLM judge protocol that compares two timelines with the case report and returns a discrepancy type, verdict, and report passage for each difference. We evaluated the event matcher, reviewed 2,738 findings from GPT5.6sol and DeepSeek V3.2, ranked six LLM extractors and two human annotators, and tested GAVEL guided merging. True match rates were 60% immediately below and 48% immediately above the 0.10 cutoff. Manual review confirmed 89.4% and 88.6% of findings. Across 126 reports, merged timelines were preferred in 77.0% of comparisons (95% CI, 69.8 to 84.1%) and reduced discrepancies attributed to the evaluated timeline from 7.63 to 0.85 per report. GAVEL supports report-based comparison and revision without treating either timeline as ground truth.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13475",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13475"
+      }
+    ],
+    "relevance_score": 0.33844848083317286,
+    "max_similarity": 0.23166779707296098
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.13201",
+    "title": "Criticality in Dissimilar Decomposition and Undersampling of Random Datasets with Anomalies",
+    "authors": [
+      "Ghurumuruhan Ganesan"
+    ],
+    "abstract": "arXiv:2609.13201v1 Announce Type: new \nAbstract: Training datasets for upcoming LLMs would include a significant amount of AI text/image data generated from current LLMs. In such a scenario, it is important to understand how this affects batch decompositions and thereby, the performance of the resultant new LLM. In this paper, we consider AI generated data as anomalies ``linked\" to main data points and study decomposition and undersampling properties of the overall random dataset. We use redundancy graphs and iteration techniques to obtain bounds for the minimum size of a strongly dissimilar (SD) decomposition and demonstrate a phase transition phenomena, wherein the minimum size is essentially determined by the \\emph{main} data points when the number of anomalies is small and is ``taken\" over by the anomalies above a certain threshold. We also establish a size criticality result for the strong similarity of a randomly undersampled dataset and illustrate our results with examples involving categorical datasets, whose overall space size is much larger than the size of the dataset.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 15 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.13201",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.13201"
+      }
+    ],
+    "relevance_score": 0.26534829930493964,
+    "max_similarity": 0.13627963511563387
+  }
+]
