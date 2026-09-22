@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.22107",
+    "title": "Generalized Multimodal Foundation Model",
+    "authors": [
+      "Huizi Cui, Zongbo Han, Chenggong Ding, Naichuan Xiao, Jialong Yang, Jingdong Chen, Guangyu Wang, Qinghua Hu, Changqing Zhang"
+    ],
+    "abstract": "arXiv:2609.22107v1 Announce Type: new \nAbstract: Making prediction with multimodal data is widely used in diverse scenarios. Existing multimodal fusion models, once deployed, can only handle predefined modalities (e.g., vision, text and audio) and single tasks, making it difficult to quickly adapt to new downstream applications. Therefore, a natural yet rather aggressive question arises, whether there exists a general multimodal fusion model that can be applied to arbitrary modality combinations and arbitrary prediction tasks. We argue that a unified multimodal fusion model should not depend on specific modalities and instead encode transferable patterns of multimodal correlation. To this end, we propose a simple and effective learning paradigm based on training over the generation of large-scale synthetic multimodal datasets with diverse causal structures that formally characterize the generative processes of multimodal data in real world. Building on this framework, we propose the generalized multimodal foundation model, a unified foundation model for generalized multimodal learning. By constructing large-scale synthetic multimodal datasets with diverse correlation patterns, our model encodes transferable multimodal correlations during training and activates appropriate associations through in-context examples during inference. Extensive experiments on 18 real-world datasets spanning 12 modalities and 11 prediction tasks demonstrate that our model achieves competitive performance with specialized models without task-specific adaptation.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22107",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22107"
+      }
+    ],
+    "relevance_score": 0.5128992786763955,
+    "max_similarity": 0.2508200122289773
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22271",
+    "title": "Enabling Vision and Cross-Modal Learning for Multimodal Stroke Recurrence Prediction: An Interpretable Two-Step Framework",
+    "authors": [
+      "Christian Gapp, Elias Tappeiner, Martin Welk, Karl Fritscher, Stephanie Mangesius, Constantin Eisenschink, Philipp Deisl, Michael Knoflach, Astrid E. Grams, Elke R. Gizewski, Rainer Schubert"
+    ],
+    "abstract": "arXiv:2609.22271v1 Announce Type: new \nAbstract: Multimodal stroke recurrence prediction requires effective integration of heterogeneous clinical and imaging data, yet modality imbalance often causes models to over-rely on dominant modalities and underutilize complementary information. While self-supervised pretraining and selective parameter freezing are commonly employed to improve representation learning and fine-tuning stability, their effect on modality contributions and cross-modal behavior in multimodal medical models remains largely unexplored. In this work, we investigate whether image pretraining on 3D CTA scans reduces modality imbalance and improves cross-modal integration for stroke recurrence prediction, a clinically critical task we recently addressed. To this end, two multimodal neural networks are pretrained in a self-supervised manner and subsequently fine-tuned using two distinct freezing strategies. Their performance and modality utilization are compared against both the baseline model from our previous work and models trained entirely from scratch in this study. Our results demonstrate that self-supervised pretraining enables more effective utilization of the multimodal image-tabular dataset, outperforming both the prior baseline and all non-pretrained models. Notably, the best-performing Vision Transformer based neural network successfully overcomes unimodal collapse. Synergy analysis reveals significant interactions between vision and both gender and CHD, suggesting clinically relevant patterns for stroke recurrence. Overall, our findings demonstrate that self-supervised pretraining and strategic fine-tuning support more balanced modality utilization and enable meaningful cross-modal interactions. Code is publicly available at https://github.com/ChristianGappGit/SSL_Pretraining.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22271",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22271"
+      }
+    ],
+    "relevance_score": 0.47543858475653744,
+    "max_similarity": 0.2053069430381631
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.20971",
+    "title": "RBS-Attention: Radius-Bounded Sparse Prefill for Long-Context Large Language Models",
+    "authors": [
+      "Chuxu Song, Jiuqi Wei, Zhencan Peng"
+    ],
+    "abstract": "arXiv:2609.20971v1 Announce Type: new \nAbstract: Long-context large language model inference is increasingly limited by prefill, where dense self-attention processes the entire prompt before generation begins. Sparse block selection can reduce this cost, but a block centroid may hide a highly relevant token among many irrelevant ones. We call this failure mode mean dilution and propose RBS-Attention, a training-free sparse-prefill method with two complementary selection branches. A centroid base branch captures average relevance, while a rescue branch uses the maximum key-block radius and its prompt-, layer-, and head-dependent distribution to identify blocks at risk of underestimation. Independently thresholding the two branches and combining their masks controls the contribution of rescue blocks while preserving regular block-sparse FlashAttention execution. On H100 GPUs, RBS-Attention achieves 20.65$\\times$ standalone prefill-attention speedup, 11.92$\\times$ vLLM prefill-attention speedup, and 5.97$\\times$ end-to-end time-to-first-token speedup at 128K on Qwen3-30B-A3B-Instruct-2507-FP8. On the dense Qwen3-32B model, it obtains 88.65 overall RULER accuracy versus 89.52 for dense attention; LongBench-v2, InfiniteBench, and Video-MME provide additional quality evaluation. Supporting experiments measure actual retention, compare selectors at matched density, and characterize block-size, threshold, and memory behavior. Together, these results support radius-adaptive dual-branch selection as an effective approach to long-context prefill.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.20971",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.20971"
+      }
+    ],
+    "relevance_score": 0.4748468058739813,
+    "max_similarity": 0.20963811911358246
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22146",
+    "title": "GRRR: The Geometry of Reshaping, Rotation, and Routing in Decoder LLM post-training",
+    "authors": [
+      "Jianing Qi, Hao Tang, Zhigang Zhu"
+    ],
+    "abstract": "arXiv:2609.22146v1 Announce Type: new \nAbstract: We study how post-training changes the weights of Large Language Models (LLMs) relative to their pretrained weights. Across 12 post-training chains with supervised fine-tuning (SFT) and reinforcement learning (RL), we express each weight update in the pretrained matrix's singular value decomposition (SVD) frame. This decomposition separates the changes of three geometrically distinct components: diagonal values, which reshapes singular values; off-diagonal values, which rotates the coupling between pretrained input and output directions; and null-space values, which routes outside the matrix's original nonzero SVD core. On a math evaluation suite, we find that removing the diagonal component usually preserves most of the gains from post-training. These results suggest that post-training gains are carried primarily by reconfiguring and extending pretrained pathways rather than by substantially changing singular values of pre-trained models.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22146",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22146"
+      }
+    ],
+    "relevance_score": 0.46487690020476646,
+    "max_similarity": 0.2004433167987051
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22145",
+    "title": "Weak Ties, Strong Signals: Efficient Training Data Detection in Diffusion LLMs via Independent Token Sampling",
+    "authors": [
+      "Hongyao Yu, Tianqu Zhuang, Ziyuan Xu, Hao Fang, Jiaxin Hong, Bin Chen, Shu-Tao Xia"
+    ],
+    "abstract": "arXiv:2609.22145v1 Announce Type: new \nAbstract: Diffusion large language models (dLLMs) offer a compelling alternative to autoregressive models, yet they may expose sensitive training data during denoising. Detecting such usage is challenging because dLLMs lack the efficient one-pass probability decomposition of causal architectures. Existing methods rely on random masking to obtain tractable token-wise detection signals under limited query budgets, but fail to control dependencies among masked tokens. We demonstrate that this token-wise approximation introduces a non-negative structural estimation error, which is theoretically characterized by the cumulative conditional mutual information (CMI) among masked tokens and can obscure subtle memorization signals. This insight suggests that reliable detection requires masked token sets with weak internal dependency. To avoid the prohibitive cost of directly estimating CMI over token combinations, we propose \\textit{Independent Token Sampling} (ITS), a query-efficient framework that uses an attention-derived pairwise dependency proxy to approximate the CMI-aware selection criterion. ITS further incorporates a diversity-promoting strategy to improve token coverage across sampling rounds, yielding aggregated token-wise signals that are less affected by dependency-induced approximation error. Experiments on multiple datasets show that ITS consistently outperforms state-of-the-art baselines across different models and datasets, achieving an AUC improvement of 0.18 on the ArXiv dataset while maintaining strong performance under limited query budgets. The code is available at https://github.com/Chrisqcwx/DLLM-MIA .",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22145",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22145"
+      }
+    ],
+    "relevance_score": 0.45658484391091414,
+    "max_similarity": 0.18511716045176438
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21096",
+    "title": "Detecting Hallucination in LLMs: Tracing the Topological Signatures of Impaired Context Sharing",
+    "authors": [
+      "Amir Jalilifard, Anderson Rocha, Eric Wong, Marcos Medeiros Raimundo"
+    ],
+    "abstract": "arXiv:2609.21096v1 Announce Type: new \nAbstract: In this work, we examine the topology of information flow patterns within attention graphs to effectively distinguish hallucinated from non-hallucinated responses. We analyze the Forman-Ricci curvature to identify structural patterns indicating information bottlenecks in attention graphs. We then introduce a method that captures both semi-local and global information-flow characteristics of attention heads associated with hallucinated responses. We evaluate our approach extensively across several LLMs and established benchmarks. Empirical results demonstrate that our proposed single-pass approach provides consistent improvements over existing attention-based and multi-response baselines across two hallucination-detection benchmarks, while achieving competitive performance across diverse LLM architectures. Further analysis reveals that impaired context sharing among tokens during causal generation is strongly associated with hallucination occurrences in LLMs. In particular, hallucinated responses are consistently characterized by an over-reliance on self-attention, diffused context retrieval from earlier tokens, or information over-squashing, especially in the final transformer layer.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21096",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21096"
+      }
+    ],
+    "relevance_score": 0.4429771457153262,
+    "max_similarity": 0.169595207805155
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21113",
+    "title": "Decoupling Internal Representational Changes and Causal Importance in Fine-Tuned Large Language Models",
+    "authors": [
+      "Lingfang Li, Procheta Sen, Shubham Das, Danushka Bollegala"
+    ],
+    "abstract": "arXiv:2609.21113v1 Announce Type: new \nAbstract: Fine-tuning has emerged as a widely adopted approach for adapting LLMs to a variety of downstream tasks. However, how it reshapes their internal mechanisms remains poorly understood. To address this, we investigate how fine-tuning alters internal representations in LLMs, including attention patterns and layer-wise activations, and examine whether these changes are linked to task-relevant components identified by EAP (e.g., attention heads and logit-level activations) that drive task performance. We find that EAP-identified components are concentrated within specific layers, indicating a degree of functional localisation in how models internalise task-specific behavior. Notably, the distribution of these components across layers is largely uncorrelated with the layers undergoing the most substantial representational changes during fine-tuning. Furthermore, we observe that overlap in EAP-identified components across tasks does not translate into cross-task performance transfer if the tasks are different in nature (e.g. classification vs. generative tasks). More specifically, fine-tuning on one task can lead to a degradation of performance on another when the two tasks exhibit a high degree of overlap in their EAP-identified components.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21113",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21113"
+      }
+    ],
+    "relevance_score": 0.4352110036814839,
+    "max_similarity": 0.16040010551335426
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22094",
+    "title": "Summarize, Judge, Refine: Decoupled Content Understanding and Policy Learning for Multimodal Content Moderation",
+    "authors": [
+      "Zeeshan Ahmed, Yang Qin, Hanqing Huang"
+    ],
+    "abstract": "arXiv:2609.22094v1 Announce Type: new \nAbstract: Content moderation systems traditionally entangle multimodal understanding with policy-specific classification, requiring full pipeline retraining for every policy change and suffering from label scarcity since multimedia cannot be meaningfully augmented. We propose Summarize-Judge-Refine (SJR), a two-model architecture that decouples these concerns via a natural language interface: a multimodal Content Model produces structured text summaries, and a text-only Policy Model classifies them against policy definitions. An iterative co-training loop refines the Content Model via GRPO to produce policy-relevant summaries, while text-space augmentation generates adversarial summary variants---an augmentation pathway impossible on raw multimedia---enabling few-shot policy bootstrap. Every decision is grounded in a human-readable summary, providing interpretability as a structural byproduct. On misleading advertisement detection, SJR achieves +23.6\\% relative non-misleading F1 over a zero-shot chain-of-thought baseline, outperforming end-to-end SFT, STaR/RFT, and RLFT. Notably, a variant trained on zero real violating examples---with all positive-class data synthetically generated---matches the full-data model within 0.2\\% relative on violating F1, demonstrating that new policies can launch without any real violation data.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22094",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22094"
+      }
+    ],
+    "relevance_score": 0.43381726511783425,
+    "max_similarity": 0.15784525193413432
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22379",
+    "title": "MarsRecon: Self-Supervised and Multimodal Surface Representations for Mars",
+    "authors": [
+      "Akshay Naik, Marius F. R. Juston, Jay Mahajan"
+    ],
+    "abstract": "arXiv:2609.22379v1 Announce Type: new \nAbstract: High-resolution orbital imagery offers a rich record of the Martian surface, but sparse geological labels limit supervised representation learning. We present MarsRecon, a geospatially aware pipeline for learning visual and multimodal representations from HiRISE observations of Olympus Mons. The pipeline calibrates NASA Planetary Data System products, extracts valid georeferenced patches, and trains a masked autoencoder on unlabeled imagery. Increasing input resolution and filtering invalid tokens reduced held-out reconstruction loss from 0.1751 to 0.1342 in the principal Stage A model series. We then freeze the visual encoder and align its features with observation text, coordinates, and local--global image context. The strongest current local-primary model achieves image-to-text recall@10 of 0.3787, text-to-image recall@10 of 0.9161, and local-to-global recall@10 of 0.4350 on the held-out test split. These results establish a working Mars-specific pretraining and retrieval pipeline; further crop-overlap controls and downstream geological evaluations are needed to assess the broader utility of its embeddings.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22379",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22379"
+      }
+    ],
+    "relevance_score": 0.4289584816283108,
+    "max_similarity": 0.15028691562836616
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22293",
+    "title": "Validating, Not Sampling: Region-Level Robustness of Vision-Language and Vision-Language-Action Models",
+    "authors": [
+      "Bogdan Aron, Christopher Brix, Benedikt Br\\\"uckner, Yanghao Zhang, Panagiotis Kouvaros, Alessio Lomuscio"
+    ],
+    "abstract": "arXiv:2609.22293v1 Announce Type: new \nAbstract: Vision-language models (VLMs) and vision-language-action models (VLAs) are increasingly deployed in real-world applications. There, a small perturbation to the recorded camera image may change a decision significantly. However, existing benchmarks for these models only sample perturbations, which does not guarantee the absence of a failure in the untested region. We present the first robustness validation of six VLMs (drawn from the Gemma, InternVL, LLaVA, and Qwen families) and five VLAs (drawn from the GR00T, OpenVLA, and $\\pi$ families) over entire continuous regions of photometric and geometric image perturbation: brightness shifts, camera rotations, and their composition. To this end, we build on the validation framework H$^2$V and introduce H$^2$V-M, a margin-aware convergence rule that makes validation affordable at the 32B parameter scale. We demonstrate that H$^2$V-M outperforms H$^2$V by an order of magnitude in model queries and that it finds counterexamples faster than random sampling while providing soundness guarantees. Our VLM and VLA robustness validation shows that robustness is mostly dependent on the perturbation type, rather than the model, and that VLMs are more robust to large camera rotations than VLAs. For VLAs, even perturbations as small as $\\pm1^\\circ$ can change the commanded action in many cases. We also show that robustness depends more on model family than on model size.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22293",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22293"
+      }
+    ],
+    "relevance_score": 0.4195094095459184,
+    "max_similarity": 0.1392777515605224
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21139",
+    "title": "TinyCeNN-LM: Quality-Gated Conversion of Pretrained Attention with CeNN-Inspired Cellular-Recurrent Layers",
+    "authors": [
+      "Kabeh Mohsenzadegan, Vahid Tavakkoli, Kyandoghere Kyamakya"
+    ],
+    "abstract": "arXiv:2609.21139v1 Announce Type: new \nAbstract: Replacing attention in a pretrained language model is a compatibility problem: a plausible substitute may alter representations expected by later layers. TinyCeNN-LM introduces a \\emph{quality-gated post-training conversion} framework using CeNN-inspired cellular-recurrent layers with bounded local processing, compact recurrent memory, routing, fusion, and accept-or-rollback validation. Three implementations are studied: Integrated Memory, MemoryFusion, and PDelta3-GDN2-CLVR+Local32. Strict PDelta3 conversion accepts a layer only when representation and NLL criteria pass fixed thresholds. On SmolLM2-135M, layers 0-2 are accepted with cumulative $\\Delta\\mathrm{NLL}=+0.01209$, while layer 3 is rejected despite acceptable NLL because representation fidelity fails. On Qwen3.5-0.8B, full-attention layers 3, 7, and 11 are accepted with final $\\Delta\\mathrm{NLL}=+0.02073$. Integrated Memory keeps perplexity within $-0.07\\%$ to $+0.93\\%$ while reducing total cache by up to $6.01\\%$. A sampled 200-item downstream sanity check gives $28.5\\%$--$32.0\\%$ overall accuracy for converted Qwen releases. The results support conservative, quality-gated structural conversion rather than universal attention replacement or speedup.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21139",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21139"
+      }
+    ],
+    "relevance_score": 0.4132437407307395,
+    "max_similarity": 0.13621677615946237
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21263",
+    "title": "PlaceReasoner-Beta: Reasoning-Driven Macro Placement and Benchmarking",
+    "authors": [
+      "Qiufeng Li, Chengxuan Wang, Rongqian Chen, Quan Cheng, Yihui Ren, Chia-Tung Ho, David Z. Pan, Tian Lan, Weidong Cao"
+    ],
+    "abstract": "arXiv:2609.21263v1 Announce Type: new \nAbstract: Automated macro placement remains a fundamental challenge in VLSI physical design. Despite decades of research, existing approaches predominantly optimize hand-crafted proxy objectives, such as estimated wirelength, and typically produce placements through one-shot numerical optimization, limiting their ability to incorporate visual layout context, codified design expertise, and downstream physical-design feedback in a unified loop. We present PlaceReasoner-Beta, a verifier-guided multi-agent framework that reformulates macro placement as a closed-loop reasoning problem rather than black-box optimization. A vision-language model (VLM) planner generates candidate placements from the floorplan image, macro specifications, and connectivity structure; a geometric verifier enforces physical legality and expert placement principles; a physical verifier refines candidates using early implementation feedback; and a post-route optimizer further improves promising layouts using final PPA. To enable reproducible evaluation, we introduce PlaceReasoner-Bench, a fully open end-to-end benchmark built from open RTL designs, EDA tools, and technology libraries. It comprises 8 designs at two aspect ratios, yielding 16 tasks with fixed floorplans and I/O assignments, so methods differ only in macro positions and orientations and are evaluated using routed PPA and DRC rather than pre-route proxies. Across the benchmark, PlaceReasoner-Beta achieves the best timing among DRC-clean methods on all square tasks, reducing post-route TNS by 61.2% at 1:1 and 53.0% at 2:1 relative to the classical baseline field. It also shortens routed wirelength on most designs despite never explicitly optimizing it, demonstrating that reasoning over spatial structure under physical-design feedback can improve end-to-end layout quality beyond proxy-objective optimization.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21263",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21263"
+      }
+    ],
+    "relevance_score": 0.41250564440103343,
+    "max_similarity": 0.1310318101154131
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22153",
+    "title": "SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs",
+    "authors": [
+      "Pratinav Seth, Saisab Sadhu, Anshul Kaushal, Vinay Kumar Sankarapu"
+    ],
+    "abstract": "arXiv:2609.22153v1 Announce Type: new \nAbstract: Methods for addressing safety drift in fine-tuned Large Language Models (LLMs) are scattered across incompatible implementations, lifecycle stages, and evaluation protocols, making them difficult to adopt and compare. We introduce SafeTune, a source-available library that unifies four intervention paradigms: post-hoc weight recovery, safety-constrained fine-tuning, gradient-based unlearning, and inference-time steering, alongside shared interpretability, evaluation, and deployment utilities. SafeTune provides a consistent configuration-driven workflow while preserving the distinct inputs and intervention points each paradigm requires. Its modular registry supports new methods, benchmarks, judges, models, and fine-tuning domains without redesigning the surrounding pipeline. We demonstrate SafeTune through controlled comparisons and finance and medical deployment case studies, showing how it characterizes safety drift, evaluates feasible interventions on common refusal-behavior and capability evaluations, and supports calibrated or layered mitigation.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22153",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22153"
+      }
+    ],
+    "relevance_score": 0.41099919292789133,
+    "max_similarity": 0.13020062283004805
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22120",
+    "title": "Success Leaves Detours: Learning Executable Walkthroughs for Long-Horizon Agents",
+    "authors": [
+      "Kaijie Chen, Chenyu Fang, Liang Yan, Bo Li, Bo Zhang, Peng Ye"
+    ],
+    "abstract": "arXiv:2609.22120v1 Announce Type: new \nAbstract: Test-time self-evolving agents improve by reusing past experience, yet sparse-reward trajectories contain failures, loops, and detours, while summaries often omit the state conditions and action dependencies needed for execution. We study executable Walkthrough induction from sparse-reward trajectories: extracting compact, state-conditioned, and verifiable procedures. Our key observation is that delayed credit identifies actions associated with progress but cannot determine whether they produce facts required by later actions. We propose Trace, a credit-guided, dependency-grounded framework that compiles noisy trajectories into executable Walkthrough Memory. It detects progress anchors from rewards and persistent state changes, propagates credit to identify valuable transitions, and estimates action prerequisites from cross-episode success and failure evidence. Backward dependency slicing then traces required facts to their producers, extracting dependency-consistent action chains while removing irrelevant loops and detours. The resulting Walkthroughs encode entry conditions, ordered state--action--effect steps, and completion and failure predicates, supporting reuse, intermediate-state resumption, and programmatic verification. Experiments on J-TTL, WebShop, and ScienceWorld with three open-source LLMs show that Trace consistently outperforms eight test-time learning and memory baselines. Compared with the strongest baseline, it improves average AUC and Final-$3$ by $30.0%$ and $40.5%$, respectively, while using fewer inference tokens. These results show that long-horizon interaction benefits more from state-conditioned executable procedures than from complete trajectories or abstract summaries.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22120",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22120"
+      }
+    ],
+    "relevance_score": 0.4089503044185286,
+    "max_similarity": 0.19118339399500645
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.22090",
+    "title": "Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agents",
+    "authors": [
+      "Joy Bose"
+    ],
+    "abstract": "arXiv:2609.22090v1 Announce Type: new \nAbstract: An LLM producing the response pattern associated with a human psychological effect is not the same claim as the LLM possessing that bias. We present PsyAgentBench, a benchmark that re-runs classic psychology experiments on LLM agents under a factorial design built to separate these: each paradigm is run with the paradigm explicitly labeled in the prompt (named) or framed as a routine task (blind), and on the literal textbook version of the task (canonical) or a structurally matched variant written to reduce lexical and scenario overlap with likely training data (counterfactual), crossed with a persona manipulation. Across five completed paradigms, evaluated on up to three open-weight model families with 41,904 trials released, apparently human-like effects arise through qualitatively different routes rather than one susceptibility: paradigm-label gating with explicit override (Asch conformity, 0 percent blind to 83.3 percent named on gpt-oss-120B), knowledge-dependent signal reliance (anchoring, exactly zero on grounded facts versus near total on invented quantities, a pattern equally consistent with rational use of the only available signal), amplification on novel content under labeling (framing), robust absence (sunk cost), and safety-mediated selection where refusal itself is the primary finding (minimal-group allocation). A one-sentence persona change (agreeableness, framed as an instruction rather than a verified trait manipulation) eliminates, dampens, or reverses these effects depending on which effect it is, arguing against any single response-bias account. We further formalize, and in two cases document empirically, three ways a psychology paradigm can fail to port to LLM agents: persona dominance, population collapse, and safety selection. We argue scalar bias-susceptibility scores obscure this structure and report replication profiles instead.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.22090",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.22090"
+      }
+    ],
+    "relevance_score": 0.40018418337164813,
+    "max_similarity": 0.11704861452295032
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21157",
+    "title": "Can Agents Design Better Chips with a Higher Level Abstraction?",
+    "authors": [
+      "Zijian Ding, Yang Zou, Yizhou Sun, Jason Cong"
+    ],
+    "abstract": "arXiv:2609.21157v1 Announce Type: new \nAbstract: Large Language Model (LLM) agents are increasingly being explored for chip design, but most existing approaches operate directly at RTL. We ask whether agents can design better chips by leveraging higher-level abstractions. We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement, and combine Agent-based HLS Design with Post-HLS RTL Refinement as Agent-based HLS with RTL Refinement (AHRR). We use FPGAs as a practical, easy-to-deploy platform for end-to-end evaluation, but note that the design-flow tradeoffs we study are largely independent of the target technology. Across a diverse 11-tasks benchmark suite, AHRR achieves a 2.6$\\times$ geometric-mean speedup over Direct RTL Design across our benchmark suite. Case studies show that HLS distills design knowledge into abstractions that agents can leverage, while RTL refinement recovers lower-level optimization opportunities. Together, these results make AHRR a promising workflow for agentic chip design. The code and evaluation artifacts are available at https://github.com/ZijD/AHRR.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21157",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21157"
+      }
+    ],
+    "relevance_score": 0.39264379917336134,
+    "max_similarity": 0.1077493510881121
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21259",
+    "title": "CogGym: Towards Large-Scale Comparative Evaluation of Human and Machine Cognition",
+    "authors": [
+      "Lance Ying, Jinzhou Wu, Yingshan Susan Wang, Shivam Aarya, Luca M. Schulze Buschoff, Harry Chen, Katherine M. Collins, Andrea de Varda, Shuhao Fu, Sean Dae Houlihan, Akshay K. Jagadish, Guangyuan Jiang, Samuel Kiegeland, Tetsu Kurumisawa, Rongzhi Liu, Ryan Liu, Ningshan Ma, Kathryn McGregor, Younes Strittmatter, Polina Tsvilodub, Jacob Hoover Vigly, Sarah Wu, Enjie Xu, Yiling Yun, Kelsey Allen, Tyler Brooke-Wilson, Brian Christian, Evelina Fedorenko, Michael C. Frank, Michael Franke, Tao Gao, Samuel J. Gershman, Robert D. Hawkins, Jennifer Hu, Julian Jara-Ettinger, Max Kleiman-Weiner, Sydney Levine, Tal Linzen, Hongjing Lu, Timothy O'Donnell, Desmond C. Ong, Steven T. Piantadosi, Rebecca Saxe, Eric Schulz, Tianmin Shu, Felix A. Sosa, Ilia Sucholutsky, Tan Zhi-Xuan, Tomer Ullman, Fei Xu, Ilker Yildirim, Jian-Qiao Zhu, Thomas L. Griffiths, Tobias Gerstenberg, Kevin Smith, Joshua B. Tenenbaum"
+    ],
+    "abstract": "arXiv:2609.21259v1 Announce Type: new \nAbstract: Understanding and modeling human intelligence are parallel goals shared by artificial intelligence (AI) and cognitive science. As AI systems grow increasingly capable, in what ways do model responses resemble human responses, and where do they systematically diverge? The sheer breadth and diversity of the tasks humans can perform and think about pose a challenge for scalable and rigorous comparison between humans and models. We introduce CogGym, a scalable, unified framework grounded in cognitive science for systematically comparing model and human behavior on matched experimental trials. CogGym uses a semi-automated, human-in-the-loop pipeline to standardize diverse experimental paradigms into a task-agnostic Experiment Markup Language (EML), enabling reproducible and faithful comparison at scale. For initial release, we curate and standardize 258 cognitive experiments from 100 papers that focuses on human commonsense reasoning, and evaluate 50 large language models against human responses. We find a clear scaling trend where larger and more recent AI models better reproduce human judgments. Yet AI models' improvement on such common reasoning tasks is considerably slower than the gains observed on formal-reasoning benchmarks like math and coding, and model--human fit remains well below human splithalf reliability ($R^2 = 0.93$ on text, $0.95$ on image, and $0.92$ on video) with the best models achieving $R^2 = 0.59$ on text, $0.58$ on image, and $0.43$ on video experiments. We intend for CogGym to provide a living evaluation framework that continually incorporates new cognitive science experiments to characterize where model behavior resembles human behavior, where it systematically diverges, and how those patterns change as models and experiments evolve.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21259",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21259"
+      }
+    ],
+    "relevance_score": 0.39018984429808956,
+    "max_similarity": 0.16465017853169805
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21165",
+    "title": "SpecOpt: Contact-Diff Reasoning for Agentic Molecule Optimization Toward Binding Specificity",
+    "authors": [
+      "Thao Nguyen, Heng Ji"
+    ],
+    "abstract": "arXiv:2609.21165v1 Announce Type: new \nAbstract: Off-target protein binding is a major source of adverse effects for small-molecule drugs, yet most structure-based molecular design methods focus on generating selective compounds de novo rather than improving the selectivity of existing, well- characterized drugs. We introduce specificity optimization (SpecOpt), a molecular design task that seeks constrained structural modifications to an existing compound that increase its binding preference for an intended target over known off-targets while preserving its structural identity and drug-like properties. To enable systematic evaluation, we construct a ChEMBL-derived benchmark from compound-target interaction data, identifying intended targets through curated drug-mechanism annotations and off- targets through measured activities. We then develop an agentic framework that docks each compound against its intended target and off-targets, compares the resulting poses through residue-aware atom-protein contacts, and provides these differential interactions to a large language model to propose targeted structural modifications. Candidates are retained only if they satisfy molecular similarity, ADMET, and target-off-target docking selectivity criteria. On 915 compounds, the agent improves the target- off-target binding gap for 84.8% of compounds, shifting the mean gap from -0.72 to +0.47 kcal/mol while maintaining a mean Tanimoto similarity of 0.72 to the starting compounds. Ablation studies identify residue-specific contact information as the critical optimization signal: replacing residue identities with binary contact indicators eliminates improvement on all 29 ablation compounds. These results establish SpecOpt as a distinct molecular design problem and demonstrate residue-aware differential interactions as an effective signal for improving the specificity of existing compounds.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21165",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21165"
+      }
+    ],
+    "relevance_score": 0.35058765922567975,
+    "max_similarity": 0.11830808273225002
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21267",
+    "title": "Efficient Benchmarking in Production: A Study of an Evolving LLM Agent",
+    "authors": [
+      "Yining She, Lei Lin"
+    ],
+    "abstract": "arXiv:2609.21267v1 Announce Type: new \nAbstract: Production LLM agents are evaluated repeatedly as they evolve, but full agent benchmarks are costly to rerun. We study efficient recurring evaluation for a production analytics agent serving tens of thousands of monthly active users and report first-hand deployment experience. Using 574 historical runs of the production benchmark, split chronologically into calibration and held-out periods, we compare random sampling, historical caching, fixed representative subsets, and IRT-based adaptive testing. The results show that multidimensional 2PL adaptive testing achieves the best overall score fidelity: executing 200 questions, 38.5% of a full run, yields 1.03 pp of MAE. We nevertheless deployed difficulty-stratified fixed subsets because of their operational simplicity, and show they transfer without recalibration to five other agent families and remain stable across calibration windows as short as one day. Drawing on this deployment experience, we report practical recommendations for recurring production-agent evaluation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21267",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21267"
+      }
+    ],
+    "relevance_score": 0.2963808862513505,
+    "max_similarity": 0.11488613976770932
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.21149",
+    "title": "Clinician-Grounded Quality Assurance for AI-Assisted Psychiatric Intake",
+    "authors": [
+      "King Shi, Amanda Li, Jonathan Ivey, Synthia Qia Wang, Guan Gui, Hyunseo Kim, Peter Zandi, Jason Straub, Jacob Taylor, Ananya Joshi"
+    ],
+    "abstract": "arXiv:2609.21149v1 Announce Type: new \nAbstract: Before patients can use AI-assisted psychiatric intake systems, health systems need practical ways to routinely evaluate these tools against their clinical standards for quality assurance. Because clinicians may use different intake styles, evaluation for this task must (1) support comparison across interviewing approaches, (2) minimize clinician burden, and (3) measure clinically relevant performance for health systems deploying these technologies. We present a clinician-grounded evaluation platform built around a memory-augmented patient simulator for open-ended AI interviewing, InterviewPlayground. We created interactive patients using InterviewPlayground with our expert-authored vignettes, constructed a simulated intake platform for the interviews, and designed evaluation modalities relevant to intake. In a pilot of 6 clinicians in a 25-minute assessment compared to a GPT-based LLM intake interviewer, the LLM recovered more of the clinically relevant items embedded in the patient vignettes (88.0% vs. 38.9%), but made more clinical inferences not based on the interview (56.8% vs. 27.8%), and characterized identified safety concerns less often (33.3% vs. 66.7%), setting the stage for deployed quality assurance for this task.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 22 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.21149",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.21149"
+      }
+    ],
+    "relevance_score": 0.23580492309944684,
+    "max_similarity": 0.09939334177525964
+  }
+]
