@@ -1,0 +1,326 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.28553",
+    "title": "SMILESGNN: Interpretable Clinical Toxicity Prediction via SMILES-Graph Cross-Attention Fusion",
+    "authors": [
+      "Quang Minh Nguyen, Thuy Quynh Nguyen, Duc Minh Le, Ho Nhat Minh Nguyen, Thanh Long Dai Doan, Trong Nghia Nguyen"
+    ],
+    "abstract": "arXiv:2609.28553v1 Announce Type: new \nAbstract: Drug toxicity prediction is critical for reducing late-stage attrition in drug discovery, yet remains challenging due to severe class imbalance, scaffold-based generalization, and the clinical need for interpretable predictions. Single-modality approaches-SMILES Transformers or graph neural networks capture complementary aspects of molecular structure, while sequence-only models cannot directly provide graph-attributed explanations. We present SMILESGNN, a multimodal architecture that fuses a SMILES Transformer encoder and a GATv2 graph encoder via cross-attention, and SMILESGNN-PT, a variant using a ChemBERTa-2 pretrained backbone. The design retains an explicit graph branch within the predictive pipeline, supporting GNNExplainer-based analysis of substructures associated with toxic predictions. On ClinTox, SMILESGNN achieves AUC-ROC 0.987 and F1 0.906 with only 0.4M parameters, performing competitively with a strong SMILESTransformer and a larger ChemBERTa-2/GATv2 concat-fusion baseline. On Tox21 (12 tasks), SMILESGNN-PT obtains mean AUC-ROC 0.750, comparable to ChemBERTa-2 alone and the same-backbone concat-fusion baseline. Overall, the results suggest that cross-attention is a practical fusion alternative that preserves competitive predictive performance while enabling graph-based interpretability support.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28553",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28553"
+      }
+    ],
+    "relevance_score": 0.5176518452895084,
+    "max_similarity": 0.26360763672191795
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28741",
+    "title": "GeoNLI - A Natural Language Interpreter for Satellite Imagery",
+    "authors": [
+      "Ashutosh Gandhe, Anupam Rawat, Geet Sethi, Kabir Nasiruddin, Madhav Kotecha, Panav Shah, Rakshit Sawarn, Soumitra Nayak"
+    ],
+    "abstract": "arXiv:2609.28741v1 Announce Type: new \nAbstract: Multi-modal multitasking models have shown strong performance on remote sensing datasets. However, because these models are trained on heterogeneous data and vary across tasks, designing a unified model that performs well in captioning, visual question answering (VQA), and visual grounding remains challenging.\n  In this work, we evaluate several models on the VRS Bench and NWPU-VHR-10 datasets. The EarthMind model demonstrates strong results in both captioning and VQA. For grounding, we propose multiple pipelines - RemoteSAM-SAM-v1, RemoteSAM-SAM-v2, and DiffuSAM - and ultimately adopt a majority-voting ensemble across EarthMind, RemoteSAM, SAM3, Falcon, RemoteSAM-SAM3-v1, RemoteSAM-SAM3-v2, and DiffuSAM predictions.\n  Our unified, modular pipeline integrates advanced SAM variants with multimodal LLMs to jointly perform captioning, VQA, and grounding. It achieves 82% accuracy on captioning and 83.32% on VQA, with 90.94%, 52.04%, and 92.06% for binary, numeric, and semantic question types respectively. For grounding, it attains 64.94% accuracy. By combining diverse VLMs with our custom RemoteSAM-SAM3 models through ensemble majority voting, the system delivers more accurate and consistent remote-sensing understanding than task-specific approaches.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28741",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28741"
+      }
+    ],
+    "relevance_score": 0.48943641570614305,
+    "max_similarity": 0.2221556756402291
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28813",
+    "title": "CinematicVQA: Benchmarking Film-Grammar Reasoning in Large Vision-Language Models",
+    "authors": [
+      "Shuo Xing, Pooja Verlani, Balu Adsumilli, Zhengzhong Tu"
+    ],
+    "abstract": "arXiv:2609.28813v1 Announce Type: new \nAbstract: Cinematography, the craft of visual storytelling through framing, lighting, and camera operation, fundamentally shapes how audiences perceive and emotionally engage with video content. While Large Vision Language Models (LVLMs) have made remarkable progress in video question answering, existing benchmarks primarily focus on identifying low-level techniques rather than understanding their storytelling impact. To address this, we introduce CinematicVQA, the first-of-its-kind benchmark for cinematic video understanding that goes beyond technique recognition to evaluate film-grammar reasoning, utilizing our introduced Cinematic Scene Graph (CSG), a structured representation that links filming techniques to their perceptual effects and narrative functions. Through comprehensive evaluation of state-of-the-art LVLMs, we reveal a striking semantic gap: models consistently perform higher on describing visual presentations than on identifying the underlying techniques. Surprisingly, Chain-of-Thought prompting fails to provide consistent gains and degrades performance for most models, suggesting that current LVLMs lack sufficient cinematic domain knowledge to benefit from step-by-step reasoning. Fine-tuning on \\textsc{CinematicVQA-train} yields consistent improvements, particularly for narrative function and multi-hop reasoning. Overall, \\textsc{CinematicVQA} serves both as a rigorous benchmark for cinematic evaluation in LVLMs and as a practical dataset for training more film-aware video models.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28813",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28813"
+      }
+    ],
+    "relevance_score": 0.4767266591282284,
+    "max_similarity": 0.2073757225309414
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28956",
+    "title": "MoVISA: Multi-Token Reasoning for Video Object Segmentation",
+    "authors": [
+      "Ruining Zhao, Ho Kei Cheng, Alexander G Schwing"
+    ],
+    "abstract": "arXiv:2609.28956v1 Announce Type: new \nAbstract: Recent advances in video object segmentation with Multimodal Large Language Model (MLLM) reasoning have demonstrated the effectiveness of using a single textual token, such as SEG, to predict segmentation masks across images and videos. However, we observe that this single-token strategy lacks the granularity required to precisely localize multiple objects across time in video segmentation tasks. To address this limitation, we develop Multi-Token Reasoning for Video Object Segmentation, or MoVISA. MoVISA uses multiple segmentation tokens, such as SEG0 and SEG1, to represent an object across different frames. This design enables more fine-grained alignment between language prompts and spatio-temporal mask predictions, improving both performance and interpretability. On the challenging MeViS, DAVIS17, ReVOS, and Ref-Youtube-VOS benchmarks, our model achieves a 13.2 percent J and F improvement on MeViS and an 8.4 percent J and F improvement on ReVOS. Code and models will be released.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28956",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28956"
+      }
+    ],
+    "relevance_score": 0.4698957862457713,
+    "max_similarity": 0.2016695382204461
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28949",
+    "title": "Exploiting Target Knowledge from MLLMs for Robust Few-Shot Segmentation",
+    "authors": [
+      "Yijun Hu, Heng Fan, Libo Zhang"
+    ],
+    "abstract": "arXiv:2609.28949v1 Announce Type: new \nAbstract: Few-shot segmentation (FSS) aims to segment unseen object categories with a few (e.g., one or five) labeled examples, enabling efficient adaptation to novel classes. Conventional models typically rely on appearance-based visual matching between support and query images for segmentation. While straightforward, these methods often struggle to handle significant appearance discrepancies and occlusions in the query image due to insufficient target knowledge. To mitigate this, we introduce a novel framework that mines target knowledge using the strong reasoning capacity of Multimodal Large Language Models (MLLMs) and employs it to enhance FSS. Specifically, building on SAM 2, our method, named MK-FSS, exploits two forms of complementary knowledge derived from a query image by an MLLM for FSS, including spatial knowledge, which provides a spatial prior indicating the potential target location, and semantic knowledge, which describes the target using text. The spatial knowledge is first encoded into a memory representation, and then resulting memory is integrated with the support-guided memory feature from query image through a carefully designed dual-memory debate-fusion (DMDF) module, yielding a more robust target memory feature. In parallel, the semantic knowledge is encoded into the textual feature, which is fused with multi-scale query features via a progressive cross-modal prompt generator (PCPG), producing a target-aware multimodal prompt for segmentation. Working together, the dual-memory feature and the multimodal prompt provide a comprehensive representation of the target, enabling more robust segmentation. In our extensive experiments, MK-FSS shows promising results and largely surpasses existing methods. Code will be released.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28949",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28949"
+      }
+    ],
+    "relevance_score": 0.4671152734841537,
+    "max_similarity": 0.19498312636320733
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28860",
+    "title": "Multimodal Routing and Region Refinement for Language-Guided Medical Image Segmentation",
+    "authors": [
+      "Md Maklachur Rahman, Md Hasan Al Banna, Saraf Anjum, Assame Arnob, Tracy Hammond"
+    ],
+    "abstract": "arXiv:2609.28860v1 Announce Type: new \nAbstract: Textual descriptions can reduce ambiguity in medical image segmentation by specifying the finding and location to be delineated. Existing text-guided methods mainly improve where image and language features interact but generally retain a single learned update pathway across all image-text pairs. We propose MRSeg, a parameter-efficient framework that uses each image-text pair to route the adaptation of visual and textual features before dense prediction. Frozen ConvNeXt-Tiny and PubMedBERT encoders provide multiscale visual features and clinical text tokens. A joint router uses the deepest visual feature and pooled text to predict a sparse mixture over low-rank adapter bases. The resulting route is shared across separate adapter banks for two visual scales and text, coordinating their adaptation while keeping the feature-specific parameters separate. Region Bridge uses text-derived queries to aggregate dense visual tokens into latent regions, refines these regions through self-attention and text cross-attention, and redistributes the refined information back to the feature maps. Finally, a multiscale decoder combines refined semantic features with shallow image evidence. On QaTa-COV19 and MosMedData+, MRSeg achieves 90.90/83.32 and 81.53/68.82 Dice/mIoU, respectively, with 7.11M trainable parameters and 7.60 GFLOPs. Code: https://github.com/maklachur/MRSeg.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28860",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28860"
+      }
+    ],
+    "relevance_score": 0.45501925651560104,
+    "max_similarity": 0.18185390769477516
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28857",
+    "title": "MEVL-STP: Multi-Encoder and Vision Language Model for Arbitrarily Shaped Scene Text Spotting",
+    "authors": [
+      "Aman Anand, Partha Pratim Roy, Shivakumara Palaiahnakote"
+    ],
+    "abstract": "arXiv:2609.28857v1 Announce Type: new \nAbstract: Scene text spotting remains challenging for arbitrarily shaped text instances such as curved signs and dense multi-oriented characters in natural images, where tightly coupled architectures propagate localization errors directly into recognition failures. We present a two-stage pipeline that combines multi-encoder segmentation with vision-language model recognition to address this problem. In the detection stage, six frozen vision encoders (CLIP, DINOv2, SigLIP, EVA-CLIP, SAM, and ConvNeXt) extract complementary features spanning semantic, spatial, and texture spectra, which are fused through a trainable hierarchical Feature Pyramid Network with channel attention and decoded via a deep-supervision Progressive Scale Expansion network to generate precise instance-level text masks. By keeping the encoders frozen, their independently learned feature spaces remain orthogonal during fusion, preventing the feature homogenization that degrades boundary precision in single-backbone detectors. The detection stage produces tight polygon masks that conform to the actual shape of curved and arbitrarily oriented text, rather than axis-aligned rectangles that inevitably include background content. In the recognition stage, these polygon-masked crops isolate the target text from surrounding clutter, allowing a Qwen3-VL-8B-Instruct model, fine-tuned via Low-Rank Adaptation on polygon-cropped scene text, to focus purely on reading the text without interference from neighbouring words or background noise. Without any synthetic pretraining data, our method achieves 91.99% detection F-measure and 85.86% end-to-end H-mean on CTW1500, setting a new state of the art and achieving strong performance on Total-Text and ICDAR 2015 without any synthetic training data. Code is available at https://github.com/doubleblind-afk/MEVL-STP",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28857",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28857"
+      }
+    ],
+    "relevance_score": 0.4463291456644167,
+    "max_similarity": 0.16979823882576486
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28757",
+    "title": "Small yet Assistive: Spatially-Aware Post-Training for Low Vision",
+    "authors": [
+      "Rishabh Choudhary, Shreyansh Raj, Umesh Goyal, Shubh Kashyap, Shrestha Kumar, Sushovan Jena, Komal Kumar, Hisham Cholakkal, Aditya Nigam"
+    ],
+    "abstract": "arXiv:2609.28757v1 Announce Type: new \nAbstract: An estimated 1 billion people worldwide live with vision impairment, yet current vision-language models (VLMs) produce descriptions too vague for safe navigation by blind and low-vision (BLV) users. Large VLMs can generate high-quality audio-description-compliant narrations but cannot run on mobile devices; small VLMs offer competitive latency but lack spatial detail, directional cues, and hazard awareness for navigational assistance. We present Smol-VL-BLV, a compact VLM for blind and low-vision users that closes this gap using a 500M decoder transformer model and two post-training mechanisms: (1) teacher-student distillation and (2) Group Relative Policy Optimization (GRPO) with a composite BLV reward targeting directional language, metric distances, and hazard detection. Because multi-stage post-training can induce catastrophic forgetting, we add a lightweight finetuning stage after the last stage GRPO finetuning to recover general descriptive quality while preserving BLV-specific spatial grounding. Our best model substantially outperforms the baseline across various benchmarks, including tasks: VQA, BLV captioning, OCR, and latency. Compared with the baseline for relative improvement, it improves the Spatial score gain of 19.3%, and the Social score gain of 14.8%. It also increases OCR-Bench by 101.5%, and raises TextVQA accuracy by 44.2%. These results show that BLV-focused post-training improves both accessibility-specific spatial grounding and general visual-text reasoning. Deployed on a mid-range Android smartphone via Mixed-Precision Quantization, the model remains approx. 450 MB and runs entirely on-device, offline and without network dependency, generating descriptions with latency dependent on host hardware capabilities. Our model, dataset, and code is publicly released at https://smol-vl-blv.github.io/Smol-VL-BLV-website/",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28757",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28757"
+      }
+    ],
+    "relevance_score": 0.4420508429685499,
+    "max_similarity": 0.1661968621963776
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28851",
+    "title": "Looks the Same, Answers Differently: Flip-Direction Steering for Robust Vision-Language Reasoning",
+    "authors": [
+      "Yeonsung Jung, Joonhyun Jeong, Hoang Pham, Joowon Kim, Yoonsik Park, Viet Dac Lai, Eunho Yang"
+    ],
+    "abstract": "arXiv:2609.28851v1 Announce Type: new \nAbstract: Vision-language models (VLMs) achieve strong visual reasoning performance, yet subtle changes from routine image capture and processing can alter their reasoning trajectories even when images appear nearly identical. In long-horizon generation, the resulting activation shifts may accumulate across decoding steps, progressively altering reasoning tokens and ultimately changing the final answer, a phenomenon referred to as answer flips. To address this instability, we propose FlipDir (Flip-Direction Steering), a training-free inference-time method that estimates a low-rank flip-inducing activation subspace from contrastive pairs of original and answer-flipping inputs and selectively steers hidden states during decoding. A margin-based gate limits subspace attenuation to uncertain decoding steps, recovering original predictions while preserving stable ones. To evaluate robustness beyond accuracy or consistency on fixed test sets, we introduce VisFlip, a benchmark framework that constructs evaluation groups for a target model and visual variation setting to separately assess recovery of original predictions and preservation of stable ones. VisFlip spans nine dataset-variation combinations across scientific reasoning, robot-scene understanding, and medical VQA, covering subtle visual variations common in each domain. Experiments across 18 settings demonstrate that FlipDir consistently outperforms existing methods on the combined recovery and preservation metric. We will make our code publicly available.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28851",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28851"
+      }
+    ],
+    "relevance_score": 0.4382737851347016,
+    "max_similarity": 0.15955721554793176
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28796",
+    "title": "DrGait: Biomechanically Grounded Visual Reasoning for Interpretable Clinical Gait Analysis",
+    "authors": [
+      "Xiangyu Yin, Shiqi Wang, Abrar Alamri, Yasir Aljohani, Weichen Liu, Goeran Fiedler, Wei Gao"
+    ],
+    "abstract": "arXiv:2609.28796v1 Announce Type: new \nAbstract: Current automated gait analysis for clinical applications relies on uninterpretable black-box classifiers. Although Vision-Language Models (VLMs) offer strong reasoning capabilities, applying them directly to gait videos often leads to hallucinations, because they struggle to measure subtle geometric deviations from raw visual contexts. To address this, we introduce DrGait, a training-free agentic framework that shifts the VLM's role from a direct visual reasoner to a clinical planner. DrGait decouples semantic reasoning from geometric perception through a structured Triage-Verification-Synthesis (TVS) workflow. Given an input video and a set of basic spatiotemporal metrics, the DrGait agent first performs a heuristic triage to propose diagnostic hypotheses, which are then verified by autonomously calling deterministic biomechanical tools that operate on reconstructed 3D mesh trajectories, segmented 2D pose tracks, and event-centered video evidence. Finally, a closed-loop mechanism recursively updates the agent's reasoning context based on the feedback. By anchoring VLM's reasoning in verifiable geometric and temporal measurements, DrGait reduces hallucinations, achieving competitive diagnostic accuracy while generating transparent and audit-ready clinical reports.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28796",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28796"
+      }
+    ],
+    "relevance_score": 0.4375615166247599,
+    "max_similarity": 0.1601010297110564
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28836",
+    "title": "M$^2$PFN: End-to-End Disentangled Alignment for Generalizable Multimodal In-Context Learning in Alzheimer's Disease",
+    "authors": [
+      "Lujia Zhong, Shuo Huang, Jianwei Zhang, Xinyu Nie, Yonggang Shi"
+    ],
+    "abstract": "arXiv:2609.28836v1 Announce Type: new \nAbstract: While various multimodal methods combining imaging and tabular data for Alzheimer's disease (AD) diagnosis were proposed, they are often limited in generalization across cohorts. In-context learning (ICL) has demonstrated excellent generalization performances and high flexibility in foundational tabular models such as TabPFN. To extend TabPFN's ICL to multimodal AD analysis, the main obstacle is that TabPFN is meta-trained on synthetic tabular priors that do not naturally match the statistical structure of image-derived features. We propose M$^2$PFN, an end-to-end framework that turns this tabular foundation model into a multimodal AD predictor. M$^2$PFN (i) performs differentiable inference through TabPFN's transformer, back-propagating task gradients into 3D-MRI and tabular encoders; (ii) aligns the two modalities into a shared subspace, via disentanglement and a contrastive objective, matched to the ICL engine's prior; and (iii) folds in a frozen tabular-only prediction through a learnable gated shortcut. Because the ICL engine stays frozen, its in-context mechanism is preserved for test-time generalization, while end-to-end training shapes the encoders into features it can exploit. On ADNI ($n=2240$, three-class CN/MCI/AD), M$^2$PFN attains $65.55\\%$ macro-F1 and $82.21\\%$ macro-AUC, surpassing a comprehensive set of unimodal and multimodal baselines. By swapping only the head for a TabPFN regressor, the same architecture regresses baseline MMSE on a $1250$-subject sub-cohort to test MAE $1.743$, outperforming every multimodal baseline. On two external cohorts (OASIS-3 and SCAN) with no retraining, M$^2$PFN achieves the best AUC and the lowest MMSE MAE across all baselines, and transfers even when the cognitive instrument changes.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28836",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28836"
+      }
+    ],
+    "relevance_score": 0.40469756595697204,
+    "max_similarity": 0.12038429185934156
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.28603",
+    "title": "Learning to Discover Interesting Mathematics",
+    "authors": [
+      "Niket Patel, Ahmad Rammal, Amaury Hayat, Remi Munos, Julia Kempe"
+    ],
+    "abstract": "arXiv:2609.28603v1 Announce Type: new \nAbstract: Recently, Large Language Models (LLMs) have been increasingly able to solve advanced mathematical problems, including many that have been open for decades. This opens the door to expansion of mathematical knowledge at unprecedented scale. Yet, while LLMs may be able to conjecture and prove more and more theorems, it remains open whether this new mathematical knowledge is interesting or useful. We define intrinsic interestingness of a theorem as the ratio between the length of its proof and the length of its statement. We show that this correlates strongly with an extrinsic measure of the downstream utility of a theorem. We identify the difficulty of a proof conditioned on a set of premises as a useful primitive for computing these metrics, and train a 27B model that predicts proof difficulty more accurately than frontier general-purpose models. Optimizing for our metric creates a model capable of producing more interesting theorems, while also reducing substantial or full overlap with Mathlib from 91.9% to 30.6%, showcasing the creation of more out-of-distribution math. We show that our system can generate candidate theorems, select the most interesting among them, and iteratively build on a self-expanding mathematical library. These metrics provide a practical and quantifiable signal for ranking conjectures and guiding proof search within formal mathematical libraries. Our framework provides a path towards self-expanding, machine-verified mathematical libraries that can choose worthwhile statements without relying on human-supplied targets.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "updated": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.28603",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.28603"
+      }
+    ],
+    "relevance_score": 0.39542564442632144,
+    "max_similarity": 0.11161336991250817
+  }
+]
