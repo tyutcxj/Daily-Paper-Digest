@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.30698",
+    "title": "MM-VeriAgent: Learning to Use Extensive Tools to Verify Multimodal Misinformation with Reinforcement Learning",
+    "authors": [
+      "Peipei Li, Shuhan Xia, Shengyang Liu, Zekun Li, Ran He"
+    ],
+    "abstract": "arXiv:2609.30698v1 Announce Type: new \nAbstract: Real-world multimodal misinformation often involves mixed forgery sources, requiring sample-specific detection strategies. Existing tool-augmented methods rely on predefined workflows or inference-time planning, limiting adaptability or increasing inference cost. To address this issue, we introduce \\textbf{MM-VeriAgent}, which learns to verify mixed-source multimodal misinformation with tools. We first build \\textbf{MM-VeriTools}, a specialized toolkit for misinformation detection agents. By benchmarking various candidate models and methods on the sub-tasks required by mixed-source detection, we select the strongest for textual, visual, and cross-modal forgery analysis and encapsulate them as callable tools with a unified interface. On top of this toolkit, we train the LVLM agent with reinforcement learning to teach it how to use these tools to better solve mixed-source detection. Since many of the tools are specialized models whose online execution at every rollout severely limits RL efficiency, we further introduce \\textbf{Tool-Execution Cache}, which pre-executes candidate tool calls and reuses their cached outputs during training. This preserves multi-step rollouts while reducing online tool execution, largely improving the training efficiency.Experiments on MMFakeBench demonstrate substantial accuracy gains over the base model without explicit tool search at inference time. Ablation and efficiency analyses further validate the learned tool-use policy and show that Tool-Execution Cache reduces online tool executions during training.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30698",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30698"
+      }
+    ],
+    "relevance_score": 0.5382555653711713,
+    "max_similarity": 0.28659302842708356
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30341",
+    "title": "Bridging LLM Agents and Data Spaces: An Architectural Mediation Approach using the Model Context Protocol",
+    "authors": [
+      "Jaime Alonso Ruiz, Carlos Aparicio, Gabriel Huecas, Joaqu\\'in Salvach\\'ua, Andres Munoz-Arcentales"
+    ],
+    "abstract": "arXiv:2609.30341v1 Announce Type: new \nAbstract: Data Spaces enable sovereign and governed data sharing across organizational boundaries, but their integration with AI agents remains challenging due to mismatches between probabilistic language model interactions and policy-driven data infrastructures. This article presents an architectural mediation approach based on the Model Context Protocol (MCP), implemented through the Eunomia Agent, to enable controlled interaction between large language model (LLM) agents and data space services. The proposed mediation layer translates data space capabilities into structured, schema-driven tools that AI agents can discover and invoke while preserving governance constraints. A prototype implementation validates end-to-end interaction across catalog discovery, metadata retrieval, and data service invocation without modifying existing data space components. Results demonstrate that protocol-based mediation enables interoperable and standards-aligned integration of AI agents into data space ecosystems. The approach provides practical guidance for organizations seeking to introduce AI-driven automation into governed data-sharing environments while maintaining compliance, interoperability, and architectural separation of concerns.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30341",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30341"
+      }
+    ],
+    "relevance_score": 0.5235495190514651,
+    "max_similarity": 0.2690721868003437
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30337",
+    "title": "Parameters vs. Context: TRACE Fine-Tuning for Robust Retrieval-Augmented Generation",
+    "authors": [
+      "Zhengchen Huang, Yundong Sun, Minrui Song, Shuanglong Yao, Ye Liu, Ji Chen, Xing Wang"
+    ],
+    "abstract": "arXiv:2609.30337v1 Announce Type: new \nAbstract: Retrieval-Augmented Generation (RAG) mitigates knowledge obsolescence and factual hallucination in large language models by introducing external context. However, when retrieved knowledge conflicts with the model's internal parametric knowledge, the model may either blindly follow misleading context or incorrectly rely on parametric knowledge, leading to unreliable responses. To address this issue, this paper proposes TRACE (Debate-TRace and Answer-Completeness rEgularized fine-tuning), a robust fine-tuning framework for RAG under knowledge conflicts. First, we propose a fine-tuning method that leverages multi-agent debate traces to extract correct candidates, incorrect candidates, and answer-shift patterns, providing fine-grained supervision for reliable knowledge-source selection. In addition, we design an answer completeness regularization mechanism to alleviate empty, overly short, and prematurely terminated responses via answer-tail token reinforcement and premature termination suppression. The fine-tuning objective combines correct-answer supervision, incorrect-candidate suppression, answer-tail token reinforcement, and premature termination suppression, enabling the model to use reliable external context, resist misleading or irrelevant retrieved content, and fall back to parametric knowledge when retrieved evidence is unreliable. Experiments across multiple knowledge-conflict scenarios and datasets show that TRACE improves robustness against misleading retrieved knowledge and reduces incomplete answers. These results demonstrate that multi-agent debate traces and answer completeness regularization jointly enhance knowledge-source selection, conflict robustness, and answer quality in RAG models. Our code is available at https://github.com/PHD-lanyu/TRACE.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30337",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30337"
+      }
+    ],
+    "relevance_score": 0.5203224025423604,
+    "max_similarity": 0.25884877842145065
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30289",
+    "title": "Not All Memories Are Equal: Hierarchical Collaborative Memory for Validity-Aware Retrieval in LLM Agents",
+    "authors": [
+      "Yufei Shi, Rujing Yao, Ang Li, Yang Wu, Zhuoren Jiang, Xiaozhong Liu"
+    ],
+    "abstract": "arXiv:2609.30289v1 Announce Type: new \nAbstract: In team collaboration scenarios, memory is heterogeneous and continually evolving. Team memories capture collective decisions, protocols, and current consensus, while individual memories preserve member-specific observations, execution traces, and intermediate progress. Existing memory-augmented systems typically retrieve from all stored memories as a flat pool, ranking them by semantic relevance, importance, or recency without modeling hierarchical structure or evolving validity. As a result, they often surface semantically relevant but outdated or conflicting memories, especially individual memories that no longer align with current team consensus, instead of prioritizing currently valid memories. This is particularly problematic when collaborative LLM agents answer user questions, since their responses should be grounded in valid memories. We propose HiCoMER, a framework for hierarchical collaborative memory management and validity-aware retrieval in LLM agents. HiCoMER first maintains the validity of team and individual memories and then retrieves memories that remain valid, rather than retrieving directly from all stored memories. It consists of three components: a Hierarchical Memory Conflict Updater, a Validity-Aware Memory Retriever, and a Memory-Grounded Answer Generator. To evaluate HiCoMER, we construct two new datasets for memory-grounded question answering in collaborative settings. Experiments on both datasets show that HiCoMER consistently outperforms strong baselines by reducing outdated retrieval, preserving current team consensus, and improving downstream QA quality.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30289",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30289"
+      }
+    ],
+    "relevance_score": 0.5114243669478443,
+    "max_similarity": 0.25545810815363607
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30625",
+    "title": "Audio LLMs Know When They Can't Hear You",
+    "authors": [
+      "Amirhosein Javadi, Richa Dixit, Mehrdad Farajtabar, Minsik Cho, Devang Naik, Mohammad Samragh"
+    ],
+    "abstract": "arXiv:2609.30625v1 Announce Type: new \nAbstract: Audio large language models allow users to interact with the model through speech. When an input recording is too degraded, the model may misinterpret the user's query and respond based on an incorrect transcription. In this paper, we study model-conditional transcription reliability: whether an Audio LLM can recognize when its own transcription is unreliable. We first prompt the Audio LLM to assess whether its own transcription would be reliable, and find that the model is a poor judge of its own transcription reliability: in most cases, it predicts that its transcription will be reliable. We find that existing approaches, including speech quality predictors, audio LLM generation uncertainty, and transcript-conditioned WER estimation, provide limited signals for detecting transcription failures. In contrast, we discover that transcription reliability is strongly represented in the model's audio-encoder representations. Based on this observation, we devise a lightweight reliability predictor that operates on representations extracted by the frozen audio encoder and predicts the reliability class before generation. The reliability predictor can trigger a clarification request from the user when their voice query is predicted to be unreliable, while allowing reliable queries to proceed without modifying the underlying Audio LLM. Our predictor achieves 81.10% in-domain and 78.09% cross-domain macro-F1 scores, outperforming the strongest baselines by 10.33 and 11.93 points, respectively. Finally, we show that reliability labels can transfer across Audio LLM families, and that transfer performance is closely related to the alignment of their model-specific reliability boundaries.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30625",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30625"
+      }
+    ],
+    "relevance_score": 0.4966239139077726,
+    "max_similarity": 0.2384773792339686
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30434",
+    "title": "ProCAP: Probabilistic Cross-Attentive Prompt Learning for Vision-Language Models",
+    "authors": [
+      "Hiwa Azeez Abbas, Fatemeh Daneshfar, Moloud Abdar"
+    ],
+    "abstract": "arXiv:2609.30434v1 Announce Type: new \nAbstract: Pre-trained vision-language models such as CLIP can recognize new categories via prompting, but they often struggle when labeled data are scarce or the test distribution shifts. Prompt learning adapts only a small set of parameters while keeping the backbone frozen, yet many existing multimodal prompt learners couple the visual and textual branches weakly and can be brittle in low-shot regimes. We propose ProCAP, a probabilistic cross-attentive prompt learning framework that improves cross-modal interaction and training stability without updating any CLIP weights: it learns both visual and textual prompt tokens and links them through stacked bidirectional multi-head cross-attention so the two branches refine each other across prompt depth. To reduce overfitting under limited supervision, we parameterize prompt tokens with Gaussian means and variances and regularize them with lightweight KL and L2 penalties, and we further add a compact symmetric InfoNCE head that aligns cross-attended image features with class-level text representations in a shared low-dimensional space. Across few-shot base-to-novel generalization on 11 datasets, cross-dataset transfer, and domain generalization on ImageNet shift benchmarks, ProCAP achieves strong aggregate base-to-novel performance and competitive transfer performance while keeping the CLIP backbone unchanged.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30434",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30434"
+      }
+    ],
+    "relevance_score": 0.4931917839837501,
+    "max_similarity": 0.23036355259100752
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30469",
+    "title": "Pretrained ASR Pseudo-labeling for Noisy Police Audio",
+    "authors": [
+      "Kaavya Chaparala, Su Huang, Stephen L. Miller, Rhiannon N. Miller, Anjalie Field"
+    ],
+    "abstract": "arXiv:2609.30469v1 Announce Type: new \nAbstract: Pretrained ASR systems perform poorly on noisy Broadcast Police Communication (BPC), hindering efforts to understand police decision-making. Pseudo-labeling offers an unsupervised path to improve ASR without expensive human labels, but the efficacy of this approach on very noisy domains is not known. In this work, we systematically assess the opportunities and limits of pseudo-labeling to adapt foundation ASR models (Whisper and Qwen3-ASR) to noisy BPC domain corpora from Baltimore and Chicago. We demonstrate that existing internal confidence metrics (log-probabilities and STAR scores) fail to distinguish between high and low quality BPC pseudo-labels, and we introduce an external LLM-as-a-judge filtering paradigm that leverages parametric knowledge to discard contextually implausible transcripts. Our LLM-judging filters more aggressively than internal metrics and significantly reduces WER of the pseudo-labeled training sets across the Baltimore and Chicago BPC corpora, though a substantial gap remains relative to an oracle filter. We also introduce a new cross-model pseudo-labeling paradigm where one model is finetuned with pseudo-labels from the other, and we identify this method as a promising direction for future pseudo-labeling work.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30469",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30469"
+      }
+    ],
+    "relevance_score": 0.4528951755909716,
+    "max_similarity": 0.2477083959574783
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30489",
+    "title": "BioEVAL: A global, multi-institutional benchmark of large language and multimodal models for bioengineering",
+    "authors": [
+      "Shun Ye, Vinny Chandran Suja, Chenlong Li, Chongming Jiang, Reza Zamani, Xiang Li, Christopher Bain, Yuqi Zhou, Walker Peterson, Huidong Wang, Chenglang Hu, Jongchan Park, Xiao Cheng, Benjamin Swedlund, Sandra Murillo, Anjali Sivanandan, Shiyu Sun, Liang Lanfeng, Mohammad Tariqul Islam, Baju C. Joy, Ishaq N. Khan, Sreedhar S. Kumar, Gabriel Mercado-V\\'asquez, James V. Vizzard, Jonathan M. Matthews, Helen Huang, Xiaolu Guo, Ethan Nicklow, Guorui Chen, Ryan A. Neff, Surjendu Maity, Hyeonjin Park, Han-ho Joo, Katherine Dong, Yuyan Cai, Weihang Huang, Yichen Zou, Rui Yan, Raphael Figueroa, Artem Goncharov, Bella Rose Schremmer, Lian Elsa Linton, Keisuke Goda, Liang Gao, Ke Cheng, Leonardo Morsut, Jennifer L. Wilson, Jianping Fu, Lim Chwee Teck, Deblina Sarkar, Andreas Hierlemann, Sava\\c{s} Tay, Alexander Hoffmann, Donald Richieri Griffin, Jun Chen, Shana O. Kelley, Shyni Varghese, Jinwoo Cheon, Wilbur A. Lam, James J. Moon, Wilson W. Wong, Samir Mitragotri, Dino Di Carlo"
+    ],
+    "abstract": "arXiv:2609.30489v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited insight into model performance on frontier and multimodal tasks. We assembled BioEVAL (BioEngineering Validation of AI and LLMs), a global, multi-institutional initiative designed to assess experimental reasoning capability across bioengineering (BE) subfields. BioEVAL spans 11 major BE subfields plus a set of uncategorized items, bringing together 22 research groups to create a PhD-level benchmark comprising 608 evaluation items: 1) 380 multiple-choice questions (MCQs, 359 retained after audit), 2) 218 literature synthesis tasks, and 3) 10 multimodal problems with experimental image interpretation. Benchmark items underwent authoring-group expert review and centralized quality control before evaluation. Following evaluation, a blinded cross-group consensus audit of the highest- and lowest-accuracy MCQ items flagged 21 questions for revision or removal; these were withheld, and all reported MCQ results are computed on the 359 retained items. We evaluated diverse cloud-scale foundation/multimodal models (e.g., ChatGPT, Gemini, and Grok) and locally deployable models suitable for inference on consumer-grade GPUs. Models achieved the highest accuracy of up to 90% on MCQs, similarity score of 0.72 on literature synthesis, and accuracy of 80% on a small sample of multimodal reasoning questions, with substantial performance variation across subfields. Leaderboard rankings characterize current capabilities, limitations, and development priorities across the evaluated BE task categories. BioEVAL is maintained as an extensible benchmark with standardized protocols for continuing expert item contribution and model evaluation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30489",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30489"
+      }
+    ],
+    "relevance_score": 0.44366847503266904,
+    "max_similarity": 0.16660836340469357
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30402",
+    "title": "What Improves Multimodal Misinformation Detection? Answers from a Large-Scale Empirical Study",
+    "authors": [
+      "Akshit Sharma, Prashant W. Patil"
+    ],
+    "abstract": "arXiv:2609.30402v1 Announce Type: new \nAbstract: Multimodal misinformation is increasingly crafted to look convincing by pairing a textual claim with an image that appears to \"prove\" it. Yet in practice, building effective detectors often hinges on a small set of design choices that are rarely examined in a controlled way. In this paper, we conduct a large-scale study of multimodal design choices for misinformation detection with over 3,375 experiments- spanning three benchmark datasets and a broad range of pre-trained vision and language backbones. Through systematic comparisons and targeted robustness analyses, we distill practical guidance on which design choices help, when do they fail silently, and what aspects of the pipeline most strongly shape model behavior, answering 4 key Research Questions (RQs). We aim to provide a reliable foundation for designing stronger and more dependable multimodal misinformation detection systems, thus contributing to the broader research community.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30402",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30402"
+      }
+    ],
+    "relevance_score": 0.4370723963926785,
+    "max_similarity": 0.15997618646440373
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30709",
+    "title": "VLALight: Lightweight Vision-Language-Action Models for Emergency-Aware Traffic Signal Control",
+    "authors": [
+      "Kemou Jiang, Maonan Wang, Xingchen Zou, Jiayue Zhu, Yuhang Fu, Sicheng Wang, Xi Chen, Yirong Chen, Zhiyong Cui"
+    ],
+    "abstract": "arXiv:2609.30709v1 Announce Type: new \nAbstract: Traffic signal control (TSC) is essential for mitigating urban congestion. Recent advances in vision-language models (VLMs) enable richer interpretation of intersection scenes, opening new opportunities for visual-context-aware TSC. However, the loose coupling and repeated information conversion between modules can lead to the loss of fine-grained visual details, while sequential inference introduces substantial latency. To address these limitations, we propose VLALight, a lightweight end-to-end vision-language-action framework that directly maps intersection observations and signal-phase information to discrete signal actions. To handle the multi-view nature of TSC, VLALight combines multiple directional camera views into a unified visual input and uses textual instructions to establish their correspondence with traffic movements and signal phases. This design enables direct action prediction with a compact 0.5 B-parameter model, without intermediate image-to-text descriptions or handcrafted traffic-state representations. Experiments show that VLALight delivers the best emergency-vehicle service of all compared methods, reducing pooled emergency waiting time by 21.1% over the cascaded VLMLight while running in real time on local hardware and generalizing to unseen intersection topologies and traffic-flow patterns.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30709",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30709"
+      }
+    ],
+    "relevance_score": 0.42785030806447477,
+    "max_similarity": 0.14860790503868315
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30705",
+    "title": "The Price of Thought: Does Test-Time Reasoning Pay in LLM Trading?",
+    "authors": [
+      "Jiayi Chen, Guiling Wang"
+    ],
+    "abstract": "arXiv:2609.30705v1 Announce Type: new \nAbstract: While inference-time reasoning in large language models (LLMs) promises better decision making, its higher computational cost may not yield better economic outcomes. Yet reasoning controls are rarely evaluated as economic interventions, where changes in model outputs must translate into better portfolios after trading costs. We conduct a controlled study of representative LLMs from the DeepSeek, GPT, and Gemini families. We vary reasoning effort while holding information available at each formation date, prompts, output formats, and portfolio construction fixed. Our evaluation covers a full year of U.S. equities under three input conditions: numerical, identifiable news, and masked news. It includes more than 800,000 asset predictions and repeated model generations. Across all three model families, additional reasoning does not produce a reliable improvement in net portfolio returns. For DeepSeek, where we examine the full progression from no reasoning to maximum reasoning, performance is nonmonotonic. Repeated generations also produce unstable treatment effects and portfolio selections, even when overall scores remain similar. These findings show that additional reasoning can change financial decisions without reliably improving their economic value, motivating validation for each task before deployment.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30705",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30705"
+      }
+    ],
+    "relevance_score": 0.42041996195560616,
+    "max_similarity": 0.14052300865995573
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30270",
+    "title": "HybridInfer: Thermal-Aware Reinforcement-Learning Tier Routing for On-Device, Edge, and Cloud LLM Inference",
+    "authors": [
+      "Simran Koul"
+    ],
+    "abstract": "arXiv:2609.30270v1 Announce Type: new \nAbstract: On-device inference with small language models keeps user data local, works offline, and incurs no per-query cost, so the on-device tier is preferred when it is adequate. It is thermally constrained, however, and I find the constraint is sharper than a slowdown: on a flagship Snapdragon device, sustained on-device generation destabilizes the GPU inference runtime, which crashes or silently wedges after a few consecutive queries. The failure lies in the current toolchain (OpenCL kernel compilation and long-prompt prefill on the mobile GPU), recurs even when the device is cool, and is worst for long generations. Multi-tier routers across on-device, edge, and cloud models can relieve this pressure, but existing routers are thermal-blind and typically evaluated in simulation or on non-mobile hardware. I present HybridInfer, a thermal-aware reinforcement-learning router for a three-tier hierarchy (on-device Llama 3.2 3B, edge Llama 3.1 8B with retrieval, cloud GPT-4o) that uses the phone's thermal headroom and a query-complexity estimate as state and selects a tier by an offline-trained Q-learning policy. Its reward trades quality against latency, cost, and a thermal penalty, plus a locality bonus crediting on-device execution. I show this bonus is a precondition for thermal-aware routing: without it the optimal policy offloads every query. On a real Android benchmark of 210 prompts, the learned router attains significantly higher quality than two hand-tuned heuristics (paired Wilcoxon, p < 0.02) at the lowest cost of any adaptive condition. Always-on-device conditions match per-query quality on servable queries but are three to six times slower and fail on long queries, so routing wins on latency, reliability, and coverage rather than quality. To my knowledge this is the first use of on-device thermal headroom to select among LLM inference tiers of differing capability on real hardware.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30270",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30270"
+      }
+    ],
+    "relevance_score": 0.41315770006630786,
+    "max_similarity": 0.13344609213849046
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30662",
+    "title": "LLM Parkinsonism: Executive-Control Failure, Token-Inefficient Persistence, and an Uncertainty-Aware Global Executive Control Architecture for Autonomous Language-Model Agents",
+    "authors": [
+      "Dongsheng Xiao, Zeyuan Wang, Xuzhe Xia, Bo Zhao, Yankai Cao"
+    ],
+    "abstract": "arXiv:2609.30662v1 Announce Type: new \nAbstract: Large language models (LLMs) can plan, use tools, write code, and execute long-horizon workflows, yet strong local competence does not guarantee project-level executive control. Agents may continue acting after the original objective is satisfied, producing low-value refinements, repeated verification, and repairs to self-created complexity. We use LLM Parkinsonism as a narrowly defined, non-clinical metaphor for this pattern of persistent action despite diminishing task-level value. We argue that the problem is not explained by autoregressive next-token prediction alone, but more directly by concentrating proposal generation, scope interpretation, progress assessment, and stopping authority within the same self-conditioned loop. We therefore introduce Global Executive Control (GEC) v0.2, an uncertainty-aware governance architecture that separates action generation from project-level control. In a 24,000-episode matched-candidate benchmark under a common 40,000-token ceiling, a first-candidate baseline achieved 67.42% hard-goal success, a candidate-set local control achieved 96.53%, and GEC achieved 96.57%. The candidate-set control shows that access to multiple candidate actions explains most of the success gain; relative to that control, GEC preserved success while reducing mean token use from 19,782 to 12,574 (36.4%) and restricted mean tokens to completion at the 40,000-token ceiling from 16,136 to 13,114 (18.7%), while eliminating measured pre-completion drift and sharply reducing gross complexity. Governance-overhead sensitivity remained favorable through an additional 500 synthetic governance tokens per cycle. These mechanistic simulations support explicit governance of scope, evidence, resource use, and stopping, while live-model validation remains necessary.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30662",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30662"
+      }
+    ],
+    "relevance_score": 0.41019252293689046,
+    "max_similarity": 0.1290936992602033
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30360",
+    "title": "Cost-Aware Best-LLM Identification using Dueling Feedback",
+    "authors": [
+      "Sarvesh Gharat, Nikhil Karamchandani, Jayakrishnan Nair"
+    ],
+    "abstract": "arXiv:2609.30360v1 Announce Type: new \nAbstract: Inspired by the problem of identifying the best model from a collection of large language models (LLMs) with heterogeneous querying costs, we formulate and analyse a variant of the multi-armed bandit (MAB) with (i) dueling feedback, where pairwise comparisons between model responses provide robust preference signals, and (ii) heterogeneous sampling costs, reflecting the differing costs of querying different LLMs. Assuming the existence of a Condorcet winner, a condition we empirically validate across multiple real-world datasets, we propose a Track-and-Stop style algorithm for best-arm identification with prescribed confidence. We prove that the algorithm almost surely achieves the asymptotically optimal cost as the error tends to zero. Finally, we extensively evaluate our approach on both synthetic and real-world instances, demonstrating consistent improvements over classical cost-unaware algorithms and their cost-aware extensions.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30360",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30360"
+      }
+    ],
+    "relevance_score": 0.403961216370994,
+    "max_similarity": 0.12225742484736976
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30563",
+    "title": "Thinking Less to Simulate Better: Intuitive Prompting Improves LLM Agents Simulating Individual Social Media Reactions, Including Unfamiliar Content",
+    "authors": [
+      "Ljubisa Bojic, Tijana Stanic, Joerg Matthes, Agariadne Dwinggo Samala, Bojana Dinic, Jue Wang"
+    ],
+    "abstract": "arXiv:2609.30563v1 Announce Type: new \nAbstract: Platform policies are increasingly tested on artificial users, making agent fidelity important. Yet convincing fake profiles could also manipulate perceived public opinion before elections. Validation has concentrated on agreement with human behaviour and has paid little attention to whether an agent behaves in line with the profile it was given. The present study profiled eight Serbian participants through a questionnaire, a deep interview, and a written self-presentation, recorded their reactions to sixty-eight social media posts, and asked four language models to predict those reactions under five prompt conditions varying profile content and instruction style. Attitudinal content improved prediction over demographic backstories by a wide margin. Agents matched their stated profiles more closely than participants matched their own survey answers, and consistency proved unrelated to fidelity once profile information was present. Instructing models to respond intuitively and immediately rather than analytically gave the highest fidelity of any condition and cut the compression of individual differences from seven times the human level to three. The advantage held on posts about topics the questionnaire never raised, where that condition reached the highest fidelity of any setup and beat a crowd baseline by a wide margin, which suggests that agents prompted this way could serve as general-purpose simulated users rather than specialists on the topics they were profiled for. Results may bear implications for the development of language models, because intuition-based setups appear better suited to some tasks than reasoning-based ones.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30563",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30563"
+      }
+    ],
+    "relevance_score": 0.4012511682320026,
+    "max_similarity": 0.11845923026920654
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30352",
+    "title": "Strategic Self-Consistency",
+    "authors": [
+      "Tori Qiu, Ander Artola Velasco, Manuel Gomez-Rodriguez"
+    ],
+    "abstract": "arXiv:2609.30352v1 Announce Type: new \nAbstract: Self-consistency has become a popular technique for enhancing the reasoning abilities of large language models by generating multiple reasoning paths and selecting the final answer through a majority vote. However, because model providers typically charge users in proportion to the number of reasoning paths generated, they have a financial incentive to artificially increase the path count. In this work, we show that an unfaithful provider can exploit this incentive using a simple, efficient algorithm while avoiding detection by an auditor: by generating and strategically reordering additional reasoning paths, the algorithm makes every path appear necessary to reach the majority. To validate our algorithm, we conduct experiments with multiple instruct models from the Llama and Qwen families, as well as reasoning models distilled from DeepSeek-R1, on benchmark datasets spanning mathematics, science, and question answering. Our results suggest that the distribution of additional reasoning paths generated by our algorithm is heavy-tailed and that substantial capacity to overcharge remains even under the best possible audit designed to keep the false-positive rate below $\\alpha = 0.1$.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30352",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30352"
+      }
+    ],
+    "relevance_score": 0.3995979291888871,
+    "max_similarity": 0.11584173809642723
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30383",
+    "title": "Stealth Apart, Harm Together: Skill Cascading Attacks on Skill-Based Agent Systems",
+    "authors": [
+      "Zihao Zhu, Siwei Lyu, Adel Bibi, Baoyuan Wu"
+    ],
+    "abstract": "arXiv:2609.30383v1 Announce Type: new \nAbstract: A skill is a modular package of natural-language instructions, executable scripts, and reference resources that an agent can load at runtime to extend its capabilities for a specific task. Skill-based agent systems therefore enable flexible reuse of third-party capabilities, but the openness of this skill ecosystem also opens up a new attack surface. Prior work has focused on vulnerabilities within individual skills, but little attention has been paid to risks that arise from interactions across skills. In this paper, we introduce skill cascading attacks, a threat paradigm in which a malicious objective is distributed across multiple skills so that each modification looks benign in isolation, yet their combined execution is harmful. For instance, in a prescription-review pipeline, the first skill weakens signals of recently discontinued medications in the extracted history, the second downgrades the severity of any drug interaction tied to them, and the third suppresses the resulting low-priority alert in the final summary, so that a severe drug-interaction warning silently disappears before reaching the physician. To systematically study this safety blind spot, we develop SkillCascade, an automated multi-agent red-teaming framework, and release SkillCascade-Bench, a benchmark of 213 validated cascading test cases across multiple agent systems and domains. Across representative agents (e.g., OpenClaw, Claude Code, Codex) and LLM backbones, cascaded interactions reliably induce harmful behaviors while evading existing per-skill scanners and runtime monitors. Our findings highlight a gap between component-level integrity and system-level safety, and call for defenses that reason over cross-skill interactions rather than individual skills in isolation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30383",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30383"
+      }
+    ],
+    "relevance_score": 0.3953013423362645,
+    "max_similarity": 0.17529823217782256
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30484",
+    "title": "Do LLMs Understand Context? A Knowledge Graph-Based Evaluation Framework",
+    "authors": [
+      "Subavarshana Arumugam, Mamta Nallaretnam, Kithuni Wickramasinghe, Chamath Gunapala, Pragatheeswaran Vipulanandan, Kamal Premaratne, Uthayasanker Thayasivam"
+    ],
+    "abstract": "arXiv:2609.30484v1 Announce Type: new \nAbstract: While large language models (LLMs) have achieved remarkable linguistic capabilities, a profound question lingers at their core: do these models truly comprehend context or simply excel at pattern matching on an unprecedented scale? Contextual understanding in LLMs refers to the ability to correctly extract relevant information from a given context, integrate it into a coherent internal representation, and reason over it to produce factually consistent and contextually grounded responses. However, traditional methods such as BiLingual Evaluation Understudy (BLEU) and perplexity simply measure surface-level performance. This reveals a critical gap in question answering (QA), where responses must be contextually grounded rather than simply being memorized associations. To fill this void, we propose a novel knowledge graph (KG) based evaluation framework for LLM contextual understanding in QA. Central to this is Semantic Structural Similarity for KGs (S3KG), a hybrid similarity measure combining structural and semantic signals into a single score. In addition, a diagnostic analysis framework is developed to identify and categorize reasoning errors at the triplet level, enabling fine-grained analysis of model failures. Together, across nine benchmarks, S3KG achieves F1 gains of up to $+7.6$ points over the strongest baseline and AUROC up to $0.973$.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30484",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30484"
+      }
+    ],
+    "relevance_score": 0.39513209575869646,
+    "max_similarity": 0.16860166608383328
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30576",
+    "title": "T-RoPE: Time-Aware Rotary Position Embedding for Sequential Recommendation",
+    "authors": [
+      "Yang Liu, Noel Loo, Ali Khanafer, Shuying Sun, Akshay Soni, Zhong Wu, Linjun Yang"
+    ],
+    "abstract": "arXiv:2609.30576v1 Announce Type: new \nAbstract: Large-scale recommenders increasingly adopt the sequential generative recipe behind large language models, bringing the Transformer into recommendation along with design choices made for text, including Rotary Position Embedding (RoPE). In language models, RoPE encodes token indices for relative position reasoning, but in recommendation, an interaction index records only event order, saying nothing about elapsed time, behavioral cycles across scales, or calendar phase. We revisit this choice and propose T-RoPE, a time-aware RoPE for sequential generative recommendation that replaces index-only rotation with timestamp-based angles, learnable temporal coefficients, multiscale frequency banks, shifted query alignment, and non-stationary key rotation. We prove that standard RoPE, even on timestamps, remains time-translation invariant and cannot distinguish seasonal contexts, and that T-RoPE breaks this invariance while preserving the RoPE interface. Across five public benchmarks, T-RoPE achieves the best result on every metric on every dataset, improving over the strongest baseline by 78--130\\% in HR@10 on the sparse PixelRec data and 8--12\\% across metrics on Amazon Books. On an industrial-scale e-commerce dataset with more than 6B interactions, it improves every metric over the HSTU + Time RAB backbone by 13--82\\%, with ablations attributing the largest gains to multiscale frequencies ($+56\\%$ NDCG@50) and non-stationary keys ($+4\\%$). An online A/B test in the Shop app yields positive lifts in conversion rate ($+0.33\\%$) and order count ($+0.63\\%$). We also provide forward and backward algorithms whose added cost is linear in sequence length and head dimension, keeping time-aware RoPE practical for large generative recommenders.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30576",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30576"
+      }
+    ],
+    "relevance_score": 0.382403417667608,
+    "max_similarity": 0.15755093527117975
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.30290",
+    "title": "Auditing and Repairing LLM-as-Judge Failures in a Production Text-to-SQL Pipeline",
+    "authors": [
+      "Haowei Liu, Hsin-Tai Wu, Yi Fang"
+    ],
+    "abstract": "arXiv:2609.30290v1 Announce Type: new \nAbstract: Production text-to-SQL pipelines often end with an LLM-as-judge whose agreement with human annotators has never actually been measured. When we checked ours, the deployed gpt-4o-mini judge agreed with two-author gold at only Cohen's kappa = 0.04 on a disagreement-enriched set and 0.42 on a uniform-random spot-check, over-flagging 77.1% of the human-FAITHFUL cases in the enriched set. Most of its over-flags trace back to a single mechanism we call GRADE-HALLUCINATION. A self-hosted Qwen3.6-27B replacement (kappa = 0.72) lands in the same range as Claude Opus 4.7 (kappa = 0.71); the head-to-head is underpowered at n = 96, but for the deployment decision that hardly matters, since Qwen costs roughly 1/300 as much per call. Ensembling does not help for free. Pairing the weak judge with a stronger one degrades agreement, whereas three strong judges under unanimity routing reach kappa = 0.79 at 89.7% auto-coverage. Applied out-of-domain, the same audit recipe flags 25.5% of BIRD-financial's expert-authored gold SQLs as candidate gold-SQL issues under our annotation protocol. Code and pre-registration are at https://github.com/JamesL404/synca-audit.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "updated": "Mon, 28 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.30290",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.30290"
+      }
+    ],
+    "relevance_score": 0.30492816714409376,
+    "max_similarity": 0.12632940208975568
+  }
+]
