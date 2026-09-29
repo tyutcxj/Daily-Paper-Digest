@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.31874",
+    "title": "COUNTERMEM: World-Model Verified Counter-Factual Memory for Language Agents",
+    "authors": [
+      "Hongji Pu, Ruixiang Tang, Yongfeng Zhang"
+    ],
+    "abstract": "arXiv:2609.31874v1 Announce Type: new \nAbstract: Existing agent memory frameworks mainly create memory through an agent's interaction with the factual world, e.g., remembering feedback from actions taken to improve performance on future tasks. However, these frameworks seldom ask the \"what if\" question during memory construction: what if a different action had been taken, would the feedback have changed, and how could this feedback become useful memory? Obtaining such feedback directly in an active environment can be expensive and can alter the state needed for comparison. In this work, we introduce COUNTERMEM, a reinforcement-learning framework for constructing and using verified counterfactual memory across tasks. After a failed action, COUNTERMEM evaluates local alternatives from a copy or reset of the original state using executable world models, such as tests, proof checkers, and solvers. It stores improvements with the original and corrected actions, checked outcomes, and conditions for reuse. A learned memory-use policy selects a retrieved record or skips memory to balance task success and interaction cost, while the base LLM remains fixed. Both memory and policy are frozen during held-out evaluation. We evaluate COUNTERMEM on 12 benchmark settings across six domains. With gpt-oss-120b, COUNTERMEM improves both ReAct and Reflexion on all 12 benchmarks across six domains, averaging a gain of 12.6 percentage points over their unaugmented versions. In the four-domain comparison across two backbones, task-run tokens decrease by 7.7-42.0%, excluding offline selector-training costs. Further analyses show that removing verification or persistent storage weakens the gains, while applying verified corrections to unsuitable decisions can reverse them. Code will be released upon acceptance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31874",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31874"
+      }
+    ],
+    "relevance_score": 0.5431576614686859,
+    "max_similarity": 0.29473768904997827
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31632",
+    "title": "EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis",
+    "authors": [
+      "Huyu Wu, Weining Weng, Yuchen Liu, Yiqiang Chen, Yang Gu"
+    ],
+    "abstract": "arXiv:2609.31632v1 Announce Type: new \nAbstract: Electroencephalography (EEG) analysis is evolving from short-segment classification toward long-horizon interpretation that demands iterative evidence accumulation, multi-step reasoning, and coordinated use of specialized signal-processing tools. Although large language models (LLMs) have recently shown promise as autonomous agents for EEG analysis, existing EEG agentic evaluations remain fragmented, covering limited tasks over narrow temporal horizons with inconsistent protocols, and providing no comprehensive assessment of agents' reasoning, tool-use, and workflow construction capabilities. To address this gap, we propose \\textbf{EEGAgentBench}, a unified benchmark for systematically evaluating LLM agents on short- and long-horizon EEG analysis. EEGAgentBench spans six representative EEG applications ranging from knowledge question answering to sleep staging. It encompasses signal durations from 2 seconds to nearly 23 hours, with prediction targets ranging from class labels to event intervals and epoch-level sequences. This design supports unified evaluation across knowledge reasoning, short-horizon interpretation, long-horizon event detection, and sequential understanding. The benchmark further provides 10 deterministic EEG analysis tools that expose only task-relevant signal measurements. Agents must therefore select tools autonomously, accumulate evidence iteratively, and construct multi-step workflows. For evaluation, we benchmark 29 frontier LLMs from 15 model families. Results demonstrate that EEGAgentBench effectively distinguishes agent capabilities beyond model scale and inference cost, while revealing substantial limitations of current LLM agents in long-horizon EEG analysis, particularly in sustained evidence accumulation and multi-step reasoning.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31632",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31632"
+      }
+    ],
+    "relevance_score": 0.500747551166778,
+    "max_similarity": 0.23819122976333534
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31651",
+    "title": "PalmLeaf-VQA: A Multi-Script Visual Question Answering Benchmark for Historical Palm-Leaf Manuscript Understanding Across Diverse Regions",
+    "authors": [
+      "Nimol Thuon, Jun Du, Panhapin Theang"
+    ],
+    "abstract": "arXiv:2609.31651v1 Announce Type: new \nAbstract: Historical manuscripts remain largely absent from modern vision-language benchmarks, leaving open how well multimodal large language models (MLLMs) handle culturally diverse, degraded, and non-Latin document images. We introduce \\textbf{PalmLeaf-VQA}, a multi-script visual question answering benchmark for historical palm-leaf manuscript understanding across South and Southeast Asian traditions. PalmLeaf-VQA contains \\textbf{923 curated manuscript images} and \\textbf{7,384 question--answer pairs} from eight collection groups: Balinese, Grantha, Jathakam, Kambaramayanam, Kannada, Khmer, Sundanese, and Tamil. Unlike recognition-oriented resources, the benchmark targets manuscript-aware visual reasoning over preservation-relevant cues, including physical condition, line structure, material and coating, binding holes, margins, symbols, drawings, and localized visual artifacts. We evaluate recent proprietary and open-weight MLLMs under open-answer and constrained-answer prompting and provide fine-grained analysis across collections, question categories, and task types. The strongest evaluated model reaches only \\textbf{58.00\\% exact-match accuracy} on the held-out test split, revealing substantial limitations in current MLLMs for rare-script, degraded-layout, and preservation-oriented document understanding. PalmLeaf-VQA provides a standardized benchmark for advancing culturally grounded and layout-aware multimodal document analysis.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31651",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31651"
+      }
+    ],
+    "relevance_score": 0.49252438768175805,
+    "max_similarity": 0.22685499035648507
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31906",
+    "title": "EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks",
+    "authors": [
+      "Mukul Singh, Mansi Uniyal, Devin Devlin, Wen Xie, Big Thadawasin, Ritam Dutt, Vivian Lai, Hyeonsu B. Kang"
+    ],
+    "abstract": "arXiv:2609.31906v1 Announce Type: new \nAbstract: Enterprise email agents must combine information retrieval, structured state changes, temporal reasoning, and multi-step coordination. Recent agent benchmarks include productivity tasks, but few center on typed email workflows in a self-contained environment. We introduce EmailBench, a benchmark of 206 email and productivity scenarios across 16 task categories. The benchmark couples a typed email API specification with provider-neutral naming, a deterministic synthetic Enron-inspired corpus, and a scenario suite whose topic selection was informed by aggregate task-intent telemetry from an interactive prototype. Its hybrid evaluation protocol combines 258 executable static assertions with 211 LLM rubrics. We evaluate eight LM configurations on a fixed single-user corpus. The best-performing configuration passes only 33.5% of scenarios despite 99.7% of its tool calls completing without an observed API failure, with pass rates varying substantially across task categories. This gap shows that valid tool execution is not equivalent to task completion. EmailBench provides a self-contained environment for end-to-end email-agent evaluation, with broader tool coverage, multi-persona testing, and repeated-run evaluation as future work areas.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31906",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31906"
+      }
+    ],
+    "relevance_score": 0.492378375956379,
+    "max_similarity": 0.23017356930157518
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31790",
+    "title": "CP-Agent: A Harness-Engineered Agent for Crystal Plasticity Simulation Workflows",
+    "authors": [
+      "Samuel Onimpa Alfred, Abhishek Kumar, Veera Sundararaghavan"
+    ],
+    "abstract": "arXiv:2609.31790v1 Announce Type: new \nAbstract: Crystal plasticity (CP) simulations predict the mechanical behavior of polycrystalline metals, yet their routine use is hindered by the manual effort of configuring heterogeneous tools, orchestrating multi-step data pipelines, and calibrating constitutive parameters against experiments. These bottlenecks impede productivity in systematic parameter studies, motivating interest in automated workflows. This study presents CP-Agent, a harness-engineered LLM-based agent that autonomously executes complete CP modeling workflows from natural-language tasks. Operating under the ReAct paradigm, the agent reasons about tool selection and sequencing while delegating numerical search to established optimizers. The harness comprises a minimal system prompt, typed tool definitions, a dispatcher, and a safety-bounded iteration loop, encoding domain knowledge through tool schemas rather than hard-coded logic. CP-Agent is demonstrated on four case studies: calibrating four slip parameters of additively manufactured stainless steel 316L against tensile data; validating the workflow against published copper benchmarks, reproducing stress-strain and texture evolution; recovering the initial crystallographic texture of copper, where the agent correctly identifies a diffuse initial texture; and reproducing the multi-pass rolling texture evolution of a Mg-Zn-Ca alloy, where the agent chains five deformation passes and recovers the experimentally observed weakened, split basal texture. In all cases, the agent inferred the correct execution sequence from the task statement, robustly across repeated runs, and delivered physically interpretable results. This work establishes harness engineering as a systematic approach to automating CP modeling workflows while maintaining physical interpretability and auditability through visible reasoning traces.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31790",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31790"
+      }
+    ],
+    "relevance_score": 0.4844730980877884,
+    "max_similarity": 0.22197043611420905
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31990",
+    "title": "CSI-Agent: LLM-Assisted Few-Shot Adaptation for Cross-Domain Wi-Fi CSI Sensing",
+    "authors": [
+      "Tianya Zhao, Chuan Liu, Xuyu Wang"
+    ],
+    "abstract": "arXiv:2609.31990v1 Announce Type: new \nAbstract: Wi-Fi channel state information (CSI) has enabled device-free sensing applications such as human activity recognition. However, CSI sensing models remain brittle in cross-domain deployment, where changes in users or environments can produce incorrect predictions. Existing solutions usually treat this problem as an offline model-design problem, by pretraining a stronger representation or applying one fixed adaptation method to the entire target domain. In practice, labeled target data are scarce and different classes may fail in different ways under the same domain shift. To address this, we propose CSI-Agent, an evidence-seeking LLM agent that reformulates cross-domain CSI adaptation as a deployment-time decision-making problem. Rather than processing raw CSI or making sample-level predictions, CSI-Agent summarizes target-domain behavior into sensing-grounded class-level evidence. It establishes a strong target-adaptive default from complementary CSI views and uses an LLM planner to determine whether each class should retain the default or invoke a specialized action. Deterministic verification and bounded execution further reduce unreliable interventions. We evaluate CSI-Agent on four public datasets using five cross-domain splits covering device, user, environment, and compositional shifts. Under 1-shot adaptation, CSI-Agent achieves the best target-domain performance across all splits and improves the average Macro-F1 by about 16\\% compared to the strongest baseline method.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31990",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31990"
+      }
+    ],
+    "relevance_score": 0.47080336186124816,
+    "max_similarity": 0.20276553681788903
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31661",
+    "title": "ForensicZoom: Adaptive Visual Inspection with Multimodal LLMs for Industrial-Grade Face Forgery Detection",
+    "authors": [
+      "Hang Zhou, Yiming Tang, Kun Yu, Qian Zhu, Minghao Li, Weigao Wen"
+    ],
+    "abstract": "arXiv:2609.31661v1 Announce Type: new \nAbstract: Reliable face forgery detection is critical to the security of online identity verification systems, where missed attacks compromise security and excessive false positives disrupt legitimate users. Specialized forensic detectors achieve strong detection performance but provide limited interpretability, while multimodal large language models (MLLMs) offer strong semantic understanding and interpretable reasoning yet remain substantially weaker for face forgery detection. We argue that a key limitation lies in how visual evidence is acquired: subtle forensic artifacts may be poorly represented at standard resolution, while uniformly processing all cases at higher resolution is computationally inefficient. We therefore introduce ForensicZoom, an industrial-grade MLLM framework for adaptive visual inspection. ForensicZoom first equips a general-purpose MLLM with forensic-aware visual representations and aligns the language model with these features. Its central mechanism, NEED_ZOOM, enables the model to autonomously request magnified views of suspicious regions when the initial evidence is insufficient, turning fixed-pass classification into adaptive multi-round forensic reasoning. The zoom behavior is learned through reward shaping that balances detection accuracy with unnecessary visual inspection, concentrating additional computation on difficult cases. A final attribution optimization stage improves natural-language forensic reports while preserving detection performance. On large-scale industrial identity verification data, ForensicZoom achieves over 97% TPR at 0.1% FPR, substantially outperforming both specialized detectors and existing MLLM-based methods while producing actionable forensic attributions. These results demonstrate that ForensicZoom can provide an effective path toward accurate, interpretable, and scalable MLLM-based face forgery detection.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31661",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31661"
+      }
+    ],
+    "relevance_score": 0.46866798289675893,
+    "max_similarity": 0.1967305407742998
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31908",
+    "title": "Improving Medical Calculation of LLMs with Embedded Coding",
+    "authors": [
+      "Tianshi Ming, Yingying Zhang, Xian Wu"
+    ],
+    "abstract": "arXiv:2609.31908v1 Announce Type: new \nAbstract: Large Language Models (LLMs) perform well on medical examinations and question-answering benchmarks, but remain unreliable on medical calculation tasks that require exact numerical outputs. These calculations support high-stakes decisions such as medication dosing, organ-function assessment, and prognostic scoring, for which even small errors can have serious clinical consequences. We introduce MedCode, a framework that improves medical calculation by training LLMs to generate embedded executable code. Given a clinical context, the model identifies the relevant calculator, extracts its input variables, and produces a script that delegates arithmetic operations to a deterministic interpreter. Executing the script returns the calculated value together with an explanation and the appropriate unit. We construct supervised fine-tuning (SFT) and preference datasets from the MedCalc benchmark and additionally curate a dataset for calculation tasks in Intensive Care Unit (ICU) scenarios. We further propose weighted Direct Preference Optimization (wDPO), which adaptively emphasizes preference pairs that are difficult for the model to distinguish. Experiments with LLaMA3-8B, Qwen2.5-7B, and Mistral-7B show absolute accuracy gains of 20--30 percentage points, demonstrating the effectiveness of embedded code generation for medical calculation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31908",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31908"
+      }
+    ],
+    "relevance_score": 0.46297065650398805,
+    "max_similarity": 0.1932689507976516
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.32000",
+    "title": "SenseAgent: An LLM Agent for Adaptive Cross-Domain IMU Sensing",
+    "authors": [
+      "Tianya Zhao, Chuan Liu, Xuyu Wang"
+    ],
+    "abstract": "arXiv:2609.32000v1 Announce Type: new \nAbstract: Deep learning has improved inertial measurement unit (IMU) sensing for mobile and wearable applications. However, an IMU model trained in one domain often becomes unreliable when it is used with a new user, device, or body position. Existing methods usually treat this problem as a static model-design task: they pretrain a stronger representation, add data augmentation, or select one adaptation method before deployment. In practice, the target domain is only gradually observed, labels are scarce, and different domain shifts require different sensing actions. This paper presents SenseAgent, an LLM-guided sensing agent for cross-domain IMU activity recognition. Instead of asking an LLM to classify raw IMU signals, SenseAgent uses the LLM as a runtime planner over sensing tools, source-domain experience memory, online target memory, and verifiers. The agent builds a label-free diagnosis report from the target stream and uses it to decide whether to keep raw inference or invoke specialized tools, including gravity-aware sensing, prototype transfer, and style normalization. Verifiers check source calibration, target-memory reliability, and no-harm criteria before accepting high-risk tool decisions. SenseAgent also supports scarce feedback without retraining the backbone or replacing the label-free route. This design converts cross-domain IMU sensing from a fixed inference pipeline into a closed-loop sensing process that diagnoses target shifts, selects suitable sensing actions, and rejects unsafe adaptations. We evaluate SenseAgent across multiple IMU datasets and deployment shifts. Results show that its verified route selection improves cross-domain sensing, especially under harder placement and compound shifts, and further benefits from limited user feedback.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.32000",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.32000"
+      }
+    ],
+    "relevance_score": 0.4599054222977804,
+    "max_similarity": 0.1886112451871732
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31644",
+    "title": "MaD-RL: Matching Distributions for Calibrating LLMs with Reinforcement Learning",
+    "authors": [
+      "Sourabh Kulkarni, Ksheeraj Sai Vepuri, Basar Demir, Jason Bohrer, Emily Shen, Jianfa Chen, Nan Jiang, Ankit Jain, Harihar Subramanyam, Mannat Singh, Chirag Nagpal"
+    ],
+    "abstract": "arXiv:2609.31644v1 Announce Type: new \nAbstract: Reinforcement learning (RL) is widely used in language-model post-training to maximize rewards assigned to individual model outputs, such as scores from binary verifiers or reward models trained on human feedback. However, applications such as synthetic-data generation, fairness-related constraint satisfaction, and policy exploration require controlling the distribution of outputs across model generations rather than only maximizing expected reward. We propose a general RL-based framework for \\textit{Distribution Matching} allowing matching the distribution of a latent categorical attribute of model outputs to a specified target distribution. Empirically, we demonstrate that dominant post-training recipes such as Group Relative Policy Optimization (GRPO) reduce output diversity by concentrating policy probability towards a single mode. Entropy regularization and sampling temperature can improve the spread of the distribution but have constrained effectiveness, limited to apply only in token space and toward uniform distributions. We show that prior work in this area is a specific case of Distribution Matching involving the $L_2$ divergence. We then propose reward functions for other divergences such as KL and Jensen-Shannon and motivate them with theoretical justification. Finally, we demonstrate the effectiveness of our approach on a set of experiments involving mathematical reasoning and programming.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31644",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31644"
+      }
+    ],
+    "relevance_score": 0.4577277004621169,
+    "max_similarity": 0.1880678619958371
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31648",
+    "title": "Energy Vision--Language--Action: A Controlled Multimodal Benchmark for Intent-Conditioned Residential Energy Management",
+    "authors": [
+      "Lyes Saad Saoud, Oualid Doukhi, Ehsan Reihani, Saeed Sepasi, Deok Jin Lee, Moussa Ayyash, Reza Ghorbani"
+    ],
+    "abstract": "arXiv:2609.31648v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models are studied mainly in robotics, where visual observations and language instructions are mapped to physical actions. This paper introduces Energy Vision-Language-Action (EVLA), a controlled multimodal benchmark for intent-conditioned residential energy management. EVLA frames battery scheduling as a multimodal trajectory-prediction problem in which an RGB energy-field representation, a numerical operating state, and a natural-language objective are mapped to a 16-step battery-action trajectory generated by a finite-horizon sampling-based reference generator. Source windows are derived from public residential electrical-load data, while electricity price, battery state of charge, indoor temperature, and time of day are generated benchmark metadata. A hidden operating regime is encoded only through energy-field texture, enabling paired visual changes while the explicit numerical state is fixed. Crossing 439,203 retained base windows with three hidden regimes and five language objectives yields 6,588,045 multimodal instances. An initial study evaluates 36 configurations over three training seeds using fixed subsets of 5,000 training, 500 validation, and 500 test instances. In the MobileNet-family comparison, removing processed language increases trajectory mean-squared error from 0.3856 +/- 0.0039 to 0.8628 +/- 0.0001, whereas removing vision yields 0.3843 +/- 0.0013, comparable to the full model. The results show strong asymmetry in modality use: the processed-language pathway is strongly associated with prediction quality, while the current RGB pathway provides no aggregate error advantage. These results characterize the fixed pilot subset and executed protocol rather than full-benchmark training. EVLA provides a controlled setting for studying how semantic intent and latent context influence residential energy-action prediction.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31648",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31648"
+      }
+    ],
+    "relevance_score": 0.44597414325166607,
+    "max_similarity": 0.17183387337486355
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31963",
+    "title": "Symbolic Guidance for LLM Agents in Distributed Multiagent Coordination",
+    "authors": [
+      "Ben Rachmut, Ning Zhang, Yevgeniy Vorobeychik, William Yeoh"
+    ],
+    "abstract": "arXiv:2609.31963v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly deployed as autonomous agents in multi-agent systems, yet their ability to reliably execute distributed coordination protocols remains poorly understood. While AgentsNet, a benchmark framework for distributed coordination among LLM agents, enables such coordination, granting full reasoning autonomy often leads to inconsistent or degraded performance in complex domains.\n  We hypothesize that coordination can be improved by regulating agent autonomy through symbolic guidance derived from established algorithms. To investigate this, we introduce the \\emph{Symbolic Guidance Taxonomy (SGT)}, which characterizes a spectrum of autonomy ranging from open-ended natural language reasoning to fully prescribed algorithmic execution, with intermediate levels providing partial pseudocode guidance. Our results show that intermediate autonomy levels consistently outperform both unguided agents and fully prescriptive specifications. These findings identify autonomy regulation as a key design principle for LLM-based distributed coordination.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31963",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31963"
+      }
+    ],
+    "relevance_score": 0.4167531864267199,
+    "max_similarity": 0.13707198161870296
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31871",
+    "title": "IndustryLLM: Failure-Driven LLM Training for Industrial Procurement",
+    "authors": [
+      "Liang Ding (Project Lead), Zhiang Xu, Yuyang Sheng, Bin Chen, Songlin Bai, Run Zhu, Dingjun Wu, Hui Xu, Yandi Wang, Fulin Shi, Leilei Gan, Linlin Yu, Qihuang Zhong, Keqin Peng, Yalong Li, Chengfu Huo"
+    ],
+    "abstract": "arXiv:2609.31871v1 Announce Type: new \nAbstract: Industrial procurement requires language models to bridge informal buyer jargon, sparse marketplace attributes, and authoritative engineering standards under strict safety tolerances. We present IndustryLLM, an open-weight industrial language model trained from Qwen3.5-35B-A3B-Base (35B total parameters with ~3B activated per token, with the vision encoder frozen). Rather than relying on generic text scaling, we introduce a failure-driven adaptation recipe spanning continued pre-training (CPT) and supervised fine-tuning (SFT). CPT leverages a curated ~100B-token corpus integrating 5B tokens of national standards (e.g., GB/T) and technical archives, 10B tokens of de-identified real-world industrial transaction and inquiry records, and 60B tokens of general replay. To overcome register mismatch and factual brittleness, we systematically reconstruct an estimated 20B-token domain subset via multi-register rewriting across 10 genres and 8 writing styles, confidence-routed minimal factual editing, and error-targeted QA synthesis (resolving colloquial typos like '42-luo-mu' -> 42CrMo, expanding ambiguous codes like '16674' -> GB/T 16674, and clarifying conflicting dimensional specs). For downstream deployment, we formalize an evidence-gated constraint-evaluation interface enforcing three-valued logic where unverified product evidence remains unknown rather than satisfied. Offline evaluations demonstrate consistent gains on procurement-query structuring (+2.97 percentage points in exact match, 95% CI [2.11, 3.86] in No-Think mode), while randomized online A/B experiments in production yield substantial improvements (+4.25% GMV, +8.3% satisfied inquiries) alongside a latency reduction from 6-7 s to 1.5 s. Model weights and configs are released at https://huggingface.co/alibaba-multimodal-industrial-ai/IndustryLLM.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31871",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31871"
+      }
+    ],
+    "relevance_score": 0.4121146034826296,
+    "max_similarity": 0.12926484853904055
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31631",
+    "title": "OMP-MoE: Efficient Expert Pruning for Mixture-of-Experts LLMs via Orthogonal Matching Pursuit",
+    "authors": [
+      "Dezhi Li, Lujun Li, Qiyuan Zhu, Hao Gu, Bei Liu, Sirui Han, Yike Guo"
+    ],
+    "abstract": "arXiv:2609.31631v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) models enable efficient scaling of large language models but face critical deployment challenges due to massive memory requirements. Existing pruning methods either incur prohibitive search costs or neglect the dynamic interdependencies between experts. To address these challenges, we present OMP-MoE, a novel training-free compression framework for reducing expert redundancy in MoE-based LLMs. Based on observations of expert contribution patterns, we reformulate the pruning problem as a sparse signal reconstruction task solved through Orthogonal Matching Pursuit. Specifically, our method first treats individual expert contributions as dictionary atoms and selects experts that greedily minimize reconstruction error with linear computational complexity. Then, we optimize cross-layer expert allocation through a water-filling strategy that accounts for both reconstruction quality and routing stability. Finally, we introduce OMP-MoE{\\dag}, an adaptive inference mechanism that dynamically adjusts expert activation based on energy prediction. Comprehensive experiments on Qwen, DeepSeek-V2, GPT-OSS, and Mixtral MoE demonstrate consistent improvements over existing methods at 25-50% pruning ratios. For Qwen3-30B-A3B at 50% compression, we retain 93.3% of original performance, achieving 33$\\times$ faster search and 1.55$\\times$ inference speedup. Codes will be available after acceptance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31631",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31631"
+      }
+    ],
+    "relevance_score": 0.3877138602714555,
+    "max_similarity": 0.1648731426344043
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31645",
+    "title": "STAR: Adaptive Spatial-Temporal Normalization for Unified Microservice Incident Management",
+    "authors": [
+      "Xinhua Miao, Linyu Zhu, Bowei Yang, Zhengong Cai"
+    ],
+    "abstract": "arXiv:2609.31645v1 Announce Type: new \nAbstract: Automated incident management in large-scale microservice systems relies on learning robust representations from multimodal observability data, including metrics, logs, and traces. Although recent self-supervised frameworks enable unified modeling for anomaly detection (AD), failure triage (FT), and root cause localization (RCL), they often struggle with non-stationary temporal dynamics and heterogeneous service dependency structures. In this paper, we propose STAR, a Spatial-Temporal Adaptive Representation learning framework that explicitly addresses these challenges through adaptive normalizations. STAR introduces two tightly coupled mechanisms: Temporal Adaptive Normalization (TAN), which dynamically normalizes multivariate time series using multi-scale temporal context, and Spatial Adaptive Normalization (SAN), which performs structure-aware normalization over service dependency graphs. Unlike prior methods that treat normalization as static or task-agnostic, STAR formulates it as a learnable, context-conditioned transformation aligned with the intrinsic properties of microservice systems. The resulting adaptive representations are integrated into a unified self-supervised framework, enabling end-to-end unsupervised support for AD, FT, and RCL tasks. Extensive experiments on two real-world microservice benchmarks demonstrate that STAR consistently outperforms all state-of-the-art baselines, yielding significant and stable improvements across all three tasks. Our results highlight adaptive normalization as a principled and effective mechanism for robust multimodal representation learning in complex software systems.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31645",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31645"
+      }
+    ],
+    "relevance_score": 0.38711513619294546,
+    "max_similarity": 0.1603539310308672
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31784",
+    "title": "Witeness Overlap: Directional Provenance Inside Open-Weight Model Families",
+    "authors": [
+      "Siyuan Li, Haoxuan Zeng, Xin Luo, Fernando Jia, Florence Li, Zhengyang Geng, Zico Kolter, Tai Sing Lee, Tianqin Li"
+    ],
+    "abstract": "arXiv:2609.31784v1 Announce Type: new \nAbstract: Open-weight models are often released, fine-tuned, aligned, merged, and re-released, making provenance audits ask not only whether checkpoints are related, but also which checkpoint came first. Many existing model-provenance methods are designed for a base-known audit setting: given a victim or source model, they test whether a suspect model is related to it. Although these audits are framed as source-to-suspect tests, their underlying evidence is often symmetric, relying on representation similarity, weight similarity, behavioral fingerprints, or correlation statistics. Symmetric pairwise comparisons can detect relatedness, but they cannot by themselves orient relationship between checkpoints A and B. We therefore introduce a local geometric comparison: instead of comparing two checkpoints directly, we add a third same-family checkpoint as a witness and compare the geometry around each candidate endpoint. Direction is inferred by asking which candidate behaves more like a branching parent. Motivated by this idea, and by the empirically observed asymmetry between parent-anchored and child-anchored witness-overlap distributions, we propose Witness Overlap, a prompt-free, training-free white-box test for directional provenance. On 176 LLM checkpoints from 16 families, our one-witness test orients 95.3\\% of parent-child decisions using Frobenius cosine. We further evaluate root identification, sibling discrimination, generalizations to VLM and diffusion families, and chain-structured ordering. The signal is robust to weight noise and sparse pruning, with a proposed SVD weight reduction variant showing greater robustness than Frobenius cosine.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31784",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31784"
+      }
+    ],
+    "relevance_score": 0.3848982261207966,
+    "max_similarity": 0.09948970280954313
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31939",
+    "title": "BioDyad: Synchronize Biomedical Discovery and Machine Learning Engineering",
+    "authors": [
+      "Xingbo Du, Fadli Aulawi Al Ghiffari, Leonard Song, Loka Li, Duzhen Zhang, Zixiao Wang, Xiuying Chen, Le Song"
+    ],
+    "abstract": "arXiv:2609.31939v1 Announce Type: new \nAbstract: Agentic biomedical machine learning (ML) draws on complementary advances in biomedical evidence acquisition and executable program search. Existing systems connect aspects of these capabilities, but coordinating them throughout program search remains challenging. New evidence must guide candidate construction, execution outcomes must inform subsequent discovery and reuse, and validation demands must fit the search budget. We introduce BioDyad, which couples biomedical discovery and ML engineering through two hierarchies within Monte Carlo graph search. Its scientific hierarchy combines prior biomedical guidance with iterative discovery, then links biomedical plans to execution outcomes in memory for reuse across candidates. Its engineering hierarchy moves candidate programs from smoke execution, through train/validation evaluation, to full-data retraining. We evaluate BioDyad on the 76-task BioXArena benchmark under a two-hour per-task budget with three matched LLM backends. It achieves the highest penalized all-task score and task success rate among four agent methods and a one-shot baseline under each backend. These results support coordinating biomedical discovery and ML engineering to integrate external knowledge into executable programs across heterogeneous biomedical tasks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31939",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31939"
+      }
+    ],
+    "relevance_score": 0.37470458343011925,
+    "max_similarity": 0.2096466927151266
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31814",
+    "title": "DriveHierarchy: A Benchmark for Diagnosing VLM Driving Capabilities from Open-Loop Understanding to Closed-Loop Execution",
+    "authors": [
+      "Chengkai Xu, Jiaqi Liu, Yicheng Guo, Peng Hang, Jian Sun"
+    ],
+    "abstract": "arXiv:2609.31814v1 Announce Type: new \nAbstract: Evaluating VLM-based autonomous driving remains difficult because driving competence is composite, where a capable system must ground traffic participants and hazards, integrate context across views and time, reason about future evolution, and act appropriately under closed-loop interaction. Existing benchmarks usually assess either open-loop understanding or closed-loop driving but provide limited structure for explaining how these abilities are organized, how they relate, and how they may inform model diagnosis and improvement. We present \\textsc{DriveHierarchy}, a hierarchical benchmark that organizes VLM-based autonomous driving into four ranks, spanning perceptual grounding, contextual memory, mental reasoning, and closed-loop execution. To instantiate this hierarchy, we integrate multiple open-source autonomous-driving datasets into a unified open-loop benchmark with 76,798 question-answer pairs over 84,279 frames and develop a closed-loop simulation platform with interactive scenario construction on a real-world road network, from which 100 driving scenarios are curated for embodied evaluation. Experiments on 15 VLMs show that \\textsc{DriveHierarchy} captures structured but non-redundant capability variation, relates open-loop understanding to closed-loop driving, and provides a practical basis for diagnosis and benchmark-guided optimization. \\textsc{DriveHierarchy} therefore serves as a unified framework for evaluating and improving VLM-based autonomous driving systems. An anonymized project has been released on https://github.com/PerfectXu88/DriveHierarchy",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31814",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31814"
+      }
+    ],
+    "relevance_score": 0.3196485019775785,
+    "max_similarity": 0.14203176424548786
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31857",
+    "title": "LLM Judge Validation Under Sparse Overlap: From Inference to Design",
+    "authors": [
+      "Junxuan Li, Arko Mukherjee, Soumyabrata Pal"
+    ],
+    "abstract": "arXiv:2609.31857v1 Announce Type: new \nAbstract: Validating an LLM-as-a-judge requires estimating its agreement with humans, yet annotation budgets rarely allow every item to be multiply labeled. We prove that this \\emph{overlap sparsity} is the first-order determinant of wrong deployment decisions: at 5\\% pairwise overlap, wrong-decision rates reach 25\\% and the probability of selecting the wrong best judge among ten candidates is 65\\%. The two actionable levers are overlap \\emph{quantity} and \\emph{allocation}. For quantity, we derive a minimum-overlap formula showing $\\rho \\geq 0.25$ suffices for non-borderline judges while borderline cases remain fundamentally hard. For allocation, a zero-cost stratified scheme halves false-rejection rates relative to random sampling when strata are informative. We validate on 10 LLM judges across four evaluation matrices spanning visual assessment, causal reasoning, and summarization.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31857",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31857"
+      }
+    ],
+    "relevance_score": 0.3190430163455316,
+    "max_similarity": 0.08239583940907423
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31903",
+    "title": "Choir: An Open Protocol for Distributed Multi-Agent Autoformalization",
+    "authors": [
+      "Yidi Qi, Melanie Weber"
+    ],
+    "abstract": "arXiv:2609.31903v1 Announce Type: new \nAbstract: AI agents can now formalize entire textbooks and major theorems in proof assistants such as Lean, but current efforts are typically centralized: a single team runs all agents and bears the full computational cost. We introduce Choir, an open protocol for distributed formalization. Choir decomposes a project into tasks that can be completed by independent contributors, each running their own agent with their own LLM subscription, while coordinating entirely through the project's GitHub repository. To support open participation, every contribution is checked by a deterministic gate before merge. Choir supports Lean 4, Isabelle, and Rocq, and is open source and modular, allowing projects to replace individual components or extend the protocol.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "updated": "Tue, 29 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31903",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31903"
+      }
+    ],
+    "relevance_score": 0.2839136789982862,
+    "max_similarity": 0.16127804422582526
+  }
+]
