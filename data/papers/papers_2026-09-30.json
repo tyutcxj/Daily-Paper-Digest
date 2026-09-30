@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.36066",
+    "title": "AerialDojo-200K: A Large-Scale Benchmark Suite for Open-World Aerial Object-Goal Search",
+    "authors": [
+      "Tongtong Feng, Xin Wang, Haoran Hou, Ren Wang, Weiran Wang, Shaokai Zhu, Ziqi Jia, Hao Wang, Yu-Wei Zhan, Zongyuan Wu, Jinghao Cui, Wenwu Zhu"
+    ],
+    "abstract": "arXiv:2609.36066v1 Announce Type: new \nAbstract: Open-world aerial object-goal search is a foundational yet challenging task, requiring aerial agents to autonomously explore large-scale, unstructured three-dimensional environments and reach target objects specified by semantic descriptions or reference images, rather than following route-specific instructions. However, research in this task remains at a nascent stage and relies on small, environment-specific benchmarks with heterogeneous action spaces and data formats. These limitations hinder large-scale training and cross-benchmark evaluation, constraining the scalability and generalizability of aerial agents. To address this problem, we propose AerialDojo-200K, a large-scale benchmark suite for open-world aerial object-goal search, with 3 times as many scenes and 18.7 times as many task instances as the largest existing benchmark for this task. Specifically, we construct 42 simulation scenes spanning four scene families and 21 scene types, including 18 urban, 12 natural, six infrastructure, and six disaster scenes. To ensure data quality, 12 annotators spent two months manually annotating 109 landmarks, 2099 target objects, and 2099 object anchors across these scenes. We further construct 205,732 task instances, comprising over 100K semantic-goal and over 100K image-goal instances across Base, Standard, and Long-Horizon settings. Each task instance includes a collision-free reference trajectory and corresponding multi-view video recordings. We also develop a unified evaluation framework with a scene partition comprising 21 in-distribution scenes and 21 out-of-distribution scenes. Finally, our evaluation of five open-source and four closed-source multimodal large language models reveals that there is still a long way to go toward achieving general-purpose aerial agents. All can be found at https://fengtt42.github.io/AerialDojo/.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36066",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36066"
+      }
+    ],
+    "relevance_score": 0.5055616716639261,
+    "max_similarity": 0.24545088604913792
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31632",
+    "title": "EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis",
+    "authors": [
+      "Huyu Wu, Weining Weng, Yuchen Liu, Yiqiang Chen, Yang Gu"
+    ],
+    "abstract": "arXiv:2609.31632v1 Announce Type: new \nAbstract: Electroencephalography (EEG) analysis is evolving from short-segment classification toward long-horizon interpretation that demands iterative evidence accumulation, multi-step reasoning, and coordinated use of specialized signal-processing tools. Although large language models (LLMs) have recently shown promise as autonomous agents for EEG analysis, existing EEG agentic evaluations remain fragmented, covering limited tasks over narrow temporal horizons with inconsistent protocols, and providing no comprehensive assessment of agents' reasoning, tool-use, and workflow construction capabilities. To address this gap, we propose \\textbf{EEGAgentBench}, a unified benchmark for systematically evaluating LLM agents on short- and long-horizon EEG analysis. EEGAgentBench spans six representative EEG applications ranging from knowledge question answering to sleep staging. It encompasses signal durations from 2 seconds to nearly 23 hours, with prediction targets ranging from class labels to event intervals and epoch-level sequences. This design supports unified evaluation across knowledge reasoning, short-horizon interpretation, long-horizon event detection, and sequential understanding. The benchmark further provides 10 deterministic EEG analysis tools that expose only task-relevant signal measurements. Agents must therefore select tools autonomously, accumulate evidence iteratively, and construct multi-step workflows. For evaluation, we benchmark 29 frontier LLMs from 15 model families. Results demonstrate that EEGAgentBench effectively distinguishes agent capabilities beyond model scale and inference cost, while revealing substantial limitations of current LLM agents in long-horizon EEG analysis, particularly in sustained evidence accumulation and multi-step reasoning.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31632",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31632"
+      }
+    ],
+    "relevance_score": 0.500747551166778,
+    "max_similarity": 0.23819122976333534
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.35965",
+    "title": "Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method",
+    "authors": [
+      "Yunzhe Xu, Zhe Liu"
+    ],
+    "abstract": "arXiv:2609.35965v1 Announce Type: new \nAbstract: Vision-and-Language Navigation (VLN) has largely focused on a single agent following a single instruction, yet many real-world applications require teams of robots to tackle tasks beyond the capabilities of any individual agent. We present Systematic Multi-Agent Vision-and-Language Navigation, providing, to our knowledge, the first systematic formalization of multi-agent VLN as a constrained coordination problem: each mission consists of subtasks carrying dependency and resource constraints (presence locks and holding chains). A verified four-stage crafting pipeline instantiates the task as MAVLN, comprising 11,724 episodes across 145 scenes with teams of up to four agents under three instruction regimes, accompanied by tailored constraint-aware metrics. We further present TRISS, a coordination-ready navigation system coupling an LLM-based subtask scheduler, a shared topological memory that turns each agent's exploration into team knowledge, and a conflict-aware execution mechanism that realizes simultaneous intentions as collision-free routes. Extensive experiments establish TRISS as a comprehensive baseline and reveal substantial room for improvement across scheduling, planning, and execution, highlighting the challenges of coordinating under MAVLN task constraints. Project page: https://xyz9911.github.io/mavln.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.35965",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.35965"
+      }
+    ],
+    "relevance_score": 0.48643217325445737,
+    "max_similarity": 0.28379855529804326
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.35868",
+    "title": "Is Human-Readable Text Necessary for Effective LLM Fine-Tuning?",
+    "authors": [
+      "Jinhao Zhang, Zeyu Liu, Zicheng Yan, Yunquan Zhang, Daning Cheng, Song Tang"
+    ],
+    "abstract": "arXiv:2609.35868v1 Announce Type: new \nAbstract: Is human readability necessary for effective fine-tuning of large language models? We investigate whether model-conditioned training representations can preserve or improve adaptation utility without requiring a human-readable textual form. We propose Desired-Update-Aligned Synthetic Data (DASA), which uses activation-gradient feedback from a frozen reference model to guide the optimization of continuous synthetic input embeddings. Inspired by the role of activation gradients in local risk reduction, DASA targets useful adaptation updates rather than source-text reconstruction or linguistic fluency. The resulting embeddings are used directly for downstream fine-tuning; discrete token projections are employed only for qualitative inspection. Experiments on six models from the Llama and Qwen families, ranging from 1B to 32B parameters, cover six benchmarks spanning knowledge, mathematical reasoning, code generation, and commonsense reasoning. Under matched LoRA adaptation settings, DASA achieves performance comparable to the source natural-language data and surpasses it in multiple configurations, while outperforming GRADMM in most comparisons. Further experiments cover general-domain and task-specialized source data. Under the evaluated synthesis settings, DASA provides a $3.6$--$4.9\\times$ speedup over GRADMM with comparable peak GPU memory.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.35868",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.35868"
+      }
+    ],
+    "relevance_score": 0.484151487181017,
+    "max_similarity": 0.21829190059179454
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31663",
+    "title": "LLM-Guided Ontology-Driven Knowledge Graph Construction from Unstructured Text",
+    "authors": [
+      "Abdelhadi Belfadel, Maxence Gagnant, Joseph Kattan, Sana Tmar"
+    ],
+    "abstract": "arXiv:2609.31663v1 Announce Type: new \nAbstract: Ontology-driven knowledge graph construction from industrial text remains challenging due to the domain specificity of documents, the scarcity of annotated resources, and the complexity of ontology engineering workflows. This paper presents and investigates the applicability of an ontology learning pipeline that combines compact open-source Large Language Models (LLMs), reusable prompting strategies, and open knowledge bases to support the extraction, structuring, enrichment, and evaluation of knowledge from textual corpora. The approach is tested and evaluated on a private French corpus of power-grid incident reports, using locally deployable open-source LLMs ranging from 7B to 32B parameters. Starting from unstructured reports, the approach extracts entities and relations, generates RDF triples, constructs related OWL ontology, enriches it using external knowledge sources, assesses the quality of the ontology, and subsequently constructs a populated knowledge graph grounded in the resulting ontology schema. Experiments on 80 manually annotated private reports show that schema-guided prompting significantly improves extraction quality, while quantized models provide an effective trade-off between performance and computational cost. These results demonstrate the feasibility of transforming domain-specific industrial text into ontology-based knowledge graphs using locally deployed open-source LLMs, while supporting the generalization of the extraction process through reusable prompting strategies.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31663",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31663"
+      }
+    ],
+    "relevance_score": 0.46383077263845607,
+    "max_similarity": 0.19319376773450905
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31629",
+    "title": "ChestPheNoT: Deployable, Auditable Label-Status-Evidence Extraction from Radiology Reports",
+    "authors": [
+      "Kai Yu, Chenyu Zhu, Zaifu Zhan, Meijia Song, Min Zeng, Xiaoyi Chen, Mingquan Lin, Rui Zhang"
+    ],
+    "abstract": "arXiv:2609.31629v1 Announce Type: new \nAbstract: Structured phenotype extraction from radiology reports supports cohort construction, quality auditing, and clinical analytics, but practical deployment requires local inference and auditable predictions, while expert annotations remain scarce. Conventional labelers provide structured findings and assertion states but no supporting evidence, while API-hosted large language models may be unsuitable when clinical text cannot leave institutional infrastructure. We present CHESTPHENOT, a compact 0.5-3B language model that jointly extracts finding labels, three-class status (present/absent/uncertain), and verbatim supporting evidence spans. CHESTPHENOT is trained using hybrid CheXbert+72B silver supervision followed by supervised fine-tuning and lightweight GRPO refinement. Across three human-annotated gold sets spanning in-distribution, cross-taxonomy, and cross-institution evaluation, the 3B model remains below its CheXbert silver teacher in distribution but is competitive under distribution shift, significantly surpassing CheXbert on cross-institution detection (+2.0 F1). Task-specific training also enables the 3B model to match or exceed substantially larger prompted models on most detection and status comparisons. For evidence-grounded extraction, over 99% of final evidence spans are locatable in the source report, and the 3B model achieves 47.5 auditable-F1, outperforming Qwen2.5-7B one-shot prompting by 7.6 points and approaching Qwen2.5-72B. These results demonstrate that locally deployable models can provide competitive and directly auditable radiology-report extraction without relying on external inference APIs. Code and the full extraction/judge prompts will be made available at https://github.com/yukkai/ChestPheNoT.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31629",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31629"
+      }
+    ],
+    "relevance_score": 0.45774351606752306,
+    "max_similarity": 0.1860892390751034
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31644",
+    "title": "MaD-RL: Matching Distributions for Calibrating LLMs with Reinforcement Learning",
+    "authors": [
+      "Sourabh Kulkarni, Ksheeraj Sai Vepuri, Basar Demir, Jason Bohrer, Emily Shen, Jianfa Chen, Nan Jiang, Ankit Jain, Harihar Subramanyam, Mannat Singh, Chirag Nagpal"
+    ],
+    "abstract": "arXiv:2609.31644v1 Announce Type: new \nAbstract: Reinforcement learning (RL) is widely used in language-model post-training to maximize rewards assigned to individual model outputs, such as scores from binary verifiers or reward models trained on human feedback. However, applications such as synthetic-data generation, fairness-related constraint satisfaction, and policy exploration require controlling the distribution of outputs across model generations rather than only maximizing expected reward. We propose a general RL-based framework for \\textit{Distribution Matching} allowing matching the distribution of a latent categorical attribute of model outputs to a specified target distribution. Empirically, we demonstrate that dominant post-training recipes such as Group Relative Policy Optimization (GRPO) reduce output diversity by concentrating policy probability towards a single mode. Entropy regularization and sampling temperature can improve the spread of the distribution but have constrained effectiveness, limited to apply only in token space and toward uniform distributions. We show that prior work in this area is a specific case of Distribution Matching involving the $L_2$ divergence. We then propose reward functions for other divergences such as KL and Jensen-Shannon and motivate them with theoretical justification. Finally, we demonstrate the effectiveness of our approach on a set of experiments involving mathematical reasoning and programming.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31644",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31644"
+      }
+    ],
+    "relevance_score": 0.4577277004621169,
+    "max_similarity": 0.1880678619958371
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.36224",
+    "title": "Mutually Adversarial Self-Training with Evolving Data for Unified Multimodal Models",
+    "authors": [
+      "Wentao Zhou, Weijie Gan, Jiayun Wang"
+    ],
+    "abstract": "arXiv:2609.36224v1 Announce Type: new \nAbstract: Unified multimodal models (UMMs) combine image generation and visual understanding in a shared backbone. Since generation and understanding are inverse tasks, recent studies self-train UMMs by letting the two branches cooperatively supervise each other. We introduce MATE (Mutually Adversarial self-Training with Evolving data), a reinforcement-learning-based post-training framework in which the two branches instead challenge each other, and the challenges evolve as the model trains. MATE lets generation and understanding take turns to be challenger and solver. Given an image, the understanding branch proposes several candidate descriptions that the generation branch must turn back into similar images, and vice versa. The candidates are screened for consistency with the image or prompt they were proposed from, and the solver is trained on the candidate it handles worst. The adversary thus comes from the model's own outputs, and no separate adversary is trained. Moreover, the candidates that defeat one branch become the sources of the next challenges to the other in the next epoch, which keeps the challenges evolving with the model and turns the training into self-play in data space. On Janus-Pro-1B, MATE improves GenEval by 2.4 points, DPG-Bench by 1.7 points, and the average over nine understanding benchmarks by 0.7 points, while strengthening consistency across repeated image-text cycles.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36224",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36224"
+      }
+    ],
+    "relevance_score": 0.4466639303599539,
+    "max_similarity": 0.17098724349081695
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.36082",
+    "title": "GeoOutageBench: Benchmarking Ambiguity-aware, Ontology-grounded Geospatiotemporal KGQA for Multimodal Power Outage and Resilience Analysis",
+    "authors": [
+      "Ethan D. Frakes, Amy Kvien, Rishabh Kundu, Redad Mehdi, Van D. Tran, Vibha S. Mandayam, Kristopher O. Davis, Erika I. Barcelos, Roger H. French, Yinghui Wu, Mengjie Li"
+    ],
+    "abstract": "arXiv:2609.36082v1 Announce Type: new \nAbstract: We introduce GeoOutageBench, a benchmark for assessing LLM-based geospatiotemporal KGQA for multimodal outage and resilience analysis. Unlike existing KGQA benchmarks for Web knowledge, GeoOutageBench considers a spatiotemporal KG that integrates visual, textual, and structured data from outage records, remote sensing, weather observations, storm and power events, geographic entities, and domain ontologies. It provides a competency query taxonomy at different difficulty levels from spatiotemporal containment and proximity, spatiotemporal co-occurrence analysis, multimodal evidence, to hypothetical evaluation. Over multimodal KG and query classes, GeoOutageBench provides user-configurable evaluation of three important, highly coherent yet less studied tasks: (1) LLMs' understanding for ambiguous geospatiotemporal questions in terms of NL to SPARQL interpretation, (2) query-driven assessment of ontology utility, and (3) answer accuracy of multimodal KGQA retrieval. GeoOutageBench provides a design principle and foundation for assessing LLM-KG systems that support real-world infrastructure resilience analysis. Our benchmark, source code, data, results, and other documentation are available at https://github.com/UCF-SAGE/GeoOutageBench.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36082",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36082"
+      }
+    ],
+    "relevance_score": 0.44655511189582037,
+    "max_similarity": 0.16864411749356106
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31648",
+    "title": "Energy Vision--Language--Action: A Controlled Multimodal Benchmark for Intent-Conditioned Residential Energy Management",
+    "authors": [
+      "Lyes Saad Saoud, Oualid Doukhi, Ehsan Reihani, Saeed Sepasi, Deok Jin Lee, Moussa Ayyash, Reza Ghorbani"
+    ],
+    "abstract": "arXiv:2609.31648v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models are studied mainly in robotics, where visual observations and language instructions are mapped to physical actions. This paper introduces Energy Vision-Language-Action (EVLA), a controlled multimodal benchmark for intent-conditioned residential energy management. EVLA frames battery scheduling as a multimodal trajectory-prediction problem in which an RGB energy-field representation, a numerical operating state, and a natural-language objective are mapped to a 16-step battery-action trajectory generated by a finite-horizon sampling-based reference generator. Source windows are derived from public residential electrical-load data, while electricity price, battery state of charge, indoor temperature, and time of day are generated benchmark metadata. A hidden operating regime is encoded only through energy-field texture, enabling paired visual changes while the explicit numerical state is fixed. Crossing 439,203 retained base windows with three hidden regimes and five language objectives yields 6,588,045 multimodal instances. An initial study evaluates 36 configurations over three training seeds using fixed subsets of 5,000 training, 500 validation, and 500 test instances. In the MobileNet-family comparison, removing processed language increases trajectory mean-squared error from 0.3856 +/- 0.0039 to 0.8628 +/- 0.0001, whereas removing vision yields 0.3843 +/- 0.0013, comparable to the full model. The results show strong asymmetry in modality use: the processed-language pathway is strongly associated with prediction quality, while the current RGB pathway provides no aggregate error advantage. These results characterize the fixed pilot subset and executed protocol rather than full-benchmark training. EVLA provides a controlled setting for studying how semantic intent and latent context influence residential energy-action prediction.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31648",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31648"
+      }
+    ],
+    "relevance_score": 0.44597414325166607,
+    "max_similarity": 0.17183387337486355
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.35873",
+    "title": "More Programs or More Rolls? Separating Coverage from Specialization in LLM Harnesses",
+    "authors": [
+      "Ziyang Xu, Haitian Zhong, Hao Zhou, Hao Qin, Chenhan Jin, Te Qi, Shengze Xu, Tieyong Zeng"
+    ],
+    "abstract": "arXiv:2609.35873v1 Announce Type: new \nAbstract: Automated generation of LLM harnesses promises to improve inference through task specialization. Yet additional answer coverage can arise from repeated execution of the same program, making specialization difficult to identify. We introduce a controlled evaluation that separates answer coverage, repeatable task advantages, and gains from pre-execution selection. On 386 MATH-500 tasks, we compare eight generated harnesses plus a baseline with nine byte-identical baseline copies, using three executions per member. Identical programs yield 2.16 percentage points of repeat-averaged oracle headroom. Generated programs exhibit substantially more repeatable score patterns, but these chiefly reveal persistent weaknesses: losses relative to the baseline persist across all three repeats on 100 tasks, while persistent wins occur on only one task and are sensitive to answer extraction. The frozen selector gains 0.00 percentage points, and both populations reach 98.70% oracle coverage at 27 harness executions. Stable complementarity remains unresolved at three repeats. Supporting BIRD traces locate failures in mechanism implementation, activation, and output validity. Together, these findings establish why coverage and repeatability alone cannot justify claims of useful specialization. They motivate an evaluation standard for harness diversity: task advantages should persist across executions, guide usable decisions, and improve on additional fixed-program executions under matched inference budgets.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.35873",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.35873"
+      }
+    ],
+    "relevance_score": 0.42776984876060986,
+    "max_similarity": 0.21602715897377
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.36043",
+    "title": "SAGE: A Statistical Acceptance Gate for Self-Evolving Agents",
+    "authors": [
+      "Yihao Wang, Linhan Xia, Rui Liu, Zhaofeng Zhang, Hongyu Wu, Yang Yang, Jinglu He, Yu Guo, Kai Lei"
+    ],
+    "abstract": "arXiv:2609.36043v1 Announce Type: new \nAbstract: Large Language Model (LLM)-based agents increasingly self-evolve by editing a persistent skill document that encodes their workflow, tool-use rules, and decision logic. This loop has two steps, an optimizer that proposes a candidate edit and a gate that accepts or rejects it. Prior work has concentrated on the optimizer, while the gate still follows a naive rule that keeps any edit which improves an aggregate validation score. We show that this rule fails in two ways. First, it admits permanent regressions, since an edit can raise the average while breaking items the skill already solves. Second, it is vulnerable to the Optimizer's Curse, since the best observed score on a finite and noisy validation set is upward biased. To solve the above two limitations, we propose a statistical acceptance gate for self-evolving agents (SAGE). Compared with previous work, SAGE has two contributions. First, SAGE proposes a per-item paired comparison that evaluates the current skill and the edited skill on identical validation items, which exposes regressions that an aggregate score hides and penalizes them asymmetrically. Second, SAGE also employs a one-sided paired test that commits an edit only when its wins are statistically reliable against its losses, and it abstains otherwise. SAGE is a conservative refinement of the standard gate that recovers the baseline exactly at a boundary setting. It commits only a subset of the baseline's edits, filtering out those whose gains are unreliable or purchased by breaking already-solved items. Across five benchmarks and four backbone LLMs under an equal-budget protocol, SAGE lowers the regression rate in 19 of 20 settings and matches the baseline in the remaining one, for example from 36.5% to 0% on LiveMath and from 42.8% to 0% on OfficeQA with DeepSeek-V4. SAGE also attains the highest final score in all 20 settings, raising LiveMath from 34.15 to 48.78.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36043",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36043"
+      }
+    ],
+    "relevance_score": 0.4270357003886873,
+    "max_similarity": 0.15255039615103205
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.36219",
+    "title": "LeRF: Learning Reference Coordinate Frames for Perspective Taking Reasoning",
+    "authors": [
+      "Bang Xiao, Wenqi Jia, Ozgur Kara, Tiancheng Shen, Yibo Yang, Bolin Lai, Junho Kim, James Matthew Rehg"
+    ],
+    "abstract": "arXiv:2609.36219v1 Announce Type: new \nAbstract: Perspective taking is a fundamental component of spatial intelligence, requiring models interpret spatial relations from a specified viewpoint, such as that of another entity or an imagined observer. Despite the increasing spatial reasoning capabilities of Vision-Language Models (VLMs), they still struggle with perspective taking, often defaulting to the camera viewpoint when a query requires reasoning from a different perspective. We introduce Learning Reference Coordinate Frames for Perspective Taking (LeRF), a framework that trains VLMs to construct and use explicit reference frames for viewpoint-dependent reasoning. Given an image and a query, LeRF decides whether a coordinate frame is necessary. If so, it grounds the reference entity and predicts the frame's origin and entity-centered reference frame. A lightweight renderer overlays the frame onto the image, enabling subsequent reasoning over these visual cues without external perception models or explicit 3D reconstruction. To learn this process, we first perform supervised fine-tuning to teach selective tool invocation and reference coordinate frame prediction, followed by reinforcement learning on spatial VQA pairs to improve frame-guided reasoning. Across diverse perspective-taking benchmarks, LeRF consistently improves over its backbone and achieves strong performance against existing open-source methods. Further evaluations also show improved reference-frame grounding and orientation estimation, supporting the effectiveness of learned reference frames for viewpoint-dependent reasoning.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36219",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36219"
+      }
+    ],
+    "relevance_score": 0.4269643357724975,
+    "max_similarity": 0.14874070647242715
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.36199",
+    "title": "PreviewDiff: Multimodal Critic-Guided Search over Diffusion Latents",
+    "authors": [
+      "Vighnesh Subramaniam, Boris Katz, Brian Cheung, Chun-Liang Li, Tomas Pfister, Yale Song"
+    ],
+    "abstract": "arXiv:2609.36199v1 Announce Type: new \nAbstract: Diffusion models can produce striking images and videos, but they still struggle with the compositional details that make a generation faithful to a prompt, such as object counts, attribute binding, spatial relations, and temporally grounded actions. A common way to improve prompt satisfaction is to spend more compute at test time through Best-of-N sampling, but final-sample selection is fixed. Best-of-N can only choose among completed outputs and cannot repair a promising trajectory before it fails. We introduce PreviewDiff, a training-free test-time search method that turns diffusion sampling from scalar search into a multimodal critic-guided search over intermediate latents. At selected denoising checkpoints, PreviewDiff decodes a partial preview, asks a multimodal judge to score and critique it, and uses the resulting natural-language feedback to branch over semantic prompt edits and locally re-noised latent continuations. These branches are then scored and selectively rolled forward, allowing verifier compute to guide generation while the sample is still editable. Across image and video generation benchmarks, PreviewDiff consistently improves over budget-matched Best-of-N selection and strong scalar-search baselines. Ablations show that earlier interventions and increased search width provide the largest gains, while deeper search and additional semantic variants offer complementary improvements. PreviewDiff demonstrates that multimodal feedback is most useful not only as a final verifier, but as an active controller inside the denoising process.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36199",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36199"
+      }
+    ],
+    "relevance_score": 0.42274247835950407,
+    "max_similarity": 0.14413103280504927
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.36145",
+    "title": "From Sharp Eyes to Expert Mind: Internalizing Expert Knowledge in MLLMs for Tampered Text Detection",
+    "authors": [
+      "Kaiqing Lin, Songze Li, Shen Chen, Yunfei Guo, Xiaoye Qiu, Haodong Li, Taiping Yao, Bo Wang, Youchang Xiao, Bin Li, Shouhong Ding"
+    ],
+    "abstract": "arXiv:2609.36145v1 Announce Type: new \nAbstract: Tampered Text Detection (TTD) is essential for safeguarding document authenticity in security-critical workflows. Existing expert models are effective at capturing subtle manipulation traces but often generalize poorly across diverse document domains, while Multimodal Large Language Models (MLLMs) offer stronger semantic understanding and transferability yet remain insensitive to fine-grained forensic artifacts. This complementarity motivates us to investigate how expert forensic perception can be internalized into an MLLM rather than merely accessed through an external module. We identify a fundamental Double Mismatch that hinders this goal: a Spatial Precision Mismatch between coarse visual tokens and tiny tampered regions, and a Perceptual Granularity Mismatch between semantics-oriented pre-training and low-level forensic perception. To address these challenges, we propose Expert Knowledge Internalization (EKI), a progressive two-stage framework that transfers forensic expertise into the MLLM itself. In Stage 1, Text-Focused and Image-Focused strategies establish precise spatial focus on small text regions. In Stage 2, the proposed Forensic-General Representation Alignment (FGRA) loss aligns shallow LLM representations with those of a pre-trained forensic expert, enabling the model to acquire fine-grained artifact perception before such cues are diluted by deeper semantic abstraction. Extensive experiments on multiple in-domain and cross-domain benchmarks demonstrate that EKI achieves state-of-the-art performance and stronger generalization than existing expert-model-based and MLLM-based methods. Moreover, the expert is required only during training, allowing the resulting MLLM to maintain inference efficiency nearly identical to the vanilla model without relying on any external expert at inference.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36145",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36145"
+      }
+    ],
+    "relevance_score": 0.41824117247931714,
+    "max_similarity": 0.13535258565862177
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.35823",
+    "title": "CoVLM-Bench: A Real-World Benchmark for Cooperative Driving Question Answering and Planning",
+    "authors": [
+      "Kang Yang, Shuai Liu, Hang Li, Yance Fang, Deying Li, Yongcai Wang"
+    ],
+    "abstract": "arXiv:2609.35823v1 Announce Type: new \nAbstract: Vision-language models (VLMs) have made substantial progress in autonomous driving, but their success has primarily been studied in ego-centric scenes. Infrastructure-side observations provide views beyond the ego vehicle's field of view, yet conventional cooperative-driving systems typically transform them into geometric representations for downstream perception and planning. Directly incorporating these views into VLMs offers an opportunity to improve cooperative scene understanding and trajectory planning. However, question answering and trajectory planning have not been jointly evaluated on the same real-world vehicle-infrastructure scenes. We present CoVLM-Bench, a benchmark for cooperative driving question answering (CDQA) and cooperative planning (CP) on vehicle-infrastructure paired scenes. CoVLM-Bench provides scene-grounded CDQA annotations, three-part rationales as auxiliary supervision, and future trajectory targets derived from recorded ego motion. It contains 2,196 paired frames with 35,136 CDQA annotations, while CP predicts six waypoints over a three-second horizon. The annotations combine model-assisted drafting, record-based computation, and human verification. Built upon CoVLM-Bench, we introduce CoVLM-Drive, a unified VLM baseline that directly uses paired views for both CDQA and CP. Experiments show that CDQA adaptation improves answer accuracy and that CoVLM-Drive reaches a lower FDE than the compared V2X planners; QA initialization and rationale supervision each reduce planning error. Together, CoVLM-Bench and CoVLM-Drive support the training and comparison of VLMs for cooperative scene understanding and planning.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.35823",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.35823"
+      }
+    ],
+    "relevance_score": 0.4076018665774177,
+    "max_similarity": 0.1259332136098994
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.36104",
+    "title": "An Exact Generate - Transform Decomposition of Small-LLM Team Scaling Across Orchestration Architectures",
+    "authors": [
+      "Blaz Bertalanic, Carolina Fortuna"
+    ],
+    "abstract": "arXiv:2609.36104v1 Announce Type: new \nAbstract: Replacing one LLM agent with a collaborating team can raise accuracy, but whether scaling the team helps, and which architecture to scale, is unclear. Sweeping eight agent orchestration architectures across five instruction-tuned 7-9B models, five short-answer benchmarks, and an executable-code benchmark up to 30 calls, we find that the returns to team scaling are sharply task-dependent: from three to thirty calls accuracy rises by up to 17 points on the two arithmetic word-problem benchmarks (GSM8K, GSMHard) but by at most four on ARC, GPQA, and MMLU, for every architecture, a split the usual task-averaged number conceals. Proposer-Critic captures the arithmetic gains, scaling steepest and, in aggregate, surpassing every other architecture at the largest budget (item-clustered intervals exclude zero), though it ranks among the weakest elsewhere, and no architecture wins across tasks.\n  We explain these trajectories with an exact generate-transform decomposition. Partitioning any workflow into proposal coverage and a downstream transform, any accuracy change splits exactly into an extensive coverage dividend and an intensive transformation change. The decomposition diagnoses each task: arithmetic offers coverage headroom that a critic-guided transform converts, whereas the multiple-choice benchmarks either saturate in coverage or fail to convert it, and on open-ended code generative recovery nearly vanishes so accuracy tracks coverage. At equal call budgets token cost still varies 2.1x. Extra calls therefore create candidate opportunity that only some architectures, on some tasks, convert. Team scaling is a task- and architecture-specific bet, not a uniform lever.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36104",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36104"
+      }
+    ],
+    "relevance_score": 0.39536309930579105,
+    "max_similarity": 0.11186597211720879
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31631",
+    "title": "OMP-MoE: Efficient Expert Pruning for Mixture-of-Experts LLMs via Orthogonal Matching Pursuit",
+    "authors": [
+      "Dezhi Li, Lujun Li, Qiyuan Zhu, Hao Gu, Bei Liu, Sirui Han, Yike Guo"
+    ],
+    "abstract": "arXiv:2609.31631v2 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) models enable efficient scaling of large language models but face critical deployment challenges due to massive memory requirements. Existing pruning methods either incur prohibitive search costs or neglect the dynamic interdependencies between experts. To address these challenges, we present OMP-MoE, a novel training-free compression framework for reducing expert redundancy in MoE-based LLMs. Based on observations of expert contribution patterns, we reformulate the pruning problem as a sparse signal reconstruction task solved through Orthogonal Matching Pursuit. Specifically, our method first treats individual expert contributions as dictionary atoms and selects experts that greedily minimize reconstruction error with linear computational complexity. Then, we optimize cross-layer expert allocation through a water-filling strategy that accounts for both reconstruction quality and routing stability. Finally, we introduce OMP-MoE{\\dag}, an adaptive inference mechanism that dynamically adjusts expert activation based on energy prediction. Comprehensive experiments on Qwen, DeepSeek-V2, GPT-OSS, and Mixtral MoE demonstrate consistent improvements over existing methods at 25-50% pruning ratios. For Qwen3-30B-A3B at 50% compression, we retain 93.3% of original performance, achieving 33$\\times$ faster search and 1.55$\\times$ inference speedup. Codes will be available after acceptance.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31631",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31631"
+      }
+    ],
+    "relevance_score": 0.3877138602714555,
+    "max_similarity": 0.1648731426344043
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.31645",
+    "title": "STAR: Adaptive Spatial-Temporal Normalization for Unified Microservice Incident Management",
+    "authors": [
+      "Xinhua Miao, Linyu Zhu, Bowei Yang, Zhengong Cai"
+    ],
+    "abstract": "arXiv:2609.31645v1 Announce Type: new \nAbstract: Automated incident management in large-scale microservice systems relies on learning robust representations from multimodal observability data, including metrics, logs, and traces. Although recent self-supervised frameworks enable unified modeling for anomaly detection (AD), failure triage (FT), and root cause localization (RCL), they often struggle with non-stationary temporal dynamics and heterogeneous service dependency structures. In this paper, we propose STAR, a Spatial-Temporal Adaptive Representation learning framework that explicitly addresses these challenges through adaptive normalizations. STAR introduces two tightly coupled mechanisms: Temporal Adaptive Normalization (TAN), which dynamically normalizes multivariate time series using multi-scale temporal context, and Spatial Adaptive Normalization (SAN), which performs structure-aware normalization over service dependency graphs. Unlike prior methods that treat normalization as static or task-agnostic, STAR formulates it as a learnable, context-conditioned transformation aligned with the intrinsic properties of microservice systems. The resulting adaptive representations are integrated into a unified self-supervised framework, enabling end-to-end unsupervised support for AD, FT, and RCL tasks. Extensive experiments on two real-world microservice benchmarks demonstrate that STAR consistently outperforms all state-of-the-art baselines, yielding significant and stable improvements across all three tasks. Our results highlight adaptive normalization as a principled and effective mechanism for robust multimodal representation learning in complex software systems.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.31645",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.31645"
+      }
+    ],
+    "relevance_score": 0.38711513619294546,
+    "max_similarity": 0.1603539310308672
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.36079",
+    "title": "A Polyphonic Conception of AI Understanding",
+    "authors": [
+      "Matthieu Queloz, Pierre Beckmann"
+    ],
+    "abstract": "arXiv:2609.36079v1 Announce Type: new \nAbstract: When a doctor, a judge, or an engineer must decide whether to trust an AI model's output, they cannot avoid asking what the model understands. Purely mathematical or statistical descriptions struggle to distinguish trustworthy from untrustworthy outputs without reintroducing the question of AI understanding in all but name. Yet the question is ill-framed as it stands, because the inherited concept operates within a monophonic paradigm: the idea that a cognitive system's understanding of something must be localised to a single mechanism underpinning all the capacities conferred by such understanding. Drawing on a wide range of mechanistic evidence, we show that LLMs are pervasively polyphonic: outputs emerge from coalitions of parallel mechanisms of uneven reliability, which variously complement, duplicate, or drown out one another, with several coalitions sufficing for a task without any one being indispensable. Polyphony not only complicates attributions of understanding, but renders monophonic inference patterns hazardous. In response, we develop a conception of understanding fit for polyphonic AI. It centres on sound circuitry that is reliably and correctly recruited and in control of outputs. Attributions of understanding thereby become tractable claims about internal organisation, and can do the work of guiding trust in AI.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "updated": "Wed, 30 Sep 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.36079",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.36079"
+      }
+    ],
+    "relevance_score": 0.31068750245917165,
+    "max_similarity": 0.19426499280533277
+  }
+]
