@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2609.38296",
+    "title": "AI Agents are Vulnerable to Radicalization",
+    "authors": [
+      "Ozgur Can Seckin, Shalmoli Ghosh, Alessandro Flammini, Kristina Lerman, Maria Elizabeth Grabe, Filippo Menczer"
+    ],
+    "abstract": "arXiv:2609.38296v1 Announce Type: new \nAbstract: Large language models (LLMs) can influence people's beliefs, yet little is known about whether and how they can manipulate each other. To investigate this, we simulate conversations between two agents: a target LLM that role-plays a human persona based on demographic and psychological attributes, and an influencer LLM that aims to make the target's beliefs more extreme. We examine radicalization along two pathways: resonance, where the influencer reinforces a target's pre-existing belief, and persuasion, where the influencer promotes a belief the target initially considers unimportant. Across affective and behavioral metrics, we find that both mechanisms radicalize the target. However, resonance produces consistently stronger effects than persuasion. Different influence tactics, such as using sycophancy and unverified claims, produce different levels of radicalization, but not consistently across metrics. We further show that resonance propagates to related beliefs, suggesting interconnected belief structures within AI agents. These findings indicate that AI agents are susceptible to radicalization, particularly when messages align with their existing beliefs, raising concerns about the vulnerability of personalized AI agents and multi-agent AI ecosystems.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38296",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38296"
+      }
+    ],
+    "relevance_score": 0.6064132588879056,
+    "max_similarity": 0.37623420911962263
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38359",
+    "title": "Beyond Mode Collapse: Generating Diverse Synthetic Expert Conversations via Generative Flow Networks",
+    "authors": [
+      "Sumit Asthana, Michael Ion, Kevyn Collins Thompson"
+    ],
+    "abstract": "arXiv:2609.38359v1 Announce Type: new \nAbstract: High quality synthetic data is central to post training LLMs for adaptive AI applications that represent the diverse expert strategies and decisions in conversations. Prompting LLMs directly or conditioning them on end use scenarios yields low diversity data that collapses onto dominant modes. We propose a method to generate diverse high quality synthetic data using Generative Flow Networks (GFlowNets). We show that training GFlowNets to generate latent conversation structure using a Gaussian mixture density over key interaction features (e.g., confusion episode dynamics, scaffolding directive balance) enables sampling expert strategies in proportion to their prevalence in the training data. Across two structurally distinct domains, tutoring and emotional support dialogues, our GFlow based synthetic data generation approach offers a better balance of fidelity, mode coverage and authenticity than reinforcement-learning and end to end LLM baselines, without copying training data. Evaluated on three downstream outcome prediction tasks, classifiers trained on synthetic GFlowNet generated conversations provide a stronger training signal than competitive synthesis baselines.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38359",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38359"
+      }
+    ],
+    "relevance_score": 0.48873961607744415,
+    "max_similarity": 0.22562963308757883
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38379",
+    "title": "Aligned Data Can Induce Misalignment via Context Confusion",
+    "authors": [
+      "Yavuz Bakman, Duygu Nur Yaldiz, Baris Askin, Swastik Roy, Morteza Ziyadi, Salman Avestimehr, Sai Praneeth Karimireddy"
+    ],
+    "abstract": "arXiv:2609.38379v1 Announce Type: new \nAbstract: Large language models (LLMs) are frequently updated for various use cases, where filtering out misaligned training samples is a common practice for preventing post-update misalignment. However, alignment is inherently context-dependent: a recommendation that is aligned in one context may be inappropriate in another. For example, in response to the question \"What should a researcher do with the research data?\", recommending that the researcher preserve the data for reproducibility is aligned. In contrast, recommending data saving in response to \"What should a mobile-app developer do with users' sensitive data?\" may be inappropriate from a privacy perspective. Starting from this observation, we identify a post-training phenomenon where aligned training induces misaligned behavior in other contexts. We call this phenomenon **context confusion**. We demonstrate context confusion across three domains: (1) Gender Equality, (2) Privacy, and (3) Physical Safety. We further show that context confusion causes narrow misalignment, in contrast to emergent misalignment, and is not effectively reduced by injecting general alignment data, but can be substantially reduced by including targeted alignment data for the misaligned domain or providing in-context learning examples during inference. Lastly, we provide a mechanistic explanation of *context confusion*. We observe that queries from different domains can undergo similar representational shifts during the fine-tuning. Consequently, a query from a different domain may activate the same behavioral feature learned during fine-tuning, which causes the behavior to transfer to a context where it is misaligned. Based on our findings, we argue that it is difficult to predict the alignment state of a model after training by inspecting the training data alone, which highlights the importance of comprehensive post-training alignment evaluations.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38379",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38379"
+      }
+    ],
+    "relevance_score": 0.4808330092157905,
+    "max_similarity": 0.21632444496356373
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38368",
+    "title": "Composition, Not Conversation: VLMs Lose the Scene, Not the Thread",
+    "authors": [
+      "L. D. M. S. Sai Teja, Ufaq Khan, N. Siva Gopala Krishna, Satyajit Tourani, Ashshak Sharifdeen, Fida Mohammad Thoker, Bernard Ghanem, Muhammad Haris Khan"
+    ],
+    "abstract": "arXiv:2609.38368v1 Announce Type: new \nAbstract: Vision-language models (VLMs) increasingly reason over visual evidence that is cropped, segmented, retrieved, or revealed over time. Yet most VQA benchmarks present the complete image and question at once. We ask what models lose when the same information is fragmented. We introduce Layered-VQA, with 93 scenes and 300 questions. Each image is decomposed into ordered RGBA layers that exactly recompose the original scene, and each question is annotated with supporting, minimal-sufficient, and distractor layers. We evaluate eleven open-weight VLMs from 3B to 32B parameters and two proprietary models with a scale of 187,200 conversations, graded by 1.74M open-model cross-judgments. We find three consistent failures. Loss in Composition: fragmenting the question has a small effect, but fragmenting the scene substantially reduces accuracy; recomposing the same layers largely restores performance. Oracle Inversion: even oracle-selected sufficient evidence can perform worse than the complete scene. Loss in Grounding: as more evidence is required, grounding degrades much faster than answer accuracy. Together, these results show that having the right visual evidence is not enough. How that evidence is composed and presented determines whether models can use and ground it. The right evidence is not enough: VLMs need the scene it came from.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38368",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38368"
+      }
+    ],
+    "relevance_score": 0.4671417577537327,
+    "max_similarity": 0.19683288751917433
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38426",
+    "title": "LoopVL: Recurrent Visual Intelligence",
+    "authors": [
+      "Zhe Qian, Ziyang Gong, Zhongxing Xu, Hehan Li, Zhonghua Wang, Fei Luo, Mingxuan Wang, Xue Yang, Shiwei liu, Yanbiao Ma, Junchi Yan, Jungong Han"
+    ],
+    "abstract": "arXiv:2609.38426v1 Announce Type: new \nAbstract: We introduce LoopVL to study whether Loop Transformers can be effectively extended to vision- language models. LoopVL combines Module-Loop and Model-Loop computation to iteratively update a unified vision-language state through shared modules. We train LoopVL from scratch through language pre-training, multimodal training, and post-training. LoopVL outperforms a range of similarly sized and larger non-recurrent models on multimodal understanding and visual reasoning benchmarks. We also observe Visual Aha Moments in LoopVL, characterized by pronounced shifts in visual attention across loops. LoopVL provides practical evidence for recurrent vision-language modeling and offers an intuitive perspective on how shared parameters can support deeper multimodal computation over continuously evolving visual-language states.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38426",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38426"
+      }
+    ],
+    "relevance_score": 0.45718101781789133,
+    "max_similarity": 0.1829449202895679
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38409",
+    "title": "ArgGYM: A Procedural, Engine-Verified Benchmark for Structured Defeasible Reasoning",
+    "authors": [
+      "\\.Ibrahim Ethem Deveci, Funda Tan \\c{C}al{\\i}k, Bar{\\i}\\c{s} Deniz Sa\\u{g}lam, Duygu Ataman"
+    ],
+    "abstract": "arXiv:2609.38409v1 Announce Type: new \nAbstract: Recent progress in large language model reasoning has been driven by benchmarks and reinforcement learning environments with automatically verifiable rewards, particularly in mathematics, code, and formal logic. These settings make model accuracy easier to evaluate and optimize, but it remains unclear how far success under fixed problem specifications and stable evaluation criteria transfers to reasoning outside such domains. Real-world reasoning often proceeds under incomplete and revisable information: conclusions may be supported provisionally, defeated by counter-evidence, reinstated by further arguments, or revised when stronger reasons become available. Reasoning of this kind is generally referred to as defeasible reasoning. We introduce ArgGYM, a procedural benchmark and RLVR-compatible training environment for structured defeasible reasoning. ArgGYM decomposes this reasoning into twelve tasks and grounds task-specific scoring in a symbolic argumentation engine that computes the formal states used to evaluate model outputs. It includes a frozen benchmark of 1,440 verified instances across fifteen curriculum configurations, two argument preference orderings (weakest-link and last-link), and two set orderings (elitist and democratic), while the same generators and verifiers can produce fresh instances for evaluation that reduces dependence on static test sets and for verifiable-reward training. On the frozen benchmark, frontier and open-weight models show sharply different reasoning profiles: they can recover substantial parts of structured answers without solving the complete task, and performance declines in later curriculum configurations with longer dependencies and more interacting structures. We release the benchmark, generators, and verifiers for reproducible evaluation and RLVR training.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38409",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38409"
+      }
+    ],
+    "relevance_score": 0.45501743693232555,
+    "max_similarity": 0.18167212892019927
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38413",
+    "title": "VidHarness: Evolving Agent Harnesses for Cost-Efficient Long Video Understanding",
+    "authors": [
+      "Susan Liang, Jianmin Wu, Daxiang Dong"
+    ],
+    "abstract": "arXiv:2609.38413v1 Announce Type: new \nAbstract: Vision-language models (VLMs) can answer questions about hour-long videos, but processing every frame is prohibitively expensive, even though the evidence for a question usually spans only a few seconds. Video agents, i.e., harness programs wrapped around a frozen VLM, address this by observing the video selectively, yet existing harnesses are hand-crafted by experts through slow build-and-test cycles. We propose VidHarness, a framework that automates harness design for cost-efficient long video understanding, in which a harness proposer iteratively evolves harnesses based on execution feedback from an evolution environment. To escape the local optima of greedy refinement, we organize the evolution as Monte Carlo tree search (MCTS), and to reduce the evaluation cost, we integrate uncertainty-aware multi-fidelity validation, which screens new harnesses on a few questions and promotes only the promising ones. Since the best harness varies with the frame budget, we further introduce a mixture-of-harness that routes each question to a harness specialized for its budget. VidHarness sets new state-of-the-art results on LongVideoBench, Video-MME, and Video-Holmes, outperforms the strongest hand-crafted video agent by up to $11.2$ points, and generalizes to the knowledge-intensive benchmarks Video-MMMU and MMVU with fewer than half of the frames of uniform sampling.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38413",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38413"
+      }
+    ],
+    "relevance_score": 0.44700678426663143,
+    "max_similarity": 0.1748891348058058
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38458",
+    "title": "PrivMeSA: Privacy-Aware Self-Evolving Multi-Agent System for Medicine via Local-Remote LLM Collaboration",
+    "authors": [
+      "Dannong Wang, Yuran Zhang, Bian Sun, Alex Stinard, Yuzhang Shang, Song Wang, Yu Tian"
+    ],
+    "abstract": "arXiv:2609.38458v1 Announce Type: new \nAbstract: Clinical large language model (LLM) agents deployed locally can consult more capable remote models, but doing so risks exposing patient information. Privacy-conscious delegation places disclosure decisions with a local agent, yet removing explicit identifiers is insufficient: quasi-identifiers can accumulate across multi-turn consultations and repeated patient visits to enable re-identification. We introduce PrivMeSA, a privacy-aware self-evolving multi-agent system that learns to control disclosure and retains remote expertise for local reuse. A local agent manages each encounter and consults remote specialists that may request additional information. Reinforcement learning balances task accuracy against direct disclosure and registry-based re-identification risk, with privacy evaluated over the complete outbound transcript of each encounter. A local lesson memory distills completed consultations into generalized clinical guidance and retrieves relevant lessons before transmission, allowing subsequent cases to reuse expertise without another remote exchange. Memory grows without additional outcome labels or parameter updates. On an emergency-department benchmark built from MIMIC-IV-ED records, PrivMeSA improves mean task accuracy over delegation by up to 15.8 percentage points. In the same setting, PrivMeSA reduces the disclosure of personal details from 98.0% to 0.2% of cases and the share of cases in which the patient can be narrowed to ten or fewer registry patients from 74% to 0%.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38458",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38458"
+      }
+    ],
+    "relevance_score": 0.4435401582388096,
+    "max_similarity": 0.16993002620656597
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38340",
+    "title": "CARAT: Do Materials LLMs Reason or Recite?",
+    "authors": [
+      "Jiajun Wu, Jian Yang, Zixiang Ni, Zhenzhu Li, Bin Chong"
+    ],
+    "abstract": "arXiv:2609.38340v1 Announce Type: new \nAbstract: When a materials LLM answers a question about crystal structure, does it reason from the structure or copy an answer already printed in its input? Accuracy cannot tell: a structural description often prints the very field it is scored against. CARAT holds question and gold answer fixed across eight matched views, names each structural relation separately in GraphSpace, and adds matched fine-tuning, answer masking, evidence injection, paired inference, and a rule that can withhold claims. First, on the benchmark's hardest families the grounded view is worth 17.3 points over formula inputs. Second, we turn that scrutiny on ourselves. GraphSpace beats a plain periodic graph by 19.3 points, but that margin is two effects at once: where the plain rendering carries everything the question needs it is 1.96 points, and where it omits those fields entirely, 46.7 points. The headline mostly measures what the baseline lacked, not how evidence is presented. Third, we attack our own benchmark. A rule that skips the link and reads the list directly answers four of seven hardened families, so we rebuilt it until eleven such shortcuts sat near chance. The frozen model quotes that link yet answers the same when we redirect it, on 95.6% of paired cases: it repeats the relation without using it. After matched supervision it reaches 99.8%, and deleting the link drops it to 23.4%, below the 27.0% the best shortcut reaches: both steps are learnable.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38340",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38340"
+      }
+    ],
+    "relevance_score": 0.44146458573611647,
+    "max_similarity": 0.17057147830416658
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38391",
+    "title": "Team MSU GenText-Forensics Challenge 2026 Technical Report",
+    "authors": [
+      "Kirill Koltsov, Aleksandr Gushchin, Dmitriy Vatolin, Anastasia Antsiferova"
+    ],
+    "abstract": "arXiv:2609.38391v1 Announce Type: new \nAbstract: Document text forgery has evolved beyond simple pixel-level manipulation: modern attacks alter not only the appearance of a document but also its meaning, and increasingly target the OCR & LLM pipelines that consume such documents. The ACM MM 2026 GenText-Forensics challenge therefore requires systems that not only decide whether a multilingual text image is forged, but also localize the point of manipulation, identify the attack type, and produce a human-readable forensic report with supporting evidence. We present our solution, a decomposed chain-of-thought (CoT) pipeline that combines a document tampering detector (DTD) with two Qwen3-VL-32B vision-language models, each LoRA-adapted to a distinct sub-task. DTD produces tampering probability maps that are converted into numbered candidate regions; a first model (the Filterer) validates these regions and assigns a preliminary forgery type, while a second model (the Semantic Detective) merges and re-grounds the surviving regions, searches for purely semantic anomalies that are invisible to pixel-level detectors, and writes the final report. Both models are trained by distilling chain-of-thought traces from a privileged Qwen3-VL-235B teacher that has access to ground-truth masks and reports. Our approach secured third place in the ACM MM 2026 GenText-Forensics challenge. We describe the data preparation, test-time augmentation, region rendering, distillation protocol, and training configuration in detail, and report ablations over detector thresholds, prompt designs, and pipeline decompositions.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38391",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38391"
+      }
+    ],
+    "relevance_score": 0.43636633379407963,
+    "max_similarity": 0.16167143949183052
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38362",
+    "title": "Inductive Visual Logic for Few-Shot Out-Of-Distribution Adaptation in VLMs",
+    "authors": [
+      "Hung-Jen Chen, Yu-Heng Ho, Ting-Yao Huang, Po-Hsiang Hsu, Li-Yu Chen, Chun-Yi Lee, Min Sun"
+    ],
+    "abstract": "arXiv:2609.38362v1 Announce Type: new \nAbstract: Generative vision-language models (VLMs) such as Qwen-VL and LLaVA achieve strong zero-shot performance on tasks overlapping with their pretraining distribution, yet fail on specialized domains where the required discriminative features were never learned, a regime we term distant out-of-distribution (OOD). Standard adaptation methods cannot overcome this representational absence because they operate within the encoder's existing feature space. However, VLMs retain a robust descriptive capacity even when discrimination collapses: a model that cannot classify a medical scan can still articulate its visual patterns. Exploiting this asymmetry, we introduce Inductive Visual Logic (IVL), a training-free framework that constructs classification knowledge from the model's surviving descriptive ability. IVL extracts visual traits from few-shot support images through dual-mode prompting, combining semantic descriptions with primitive visual observations, and organizes them into per-class trait dictionaries. At inference, hierarchical filtering identifies spatially grounded trait evidence for classification. Across multiple distant-OOD benchmarks, IVL achieves the highest aggregate accuracy under two VLM backbones while producing interpretable, trait-traceable predictions.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38362",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38362"
+      }
+    ],
+    "relevance_score": 0.43391479425530344,
+    "max_similarity": 0.155651490251271
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38285",
+    "title": "GaugeVLM: Structuring Spatial Supervision with Measured Geometric Interventions",
+    "authors": [
+      "Hongbo Wang, Zihan Lin, Wenkui Yang, Shiran Ge, Yuang Ai, Jie Cao, Huaibo Huang, Ran He"
+    ],
+    "abstract": "arXiv:2609.38285v1 Announce Type: new \nAbstract: Vision-language models (VLMs) can contradict themselves across views of the same spatial relation and fail to respond when that relation changes. Addressing these failures requires supervision that captures error magnitude and geometric dependencies across observations, both of which remain implicit in training on individual answers or ordinal preferences. Therefore, we introduce GaugeVLM, which makes this structure explicit through controlled object and camera interventions in explicit 3D scenes, producing linked observations with measured differences between spatial relations and shared truths across views. To translate this structure into learning signals, its core objective, GaugeDPO, converts measured errors into preference margins, directly supervises correct canonical rankings across views, and links intervention-induced answer-odds contrasts to measured relation changes with view-specific scales. Our analysis bounds canonical prediction error and establishes that the cross-view and intervention constraints can be jointly satisfied. Empirically, GaugeVLM improves all 10 established spatial metrics over supervised fine-tuning across three VLM backbones, with the main 7B model gaining 15.0 and 18.9 percentage points on MSMU distance and QSpatial+, respectively. These gains also extend to autonomous driving and embodied reasoning, demonstrating the robust generalization across domains.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38285",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38285"
+      }
+    ],
+    "relevance_score": 0.43233399474000545,
+    "max_similarity": 0.1574443153192319
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38298",
+    "title": "It Takes Little to Rewrite Perception: Targeted Semantic Substitution in Vision-Language Models at $\\epsilon \\leq 4/255$",
+    "authors": [
+      "Binchi Zhang, Atrisha Sarkar, Apurva Narayan"
+    ],
+    "abstract": "arXiv:2609.38298v1 Announce Type: new \nAbstract: Vision Language Models (VLMs) are widely deployed in safety-critical scenarios, and understanding to which extent they can be controlled by adversarial perturbation is a prerequisite for evaluating their trustworthiness. Existing representation-alignment attacks, which make a VLM perceive a target image, achieve limited success at $\\varepsilon \\leq 4/255$. Therefore, VLMs seems robust to perturbations in this range. We show that this robustness does not hold, as targeted semantic substitution succeeds within the same range. Specifically, we align each stream of the source image with its counterpart in the target image in the victim VLM's post-merger token space, operating under a white-box threat model. We evaluate under a strict success criterion, requiring the model to simultaneously name the target, confirm its presence, and deny the source. In images, target semantics appear at $\\varepsilon = 2/255$ and complete replacement reaches 38\\% at $\\varepsilon = 4/255$. On video, complete replacement reaches 35.9\\% at $\\varepsilon = 1/255$. We also observe a phenomenon of \\textit{semantic fusion}, where Large Language Model (LLM) rationalizes contradictory visual signals into a coherent narrative.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38298",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38298"
+      }
+    ],
+    "relevance_score": 0.4207758904176713,
+    "max_similarity": 0.1399720706180269
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38397",
+    "title": "SimTrace: Grounded Multimodal User Trajectories Generation for Online User Modeling",
+    "authors": [
+      "Yunan Lu, Shuang Xie, Meghna Allamudi, Mingyu Zhao, Han Li, Lingyun Wang, Zhou Yu"
+    ],
+    "abstract": "arXiv:2609.38397v1 Announce Type: new \nAbstract: Virtual clients offer a cost-effective approach to support applications such as A/B testing, recommender system development, and interface evaluation. However, building them requires access to large-scale, semantically faithful, fine-grained online user trajectories. These data are difficult to obtain because proprietary logs are subject to privacy restrictions and small businesses often lack sufficient traffic. Consequently, existing public datasets either abstract away fine-grained user interaction details or preserve rich context but remain platform-specific and small-scale. To address this gap, we propose SimTrace, a framework that generates faithful, fine-grained synthetic multimodal clickstreams through a computer-use client agent that is grounded in real user trajectories and the given web environment. SimTrace anonymizes real interactions and constructs a simulated twin of the given web environment, then uses both to generate synthetic interaction trajectories. Each action is paired with its corresponding web observations and user context, yielding a shareable alternative to confidential logs for developing computer-use agent-style virtual clients. We apply SimTrace to an e-commerce setting and evaluate both its fidelity and downstream utility. SimTrace outperforms competing baselines on 7 out of 8 fidelity metrics. Models trained on synthetic data achieve performance comparable to those trained on real data on downstream tasks such as purchase prediction and recommendation. For next action prediction task, augmenting real data with synthetic data further improves accuracy by 11.0% relative to training on real data alone. We release SimTrace as an open-source package to facilitate research on online user behavior modeling.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38397",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38397"
+      }
+    ],
+    "relevance_score": 0.39843542510755675,
+    "max_similarity": 0.11180930255840513
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38392",
+    "title": "MetaPersona: Task-Grounded Synthetic Populations from Empirical Social Science",
+    "authors": [
+      "Jinyi Ye, Yuangang Li, Chenxiao Yu, Preyashi Poddar, Priyanka Dey, Longtian Ye, Zihan Wang, Xiyang Hu, Emilio Ferrara, Yue Zhao"
+    ],
+    "abstract": "arXiv:2609.38392v1 Announce Type: new \nAbstract: Personas used to seed LLM social simulations face a cold-start problem: existing methods lack a principled basis for deciding which attributes to include and how to assign their values. As a result, synthetic populations may misrepresent the demographic composition, latent attributes, and dependency structure that shape downstream behavior. We introduce MetaPersona-DB, a dataset of 11,000+ empirical human-subjects studies annotated with task-relevant variables, reported relationships, and aggregate-level population statistics. Building on this resource, we propose MetaPersona, a framework that retrieves task-relevant evidence, constructs literature-derived persona dependency graphs, and samples synthetic populations from empirical priors linking demographics, latent attributes, and outcomes. Across three downstream case studies, three baselines, and three frontier models, results vary by task and model: MetaPersona performs strongly on misinformation belief and AI-tool sentiment, while results on income redistribution are mixed. It also reduces persona-construction cost to under $0.5 per task using GPT-5.2. Finally, we present MetaPersona-Studio, a prototype interactive interface for empirically grounded persona generation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38392",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38392"
+      }
+    ],
+    "relevance_score": 0.3963516911417175,
+    "max_similarity": 0.11195118400842038
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38448",
+    "title": "Reach Into The CHOIR: Free-List Elicitation Uncovers Distinct Model Voices in LLM Ensembles",
+    "authors": [
+      "Ben Wigler, Maria Tsfasman"
+    ],
+    "abstract": "arXiv:2609.38448v1 Announce Type: new \nAbstract: Open-ended LLM homogeneity can create false plurality when several systems appear to offer independent perspectives while returning the same familiar default. Single-pass answers obscure the distinction between agreement produced by a tightly constrained answer space, prompt-vocabulary echo, and broader answer spaces with stable alternatives beneath the surface. We introduce CHOIR (Collective Hierarchically-Ordered Inquiry Responses), a framework that adapts free-list elicitation from cognitive anthropology to LLM ensembles. CHOIR repeatedly elicits ranked lists, clusters items into prompt-level concepts, and measures concept salience across models, prompt variants, and persona conditions. We evaluate CHOIR on Infinity-Chat 100, an external prompt bank from recent work on open-ended model homogeneity, and on a 27-question targeted diagnostic bank designed to isolate mechanism-level contrasts. On Infinity-Chat 100, CHOIR reproduces high surface agreement (93/100 prompts above chance) while separating narrow prompts from broad prompts with recoverable depth. Across targeted probes and the external prompt bank, base-model identity remains the strongest recoverable signature, and persona prompts shift surfaced concepts within base-model signatures. A source-blind ranking module prioritises rare-but-stable candidates for later inspection. CHOIR turns open-ended homogeneity into a diagnostic measurement problem by asking where models converge, why they converge, and what remains reachable under structured depth probing.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38448",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38448"
+      }
+    ],
+    "relevance_score": 0.3873282034965731,
+    "max_similarity": 0.10254917089629512
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38288",
+    "title": "AREX-2: Advancing Self-Improving Agents through Long-Horizon Reflective Tasks",
+    "authors": [
+      "Hongjin Qian, Chaofan Li, Kun Luo, Wenqing Wei, Jianlyu Chen, Shuqi Lu, Yuyang Hu, Hongwang Xiao, Hui Wang, Chaozhuo Li, Qiwei Ye, Zhicheng Dou, Defu Lian, Zheng Liu"
+    ],
+    "abstract": "arXiv:2609.38288v1 Announce Type: new \nAbstract: We present AREX-2, an effort to advance the self-improving capability of LLM agents, which we define as the ability to iteratively refine a solution at test time. This ability rests on two complementary capabilities: reflection, which produces a solution better than the current one, and long-horizon execution, which keeps the iteration effective over many rounds. We hypothesize that both capabilities are domain-agnostic, and can therefore be learned in scenarios that are well suited for supervision. Accordingly, we synthesize long-horizon improvement trajectories from machine learning and algorithmic programming tasks, two domains that offer verifiable feedback and reward sustained iteration. Trained on this data, our agent, built on Qwen3.8-27B, achieves strong results on MLE-bench Lite (81.8) and Frontier-CS (70.7), transfers to deep research with 84.0 on BrowseComp, 52.6 on HLE, 92.2 on GAIA, and 93.8 on DeepSearchQA, and keeps improving as its budget of rounds grows. These results show that long-horizon reflective data is an effective route toward self-improving agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38288",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38288"
+      }
+    ],
+    "relevance_score": 0.37654838272937324,
+    "max_similarity": 0.15012980521489433
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38346",
+    "title": "Examining Variation in How Guided AI Tutors Resolve Student Impasses",
+    "authors": [
+      "Bakhtawar Ahtisham, Kirk Vanacore, Alessandra Napoli, Josh Arens, Ksenia Ionova, Clayton Cohn, Shima Salehi, Rene Kizilcec"
+    ],
+    "abstract": "arXiv:2609.38346v1 Announce Type: new \nAbstract: When a student is stuck, a tutor faces the assistance dilemma: help given too early can hinder productive struggle, while help withheld too long leaves the student in a frustrating, persistent impasse (i.e., wheel spinning). Generative AI tutors increasingly use guardrails restricting answer-giving, yet little is known about how such tutors behave once an impasse persists. We analyze 20,462 student turns from 1,260 authentic sessions with a guided LLM chemistry tutor, identifying 6,630 impasse turns of three major types: conceptual errors, expressed uncertainty, or help-seeking. We then used these impasses to simulate three tutoring conditions to study variation in AI tutor guidance through impasses: baseline, no-direct-answer, and guided tutor. For a sample of 150 impasses, prompt specificity changed pedagogy: a baseline tutor provided the answer directly in 50.7% of responses, a no-direct-answer tutor asked a follow-up question every time, and the guided tutor responded in a wide variety of ways depending on the context. We then analyzed impasse trajectories in authentic interactions, finding that each additional impasse turn lowered the odds of next-turn recovery by 12.7% (AOR = 0.873, p < .001), and early dropouts were caught in recursive concept elicitation before reaching execution. The benefit of questioning decayed as impasses persisted (scripted question x depth AOR = 0.78; follow-up x depth AOR = 0.83), whereas addressing the student's error grew more beneficial (AOR = 1.14); after a failed scripted question, repeating it was followed by recovery in 28.1% of cases, compared with 39.8% when the tutor addressed the error instead. For learning analytics, these findings identify impasse depth and type as observable, turn-level dialogue signals that analytics can use to trigger graduated, state-sensitive assistance in real time.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38346",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38346"
+      }
+    ],
+    "relevance_score": 0.3374890041256549,
+    "max_similarity": 0.10286791333362336
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38445",
+    "title": "AIM: Agentic Idea Management for Automated Research",
+    "authors": [
+      "Hyeong Kyu Choi, Bhavana Dalvi Mishra, Jiefeng Chen, Mihir Parmar, Rui Meng, Chun-Liang Li, Xiangru Tang, Sharon Li, Jinsung Yoon, Tomas Pfister"
+    ],
+    "abstract": "arXiv:2609.38445v1 Announce Type: new \nAbstract: Frontier LLMs are increasingly used to automate scientific research through iterative search. We distinguish idea-driven search from solution-driven search and identify three core challenges: organizing evolving research ideas, selecting promising directions, and maintaining alignment between ideas and their implementations. To address these challenges, we introduce the Agentic Idea Manager (AIM), a fully autonomous framework for managing and exploring research directions in idea-driven automated research. Inspired by Bayesian optimization, AIM uses an Agentic Surrogate and an Agentic Acquisition mechanism to organize discovered ideas and guide their selection. A Solution Auditor maintains idea-solution integrity, while a Resource Planner adaptively allocates the remaining experimental budget across parallel search branches. Experiments on 10 AutoLab benchmark tasks show that AIM surpasses the strongest baseline by 1.6 percentage points on System Optimization tasks and 4.9 percentage points on long-horizon Model Development & CUDA tasks. Notably, AIM reaches the best baseline performance up to 3.1x faster in wall-clock time. We further provide a theoretical analysis of when searching over ideas becomes beneficial. Our analysis shows that explicit idea-level allocation makes semantic coverage directly controllable, and that broader coverage becomes increasingly valuable when competitive research directions are sparse among many plausible alternatives. Project Page: https://imhgchoi.github.io/agentic-idea-manager/",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38445",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38445"
+      }
+    ],
+    "relevance_score": 0.3161492984369202,
+    "max_similarity": 0.13764915033995065
+  },
+  {
+    "id": "https://arxiv.org/abs/2609.38386",
+    "title": "Decode-Latency Feedback Prefill: A Model-Free Controller and Its Generalization Limits",
+    "authors": [
+      "Gaurav Agarwal, Ashish Garg, Isha Singhal"
+    ],
+    "abstract": "arXiv:2609.38386v1 Announce Type: new \nAbstract: Concurrent autoregressive inference creates a fundamental interference problem: prefilling a newly arrived long prompt can delay tokens for requests that are already decoding. Fixed prefill chunks reduce this interference, but the best chunk size depends on the model, hardware, load, and latency objective. We introduce Decode-Latency Feedback Prefill (DLFP), a model-free controller that changes only prefill work that overlaps active decodes. After a guarded scheduling cycle, DLFP uses the observed interval as proportional feedback to resize the next prefill chunk; isolated prefills remain unrestricted.\n  We implement DLFP in vLLM and evaluate it with open-loop Poisson arrivals, exact token accounting, raw request traces, and NVIDIA telemetry. On Qwen3-0.6B in BF16 on one A100 80 GB GPU, three paired 100-request trials reduce P99 inter-token latency by 24.8%, 30.1%, and 28.2% (mean 27.7%, paired 95% confidence interval 21.0% to 34.3%) with exact output agreement, no failures, and unchanged SLO compliance. The benefit is not free: mean P99 time to first token increases 34.8% while remaining inside the declared SLO.\n  Crucially, the mechanism does not generalize to Qwen3-8B, Qwen3-32B, or a two-GPU tensor-parallel configuration. We trace the failure to an asynchronous scheduler-call interval that is only a proxy for completed GPU iteration time. This negative result defines the boundary of the contribution and motivates a completion-timed controller for concurrent CPU and on-device inference. We do not claim mobile-device performance; the present work is a reproducible proof-of-concept and generalization study.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "updated": "Thu, 01 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2609.38386",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2609.38386"
+      }
+    ],
+    "relevance_score": 0.2990804884920394,
+    "max_similarity": 0.11826563862716809
+  }
+]
