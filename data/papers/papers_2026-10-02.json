@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2610.00010",
+    "title": "Heavy-Tailed Memory Traces in Long-Horizon Language Agents",
+    "authors": [
+      "Xinyuan Song, Zekun Cai"
+    ],
+    "abstract": "arXiv:2610.00010v1 Announce Type: new \nAbstract: Long-horizon language agents increasingly rely on external memory as a frozen world model, yet current memory systems are usually judged only by task success or token cost. We argue that the missing object is the shape of memory use: under finite context and repeated retrieval, agent memory can concentrate on a small core while leaving rare states in a long tail where prediction errors accumulate. We study this effect through a conservative tail audit and find that concentration is reproducible but policy-dependent. Random-walk agents produce log-normal-compatible retrieval artifacts, whereas semantic LLM policies yield the strongest truncated-power-law-compatible core--tail traces. Motivated by this audit, we propose Core--Tail World Model (CTWM), a rank-based memory controller that allocates prompt budget with a single exponent $\\tau$ while retaining a summarized tail. On Synthetic Graph World, CTWM preserves full state and transition coverage, reduces prompt tokens by 5.9%, and lowers bottom-half tail prediction error by 13.6% relative to a graph-memory baseline. The same paired comparison gives consistent token savings on ALFWorld and a 24.48% token reduction on LongMemEval with aggregate accuracy parity. These results suggest that heavy-tailed memory traces are not only a diagnostic of finite retrieval, but also a practical control signal for token-efficient agent world models.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00010",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00010"
+      }
+    ],
+    "relevance_score": 0.5750629285680093,
+    "max_similarity": 0.334064699306261
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00069",
+    "title": "A Framework for Egocentric and Exocentric Procedural Understanding via Temporal Segmentation and Semantic Abstraction",
+    "authors": [
+      "Vivek Chavan, J\\\"org Kr\\\"uger"
+    ],
+    "abstract": "arXiv:2610.00069v1 Announce Type: new \nAbstract: Long-horizon ego/exo data contains rich procedural evidence, but are redundant, noisy, and costly to process or retain. We propose a compact framework that converts continuous multimodal workplace video into a structured Procedural State Memory, implemented as a Work Environment Model (WEM). Inspired by event segmentation theory, we detect boundaries using changes in visual context, location, motion, narration, gaze/object interaction, and optional exocentric workspace evidence, rather than fixed windows or visual novelty alone. Each segment is abstracted into an evidence-linked event card containing actor, interval, location, action, objects/tools, pre/post state, confidence, and provenance. These event cards incrementally update the WEM, enabling compact, auditable documentation and retrieval under on-premise privacy constraints. We instantiate the design with frozen DINOv2 and VJEPA-2 encoders and a local language model, and outline evaluation criteria for segmentation quality, memory compression, retrieval fidelity, and long-horizon QA.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00069",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00069"
+      }
+    ],
+    "relevance_score": 0.46376516631036047,
+    "max_similarity": 0.19293561228036613
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00196",
+    "title": "GPEC: Efficient Pre-LLM Gaussian Process Embedding Correction for Cardiac Video Caption Generation",
+    "authors": [
+      "Arefeh Rezaei"
+    ],
+    "abstract": "arXiv:2610.00196v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) have shown strong potential for video understanding and caption generation, but their performance may decline in specialized medical imaging domains such as echocardiography. This work introduces Gaussian Process Embedding Correction (GPEC), a modular and computationally efficient pre-LLM error-correction method that improves the visual representations used by VideoChat2 for cardiac ultrasound caption generation. GPEC is inserted between the visual projection layer and the language model and learns a residual correction that moves the projected visual representation toward an annotation-guided target. The target is constructed by converting structured video annotations into qualitative attributes, generating a fixed-format reference caption, and mapping it into the language-model embedding space. The correction is modeled using a sparse variational Gaussian Process with inducing points, natural-parameter variational updates, and a block-wise linear kernel, while the original VideoChat2 components remain frozen.The method is evaluated using representation-level, caption-level, content-oriented, and execution-time metrics by comparing the original VideoChat2 with VideoChat2 + GPEC under identical input and reference conditions. Results show improved caption similarity and content alignment after applying the proposed correction. Furthermore, GPEC adds less than 0.05 s of inference-time overhead per video in the evaluated setting. These findings indicate that GPEC can improve caption generation in specialized medical video domains with minimal computational cost, without requiring end-to-end fine-tuning of the pretrained multimodal backbone.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00196",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00196"
+      }
+    ],
+    "relevance_score": 0.45778600013024684,
+    "max_similarity": 0.18528351067238286
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00302",
+    "title": "Decoding the Disaster: Multi-Task Geospatial Reasoning with Vision-Language Models and Crowdsourced Imagery for Disaster Mapping",
+    "authors": [
+      "Wenping Yin, Fabian Desuer, Ziqi Liu, Naixia Mou, Weijia Li, Pedram Ghamisi, Xiao Xiang Zhu, Hao Li"
+    ],
+    "abstract": "arXiv:2610.00302v1 Announce Type: new \nAbstract: Crowdsourced imagery provides timely, fine-grained, street-level observations for disaster mapping, complementing conventional remote sensing imagery (RSI) during emergency response. However, such imagery is often unstructured, spatially ambiguous, and lacks reliable geographic metadata, making manual geolocalization and interpretation labor-intensive and difficult to scale. This work proposes a multi-task Geospatial Reasoning Disaster mapping framework, namely GRDisaster, to examine the potential of vision-language models (VLMs) in understanding, geolocalizing, and reasoning over crowdsourced disaster imagery. GRDisaster is built on a newly curated benchmark dataset derived from PhotoMappers, comprising 26,340 images organized into human-validated volunteered geographic information (VGI), street-view imagery (SVI), RSI cross-view triplets covering multiple disaster events from 2018 to 2024. The framework combines deterministic and probabilistic cross-view geolocalization with multi-view fusion to associate VGI images with georeferenced SVI and RSI. It introduces two sets of spatial reasoning indicators for cross-view geolocalization validation and disaster damage assessment. These indicators use structural, environmental, and global-scene cues to validate cross-view correspondences and visually observable damage evidence with expert-verified annotations to assess disaster severity, improving the interpretability of VLM outputs. To our knowledge, this study provides the first systematic investigation and unified evaluation framework for examining how VLM-based spatial reasoning can transform crowdsourced disaster imagery into actionable geospatial artificial intelligence (GeoAI) through cross-view geolocalization validation, interpretable spatial reasoning, and damage-aware severity assessment.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00302",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00302"
+      }
+    ],
+    "relevance_score": 0.45686209899469,
+    "max_similarity": 0.1845097978440845
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00224",
+    "title": "Build2SPARQL: A Large-Scale Text-to-SPARQL Benchmark Dataset for Building Knowledge Graph Querying",
+    "authors": [
+      "Wooyoung Jung"
+    ],
+    "abstract": "arXiv:2610.00224v1 Announce Type: new \nAbstract: Building automation systems are increasingly represented as semantic knowledge graphs (KGs) using ontologies such as Brick and ASHRAE 223P, creating a machine-readable substrate for artificial-intelligence applications. One promising application is translating natural-language questions into SPARQL (text-to-SPARQL), which would let building operators query these graphs through language agents, but progress is limited by the scarcity of large natural-language/SPARQL benchmarks. This paper presents Build2SPARQL, a large-scale benchmark for building KGs generated by a KG-grounded pipeline: SPARQL queries are produced and validated entirely by graph-traversal code, while large language models generate only the natural-language questions, keeping query correctness independent of model behavior. The pipeline mines six query-pattern families -- linear chains, branching, UNION, aggregation, OPTIONAL, and attribute-filtered -- and phrases each query across five vocabulary registers. Applied to 201 building KGs (180 Brick, 21 ASHRAE 223P), it yields 6,136 executable SPARQL queries and 30,680 questions. A two-rater human validation of 300 questions found 98.8% semantic fidelity, 98.8% naturalness, and 84.0% operational plausibility. A retrieval-augmented evaluation across three open-weight language models raised exact-match accuracy from 0.2-20% (zero-shot) to 56-65% (three-shot retrieved).",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00224",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00224"
+      }
+    ],
+    "relevance_score": 0.4506805274002672,
+    "max_similarity": 0.1755070608535584
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00049",
+    "title": "Fast Polynomial Transcendentals for LLMs",
+    "authors": [
+      "Robert Hu"
+    ],
+    "abstract": "arXiv:2610.00049v1 Announce Type: new \nAbstract: Graphics processing unit (GPU) generations scale matrix, special-function, and memory pipelines at different rates, so kernel bottlenecks move as hardware evolves. FlashAttention-4 exposed this imbalance inside attention on NVIDIA Blackwell. We test whether short polynomial programs can accelerate other special-function-unit (SFU) operations in large language models (LLMs). We first compare native PyTorch evaluation with packed fused multiply--add (FMA) programs in an isolated IEEE binary16 (FP16) sweep spanning L2-resident and high-bandwidth-memory (HBM)-resident working sets. We then replace native sigmoid, tanh, and sigmoid linear unit (SiLU) with degree-3 or degree-4 bfloat16 (BF16) programs in four GB200 integration tasks: dense SiLU, tanh-softcapped attention, sigmoid attention, and routed-expert Swish-gated linear unit (SwiGLU). The programs combine analytical symmetry, target-format rounding, and packed arithmetic inside consuming kernels. The isolated paths improve by 1.19--2.19x in L2 and 1.00--1.70x in HBM. The dense-SiLU, tanh-softcapped-attention, and routed-expert substitutions improve complete training-step throughput by 2.7\\%, 2.9\\%, and 8.0\\%, respectively. The sigmoid-attention substitution improves complete-attention forward by 7.4\\% and the complete GPU step by 0.3\\%. Same-checkpoint open-weight ablations and one paired pre-training comparison per task extend the evaluation to model behavior. At common horizons near 100 billion tokens, the final smoothed training-loss differences (polynomial minus native) range from $-0.107$ to $+0.079$ across the four tasks.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00049",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00049"
+      }
+    ],
+    "relevance_score": 0.4409472297306191,
+    "max_similarity": 0.16836358589496844
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00061",
+    "title": "Gradient-Aligned Pair Selection for Personalized Preference Optimization",
+    "authors": [
+      "Ruoming Jin, Xinyu Li, Hao Zhou, Jianfeng Zhu, Ruixin Guo, Feodor Dragan, Lei Xu, Haixun Wang, Yang Zhou"
+    ],
+    "abstract": "arXiv:2610.00061v1 Announce Type: new \nAbstract: Personalizing large language models (LLMs) requires aligning generation behavior with user-specific preferences rather than aggregate quality. While Direct Preference Optimization (DPO) provides a stable framework for preference learning, its effectiveness in personalized settings critically depends on how preference pairs are selected. Existing approaches typically rely on heuristic criteria, such as likelihood-based extremes, which decouple optimization from explicit user utility and can lead to degraded personalization. We formalize personalized preference learning as a geometry-aligned optimization problem by analyzing the first-order interaction between gradients of expected user utility and DPO update directions. Our analysis reveals that, under off-policy sampling, the DPO update transitions from a purely error-corrective signal to a reinforcement-like update when preference margins are directionally aligned with utility gradients. This perspective exposes pair selection as a geometric decision that governs whether preference optimization advances or hinders personalization. Motivated by this insight, we propose GAP-DPO (Geometry-Aligned Preference DPO), an iterative algorithm that performs utility-aware, geometry-aligned pair selection while controlling distribution shift via epoch-wise regeneration. Experiments on personalized text generation benchmarks show that GAP-DPO consistently improves stylistic fidelity, preference alignment, and generation quality compared to standard DPO variants. Together, our results establish gradient alignment as a unifying principle for personalized preference optimization and demonstrate that pair selection is an intrinsic component of the optimization geometry rather than a heuristic preprocessing step.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00061",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00061"
+      }
+    ],
+    "relevance_score": 0.4390487579641619,
+    "max_similarity": 0.16730924793892074
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00087",
+    "title": "Legal text classification in Korean sexual offense cases: from traditional machine learning to large language models with XAI insights",
+    "authors": [
+      "Jeongmin Lee"
+    ],
+    "abstract": "arXiv:2610.00087v1 Announce Type: new \nAbstract: The advancement of natural language processing (NLP) has expanded AI-based text classification in the legal domain. However, accurately classifying legal documents remains challenging due to the complexity of legal texts and subtle differences between legal categories. This study evaluates legal text classification models ranging from traditional machine learning techniques to large language models (LLMs) using ten categories of Korean sexual offense precedents. The results show that fine-tuning small-scale models such as KLUE-BERT on legal data outperforms general-purpose models such as GPT-3.5 and GPT-4.0, as well as traditional machine learning models. KLUE-BERT achieved the highest accuracy of 99.3%, indicating that domain adaptation and fine-tuning can be more important than model size for legal document classification. We further employ explainable AI (XAI) techniques to analyze model predictions and misclassification cases. XAI analysis identifies linguistic features influencing model decisions and limitations in capturing subtle textual cues. Using KICS data, which closely resembles real-world legal case records, we further evaluate the model's generalization capabilities and find that it struggles to interpret implicit contextual cues. These findings highlight the importance of both performance and interpretability in legal AI and demonstrate how XAI can improve transparency in legal text classification. AI-assisted tools can support legal professionals in tasks including document classification, legal information retrieval, and case assessment.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00087",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00087"
+      }
+    ],
+    "relevance_score": 0.43658807975284925,
+    "max_similarity": 0.15686236683326546
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00025",
+    "title": "Measuring the Microtask Eligibility Gap: When Is an Off-the-Shelf SLM Enough for an Agent Harness?",
+    "authors": [
+      "Jundong Hu, Shekar Ramachandran"
+    ],
+    "abstract": "arXiv:2610.00025v1 Announce Type: new \nAbstract: Agent harnesses increasingly want to run small language models (SLMs) on the microtasks around a frontier large language model (LLM) planner: auto-approving shell commands, writing memory, selecting tools, ranking past turns. We ask whether off-the-shelf SLMs meet practitioner-defined thresholds and, when they fail, why, and whether quantization changes the answer. We build a benchmark of 4 such microtasks with fixed prompts and automatic metrics, each with a pre-specified threshold $\\tau$ anchored to a cheap non-LLM baseline and a CI-aware eligibility rule (a configuration passes only if its confidence bound clears $\\tau$). Sweeping Qwen3 0.6/1.7/4/8B at their best (FP16, greedy, one frozen prompt, no tuning), we find an eligibility gap: 0 of 16 (4 tasks $\\times$ 4 models) configurations pass (verified by checking the raw outputs and parser behavior). A logprob decision-threshold diagnostic (T1/T3/T4; T2 via a context-length/cascade probe) separates the failures into capability deficits and failures that can be addressed by changing the decoding threshold (4 regimes). Quantization to 4-bit (RTN/GPTQ/AWQ) does damage that depends on model size and moves no configuration into eligibility (certified on the reconstructable hard-label tasks T1/T3, diagnostic/windowed robustness on T2/T4), so the gap tracks model size more than precision; it replicates on Llama-3.x (12/12 ineligible) and is robust to the anchor choice (a $\\tau$-sweep) and to prompt wording (0/112 eligible across the original plus 3 neutral paraphrases per cell). The practical implication: place SLMs behind a baseline that meets the CI-backed threshold, and use the SLM only where the baseline fails to meet the threshold; e.g. a 4B re-ranker over a BM25 shortlist beats BM25 ($+0.047$ [0.020, 0.073], without itself certifying eligibility).",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00025",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00025"
+      }
+    ],
+    "relevance_score": 0.4321664209179669,
+    "max_similarity": 0.15747324663049025
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00012",
+    "title": "When Do Causal World Models Help Modular LLM Agents",
+    "authors": [
+      "Xinyuan Song, Zekun Cai"
+    ],
+    "abstract": "arXiv:2610.00012v1 Announce Type: new \nAbstract: LLM agents increasingly act through modular systems, such as order, payment, inventory, and shipment services, where actions in one module change which transitions are valid in another. Standard world models usually fit observational traces, but this is not the quantity needed for intervention-time planning: a trace may show that payment precedes shipment without identifying whether payment authorizes shipment, inventory mediates the effect, or a hidden trigger explains both. We study this gap through FedCausalCompose, a causal world-model framework for modular LLM agents in which local actions provide intervention-response evidence for cross-module interfaces. We first show that observational world models incur an irreducible interventional error under unblocked back-door paths, that interface recovery improves with intervention-response coverage, and that an oracle causal composition can beat the non-causal lower bound when coverage and local mechanism errors are controlled. We then test the resulting prediction in diagnostic agent settings. Causal interfaces help most in structured tool environments, where API signatures expose preconditions and downstream effects. In contrast, dialogue and narrative environments often ignore raw edge lists unless a short attention anchor makes the causal information decision-relevant. These results identify a concrete condition for causal world models in LLM agents: causal structure helps when cross-module interfaces are both statistically identifiable and presented in a form the agent can use at action time.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00012",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00012"
+      }
+    ],
+    "relevance_score": 0.4273092766400266,
+    "max_similarity": 0.1505199689609624
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00296",
+    "title": "Certainty Is Not Just Correctness: Rethinking Token-Level Certainty in LLM Reasoning",
+    "authors": [
+      "Yunfan Zhou, Ye Zhu, Zhihai Wang, Jianguo Yao, Haibing Guan, Xijun Li"
+    ],
+    "abstract": "arXiv:2610.00296v1 Announce Type: new \nAbstract: Token-level certainty is widely used as a proxy for correctness in LLM training and inference. However, the performance of certainty-based methods depends both on the information in certainty scores and on how those scores are used. We therefore directly assess certainty's predictive ability through controlled empirical evaluations across models and tasks. We distinguish two prediction targets: identifying questions a model is more likely to answer correctly and distinguishing correct from incorrect responses to the same question. In our experiments, certainty is generally better at identifying questions a model is likely to answer correctly than at distinguishing correct from incorrect responses to the same question. Certainty also varies systematically across token types and positions within words, reflecting local properties of words and text form. Information about question difficulty appears early in generation, while the weaker information about answer correctness is more concentrated near the end. These findings show that the information certainty provides for decisions depends on the prediction target, the model, the certainty metric, and which token positions in the response are included in aggregation. We further demonstrate the practical value of these findings for test-time compute. We allocate the number of responses using certainty early in generation and weight answer votes using certainty near the end of each response. Compared with a fixed-sampling majority-voting baseline, this approach increases overall accuracy from 78.71\\% to 79.54\\% while reducing generated-token cost by 82.4\\%.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00296",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00296"
+      }
+    ],
+    "relevance_score": 0.42446706894292463,
+    "max_similarity": 0.1456207712244022
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00092",
+    "title": "BudgetSchemaBench: A Budget-Swept Diagnostic for Schema Context in Text-to-SQL",
+    "authors": [
+      "Chen Shen"
+    ],
+    "abstract": "arXiv:2610.00092v1 Announce Type: new \nAbstract: Data agents over structured sources must fit database schema into the model's context window. Large catalogs can span many databases and thousands of columns, so cost constraints may require choosing between table coverage and serialization detail well before the context window is full. We introduce BudgetSchemaBench, an execution-grounded diagnostic for this setting. Its construction derives relevance labels mechanically from gold SQL, without human- or LLM-authored ground truth. Using a pooled 80-database catalog, we sweep four schema-context budgets and compare three representations while keeping each retriever's table ranking fixed. A source-namespace check rejects queries that obtain the correct result from the wrong database. The evaluation covers three conditions: end-to-end retrieval; frozen-gold, in which the required tables are guaranteed; and a probe that removes those tables. For the primary solver with raw serialization, raising the budget from 2.5% to 50% of the catalog improves execution accuracy on 1,279 held-out questions by 18 percentage points under lexical retrieval but only 3 under dense retrieval; the dense retriever already finds most required tables at the smallest budget. When the required tables are removed, 94.6% of correct predictions name one of them exactly, consistent with reconstruction of absent schema from parametric knowledge. For the two main solvers in the frozen-gold condition, the three representations differ by at most 2 percentage points, and the widest paired 95% confidence interval bounds the difference within +/-4 points. We observe the same qualitative patterns with one reasoning model from a different family. When retrieval is coverage-limited, execution accuracy is more sensitive to the schema budget than to the tested serializations. The diagnostic and the code used to construct and evaluate it are publicly available.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00092",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00092"
+      }
+    ],
+    "relevance_score": 0.41722578859413817,
+    "max_similarity": 0.13865922260945657
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00070",
+    "title": "Measuring Human-Like Bias in LLMs? A Critique of Human-Derived Bias Constructs in LLM Evaluation",
+    "authors": [
+      "Antonela Tommasel, Markus Schedl"
+    ],
+    "abstract": "arXiv:2610.00070v1 Announce Type: new \nAbstract: Researchers increasingly use human-derived bias constructs to study Large Language Models (LLMs), including social-cognitive constructs such as implicit bias and stereotype activation, and cognitive biases such as anchoring, framing effects, and confirmation bias. Such approaches offer alternatives to overt bias probes, particularly when direct questioning may obscure bias or when model behaviour appears normatively acceptable. However, adapting human bias constructs to LLMs introduces an inferential gap. Psychological instruments were developed to study human cognition and social behaviour, whereas LLM evaluations rely on probabilities, text completions, rankings, or simulated decisions. This paper critiques human-centered bias evaluation in LLMs. We show how this gap arises from mismatches pertaining to human-derived constructs, human-model differences, and evaluation contexts, which can blur distinct interpretations of model bias. We then introduce a framework providing an analytical lens for relating these elements to warranted interpretations, with attention to target constructs, operationalizations, scope of inference, and limits of human analogy.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00070",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00070"
+      }
+    ],
+    "relevance_score": 0.41341171830101087,
+    "max_similarity": 0.1368657167511337
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00031",
+    "title": "Seeing the City or Recognizing the Place? What Street-View Imagery Adds Beyond Existing Urban Data in VLM Urban Sensing",
+    "authors": [
+      "Kaizhen Tan"
+    ],
+    "abstract": "arXiv:2610.00031v1 Announce Type: new \nAbstract: Street-view imagery is increasingly used to infer urban attributes, but predictive accuracy alone does not reveal how much a photograph contributes beyond data already available for the same place. We compare image-based predictions with existing urban data across seven attributes from five public resources and three VLMs. The same urban units are evaluated using images, task context, nearby observations, and public records, while image replacements and conflicting records test source reliance. Existing urban data matched or exceeded image-only models for road damage, curb ramps, and house price, while neighbouring official statistics nearly matched the best image result for population. Images were more informative for building type, building function, and low-rise floor count. For floor count, image advantage increased by 5.7 percentage points per doubling of distance to the nearest labelled building and declined for tall buildings whose rooflines often fell outside the frame. Models frequently followed conflicting records. OpenFACADES floor annotations were generated with OpenStreetMap floor values and showed the opposite height-dependent error pattern from image-only reruns. Street-view image value therefore depends on visual legibility and local data coverage. Comparing images with existing urban data can guide image collection and clarify the provenance of derived urban maps.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00031",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00031"
+      }
+    ],
+    "relevance_score": 0.4010990314939492,
+    "max_similarity": 0.11827094614087263
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00111",
+    "title": "A Low Grounding Score Is Not an Ungrounded Judge: Identifying the Perceptibility Confound in Multimodal Oversight",
+    "authors": [
+      "Rasul Khanbayov, Hasan Kurban"
+    ],
+    "abstract": "arXiv:2610.00111v1 Announce Type: new \nAbstract: Model judges now supervise multimodal systems at scale, filtering training data, selecting outputs, and supplying the reward that shapes multimodal reasoning models. Trusting one means first checking that it uses its evidence, and that check is itself worth scrutinizing, so we ask whether a counterfactual probe of visual grounding measures what it claims to. The probe edits the image so the ground truth flips, holds the reasoning trace fixed, and asks whether the verdict follows. We formalize it as the Verdict Grounding Score and show it cannot be read the way such scores are read. A verdict responds only to an edit that reaches the judge's decision-relevant reading, so the score is capped by how perceptible the edit is, and unless editing makes the attribute easier to read, the error is one-sided: the score can only make a judge look less grounded than it is. The practical failure is therefore a false alarm, an auditor discarding a usable overseer. Under assumptions we state, we show this missing quantity is not merely bounded but identified from three quantities the same audit protocol already collects, which makes the false-alarm rate directly measurable rather than merely a concern. Auditing nine judges, we find the predicted ordering holds strictly across our entire primary pool, and the typical judge there acts on only about half of the edits whose attribute it can otherwise resolve. Applying a conservative rejection threshold certifies several cells as false alarms outright, the clearest being a judge that detects the injected error essentially every time while still scoring as if it had not used the image at all. The rule that follows is that an image-side counterfactual score should never be reported alone: a detection probe on the unedited image upper-bounds it, certifies its false alarms, and costs nothing extra to run.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00111",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00111"
+      }
+    ],
+    "relevance_score": 0.3891934100658898,
+    "max_similarity": 0.10445274284286118
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00007",
+    "title": "On-Device Named-Entity Recognition: A Deployability Study of Accuracy, Cost, Reliability, and Confidence",
+    "authors": [
+      "Vinay Kumar Chaganti"
+    ],
+    "abstract": "arXiv:2610.00007v1 Announce Type: new \nAbstract: Named-entity recognition (NER) is increasingly wanted on-device (no API, low latency, data kept local). The practitioner's question is not the leaderboard but which model is deployable, how to evaluate it without human annotation, and whether its confidence can be trusted. We answer these jointly. We place nine systems across three paradigms and 13 M to 8 B parameters: a classical tagger (spaCy), bidirectional-encoder specialists (GLiNER, 166 to 460 M), and generative LLMs run locally (Qwen3-0.6B/1.7B/4B-Instruct, DeepSeek-R1-1.5B/8B), on three datasets of differing character, and report accuracy plus two axes the literature omits: latency and output validity. Because our corpus (RSS-News) had no gold, we built silver gold from a cross-family LLM judge panel, then measured its fidelity against benchmark gold and a full human re-validation of the corpus (strict F1 0.95, an upper bound since the human gold was silver-seeded); gold provenance flips the paradigm ranking, moving from LLM-authored silver to human gold raises every encoder and lowers every generative model. On accuracy alone a 4 B instruct LLM is competitive (it leads on clean newswire), so the encoder's case is deployability: it matches or slightly trails at one-ninth to one-twenty-fourth the size, at millisecond-to-second latency, with zero malformed output, while the smallest generative models emit up to 27% invalid output on long inputs, a failure fixed by scale, not output budget. We then characterize GLiNER's per-span confidence: it ranks correctness well (AUROC 0.76 to 0.86) but is overconfident (ECE 0.24 to 0.47, halved by temperature scaling); thresholding gives a small honest out-of-sample F1 gain; an all-local small-to-large cascade gives a modest, corpus-dependent gain over cost-matched random routing; and confidence tracks correctness but not novelty. Every number recomputes offline from per-span records.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00007",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00007"
+      }
+    ],
+    "relevance_score": 0.3858420196400788,
+    "max_similarity": 0.10086590755663734
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00331",
+    "title": "Mathematical Transfer in LLMs Follows Reasoning Approach More Than Topic",
+    "authors": [
+      "Sajad Goudarzi, Samaneh Zamanifard, Seyed Amin Seyed Haeri, Moloud Nasiri, Hamed Rahimian"
+    ],
+    "abstract": "arXiv:2610.00331v1 Announce Type: new \nAbstract: When selecting mathematical training data for LLMs, a natural organizing principle is topic: probability examples for probability targets. An alternative is reasoning approach: worked solutions that share a solution method with the target, even when the mathematical domain differs. We ask which relation produces greater transfer after fine-tuning. We evaluate two counterbalanced $2\\times2$ designs: probability and combinatorics crossed with invariant reasoning and double counting (2,000 problems), and number theory and geometry crossed with complement and pigeonhole reasoning (800 problems). In each design, every cell serves as the held-out target in turn: same-approach (SA) sources share the target's method but change the topic, while same-topic (ST) sources share the topic but change the method. Every source appears once in each role, so additive source-quality effects cancel from the equally weighted aggregate contrast. Across five base models and three training seeds per design, SA outperforms ST in all 40 seed-pooled model--target comparisons. Model-level advantages range from 8.2 to 16.2 percentage points in the primary design (mean: 10.8) and from 12.0 to 16.0 in the second design (mean: 14.3); all ten model-level 95% confidence intervals exclude zero. In both designs, ST sources are more similar to targets under embedding and lexical measures, so the SA advantage runs opposite to the measured ordering of statement-level resemblance. These findings identify reasoning approach as a more effective matching criterion than topic for mathematical transfer across the evaluated topic--approach combinations.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00331",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00331"
+      }
+    ],
+    "relevance_score": 0.38426858613791953,
+    "max_similarity": 0.09684954942075755
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00083",
+    "title": "\"very likely\" Means \"uncertain\"? How LLMs Diverge from Humans in Linguistic Uncertainty Quantification",
+    "authors": [
+      "Jinhao Duan, Zicheng Liu, Zijie Liu, Kaidi Xu, Tianlong Chen"
+    ],
+    "abstract": "arXiv:2610.00083v1 Announce Type: new \nAbstract: Humans express uncertainty verbally via markers (e.g., \"possible,\" \"likely\"), yet most LLM uncertainty quantification (UQ) relies on costing likelihood- or consistency-based signals. From a cognitive perspective, accurate verbal uncertainty reflects metacognitive monitoring, representing knowledge boundaries (\"knowing that you don't know\") to support regulation and information seeking. In this paper, we investigate how LLMs diverge from humans in verbal uncertainty quantification and whether verbal markers can reliably quantify LLM uncertainty. We curate a corpus of human uncertainty markers from psychology and decision-science literature and benchmark LLMs against it. We observe that LLMs encode verbal uncertainty with numerical levels that differ substantially from those of humans. We then introduce METHODNAME, a novel optimization-based algorithm that learns an optimal uncertainty profile over uncertainty markers directly from LLM outputs. By fitting a marker-uncertainty mapping to best explain empirical correctness, METHODNAME discovers how much probability mass each verbal marker should convey, rather than estimating uncertainty via repeated sampling. METHODNAME enables a direct, marker-level comparison of confidence semantics between humans and LLMs, disentangling mismatch and revealing systematic confidence disparities in verbal expressions.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00083",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00083"
+      }
+    ],
+    "relevance_score": 0.37973853724697937,
+    "max_similarity": 0.28337317693592795
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00313",
+    "title": "Rules to Tools: Executable Checks for LLM Agents in Scientific Computing",
+    "authors": [
+      "Jingjie Ning, Guojiang Zhao, Chen Xu, Shanshan Zhong, Xiaochuan Li, Ji Zeng, Guolin Ke"
+    ],
+    "abstract": "arXiv:2610.00313v1 Announce Type: new \nAbstract: Scientific coding agents receive equations, boundary conditions, and output requirements in writing, then must assess the programs they revise. Rules to Tools (R2T) supplies prepared executable checks of public scientific requirements. Matched SciCode repair groups share written checks, starting programs, model, and budgets; the tool group receives a callable implementation. Across two task-ID cohorts, complete repair is 26/30 with text and 29/30 with the prepared checks. Three task IDs favor tools, one favors text, and eleven tie. The eight-ID cohort scores 13/16 versus 15/16, with a task-cluster bootstrap 95% interval of [-12.5, 43.75] percentage points for the difference. The larger shared-definition SciCode cohort ties at 13/24 per group. Five development-exposed tasks with alternate starting programs score 3/10 versus 7/10. The tool group favors tasks 17, 77, and 11; initial checks flag task 17 and report no violation for tasks 77 and 11. Task 37 favors text and has no initial reported violation. A fresh source-through-Python arm also reaches 15/16, matching the dedicated command's aggregate. In a matched PDE comparison, detailed text scores 23/24 and checks score 24/24, with 31.2% lower reported model output for checks. Agent-side output savings vary by cohort, while public CPU use rises in both task-ID cohorts. These results measure task-dependent repair outcomes and agent-side costs with prepared checks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00313",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00313"
+      }
+    ],
+    "relevance_score": 0.312360675727857,
+    "max_similarity": 0.13421991642870063
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.00054",
+    "title": "The First Token Is Not the Verdict: Hidden Costs of Reading LLM Judges Without Generating",
+    "authors": [
+      "Gnaneswar Villuri, Hashmath Shaik, Alex Doboli"
+    ],
+    "abstract": "arXiv:2610.00054v1 Announce Type: new \nAbstract: Reading an LLM judge's verdict from the logits of its first generated token is cheap, requires no generation, and is exactly what constrained decoding and likelihood-scoring evaluation harnesses produce. We show that this readout distorts position bias in one direction: it overstates it in every condition we test, so figures obtained this way behave as upper bounds. The mechanism is that judges do not always lead with a verdict token, on 12% to 49% of pairs for three Qwen3 judges and under 3% for Llama-3.1-8B and Phi-3.5-mini, and forcing a read on those pairs returns whichever response was shown first rather than a judgment. Pooled over the 924 pairs where a judge did not commit, the forced read flips on 89.7% of them when the responses are swapped, against 47.5% read after generation (paired difference +0.422, 95% CI [+0.365, +0.467]). The distortion is specific to what is measured: it moves position bias by 42 points while moving judge accuracy by under one point in seven of ten conditions, so it misleads whoever audits a judge rather than whoever uses one. A second, smaller failure occurs even when the judge does lead with a verdict token, since it sometimes opens with one letter and reasons its way to the other, on 0 to 5.5% of pairs at a rate uncorrelated with compliance. We recommend reporting the rate at which a judge leads with a verdict token, which costs one forward pass and no labels, alongside any position-bias figure.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 02 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.00054",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.00054"
+      }
+    ],
+    "relevance_score": 0.23392267605584954,
+    "max_similarity": 0.10073655987189942
+  }
+]
