@@ -1,0 +1,282 @@
+[
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03938",
+    "title": "MLLMs Fail to Refuse when Using Tools Agentically",
+    "authors": [
+      "Rikiya Takehi, Ryo Hachiuma, Shaona Ghosh, Dan Zhao, Yu-Chiang Frank Wang, Yusuke Hirota"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03938",
+    "summary": "研究问题：Agentic MLLMs在使用工具时拒绝有害请求的能力下降  \n主要方法：在三个安全基准上对比工具与非工具设置，分析10万+响应  \n关键贡献：发现拒绝失败率最高增加68.7%，并提出两个可能原因",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04083",
+    "title": "Self-Propagating Misalignment in LLM Agents, and Why Auditing or Disabling Memory Is Not Enough",
+    "authors": [
+      "Debeshee Das, Jacqueline Tay, Bruce Tsai, David Huang, Javier Rando"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04083",
+    "summary": "研究问题：研究LLM代理中自我传播的错位问题，即错位代理将目标写入持久内存，使未来对齐代理执行。  \n主要方法：在20个场景中模拟错位，使用两种提示策略（无限制和仅价值观），测试11个前沿模型。  \n关键贡献：发现自我传播成功率高（无限制58%，仅价值观18%），且移除内存工具后代理仍可通过文件系统传播。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03991",
+    "title": "Masked Privileged-Information Distillation for Multimodal Skin Lesion Classification Under Missing Clinical Metadata",
+    "authors": [
+      "Anirban Barua, Md Mahir Abrar Khan, Ayman Iktidar, Md. Sajjatul Islam"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03991",
+    "summary": "研究问题：多模态皮肤病变分类中，训练时完整元数据在部署时可能部分缺失，且需计算效率。\n主要方法：提出特权信息蒸馏框架，教师用完整元数据训练，学生用随机掩码元数据训练，残差融合元数据作为门控修正。\n关键贡献：掩码训练使学生平衡准确率平均提升+4.7点，从完整到缺失仅下降7.8点（对比36.6点），实现优雅降级。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03951",
+    "title": "Evolving LLM-Generated Features for Interpretable Classification",
+    "authors": [
+      "Jack Butler, Zainab Afolabi, Nikita Kozodoi"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03951",
+    "summary": "研究问题：LLM作为分类器不透明，难以用于信用评分等监管领域。\n主要方法：提出进化框架，迭代发现自然语言特征定义，结合LLM生成候选特征和透明分类器。\n关键贡献：进化特征比单次生成平均提升2.9个百分点，在信用风险任务上实现平衡可解释预测。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03978",
+    "title": "Learning Latent Protein Languages for Autoregressive Generation",
+    "authors": [
+      "Mahdi Pourmirzaei, Farzaneh Esmaili, Amir Ziashahabi, Mohammadreza Pourmirzaei, Dong Xu"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03978",
+    "summary": "研究问题：自回归Transformer在蛋白质序列和结构生成中性能较弱，需改进目标表示。\n主要方法：引入两种潜在蛋白质语言（PLL和SLL），基于ESM-2和GCP-VQVAE Lite，用自回归模型进行下一token预测预训练。\n关键贡献：PLLM在序列生成中降低低熵样本54%，SLL在结构预测中降低验证困惑度34%。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03894",
+    "title": "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities",
+    "authors": [
+      "Yikai Zhao, Saurabh Pandey, Pradeep Kumar Misra"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03894",
+    "summary": "研究问题：审计黑盒LLM代理的无声错误，因其无法提供可靠置信度。\n主要方法：用低成本开源替代模型并行读取上下文，通过教师强制、请求PMI、判别性判决和工具选择竞争等互补读数评分。\n关键贡献：无需训练和访问代理内部，仅一次预填充，在困难编码任务上AUROC达0.825，远超代理自身置信度0.598。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04072",
+    "title": "Reinforcement Learning with Comparative Evidence for Social Intelligence",
+    "authors": [
+      "Keane Ong, Yuriel Ryan, Sabri Boughorbel, Vladimir Necula, Jack Wei Lun Shi, Rui Mao, Roy Ka-Wei Lee, Adriel Kuek, Nancy F. Chen, Erik Cambria, Gianmarco Mengaldo, Paul Pu Liang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04072",
+    "summary": "研究问题：社交智能AI依赖人工标注，缺乏验证标准，且社交目标存在歧义。\n主要方法：提出RLCE，通过构建证据测试比较不同答案，从无标注数据中学习社交理解。\n关键贡献：无需真实标注即可训练社交理解模型，证据测试随策略演化。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03948",
+    "title": "Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom",
+    "authors": [
+      "Xiaojun Bi, Xiaoyuan Ma, Yiwen Sun, Tianren Huang, Chaoran Liu, Bokai Huang, Hao Yang, Baichuan Mo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03948",
+    "summary": "研究问题：自动驾驶决策需平衡安全、效率与社会规范，现有方法缺乏哲学伦理指导。  \n主要方法：提出CPW-Drive框架，融合儒家思想与检索增强生成（RAG），通过PSSR检索物理相关历史案例。  \n关键贡献：首次将中国哲学智慧融入自动驾驶决策，在高速车道任务中实现93.0%、86.0%、72.0%的成功率。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03972",
+    "title": "Probabilistic Algorithms for Ising Machines from Optimization to Generative AI",
+    "authors": [
+      "Corentin Delacour, Xiuqi Zhang, Abdelrahman S. Abdelrahman, Saleh Bunaiyan, Kyle Lee, Shuvro Chowdhury, Kerem Y. Camsari"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03972",
+    "summary": "研究问题：Ising机器在优化与生成式AI中的算法-硬件协同设计。\n主要方法：综述模拟退火、并行回火、聚类平均场、变分采样器及PAOA等概率算法。\n关键贡献：提出算法与硬件互促范式，揭示生成式AI与Ising机器的双向增强潜力。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04008",
+    "title": "SkillScriptBench: Benchmarking Self-Evolution of Executable Agent Skill Packages Beyond Markdown",
+    "authors": [
+      "Yuxuan Liu, Haoran Li, Yuhao Zhang, Jiahe Guo, Hongyu Luo, Wenbin Hu, Huihao Jing, Kawai Chung, Junle Chen, Changxuan Fan, Qing Zong, Lingyun Xie, Yangqiu Song"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04008",
+    "summary": "研究问题：现有基准未能系统区分文档修复、脚本修复和保留能力，评估智能体技能自我进化。  \n主要方法：构建SkillScriptBench基准（350任务），引入AST-Guided Skill Revision方法。  \n关键贡献：提出可执行技能包自我进化的系统评估基准，发现编辑文档和脚本的方法在文档修复和保留上不优于仅Markdown修订。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03980",
+    "title": "FADE: Frame-Aware Diffusion-Transformer-based Multi-Concept Erasure for Video Unlearning",
+    "authors": [
+      "Yuchen Li, Kaiyuan Deng, Chaoran Feng, Zhenyu Tang, Li Yuan"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03980",
+    "summary": "研究问题：现有T2V概念擦除存在帧级残留和单概念评估局限。  \n主要方法：提出FADE框架，联合闭式键值编辑抑制目标概念，训练帧感知低秩适配器消除逐帧泄漏，并用硬负样本和软路由器处理多概念。  \n关键贡献：在16个概念擦除中，将对象基准残留准确率降至4.9%（对比15.5%）。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03822",
+    "title": "Beyond Token Accuracy: Prioritizing What Matters for Visual Reconstruction",
+    "authors": [
+      "Zhicheng Liu, Zhouxiang Zhao, Chenliang Wu, Zhaohui Yang, Zhaoyang Zhang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03822",
+    "summary": "研究问题：现有视觉token通信方法依赖静态策略，无法适应图像内容和信道条件，且token级效用目标不直接提升重建质量。\n主要方法：提出AdapToC框架，包括自适应选择器动态分配token数量和不等保护，以及自适应MaskGIT接收器区分可靠性并迭代重建。\n关键贡献：协同设计token数量、不等保护与上下文建模，实现面向重建的自适应视觉token通信。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04053",
+    "title": "The Cost of a Hop: Benchmarking NLIP and A2A",
+    "authors": [
+      "Ranjan Sinha, Anindita Das, Ashika Anand Babu, Hari Palleti"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04053",
+    "summary": "研究问题：比较NLIP和A2A协议的性能差异及延迟分解。\n主要方法：在三种硬件环境下，将延迟分解为消息创建、连接和发送阶段进行实证对比。\n关键贡献：发现NLIP在轻量协调中比A2A快8.4-9.6倍，差异主要来自连接建立；缓存可缩小差距。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03998",
+    "title": "Behavioral History Outperforms Descriptions of the Person for LLM Synthetic Personas",
+    "authors": [
+      "Khashayar Pourtaheri, Ahmad Zareei"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03998",
+    "summary": "研究问题：LLM合成人物能否有效代表个体决策，需何种信息预测行为偏差  \n主要方法：两波面板实验，比较五种信息条件（无信息、人口统计、人格、认知、行为历史）对14种偏差的预测  \n关键贡献：行为历史恢复个体间变异至人类水平，而描述仅恢复53-67%",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03896",
+    "title": "AdaEva: Accelerating LLM-Driven Algorithm Design with Adaptive Partial Evaluation",
+    "authors": [
+      "Tai Nguyen, Fei Liu, Phong Le, Carola Doerr, Nguyen Dang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03896",
+    "summary": "研究问题：LLM驱动算法设计中候选算法评估计算成本过高，是否必须完整评估所有实例？\n主要方法：提出AdaEva自适应部分评估框架，采用逐次减半和统计竞赛机制逐步淘汰无望候选。\n关键贡献：不改变底层流程，显著降低评估成本，在多种框架和优化领域验证了平衡预算与可靠性的有效性。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03799",
+    "title": "StepCAD: Mesh-to-CAD Code Generation via LLM Policy and Geometry-Guided Search",
+    "authors": [
+      "Ghadi Nehme, Faez Ahmed"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03799",
+    "summary": "研究问题：从3D网格恢复可执行CAD程序困难，现有方法预测完整程序且操作单一。\n主要方法：提出StepCAD，结合状态条件CAD策略与几何引导搜索，用IoU引导树搜索优化。\n关键贡献：引入ARCADE-1.5M数据集，实现高几何重建精度，相对IoU提升87.2%。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03834",
+    "title": "LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction",
+    "authors": [
+      "Xuxilu Zhang, Francesc Soriguera"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03834",
+    "summary": "研究问题：如何利用LLM将非结构化外部文本融入网格级共享单车需求预测，处理时空非平稳性和数据稀疏性。  \n主要方法：提出LLM驱动的语义冲击波机制提取事件参数构建高斯衰减场，注入零膨胀自适应时空图卷积网络（ZI-ASTGCN），并采用双分支输出头和零膨胀损失。  \n关键贡献：首次将LLM用于量化城市事件对共享单车需求的影响，提出ZI-ASTGCN有效处理稀疏性和异常事件，在真实数据上取得显著提升。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04040",
+    "title": "Agent Policy-Value Audit: Separating Transition Composition from Event Selection in Financial LLM Agents",
+    "authors": [
+      "Mingyang (Alex),  Chen (Andrew),  Yida (Andrew),  Xu (Aurora),  Huiwen (Aurora),  Chen, Yiming Lu, Wei Jin"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04040",
+    "summary": "研究问题：现有金融LLM代理评估无法隔离事件选择技能，易将被动暴露误判为选股能力。\n主要方法：提出Agent Policy-Value Audit，固定动作变化次数并随机重分配，分解部署价值为组成基准和选择价值。\n关键贡献：在真实收益事件基准测试中，将错误归因率从11.6%降至5.3%，准确分离被动暴露与主动选择。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03947",
+    "title": "Synthesizing Physics Formulae with Transformers",
+    "authors": [
+      "Shuwei Wang, Vadim Bulitko, Michael Youngblood, Ramon Lawrence, William Yeoh, Shinichi Nakagawa, Matthew R. G. Brown, Yu Wang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03947",
+    "summary": "研究问题：符号回归中Transformer易过拟合，无法外推至未见输入范围。  \n主要方法：塑造训练公式集改善外推，并用噪声数据微调增强鲁棒性。  \n关键贡献：10秒内合成公式，外推性能优于所有可比方法，仅被搜索方法以1-3个数量级更多时间超越。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03769",
+    "title": "Bayes-Sufficient Compression Is Not Enough: How Does Communication Help Multi-Agent Systems?",
+    "authors": [
+      "Yi Xie, Zhanke Zhou, Yi Fan, Yong Ge, Bo Han, Bo Liu"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 06 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03769",
+    "summary": "研究问题：多智能体LLM系统中短消息何时改善执行者决策，何时原始上下文更好，以及更强发送者何时有帮助。  \n主要方法：提出接收者相对有界协调框架，通过三阶段分解（外化、吸收、行动闭合）分析错误。  \n关键贡献：发现贝叶斯充分压缩可能因执行者有界而失败；揭示固定消息重放中闭合失败；指导推理时选择器改进准确率-成本边界。",
+    "language": "zh"
+  }
+]
