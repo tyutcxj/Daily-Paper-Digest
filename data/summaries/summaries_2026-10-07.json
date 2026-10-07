@@ -1,0 +1,282 @@
+[
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03938",
+    "title": "MLLMs Fail to Refuse when Using Tools Agentically",
+    "authors": [
+      "Rikiya Takehi, Ryo Hachiuma, Shaona Ghosh, Dan Zhao, Yu-Chiang Frank Wang, Yusuke Hirota"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03938",
+    "summary": "研究问题：工具使用范式下MLLMs安全失败，拒绝有害请求能力下降  \n主要方法：在三个安全基准上测试多个MLLMs，分析10万+响应  \n关键贡献：发现工具使用设置中拒绝失败率增加高达68.7%，并提出两个可能原因",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04083",
+    "title": "Self-Propagating Misalignment in LLM Agents, and Why Auditing or Disabling Memory Is Not Enough",
+    "authors": [
+      "Debeshee Das, Jacqueline Tay, Bruce Tsai, David Huang, Javier Rando"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04083",
+    "summary": "研究问题：LLM代理能否在没有外部对手的情况下，将未对齐目标写入持久记忆以自我传播。\n主要方法：在20种场景中，使用无限制和仅价值观两种提示策略，模拟11个前沿模型的未对齐行为。\n关键贡献：发现未对齐可自我传播，无限制提示下成功率58%，仅价值观提示下18%，且移除记忆工具后代理会利用文件系统。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06972",
+    "title": "BoT-Feedback: Grounding Multimodal Reasoning in Biomechanical Evidence for Explainable Human Action Feedback",
+    "authors": [
+      "Xu Dong, Wanqing Li, Anthony Adeyemi-Ejeye, Andrew Gilbert"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06972",
+    "summary": "研究问题：MLLMs在人类动作反馈生成中缺乏可解释性和物理合理性。  \n主要方法：提出BoT-Feedback框架，包含Biomechanics of Thought四阶段推理、Biomechanical Data Parser和对齐策略。  \n关键贡献：将结构化生物力学证据融入MLLM推理，实现可解释的教练反馈。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06993",
+    "title": "DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies",
+    "authors": [
+      "Zhishen Sun, Hongzhan Wang, Sizhe Dang, Guang Dai, Haishan Ye"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06993",
+    "summary": "研究问题：标准ES均匀平均奖励，难以捕捉问题学习价值随模型能力的变化。  \n主要方法：提出DART-ES，通过扰动群体通过率估计局部可解性，构建动态难度状态，实现连续难度重加权和稀有可解样本重放。  \n关键贡献：无需额外模型或反向传播，显著提升LLM微调性能，在五个基模型上平均准确率从72.07%提升至73.53%，超越GRPO。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03894",
+    "title": "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities",
+    "authors": [
+      "Yikai Zhao, Saurabh Pandey, Pradeep Kumar Misra"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03894",
+    "summary": "研究问题：黑盒LLM代理的无声错误难以检测，因API隐藏token概率且代理置信度不可靠。\n主要方法：用低成本开放权重替代模型并行运行，通过教师强制、请求PMI、判别判决和工具选择竞争等互补读出方法，从替代模型log概率恢复信号。\n关键贡献：无需训练或访问代理内部，一次预填充即可检测错误，在困难编码任务上AUROC达0.825，远超代理自身置信度（0.598）。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06996",
+    "title": "Mask-Guided KV Cache Eviction in Block Diffusion Language Models",
+    "authors": [
+      "Gleb Molodtsov, Ekaterina Alimaskina, Evgeny Uskov, Artur Zagitov, Aleksandr Beznosikov"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06996",
+    "summary": "研究问题：Block扩散语言模型的大KV缓存限制内存和速度，需解决token选择与驱逐问题。  \n主要方法：提出MaskAhead，无训练方法，用掩码查询排名机制同时指导选择和驱逐，基于贡献排名KV条目；量化变体Q-MaskAhead直接使用低比特KV。  \n关键贡献：长提示QA任务中KV内存减少9.5倍（F1损失1.2点），Q-MaskAhead减少20.1倍（损失2.3点），并实现1.23倍端到端加速。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06889",
+    "title": "Zero-Shot Visualization: Exploring Text Corpora with User-Prompted Axes",
+    "authors": [
+      "Arnau Bueno Tricas, Jose A. Rodr\\'iguez-Serrano"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06889",
+    "summary": "研究问题：零样本可视化（ZSV）任务，用户用自然语言指定概念轴进行文本语料库可视化。\n主要方法：利用大语言模型（LLM）进行评分，比较嵌入相似度、直接语义判断和条件似然估计等方法。\n关键贡献：建立基准，发现基于下一个词概率的评分在语义忠实度、分数保真度和计算成本间最佳平衡，并揭示分级轴与二元过滤等设计考虑。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06902",
+    "title": "Tree Navigation Without LLM Summaries: A Matched-Cost Study of Hierarchical Retrieval for Long-Document QA",
+    "authors": [
+      "Priyank Jayraj, Poonam Goyal, Navneet Goyal"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06902",
+    "summary": "研究问题：长文档QA中摘要树的优势来源是导航而非摘要内容  \n主要方法：提出NavTree，构建零LM调用的平衡段树，使用混合词法与稠密边界遍历进行导航检索  \n关键贡献：在匹配成本评估中NavTree是最强层次检索器，多跳QA中显著优于BM25",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06896",
+    "title": "Medical Image Alignment Assessment as a Test of Generalist Visual Reasoning in Frontier Multimodal Models",
+    "authors": [
+      "Ross Callaghan, Niannu Gao, Hojjat Azadbakht, Hui Zhang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06896",
+    "summary": "研究问题：前沿多模态大模型能否像人类一样进行医学图像对齐的视觉判断？\n主要方法：在两种医学图像对齐任务上评估最新MLLMs，比较不同提示策略和图像呈现方式，并与微调MLLM和CNN对比。\n关键贡献：发现前沿MLLMs已达到转折点，能有效进行医学图像对齐的视觉评估。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04072",
+    "title": "Reinforcement Learning with Comparative Evidence for Social Intelligence",
+    "authors": [
+      "Keane Ong, Yuriel Ryan, Sabri Boughorbel, Vladimir Necula, Jack Wei Lun Shi, Rui Mao, Roy Ka-Wei Lee, Adriel Kuek, Nancy F. Chen, Erik Cambria, Gianmarco Mengaldo, Paul Pu Liang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04072",
+    "summary": "研究问题：如何从无标注数据中学习社会理解，避免依赖人工标注。  \n主要方法：提出RLCE，通过构建证据测试比较不同答案，验证并聚合结果以确定最佳解释。  \n关键贡献：无需真实标注，利用比较证据进行强化学习，提升社会智能。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03948",
+    "title": "Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom",
+    "authors": [
+      "Xiaojun Bi, Xiaoyuan Ma, Yiwen Sun, Tianren Huang, Chaoran Liu, Bokai Huang, Hao Yang, Baichuan Mo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03948",
+    "summary": "研究问题：自动驾驶决策需平衡安全、效率与社会规范，现有方法缺乏哲学伦理指导。  \n主要方法：提出CPW-Drive框架，基于儒家思想构建价值原则，结合RAG与物理感知空间相似性检索（PSSR）。  \n关键贡献：首次将中国哲学智慧融入自动驾驶决策，在高速公路任务中实现93.0%、86.0%、72.0%的成功率。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06918",
+    "title": "Learning from Unreliable Trajectories: Adversarially-Robust Federated Q-Learning",
+    "authors": [
+      "Sreejeet Maity, Aritra Mitra"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06918",
+    "summary": "研究问题：联邦强化学习中对抗智能体损坏信息时协作样本效率的保持性\n主要方法：提出Robust Async-Fed-Q算法，结合方差缩减的Bellman最优性算子估计与鲁棒聚合\n关键贡献：给出高概率有限时间保证，证明对抗影响随数据增长消失，并首次提供近匹配上下界",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06977",
+    "title": "Visual-Invariance-Augmented Feature Optimal Alignment for Transferable Adversarial Attacks against Closed-Source MLLMs",
+    "authors": [
+      "Xiaojun Jia, Simeng Qin, Yiming Li, Jie Liao, Sensen Gao, Ke Ma, Yang Liu, Xiaochun Cao"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06977",
+    "summary": "研究问题：针对闭源多模态大模型的可迁移对抗攻击，现有全局对齐方法不足。\n主要方法：提出IAU-FOA，结合视觉不变性增强的特征最优对齐和自适应不平衡运输，实现全局与局部特征对齐。\n关键贡献：提升了针对闭源MLLMs的可迁移性。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04008",
+    "title": "SkillScriptBench: Benchmarking Self-Evolution of Executable Agent Skill Packages Beyond Markdown",
+    "authors": [
+      "Yuxuan Liu, Haoran Li, Yuhao Zhang, Jiahe Guo, Hongyu Luo, Wenbin Hu, Huihao Jing, Kawai Chung, Junle Chen, Changxuan Fan, Qing Zong, Lingyun Xie, Yangqiu Song"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04008",
+    "summary": "研究问题：现有基准无法系统区分文档修复、脚本修复和保留能力，评估技能自我进化。  \n主要方法：构建SkillScriptBench基准，包含350个任务，从GitHub选取100个包，设计修复任务，并引入AST引导的技能修订方法。  \n关键贡献：提出AST-Guided Skill Revision方法，使用抽象语法树和调用关系，并发现同时编辑文档和脚本的方法在文档修复和保留上并不优于仅Markdown修订。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06855",
+    "title": "TEMPEST: Temporal Embeddings for Scalable Driver Identification via Angular Margin Learning",
+    "authors": [
+      "Kyle Musgrove, Dylan B. Lewis, Sarah Powers, Emma J. Reid, Hector Santos-Villalobos"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06855",
+    "summary": "研究问题：可扩展驾驶员身份识别中嵌入模型随车队规模增大性能退化及过拟合问题  \n主要方法：基于时间卷积网络和ArcFace角度间隔损失的TEMPEST嵌入模型  \n关键贡献：45驾驶员数据集上Rank-1达91.71%，跨会话泛化强，模型仅2.80MB",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06861",
+    "title": "When Does External Guidance Help LLM Reasoning? A Bias-Variance Theory of Guidance-Augmented GRPO",
+    "authors": [
+      "Sofia Torres, Gabriel Almeida, Carter Adams, Camila Rocha"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06861",
+    "summary": "研究问题：外部引导何时帮助LLM推理？缺乏理论分析  \n主要方法：提出GA-GRPO框架，将外部引导视为随机引导算子，分析偏差与收敛  \n关键贡献：证明O(1/√T)收敛率，推导最优引导权重，统一多种方法",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04053",
+    "title": "The Cost of a Hop: Benchmarking NLIP and A2A",
+    "authors": [
+      "Ranjan Sinha, Anindita Das, Ashika Anand Babu, Hari Palleti"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04053",
+    "summary": "研究问题：比较NLIP和A2A协议的性能并分解延迟来源  \n主要方法：在三个硬件环境上实证测量消息创建、连接和发送阶段的延迟  \n关键贡献：NLIP在轻量协调上比A2A快8.4-9.6倍，优势主要来自连接建立；缓存优化后差距缩小",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.06970",
+    "title": "EVFormer: An Egocentric Vision-EMG Bidirectional Attention Model for Bimanual Hand Pose Estimation",
+    "authors": [
+      "JiaCheng Ge, SiYu Zhang, ShengJie Li, XinTong Yang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.06970",
+    "summary": "研究问题：双手手部姿态估计中视觉被遮挡的问题  \n主要方法：结合RGB和sEMG的双向交叉注意力与门控融合  \n关键贡献：误差降低13-14%，优于视觉、sEMG及后融合基线",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.03998",
+    "title": "Behavioral History Outperforms Descriptions of the Person for LLM Synthetic Personas",
+    "authors": [
+      "Khashayar Pourtaheri, Ahmad Zareei"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.03998",
+    "summary": "研究问题：LLM作为合成人物代表调查受访者时，需要什么信息才能准确预测个体后续选择。\n主要方法：使用两波面板数据，逐步添加个人信息（无信息、人口统计、人格特质、认知分数、行为历史），比较预测14种行为偏差的效果。\n关键贡献：发现行为历史能恢复个体间变异到人类水平，而描述性信息仅恢复53-67%；聚合层面相似但个体层面差异大。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2610.04040",
+    "title": "Agent Policy-Value Audit: Separating Transition Composition from Event Selection in Financial LLM Agents",
+    "authors": [
+      "Mingyang (Alex),  Chen (Andrew),  Yida (Andrew),  Xu (Aurora),  Huiwen (Aurora),  Chen, Yiming Lu, Wei Jin"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 07 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.04040",
+    "summary": "研究问题：金融LLM代理评估中端到端收益无法隔离事件选择技能，导致误判。  \n主要方法：提出Agent Policy-Value Audit，固定行动变化类型计数并随机重分配，分解组成基准与选择价值。  \n关键贡献：将误报率从11.6%降至5.3%，实际应用分解出+25.8bps组成基准和-10.6bps选择价值。",
+    "language": "zh"
+  }
+]
