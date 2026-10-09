@@ -1,0 +1,515 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2610.10563",
+    "title": "SLVR: Structured Latent Visual Reasoning via Human-like Reasoning Flows",
+    "authors": [
+      "Albert Gao, Bing Xue, Andrea Zanette"
+    ],
+    "abstract": "arXiv:2610.10563v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) often answer visual reasoning questions by relying on linguistic priors rather than task-relevant visual evidence. Textual chain-of-thought reasoning can partially mitigate this issue by encouraging models to decompose visual questions into intermediate evidence-seeking steps, but generating these steps autoregressively increases inference cost. Latent reasoning avoids explicit rationale generation, but existing approaches provide limited control over what intermediate states encode, making it difficult to impose separate supervision for planning, grounding, and evidence selection. We propose Structured Latent Visual Reasoning (SLVR), a training framework that bridges explicit chain-of-thought and latent reasoning by organizing multimodal reasoning into typed latent stages for planning, grounding, evidence selection, and reasoning integration.\n  SLVR first trains the model to rely on the image by masking answer-revealing text and contrasting the correct answer with visually plausible distractors. It then organizes reasoning into latent stages for planning, grounding, evidence selection, and integration, supervising each stage with the corresponding signal: plans, boxes, visual evidence, and final rationales. This gives latent reasoning an explicit functional structure while avoiding generated textual chains at inference time.\n  Built on Qwen2.5-VL-7B, SLVR improves consistently across multimodal reasoning benchmarks, with absolute gains of +9.4 on MMVP and +14.2 on BLINK Relation, as well as improvements on V*, MathVista, and ChartQA. These results suggest that structured latent supervision can improve fine-grained visual reasoning without the decoding overhead of textual CoT. Project page is available \\href{https://bogao-code.github.io/SLVR/}{here}.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10563",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10563"
+      }
+    ],
+    "relevance_score": 0.5281230998667852,
+    "max_similarity": 0.27039179245021794
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10984",
+    "title": "Fluid-Gen-Zero: Grounding Pretrained Video Generators in Physics without Training",
+    "authors": [
+      "Hong Huang, Yuqiu Liu, Chenyu You, Daniel Martin, Chuhang Zou, Wuyang Chen"
+    ],
+    "abstract": "arXiv:2610.10984v1 Announce Type: new \nAbstract: We present Fluid-Gen-Zero, a training-free framework for physics-aware fluid-object interaction video generation that decouples physical reasoning from appearance synthesis. Our key insight is to delegate motion dynamics to a physics simulator while preserving the appearance modeling capacity of pretrained video generators. We bridge these two domains through a two-level agentic workflow: generation-time planning, where a vision-language model (VLM) agent interprets intent and the simulation rollout to organize generation clips, and latent-space guidance, which injects simulation signals into denoising through region-aware latent wrapping. This plug-and-play design is compatible with current video foundation models. We further introduce a benchmark for fluid-object interaction video generation. Across Tora (CogVideoX-based), VACE and WanMove (Wan-based), Fluid-Gen-Zero consistently improves simulation alignment, reducing object trajectory error by 26.7%-81.5% and fluid fEPE (fluid flow endpoint error) by 67.9%-84.0%, while largely preserving perceptual quality. In a human preference study, raters favor Fluid-Gen-Zero in 55.1%-74.4% of same-backbone comparisons across three backbones, and in 90.4%-94.2% of comparisons against simulation-based methods. Code and data will be released upon acceptance.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10984",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10984"
+      }
+    ],
+    "relevance_score": 0.5241841677893108,
+    "max_similarity": 0.2689061447194438
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10655",
+    "title": "Nullify: Null-Space Activation Steering for Training-Free LLM Unlearning",
+    "authors": [
+      "Wei Zhai, Xiang Liu, Qiang Huang, Rui Qian, Lemao Liu, Ziwei Li, Ziqi Wang, Zhitao Huang, Dejing Dou"
+    ],
+    "abstract": "arXiv:2610.10655v1 Announce Type: new \nAbstract: Large Language Models (LLMs) inevitably internalize substantial amounts of sensitive or private information during pre-training, while LLM unlearning aims to selectively erase specific knowledge to prevent privacy leakage with minimal loss of model utility. However, existing methods struggle to balance forget quality with utility, and typically incur substantial computational costs due to parameter fine-tuning. To address this, we propose Nullify, a training-free, non-destructive activation steering method for LLM unlearning. Nullify employs steering vectors during inference to redirect privacy-related activations away from their memorized answers, while satisfying a null-space constraint that leaves retained-query activations essentially unaffected to maintain utility. Evaluations on TOFU and MUSE show that Nullify matches or surpasses established baselines in forget quality while achieving near-lossless preservation of model utility. By avoiding weight updates entirely, Nullify serves as an efficient, plug-and-play inference-time intervention framework.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10655",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10655"
+      }
+    ],
+    "relevance_score": 0.49106864887787904,
+    "max_similarity": 0.22908615824592843
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10942",
+    "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
+    "authors": [
+      "Daksh Raghuvanshi, Ved Vedere, Yifan Wang"
+    ],
+    "abstract": "arXiv:2610.10942v1 Announce Type: new \nAbstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily. We introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty. Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning. The agent acts through the same 29 merchant tools a human operator would use, under a windowed operation budget that makes simulated time a function of actions taken, so model latency cannot influence simulated time. Pass thresholds are calibrated against scripted anchor policies, the reward is hardened against a catalogue of reward hacks, and every episode replays identically given a sequence of actions. We evaluate seven frontier LLMs on 11 scenarios of 30 to 45 days and a full simulated year, over three world seeds at matched reasoning effort. No model matches the scripted smart-triage policy on average: the best, DeepSeek-V4-Pro, passes 49% of task-seed cells against the heuristic's 97%. Human experts working through the same tools and budgets outscore every model (mean composite 0.708 vs. 0.700). Over a full simulated year under the Claude Code harness, most models show dramatic performance improvement. In a GRPO post-training run, Qwen3.5-27B trained on only five disjoint tasks raises its mean composite on the held-out evaluation tasks from 0.136 to 0.373. We release five example training-split tasks, ten sample trajectories, and the scoring and verification tooling; the full environment and evaluation suite are withheld to keep the benchmark uncontaminated.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10942",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10942"
+      }
+    ],
+    "relevance_score": 0.4693055529068304,
+    "max_similarity": 0.20120773624932178
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10990",
+    "title": "Omni-Diffusion-Distill: Few-Step Distillation of Unified Multimodal Diffusion Large Language Models",
+    "authors": [
+      "Hong Huang, Chenhongyi Yang, Junzhe Sun, Animesh Sinha, Wuyang Chen, Yifan Jiang"
+    ],
+    "abstract": "arXiv:2610.10990v1 Announce Type: new \nAbstract: Unified multimodal diffusion large language models (dLLMs) offer a single architecture for both image generation and multimodal understanding, but their iterative decoding requires tens to hundreds of forward passes. Existing few-step distillation methods largely focus on either image generation or text generation, making it unclear how to compress a fully discrete multimodal dLLM into a single efficient student while preserving both generation and understanding. We introduce Omni-Diffusion-Distill, a unified two-stage distillation framework that retains strong generation and understanding capabilities while substantially reducing the inference cost of a unified multimodal dLLM. Omni-Diffusion-Distill aligns the distillation of both generation and understanding, for both images and text, in the discrete token space. In the first stage, the student is trained to skip decoding steps by replaying cached teacher trajectories, and in the second stage the student is refined on intermediate states along its own rollouts. We further remedy two sources of degradation in unified distillation with a pairwise collision penalty that reduces repetition under parallel text decoding, and entropy-matched guidance that prevents entropy collapse caused by fitting the sharpened teacher distribution in image generation. Omni-Diffusion-Distill achieves state-of-the-art trade-offs between decoding efficiency and generation and understanding performance for multimodal dLLMs, reducing image generation from 128 to 8 decoding steps and multimodal understanding from 512 to 64, giving 18.2x and 21.2x wall-clock speedups. Under these budgets, it scores 0.828 on GenEval and 83.0 on DPG-Bench for text-to-image generation, while reaching GPT judge scores of 20.0 on MM-Vet and 57.2 on COCO captioning (twice the teacher's 28.4 at the same steps) for multimodal understanding.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10990",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10990"
+      }
+    ],
+    "relevance_score": 0.4646463975912543,
+    "max_similarity": 0.1953485642773715
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10641",
+    "title": "Coverage-Aware Reasoning with Medical Tokens for Diagnosis Prediction",
+    "authors": [
+      "Kaisong Zhang, Haotian Fang, Junmeng Zhou, Hang Lv, Yulan Pan, Yanchao Tan"
+    ],
+    "abstract": "arXiv:2610.10641v1 Announce Type: new \nAbstract: Large language models (LLMs) offer promising potential for next-visit diagnosis prediction, owing to their ability to integrate longitudinal clinical evidence and reason over it in natural language. However, reinforcement learning for LLM reasoning commonly rewards each trajectory according to the correctness of its final answer. In next-visit diagnosis prediction, multiple diagnoses can be simultaneously valid, but independently rewarding one diagnosis per trajectory does not distinguish repeated hits from coverage of different diagnoses. The policy can therefore concentrate on a few correct diagnoses, leaving others uncovered. Meanwhile, LLM tokenizers can split ICD codes into several generic tokens with limited clinical meaning, requiring multiple decoding steps to predict each diagnosis and hindering reasoning over a large disease vocabulary. To address both challenges, we propose CARing, a framework that represents diagnoses with compositional Semantic IDs (SIDs) and optimizes reasoning trajectories for multi-label coverage. Concretely, we first encode ontology-enriched disease semantics into compact SIDs through residual quantization, and ground the resulting SID tokens in natural language and longitudinal EHR contexts through multi-task alignment and reasoning-enriched training to unlock transferable LLM reasoning. CARing further improves unordered multi-label prediction through a coverage reward for reinforcement learning and multi-positive supervision. At inference time, the model supports both efficient direct constrained decoding and multi-chain reasoning with rank fusion. On MIMIC-III and MIMIC-IV, CARing exceeds all EHR-trained baselines in weighted F1 and attains the highest top-k recall at every reported cutoff, including R@30 of 46.04% and 46.52% in reasoning mode. Our codes and logs are available at https://github.com/zmlxzyh/CARing-Codes-Logs.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10641",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10641"
+      }
+    ],
+    "relevance_score": 0.45334377172583307,
+    "max_similarity": 0.17852149492950878
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10648",
+    "title": "Leakage-Controlled Multimodal Learning for Diagnosis and Progression Prediction in Alzheimer's Disease Research",
+    "authors": [
+      "Akeem Temitope Otapo, Ghazaleh Khodabandelou, Zuheng Ming, Alice Othmani"
+    ],
+    "abstract": "arXiv:2610.10648v1 Announce Type: new \nAbstract: Alzheimer's disease prediction involves irregular visits, heterogeneous measurements and incomplete modalities. This study presents a multimodal multitask framework combining an adapted SFCN MRI encoder, four causal clinical Transformers, shared fusion and task-specific ODE-GRU dynamics. Fine-tuning and LoRA adapt the final two MRI blocks. Task-DRO balances task losses, while Group-CVaR targets cohort and comorbidity strata. Branch-specific input controls, subject-grouped partitions and empirical causality checks support longitudinal evaluation. Across 2,649 subjects and 17,317 visits from ADNI, OASIS-2 and MIRIAD, internal validation yields diagnosis, stage-1 progression and first-stage-1-visit progression AUROCs of 0.935 +/- 0.002, 0.884 +/- 0.003 and 0.870 +/- 0.005, respectively (mean +/- SD across three seeds). Corresponding hybrid AUROCs are 0.951, 0.909 and 0.896. Next-visit MMSE mean absolute error (MAE) is 1.61 points; worst-stratum diagnosis AUROC is 0.827 +/- 0.008. Sampled ADNI explanations identify task-specific input dependence. OASIS-3 external validation yields network and hybrid diagnosis AUROCs of 0.763 and 0.767, hybrid next-visit progression AUROC of 0.764, diagnosis calibration error decreasing from 0.197 to 0.052, and next-visit MMSE MAE of 0.86. Seed-42 paired ablations of six components yield pooled diagnosis and progression AUROC differences between -0.004 and +0.004; removing clinical encoder inputs lowers diagnosis AUROC by 0.272. The framework integrates longitudinal prediction, missing-modality handling, auxiliary comorbidity modelling and subgroup evaluation within a common pipeline.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10648",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10648"
+      }
+    ],
+    "relevance_score": 0.4506962442908582,
+    "max_similarity": 0.1805739728464554
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10549",
+    "title": "Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction",
+    "authors": [
+      "Yipeng Li, Ashutosh Hathidara, Jane Lo, Harshavardhan Abichandani, Gunraj Singh, Atin Ghosh"
+    ],
+    "abstract": "arXiv:2610.10549v1 Announce Type: new \nAbstract: Tool-calling agents have become central to enterprise AI, yet training and evaluating them at scale remains severely constrained due to business and legal restrictions on enterprise systems, data, and database schemas. Tabular data synthesis offers a natural alternative, but its effectiveness is fundamentally limited by structural validity and schema availability, while procedure-based approaches yield the opposite weakness, typically lacking distributional fidelity without per-domain authoring. We introduce **Synthesis Through Simulation** (STS), a **schema--free** data synthesis paradigm in which an LLM agent generates data by executing operations against policy-enforcing APIs within simulated enterprise environments. Because data is generated through the same environment that defines what is valid, STS guarantees structural validity by construction while decoupling validity enforcement from distribution modeling, allowing each to be addressed independently. The **Generalist Populator** (GP), STS's domain-agnostic agent, addresses the remaining challenges of distributional fidelity and synthesis scalability: GP achieves **0.88** average marginal fidelity and **100\\% constraint satisfaction** across all ten environments *without access to DB schemas*, while statistical synthesizers are inapplicable to seven due to necessary seed data requirements, and schema-privileged agents fail 82\\% of trajectories on airline environment's tightly coupled workflows due to brittle task composition. We open-source the full framework, all ten environments, and generated datasets at https://github.com/SAP/synthesis-through-simulation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10549",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10549"
+      }
+    ],
+    "relevance_score": 0.4487207099226759,
+    "max_similarity": 0.17745359816144318
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10782",
+    "title": "VICO: Visual Environments Co-Evolving for Vision-Language Model Reasoning",
+    "authors": [
+      "Meng Lu, Ligeng Zhu, Olivia Xiao, Yuchen Zhuang, Zihan Wang, Kuncheng Wu, Bangya Liu, Yu Wang, Charles Fleming, Wenqi Shi, Xuan Wang"
+    ],
+    "abstract": "arXiv:2610.10782v1 Announce Type: new \nAbstract: Reinforcement learning with verifiable rewards (RLVR) has become a standard recipe for post-training vision-language models (VLMs),\n  but it typically assumes a static training environment. As the actor improves, fixed tasks drift out of its learning frontier: many\n  become trivial, others remain unsolvable; and the learning signal collapses. We argue that VLM post-training should evolve the\n  visual environment alongside the actor, not just the actor itself. We propose VICO, a co-evolutionary framework in which an actor\n  and an Environment-as-Rewriter (EnvRewriter) are trained jointly: the EnvRewriter edits verifiable image-side structures, such as\n  scene graphs, chart tables, or protected region masks, and re-renders them to produce label-valid training samples whose difficulty\n  is calibrated to the actor's current ability through a pass-rate-based reward. This loop continuously realigns task difficulty with\n  actor capability without any additional human annotation. Across nine multimodal benchmarks spanning mathematical reasoning and\n  visually grounded understanding, VICO-8B improves over its base model by up to +5.0% on out-of-domain tasks, surpasses the strongest\n  self-evolution and text-editing co-evolution baselines by +4.3% and +8.4% respectively, and stays comparable to chart-specialized\n  RLVR methods using 16-160 times fewer labeled samples. By shifting from human-labeled supervision to image-editing co-evolution,\n  VICO offers a scalable path beyond static-corpus RLVR for visual reasoning.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10782",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10782"
+      }
+    ],
+    "relevance_score": 0.4487035252121878,
+    "max_similarity": 0.17321280600142605
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10653",
+    "title": "PXtal: Learning to Align Powder X-Ray Diffraction and Crystal Structures under Information Asymmetry across Modalities",
+    "authors": [
+      "Zhuoran Yang, Christopher M. Collins, Bei Peng, Luke M. Daniels, Matthew J. Rosseinsky, Vladimir V. Gusev"
+    ],
+    "abstract": "arXiv:2610.10653v1 Announce Type: new \nAbstract: Scientific multimodal learning commonly assumes that paired views are comparably informative. Powder X-ray diffraction (PXRD) makes this mismatch explicit: compressing a three-dimensional crystal structure into a one-dimensional diffraction pattern loses information and makes the pattern harder to connect to the crystal structure that produced it. We introduce PXtal, a framework for learning aligned PXRD and crystal representations under this physically imposed information asymmetry. PXtal uses Unbalanced Optimal Transport (UOT) to adapt the cross-modal coupling and coupling-level generalized Kullback-Leibler (GKL) divergence to supervise the full transport plan. Across six test sets, including four zero-shot transfer sets, PXtal consistently outperforms the baseline models in PXRD-to-crystal candidate retrieval, with the largest gains when PXRD patterns have close but crystallographically distinct nonpaired neighbors, meaning similar input patterns associated with different crystals. The resulting crystal and PXRD encoders transfer more effectively to downstream materials and crystallographic tasks. These results identify information asymmetry as a general design problem in scientific multimodal learning: alignment objectives should reflect what each modality preserves.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10653",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10653"
+      }
+    ],
+    "relevance_score": 0.44369666666613194,
+    "max_similarity": 0.17053049515581234
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.11123",
+    "title": "When Interfaces Speak: Data-Aware Generative UI Harness for Active Interaction",
+    "authors": [
+      "Xiaolong Li, Xiaohan Xu, Jinyang Li, Xinnuo Xu, Ge Qu, Nan Huo, Jack Williams, Reynold Cheng"
+    ],
+    "abstract": "arXiv:2610.11123v1 Announce Type: new \nAbstract: Most human-agent interaction today remains text-based. Natural language can impose cognitive overload, ambiguity, information chaos, and slow input for complex tasks; ephemeral generative UIs can present structured information and guide users toward task completion. We propose GenUI-Harness, a multi-agent harness pairing a Tool Agent for information retrieval and task execution with a GUI Coder Agent that identifies ambiguities and generates front-end code for structured interfaces. Training the coder with reinforcement learning is challenging: verifiable rewards for interactive UI generation require costly execution, while LLM-as-a-Judge rewards are prone to reward hacking. We address the first challenge with Dynamic UX, a lightweight package for dynamic interaction and reward collection in a single sandbox, and the second with Reward Auditor, a meta-reward mechanism that monitors reward distributions and distills diagnostic patterns into a shared rubric and scoring specification. We introduce UI-TAU Bench, a benchmark for active human-agent interaction through generated UI code, built on 10 real-world domain databases constructed from public data sources and based on Tau-Bench tool-use settings, with Lite (300 tasks) and Full (1,000 tasks) splits. GenUI-Harness achieves an average Pass@3 gain of 4.48 percentage points over smolagents on Lite. Training with GenUI-Harness improves a 4B backbone from 9.33% to 58.00% Pass@3, outperforming larger frontier models such as Claude Opus 5 (46.67%). GenUI-Harness also remains robust on ambiguous and non-ambiguous queries. In a reviewer survey comparing communication channels, generated UIs reduce average dialogue rounds from 3.4 to 1.2. These results show that data-aware generative interfaces can support effective task completion and reduce dialogue rounds in evaluated database-backed workflows.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.11123",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.11123"
+      }
+    ],
+    "relevance_score": 0.43704925482876567,
+    "max_similarity": 0.15963948456336624
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10786",
+    "title": "Plan-and-Patch: Diffusion Language Models for Agentic Planning",
+    "authors": [
+      "Syamantak Kumar, Jiang Guo, Hassan Hamad, Hideo Kobayashi, Yi Xiang, Yezhou Yang, Yanjun Qi, Daniele Bonadiman, Jiarong Jiang"
+    ],
+    "abstract": "arXiv:2610.10786v1 Announce Type: new \nAbstract: Planning is increasingly important for long-horizon agents, where successful execution requires coordinating subgoals, tool use, and intermediate outcomes over many steps. Yet assumptions made during planning may be invalidated by the environment, tools may return unexpected results, or actions may fail. Effective agents must therefore not only generate plans, but also revise them. Such revisions often affect only part of a plan, leaving the preceding and subsequent structure intact. Rather than regenerate the entire plan and risk unnecessary changes, repair can regenerate the affected region conditioned on the preserved prefix and suffix. We introduce Plan-and-Patch, a plan-and-act framework in which a diffusion language model (dLLM) generates a structured, program-like plan through parallel unmasking and repairs it by filling in selected regions while keeping the surrounding steps fixed. We compare DreamReasoner-8B and Qwen3-8B as diffusion and autoregressive (AR) planners. On Natural Plan without task-specific training, diffusion (53.7%) achieves nearly twice the plan repair success rate of AR (27.0%). After task-specific training on agentic benchmarks, ALFWorld and TextCraft, the planners achieve similar observed success in plan generation, while diffusion reduces mean plan-generation latency by 39-46% relative to AR. Our results show that Plan-and-Patch provides a framework for faster plan generation and effective plan repair in long-horizon agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10786",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10786"
+      }
+    ],
+    "relevance_score": 0.4339504967812365,
+    "max_similarity": 0.15933790794334513
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10629",
+    "title": "The Harness as the Only Mutable Surface: Compliance-Bounded Self-Evolution of LLM Agents in Credit Pipelines, with a Measured Admission Gate",
+    "authors": [
+      "Ravil Akhtyamov"
+    ],
+    "abstract": "arXiv:2610.10629v1 Announce Type: new \nAbstract: Self-improving LLM agents can adapt a credit pipeline to a changed rule, but an agent that rewrites itself destroys the artefact a supervisor reviews: a named change, a recorded test, an approval. We argue that self-evolution is reviewable only if it is confined to the runtime harness (instruction text, tool-call logic and primitive composition) while model weights stay fixed, so that every adaptation is a diff with a cause and a test attached. We give a dual-loop engine built on that bound, with one admission gate that writes a hash-chained record before deployment, and we measure the gate in simulation, with a simulated agent and a seeded-search proposer rather than language models. Across three families of supervisory re-interpretation at three severities, 10 seeds each, the gated loop admitted 144 of 7,449 candidate changes, none of which worsened error on held-out history, and restored the false-positive rate to the oracle level without raising missed flags in every low- and mid-severity cell. With the gate replaced by the check an unbounded system applies (fewer errors visible in recent traces), the same loops admitted 309 harmful changes and left missed flags above 10% in 49 of 90 runs: false positives fell because the screen was loosened. Evaluated on pre-shift labels, the gate rejected every candidate, so a re-interpretation must be encoded as a rule that relabels history. Parametric and scope shifts were repaired locally, a structural one only by primitive replacement; at the highest structural severity the gate's fixed tolerance blocked the correct replacement in half the seeds. We map the mechanisms to the EU AI Act's provisions for high-risk credit scoring and note that the April 2026 US model-risk guidance excludes agentic AI from its scope.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10629",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10629"
+      }
+    ],
+    "relevance_score": 0.42225671754539695,
+    "max_similarity": 0.14570224854661054
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.11087",
+    "title": "Beyond Imitation: A Framework and Benchmark for LLM-Assisted Peer Review",
+    "authors": [
+      "Rachel S. Y. Teo, Yutaro Yamada, Shashank Kotyan, Yuki Imajuku, Tarin Clanuwat"
+    ],
+    "abstract": "arXiv:2610.11087v1 Announce Type: new \nAbstract: The rapid growth of scientific publishing has strained peer review, particularly in machine learning, raising concerns about declining review quality and increasing reviewer workload. Large language models (LLMs) have been proposed as automated review assistants, yet their evaluation has focused largely on imitating human-written reviews rather than supporting the core functions of peer review. Here, we introduce a verification-centric perspective on LLM-assisted peer review, emphasizing error detection as a critical and resource-intensive task. We present a scalable benchmark that evaluates review systems' ability to identify logical contradictions, constructed through synthetic insertion of errors into conference papers, yielding unambiguous evaluation targets and enabling systematic comparison. We further propose a Multi-Layered Review (MLR) framework that prioritizes detailed manuscript comprehension before review generation, aligning more closely with human reviewing practices while improving token efficiency. Across evaluations, our approach demonstrates strong alignment with human review scores, achieves high error detection performance, and provides complementary perspectives on reviewer focus. These improvements can be attributed to both the choice of the underlying LLM and the design of our system. At the same time, we corroborate persistent vulnerabilities to adversarial manipulation, underscoring the need for robustness in automated review systems. Our findings highlight the importance of rigorous, error-focused evaluation to guide responsible deployment of LLM-based tools in peer review and other critical scientific workflows.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.11087",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.11087"
+      }
+    ],
+    "relevance_score": 0.4196301758984421,
+    "max_similarity": 0.14194039117047114
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10833",
+    "title": "On the Clock: Towards Punctual and Productive Time-Budgeted AI Agents",
+    "authors": [
+      "Aaron Wang, Neelabh Madan, Vlad Sobal, Matthew Trager, Michael Kleinman, Elman Mansimov, Wei Xia, Stefano Soatto"
+    ],
+    "abstract": "arXiv:2610.10833v1 Announce Type: new \nAbstract: We study whether small LLM agents can operate effectively under explicit wall-clock time budgets by both respecting the allocated runtime and using available time productively. We evaluate Qwen3.6-27B on five competitions from MLE-Bench Lite and Qwen3-4B on Zork I (Jericho), two agentic benchmarks where additional computational time can meaningfully improve performance. In the simplest setting, where the budget is stated only in the prompt, agents fail to translate the stated budget into controlled use of time. These failures arise from gaps in time awareness, since the harness provides no timing feedback, but also because they cannot reliably anticipate the duration of actions, and do not have a learned mapping from available time to an appropriate strategy. We investigate two complementary classes of interventions: harness-based mechanisms that expose timing information and enforce deadlines, and reinforcement learning with budget-aware rewards. Injecting timing information through the harness substantially improves budget adherence for Qwen3.6-27B without measurable loss in performance, while enforcement hooks tighten adherence further. RL with GRPO achieves near-perfect budget adherence on Zork I and generalizes to held-out budgets not seen during training, but does not improve task performance over the untrained harness on MLE-Bench. Once agents are made to respect the budget, they still fail to use additional time to improve task performance. RL-trained policies learn when to stop but often fill extra time with repeated actions, and GRPO training on multiple budgets tends to collapse toward the strategy learned for the shortest budget. Our results reveal a gap between time adherence and productive time allocation, which remains a central challenge for budget-conditioned agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10833",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10833"
+      }
+    ],
+    "relevance_score": 0.4147016285329413,
+    "max_similarity": 0.13652033602903718
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.11005",
+    "title": "How Narrative Wrapping Affects LLM Refusal: A Cross-Language Benchmark and Defense",
+    "authors": [
+      "Zhankai Ye, Yanning Wang, Yukai Jin, Bo Mei, Fangyi Li, Wei Wang, Shangqian Gao, Xin Liu"
+    ],
+    "abstract": "arXiv:2610.11005v1 Announce Type: new \nAbstract: Safety-aligned language models often refuse a harmful request stated directly but answer the same request inside a role-play or narrative wrapper. We measure this vulnerability across languages and registers: attack success on Qwen3-1.7B is already 89.4% in English and 93.0% in modern Chinese, and reaches 95.7% in Classical Chinese. We build GUISE, a benchmark for systematically studying this vulnerability. It includes parallel requests in English, modern Chinese, and Classical Chinese, matched harmful and benign pairs, wrapper types held out for evaluation, and a stricter criterion that counts warn-then-answer responses as attack successes. Representation analysis shows that language and register move harmful-request representations only slightly away from the model's refusal direction, whereas narrative wrappers move them much farther away. We propose AXIS, which combines preference optimisation with a rotation objective that aligns harmful-request representations with the refusal direction and a commitment objective that trains the model to refuse completely rather than produce a warn-then-answer response. Across Qwen3-1.7B, Qwen3-4B and GLM-4-9B, AXIS achieves the highest combined safety and usability score among the compared methods.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.11005",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.11005"
+      }
+    ],
+    "relevance_score": 0.4048881313626276,
+    "max_similarity": 0.12435713487236912
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10594",
+    "title": "Coverage, Not Difficulty, Sets How Much Synthetic Data an Activation Probe Needs",
+    "authors": [
+      "Ankush Checkervarty"
+    ],
+    "abstract": "arXiv:2610.10594v1 Announce Type: new \nAbstract: Activation probes that monitor deployed language models are trained on synthetic conversations, and how many a probe needs is open. We trace learning curves over 10-590 synthetic samples for three monitoring concepts, high-stakes situations, replies harmful to a person, and replies that do not follow the user's instruction, on fourteen held-out evaluation distributions and four probe models, varying the generator LLM and the prompt's detail. The need is set by what is monitored: probes for high-stakes and harmful are within a few hundredths of their plateau from 80 samples on Gemma-3-27B-IT, instruction probes need several times as many, and the ordering holds on three smaller probe models and on real samples (from dev set). Prior work advises spending a generation budget on breadth, more kinds of data, over depth, more of each kind. We read the depth a concept needs as the half-gain size of a fitted curve, the number of samples at which half the gain is in hand. Concept and distribution account for 42-45% of its variance, the generator, probe model, and prompt detail for under 10%. What sets the value of the half-gain size is coverage, not per-kind difficulty: the number of samples of its own kind a distribution needs to saturate. Every kind, one per evaluation distribution, has a median half-gain size of 7-11 own-kind synthetic samples under all three concepts alike. What differs is how far samples of one kind transfer to the concept's other kinds, almost fully under high-stakes, less under harmful, and least under instruction, which accounts for most of the gap between concepts on generated and real samples. Breadth therefore pays differently by concept: many kinds are necessary under instruction, where no kind covers another, and nearly redundant under high-stakes, where one kind covers the rest. We release the evaluation suites, dev sets, and generated sets.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10594",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10594"
+      }
+    ],
+    "relevance_score": 0.39443272871375645,
+    "max_similarity": 0.11208264273653328
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.11007",
+    "title": "Curating Always-Loaded Context for LLM Agents: A Capacitated Assortment Model with Censored Feedback",
+    "authors": [
+      "Zexuan Liu, Yuning Yang, Tiancheng Zhao"
+    ],
+    "abstract": "arXiv:2610.11007v1 Announce Type: new \nAbstract: At the start of every session, LLM agents load a fixed context file, such as $\\texttt{AGENTS.md}$. Each loaded token in the file is charged again in every later round of the session, and these files can degrade performance as they grow in size. However, in practice, human or automated curators usually grow these files by appending.\n  We formulate context curation as a capacitated assortment problem. Instructions consume tokens under a finite attention capacity; adding an instruction never raises the compliance of the others, while retained instructions incur a per-session setup cost.\n  We prove an upper bound on the optimal file size, regardless of the number of available candidate instructions, and that appending every instruction with positive standalone value can be arbitrarily worse in net value than selecting an optimal subset. A token budget also limits the loss when the token price is underestimated.\n  We then examine what can be learned from past sessions and how this information can guide decisions to add or remove instructions. Feedback is inherently censored: the benefits and harms of loaded instructions are observable, whereas missing instructions generate feedback only when their absence causes harm.\n  In this setting, we show that deleting instructions ignored by agents can inevitably remove helpful ones. We characterize how much evidence should be collected before adding an instruction. Besides, we bound regret when human reviewers can inspect only a limited number of edits per period. Empirical experiments further show that irrelevant rules drawn from real context files reduce language-model compliance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.11007",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.11007"
+      }
+    ],
+    "relevance_score": 0.3645954407091342,
+    "max_similarity": 0.13724620119133793
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10906",
+    "title": "Reading the Room: Foundations, Design, and Challenges of Normative Competence in LLMs",
+    "authors": [
+      "Andrea Wynn (Nathan), Harsh Satija (Nathan),  Seokhyun (Nathan),  Baek, Anqi Liu, Eric Nalisnick, Gillian K. Hadfield"
+    ],
+    "abstract": "arXiv:2610.10906v1 Announce Type: new \nAbstract: Human communities are governed by normative systems: shared standards that produce \\textit{norms} dictating acceptable behavior, enforced through community sanctioning. Aligning increasingly autonomous AI systems with these norms is a central alignment challenge, complicated by the fact that norms are vast in number, change quickly, and are often arbitrary (e.g., dress or language conventions). Thus, alignment requires \\textit{normative competence}: the ability to discern from interaction alone what norms a community enforces without relying on static pretrained knowledge. We introduce a multi-agent community debate setting, where access to debate is governed by synthetic norms, to study normative competence in isolation from pretraining exposure. We show that baseline LLM agents fail to learn norms even when doing so would improve their accuracy. We then experiment with various \\textit{normative modules} -- architectural components for norm inference -- finding that norm-following is highly sensitive to both the style of norm and the model powering the normative module, suggesting a lack of generalizability. Furthermore, when idiosyncratic, non-normative behaviors accompany the true norm, LLM agents exhibit an unselective attribution failure: they indiscriminately copy idiosyncratic noise alongside enforced rules, a pattern that persists even when imitating unnecessary behaviors is explicitly penalized. To the best of our knowledge, our work is the first to operationalize and evaluate normative competence in LLMs, demonstrating that current AI systems excel at behavioral mimicry but lack the capacity to discern socially enforced order.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 09 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10906",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10906"
+      }
+    ],
+    "relevance_score": 0.3398823253057224,
+    "max_similarity": 0.10315091643442618
+  }
+]
