@@ -1,0 +1,272 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2610.10942",
+    "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
+    "authors": [
+      "Daksh Raghuvanshi, Ved Vedere, Yifan Wang"
+    ],
+    "abstract": "arXiv:2610.10942v1 Announce Type: new \nAbstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily. We introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty. Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning. The agent acts through the same 29 merchant tools a human operator would use, under a windowed operation budget that makes simulated time a function of actions taken, so model latency cannot influence simulated time. Pass thresholds are calibrated against scripted anchor policies, the reward is hardened against a catalogue of reward hacks, and every episode replays identically given a sequence of actions. We evaluate seven frontier LLMs on 11 scenarios of 30 to 45 days and a full simulated year, over three world seeds at matched reasoning effort. No model matches the scripted smart-triage policy on average: the best, DeepSeek-V4-Pro, passes 49% of task-seed cells against the heuristic's 97%. Human experts working through the same tools and budgets outscore every model (mean composite 0.708 vs. 0.700). Over a full simulated year under the Claude Code harness, most models show dramatic performance improvement. In a GRPO post-training run, Qwen3.5-27B trained on only five disjoint tasks raises its mean composite on the held-out evaluation tasks from 0.136 to 0.373. We release five example training-split tasks, ten sample trajectories, and the scoring and verification tooling; the full environment and evaluation suite are withheld to keep the benchmark uncontaminated.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10942",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10942"
+      }
+    ],
+    "relevance_score": 0.46788405232821395,
+    "max_similarity": 0.1993727532922458
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10549",
+    "title": "Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction",
+    "authors": [
+      "Yipeng Li, Ashutosh Hathidara, Jane Lo, Harshavardhan Abichandani, Gunraj Singh, Atin Ghosh"
+    ],
+    "abstract": "arXiv:2610.10549v1 Announce Type: new \nAbstract: Tool-calling agents have become central to enterprise AI, yet training and evaluating them at scale remains severely constrained due to business and legal restrictions on enterprise systems, data, and database schemas. Tabular data synthesis offers a natural alternative, but its effectiveness is fundamentally limited by structural validity and schema availability, while procedure-based approaches yield the opposite weakness, typically lacking distributional fidelity without per-domain authoring. We introduce **Synthesis Through Simulation** (STS), a **schema--free** data synthesis paradigm in which an LLM agent generates data by executing operations against policy-enforcing APIs within simulated enterprise environments. Because data is generated through the same environment that defines what is valid, STS guarantees structural validity by construction while decoupling validity enforcement from distribution modeling, allowing each to be addressed independently. The **Generalist Populator** (GP), STS's domain-agnostic agent, addresses the remaining challenges of distributional fidelity and synthesis scalability: GP achieves **0.88** average marginal fidelity and **100\\% constraint satisfaction** across all ten environments *without access to DB schemas*, while statistical synthesizers are inapplicable to seven due to necessary seed data requirements, and schema-privileged agents fail 82\\% of trajectories on airline environment's tightly coupled workflows due to brittle task composition. We open-source the full framework, all ten environments, and generated datasets at https://github.com/SAP/synthesis-through-simulation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10549",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10549"
+      }
+    ],
+    "relevance_score": 0.44610107878235594,
+    "max_similarity": 0.17414236050373055
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.11123",
+    "title": "When Interfaces Speak: Data-Aware Generative UI Harness for Active Interaction",
+    "authors": [
+      "Xiaolong Li, Xiaohan Xu, Jinyang Li, Xinnuo Xu, Ge Qu, Nan Huo, Jack Williams, Reynold Cheng"
+    ],
+    "abstract": "arXiv:2610.11123v1 Announce Type: new \nAbstract: Most human-agent interaction today remains text-based. Natural language can impose cognitive overload, ambiguity, information chaos, and slow input for complex tasks; ephemeral generative UIs can present structured information and guide users toward task completion. We propose GenUI-Harness, a multi-agent harness pairing a Tool Agent for information retrieval and task execution with a GUI Coder Agent that identifies ambiguities and generates front-end code for structured interfaces. Training the coder with reinforcement learning is challenging: verifiable rewards for interactive UI generation require costly execution, while LLM-as-a-Judge rewards are prone to reward hacking. We address the first challenge with Dynamic UX, a lightweight package for dynamic interaction and reward collection in a single sandbox, and the second with Reward Auditor, a meta-reward mechanism that monitors reward distributions and distills diagnostic patterns into a shared rubric and scoring specification. We introduce UI-TAU Bench, a benchmark for active human-agent interaction through generated UI code, built on 10 real-world domain databases constructed from public data sources and based on Tau-Bench tool-use settings, with Lite (300 tasks) and Full (1,000 tasks) splits. GenUI-Harness achieves an average Pass@3 gain of 4.48 percentage points over smolagents on Lite. Training with GenUI-Harness improves a 4B backbone from 9.33% to 58.00% Pass@3, outperforming larger frontier models such as Claude Opus 5 (46.67%). GenUI-Harness also remains robust on ambiguous and non-ambiguous queries. In a reviewer survey comparing communication channels, generated UIs reduce average dialogue rounds from 3.4 to 1.2. These results show that data-aware generative interfaces can support effective task completion and reduce dialogue rounds in evaluated database-backed workflows.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.11123",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.11123"
+      }
+    ],
+    "relevance_score": 0.4355620962359648,
+    "max_similarity": 0.15769836476039112
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10786",
+    "title": "Plan-and-Patch: Diffusion Language Models for Agentic Planning",
+    "authors": [
+      "Syamantak Kumar, Jiang Guo, Hassan Hamad, Hideo Kobayashi, Yi Xiang, Yezhou Yang, Yanjun Qi, Daniele Bonadiman, Jiarong Jiang"
+    ],
+    "abstract": "arXiv:2610.10786v1 Announce Type: new \nAbstract: Planning is increasingly important for long-horizon agents, where successful execution requires coordinating subgoals, tool use, and intermediate outcomes over many steps. Yet assumptions made during planning may be invalidated by the environment, tools may return unexpected results, or actions may fail. Effective agents must therefore not only generate plans, but also revise them. Such revisions often affect only part of a plan, leaving the preceding and subsequent structure intact. Rather than regenerate the entire plan and risk unnecessary changes, repair can regenerate the affected region conditioned on the preserved prefix and suffix. We introduce Plan-and-Patch, a plan-and-act framework in which a diffusion language model (dLLM) generates a structured, program-like plan through parallel unmasking and repairs it by filling in selected regions while keeping the surrounding steps fixed. We compare DreamReasoner-8B and Qwen3-8B as diffusion and autoregressive (AR) planners. On Natural Plan without task-specific training, diffusion (53.7%) achieves nearly twice the plan repair success rate of AR (27.0%). After task-specific training on agentic benchmarks, ALFWorld and TextCraft, the planners achieve similar observed success in plan generation, while diffusion reduces mean plan-generation latency by 39-46% relative to AR. Our results show that Plan-and-Patch provides a framework for faster plan generation and effective plan repair in long-horizon agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10786",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10786"
+      }
+    ],
+    "relevance_score": 0.43368963918111436,
+    "max_similarity": 0.15899650048791922
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10629",
+    "title": "The Harness as the Only Mutable Surface: Compliance-Bounded Self-Evolution of LLM Agents in Credit Pipelines, with a Measured Admission Gate",
+    "authors": [
+      "Ravil Akhtyamov"
+    ],
+    "abstract": "arXiv:2610.10629v1 Announce Type: new \nAbstract: Self-improving LLM agents can adapt a credit pipeline to a changed rule, but an agent that rewrites itself destroys the artefact a supervisor reviews: a named change, a recorded test, an approval. We argue that self-evolution is reviewable only if it is confined to the runtime harness (instruction text, tool-call logic and primitive composition) while model weights stay fixed, so that every adaptation is a diff with a cause and a test attached. We give a dual-loop engine built on that bound, with one admission gate that writes a hash-chained record before deployment, and we measure the gate in simulation, with a simulated agent and a seeded-search proposer rather than language models. Across three families of supervisory re-interpretation at three severities, 10 seeds each, the gated loop admitted 144 of 7,449 candidate changes, none of which worsened error on held-out history, and restored the false-positive rate to the oracle level without raising missed flags in every low- and mid-severity cell. With the gate replaced by the check an unbounded system applies (fewer errors visible in recent traces), the same loops admitted 309 harmful changes and left missed flags above 10% in 49 of 90 runs: false positives fell because the screen was loosened. Evaluated on pre-shift labels, the gate rejected every candidate, so a re-interpretation must be encoded as a rule that relabels history. Parametric and scope shifts were repaired locally, a structural one only by primitive replacement; at the highest structural severity the gate's fixed tolerance blocked the correct replacement in half the seeds. We map the mechanisms to the EU AI Act's provisions for high-risk credit scoring and note that the April 2026 US model-risk guidance excludes agentic AI from its scope.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10629",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10629"
+      }
+    ],
+    "relevance_score": 0.42151172742038223,
+    "max_similarity": 0.14479238271441716
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.11087",
+    "title": "Beyond Imitation: A Framework and Benchmark for LLM-Assisted Peer Review",
+    "authors": [
+      "Rachel S. Y. Teo, Yutaro Yamada, Shashank Kotyan, Yuki Imajuku, Tarin Clanuwat"
+    ],
+    "abstract": "arXiv:2610.11087v1 Announce Type: new \nAbstract: The rapid growth of scientific publishing has strained peer review, particularly in machine learning, raising concerns about declining review quality and increasing reviewer workload. Large language models (LLMs) have been proposed as automated review assistants, yet their evaluation has focused largely on imitating human-written reviews rather than supporting the core functions of peer review. Here, we introduce a verification-centric perspective on LLM-assisted peer review, emphasizing error detection as a critical and resource-intensive task. We present a scalable benchmark that evaluates review systems' ability to identify logical contradictions, constructed through synthetic insertion of errors into conference papers, yielding unambiguous evaluation targets and enabling systematic comparison. We further propose a Multi-Layered Review (MLR) framework that prioritizes detailed manuscript comprehension before review generation, aligning more closely with human reviewing practices while improving token efficiency. Across evaluations, our approach demonstrates strong alignment with human review scores, achieves high error detection performance, and provides complementary perspectives on reviewer focus. These improvements can be attributed to both the choice of the underlying LLM and the design of our system. At the same time, we corroborate persistent vulnerabilities to adversarial manipulation, underscoring the need for robustness in automated review systems. Our findings highlight the importance of rigorous, error-focused evaluation to guide responsible deployment of LLM-based tools in peer review and other critical scientific workflows.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.11087",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.11087"
+      }
+    ],
+    "relevance_score": 0.42001776170805005,
+    "max_similarity": 0.14243156514048738
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10833",
+    "title": "On the Clock: Towards Punctual and Productive Time-Budgeted AI Agents",
+    "authors": [
+      "Aaron Wang, Neelabh Madan, Vlad Sobal, Matthew Trager, Michael Kleinman, Elman Mansimov, Wei Xia, Stefano Soatto"
+    ],
+    "abstract": "arXiv:2610.10833v1 Announce Type: new \nAbstract: We study whether small LLM agents can operate effectively under explicit wall-clock time budgets by both respecting the allocated runtime and using available time productively. We evaluate Qwen3.6-27B on five competitions from MLE-Bench Lite and Qwen3-4B on Zork I (Jericho), two agentic benchmarks where additional computational time can meaningfully improve performance. In the simplest setting, where the budget is stated only in the prompt, agents fail to translate the stated budget into controlled use of time. These failures arise from gaps in time awareness, since the harness provides no timing feedback, but also because they cannot reliably anticipate the duration of actions, and do not have a learned mapping from available time to an appropriate strategy. We investigate two complementary classes of interventions: harness-based mechanisms that expose timing information and enforce deadlines, and reinforcement learning with budget-aware rewards. Injecting timing information through the harness substantially improves budget adherence for Qwen3.6-27B without measurable loss in performance, while enforcement hooks tighten adherence further. RL with GRPO achieves near-perfect budget adherence on Zork I and generalizes to held-out budgets not seen during training, but does not improve task performance over the untrained harness on MLE-Bench. Once agents are made to respect the budget, they still fail to use additional time to improve task performance. RL-trained policies learn when to stop but often fill extra time with repeated actions, and GRPO training on multiple budgets tends to collapse toward the strategy learned for the shortest budget. Our results reveal a gap between time adherence and productive time allocation, which remains a central challenge for budget-conditioned agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10833",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10833"
+      }
+    ],
+    "relevance_score": 0.41460282687388694,
+    "max_similarity": 0.13635240579582378
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.11005",
+    "title": "How Narrative Wrapping Affects LLM Refusal: A Cross-Language Benchmark and Defense",
+    "authors": [
+      "Zhankai Ye, Yanning Wang, Yukai Jin, Bo Mei, Fangyi Li, Wei Wang, Shangqian Gao, Xin Liu"
+    ],
+    "abstract": "arXiv:2610.11005v1 Announce Type: new \nAbstract: Safety-aligned language models often refuse a harmful request stated directly but answer the same request inside a role-play or narrative wrapper. We measure this vulnerability across languages and registers: attack success on Qwen3-1.7B is already 89.4% in English and 93.0% in modern Chinese, and reaches 95.7% in Classical Chinese. We build GUISE, a benchmark for systematically studying this vulnerability. It includes parallel requests in English, modern Chinese, and Classical Chinese, matched harmful and benign pairs, wrapper types held out for evaluation, and a stricter criterion that counts warn-then-answer responses as attack successes. Representation analysis shows that language and register move harmful-request representations only slightly away from the model's refusal direction, whereas narrative wrappers move them much farther away. We propose AXIS, which combines preference optimisation with a rotation objective that aligns harmful-request representations with the refusal direction and a commitment objective that trains the model to refuse completely rather than produce a warn-then-answer response. Across Qwen3-1.7B, Qwen3-4B and GLM-4-9B, AXIS achieves the highest combined safety and usability score among the compared methods.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.11005",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.11005"
+      }
+    ],
+    "relevance_score": 0.4059046686517359,
+    "max_similarity": 0.12556415160891876
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.11007",
+    "title": "Curating Always-Loaded Context for LLM Agents: A Capacitated Assortment Model with Censored Feedback",
+    "authors": [
+      "Zexuan Liu, Yuning Yang, Tiancheng Zhao"
+    ],
+    "abstract": "arXiv:2610.11007v1 Announce Type: new \nAbstract: At the start of every session, LLM agents load a fixed context file, such as $\\texttt{AGENTS.md}$. Each loaded token in the file is charged again in every later round of the session, and these files can degrade performance as they grow in size. However, in practice, human or automated curators usually grow these files by appending.\n  We formulate context curation as a capacitated assortment problem. Instructions consume tokens under a finite attention capacity; adding an instruction never raises the compliance of the others, while retained instructions incur a per-session setup cost.\n  We prove an upper bound on the optimal file size, regardless of the number of available candidate instructions, and that appending every instruction with positive standalone value can be arbitrarily worse in net value than selecting an optimal subset. A token budget also limits the loss when the token price is underestimated.\n  We then examine what can be learned from past sessions and how this information can guide decisions to add or remove instructions. Feedback is inherently censored: the benefits and harms of loaded instructions are observable, whereas missing instructions generate feedback only when their absence causes harm.\n  In this setting, we show that deleting instructions ignored by agents can inevitably remove helpful ones. We characterize how much evidence should be collected before adding an instruction. Besides, we bound regret when human reviewers can inspect only a limited number of edits per period. Empirical experiments further show that irrelevant rules drawn from real context files reduce language-model compliance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.11007",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.11007"
+      }
+    ],
+    "relevance_score": 0.36421161056877027,
+    "max_similarity": 0.13677278959443837
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.10906",
+    "title": "Reading the Room: Foundations, Design, and Challenges of Normative Competence in LLMs",
+    "authors": [
+      "Andrea Wynn (Nathan), Harsh Satija (Nathan),  Seokhyun (Nathan),  Baek, Anqi Liu, Eric Nalisnick, Gillian K. Hadfield"
+    ],
+    "abstract": "arXiv:2610.10906v1 Announce Type: new \nAbstract: Human communities are governed by normative systems: shared standards that produce \\textit{norms} dictating acceptable behavior, enforced through community sanctioning. Aligning increasingly autonomous AI systems with these norms is a central alignment challenge, complicated by the fact that norms are vast in number, change quickly, and are often arbitrary (e.g., dress or language conventions). Thus, alignment requires \\textit{normative competence}: the ability to discern from interaction alone what norms a community enforces without relying on static pretrained knowledge. We introduce a multi-agent community debate setting, where access to debate is governed by synthetic norms, to study normative competence in isolation from pretraining exposure. We show that baseline LLM agents fail to learn norms even when doing so would improve their accuracy. We then experiment with various \\textit{normative modules} -- architectural components for norm inference -- finding that norm-following is highly sensitive to both the style of norm and the model powering the normative module, suggesting a lack of generalizability. Furthermore, when idiosyncratic, non-normative behaviors accompany the true norm, LLM agents exhibit an unselective attribution failure: they indiscriminately copy idiosyncratic noise alongside enforced rules, a pattern that persists even when imitating unnecessary behaviors is explicitly penalized. To the best of our knowledge, our work is the first to operationalize and evaluate normative competence in LLMs, demonstrating that current AI systems excel at behavioral mimicry but lack the capacity to discern socially enforced order.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "updated": "Sat, 10 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.10906",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.10906"
+      }
+    ],
+    "relevance_score": 0.34197826501167666,
+    "max_similarity": 0.10578967380379238
+  }
+]
