@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2610.20780",
+    "title": "ARIA: Runtime Inspection and Amendment for Multi-Agent Systems",
+    "authors": [
+      "Bolin Shen, Yushun Dong"
+    ],
+    "abstract": "arXiv:2610.20780v1 Announce Type: new \nAbstract: In LLM-based multi-agent systems (MAS), a local mistake can propagate as other agents build on it, turning a correctable error into a failed task. Diagnosing completed runs or repeatedly re-executing them to search for corrections does not provide a learned policy for intervening while execution is still in progress. We present Agent Runtime Inspection and Amendment (ARIA), a framework for learning when and how to repair ongoing multi-agent executions. Our key intuition is to turn execution-verified repairs into reusable supervision, moving repair search into data construction and training so that a learned model can intervene at runtime without repeatedly testing alternatives. First, we collect over 24{,}000 successful and failed trajectories across four multi-agent frameworks, six benchmarks, and eight host models. From these trajectories, we construct the ARIA dataset, to our knowledge the first large-scale dataset pairing failed multi-agent trajectories with execution-verified repairs. It contains 3{,}953 verified repair pairs, each specifying what went wrong, where to intervene, and how execution should continue. Then, we develop the ARIA framework for MAS-agnostic runtime inspection and amendment, designed to integrate with any MAS that exposes execution trajectories and supports continuation replacement. Using verified repairs as training examples, we teach a compact model to recognize when intervention is needed and how to correct an ongoing run. The aim is to learn repair strategies that apply to related failures in new configurations, rather than merely reproduce individual corrections. Finally, the trained ARIA model demonstrates strong repair performance in both post-hoc and runtime settings, with generalization to unseen frameworks and host models. Our code is available at https://github.com/LabRAI/ARIA.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20780",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20780"
+      }
+    ],
+    "relevance_score": 0.5252538394374162,
+    "max_similarity": 0.2726647538442722
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20781",
+    "title": "ReasonUni: Reasoning-Augmented Reconstruction Advances Unified Multimodal Models",
+    "authors": [
+      "Feize Wu, Zhiyuan Yan, Yuhuan Hong, Yuwei Niu, Zongjian Li, Zheyuan Liu, Bin Lin, Jinbo Yan, Jie Qin, Xudong Mao, Limeng Qiao, Guanglu Wan, Li Yuan"
+    ],
+    "abstract": "arXiv:2610.20781v1 Announce Type: new \nAbstract: Image-to-text (I2T) understanding and text-to-image (T2I) generation are dual tasks in unified multimodal models (UMMs). Reconstructive post-training couples these tasks, but existing reconstruction-based methods remain perception-centric and provide limited supervision for reasoning about structure, intent, and transformation. We propose ReasonUni, a reasoning-augmented reconstructive post-training framework that extends this coupling beyond perception. Given an original image and an editing instruction, the UMM first reasons about what and how to edit and describes the target state, then generates the corresponding target image conditioned on this understanding output. To jointly optimize both modules, we introduce TreeGRPO, a tree-structured reinforcement learning method that samples multiple reasoning paths and candidate images per path, then aggregates visual rewards to update both modules under a unified objective. Experiments across multiple benchmarks demonstrate consistent gains in both understanding and generation, showing that reasoning-augmented reconstruction yields genuine mutual gains for UMMs.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20781",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20781"
+      }
+    ],
+    "relevance_score": 0.508785415708057,
+    "max_similarity": 0.2471379040342852
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20964",
+    "title": "VELD-QA: A Large-Scale Dataset for Visual Evidence Grounding and Question Answering in Long Documents",
+    "authors": [
+      "Zhivar Sourati, Marianne Menglin Liu, Rongguang Wang, Zheng Wang, Yazhe Hu, Lan Guo, Yuying Wang, Mengqing Guo, Bhavesh Dnyaneshwar Gore, Shubham Pathak, Ramapriya Ranganath, Sandeep Sharma, Tao Sheng, Sujith Ravi, Dan Roth"
+    ],
+    "abstract": "arXiv:2610.20964v1 Announce Type: new \nAbstract: Existing long-document QA benchmarks rarely combine large-scale human-authored questions with detailed visual evidence annotations, limiting diagnosis of evidence localization and interpretation failures. We present VELD-QA, a large-scale benchmark for Visual Evidence grounding and question answering in Long Documents. It contains 15,000 fully human-authored question-answer pairs across 5,859 real-world PDFs totaling 372,445 pages, balancing chart, table, and complex-layout tasks. Human annotations identify supporting pages and evidence elements and describe cited visual content, enabling separate retrieval and interpretation evaluation. We evaluate nine vision-language models under four evidence settings and seven retrieval-augmented and agentic systems. Our analysis identifies bottlenecks in evidence localization and interpretation. Retrieval-based methods substantially underperform the oracle setting with ground-truth supporting pages; full-document access does not close the gap. Localization alone is insufficient: oracle accuracy peaks at 81.7%, highlighting persistent visual interpretation and reasoning challenges. Enriching inputs with our visual-element annotations narrows the performance gap by 17-24%, demonstrating value beyond evaluation and motivating data enrichment for multimodal document QA. Our code is available at https://github.com/oracle-samples/veld-qa.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20964",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20964"
+      }
+    ],
+    "relevance_score": 0.4911440430368987,
+    "max_similarity": 0.22257464815665232
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20852",
+    "title": "Probing Negation Understanding in Vision-Language Models With Object Attention",
+    "authors": [
+      "Beth Pearson, Michael Wray, Martha Lewis"
+    ],
+    "abstract": "arXiv:2610.20852v1 Announce Type: new \nAbstract: Negation is a fundamental aspect of language understanding and it is important vision-language models (VLMs) are able to process it effectively. We investigate how VLMs process negation by analysing attention patterns of different models. We draw comparisons between human gaze and attention in models when processing affirmative vs negated statements. We compare object level model attention to human eye-fixations in both binary and multary settings, evaluating with both synthetic and realistic datasets. We find models generally do not follow human-like attention patterns when resolving negation, suggesting they rely on mechanisms outside of attention. While layerwise analysis shows that PaliGemma2-3B shifts object attention to the alternative under negation, our headwise ablations suggest this is a byproduct rather than a negation processing mechanism. Additionally, we find that LLaVA-1.5-7B displays a spatial bias towards left-side objects. Our evaluation of models on downstream tasks shows that all models have a discrepancy between affirmative and negated questions highlighting the need to better understand the underlying processing of negation to close this performance gap. Code available at https://github.com/otmive/negation_attention",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20852",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20852"
+      }
+    ],
+    "relevance_score": 0.48339227194495854,
+    "max_similarity": 0.21857290775311577
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20639",
+    "title": "Same Answer, New Box: How Much of RLVR's Out-of-Domain Gain Is Answer Format?",
+    "authors": [
+      "Zongye Lyu"
+    ],
+    "abstract": "arXiv:2610.20639v1 Announce Type: new \nAbstract: Reinforcement learning with verifiable rewards (RLVR) is credited with gains beyond the domain its rewards check, such as higher MMLU accuracy after training on mathematics. Such accuracies are usually read out of the model's text by an answer extractor. A model that learns to write its answer where the extractor looks can therefore score higher without answering better. We measure how much of the gain reported by extractors copied from public code arises this way. We generate outputs from a base model and its RL model and score them twice: with those extractors, and with one extractor of our own that reads a stated answer whether it is in the answer box \\boxed{} or in the text. On four released 7B SimpleRL base-RL pairs, 82% of the out-of-domain multiple-choice gain that these extractors report disappears under ours: it is a gain in answer format, not in answers. The base models already state most of their answers in text, and RL moves them into the box, where these extractors look first. Independent LLM readers, in place of our extractor, put the figure at 77%. With a prompt that itself asks for the box, our extractor puts it at 79%. On a 32B pair trained with another recipe, almost none of the reported gain is format gain: its base model boxes its answers when asked, and its RL model rarely does when not. A reported gain is partly a property of the extractor that read it, and re-scoring stored outputs with a second extractor shows how much, without re-running RL.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20639",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20639"
+      }
+    ],
+    "relevance_score": 0.4831877244384707,
+    "max_similarity": 0.22129310684165837
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20731",
+    "title": "WorldCast: Exploring Intelligent Visual Generation in World State Prediction",
+    "authors": [
+      "Wenhao Yan, Haodong Li, Xiaotong Li, Yaxin Luo, Zhengrong Yue, Jialv Zou, Xu Huang, Haojin Yang, Nan Jia, Yan Feng, Peng Pei, Xunliang Cai"
+    ],
+    "abstract": "arXiv:2610.20731v1 Announce Type: new \nAbstract: Humans interpret multimodal observations of the world and forecast how it will evolve. Recent multimodal generative systems have demonstrated similar capabilities: they can integrate multimodal context and synthesize visual outputs that depict changes in the world. To characterize this emerging trajectory, we organize model capabilities into a four-level hierarchy and discover that higher-level tasks remain relatively underexplored despite model progress. To bridge this gap, we explore model performance on multi-step world state prediction, a high-level task that requires models to forecast successive future world states from multimodal observations and diverse references. Such a task requires models to possess entangled understanding and generation capabilities, as well as extensive world knowledge to translate human action sequences, physical transformations, and abstract visual reasoning into coherent visual outputs. We introduce WorldCast, a benchmark comprising 320 manually designed cases across eight categories, and evaluate 12 representative models. The conducted experiments yield three key insights: (a) advances in frontier models are rapidly pushing the boundaries of intelligent world modeling, with the GPT-Image-2.5 System scoring 72.8 and demonstrating early-stage visual state prediction capabilities on real-world tasks; (b) WorldCast reveals substantial gaps between models: even Nano Banana Pro reaches only 42.8 and the best open-source model scores 20.1, with deficits in handling complex context, entangled references, and reasoning-heavy tasks; (c) strong generative models effectively draw on the capabilities of their underlying language models. These findings highlight the need for multimodal generative models that are capable of dynamic planning and reasoning while also being deeply unified to faithfully simulate real-world states.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20731",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20731"
+      }
+    ],
+    "relevance_score": 0.4664692853093054,
+    "max_similarity": 0.19267703642144318
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20818",
+    "title": "Intern Lumina U2: A Multi-Codebook Diffusion Large Language Model for Omni-Visual Understanding and Image Generation",
+    "authors": [
+      "Qian Yu, Zongyang Qiu, Juncheng Yan, Hongliang Li, Qi Qin, Keqi Wang, Siqi Luo, Junkui Ju, Yapeng Mi, Tiantian Lu, Tian Liu, Pengyu Xie, Chenhao Ji, Minghui Zhang, Yiang Zhao, Siyu Yan, Haiying Xu, Yanbo Wang, Jianghan Shen, Yuandong Pu, Jiayi Lei, Borui Zhang, Jinxin Shi, Bo Zhang, Yuhang Zang, Shenglong Ye, Lixin Gu, Hongjie Zhang, Linghan Liu, Xinyuan Chen, Yuewen Cao, Lihe Zhang, Xiaohong Liu, Junjun He, Qiangwei Liu, Qi Zhang, Yu Cheng, Tianfan Xue, Hui Xiong, Chang Xu, Yu Qiao, Yihao Liu, Bin Fu"
+    ],
+    "abstract": "arXiv:2610.20818v1 Announce Type: new \nAbstract: Unified multimodal generation covers discrete, continuous, and hybrid paradigms. Discrete approaches with single-codebook visual tokenizers align naturally with text modeling but have limited representational capacity. Continuous and hybrid approaches retain richer visual representations, but they model text and images in heterogeneous spaces with different training objectives, potentially introducing optimization conflicts between modalities with misaligned representation spaces. These choices expose a central question: how to efficiently model high-capacity visual representations alongside textual content in a shared optimization space within a single backbone. We present Intern Lumina U2, to our knowledge the first diffusion language model to represent multi-codebook visual tokens in a fully discrete space. Each visual position is represented by a group of codes from complementary codebooks, increasing its representational capacity while preserving compatibility with discrete text modeling. At the input, the embeddings are concatenated at each position; at the output, a lightweight multi-codebook autoregressive head predicts the codes within each position sequentially, while the diffusion backbone processes all positions in parallel. Built on the unified 4D representation of AToken, Intern Lumina U2 supports image, video, and 3D inputs within a single backbone and achieves leading performance among unified models in visual understanding, image generation, and image editing. We further build a full-stack training, inference, and evaluation system on both Ascend and NVIDIA platforms to verify the cross-platform effectiveness of our model. We also improve the inference efficiency through a stability-aware sampling strategy, which combines confidence-plateau-guided unmasking approach with drift-triggered cache refreshing mechanisms, accelerating image generation by 4.45x.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20818",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20818"
+      }
+    ],
+    "relevance_score": 0.46280190860350273,
+    "max_similarity": 0.1899043535736186
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20628",
+    "title": "PRISM: PRIvileged Sibling-guided Multi-Agent Topology Design",
+    "authors": [
+      "Phuong Tuan Dat, Qi Li, Xinchao Wang"
+    ],
+    "abstract": "arXiv:2610.20628v1 Announce Type: new \nAbstract: Multi-agent systems (MAS) based on large language models (LLMs) have become a powerful way to address complex problems, and their effectiveness depends critically on the collaboration topology that decides which agents participate and how they communicate. Recent work learns to generate this topology from the task query, fitting the generator to corpora of execution-verified graphs. The post-training method for such generators remains a limitation: a corpus lists the graphs that solved a query but never ranks them, leaving continued supervised fine-tuning (SFT) with no per-query preference to exploit. Without such a preference, the generator drifts toward the topologies the corpus contains most often rather than those that suit each query, so a gain on one task can come at a cost on another. We propose PRISM, which recovers per-query signal from the same corpus by learning with privileged information: a teacher reads, through a zero-initialized low-rank branch, a sibling graph that also solved the query and is unavailable at deployment, and the student matches its per-decision targets on trajectories the student samples itself. Across six diverse benchmarks PRISM improves over every topology-design baseline evaluated, and matched-teacher controls support the contribution of privileged query information. Code is available in this link.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20628",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20628"
+      }
+    ],
+    "relevance_score": 0.4556355728240322,
+    "max_similarity": 0.1840006516235813
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20665",
+    "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+    "authors": [
+      "Ningxin Pan, Hanyu Li, Yeqing Shen, Ning Ding, Yehui Tang, Wentao Zhang"
+    ],
+    "abstract": "arXiv:2610.20665v1 Announce Type: new \nAbstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20665",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20665"
+      }
+    ],
+    "relevance_score": 0.44773783328870476,
+    "max_similarity": 0.17628592555115374
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20753",
+    "title": "Optimal Hydra: Model Heterogeneous Federated Learning for LLMs using Data-Informed Hydra-Nets",
+    "authors": [
+      "Gwen Legate, Rahaf Aljundi, Eugene Belilovsky"
+    ],
+    "abstract": "arXiv:2610.20753v1 Announce Type: new \nAbstract: Large language models (LLMs) trained on vast amounts of data have demonstrated impressive performance over a range of tasks, but future performance gains will require increasing amounts of data and compute. Federated Learning (FL) facilitates training on decentralized private data, but client resource limitations can make training impractical, particularly as model sizes continue to expand. These resource constraints make the assumption of a shared server-client architecture impractical. Model heterogeneous FL offers a promising alternative by adapting model size to client capabilities; however, previous work is limited to the pre-training setting, and conclusions on sub-network selection do not necessarily hold for fine-tuning. Furthermore, prior approaches create client sub-networks without considering their unique data distributions, thereby overlooking the opportunity to tailor sub-network architecture to local data. Motivated by evidence that attention heads exhibit task dependency within layer defined feature spaces, we propose Optimal Hydra, a transformer based heterogeneous FL framework for fine-tuning that combines global layer selection with client specific attention head selection, aligned with local data distributions. Optimal Hydra makes explicit use of client data to produce client-specific sub-networks we call Hydra-nets. To our knowledge, this is the first model heterogeneous FL approach tailored to LLM fine-tuning. Experiments on three datasets show significant improvements over baseline methods while also reducing local resource demands.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20753",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20753"
+      }
+    ],
+    "relevance_score": 0.4404982506245667,
+    "max_similarity": 0.16315383622100016
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20766",
+    "title": "Semantic Alignment of EEG and Text: A Contrastive Learning Framework for Decoding Imagined Speech",
+    "authors": [
+      "Shahryar G. Namdari, Francesco Iacomi, Riccardo Barbieri, Luca Mainardi"
+    ],
+    "abstract": "arXiv:2610.20766v1 Announce Type: new \nAbstract: Imagined speech decoding from EEG offers a promising route toward naturalistic brain-computer interfaces. Traditional closed-set classifiers treat semantic categories as independent labels and do not explicitly exploit relationships among linguistic intents, limiting output flexibility. We adapt a multimodal contrastive learning framework to imagined speech, aligning EEG trials with language representations in the embedding space of a frozen pretrained text encoder. An EEG encoder is trained with a composite objective combining semantically reweighted EEG-sentence alignment and text-prototype-based class discrimination, encouraging semantic structure while preserving separability among 39 intent categories. We evaluate the approach on the Chisco imagined speech dataset across five subjects, reporting Top-k accuracy, macro-F1, and balanced pairwise matching accuracy (2v2). We also investigate maximum EEG-text cosine similarity (MaxCosine) as an intrinsic indicator of decoding reliability and probe semantic structure beyond category labels using five evaluation-time semantic axes and a qualitative Semantic Gallery Probe (SGP) with previously unseen candidate sentences. The contrastive framework achieved decoding performance comparable to a task-optimized closed-set classifier while mapping EEG into a frozen language embedding space. MaxCosine identified subsets of held-out trials with higher Top-1 and Top-5 accuracy across subjects. Evaluation-time semantic axes showed mean agreement above the 50% chance reference across all five dimensions, and the SGP qualitatively illustrated direct comparison with unseen candidate sentences. Together, these findings suggest that EEG-language alignment can retain comparable fixed-intent decoding while supporting similarity-based retrieval, intrinsic reliability ranking, and evaluation of broader semantic structure.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20766",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20766"
+      }
+    ],
+    "relevance_score": 0.4321039143459663,
+    "max_similarity": 0.1555973592098607
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20679",
+    "title": "Counterfactual Neighborhood Risk Fields: Evidence-Grounded Selective Safety for Vision-Language Models",
+    "authors": [
+      "Tianshi Wang, Jingsong Wang, Fengling Li, Jingjing Li, Xin Li, Lei Zhu"
+    ],
+    "abstract": "arXiv:2610.20679v1 Announce Type: new \nAbstract: Representation-based safety defenses for vision-language models (VLMs) often learn to separate harmful from benign inputs, but separation alone does not establish what a risk score means or when it should be trusted. We introduce Counterfactual Neighborhood Risk Fields (CNRF), an evidence-grounded framework for selective VLM safety. CNRF constructs context-matched benign-harmful counterfactual pairs, uses their representation differences as capability-related risk directions, and estimates neighborhood support separately from risk. This separation prevents unfamiliarity from being conflated with harmfulness and enables selective intervention rather than blanket rejection. A victim-adaptive interface accommodates different safety observations across VLM architectures and routes selected requests for same-victim response review, which either releases acceptable candidates or produces constrained alternatives with reduced harmful capability. Across three VLMs and five multimodal jailbreak families, CNRF achieves 86.06-89.30% macro defense success rate while retaining substantial benign-task utility. Controlled experiments further show that query-matched references and preserved context-direction correspondence materially improve risk ranking in the low-false-positive regime. CNRF thus reframes representation-based VLM safety from learning harmfulness boundaries to constructing applicable evidence for selective risk decisions.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20679",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20679"
+      }
+    ],
+    "relevance_score": 0.41804401144447273,
+    "max_similarity": 0.1380047958011298
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20681",
+    "title": "IneqAgent: Agentic Inequality Proving in Lean with Symbolic Computation",
+    "authors": [
+      "Gaolei He, Jinhui Li, Ruobing Zuo, Xia Zeng, Zhengfeng Yang"
+    ],
+    "abstract": "arXiv:2610.20681v1 Announce Type: new \nAbstract: Formal inequality proving requires mathematical reasoning and exact computation, often connected through intermediate lemmas and goal reformulations. We introduce IneqAgent, an agentic framework combining LLM reasoning with symbolic computation for inequality proving in Lean4. Lemma-level Monte Carlo Tree Search coordinates lemma construction, goal reformulation, and symbolic backend selection. Complementary sum-of-squares, Bernstein, and successive difference-substitution backends produce exact certificates for local Lean proof generation. The agent integrates these proofs with LLM-generated steps and uses Lean feedback to construct complete proofs checked against the original theorem statements. On four benchmarks, IneqAgent with DeepSeek-V4-Flash solves 175 of 186 problems (94.09%), achieving the highest overall success rate among the evaluated methods. Across four backbones, it achieves higher success rates at low LLM inference cost thresholds than Direct Agent using the same backbone, with lower mean inference costs over each method's successful runs. We also obtain Lean-verified strengthenings of Dittert's conjecture in dimensions four and five, and certify the Holens--Djokovic $(4,4)$ inequality, implying Merris's conjecture in dimension four.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20681",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20681"
+      }
+    ],
+    "relevance_score": 0.3931301768275719,
+    "max_similarity": 0.10778510141364293
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20627",
+    "title": "BD-HazardVLM: Probing Vision-Language Models for Latent Defensive-Driving Hazards in Bangladesh Road Scenes",
+    "authors": [
+      "Abdullah Al Maruf, Md. Sajedul Islam, Tanmoy Mridha, Irfan Hossain Bhuiyan"
+    ],
+    "abstract": "arXiv:2610.20627v1 Announce Type: new \nAbstract: Vision-language models are increasingly used for driving-scene understanding, yet their defensive reasoning under weakly structured Global South traffic remains unclear. We introduce BD-HazardVLM, a diagnostic benchmark of 500 Bangladesh road-scene images, comprising 375 from RSUD20K and 125 from TFP-BD, annotated for hazard presence, primary hazard category, risk timing, severity, defensive actions, visible evidence, and hallucination- and Western-road-bias traps. We evaluate Qwen2.5-VL-7B, InternVL3-8B, and MiniCPM-V-4.6 using a shared zero-shot task definition and structured output schema. Binary hazard-presence accuracy ranges from 88.0 percent to 89.2 percent, essentially matching the 89.0 percent majority-class baseline. Fine-grained reasoning is substantially weaker: category accuracy remains below 40 percent, risk-timing accuracy ranges from 1.6 percent to 12.4 percent, and exact defensive-action matching remains below 2 percent. Although InternVL3-8B achieves the highest severity accuracy at 61.2 percent, it has zero recall on the 58 high-severity cases. Qwen exhibits severe category mode collapse, while all models show weak latent-hazard anticipation and near-zero self-reported trap recognition. For the evaluated models, these findings show that coarse hazard recognition does not imply reliable fine-grained defensive-driving reasoning and motivate geographically diverse safety evaluation.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20627",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20627"
+      }
+    ],
+    "relevance_score": 0.38580477841558786,
+    "max_similarity": 0.09877590340875729
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.21007",
+    "title": "Mind the Tail: Data Selection Through Sparse Concepts",
+    "authors": [
+      "Ziheng Zhang, Neha Hulkund, Colin Lee, Zheda Mai, Hui Shen, Ying Ding, Tanya Berger-Wolf, Sara Beery, Wei-Lun Chao, Jianyang Gu"
+    ],
+    "abstract": "arXiv:2610.21007v1 Announce Type: new \nAbstract: Data selection reallocates training support across visual concepts, including objects, attributes, color, texture, and backgrounds. Different allocation strategies may produce varied downstream model behavior, especially for tail concepts supported by only a few samples. Discarding them can hurt test-time robustness, while overemphasizing samples lying on category boundaries may introduce unstable training signals. This work explicitly investigates this relationship across fine-grained, spurious-correlation, and general image classification, as well as multimodal pretraining. Specifically, we use sparse autoencoders (SAEs) to extract concept activations from individual images. During selection, we accumulate the dataset-level concept support for each added sample. Applying diminishing returns to this distribution down-weights well-represented concepts and shifts the focus to the distribution tail. We then incorporate local support to find samples that reliably strengthen under-supported concepts. Empirical results show consistent improvements over strong data selection baselines across all benchmarks. We also reveal the connection between concepts our method enhances and the induced behavioral changes, including improved robustness against out-of-distribution and spurious contexts. This work establishes concept support, beyond individual sample importance, as a useful principle for data-efficient and robust learning.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.21007",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.21007"
+      }
+    ],
+    "relevance_score": 0.3849525359883596,
+    "max_similarity": 0.09835118498608353
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20638",
+    "title": "Feature Elicitation for SAE Steering of Deceptive Behaviour in Small LLMs",
+    "authors": [
+      "J Koorndijk"
+    ],
+    "abstract": "arXiv:2610.20638v1 Announce Type: new \nAbstract: Research on deceptive alignment is becoming increasingly urgent as frontier-model capabilities advance and their risk of causing catastrophic harm increases. Alignment faking is a form of deceptive alignment, with the compliance gap serving as a key behavioural indicator. This behaviour remains understudied in small LLMs and prior mechanistic interventions have not been shown to mitigate the compliance gap. We test whether steering SAE (sparse autoencoders) features associated with deontological ethics can mitigate this behaviour. We use a novel bag-of-words feature elicitation pipeline for SAE steering to identify what we construe as concept-level steering directions. Our approach reduced the compliance gap to non-significance in Gemma-3-27B-IT, whereas the tested configurations were not effective in LLaMA-3-8B-Instruct. Analysis of scratchpad traces also revealed deceptive model behaviour which we term deceptive defanging: deliberately degrading the aligned functionality of a response (in this case harmfulness) while preserving the appearance of alignment (in this case helpful compliance with the harmful request), sometimes conditioned on tier, training, or RLHF consequences. These findings provide, to our knowledge, the first evidence that a mechanistic activation-level intervention can mitigate the compliance gap in an alignment faking setup. They also identify a form of deceptive behaviour that may broaden our understanding of the different forms of deceptive behaviour in LLMs.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20638",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20638"
+      }
+    ],
+    "relevance_score": 0.3057677199518031,
+    "max_similarity": 0.12422851789167304
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.21011",
+    "title": "Audio-Visual Dog Identification and Tracking in Real-World Videos",
+    "authors": [
+      "Aryahvishwa Babu, Kingsley Jin, Lillian Wang, Tuan M. Dang, Theron S. Wang, Jeorge Joshi, Annie Cao, Kenny Q. Zhu"
+    ],
+    "abstract": "arXiv:2610.21011v1 Announce Type: new \nAbstract: Identifying individual dogs from barks in real-world videos remains challenging and largely unexplored. Solving this problem would enable long-term behavioral analysis, veterinary monitoring, and animal welfare monitoring by attributing vocalizations and behaviors to the correct individual. Real-world videos are challenging because multiple dogs may bark simultaneously, become occluded, or move in and out of view. Prior studies show that canine vocalizations and visual appearance contain discriminative identity information, but these modalities have largely been studied independently. We present a multimodal dog-fingerprinting framework combining visual identification, multiple-object tracking, and canine vocal fingerprinting to associate bark events with individual dogs while maintaining persistent profiles. The framework synchronizes bark events with tracked dogs and updates profiles using visual appearance and vocal characteristics, enabling identification despite occlusion, overlapping vocalizations, and off-screen barking. We also introduce a benchmark of 46 real-world videos containing 213 manually annotated bark events. Our framework correctly localizes the active visible dog in 61.83% of visible events at IoU $\\geq 0.30$ and achieves a 91.33% F1 score for visible versus off-screen barking detection.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.21011",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.21011"
+      }
+    ],
+    "relevance_score": 0.30365233783113116,
+    "max_similarity": 0.12172127652474626
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20685",
+    "title": "L2G-SR: Learning to Guide LLM-based Symbolic Regression",
+    "authors": [
+      "Letian Huang, Xiangyu Wang, Haowei Lin, Di He"
+    ],
+    "abstract": "arXiv:2610.20685v1 Announce Type: new \nAbstract: Symbolic regression searches for an equation that explains observed data. Numerical error is commonly used to guide the search, but it alone can favor an accurate surrogate over a candidate with the right structure. We propose L2G-SR, a framework for LLM-based symbolic regression that guides search with a learned structural verifier. We construct structural supervision signal using tree edit distance (TED), accounting for commutative operators and alternative expression forms. A verifier first aligns numerical observations with the formulas, then learns to score a candidate's structural similarity to the target formula. At search time, the target formula is hidden and the verifier complements numerical error in parent selection. An analyst then uses verifier feedback and diagnostic tools to propose revisions, which a generator converts into refined expressions. On LLM-SRBench, L2G-SR achieves state-of-the-art numerical fit, equation level accuracy and TED across the evaluated LLM backbones and domains. L2G-SR demonstrates the value of learned structural guidance for LLM-based symbolic regression.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20685",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20685"
+      }
+    ],
+    "relevance_score": 0.2993291380159101,
+    "max_similarity": 0.11759297754827039
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20630",
+    "title": "A Large-Scale Dataset for Multi-Class Financial News Classification in Brazilian Portuguese",
+    "authors": [
+      "Leomax Bandeira, Gabriel Aguiar, Dalton C\\'ezane Gomes Valadares, Luiz Pereira, Helder Fernando de Ara\\'ujo Oliveira, Gustavo Xavier, Andson M. Balieiro"
+    ],
+    "abstract": "arXiv:2610.20630v1 Announce Type: new \nAbstract: The development of Financial Natural Language Processing (NLP) systems for Brazilian Portuguese is hindered by the scarcity of domain-specific datasets. To address this, we present a large-scale corpus of approximately 160,000 Brazilian Portuguese financial news articles collected from web sources. To establish initial benchmarks for a weakly supervised multi-class classification approach based on semantic similarity, we annotated subsets of this corpus both manually and using a Large Language Model (LLM). We evaluated three similarity-based methods -- cosine similarity, K-Nearest Neighbors (KNN), and FAISS-based nearest-neighbor search -- using multilingual semantic embeddings. Our experiments reveal that the task is highly sensitive to label quality and class distribution. On the manually labeled subset, KNN achieved the best performance (47.3% accuracy, 31.9% F1-score), closely followed by FAISS. Conversely, on the LLM-annotated subset, while accuracy reached approximately 50%, F1-scores dropped to near 20%, highlighting the negative impact of label imbalance and noisy weak annotations. These findings establish foundational baselines for a challenging task, underscoring the critical need for high-quality manual annotations. Ultimately, this dataset and our preliminary results provide a reference point for future research in Brazilian Portuguese Financial NLP.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20630",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20630"
+      }
+    ],
+    "relevance_score": 0.26611593312888415,
+    "max_similarity": 0.13509782512600585
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.20631",
+    "title": "Real-time Chatbot Romance Scam Detection in Stage Classification",
+    "authors": [
+      "Yi-cheng Liu, Guan-ru Lai, Yi-cheng Lai, Lyn Chao-ling Chen"
+    ],
+    "abstract": "arXiv:2610.20631v1 Announce Type: new \nAbstract: Romance scam has become a serious problem via social media, and the improvement of artificial intelligence enable to fake identify easily. In the study, a chatbot has developed to detect romance scam in real-time through Line Messaging API. Using the seven stage theories in the social science field, the stages of romance scam can be detected through large language model. In addition, once a romance scam is detected, the chatbot provides explanations of the stage and prevention advices through large language model. The contribution of the work provides a practical application, and can be used in real scenario for reducing the risk of romance scam.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "updated": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.20631",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.20631"
+      }
+    ],
+    "relevance_score": 0.2549432653865939,
+    "max_similarity": 0.12323416708157466
+  }
+]
