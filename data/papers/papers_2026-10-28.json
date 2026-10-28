@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2610.36384",
+    "title": "SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding",
+    "authors": [
+      "Matea Tashkovska, Na\\\"el Ouerghemi, Haozhe Qi, Alexander Mathis"
+    ],
+    "abstract": "arXiv:2610.36384v1 Announce Type: new \nAbstract: Perceiving human body motion is critical for multimodal systems that understand and assist people. Yet current evaluations of Multimodal Large Language Models (MLLMs) largely focus on objects, scenes, and coarse actions, leaving their ability to reason about the body itself poorly assessed. This is especially challenging from the egocentric perspective, in which the body is only partially visible and motion must be inferred from occluded and temporally distributed cues. We introduce SOMA, a benchmark for fine-grained body-motion understanding from egocentric video, comprising 1,632 human-verified questions across three capability axes: body configuration, motion dynamics, and temporal reasoning. We evaluate 37 leading closed-source, open-source, and specialized egocentric MLLMs, complemented by an extensive human evaluation. We find that humans also find this task difficult from video alone (68.5% accuracy), yet clearly outperform the strongest MLLM (Qwen3.6-27B), which reaches 50.0% zero-shot accuracy. Our error analysis shows that MLLMs often misread the wearer's own body, misjudge events in time, and are prone to biases such as favoring the right hand or under-counting repetitions. To narrow the gap to human performance and support further progress, we introduce a training dataset of aligned video, body motion, and language supervision, and a multimodal baseline that jointly learns from these modalities. By identifying common failure modes and missing capabilities in current MLLMs, we hope SOMA will inspire future research on body-motion understanding and multimodal reasoning. Full benchmark, training data, and code will be released at: https://cnai.epfl.ch/soma",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36384",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36384"
+      }
+    ],
+    "relevance_score": 0.7326398379538159,
+    "max_similarity": 0.529251957101685
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36269",
+    "title": "Cross-modal Steering Vectors Exist Across Both Image and Text Generation",
+    "authors": [
+      "Donghao Zeng (Mila, McGill University), Nishant Subramani (Carnegie Mellon University), Tamar Rott Shaham (MIT CSAIL), Benno Krojer (Mila, McGill University, Northeastern University)"
+    ],
+    "abstract": "arXiv:2610.36269v1 Announce Type: new \nAbstract: Are concepts and mechanisms unified across modalities in current AI models, or instead implemented separately for each one? We operationalize this broad question of modality unification by studying cross-modal steering: 1) finding vectors that successfully steer generation on tokens of one modality, which then 2) transfer zero-shot to steer generation when added to tokens of another modality. Our study goes beyond simple correlational alignment (e.g. representational similarity) because steering is fundamentally causal. We study cross-modal steering in several unified multimodal models (UMMs), since they possess shared parameters for language and image generation, focusing on these two modalities. Across diverse steered concepts such as emotion and object size, we show that steering vectors transfer zero-shot in both directions (text-to-image & image-to-text). Even for concepts that are highly unique to one modality (e.g. formal vs. colloquial language), steering vectors often induce a consistent, interpretable effect in the other modality, such as formal clothing and design. This transfer has a geometric signature too: despite a clear modality gap separating text and image representations, steering vectors with strong cross-modal transferability tend to point in similar directions for the same concept. Our findings shed light on how vision and language interact inside unified multimodal models and point towards more general, modality-agnostic approaches for controlling their behavior.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36269",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36269"
+      }
+    ],
+    "relevance_score": 0.4976440997482272,
+    "max_similarity": 0.23556997501562046
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36335",
+    "title": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
+    "authors": [
+      "Hui Yang, Jiaoyan Chen, Yongsheng Gao"
+    ],
+    "abstract": "arXiv:2610.36335v1 Announce Type: new \nAbstract: Large language models (LLMs) perform well across many real-world tasks but remain prone to hallucination, limiting their reliability in domains such as biomedicine and healthcare, where answers must be grounded in established knowledge. Retrieval-augmented generation (RAG) mitigates this problem by incorporating external information, but often overlooks logical relationships and relies heavily on the LLM's own reasoning, which can compromise answer faithfulness. We propose OA-RAG, an agent that integrates formal reasoning with LLM reasoning, drawing on both the logical structure and informal annotations of domain ontologies. For each answer, OA-RAG reports the ontology observations used as evidence and a model-assessed grounding level (entailed, supported, related, or unrelated) that characterises the strength of that evidence. Across benchmarks derived from three large-scale ontologies and six real-world medical question-answering tasks, OA-RAG achieves the best overall performance among the evaluated ontology-fine-tuned and popular RAG methods, with particularly strong results on reasoning-intensive tasks. The reported grounding levels also offer a useful indication of answer reliability, with stronger grounding generally associated with higher accuracy. Finally, our results demonstrate the value of ontologies as knowledge sources: OA-RAG is competitive with, and sometimes outperforms, domain-specific RAG systems that draw on sources such as textbooks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36335",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36335"
+      }
+    ],
+    "relevance_score": 0.4864080821581209,
+    "max_similarity": 0.21400327777143663
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36195",
+    "title": "Learning to Read Braille: Benchmarking and Improving Braille Recognition Capabilities of VLMs",
+    "authors": [
+      "Kartik Jangra, Atharva Gawane, Siddharth Pulipaka, Hemachandran Karah, Raj Dabre"
+    ],
+    "abstract": "arXiv:2610.36195v1 Announce Type: new \nAbstract: Despite rapid progress in visual understanding and document transcription, modern vision-language models (VLMs) struggle with a fundamental accessibility task: reading Braille from images. We introduce BrailleBench, a manually curated benchmark of 259 real-world Grade-1 and Grade-2 Braille images. We evaluate proprietary, open-weight, OCR-specialized, and tool-assisted multimodal systems and find that standalone general-purpose models perform poorly at directly transcribing Braille images, whereas tool-assisted systems perform much better. We design a synthetic Braille generation pipeline with diverse layouts and image perturbations. A 2B VLM model trained on our synthetic data reaches 87% exact match on Grade-1 and 61% on Grade-2 BrailleBench, outperforming standalone VLMs and achieving the highest Grade-2 exact match score among the evaluated systems. We further show that high accuracy on synthetic validation data does not guarantee high accuracy on real photographs in our experiments: models trained on prior synthetic data reach up to 96% on their synthetic validation set but at most 3.26% on Grade-1 BrailleBench. Our results identify an accessibility-relevant capability gap in multimodal systems and show that targeted synthetic supervision can improve real-world Braille transcription.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36195",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36195"
+      }
+    ],
+    "relevance_score": 0.48299828996042804,
+    "max_similarity": 0.21827472758394442
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.35985",
+    "title": "Let the Gate Decide: Per-Lookup Precision for Quantized Conditional Memory in LLMs",
+    "authors": [
+      "Tianqi Chen, Xunchao Li, Linchuan Xie, Guanghua Yu, Jianchen Zhu, Peisong Wang, Jian Cheng"
+    ],
+    "abstract": "arXiv:2610.35985v1 Announce Type: new \nAbstract: Conditional memory layers, such as DeepSeek's Engram, attach large hashed n-gram tables to a language model, and removing them from DeepSeek-V4.1-Flash costs 36.8 PopQA points. Low-bit quantization loses long-tail facts first, and the standard remedy, giving more bits to frequently accessed rows, backfires: refining lookups by access frequency is worse than refining them at random. We trace this to the gate that scales each retrieved row. A lookup's quantization error is weighted by its gate, which is small for frequent n-grams, large for the rare n-grams of long-tail entities, and computable from a 1-bit code. GateRQ therefore stores each row as a ladder of 1-bit residual codes, keeps level 1 in GPU memory to compute the gate, and reads deeper levels only for the lookups the gate ranks highest. Without retraining, GateRQ cuts GPU table memory by 7.8x on DeepSeek-V4.1-Flash, which raises vLLM throughput by 11%-31% over FP8 tables, while losing about 1 PopQA point at 1.50 bits read per lookup and 0.2 points at 2.10 bits across two models.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.35985",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.35985"
+      }
+    ],
+    "relevance_score": 0.47676537754776094,
+    "max_similarity": 0.21448280120459104
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36325",
+    "title": "Ontology-guided multi-agent reasoning for explainable differential diagnosis",
+    "authors": [
+      "Roxana Ramona Szomiu, George Ursu, Adrian Groza"
+    ],
+    "abstract": "arXiv:2610.36325v1 Announce Type: new \nAbstract: Effective differential diagnosis depends on well structured and unambiguous patient case descriptions, since incomplete or ambiguous clinical information readily leads to diagnostic errors and inconsistent reasoning. Large Language Models (LLMs) have recently shown promising capabilities in medical question answering and clinical reasoning; however, even when achieving competitive performance on medical benchmarks, they often rely on pattern recognition learned from training data rather than grounded clinical evidence, and can generate plausible yet unsupported diagnostic conclusions. Their reasoning remains largely opaque, making it difficult for clinicians to assess the evidence and rationale behind a given recommendation. To address this gap, we propose an ontology-guided, multiagent differential diagnosis framework that replicates the iterative reasoning process of physicians. The framework grounds diagnostic inference in a structured, expert-curated medical knowledge base, enabling interpretation of symptoms, clinical findings, or disease relationships, while decomposing diagnosis into explicit, auditable reasoning steps. This ontology-based grounding constrains inference to evidence-backed associations, reducing hallucination and improving diagnostic transparency, traceability, and consistency. The system then identifies the most discriminative missing symptoms and generates targeted follow-up questions to reduce uncertainty through a process that mirrors to clinical inquiry. Together, these components improve the reliability, explainability, and diagnostic accuracy of AI-assisted differential diagnosis. The source code is publicly available.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36325",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36325"
+      }
+    ],
+    "relevance_score": 0.4666856829243001,
+    "max_similarity": 0.19542224952889148
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36210",
+    "title": "Diagnosing and Correcting Bias in MLLM for Long Video Understanding",
+    "authors": [
+      "Xusheng Liang, Jianqiao Sun, Hao Zhang, Yulei Niu, Hengshuang Zhao, Jiawei Ma"
+    ],
+    "abstract": "arXiv:2610.36210v1 Announce Type: new \nAbstract: Long-video question answering is challenging since the answer often hinges on a few decisive moments scattered throughout the video, while memory constraints force Multimodal Large Language Models (MLLMs) to sample frames at extremely low rates, resulting in sparsity that risks omitting key evidence. Though aggressively enlarging the context size is intuitive, we argue that performance remains fundamentally constrained by the bias, \\emph{i.e.}, the misleading cues caused by spurious \\textit{linguistic} correlations and salient yet irrelevant \\textit{visual} observations. In this paper, we first introduce {S-MME}, a benchmark designed to systematically diagnose shortcut-biased behavior in MLLMs. To mitigate this failure, we further propose a training-free framework, Counterfactual Long-video Evidence-Aware Reasoning (CLEAR). By treating the full video-question pair as a complete view, CLEAR estimates bias effects via augmented views by only keeping the question or locally salient visual clips. Then, we intervene hidden states to mitigate the discrepancy at inference such that the correct answer can be predicted confidently. With experimental studies across five benchmarks, we show that our method is generalizable and can be integrated in different MLLMs, yielding consistent gains in prediction and robustness. We hope CLEAR can offer a complementary direction in test-time scaling for long-video understanding.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36210",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36210"
+      }
+    ],
+    "relevance_score": 0.46322710014965457,
+    "max_similarity": 0.19277938343034098
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36327",
+    "title": "Training-Free Inference Acceleration for Video Large Language Models: Methods, Trade-offs, and Evaluation",
+    "authors": [
+      "Yuqi Li, Chuanyue Yan, Neil Rodrigues, Xianglong Wang, Xiaoqin Feng, Junming Liu, Xi Xiao, Zhongwei Cheng, Wei Li, Lin Chen, Yingli Tian"
+    ],
+    "abstract": "arXiv:2610.36327v1 Announce Type: new \nAbstract: Video Large Language Models (VLMs) have demonstrated strong capabilities in video understanding and reasoning, but processing long visual sequences incurs substantial computational, latency, and memory overhead. This survey examines training-free inference acceleration, focusing on reducing inference costs while preserving task-relevant spatiotemporal evidence. We organize existing methods by their intervention stages in the inference pipeline, covering input, visual encoding, projector, prefill, and decoding. Post-training quantization (PTQ) is discussed separately as a cross-stage extension with varying calibration requirements. We analyze how intervention position affects evidence preservation and computational savings, and why local efficiency improvements may not translate into end-to-end acceleration. We complement this analysis with quantitative evidence from prior studies and our own experiments under a shared evaluation setting to assess accuracy-latency trade-offs.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36327",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36327"
+      }
+    ],
+    "relevance_score": 0.4557890770904437,
+    "max_similarity": 0.18255050619155394
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.35910",
+    "title": "Physiognomy Revisited: How Vision-Language Models Encode Sensitive Attributes Through Image Transformation",
+    "authors": [
+      "Soumyajit Datta, Arka Dutta, Ashiqur R. KhudaBukhsh"
+    ],
+    "abstract": "arXiv:2610.35910v1 Announce Type: new \nAbstract: Emergent generative AI technologies, while remarkably beneficial across several tasks and domains, can suffer from unforeseen vulnerabilities and difficult-to-anticipate failure modes. Such failure modes can disparately affect vulnerable communities. This paper investigates two well-known vision language models (VLMs) and inspects how these models encode protected identities while generating images. We show that when VLMs are requested to transform human face images to reflect race identities (e.g., Hispanic, Black, White, or Asian) and sexual orientation (e.g., gay or straight), VLMs often comply with such requests. We demonstrate that compliance (and refusal) is non-deterministic, group-sensitive, and generated images are statistically distinguishable, often accentuating deep-seated stereotypes. We further show that representation biases introduced during image generation can re-emerge in textual reasoning and characterization tasks. Finally, we show that this worrisome finding is not limited to racial identity or sexual orientation, image generation can perpetuate bias around criminality, raising concerning possibilities of AI-assisted profiling.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.35910",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.35910"
+      }
+    ],
+    "relevance_score": 0.42474365288382837,
+    "max_similarity": 0.14628188448470958
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36188",
+    "title": "Skill Dreaming: Evolving Repository Skills through Pull Request Streams",
+    "authors": [
+      "Xinyuan Song, Hasibul Haque, Jay Somasundaram, Ryan Turner, Bowen Zhu, Liang Zhao"
+    ],
+    "abstract": "arXiv:2610.36188v1 Announce Type: new \nAbstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance. However, repository-specific skills must evolve with changing code structures, implementation conventions, and maintenance requirements. Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review. Meanwhile, new PRs must follow repository-specific implementation patterns, modify related components consistently, and ensure that existing tests continue to pass while adding coverage for new functionality. This creates a mutually reinforcing cycle: PRs provide knowledge for updating skills, while these skills improve future PRs, maintain repositories, and support further skill evolution. To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance. Given a repository and its PR history, Skill Dreaming builds a repository-specific skill library by extracting executable knowledge from validated PRs and continuously refines the skills as new PR information becomes available. These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions. By integrating PR analysis, skill management, code execution, and continuous integration, Skill Dreaming provides an end-to-end workflow for applying learned skills to repository changes and incorporating subsequent PR outcomes into future skill updates.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36188",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36188"
+      }
+    ],
+    "relevance_score": 0.42353450764117884,
+    "max_similarity": 0.14965072978224125
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36077",
+    "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+    "authors": [
+      "Weidong Tang, Ruiheng Wang, Jingxuan Zhang, Hexin Wang, Haoyuan Chen, Zhengfeiyang Zhang, Yixing Ma, Zichen Jiang, Ziyu Guo, Haodong Li, Zhengbo Jiao, Zhiqing Cui, Xinxiang Yin, Shuo Liang, Zhenglin Wan, Hongzhan Lin, Wangbo Zhao Kaipeng Zhang, Pengfei Zhou, Odin Zhang, Yang You"
+    ],
+    "abstract": "arXiv:2610.36077v1 Announce Type: new \nAbstract: Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree into a hierarchical capability tree. We introduce Capability-Driven Real2Sim2Real: for heterogeneous tasks at the same node, Creator abstracts their common requirements into simplified, verifiable simulated worlds for capability learning, while evaluation on original tasks measures transfer. Along this capability tree, Explorer progressively evolves reusable capability modules through selective inheritance, forming a Harness tree whose validated updates accumulate across iterations within a fixed topology. The resulting Harnesses specialize in different capabilities, motivating a Capability-Aware Harness Router that uses public task information to select compatible module configurations from the tree. Our evolved Harnesses improve mean performance by 34 points across 28 training benchmarks and 26 points across 18 unseen benchmarks, including two real-world embodied tasks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36077",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36077"
+      }
+    ],
+    "relevance_score": 0.42046647240829405,
+    "max_similarity": 0.14252794188285706
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36234",
+    "title": "MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge",
+    "authors": [
+      "Jannatul Shefa, Alejandro Salado, Paul Wach, Taylan G. Topcu"
+    ],
+    "abstract": "arXiv:2610.36234v1 Announce Type: new \nAbstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes. Although large language models (LLMs) are promising for requirement quality assessment, prior work shows that off-the-shelf models miss a large share of expert-identified defects, perform unevenly across quality criteria, and vary across executions. This study investigates whether infusing expert-derived SE knowledge can improve LLM-based requirement quality evaluation beyond off-the-shelf capability. We present MARQ, a modular, LLM-agnostic prototype that supplements LLMs with a criterion-specific knowledge stack operationalizing INCOSE requirement quality criteria and evaluated against off-the-shelf baselines on an expert-labeled NASA requirement set using Claude Opus 5, GPT-5.6 Sol, and the open-weight Gemma 3 12B, with 100 executions per model. MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively. However, the nature of these gains is model-dependent. Claude Opus 5 improves defect detection and false-alarm control; GPT-5.6 Sol gains detection and better execution-level consistency at the cost of more false alarms; and Gemma 3 12B reaches the performance of off-the-shelf proprietary models, although it remains highly variable. Criterion-level analysis shows gains concentrated in Correctness and Conformance, trade-offs between misses and false alarms within individual criteria, and model-dependent responses across several criteria. These findings position SE knowledge infusion as a promising model-agnostic pathway for strengthening trustworthy LLM-based RE support while underscoring the need for criterion-specific interventions and human-in-the-loop review.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36234",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36234"
+      }
+    ],
+    "relevance_score": 0.40571839444373947,
+    "max_similarity": 0.12311355393490088
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.35957",
+    "title": "Distributed LLM Inference via Communication-Efficient Speculative Decoding",
+    "authors": [
+      "Joohyun Shin, Byeonghyeon Park, Keumseo Ryum, Joonhyuk Kang"
+    ],
+    "abstract": "arXiv:2610.35957v1 Announce Type: new \nAbstract: Distributed speculative decoding has emerged as a promising approach for device--server collaborative large language model (LLM) inference, but its decoding speedup is often limited by the vocabulary-scale communication overhead. In existing distributed speculative decoding methods, exact rejection sampling requires transmitting full token distributions over the LLM vocabulary between the device and the server, which becomes costly in bandwidth-constrained environments. To address this issue, we propose DISCO, a communication-efficient framework for distributed speculative decoding, that eliminates vocabulary-scale distribution transfer while preserving the exact target distribution. DISCO achieves this by introducing a server-side replica of the draft small language model (SLM), which enables the server to locally obtain the draft-side distribution required for rejection sampling. As a result, DISCO exchanges only drafted token indices and scalar probability values between the device and the server. Experimental results on multiple datasets show that DISCO consistently achieves higher decoding speedup than existing distributed speculative decoding methods, particularly under stringent bandwidth constraints.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.35957",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.35957"
+      }
+    ],
+    "relevance_score": 0.4022555922908787,
+    "max_similarity": 0.24589873994426656
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.35955",
+    "title": "ResCom: Activation Residual Compensation for Large Language Model Quantization",
+    "authors": [
+      "Ning Yang, Bohan Cui, Zhuowen Liu, Yuting Wang"
+    ],
+    "abstract": "arXiv:2610.35955v1 Announce Type: new \nAbstract: Low-bit weight--activation quantization reduces the memory and computation needed to deploy large language models, but activation rounding can still degrade accuracy after calibration. Reconstruction from rounded inputs cannot distinguish activations within the same quantization bin. We propose ResCom, a low-rank correction that uses the activation rounding residual to compensate for the resulting layer-output error. An output-aware calibration procedure selects residual directions by their contribution to output reconstruction and computes the correction in closed form, without gradient training or updates to the calibrated weights. On Llama-3-8B with 4-bit weights and activations, rank-32 attention corrections reduce WikiText-2 perplexity from 7.708 to 7.147, improve MMLU by 2.89 percentage points, and raise five-shot GSM8K accuracy from 23.96 to 36.16 percent. Evaluations on models from 1B to 70B parameters and on held-out C4 test the method beyond this setting. The evaluated FP32 implementation adds 2.25 percent to 4K prefill time; a separate compact-storage implementation retains a 27.7 percent peak-memory reduction relative to FP16.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.35955",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.35955"
+      }
+    ],
+    "relevance_score": 0.3956428212199727,
+    "max_similarity": 0.11268187509699046
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36379",
+    "title": "Evaluating Federated Vision-Language and Vision-Only Models for Privacy-Aware Breast Cancer Imaging",
+    "authors": [
+      "Malithi Mithsara Wanniarachchi Kankanamge, Ning Yang, Sree Bash Debnath, Md Zobaer Islam, Abdur R. Shahid"
+    ],
+    "abstract": "arXiv:2610.36379v1 Announce Type: new \nAbstract: Artificial intelligence (AI) shows promise for breast imaging, but limited labeled data, institutional data fragmentation, and privacy concerns hinder centralized training. We investigate a privacy-aware federated learning framework combining pretrained vision-language models (VLMs) with client-level differential privacy. We compare general-purpose CLIP models, biomedical BiomedCLIP, and an ImageNet-pretrained ViT-B/16 baseline on two public breast imaging datasets, with and without differential privacy. We also evaluate a CLIP ViT-B/16 ablation that removes the text pathway. Evaluation includes patient-level ROC-AUC with bootstrap 95% confidence intervals, baseline comparisons, threshold sensitivity, inter-model agreement, and communication cost. Under federated learning, all five models achieve high normal-versus-sick discrimination (ROC-AUC: 0.940-0.990). However, acquisition year alone achieves 0.974 on the same test partition, raising concerns about confounding rather than genuine pathology recognition. Benign-versus-malignant discrimination remains uncertain (ROC-AUC: 0.504-0.637), with all confidence intervals including 0.50. Removing the text pathway preserves classification accuracy while halving communication cost. Differential privacy reduces ROC-AUC by 0.375, attributable to perturbing the full model state rather than only trainable parameters. These findings highlight the importance of evaluating confounding, predictive reliability, privacy implementation, and deployment efficiency when developing federated AI systems for breast imaging.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36379",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36379"
+      }
+    ],
+    "relevance_score": 0.39176118517760006,
+    "max_similarity": 0.10650846110539243
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.35905",
+    "title": "Task-Utility IQA: Rethinking Image Quality Assessment in Embodied Tasks",
+    "authors": [
+      "Jirong Zha, Yanwei Liao, Yemin Wang, Xiangmin Yi, Siqi Peng, Yingfeng Chen, Chen Gao, Xinlei Chen"
+    ],
+    "abstract": "arXiv:2610.35905v1 Announce Type: new \nAbstract: Image quality assessment (IQA) underpins embodied imaging pipelines by judging whether visual quality satisfies downstream tasks, yet most existing methods learn task-agnostic scores aligned with generic human ratings on static benchmarks. This objective mismatches embodied and interactive settings, where image adequacy depends on task goals, context, and action requirements that shape an agent's decisions. We argue that IQA should shift from score regression to goal-conditioned judgment defined by embodied task utility. To this end, we propose an MLLM-based embodied IQA agent framework that reasons about task requirements, grounds quality evidence, and produces decision-facing assessments. A compact VisDrone evidence study shows that conventional perceptual metrics and generic MLLM-based IQA scores are weak proxies for downstream VLM task success, while a task-conditioned utility score better predicts whether visual input supports the target task. These findings support a task-utility-oriented reframing of IQA for embodied, explainable, and decision-aware visual perception.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.35905",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.35905"
+      }
+    ],
+    "relevance_score": 0.3914242215675401,
+    "max_similarity": 0.1664771573649529
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36355",
+    "title": "WAKMan: Workload Aware KVCache Manager",
+    "authors": [
+      "Suhas Kumar Morisetty, Vaibhavi Lokegaonkar, Sachin Mathew Varghese, Wesley Harris"
+    ],
+    "abstract": "arXiv:2610.36355v1 Announce Type: new \nAbstract: Prefix caching enables a Large Language Model (LLM) servers to reuse the Key-Value (KV) states and accelerate prefill computation stage for requests that share a prefix with earlier prompts, thus reducing latency and serving cost. With limited memory resource, the KV cache eviction policy becomes a decisive factor in determining the overall benefits of prefix caching. Production traffic may have single-turn, multi-turn, agentic, or a mixture of any combination of these request types. Our findings indicate that agentic steps return within seconds and favor recency, while popular prompts and long conversations return after many other requests and favor frequency. Across 20 mixes, no single policy is always best: vLLM's default strategy LRU provides 12% higher cache hits as compared to the frequency-oriented S3FIFO on agentic-heavy mixes but trails it by up to 22% elsewhere, and even a single workload parameter can flip the winner even for any particular mix. We present WAKMan, a workload-aware KV cache manager that picks its eviction policy from live traffic without knowing request types or reading prompts. It improves hit rate over LRU by 5 percentage points on average, with the lowest mean and worst-case optimality gap of all policies.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36355",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36355"
+      }
+    ],
+    "relevance_score": 0.381921037427528,
+    "max_similarity": 0.09596041875619377
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36328",
+    "title": "How Stable Are LLM-Generated Proofs Under Program Refactoring? A Stress Test for Verifiable Code Generation",
+    "authors": [
+      "Aravind Mandiga, Guoming Li"
+    ],
+    "abstract": "arXiv:2610.36328v1 Announce Type: new \nAbstract: Benchmarks for verifiable code generation usually test a proof against one fixed implementation. We ask whether the same proof remains valid after a program refactoring that preserves behavior. We introduce RefactorProof, which derives 458 Lean-certified variants from the 185 VERINA tasks that compile in our pinned environment while holding the specification and evaluated proof fixed byte-for-byte. VERINA supplies reference proofs for 46 tasks, all from its basic split; the primary model-versus-reference comparisons further match on 21-25 short, non-recursive tasks. Structural refactorings expose substantial brittleness across proof sources: task-normalized structural PSR is 4.3% for the supplied references and 13.3-26.8% for the specialized provers. On the matched tasks, specialized prover proofs nevertheless have higher overall unchanged-proof survival than the supplied reference artifacts: +15.6 points for DeepSeek-Prover-V2-7B, +18.8 for Goedel-Prover-V2-32B, and +20.3 for Goedel-Prover-V2-8B; all three 95% CIs exclude zero. The ordering persists after excluding universally survived T1 variants, under family-balanced aggregation, and under alternative deployable valid-proof selection rules. However, unchanged-proof failure is not the same as high repair cost: predefined one-identifier edits repair 51/54 eligible reference structural failures and 58/85 eligible prover failures. RefactorProof therefore measures unchanged-proof stability under program refactoring, not the cost of maintaining a proof after it breaks.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36328",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36328"
+      }
+    ],
+    "relevance_score": 0.33147721513247225,
+    "max_similarity": 0.09568931791411261
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.35925",
+    "title": "ReCoPII: A Relation-Grounded Framework for Building Contextual PII Masking Datasets",
+    "authors": [
+      "Taehwan Lee"
+    ],
+    "abstract": "arXiv:2610.35925v1 Announce Type: new \nAbstract: Training contextual masking systems for personally identifiable information (PII) requires examples distinguishing maskable from preservable mentions of one entity type, but privacy restrictions limit access to real data. Author-based augmentation (SPY) labels mentions unrelated to the author as non-PII, presuming a single data subject and overlooking others. We propose ReCoPII (Relation-grounded Contextual PII masking), a framework that builds such data without this premise: it plans ontology-constrained entity relations, writes insertion sentences with placeholders, reconstructs annotations with code, checks the result with a separate LLM, and derives MASK/KEEP labels from entity relations. On Korean documents from six domains, it yields ReCoPII-Ko, a corpus with relation, privacy, and MASK/KEEP annotations, which we validate. Across 300 pairs, four annotators agree with 88.42% of its sampled KEEP labels, against 26.27% for SPY-style augmentation of the same sources. Classifiers trained on it over-mask less than under that reference on a matched test. Contextual masking fine-tuned jointly with a PII detector removes most over-masking of detection alone within a fixed leakage budget; on human-verified entity records, the four detectors meeting it over-mask at most 5.04% with at most 4.18% leakage. The detector is comparable to XLM-R-large on KDPII with about a quarter of its parameters.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.35925",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.35925"
+      }
+    ],
+    "relevance_score": 0.28424738420445783,
+    "max_similarity": 0.09877440296513784
+  },
+  {
+    "id": "https://arxiv.org/abs/2610.36249",
+    "title": "Hierarchical Multimodal Interaction Reasoning for Dyadic Relationship Recognition",
+    "authors": [
+      "Wang Tang, Fethiye Irmak Dogan, Linbo Qing, Ce Zhu, Hatice Gunes"
+    ],
+    "abstract": "arXiv:2610.36249v1 Announce Type: new \nAbstract: Dyadic relationship recognition aims to identify the latent social relationship between two individuals from their multimodal interactions. Existing methods typically project heterogeneous cues into a shared representation and optimise a flat classification objective, overlooking that relationships may rely on different interaction patterns. For instance, distant relationships can often be inferred from direct behavioural correspondence, whereas close relationships are better reflected by coordinated affective, behavioural, and multimodal responses. To address this limitation, we propose HiRe-DRR, a Hierarchical Multimodal Interaction Reasoning framework that organises relationship evidence from three complementary perspectives: feature level, interaction type, and relationship hierarchy. HiRe-DRR decomposes facial, bodily, acoustic, and textual cues into low- and high-level representations and constructs homogeneous and heterogeneous cross-participant interactions. We further introduce the Mixture-of-Interaction Transformer (MoI-Former), which treats diverse interactions as specialised experts and employs relation-aware sparse routing to identify relationship-relevant evidence while preserving contextual interaction information. The proposed Hierarchical Conditional Loss (HC-Loss) exploits the hierarchical nature of social relationships through coarse-to-fine supervision, enabling structured relationship reasoning. Extensive experiments on three dyadic relationship benchmarks demonstrate that HiRe-DRR outperforms recent representative image-, video-, and multimodal methods. Our routing analysis further reveals that distant relationships tend to rely on low-level homogeneous interactions, whereas closer relationships focus on high-level heterogeneous interactions. Our code is publicly available at: https://github.com/tw-repository/HiRe-DRR.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "updated": "Wed, 28 Oct 2026 00:00:00 -0400",
+    "pdf_url": "https://arxiv.org/pdf/2610.36249",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2610.36249"
+      }
+    ],
+    "relevance_score": 0.26031535707073433,
+    "max_similarity": 0.12735661449590097
+  }
+]
