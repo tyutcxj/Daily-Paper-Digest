@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily arXiv - AI Research Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .card-title a:hover { color: #0d6efd !important; }
+        .date-selector {
+            min-width: 200px;
+            background-color: rgba(255,255,255,0.9) !important;
+            color: #333 !important;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 500;
+        }
+        .date-selector:focus {
+            background-color: white !important;
+            box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.5);
+        }
+        .date-selector option {
+            color: #333;
+            background-color: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-journal-richtext"></i> Daily arXiv
+            </a>
+            <div class="d-flex align-items-center">
+                
+        <select class="form-select form-select-sm date-selector" onchange="if(this.value) window.location.href=this.value">
+            <option value="2026-11-01.html" selected>2026-11-01 (20篇)</option><option value="2026-10-31.html" >2026-10-31 (8篇)</option><option value="2026-10-30.html" >2026-10-30 (20篇)</option><option value="2026-10-29.html" >2026-10-29 (7篇)</option><option value="2026-10-28.html" >2026-10-28 (20篇)</option><option value="2026-10-27.html" >2026-10-27 (20篇)</option><option value="2026-10-26.html" >2026-10-26 (20篇)</option><option value="2026-10-25.html" >2026-10-25 (20篇)</option><option value="2026-10-24.html" >2026-10-24 (15篇)</option><option value="2026-10-23.html" >2026-10-23 (20篇)</option><option value="2026-10-22.html" >2026-10-22 (20篇)</option><option value="2026-10-21.html" >2026-10-21 (20篇)</option><option value="2026-10-20.html" >2026-10-20 (20篇)</option><option value="2026-10-19.html" >2026-10-19 (20篇)</option><option value="2026-10-18.html" >2026-10-18 (20篇)</option><option value="2026-10-17.html" >2026-10-17 (5篇)</option><option value="2026-10-16.html" >2026-10-16 (20篇)</option><option value="2026-10-15.html" >2026-10-15 (20篇)</option><option value="2026-10-14.html" >2026-10-14 (20篇)</option><option value="2026-10-13.html" >2026-10-13 (20篇)</option><option value="2026-10-12.html" >2026-10-12 (20篇)</option><option value="2026-10-11.html" >2026-10-11 (20篇)</option><option value="2026-10-10.html" >2026-10-10 (10篇)</option><option value="2026-10-09.html" >2026-10-09 (19篇)</option><option value="2026-10-08.html" >2026-10-08 (20篇)</option><option value="2026-10-07.html" >2026-10-07 (20篇)</option><option value="2026-10-06.html" >2026-10-06 (20篇)</option><option value="2026-10-05.html" >2026-10-05 (20篇)</option><option value="2026-10-04.html" >2026-10-04 (20篇)</option><option value="2026-10-03.html" >2026-10-03 (20篇)</option><option value="2026-10-02.html" >2026-10-02 (20篇)</option><option value="2026-10-01.html" >2026-10-01 (20篇)</option><option value="2026-09-30.html" >2026-09-30 (20篇)</option><option value="2026-09-29.html" >2026-09-29 (20篇)</option><option value="2026-09-28.html" >2026-09-28 (20篇)</option><option value="2026-09-27.html" >2026-09-27 (20篇)</option><option value="2026-09-26.html" >2026-09-26 (12篇)</option><option value="2026-09-25.html" >2026-09-25 (20篇)</option><option value="2026-09-24.html" >2026-09-24 (20篇)</option><option value="2026-09-23.html" >2026-09-23 (20篇)</option><option value="2026-09-22.html" >2026-09-22 (20篇)</option><option value="2026-09-21.html" >2026-09-21 (20篇)</option><option value="2026-09-20.html" >2026-09-20 (20篇)</option><option value="2026-09-19.html" >2026-09-19 (20篇)</option><option value="2026-09-18.html" >2026-09-18 (20篇)</option><option value="2026-09-17.html" >2026-09-17 (20篇)</option><option value="2026-09-16.html" >2026-09-16 (20篇)</option><option value="2026-09-15.html" >2026-09-15 (20篇)</option><option value="2026-09-14.html" >2026-09-14 (20篇)</option><option value="2026-09-13.html" >2026-09-13 (19篇)</option><option value="2026-09-12.html" >2026-09-12 (8篇)</option><option value="2026-09-11.html" >2026-09-11 (20篇)</option><option value="2026-09-10.html" >2026-09-10 (20篇)</option><option value="2026-09-09.html" >2026-09-09 (20篇)</option><option value="2026-09-08.html" >2026-09-08 (19篇)</option><option value="2026-09-07.html" >2026-09-07 (20篇)</option><option value="2026-09-06.html" >2026-09-06 (20篇)</option><option value="2026-09-05.html" >2026-09-05 (14篇)</option><option value="2026-09-04.html" >2026-09-04 (20篇)</option><option value="2026-09-03.html" >2026-09-03 (20篇)</option><option value="2026-09-02.html" >2026-09-02 (20篇)</option><option value="2026-09-01.html" >2026-09-01 (20篇)</option><option value="2026-08-31.html" >2026-08-31 (20篇)</option><option value="2026-08-30.html" >2026-08-30 (20篇)</option><option value="2026-08-29.html" >2026-08-29 (8篇)</option><option value="2026-08-28.html" >2026-08-28 (20篇)</option><option value="2026-08-27.html" >2026-08-27 (20篇)</option><option value="2026-08-26.html" >2026-08-26 (20篇)</option><option value="2026-08-25.html" >2026-08-25 (20篇)</option><option value="2026-08-24.html" >2026-08-24 (20篇)</option><option value="2026-08-23.html" >2026-08-23 (20篇)</option><option value="2026-08-22.html" >2026-08-22 (20篇)</option><option value="2026-08-21.html" >2026-08-21 (20篇)</option><option value="2026-08-20.html" >2026-08-20 (20篇)</option><option value="2026-08-19.html" >2026-08-19 (20篇)</option><option value="2026-08-18.html" >2026-08-18 (20篇)</option><option value="2026-08-17.html" >2026-08-17 (20篇)</option><option value="2026-08-16.html" >2026-08-16 (12篇)</option><option value="2026-08-15.html" >2026-08-15 (20篇)</option><option value="2026-08-14.html" >2026-08-14 (20篇)</option><option value="2026-08-13.html" >2026-08-13 (20篇)</option><option value="2026-08-12.html" >2026-08-12 (20篇)</option><option value="2026-08-11.html" >2026-08-11 (20篇)</option><option value="2026-08-10.html" >2026-08-10 (19篇)</option><option value="2026-08-09.html" >2026-08-09 (20篇)</option><option value="2026-08-08.html" >2026-08-08 (20篇)</option><option value="2026-08-07.html" >2026-08-07 (20篇)</option><option value="2026-08-06.html" >2026-08-06 (20篇)</option><option value="2026-08-05.html" >2026-08-05 (20篇)</option><option value="2026-08-04.html" >2026-08-04 (20篇)</option><option value="2026-08-03.html" >2026-08-03 (20篇)</option><option value="2026-08-02.html" >2026-08-02 (20篇)</option><option value="2026-08-01.html" >2026-08-01 (20篇)</option><option value="2026-07-31.html" >2026-07-31 (20篇)</option><option value="2026-07-30.html" >2026-07-30 (20篇)</option><option value="2026-07-29.html" >2026-07-29 (20篇)</option><option value="2026-07-28.html" >2026-07-28 (20篇)</option><option value="2026-07-27.html" >2026-07-27 (20篇)</option><option value="2026-07-26.html" >2026-07-26 (20篇)</option><option value="2026-07-25.html" >2026-07-25 (14篇)</option><option value="2026-07-24.html" >2026-07-24 (20篇)</option><option value="2026-07-23.html" >2026-07-23 (20篇)</option><option value="2026-07-22.html" >2026-07-22 (20篇)</option><option value="2026-07-21.html" >2026-07-21 (20篇)</option><option value="2026-07-20.html" >2026-07-20 (20篇)</option><option value="2026-07-19.html" >2026-07-19 (20篇)</option><option value="2026-07-18.html" >2026-07-18 (20篇)</option><option value="2026-07-17.html" >2026-07-17 (20篇)</option><option value="2026-07-16.html" >2026-07-16 (20篇)</option><option value="2026-07-15.html" >2026-07-15 (20篇)</option><option value="2026-07-14.html" >2026-07-14 (20篇)</option><option value="2026-07-13.html" >2026-07-13 (20篇)</option><option value="2026-07-12.html" >2026-07-12 (20篇)</option><option value="2026-07-11.html" >2026-07-11 (14篇)</option><option value="2026-07-10.html" >2026-07-10 (20篇)</option><option value="2026-07-09.html" >2026-07-09 (20篇)</option><option value="2026-07-08.html" >2026-07-08 (19篇)</option><option value="2026-07-07.html" >2026-07-07 (20篇)</option><option value="2026-07-06.html" >2026-07-06 (20篇)</option><option value="2026-07-05.html" >2026-07-05 (20篇)</option><option value="2026-07-04.html" >2026-07-04 (20篇)</option><option value="2026-07-03.html" >2026-07-03 (20篇)</option><option value="2026-07-02.html" >2026-07-02 (20篇)</option><option value="2026-07-01.html" >2026-07-01 (20篇)</option><option value="2026-06-30.html" >2026-06-30 (20篇)</option><option value="2026-06-29.html" >2026-06-29 (20篇)</option><option value="2026-06-28.html" >2026-06-28 (20篇)</option><option value="2026-06-27.html" >2026-06-27 (20篇)</option><option value="2026-06-26.html" >2026-06-26 (20篇)</option><option value="2026-06-25.html" >2026-06-25 (20篇)</option><option value="2026-06-24.html" >2026-06-24 (20篇)</option><option value="2026-06-23.html" >2026-06-23 (20篇)</option><option value="2026-06-22.html" >2026-06-22 (18篇)</option><option value="2026-06-21.html" >2026-06-21 (18篇)</option><option value="2026-06-20.html" >2026-06-20 (20篇)</option><option value="2026-06-19.html" >2026-06-19 (19篇)</option><option value="2026-06-18.html" >2026-06-18 (20篇)</option><option value="2026-06-17.html" >2026-06-17 (20篇)</option><option value="2026-06-16.html" >2026-06-16 (19篇)</option><option value="2026-06-15.html" >2026-06-15 (20篇)</option><option value="2026-06-14.html" >2026-06-14 (20篇)</option><option value="2026-06-13.html" >2026-06-13 (20篇)</option><option value="2026-06-12.html" >2026-06-12 (20篇)</option><option value="2026-06-11.html" >2026-06-11 (20篇)</option><option value="2026-06-10.html" >2026-06-10 (20篇)</option><option value="2026-06-09.html" >2026-06-09 (19篇)</option><option value="2026-06-08.html" >2026-06-08 (20篇)</option><option value="2026-06-07.html" >2026-06-07 (20篇)</option><option value="2026-06-06.html" >2026-06-06 (11篇)</option><option value="2026-06-05.html" >2026-06-05 (20篇)</option><option value="2026-06-04.html" >2026-06-04 (20篇)</option><option value="2026-06-03.html" >2026-06-03 (20篇)</option><option value="2026-06-02.html" >2026-06-02 (20篇)</option><option value="2026-06-01.html" >2026-06-01 (20篇)</option><option value="2026-05-31.html" >2026-05-31 (20篇)</option><option value="2026-05-30.html" >2026-05-30 (20篇)</option><option value="2026-05-29.html" >2026-05-29 (20篇)</option><option value="2026-05-28.html" >2026-05-28 (20篇)</option><option value="2026-05-27.html" >2026-05-27 (20篇)</option><option value="2026-05-25.html" >2026-05-25 (17篇)</option><option value="2026-05-22.html" >2026-05-22 (15篇)</option>
+        </select>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h4 class="mb-3">
+                    <i class="bi bi-file-text"></i> 今日论文
+                    <span class="badge bg-secondary">20 篇</span>
+                </h4>
+                <div class="row">
+                    
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-0'); return false;" class="text-decoration-none text-dark">
+                                Collaborative AI agents for autonomous experimental research with solid-state quantum spins
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.51">
+                            <span class="text-success">★★★★★</span> <small class="text-muted">(0.51)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> El Mustapha Mansouri, Eikichi Kimura, Masato Koga, Keigo Arai<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:47:50Z
+                    </p>
+                    <p class="card-text small">An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何实现AI代理协作的自主实验研究。
+主要方法：基于大语言模型的代理相互评估，可停止或重定向研究，进行理论检查和实验设计。
+关键贡献：展示了AI代理能自主完成从问题生成到协议修正的完整研究，并验证量子自旋理论预测。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-0'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40589v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-1'); return false;" class="text-decoration-none text-dark">
+                                Elucidating the Design Space of LM Data Attribution
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.50">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.50)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:59:53Z
+                    </p>
+                    <p class="card-text small">Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multiple dataset properties simultaneously, ma...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LM数据归因评估中，现有方法无法隔离归因失败原因。  
+主要方法：提出CATT基准，用虚构知识微调LLM，系统改变数据集配置，并探索梯度损失和词级聚合设计。  
+关键贡献：发现冗余和干扰项降低归因性能；标准方法稀释局部因果证据；负对数几率梯度优于交叉熵。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-1'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40655v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-2'); return false;" class="text-decoration-none text-dark">
+                                TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.44">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.44)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Tom Sander, Pierre Fernandez, Itai Gat, Haiming Bao, Jiaxin Shi et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:54:12Z
+                    </p>
+                    <p class="card-text small">We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys,...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何实现无失真的大语言模型水印，在投机解码下保持信号且不降低输出多样性。  
+主要方法：使用Copula混合和记忆无关竞赛合并多个密钥，通过高斯Copula耦合噪声，并在投机解码中利用指数竞赛验证。  
+关键贡献：TextSeal2实现了无失真水印，在投机解码下保持信号，检测性能优于TextSeal，与textGrain相当且无需后logits优化。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-2'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40613v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-3'); return false;" class="text-decoration-none text-dark">
+                                TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.44">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.44)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Tom Sander, Pierre Fernandez, Itai Gat, Haiming Bao, Jiaxin Shi et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:54:12Z
+                    </p>
+                    <p class="card-text small">We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys,...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何实现无失真的大语言模型水印，在投机解码下保持信号且不降低输出多样性。  
+主要方法：使用Copula混合和记忆无关竞赛合并多个密钥，通过高斯Copula耦合噪声，并在投机解码中利用指数竞赛验证。  
+关键贡献：TextSeal2实现了无失真水印，在投机解码下保持信号，检测性能优于TextSeal，与textGrain相当且无需后logits优化。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-3'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40613v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-4'); return false;" class="text-decoration-none text-dark">
+                                BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.43">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Xiangyu Xu, Bangshuai Peng, Ziyi Liu, Mengjie Zhao, Chenhao Lu et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:34:04Z
+                    </p>
+                    <p class="card-text small">How effectively can vision-language-action (VLA) models learn diverse language-conditioned behaviors as training data scales? Investigating this question requires large and varied robot datasets, whos...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：VLA模型如何随数据规模学习多样化语言条件行为？  
+主要方法：提出BURGER基准，用可扩展管道生成连续绘图轨迹，含28,200个模拟演示。  
+关键贡献：评估五种VLA模型，揭示失败模式，发现任务多样性和规模提升泛化，并部署真实机器人。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-4'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40532v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-5'); return false;" class="text-decoration-none text-dark">
+                                VeriCUA: Verification as Agentic Exploration for Computer-Using Agents
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:45:26Z
+                    </p>
+                    <p class="card-text small">Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning....</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：计算机使用代理在复杂数字环境中的任务完成验证可靠性不足。
+主要方法：提出VeriCUA，通过代理探索动态收集证据并评估，结合GUI或代码检查。
+关键贡献：实验显示与参考标签一致性提升，尤其在困难案例和错误拒绝方面。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-5'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40578v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-6'); return false;" class="text-decoration-none text-dark">
+                                VeriCUA: Verification as Agentic Exploration for Computer-Using Agents
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:45:26Z
+                    </p>
+                    <p class="card-text small">Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning....</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：计算机使用代理在复杂数字环境中的任务完成验证可靠性不足。
+主要方法：提出VeriCUA，通过代理探索动态收集证据并评估，结合GUI或代码检查。
+关键贡献：实验显示与参考标签一致性提升，尤其在困难案例和错误拒绝方面。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-6'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40578v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-7'); return false;" class="text-decoration-none text-dark">
+                                VeriCUA: Verification as Agentic Exploration for Computer-Using Agents
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:45:26Z
+                    </p>
+                    <p class="card-text small">Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning....</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：计算机使用代理在复杂数字环境中的任务完成验证可靠性不足。
+主要方法：提出VeriCUA，通过代理探索动态收集证据并评估，结合GUI或代码检查。
+关键贡献：实验显示与参考标签一致性提升，尤其在困难案例和错误拒绝方面。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-7'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40578v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-8'); return false;" class="text-decoration-none text-dark">
+                                On the Fundamental Limits of Prefill-Based Decoding Length Prediction
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.40">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Haowen Shi, Xuzhe Yan, Fahao Chen, Peng Li<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:36:01Z
+                    </p>
+                    <p class="card-text small">Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling. We show that current benchmarks conflate predi...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：预填充阶段预测LLM解码长度的基本限制及现有基准的不稳定性。  
+主要方法：将解码视为停止随机过程，推导每步停止概率变化，得到中心极限定理和仿射方差律。  
+关键贡献：揭示解码长度预测误差源于自回归随机性，给出理论界限和正态分布经验验证。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-8'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40541v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-9'); return false;" class="text-decoration-none text-dark">
+                                On the Fundamental Limits of Prefill-Based Decoding Length Prediction
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.40">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Haowen Shi, Xuzhe Yan, Fahao Chen, Peng Li<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:36:01Z
+                    </p>
+                    <p class="card-text small">Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling. We show that current benchmarks conflate predi...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：预填充阶段预测LLM解码长度的基本限制及现有基准的不稳定性。  
+主要方法：将解码视为停止随机过程，推导每步停止概率变化，得到中心极限定理和仿射方差律。  
+关键贡献：揭示解码长度预测误差源于自回归随机性，给出理论界限和正态分布经验验证。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-9'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40541v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-10'); return false;" class="text-decoration-none text-dark">
+                                ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.40">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Qiyao Ma, Xiaodong Liu, Weiwei Yang, Mingqian Feng, Chengquan Guo et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:56:53Z
+                    </p>
+                    <p class="card-text small">Safety alignment has enabled large language models to reliably refuse harmful requests directly, yet the same request distributed across a multi-turn conversation still succeeds far too often. This br...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：多轮对话中安全对齐脆弱，因安全行为集中在模型前几个输出token。
+主要方法：提出Assess→Decide→Respond框架，通过强化学习在有效轮次训练模型先做出明确安全决策再生成回复。
+关键贡献：利用安全对齐的浅层性，通过自验证奖励或LLM评判奖励实现无需人工标注的高效多轮防御。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-10'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40627v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-11'); return false;" class="text-decoration-none text-dark">
+                                Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.40">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.40)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Yifu Luo, Chuang Ma, Zeyu Chen, Enkelejda Kasneci, Qi Chen et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:44:42Z
+                    </p>
+                    <p class="card-text small">On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the te...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有OPSD方法中教师固定，但每个token需要不同教师。
+主要方法：提出MTA-OPSD，构建多教师池，每个token自适应选择教师。
+关键贡献：在数学推理任务上平均提升+5.9，证明token级自适应的重要性。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-11'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40574v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-12'); return false;" class="text-decoration-none text-dark">
+                                PhysCount: Do MLLMs Count Visual Appearances or Physical Entities?
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.40">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.40)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Lidong Lu, Jiaxin Lv, Liangrui Dong, Xinyi Mao, Lidong Zou et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:33:34Z
+                    </p>
+                    <p class="card-text small">Images reveal appearances, but counting often asks about physical objects. A single entity may be visible directly, in several reflections, or through glass, so detecting every visible occurrence does...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：MLLMs能否区分图像中的视觉出现和物理实体计数。
+主要方法：构建PhysCount基准，含546张真实图像和4595个问题，四个问题族测试不同计数能力。
+关键贡献：发现MLLMs计数视觉出现比计数物理实体容易，最强模型仅13.36%组完全正确。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-12'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40530v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-13'); return false;" class="text-decoration-none text-dark">
+                                Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.38">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Eric Rudolph, Philipp Steigerwald, Jens Albrecht<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:41:59Z
+                    </p>
+                    <p class="card-text small">This study investigates the capabilities of Large Language Models to simulate counselling clients in educational role-plays in comparison to human role-players. Initially, we recorded role-playing ses...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：比较人类角色扮演者和LLM模拟客户在在线咨询培训中的咨询模式差异  
+主要方法：记录新手咨询师与人类及Mixtral 8x7b模拟客户的角色扮演，用沟通模式系统进行句子级分析  
+关键贡献：发现LLM能复制真实对话动态，咨询师行为有异同，显示LLM角色扮演提升咨询能力的潜力
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-13'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40563v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-14'); return false;" class="text-decoration-none text-dark">
+                                Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.38">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Eric Rudolph, Philipp Steigerwald, Jens Albrecht<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:41:59Z
+                    </p>
+                    <p class="card-text small">This study investigates the capabilities of Large Language Models to simulate counselling clients in educational role-plays in comparison to human role-players. Initially, we recorded role-playing ses...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：比较人类角色扮演者和LLM模拟客户在在线咨询培训中的咨询模式差异  
+主要方法：记录新手咨询师与人类及Mixtral 8x7b模拟客户的角色扮演，用沟通模式系统进行句子级分析  
+关键贡献：发现LLM能复制真实对话动态，咨询师行为有异同，显示LLM角色扮演提升咨询能力的潜力
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-14'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40563v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-15'); return false;" class="text-decoration-none text-dark">
+                                Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.37">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.37)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Alan Sorani, Ashvni Narayanan, Michael Shalyt, Tali Monderer, Rotem Kalisch et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:39:04Z
+                    </p>
+                    <p class="card-text small">As AI's mathematical capabilities rapidly improve, meaningful benchmarks are shifting from university-level problems and math olympiads to research-level mathematics. The Ramanujan Challenge is a benc...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：评估AI在数论研究级问题上的表现及多格式证明的可靠评判。  
+主要方法：提出AI辅助评估流水线，处理自然语言证明、CAS代码和Lean形式化，评估语义和逻辑正确性。  
+关键贡献：相比一次性LLM判断，将自然语言证明误判率从23%降至6%，代码判断准确率从46%提升至58%。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-15'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40551v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-16'); return false;" class="text-decoration-none text-dark">
+                                Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.37">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.37)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Alan Sorani, Ashvni Narayanan, Michael Shalyt, Tali Monderer, Rotem Kalisch et al.<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:39:04Z
+                    </p>
+                    <p class="card-text small">As AI's mathematical capabilities rapidly improve, meaningful benchmarks are shifting from university-level problems and math olympiads to research-level mathematics. The Ramanujan Challenge is a benc...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：评估AI在数论研究级问题上的表现及多格式证明的可靠评判。  
+主要方法：提出AI辅助评估流水线，处理自然语言证明、CAS代码和Lean形式化，评估语义和逻辑正确性。  
+关键贡献：相比一次性LLM判断，将自然语言证明误判率从23%降至6%，代码判断准确率从46%提升至58%。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-16'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40551v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-17'); return false;" class="text-decoration-none text-dark">
+                                How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.34">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.34)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Max Neuwinger, Hanna Yukhymenko, Imanol Schlag<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:26:02Z
+                    </p>
+                    <p class="card-text small">Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related open training datase...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：多语言安全对齐不足，低资源语言性能受损，缺乏本地化有害主题数据集。  
+主要方法：提出模板增强流水线，提取安全模板、翻译并填充文化实体，生成多语言语料。  
+关键贡献：发布MSafeTemp语料库（60语言），证明英语评估误判多语言安全，模板增强提升对齐质量。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-17'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40516v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-18'); return false;" class="text-decoration-none text-dark">
+                                IndicIPR-QA: A Benchmark for Extractive Question Answering on Indian IPR Laws
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.32">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.32)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> M. Mohaiminul Islam, Muhammad Abulaish<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:26:39Z
+                    </p>
+                    <p class="card-text small">Legal Question Answering (QA) over statutory texts is a challenging task in Natural Language Processing (NLP), especially in low-resource settings with complex legal systems. It requires answers that ...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：印度知识产权法抽取式问答缺乏基准数据集。  
+主要方法：构建4462个问答对，用GPT-4o生成并验证，以BM25和InLegalBERT评估。  
+关键贡献：首个覆盖全部7部印度IPR法案的抽取式QA基准，揭示词匹配与微调模型的性能差距。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-18'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40518v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-19'); return false;" class="text-decoration-none text-dark">
+                                Preserving Utility in Continual LLM Unlearning via Orthogonal Projections
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.31">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.31)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Juan Belieni, Ana Carolina Erthal, Eliezer de Souza da Silva, Diego Mesquita<br>
+                        <i class="bi bi-calendar"></i> 2026-10-29T17:13:53Z
+                    </p>
+                    <p class="card-text small">Unlearning concerns the task of removing the influence of a sensitive portion of the training data, such as protected, copyrighted or private text, from a model without retraining it from scratch. Whi...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：连续LLM遗忘中效用下降，因后续更新干扰先前删除。  
+主要方法：提出连续正交投影（COP），将每次更新限制在先前遗忘集激活子空间的正交补上。  
+关键贡献：保证一阶无干扰，仅需存储低秩基，无需过去梯度或遗忘集，在TOFU和RWKU上保持效用不降低。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-19'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2610.40483v1" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <i class="bi bi-tags"></i> 热门关键词
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark me-1 mb-1">safety</span> <span class="badge bg-info text-dark me-1 mb-1">token</span> <span class="badge bg-info text-dark me-1 mb-1">model</span> <span class="badge bg-info text-dark me-1 mb-1">evidence</span> <span class="badge bg-info text-dark me-1 mb-1">role</span> <span class="badge bg-info text-dark me-1 mb-1">research</span> <span class="badge bg-info text-dark me-1 mb-1">keys</span> <span class="badge bg-info text-dark me-1 mb-1">ai</span> <span class="badge bg-info text-dark me-1 mb-1">teacher</span> <span class="badge bg-info text-dark me-1 mb-1">language</span> <span class="badge bg-info text-dark me-1 mb-1">attribution</span> <span class="badge bg-info text-dark me-1 mb-1">level</span> <span class="badge bg-info text-dark me-1 mb-1">models</span> <span class="badge bg-info text-dark me-1 mb-1">clients</span> <span class="badge bg-info text-dark me-1 mb-1">counselling</span> 
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <i class="bi bi-bar-chart"></i> 研究类别
+                    </div>
+                    <div class="card-body">
+                        
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.CL</span>
+                <span class="badge bg-primary">9</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.AI</span>
+                <span class="badge bg-primary">7</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.CV</span>
+                <span class="badge bg-primary">2</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.LG</span>
+                <span class="badge bg-primary">2</span>
+            </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <i class="bi bi-cloud"></i> 词云
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="data/analysis/wordcloud_20261101_070843.png" class="img-fluid" alt="词云">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 详情弹窗 -->
+    
+        <div class="modal fade" id="modal-0" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Collaborative AI agents for autonomous experimental research with solid-state quantum spins</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★★</span> <small class="text-muted">(0.51)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>El Mustapha Mansouri, Eikichi Kimura, Masato Koga, Keigo Arai</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:47:50Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems take on several research roles, but may draw conclusions that the evidence does not support. Here, we present an autonomous research laboratory in which agents based on large language models assess one another's work and can stop or redirect investigations. They can generate and reject research questions, require separate theoretical checks and conduct experiments designed to challenge their claims. We demonstrate these capabilities by investigating ensembles of quantum spins in diamond. The agents derived the minimum number of calibration settings needed to predict responses to a defined family of microwave pulse sequences. They checked the result computationally and designed experiments to distinguish competing predictions. An initial experiment agreed with the theoretical predictions, but repeated reference measurements showed that the signal was drifting during data collection. The agents therefore treated the result as inconclusive and revised the measurement protocol without relaxing the acceptance criteria. The revised experiment met those criteria and supported the theoretical predictions. This study demonstrates that collaborating AI agents can select research questions, derive theoretical results and test their predictions experimentally.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何实现AI代理协作的自主实验研究。
+主要方法：基于大语言模型的代理相互评估，可停止或重定向研究，进行理论检查和实验设计。
+关键贡献：展示了AI代理能自主完成从问题生成到协议修正的完整研究，并验证量子自旋理论预测。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40589v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40589v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Elucidating the Design Space of LM Data Attribution</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.50)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:59:53Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multiple dataset properties simultaneously, making it impossible to isolate exactly why an attribution algorithm fails. To diagnose these failures, we explore the design space of LLM data attribution, with a primary focus on evaluation. We introduce the Controlled Attribution Benchmark (CATT) for fact tracing, in which we fine-tune LLMs on entirely fictitious knowledge, providing unambiguous ground truth for attribution. This synthetic setup allows us to systematically alter one dataset configuration at a time, such as document redundancy and lexical distractors. With this configurable evaluation, we demonstrate that redundancy and distractors consistently degrade attribution performance. Rather than proposing a new estimator, we examine two design choices that are underexplored: the loss used to compute gradients and how per-token attribution scores are aggregated into a document score. We find that the true causal evidence within a training document is highly localized, but standard methods dilute this evidence into noise by averaging attribution scores across the entire document. We find that replacing standard cross-entropy loss gradients with the negative log-odds gradients surfaces the critical tokens from other uninformative ones. We can then aggregate only the top token scores to improve ground truth recall by 35 to 72 percentage points across multiple baselines on our diagnostic benchmark. The negative log-odds correction also generalizes to FTRACE-TREX, improving counterfactual retraining performance for every method we test, by up to 4.9x.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LM数据归因评估中，现有方法无法隔离归因失败原因。  
+主要方法：提出CATT基准，用虚构知识微调LLM，系统改变数据集配置，并探索梯度损失和词级聚合设计。  
+关键贡献：发现冗余和干扰项降低归因性能；标准方法稀释局部因果证据；负对数几率梯度优于交叉熵。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40655v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40655v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.44)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Tom Sander, Pierre Fernandez, Itai Gat, Haiming Bao, Jiaxin Shi, Jason Park, Valeriu Lacatusu, Sylvestre-Alvise Rebuffi, Hongyan Chang, Hady Elsahar, Tomáš Souček, Tuan Tran, Surya Parimi, Alexandre Mourachko</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:54:12Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys, and the acceptance rate is unchanged. It also preserves output diversity and adds no measurable inference latency. Its predecessor, TextSeal, restores diversity in the Gumbel-max scheme by routing each token to one of two keys via a coin flip. This is suboptimal because the detector averages the scores from both keys without knowing which key was used. TextSeal2 instead merges two or more keys into a single virtual key and couples it to fresh noise through AutoMark's Gaussian copula. Any number of keys, including publicly shared keys, can be merged this way without diluting detection. Under speculative decoding, TextSeal2 verifies keyed drafts with one more exponential race, run on the leftovers of the draft races. By memorylessness, this race reproduces block verification, so the output follows the target model exactly. We evaluate TextSeal2 on three LLMs. At equal output token diversity, TextSeal2 detects 8 to 22 percentage points more 100-token answers than TextSeal at a false-positive rate of $10^{-3}$, and is comparable to textGrain while requiring no post-logits optimization. Under speculative decoding, it detects 18 and 22 percentage points more 200-token answers than TextSeal and textGrain, respectively, at the same acceptance rate.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何实现无失真的大语言模型水印，在投机解码下保持信号且不降低输出多样性。  
+主要方法：使用Copula混合和记忆无关竞赛合并多个密钥，通过高斯Copula耦合噪声，并在投机解码中利用指数竞赛验证。  
+关键贡献：TextSeal2实现了无失真水印，在投机解码下保持信号，检测性能优于TextSeal，与textGrain相当且无需后logits优化。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40613v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40613v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-3" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.44)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Tom Sander, Pierre Fernandez, Itai Gat, Haiming Bao, Jiaxin Shi, Jason Park, Valeriu Lacatusu, Sylvestre-Alvise Rebuffi, Hongyan Chang, Hady Elsahar, Tomáš Souček, Tuan Tran, Surya Parimi, Alexandre Mourachko</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:54:12Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys, and the acceptance rate is unchanged. It also preserves output diversity and adds no measurable inference latency. Its predecessor, TextSeal, restores diversity in the Gumbel-max scheme by routing each token to one of two keys via a coin flip. This is suboptimal because the detector averages the scores from both keys without knowing which key was used. TextSeal2 instead merges two or more keys into a single virtual key and couples it to fresh noise through AutoMark's Gaussian copula. Any number of keys, including publicly shared keys, can be merged this way without diluting detection. Under speculative decoding, TextSeal2 verifies keyed drafts with one more exponential race, run on the leftovers of the draft races. By memorylessness, this race reproduces block verification, so the output follows the target model exactly. We evaluate TextSeal2 on three LLMs. At equal output token diversity, TextSeal2 detects 8 to 22 percentage points more 100-token answers than TextSeal at a false-positive rate of $10^{-3}$, and is comparable to textGrain while requiring no post-logits optimization. Under speculative decoding, it detects 18 and 22 percentage points more 200-token answers than TextSeal and textGrain, respectively, at the same acceptance rate.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何实现无失真的大语言模型水印，在投机解码下保持信号且不降低输出多样性。  
+主要方法：使用Copula混合和记忆无关竞赛合并多个密钥，通过高斯Copula耦合噪声，并在投机解码中利用指数竞赛验证。  
+关键贡献：TextSeal2实现了无失真水印，在投机解码下保持信号，检测性能优于TextSeal，与textGrain相当且无需后logits优化。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40613v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40613v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-4" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Xiangyu Xu, Bangshuai Peng, Ziyi Liu, Mengjie Zhao, Chenhao Lu, Zhengyang Fan, Huazhe Xu, Kaizhe Hu</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:34:04Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>How effectively can vision-language-action (VLA) models learn diverse language-conditioned behaviors as training data scales? Investigating this question requires large and varied robot datasets, whose collection on physical robots remains costly. We introduce BURGER, a language-conditioned robotic drawing benchmark with a scalable, prompt-driven pipeline for generating continuous drawing trajectories, both in simulation and the real world. In BURGER, an agent starts from the same blank canvas and controls a robot arm to draw the object or spatial composition specified by language, while each instruction allows an open-ended variety of valid drawings and stroke orders. Using 28,200 simulated demonstrations spanning 282 drawing tasks, we evaluate five representative VLA models across data scales, language grounding, and multimodal behavior. BURGER supports fine-grained analysis of language grounding, spatial composition, and action generation, revealing distinct failure patterns across VLA models. Our experiments suggest that some VLA models can benefit from greater task diversity and demonstration scale, capture multimodal drawing behaviors, and generalize to unseen compositions of familiar objects. Finally, we deploy a trained policy on a Franka Panda arm, demonstrating the ability to draw reactively under human intervention. Project homepage and code can be found at https://siyingzhao.github.io/BURGER/.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：VLA模型如何随数据规模学习多样化语言条件行为？  
+主要方法：提出BURGER基准，用可扩展管道生成连续绘图轨迹，含28,200个模拟演示。  
+关键贡献：评估五种VLA模型，揭示失败模式，发现任务多样性和规模提升泛化，并部署真实机器人。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40532v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40532v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-5" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong, Ben Kao, Ravi Kumar, Pritish Kamath</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:45:26Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：计算机使用代理在复杂数字环境中的任务完成验证可靠性不足。
+主要方法：提出VeriCUA，通过代理探索动态收集证据并评估，结合GUI或代码检查。
+关键贡献：实验显示与参考标签一致性提升，尤其在困难案例和错误拒绝方面。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40578v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40578v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-6" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong, Ben Kao, Ravi Kumar, Pritish Kamath</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:45:26Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：计算机使用代理在复杂数字环境中的任务完成验证可靠性不足。
+主要方法：提出VeriCUA，通过代理探索动态收集证据并评估，结合GUI或代码检查。
+关键贡献：实验显示与参考标签一致性提升，尤其在困难案例和错误拒绝方面。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40578v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40578v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-7" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong, Ben Kao, Ravi Kumar, Pritish Kamath</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:45:26Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：计算机使用代理在复杂数字环境中的任务完成验证可靠性不足。
+主要方法：提出VeriCUA，通过代理探索动态收集证据并评估，结合GUI或代码检查。
+关键贡献：实验显示与参考标签一致性提升，尤其在困难案例和错误拒绝方面。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40578v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40578v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-8" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">On the Fundamental Limits of Prefill-Based Decoding Length Prediction</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Haowen Shi, Xuzhe Yan, Fahao Chen, Peng Li</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:36:01Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling. We show that current benchmarks conflate predictor quality with task hardness: when the target model, dataset, or sampling configuration changes, reported accuracy collapses even though the predictor is unchanged. We trace this instability to an overlooked error source---the inherent stochasticity of autoregressive decoding---and derive bounds that every prefill-side method must obey. Our analysis treats decoding as a stopped stochastic process. The per-step stopping probability of a response is not constant but ramps up over hundreds of steps, so the decode length inherits a central limit theorem from the many local decisions that determine where a response ends; this yields per-prompt normality with an explicit error term, together with an affine variance law $σ=αμ+b$ whose slope is the coefficient of variation of the number of response segments. Empirically, the normal law reproduces the per-prompt MAE and the central mass of the decode-length distribution to within a few percent, and the residual departures from normality (mild right skew, slight excess kurtosis) are the ones predicted by the sampling-noise correction. Under fixed model, data, and sampling conditions, a broad design space of predictors (MLP, EGTP, FiLM, soft-label, and Mixture-of-Experts variants) converges to similar performance close to the bound, confirming that \emph{system error dominates model error}. We argue for a benchmarking protocol that fixes the model, data, and sampling parameters and that reports relative-error metrics alongside absolute ones. Code and analysis tools are available at https://github.com/ShwStone/DecodingPredict.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：预填充阶段预测LLM解码长度的基本限制及现有基准的不稳定性。  
+主要方法：将解码视为停止随机过程，推导每步停止概率变化，得到中心极限定理和仿射方差律。  
+关键贡献：揭示解码长度预测误差源于自回归随机性，给出理论界限和正态分布经验验证。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40541v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40541v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-9" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">On the Fundamental Limits of Prefill-Based Decoding Length Prediction</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Haowen Shi, Xuzhe Yan, Fahao Chen, Peng Li</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:36:01Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling. We show that current benchmarks conflate predictor quality with task hardness: when the target model, dataset, or sampling configuration changes, reported accuracy collapses even though the predictor is unchanged. We trace this instability to an overlooked error source---the inherent stochasticity of autoregressive decoding---and derive bounds that every prefill-side method must obey. Our analysis treats decoding as a stopped stochastic process. The per-step stopping probability of a response is not constant but ramps up over hundreds of steps, so the decode length inherits a central limit theorem from the many local decisions that determine where a response ends; this yields per-prompt normality with an explicit error term, together with an affine variance law $σ=αμ+b$ whose slope is the coefficient of variation of the number of response segments. Empirically, the normal law reproduces the per-prompt MAE and the central mass of the decode-length distribution to within a few percent, and the residual departures from normality (mild right skew, slight excess kurtosis) are the ones predicted by the sampling-noise correction. Under fixed model, data, and sampling conditions, a broad design space of predictors (MLP, EGTP, FiLM, soft-label, and Mixture-of-Experts variants) converges to similar performance close to the bound, confirming that \emph{system error dominates model error}. We argue for a benchmarking protocol that fixes the model, data, and sampling parameters and that reports relative-error metrics alongside absolute ones. Code and analysis tools are available at https://github.com/ShwStone/DecodingPredict.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：预填充阶段预测LLM解码长度的基本限制及现有基准的不稳定性。  
+主要方法：将解码视为停止随机过程，推导每步停止概率变化，得到中心极限定理和仿射方差律。  
+关键贡献：揭示解码长度预测误差源于自回归随机性，给出理论界限和正态分布经验验证。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40541v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40541v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-10" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Qiyao Ma, Xiaodong Liu, Weiwei Yang, Mingqian Feng, Chengquan Guo, Jialin Song, Carolyn Buractaon, Zhe Zhao, Junshan Zhang, Sandeep Atluri, Christopher White, Jianfeng Gao</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:56:53Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Safety alignment has enabled large language models to reliably refuse harmful requests directly, yet the same request distributed across a multi-turn conversation still succeeds far too often. This brittleness has a mechanistic root: Alignment is shallow, with safety behavior concentrated in a model's first few output tokens, and existing defenses inherit the weakness, supervising the surface form of the response without ever giving the model an explicit safety decision to learn. We take the opposite view of shallowness: if a short span determines the trajectory of an entire response, that span is the highest-leverage place to intervene, and the defender can occupy it first. We propose Assess $\to$ Decide $\to$ Respond, a framework in which the defender assesses the user's intent, commits to an explicit, parseable safety decision, and only then generates a reply conditioned on it, with the commitment trained by reinforcement learning at the payload turn. Because the decision is a token span, the reward can be a rule: a self-verified reward checks the committed label against the conversation's known nature, requiring no judge and no annotation, while the same format also supports an LLM-as-judge reward over a graded decision space with safe redirection. Across two model families and fourteen benchmarks spanning safety, utility, and helpfulness, our defenders achieve the strongest multi-turn safety in a controlled comparison, maintaining their lead in safety while preserving utility at a modest cost to helpfulness. A per-token KL analysis and interventional probes confirm why this works: training concentrates its effect on the brief deliberation that sets a response's trajectory, and the decision committed there is a causal control point. The very shallowness attackers exploit becomes the mechanism of defense.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：多轮对话中安全对齐脆弱，因安全行为集中在模型前几个输出token。
+主要方法：提出Assess→Decide→Respond框架，通过强化学习在有效轮次训练模型先做出明确安全决策再生成回复。
+关键贡献：利用安全对齐的浅层性，通过自验证奖励或LLM评判奖励实现无需人工标注的高效多轮防御。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40627v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40627v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-11" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.40)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Yifu Luo, Chuang Ma, Zeyu Chen, Enkelejda Kasneci, Qi Chen, Gjergji Kasneci</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:44:42Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the teacher fixed either throughout training by consistently exposing it to the full reference, or within each response by adaptively varying partial reference exposure only across responses. In this paper, we argue that neither of them is sufficient. Instead, every token needs its own teacher, as the teacher preference can vary token by token within the same response. Through a teacher-intervention pilot study, we validate that the teacher preference differs across tokens, and reveal that a preferred teacher can be identified for each token through majority voting and KL-based selection. Motivated by these findings, we propose Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), the first token-level adaptive OPSD method. Our method constructs a multi-teacher pool consisting of candidate teachers, and enables every token to adaptively select its preferred teacher during training. Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to $+5.9$ over the base model, highlighting the importance of adapting teacher supervision at the token level. The code is available at https://github.com/xingzhejun/MTA-OPSD.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有OPSD方法中教师固定，但每个token需要不同教师。
+主要方法：提出MTA-OPSD，构建多教师池，每个token自适应选择教师。
+关键贡献：在数学推理任务上平均提升+5.9，证明token级自适应的重要性。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40574v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40574v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-12" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">PhysCount: Do MLLMs Count Visual Appearances or Physical Entities?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.40)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Lidong Lu, Jiaxin Lv, Liangrui Dong, Xinyi Mao, Lidong Zou, Zhenquan Li, Tong Lu, Guo Chen</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:33:34Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Images reveal appearances, but counting often asks about physical objects. A single entity may be visible directly, in several reflections, or through glass, so detecting every visible occurrence does not determine how many entities are present. Existing visual counting benchmarks rarely separate these two operations. We introduce PhysCount, a benchmark for evaluating whether multimodal large language models (MLLMs) can distinguish what appears in an image from what physically exists in the scene. PhysCount contains 546 real-world images and 4,595 human-written questions organized into 651 target-specific groups. For each group, annotators locate the relevant appearances, label how each is observed, and identify appearances of the same entity. Four complementary question families test the enumeration of appearances, the enumeration of physical entities, image-formation-specific counting, and appearance--entity correspondence. We measure both accuracy on each family and the proportion of groups answered entirely correctly. Across 40 MLLMs, counting visible appearances is substantially easier than recovering the identities that connect them. Even the strongest model answers every question correctly in only 13.36\% of groups. Performance declines when one entity produces many appearances or when its appearances cross observation modes. Higher image resolution improves access to visual evidence but brings limited gains in complete-group accuracy, whereas answering related questions jointly produces a marked improvement. These results expose a gap between recognizing what is visible and correctly recovering the physical entities behind those observations.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：MLLMs能否区分图像中的视觉出现和物理实体计数。
+主要方法：构建PhysCount基准，含546张真实图像和4595个问题，四个问题族测试不同计数能力。
+关键贡献：发现MLLMs计数视觉出现比计数物理实体容易，最强模型仅13.36%组完全正确。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40530v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40530v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-13" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Eric Rudolph, Philipp Steigerwald, Jens Albrecht</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:41:59Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>This study investigates the capabilities of Large Language Models to simulate counselling clients in educational role-plays in comparison to human role-players. Initially, we recorded role-playing sessions, where novice counsellors interacted with human peers acting as clients, followed by role-plays between humans and clients simulated by Mistrals Mixtral 8x7b using 4-bit quantization. These interactions were analysed with a counselling communication pattern system at sentence level. We investigated two key questions: (1) to what extent LLM-generated responses replicate authentic conversational dynamics and (2) whether counsellors' communication behaviour differs when interacting with human versus LLM-simulated clients. The findings highlight both similarities and differences in the application of counselling patterns across scenarios, showing the potential of LLM-based role-playing exercises to enhance counselling competencies and to identify areas for further refinement in virtual client simulations.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：比较人类角色扮演者和LLM模拟客户在在线咨询培训中的咨询模式差异  
+主要方法：记录新手咨询师与人类及Mixtral 8x7b模拟客户的角色扮演，用沟通模式系统进行句子级分析  
+关键贡献：发现LLM能复制真实对话动态，咨询师行为有异同，显示LLM角色扮演提升咨询能力的潜力</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40563v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40563v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-14" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Eric Rudolph, Philipp Steigerwald, Jens Albrecht</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:41:59Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>This study investigates the capabilities of Large Language Models to simulate counselling clients in educational role-plays in comparison to human role-players. Initially, we recorded role-playing sessions, where novice counsellors interacted with human peers acting as clients, followed by role-plays between humans and clients simulated by Mistrals Mixtral 8x7b using 4-bit quantization. These interactions were analysed with a counselling communication pattern system at sentence level. We investigated two key questions: (1) to what extent LLM-generated responses replicate authentic conversational dynamics and (2) whether counsellors' communication behaviour differs when interacting with human versus LLM-simulated clients. The findings highlight both similarities and differences in the application of counselling patterns across scenarios, showing the potential of LLM-based role-playing exercises to enhance counselling competencies and to identify areas for further refinement in virtual client simulations.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：比较人类角色扮演者和LLM模拟客户在在线咨询培训中的咨询模式差异  
+主要方法：记录新手咨询师与人类及Mixtral 8x7b模拟客户的角色扮演，用沟通模式系统进行句子级分析  
+关键贡献：发现LLM能复制真实对话动态，咨询师行为有异同，显示LLM角色扮演提升咨询能力的潜力</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40563v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40563v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-15" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.37)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Alan Sorani, Ashvni Narayanan, Michael Shalyt, Tali Monderer, Rotem Kalisch, Hila Barkan, Elyasheev Leibtag, Shachar Weinbaum, Carsten Schneider, John Campbell, Ido Kaminer</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:39:04Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>As AI's mathematical capabilities rapidly improve, meaningful benchmarks are shifting from university-level problems and math olympiads to research-level mathematics. The Ramanujan Challenge is a benchmark comprised of research-level problems in number theory, including unpublished results and open conjectures. It presented concrete formulas for mathematical constants whose correctness can be checked numerically, while their proofs may require non-obvious mathematics. Here, we analyze the Challenge submissions, measuring the relative success of different AI models, Computer Algebra Systems (CAS), and formal tools. We find correct submissions that are conceptually distinct from the official solutions, and a proof of one of the published open conjectures. Evaluating the submissions exposed a second challenge: judging complex proofs reliably at scale. We introduce an AI-assisted evaluation pipeline for natural language proofs, CAS code, and Lean formalizations that assesses semantic and logical correctness. Compared with the conventional one-shot LLM judgment, our pipeline reduces false-positive verdicts on natural language proofs from 23% to 6% and improves judgment accuracy on supporting code from 46% to 58%. This approach provides a methodology for evaluating research-level mathematics at scale, with potential applications across mathematics and AI for science.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：评估AI在数论研究级问题上的表现及多格式证明的可靠评判。  
+主要方法：提出AI辅助评估流水线，处理自然语言证明、CAS代码和Lean形式化，评估语义和逻辑正确性。  
+关键贡献：相比一次性LLM判断，将自然语言证明误判率从23%降至6%，代码判断准确率从46%提升至58%。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40551v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40551v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-16" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.37)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Alan Sorani, Ashvni Narayanan, Michael Shalyt, Tali Monderer, Rotem Kalisch, Hila Barkan, Elyasheev Leibtag, Shachar Weinbaum, Carsten Schneider, John Campbell, Ido Kaminer</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:39:04Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>As AI's mathematical capabilities rapidly improve, meaningful benchmarks are shifting from university-level problems and math olympiads to research-level mathematics. The Ramanujan Challenge is a benchmark comprised of research-level problems in number theory, including unpublished results and open conjectures. It presented concrete formulas for mathematical constants whose correctness can be checked numerically, while their proofs may require non-obvious mathematics. Here, we analyze the Challenge submissions, measuring the relative success of different AI models, Computer Algebra Systems (CAS), and formal tools. We find correct submissions that are conceptually distinct from the official solutions, and a proof of one of the published open conjectures. Evaluating the submissions exposed a second challenge: judging complex proofs reliably at scale. We introduce an AI-assisted evaluation pipeline for natural language proofs, CAS code, and Lean formalizations that assesses semantic and logical correctness. Compared with the conventional one-shot LLM judgment, our pipeline reduces false-positive verdicts on natural language proofs from 23% to 6% and improves judgment accuracy on supporting code from 46% to 58%. This approach provides a methodology for evaluating research-level mathematics at scale, with potential applications across mathematics and AI for science.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：评估AI在数论研究级问题上的表现及多格式证明的可靠评判。  
+主要方法：提出AI辅助评估流水线，处理自然语言证明、CAS代码和Lean形式化，评估语义和逻辑正确性。  
+关键贡献：相比一次性LLM判断，将自然语言证明误判率从23%降至6%，代码判断准确率从46%提升至58%。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40551v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40551v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-17" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.34)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Max Neuwinger, Hanna Yukhymenko, Imanol Schlag</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:26:02Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related open training datasets are often limited in size or do not follow region-localized harmful topics to broaden the scope of alignment beyond cultures. We propose a scalable template-based augmentation pipeline to produce massive multilingual refusal and benign corpora, extracting safe templates from harmful prompts, translating them and then filling in the slots with culturally authentic entities, both harmful and benign. As a result, we release MSafeTemp, a validated corpus spanning 60 languages useful for multilingual safety alignment and evaluation. Using the dataset, we show that English-only evaluation misjudges multilingual safety: for several models, attacks that fail in English succeed once translated, while culturally localized variants expose further failures that translation alone misses. We also confirm that augmenting safety training data through templates allows for higher diversity and quality of alignment, resulting in improved safety performance beyond English. MSafeTemp and the respective pipeline are aimed at facilitating research and development of safer and more responsible models for less-represented cultures.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：多语言安全对齐不足，低资源语言性能受损，缺乏本地化有害主题数据集。  
+主要方法：提出模板增强流水线，提取安全模板、翻译并填充文化实体，生成多语言语料。  
+关键贡献：发布MSafeTemp语料库（60语言），证明英语评估误判多语言安全，模板增强提升对齐质量。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40516v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40516v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-18" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">IndicIPR-QA: A Benchmark for Extractive Question Answering on Indian IPR Laws</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.32)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>M. Mohaiminul Islam, Muhammad Abulaish</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:26:39Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Legal Question Answering (QA) over statutory texts is a challenging task in Natural Language Processing (NLP), especially in low-resource settings with complex legal systems. It requires answers that are precise and grounded in the law. However, to the best of current knowledge, no existing extractive QA benchmark provides exact answer spans from statutory texts across all seven Indian Intellectual Property Rights (IPR) Acts. This paper presents IndicIPR-QA1, an extractive QA benchmark for Indian IPR laws. The proposed dataset contains 4,462 QA pairs from 1,116 statutory contexts across seven Acts. Questions and answers are generated using GPT-4o and validated through nine automatic quality checks, single and multi-model LLM evaluations, and a 200-pair human audit. Section-level partitioning prevents source-context overlap across the training, validation, and test sets. Further analysis examines answer span length, lexical overlap, and multi-clause structure across the corpus and individual Acts. BM25 achieves a token-level F1 score of 20.21, while fine-tuned InLegalBERT reaches 85.02 under a unified sliding-window inference protocol. The large performance gap between BM25 (20.21 F1) and InLegalBERT (85.02 F1) shows that simple word matching is not enough to answer these legal questions. Performance also varies across the seven Acts, indicating substantial differences in answer-extraction performance.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：印度知识产权法抽取式问答缺乏基准数据集。  
+主要方法：构建4462个问答对，用GPT-4o生成并验证，以BM25和InLegalBERT评估。  
+关键贡献：首个覆盖全部7部印度IPR法案的抽取式QA基准，揭示词匹配与微调模型的性能差距。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40518v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40518v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-19" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Preserving Utility in Continual LLM Unlearning via Orthogonal Projections</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.31)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Juan Belieni, Ana Carolina Erthal, Eliezer de Souza da Silva, Diego Mesquita</p>
+                        <p><strong>发布日期：</strong>2026-10-29T17:13:53Z</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>Unlearning concerns the task of removing the influence of a sensitive portion of the training data, such as protected, copyrighted or private text, from a model without retraining it from scratch. While unlearning requests happen continuously during a model's lifetime, the vast majority of LLM unlearning methods are ill-suited for iterated removal, yielding steep decay in forgetting and utility upon sequential unlearning. This decay stems from interference between successive updates, as each new deletion can undo earlier ones or push the model further along directions already degraded by them. To address this, we introduce Continual Orthogonal Projection (COP), a gradient-projection scheme that restricts each update to the orthogonal complement of activation subspaces cached from prior forget sets. This approach provably guarantees first-order non-interference with earlier deletions. COP stores only a low-rank basis per layer, requiring neither past gradients nor previous forget sets, and plugs into unlearning methods that update the model through gradient steps on a differentiable loss without modifying its objective. Experiments on standard LLM unlearning benchmarks (TOFU and RWKU) show that COP preserves utility across sequential requests without weakening forgetting, preventing the collapse of standard objectives and forgetting more effectively than continual-specific baselines.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：连续LLM遗忘中效用下降，因后续更新干扰先前删除。  
+主要方法：提出连续正交投影（COP），将每次更新限制在先前遗忘集激活子空间的正交补上。  
+关键贡献：保证一阶无干扰，仅需存储低秩基，无需过去梯度或遗忘集，在TOFU和RWKU上保持效用不降低。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="http://arxiv.org/abs/2610.40483v1" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2610.40483v1" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="mt-5 py-3 bg-light text-center">
+        <p class="text-muted mb-0">
+            Powered by <a href="https://github.com/tyutcxj/Daily-Paper-Digest">Daily arXiv</a>
+            | Data from <a href="https://arxiv.org">arXiv</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showModal(modalId) {
+            var modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,582 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2610.40589v1",
+    "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+    "authors": [
+      "El Mustapha Mansouri",
+      "Eikichi Kimura",
+      "Masato Koga",
+      "Keigo Arai"
+    ],
+    "abstract": "An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems take on several research roles, but may draw conclusions that the evidence does not support. Here, we present an autonomous research laboratory in which agents based on large language models assess one another's work and can stop or redirect investigations. They can generate and reject research questions, require separate theoretical checks and conduct experiments designed to challenge their claims. We demonstrate these capabilities by investigating ensembles of quantum spins in diamond. The agents derived the minimum number of calibration settings needed to predict responses to a defined family of microwave pulse sequences. They checked the result computationally and designed experiments to distinguish competing predictions. An initial experiment agreed with the theoretical predictions, but repeated reference measurements showed that the signal was drifting during data collection. The agents therefore treated the result as inconclusive and revised the measurement protocol without relaxing the acceptance criteria. The revised experiment met those criteria and supported the theoretical predictions. This study demonstrates that collaborating AI agents can select research questions, derive theoretical results and test their predictions experimentally.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-10-29T17:47:50Z",
+    "updated": "2026-10-29T17:47:50Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40589v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40589v1"
+    ],
+    "relevance_score": 0.5116047951721029,
+    "max_similarity": 0.3195235530037996
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40655v1",
+    "title": "Elucidating the Design Space of LM Data Attribution",
+    "authors": [
+      "Steven Yu",
+      "Sheng-Yu Wang",
+      "Kimia Hamidieh",
+      "Antonio Torralba",
+      "David Bau"
+    ],
+    "abstract": "Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multiple dataset properties simultaneously, making it impossible to isolate exactly why an attribution algorithm fails. To diagnose these failures, we explore the design space of LLM data attribution, with a primary focus on evaluation. We introduce the Controlled Attribution Benchmark (CATT) for fact tracing, in which we fine-tune LLMs on entirely fictitious knowledge, providing unambiguous ground truth for attribution. This synthetic setup allows us to systematically alter one dataset configuration at a time, such as document redundancy and lexical distractors. With this configurable evaluation, we demonstrate that redundancy and distractors consistently degrade attribution performance. Rather than proposing a new estimator, we examine two design choices that are underexplored: the loss used to compute gradients and how per-token attribution scores are aggregated into a document score. We find that the true causal evidence within a training document is highly localized, but standard methods dilute this evidence into noise by averaging attribution scores across the entire document. We find that replacing standard cross-entropy loss gradients with the negative log-odds gradients surfaces the critical tokens from other uninformative ones. We can then aggregate only the top token scores to improve ground truth recall by 35 to 72 percentage points across multiple baselines on our diagnostic benchmark. The negative log-odds correction also generalizes to FTRACE-TREX, improving counterfactual retraining performance for every method we test, by up to 4.9x.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:59:53Z",
+    "updated": "2026-10-29T17:59:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40655v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40655v1"
+    ],
+    "relevance_score": 0.49970693492989354,
+    "max_similarity": 0.24014433735269491
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40613v1",
+    "title": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
+    "authors": [
+      "Tom Sander",
+      "Pierre Fernandez",
+      "Itai Gat",
+      "Haiming Bao",
+      "Jiaxin Shi",
+      "Jason Park",
+      "Valeriu Lacatusu",
+      "Sylvestre-Alvise Rebuffi",
+      "Hongyan Chang",
+      "Hady Elsahar",
+      "Tomáš Souček",
+      "Tuan Tran",
+      "Surya Parimi",
+      "Alexandre Mourachko"
+    ],
+    "abstract": "We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys, and the acceptance rate is unchanged. It also preserves output diversity and adds no measurable inference latency. Its predecessor, TextSeal, restores diversity in the Gumbel-max scheme by routing each token to one of two keys via a coin flip. This is suboptimal because the detector averages the scores from both keys without knowing which key was used. TextSeal2 instead merges two or more keys into a single virtual key and couples it to fresh noise through AutoMark's Gaussian copula. Any number of keys, including publicly shared keys, can be merged this way without diluting detection. Under speculative decoding, TextSeal2 verifies keyed drafts with one more exponential race, run on the leftovers of the draft races. By memorylessness, this race reproduces block verification, so the output follows the target model exactly. We evaluate TextSeal2 on three LLMs. At equal output token diversity, TextSeal2 detects 8 to 22 percentage points more 100-token answers than TextSeal at a false-positive rate of $10^{-3}$, and is comparable to textGrain while requiring no post-logits optimization. Under speculative decoding, it detects 18 and 22 percentage points more 200-token answers than TextSeal and textGrain, respectively, at the same acceptance rate.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-10-29T17:54:12Z",
+    "updated": "2026-10-29T17:54:12Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40613v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40613v1"
+    ],
+    "relevance_score": 0.44105492599584084,
+    "max_similarity": 0.1702514463117037
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40613v1",
+    "title": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
+    "authors": [
+      "Tom Sander",
+      "Pierre Fernandez",
+      "Itai Gat",
+      "Haiming Bao",
+      "Jiaxin Shi",
+      "Jason Park",
+      "Valeriu Lacatusu",
+      "Sylvestre-Alvise Rebuffi",
+      "Hongyan Chang",
+      "Hady Elsahar",
+      "Tomáš Souček",
+      "Tuan Tran",
+      "Surya Parimi",
+      "Alexandre Mourachko"
+    ],
+    "abstract": "We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys, and the acceptance rate is unchanged. It also preserves output diversity and adds no measurable inference latency. Its predecessor, TextSeal, restores diversity in the Gumbel-max scheme by routing each token to one of two keys via a coin flip. This is suboptimal because the detector averages the scores from both keys without knowing which key was used. TextSeal2 instead merges two or more keys into a single virtual key and couples it to fresh noise through AutoMark's Gaussian copula. Any number of keys, including publicly shared keys, can be merged this way without diluting detection. Under speculative decoding, TextSeal2 verifies keyed drafts with one more exponential race, run on the leftovers of the draft races. By memorylessness, this race reproduces block verification, so the output follows the target model exactly. We evaluate TextSeal2 on three LLMs. At equal output token diversity, TextSeal2 detects 8 to 22 percentage points more 100-token answers than TextSeal at a false-positive rate of $10^{-3}$, and is comparable to textGrain while requiring no post-logits optimization. Under speculative decoding, it detects 18 and 22 percentage points more 200-token answers than TextSeal and textGrain, respectively, at the same acceptance rate.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:54:12Z",
+    "updated": "2026-10-29T17:54:12Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40613v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40613v1"
+    ],
+    "relevance_score": 0.44105492599584084,
+    "max_similarity": 0.1702514463117037
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40532v1",
+    "title": "BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing",
+    "authors": [
+      "Xiangyu Xu",
+      "Bangshuai Peng",
+      "Ziyi Liu",
+      "Mengjie Zhao",
+      "Chenhao Lu",
+      "Zhengyang Fan",
+      "Huazhe Xu",
+      "Kaizhe Hu"
+    ],
+    "abstract": "How effectively can vision-language-action (VLA) models learn diverse language-conditioned behaviors as training data scales? Investigating this question requires large and varied robot datasets, whose collection on physical robots remains costly. We introduce BURGER, a language-conditioned robotic drawing benchmark with a scalable, prompt-driven pipeline for generating continuous drawing trajectories, both in simulation and the real world. In BURGER, an agent starts from the same blank canvas and controls a robot arm to draw the object or spatial composition specified by language, while each instruction allows an open-ended variety of valid drawings and stroke orders. Using 28,200 simulated demonstrations spanning 282 drawing tasks, we evaluate five representative VLA models across data scales, language grounding, and multimodal behavior. BURGER supports fine-grained analysis of language grounding, spatial composition, and action generation, revealing distinct failure patterns across VLA models. Our experiments suggest that some VLA models can benefit from greater task diversity and demonstration scale, capture multimodal drawing behaviors, and generalize to unseen compositions of familiar objects. Finally, we deploy a trained policy on a Franka Panda arm, demonstrating the ability to draw reactively under human intervention. Project homepage and code can be found at https://siyingzhao.github.io/BURGER/.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-10-29T17:34:04Z",
+    "updated": "2026-10-29T17:34:04Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40532v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40532v1"
+    ],
+    "relevance_score": 0.4288562398066659,
+    "max_similarity": 0.14845929493380627
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40578v1",
+    "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+    "authors": [
+      "Qiushi Sun",
+      "Da Yu",
+      "Alexander Knop",
+      "Amer Sinha",
+      "Lingpeng Kong",
+      "Ben Kao",
+      "Ravi Kumar",
+      "Pritish Kamath"
+    ],
+    "abstract": "Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-10-29T17:45:26Z",
+    "updated": "2026-10-29T17:45:26Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40578v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40578v1"
+    ],
+    "relevance_score": 0.4203584905379759,
+    "max_similarity": 0.1398196810914958
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40578v1",
+    "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+    "authors": [
+      "Qiushi Sun",
+      "Da Yu",
+      "Alexander Knop",
+      "Amer Sinha",
+      "Lingpeng Kong",
+      "Ben Kao",
+      "Ravi Kumar",
+      "Pritish Kamath"
+    ],
+    "abstract": "Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-10-29T17:45:26Z",
+    "updated": "2026-10-29T17:45:26Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40578v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40578v1"
+    ],
+    "relevance_score": 0.4203584905379759,
+    "max_similarity": 0.1398196810914958
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40578v1",
+    "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+    "authors": [
+      "Qiushi Sun",
+      "Da Yu",
+      "Alexander Knop",
+      "Amer Sinha",
+      "Lingpeng Kong",
+      "Ben Kao",
+      "Ravi Kumar",
+      "Pritish Kamath"
+    ],
+    "abstract": "Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:45:26Z",
+    "updated": "2026-10-29T17:45:26Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40578v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40578v1"
+    ],
+    "relevance_score": 0.4203584905379759,
+    "max_similarity": 0.1398196810914958
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40541v1",
+    "title": "On the Fundamental Limits of Prefill-Based Decoding Length Prediction",
+    "authors": [
+      "Haowen Shi",
+      "Xuzhe Yan",
+      "Fahao Chen",
+      "Peng Li"
+    ],
+    "abstract": "Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling. We show that current benchmarks conflate predictor quality with task hardness: when the target model, dataset, or sampling configuration changes, reported accuracy collapses even though the predictor is unchanged. We trace this instability to an overlooked error source---the inherent stochasticity of autoregressive decoding---and derive bounds that every prefill-side method must obey. Our analysis treats decoding as a stopped stochastic process. The per-step stopping probability of a response is not constant but ramps up over hundreds of steps, so the decode length inherits a central limit theorem from the many local decisions that determine where a response ends; this yields per-prompt normality with an explicit error term, together with an affine variance law $σ=αμ+b$ whose slope is the coefficient of variation of the number of response segments. Empirically, the normal law reproduces the per-prompt MAE and the central mass of the decode-length distribution to within a few percent, and the residual departures from normality (mild right skew, slight excess kurtosis) are the ones predicted by the sampling-noise correction. Under fixed model, data, and sampling conditions, a broad design space of predictors (MLP, EGTP, FiLM, soft-label, and Mixture-of-Experts variants) converges to similar performance close to the bound, confirming that \\emph{system error dominates model error}. We argue for a benchmarking protocol that fixes the model, data, and sampling parameters and that reports relative-error metrics alongside absolute ones. Code and analysis tools are available at https://github.com/ShwStone/DecodingPredict.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-10-29T17:36:01Z",
+    "updated": "2026-10-29T17:36:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40541v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40541v1"
+    ],
+    "relevance_score": 0.40388129895788305,
+    "max_similarity": 0.12170253424500518
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40541v1",
+    "title": "On the Fundamental Limits of Prefill-Based Decoding Length Prediction",
+    "authors": [
+      "Haowen Shi",
+      "Xuzhe Yan",
+      "Fahao Chen",
+      "Peng Li"
+    ],
+    "abstract": "Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling. We show that current benchmarks conflate predictor quality with task hardness: when the target model, dataset, or sampling configuration changes, reported accuracy collapses even though the predictor is unchanged. We trace this instability to an overlooked error source---the inherent stochasticity of autoregressive decoding---and derive bounds that every prefill-side method must obey. Our analysis treats decoding as a stopped stochastic process. The per-step stopping probability of a response is not constant but ramps up over hundreds of steps, so the decode length inherits a central limit theorem from the many local decisions that determine where a response ends; this yields per-prompt normality with an explicit error term, together with an affine variance law $σ=αμ+b$ whose slope is the coefficient of variation of the number of response segments. Empirically, the normal law reproduces the per-prompt MAE and the central mass of the decode-length distribution to within a few percent, and the residual departures from normality (mild right skew, slight excess kurtosis) are the ones predicted by the sampling-noise correction. Under fixed model, data, and sampling conditions, a broad design space of predictors (MLP, EGTP, FiLM, soft-label, and Mixture-of-Experts variants) converges to similar performance close to the bound, confirming that \\emph{system error dominates model error}. We argue for a benchmarking protocol that fixes the model, data, and sampling parameters and that reports relative-error metrics alongside absolute ones. Code and analysis tools are available at https://github.com/ShwStone/DecodingPredict.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:36:01Z",
+    "updated": "2026-10-29T17:36:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40541v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40541v1"
+    ],
+    "relevance_score": 0.40388129895788305,
+    "max_similarity": 0.12170253424500518
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40627v1",
+    "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+    "authors": [
+      "Qiyao Ma",
+      "Xiaodong Liu",
+      "Weiwei Yang",
+      "Mingqian Feng",
+      "Chengquan Guo",
+      "Jialin Song",
+      "Carolyn Buractaon",
+      "Zhe Zhao",
+      "Junshan Zhang",
+      "Sandeep Atluri",
+      "Christopher White",
+      "Jianfeng Gao"
+    ],
+    "abstract": "Safety alignment has enabled large language models to reliably refuse harmful requests directly, yet the same request distributed across a multi-turn conversation still succeeds far too often. This brittleness has a mechanistic root: Alignment is shallow, with safety behavior concentrated in a model's first few output tokens, and existing defenses inherit the weakness, supervising the surface form of the response without ever giving the model an explicit safety decision to learn. We take the opposite view of shallowness: if a short span determines the trajectory of an entire response, that span is the highest-leverage place to intervene, and the defender can occupy it first. We propose Assess $\\to$ Decide $\\to$ Respond, a framework in which the defender assesses the user's intent, commits to an explicit, parseable safety decision, and only then generates a reply conditioned on it, with the commitment trained by reinforcement learning at the payload turn. Because the decision is a token span, the reward can be a rule: a self-verified reward checks the committed label against the conversation's known nature, requiring no judge and no annotation, while the same format also supports an LLM-as-judge reward over a graded decision space with safe redirection. Across two model families and fourteen benchmarks spanning safety, utility, and helpfulness, our defenders achieve the strongest multi-turn safety in a controlled comparison, maintaining their lead in safety while preserving utility at a modest cost to helpfulness. A per-token KL analysis and interventional probes confirm why this works: training concentrates its effect on the brief deliberation that sets a response's trajectory, and the decision committed there is a causal control point. The very shallowness attackers exploit becomes the mechanism of defense.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:56:53Z",
+    "updated": "2026-10-29T17:56:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40627v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40627v1"
+    ],
+    "relevance_score": 0.4024891615569337,
+    "max_similarity": 0.12038278704214582
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40574v1",
+    "title": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
+    "authors": [
+      "Yifu Luo",
+      "Chuang Ma",
+      "Zeyu Chen",
+      "Enkelejda Kasneci",
+      "Qi Chen",
+      "Gjergji Kasneci"
+    ],
+    "abstract": "On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the teacher fixed either throughout training by consistently exposing it to the full reference, or within each response by adaptively varying partial reference exposure only across responses. In this paper, we argue that neither of them is sufficient. Instead, every token needs its own teacher, as the teacher preference can vary token by token within the same response. Through a teacher-intervention pilot study, we validate that the teacher preference differs across tokens, and reveal that a preferred teacher can be identified for each token through majority voting and KL-based selection. Motivated by these findings, we propose Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), the first token-level adaptive OPSD method. Our method constructs a multi-teacher pool consisting of candidate teachers, and enables every token to adaptively select its preferred teacher during training. Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to $+5.9$ over the base model, highlighting the importance of adapting teacher supervision at the token level. The code is available at https://github.com/xingzhejun/MTA-OPSD.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:44:42Z",
+    "updated": "2026-10-29T17:44:42Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40574v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40574v1"
+    ],
+    "relevance_score": 0.3969283959824727,
+    "max_similarity": 0.11534683787916414
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40530v1",
+    "title": "PhysCount: Do MLLMs Count Visual Appearances or Physical Entities?",
+    "authors": [
+      "Lidong Lu",
+      "Jiaxin Lv",
+      "Liangrui Dong",
+      "Xinyi Mao",
+      "Lidong Zou",
+      "Zhenquan Li",
+      "Tong Lu",
+      "Guo Chen"
+    ],
+    "abstract": "Images reveal appearances, but counting often asks about physical objects. A single entity may be visible directly, in several reflections, or through glass, so detecting every visible occurrence does not determine how many entities are present. Existing visual counting benchmarks rarely separate these two operations. We introduce PhysCount, a benchmark for evaluating whether multimodal large language models (MLLMs) can distinguish what appears in an image from what physically exists in the scene. PhysCount contains 546 real-world images and 4,595 human-written questions organized into 651 target-specific groups. For each group, annotators locate the relevant appearances, label how each is observed, and identify appearances of the same entity. Four complementary question families test the enumeration of appearances, the enumeration of physical entities, image-formation-specific counting, and appearance--entity correspondence. We measure both accuracy on each family and the proportion of groups answered entirely correctly. Across 40 MLLMs, counting visible appearances is substantially easier than recovering the identities that connect them. Even the strongest model answers every question correctly in only 13.36\\% of groups. Performance declines when one entity produces many appearances or when its appearances cross observation modes. Higher image resolution improves access to visual evidence but brings limited gains in complete-group accuracy, whereas answering related questions jointly produces a marked improvement. These results expose a gap between recognizing what is visible and correctly recovering the physical entities behind those observations.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-10-29T17:33:34Z",
+    "updated": "2026-10-29T17:33:34Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40530v1",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40530v1"
+    ],
+    "relevance_score": 0.39537456415752265,
+    "max_similarity": 0.11008216919621813
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40563v1",
+    "title": "Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns",
+    "authors": [
+      "Eric Rudolph",
+      "Philipp Steigerwald",
+      "Jens Albrecht"
+    ],
+    "abstract": "This study investigates the capabilities of Large Language Models to simulate counselling clients in educational role-plays in comparison to human role-players. Initially, we recorded role-playing sessions, where novice counsellors interacted with human peers acting as clients, followed by role-plays between humans and clients simulated by Mistrals Mixtral 8x7b using 4-bit quantization. These interactions were analysed with a counselling communication pattern system at sentence level. We investigated two key questions: (1) to what extent LLM-generated responses replicate authentic conversational dynamics and (2) whether counsellors' communication behaviour differs when interacting with human versus LLM-simulated clients. The findings highlight both similarities and differences in the application of counselling patterns across scenarios, showing the potential of LLM-based role-playing exercises to enhance counselling competencies and to identify areas for further refinement in virtual client simulations.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-10-29T17:41:59Z",
+    "updated": "2026-10-29T17:41:59Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40563v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40563v1"
+    ],
+    "relevance_score": 0.3821364249952274,
+    "max_similarity": 0.15992242901902054
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40563v1",
+    "title": "Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns",
+    "authors": [
+      "Eric Rudolph",
+      "Philipp Steigerwald",
+      "Jens Albrecht"
+    ],
+    "abstract": "This study investigates the capabilities of Large Language Models to simulate counselling clients in educational role-plays in comparison to human role-players. Initially, we recorded role-playing sessions, where novice counsellors interacted with human peers acting as clients, followed by role-plays between humans and clients simulated by Mistrals Mixtral 8x7b using 4-bit quantization. These interactions were analysed with a counselling communication pattern system at sentence level. We investigated two key questions: (1) to what extent LLM-generated responses replicate authentic conversational dynamics and (2) whether counsellors' communication behaviour differs when interacting with human versus LLM-simulated clients. The findings highlight both similarities and differences in the application of counselling patterns across scenarios, showing the potential of LLM-based role-playing exercises to enhance counselling competencies and to identify areas for further refinement in virtual client simulations.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:41:59Z",
+    "updated": "2026-10-29T17:41:59Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40563v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40563v1"
+    ],
+    "relevance_score": 0.3821364249952274,
+    "max_similarity": 0.15992242901902054
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40551v1",
+    "title": "Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs",
+    "authors": [
+      "Alan Sorani",
+      "Ashvni Narayanan",
+      "Michael Shalyt",
+      "Tali Monderer",
+      "Rotem Kalisch",
+      "Hila Barkan",
+      "Elyasheev Leibtag",
+      "Shachar Weinbaum",
+      "Carsten Schneider",
+      "John Campbell",
+      "Ido Kaminer"
+    ],
+    "abstract": "As AI's mathematical capabilities rapidly improve, meaningful benchmarks are shifting from university-level problems and math olympiads to research-level mathematics. The Ramanujan Challenge is a benchmark comprised of research-level problems in number theory, including unpublished results and open conjectures. It presented concrete formulas for mathematical constants whose correctness can be checked numerically, while their proofs may require non-obvious mathematics. Here, we analyze the Challenge submissions, measuring the relative success of different AI models, Computer Algebra Systems (CAS), and formal tools. We find correct submissions that are conceptually distinct from the official solutions, and a proof of one of the published open conjectures. Evaluating the submissions exposed a second challenge: judging complex proofs reliably at scale. We introduce an AI-assisted evaluation pipeline for natural language proofs, CAS code, and Lean formalizations that assesses semantic and logical correctness. Compared with the conventional one-shot LLM judgment, our pipeline reduces false-positive verdicts on natural language proofs from 23% to 6% and improves judgment accuracy on supporting code from 46% to 58%. This approach provides a methodology for evaluating research-level mathematics at scale, with potential applications across mathematics and AI for science.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-10-29T17:39:04Z",
+    "updated": "2026-10-29T17:39:04Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40551v1",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40551v1"
+    ],
+    "relevance_score": 0.36662093608593077,
+    "max_similarity": 0.13628151476809702
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40551v1",
+    "title": "Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs",
+    "authors": [
+      "Alan Sorani",
+      "Ashvni Narayanan",
+      "Michael Shalyt",
+      "Tali Monderer",
+      "Rotem Kalisch",
+      "Hila Barkan",
+      "Elyasheev Leibtag",
+      "Shachar Weinbaum",
+      "Carsten Schneider",
+      "John Campbell",
+      "Ido Kaminer"
+    ],
+    "abstract": "As AI's mathematical capabilities rapidly improve, meaningful benchmarks are shifting from university-level problems and math olympiads to research-level mathematics. The Ramanujan Challenge is a benchmark comprised of research-level problems in number theory, including unpublished results and open conjectures. It presented concrete formulas for mathematical constants whose correctness can be checked numerically, while their proofs may require non-obvious mathematics. Here, we analyze the Challenge submissions, measuring the relative success of different AI models, Computer Algebra Systems (CAS), and formal tools. We find correct submissions that are conceptually distinct from the official solutions, and a proof of one of the published open conjectures. Evaluating the submissions exposed a second challenge: judging complex proofs reliably at scale. We introduce an AI-assisted evaluation pipeline for natural language proofs, CAS code, and Lean formalizations that assesses semantic and logical correctness. Compared with the conventional one-shot LLM judgment, our pipeline reduces false-positive verdicts on natural language proofs from 23% to 6% and improves judgment accuracy on supporting code from 46% to 58%. This approach provides a methodology for evaluating research-level mathematics at scale, with potential applications across mathematics and AI for science.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:39:04Z",
+    "updated": "2026-10-29T17:39:04Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40551v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40551v1"
+    ],
+    "relevance_score": 0.36662093608593077,
+    "max_similarity": 0.13628151476809702
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40516v1",
+    "title": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
+    "authors": [
+      "Max Neuwinger",
+      "Hanna Yukhymenko",
+      "Imanol Schlag"
+    ],
+    "abstract": "Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related open training datasets are often limited in size or do not follow region-localized harmful topics to broaden the scope of alignment beyond cultures. We propose a scalable template-based augmentation pipeline to produce massive multilingual refusal and benign corpora, extracting safe templates from harmful prompts, translating them and then filling in the slots with culturally authentic entities, both harmful and benign. As a result, we release MSafeTemp, a validated corpus spanning 60 languages useful for multilingual safety alignment and evaluation. Using the dataset, we show that English-only evaluation misjudges multilingual safety: for several models, attacks that fail in English succeed once translated, while culturally localized variants expose further failures that translation alone misses. We also confirm that augmenting safety training data through templates allows for higher diversity and quality of alignment, resulting in improved safety performance beyond English. MSafeTemp and the respective pipeline are aimed at facilitating research and development of safer and more responsible models for less-represented cultures.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-10-29T17:26:02Z",
+    "updated": "2026-10-29T17:26:02Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40516v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40516v1"
+    ],
+    "relevance_score": 0.33728361476291524,
+    "max_similarity": 0.10008437115814095
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40518v1",
+    "title": "IndicIPR-QA: A Benchmark for Extractive Question Answering on Indian IPR Laws",
+    "authors": [
+      "M. Mohaiminul Islam",
+      "Muhammad Abulaish"
+    ],
+    "abstract": "Legal Question Answering (QA) over statutory texts is a challenging task in Natural Language Processing (NLP), especially in low-resource settings with complex legal systems. It requires answers that are precise and grounded in the law. However, to the best of current knowledge, no existing extractive QA benchmark provides exact answer spans from statutory texts across all seven Indian Intellectual Property Rights (IPR) Acts. This paper presents IndicIPR-QA1, an extractive QA benchmark for Indian IPR laws. The proposed dataset contains 4,462 QA pairs from 1,116 statutory contexts across seven Acts. Questions and answers are generated using GPT-4o and validated through nine automatic quality checks, single and multi-model LLM evaluations, and a 200-pair human audit. Section-level partitioning prevents source-context overlap across the training, validation, and test sets. Further analysis examines answer span length, lexical overlap, and multi-clause structure across the corpus and individual Acts. BM25 achieves a token-level F1 score of 20.21, while fine-tuned InLegalBERT reaches 85.02 under a unified sliding-window inference protocol. The large performance gap between BM25 (20.21 F1) and InLegalBERT (85.02 F1) shows that simple word matching is not enough to answer these legal questions. Performance also varies across the seven Acts, indicating substantial differences in answer-extraction performance.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-10-29T17:26:39Z",
+    "updated": "2026-10-29T17:26:39Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40518v1",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40518v1"
+    ],
+    "relevance_score": 0.3238253509101698,
+    "max_similarity": 0.14430928672559903
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.40483v1",
+    "title": "Preserving Utility in Continual LLM Unlearning via Orthogonal Projections",
+    "authors": [
+      "Juan Belieni",
+      "Ana Carolina Erthal",
+      "Eliezer de Souza da Silva",
+      "Diego Mesquita"
+    ],
+    "abstract": "Unlearning concerns the task of removing the influence of a sensitive portion of the training data, such as protected, copyrighted or private text, from a model without retraining it from scratch. While unlearning requests happen continuously during a model's lifetime, the vast majority of LLM unlearning methods are ill-suited for iterated removal, yielding steep decay in forgetting and utility upon sequential unlearning. This decay stems from interference between successive updates, as each new deletion can undo earlier ones or push the model further along directions already degraded by them. To address this, we introduce Continual Orthogonal Projection (COP), a gradient-projection scheme that restricts each update to the orthogonal complement of activation subspaces cached from prior forget sets. This approach provably guarantees first-order non-interference with earlier deletions. COP stores only a low-rank basis per layer, requiring neither past gradients nor previous forget sets, and plugs into unlearning methods that update the model through gradient steps on a differentiable loss without modifying its objective. Experiments on standard LLM unlearning benchmarks (TOFU and RWKU) show that COP preserves utility across sequential requests without weakening forgetting, preventing the collapse of standard objectives and forgetting more effectively than continual-specific baselines.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-10-29T17:13:53Z",
+    "updated": "2026-10-29T17:13:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2610.40483v1",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      "http://arxiv.org/abs/2610.40483v1"
+    ],
+    "relevance_score": 0.31396755944319643,
+    "max_similarity": 0.1366411584451405
+  }
+]
