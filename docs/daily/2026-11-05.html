@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily arXiv - AI Research Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .card-title a:hover { color: #0d6efd !important; }
+        .date-selector {
+            min-width: 200px;
+            background-color: rgba(255,255,255,0.9) !important;
+            color: #333 !important;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 500;
+        }
+        .date-selector:focus {
+            background-color: white !important;
+            box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.5);
+        }
+        .date-selector option {
+            color: #333;
+            background-color: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-journal-richtext"></i> Daily arXiv
+            </a>
+            <div class="d-flex align-items-center">
+                
+        <select class="form-select form-select-sm date-selector" onchange="if(this.value) window.location.href=this.value">
+            <option value="2026-11-05.html" selected>2026-11-05 (20篇)</option><option value="2026-11-04.html" >2026-11-04 (20篇)</option><option value="2026-11-03.html" >2026-11-03 (20篇)</option><option value="2026-11-02.html" >2026-11-02 (20篇)</option><option value="2026-11-01.html" >2026-11-01 (20篇)</option><option value="2026-10-31.html" >2026-10-31 (8篇)</option><option value="2026-10-30.html" >2026-10-30 (20篇)</option><option value="2026-10-29.html" >2026-10-29 (7篇)</option><option value="2026-10-28.html" >2026-10-28 (20篇)</option><option value="2026-10-27.html" >2026-10-27 (20篇)</option><option value="2026-10-26.html" >2026-10-26 (20篇)</option><option value="2026-10-25.html" >2026-10-25 (20篇)</option><option value="2026-10-24.html" >2026-10-24 (15篇)</option><option value="2026-10-23.html" >2026-10-23 (20篇)</option><option value="2026-10-22.html" >2026-10-22 (20篇)</option><option value="2026-10-21.html" >2026-10-21 (20篇)</option><option value="2026-10-20.html" >2026-10-20 (20篇)</option><option value="2026-10-19.html" >2026-10-19 (20篇)</option><option value="2026-10-18.html" >2026-10-18 (20篇)</option><option value="2026-10-17.html" >2026-10-17 (5篇)</option><option value="2026-10-16.html" >2026-10-16 (20篇)</option><option value="2026-10-15.html" >2026-10-15 (20篇)</option><option value="2026-10-14.html" >2026-10-14 (20篇)</option><option value="2026-10-13.html" >2026-10-13 (20篇)</option><option value="2026-10-12.html" >2026-10-12 (20篇)</option><option value="2026-10-11.html" >2026-10-11 (20篇)</option><option value="2026-10-10.html" >2026-10-10 (10篇)</option><option value="2026-10-09.html" >2026-10-09 (19篇)</option><option value="2026-10-08.html" >2026-10-08 (20篇)</option><option value="2026-10-07.html" >2026-10-07 (20篇)</option><option value="2026-10-06.html" >2026-10-06 (20篇)</option><option value="2026-10-05.html" >2026-10-05 (20篇)</option><option value="2026-10-04.html" >2026-10-04 (20篇)</option><option value="2026-10-03.html" >2026-10-03 (20篇)</option><option value="2026-10-02.html" >2026-10-02 (20篇)</option><option value="2026-10-01.html" >2026-10-01 (20篇)</option><option value="2026-09-30.html" >2026-09-30 (20篇)</option><option value="2026-09-29.html" >2026-09-29 (20篇)</option><option value="2026-09-28.html" >2026-09-28 (20篇)</option><option value="2026-09-27.html" >2026-09-27 (20篇)</option><option value="2026-09-26.html" >2026-09-26 (12篇)</option><option value="2026-09-25.html" >2026-09-25 (20篇)</option><option value="2026-09-24.html" >2026-09-24 (20篇)</option><option value="2026-09-23.html" >2026-09-23 (20篇)</option><option value="2026-09-22.html" >2026-09-22 (20篇)</option><option value="2026-09-21.html" >2026-09-21 (20篇)</option><option value="2026-09-20.html" >2026-09-20 (20篇)</option><option value="2026-09-19.html" >2026-09-19 (20篇)</option><option value="2026-09-18.html" >2026-09-18 (20篇)</option><option value="2026-09-17.html" >2026-09-17 (20篇)</option><option value="2026-09-16.html" >2026-09-16 (20篇)</option><option value="2026-09-15.html" >2026-09-15 (20篇)</option><option value="2026-09-14.html" >2026-09-14 (20篇)</option><option value="2026-09-13.html" >2026-09-13 (19篇)</option><option value="2026-09-12.html" >2026-09-12 (8篇)</option><option value="2026-09-11.html" >2026-09-11 (20篇)</option><option value="2026-09-10.html" >2026-09-10 (20篇)</option><option value="2026-09-09.html" >2026-09-09 (20篇)</option><option value="2026-09-08.html" >2026-09-08 (19篇)</option><option value="2026-09-07.html" >2026-09-07 (20篇)</option><option value="2026-09-06.html" >2026-09-06 (20篇)</option><option value="2026-09-05.html" >2026-09-05 (14篇)</option><option value="2026-09-04.html" >2026-09-04 (20篇)</option><option value="2026-09-03.html" >2026-09-03 (20篇)</option><option value="2026-09-02.html" >2026-09-02 (20篇)</option><option value="2026-09-01.html" >2026-09-01 (20篇)</option><option value="2026-08-31.html" >2026-08-31 (20篇)</option><option value="2026-08-30.html" >2026-08-30 (20篇)</option><option value="2026-08-29.html" >2026-08-29 (8篇)</option><option value="2026-08-28.html" >2026-08-28 (20篇)</option><option value="2026-08-27.html" >2026-08-27 (20篇)</option><option value="2026-08-26.html" >2026-08-26 (20篇)</option><option value="2026-08-25.html" >2026-08-25 (20篇)</option><option value="2026-08-24.html" >2026-08-24 (20篇)</option><option value="2026-08-23.html" >2026-08-23 (20篇)</option><option value="2026-08-22.html" >2026-08-22 (20篇)</option><option value="2026-08-21.html" >2026-08-21 (20篇)</option><option value="2026-08-20.html" >2026-08-20 (20篇)</option><option value="2026-08-19.html" >2026-08-19 (20篇)</option><option value="2026-08-18.html" >2026-08-18 (20篇)</option><option value="2026-08-17.html" >2026-08-17 (20篇)</option><option value="2026-08-16.html" >2026-08-16 (12篇)</option><option value="2026-08-15.html" >2026-08-15 (20篇)</option><option value="2026-08-14.html" >2026-08-14 (20篇)</option><option value="2026-08-13.html" >2026-08-13 (20篇)</option><option value="2026-08-12.html" >2026-08-12 (20篇)</option><option value="2026-08-11.html" >2026-08-11 (20篇)</option><option value="2026-08-10.html" >2026-08-10 (19篇)</option><option value="2026-08-09.html" >2026-08-09 (20篇)</option><option value="2026-08-08.html" >2026-08-08 (20篇)</option><option value="2026-08-07.html" >2026-08-07 (20篇)</option><option value="2026-08-06.html" >2026-08-06 (20篇)</option><option value="2026-08-05.html" >2026-08-05 (20篇)</option><option value="2026-08-04.html" >2026-08-04 (20篇)</option><option value="2026-08-03.html" >2026-08-03 (20篇)</option><option value="2026-08-02.html" >2026-08-02 (20篇)</option><option value="2026-08-01.html" >2026-08-01 (20篇)</option><option value="2026-07-31.html" >2026-07-31 (20篇)</option><option value="2026-07-30.html" >2026-07-30 (20篇)</option><option value="2026-07-29.html" >2026-07-29 (20篇)</option><option value="2026-07-28.html" >2026-07-28 (20篇)</option><option value="2026-07-27.html" >2026-07-27 (20篇)</option><option value="2026-07-26.html" >2026-07-26 (20篇)</option><option value="2026-07-25.html" >2026-07-25 (14篇)</option><option value="2026-07-24.html" >2026-07-24 (20篇)</option><option value="2026-07-23.html" >2026-07-23 (20篇)</option><option value="2026-07-22.html" >2026-07-22 (20篇)</option><option value="2026-07-21.html" >2026-07-21 (20篇)</option><option value="2026-07-20.html" >2026-07-20 (20篇)</option><option value="2026-07-19.html" >2026-07-19 (20篇)</option><option value="2026-07-18.html" >2026-07-18 (20篇)</option><option value="2026-07-17.html" >2026-07-17 (20篇)</option><option value="2026-07-16.html" >2026-07-16 (20篇)</option><option value="2026-07-15.html" >2026-07-15 (20篇)</option><option value="2026-07-14.html" >2026-07-14 (20篇)</option><option value="2026-07-13.html" >2026-07-13 (20篇)</option><option value="2026-07-12.html" >2026-07-12 (20篇)</option><option value="2026-07-11.html" >2026-07-11 (14篇)</option><option value="2026-07-10.html" >2026-07-10 (20篇)</option><option value="2026-07-09.html" >2026-07-09 (20篇)</option><option value="2026-07-08.html" >2026-07-08 (19篇)</option><option value="2026-07-07.html" >2026-07-07 (20篇)</option><option value="2026-07-06.html" >2026-07-06 (20篇)</option><option value="2026-07-05.html" >2026-07-05 (20篇)</option><option value="2026-07-04.html" >2026-07-04 (20篇)</option><option value="2026-07-03.html" >2026-07-03 (20篇)</option><option value="2026-07-02.html" >2026-07-02 (20篇)</option><option value="2026-07-01.html" >2026-07-01 (20篇)</option><option value="2026-06-30.html" >2026-06-30 (20篇)</option><option value="2026-06-29.html" >2026-06-29 (20篇)</option><option value="2026-06-28.html" >2026-06-28 (20篇)</option><option value="2026-06-27.html" >2026-06-27 (20篇)</option><option value="2026-06-26.html" >2026-06-26 (20篇)</option><option value="2026-06-25.html" >2026-06-25 (20篇)</option><option value="2026-06-24.html" >2026-06-24 (20篇)</option><option value="2026-06-23.html" >2026-06-23 (20篇)</option><option value="2026-06-22.html" >2026-06-22 (18篇)</option><option value="2026-06-21.html" >2026-06-21 (18篇)</option><option value="2026-06-20.html" >2026-06-20 (20篇)</option><option value="2026-06-19.html" >2026-06-19 (19篇)</option><option value="2026-06-18.html" >2026-06-18 (20篇)</option><option value="2026-06-17.html" >2026-06-17 (20篇)</option><option value="2026-06-16.html" >2026-06-16 (19篇)</option><option value="2026-06-15.html" >2026-06-15 (20篇)</option><option value="2026-06-14.html" >2026-06-14 (20篇)</option><option value="2026-06-13.html" >2026-06-13 (20篇)</option><option value="2026-06-12.html" >2026-06-12 (20篇)</option><option value="2026-06-11.html" >2026-06-11 (20篇)</option><option value="2026-06-10.html" >2026-06-10 (20篇)</option><option value="2026-06-09.html" >2026-06-09 (19篇)</option><option value="2026-06-08.html" >2026-06-08 (20篇)</option><option value="2026-06-07.html" >2026-06-07 (20篇)</option><option value="2026-06-06.html" >2026-06-06 (11篇)</option><option value="2026-06-05.html" >2026-06-05 (20篇)</option><option value="2026-06-04.html" >2026-06-04 (20篇)</option><option value="2026-06-03.html" >2026-06-03 (20篇)</option><option value="2026-06-02.html" >2026-06-02 (20篇)</option><option value="2026-06-01.html" >2026-06-01 (20篇)</option><option value="2026-05-31.html" >2026-05-31 (20篇)</option><option value="2026-05-30.html" >2026-05-30 (20篇)</option><option value="2026-05-29.html" >2026-05-29 (20篇)</option><option value="2026-05-28.html" >2026-05-28 (20篇)</option><option value="2026-05-27.html" >2026-05-27 (20篇)</option><option value="2026-05-25.html" >2026-05-25 (17篇)</option><option value="2026-05-22.html" >2026-05-22 (15篇)</option>
+        </select>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h4 class="mb-3">
+                    <i class="bi bi-file-text"></i> 今日论文
+                    <span class="badge bg-secondary">20 篇</span>
+                </h4>
+                <div class="row">
+                    
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-0'); return false;" class="text-decoration-none text-dark">
+                                When Does Sharing Work? Scaling a Shared SigLIP2 Across Image, Video, Audio, and Audio-Visual Representations
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.55">
+                            <span class="text-success">★★★★★</span> <small class="text-muted">(0.55)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Xiaofei Sun, Peng Wang, Huayao Liu, Xiaoxiao Xu, Jun Song, Deqing Li, Lin Qu<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05406v1 Announce Type: new 
+Abstract: Contrastive pretraining has advanced image-text understanding, yet image, video, and audio encoders are still trained independently, with cross-modal a...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有图像、视频、音频编码器独立训练，跨模态对齐依赖后处理绑定。  
+主要方法：提出Omni-Encoder，用共享参数的SigLIP-2 Vision Transformer端到端联合优化所有模态，包括模态原生输入、多模态旋转位置编码和交替模态训练。  
+关键贡献：在16个基准上取得竞争性结果。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-0'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05406" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-1'); return false;" class="text-decoration-none text-dark">
+                                Prospective Memory for Proactive LLM Agents
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.51">
+                            <span class="text-success">★★★★★</span> <small class="text-muted">(0.51)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Yuanchen Bei, Zhining Liu, Tianxin Wei, Weizhi Zhang, Zhichen Zeng, Philip S. Yu, Hendrik Hamann, Jingrui He, Hanghang Tong<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05731v1 Announce Type: new 
+Abstract: Most memory systems for LLM agents are retrospective, preserving and retrieving past information to inform current decisions. Proactive agents, however...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有LLM代理缺乏前瞻性记忆，无法自主记住并适时执行未来意图。
+主要方法：提出Pro-Memory框架，分离意图维护与执行时机决策，结合经验记忆更新。
+关键贡献：在延迟意图和开放任务上显著提升代理的主动性和时机把握能力。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-1'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05731" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-2'); return false;" class="text-decoration-none text-dark">
+                                AGORA: Reliability-Aware Aggregation of LLM Judges via Item-Response Theory
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.50">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.50)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Junhyung Ahn<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05556v1 Announce Type: new 
+Abstract: LLM-as-a-judge is a common substitute for costly human evaluation, and aggregating several judges is the standard remedy for any single judge's bias. J...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LLM法官聚合时可靠性不均，小数据集下均值法和混淆表模型效果差。  
+主要方法：提出AGORA，基于项目反应理论，联合学习法官敏感度与阈值，无需人工标签。  
+关键贡献：小数据集上优势显著，处理不均匀法官池，提供无标签分散统计量指示信任加权有效性。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-2'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05556" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-3'); return false;" class="text-decoration-none text-dark">
+                                Challenge-Aware Knowledge Recruitment with Meta-Agent Supervision for Medical Multi-Agent Reasoning
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.48">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.48)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Riccardo Riccio, Haitz S\'aez de Oc\'ariz Borde, Pietro Li\`o<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05393v1 Announce Type: new 
+Abstract: Large language models perform strongly on standard medical QA but degrade on harder reasoning tasks, where multi-agent debate often fails to beat stron...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有医疗多智能体推理系统仅从问题本身选择专家和知识，忽略推理过程中的知识缺口。
+主要方法：提出挑战感知自适应招募，由外部CHALLENGER监控推理轨迹，识别缺口并触发针对性知识检索或专家招募。
+关键贡献：在MEDAGENTSBENCH hard子集上，挑战感知中间检索优于前期检索，多专家骨干提升8/9数据集准确率，Challenger触发专家招募提升准确率8个百分点。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-3'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05393" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-4'); return false;" class="text-decoration-none text-dark">
+                                How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.48">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.48)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> S M Rayeed, Qian Ma, Charles V. Stewart, Yao Ma<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05559v1 Announce Type: new 
+Abstract: In biodiversity monitoring, a single image raises several questions: which taxon, how many, which trait, and whether the individual has been seen befor...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：视觉语言模型在生物视觉理解中的精细能力如何？
+主要方法：构建Bio-VQA基准，含1.86M问题、217K图像，覆盖分类、属性、空间、个体推理，采用分级评分。
+关键贡献：最大生物VQA基准，揭示通用模型在生物任务上准确率显著下降。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-4'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05559" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-5'); return false;" class="text-decoration-none text-dark">
+                                From Tokens to Trajectories: Parameter-Efficient Continuous Adaptation of Unified Multimodal Models
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.47">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.47)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Gayatri Deshmukh, Onkar Susladkar, Adheesh Juvekar, Halil Kilicoglu, Ismini Lourentzou<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05451v1 Announce Type: new 
+Abstract: While discrete tokenization in Unified Multimodal Models (UMMs) establishes strong semantic reasoning, it introduces a strict quantization bottleneck t...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：离散token化导致量化瓶颈，降低细粒度视觉质量。  
+主要方法：FlowShift将预训练离散UMM转为连续整流流生成器，用LoRA和DOVD对齐连续轨迹。  
+关键贡献：参数高效后训练框架，大幅提升感知质量，保留99.5%多模态理解能力。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-5'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05451" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-6'); return false;" class="text-decoration-none text-dark">
+                                Cognitive Bias Signatures in Search-Equipped LLM Agents: A Stage-Resolved Analysis
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.47">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.47)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Yanru Xiao, Yingwei Yu<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05720v1 Announce Type: new 
+Abstract: Search can help LLM agents correct mistakes, but their starting conditions may shape which evidence they find and use. Drawing on cognitive-bias paradi...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：搜索增强LLM代理中认知偏差对证据发现和使用的影响  
+主要方法：开发受控搜索工具，通过匹配对照实验区分顺序效应、文档组成和失败工作影响，在10个模型和1000个合成搜索世界中测试  
+关键贡献：发现最终答案对初始证据顺序敏感，死胡同历史减少策略切换，错误假设下阶段测量区分检索/打开与持续错误，打开反证更多可能降低准确率
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-6'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05720" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-7'); return false;" class="text-decoration-none text-dark">
+                                Quantifying out-of-distribution data severity with Wasserstein distances: benchmarking large language models for alloy property prediction
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.46">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.46)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> YuJie Liu, Dezhen Xue, Jun Sun, Xiangdong Ding, Zhibin Gao, Turab Lookman<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.03767v1 Announce Type: new 
+Abstract: As general-purpose Large Language Models (LLMs), such as Gemini and DeepSeek, exhibit increasingly advanced reasoning capabilities, a critical question...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：通用LLM与领域特定材料模型在合金性能预测中的能力比较  
+主要方法：利用数值先验引导LLM（DeepSeek/Gemini）作为推理校正器，并基于Wasserstein距离评估数据分布外严重性  
+关键贡献：发现通用LLM优于领域模型；混合方法提升精度；数据质量主导数量，5%高相似数据即可媲美全量训练集
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-7'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.03767" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-8'); return false;" class="text-decoration-none text-dark">
+                                Stress-Testing the Robustness of LLM-Based Causal Inference
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.45">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.45)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Ankitkumar Patel, Jigarkumar Patel, Amit Kumar, Supreetha Sreeram, Venkatesh Kulkarni<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.03656v1 Announce Type: new 
+Abstract: Why do some of the world's most powerful Artificial Intelligence (AI) systems still struggle to reason about cause and effect? Causal discovery, the ab...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LLM在因果推理中的失败原因和程度
+主要方法：提出六维压力测试框架（模型规模、因果图复杂度等）
+关键贡献：发现LLM存在“乐观偏差”，高估因果联系，传统评估指标具有欺骗性
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-8'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.03656" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-9'); return false;" class="text-decoration-none text-dark">
+                                Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.43">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Fuad Ali<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05390v1 Announce Type: new 
+Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace deci...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：多智能体语言模型系统中，审查者何时有权推翻上游代理的决策？
+主要方法：提出证据门控机制，要求审查者提供约束违规的机械有效记录和合规修复才能替换决策。
+关键贡献：证据门控能减少正确提案被破坏，同时保留大部分违规修复；但界面设计改变审查者行为，并非模型无关的安全保障。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-9'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05390" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-10'); return false;" class="text-decoration-none text-dark">
+                                Dr. No: Feature Steering for Abstention in Vision-Language Models
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.43">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Farid Hasanov, Riccardo Renzulli, Bahram Zonooz, Mykola Pechenizkiy, Decebal Constantin Mocanu<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.03862v1 Announce Type: new 
+Abstract: Large foundation models often answer even when the available visual or textual evidence is insufficient to support a reliable conclusion. This failure ...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：大型基础模型在证据不足时仍会回答，缺乏拒答能力，影响可信度。  
+主要方法：提出Dr. No，通过稀疏自编码器特征挖掘与调制，在预填充阶段控制拒答与承诺行为，无需重训练。  
+关键贡献：在多项基准上实现比后验拒绝方法更好的正确回答与适当拒答平衡，尤其在图像-问题不兼容等场景。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-10'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.03862" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-11'); return false;" class="text-decoration-none text-dark">
+                                When to Ask, When to Answer: Strategic Clarification for Ambiguous Reference Resolution in Dialogue
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Ibrahim Khebour, Nikhil Krishnaswamy<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05517v1 Announce Type: new 
+Abstract: For humans, referential disambiguation is a collaborative process involving clarification questions asked when they will meaningfully change the outcom...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LLM在歧义指代中偏向过早回答，缺乏策略性澄清。  
+主要方法：构建SIMMC 2.1测试环境，提出BACE轻量级动作选择器。  
+关键贡献：BACE比GRPO和ArCHer更一致地选择最优澄清次数。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-11'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05517" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-12'); return false;" class="text-decoration-none text-dark">
+                                Can Large Language Models Review the Scientific Literature? A Test Against a 102-Article Benchmark
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.41">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Abdullah Al Kalbani, David M. Schultz, Alexandra K. Anderson-Frey, Zhonghua Zheng, Catherine McGuire<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05459v1 Announce Type: new 
+Abstract: Large language models (LLMs) are increasingly used to support scientific literature reviews, yet evaluations often examine individual tasks rather than...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：评估大语言模型在科学文献综述中的表现。
+主要方法：以102篇西班牙 plume 文献为基准，测试六个AI工具在查找、解释、综合和提出研究四个阶段的能力。
+关键贡献：发现工具能识别相关文章但分类不准确，合成内容基本正确但洞察有限，存在错误和夸大共识。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-12'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05459" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-13'); return false;" class="text-decoration-none text-dark">
+                                Rewrite, Then Veto: Rewriter-Agnostic Edit Gating for LLM-Based Post-OCR Correction
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.41">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CL</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Jorge Ram\'on Fonseca Cacho<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05539v1 Announce Type: new 
+Abstract: LLMs can repair noisy OCR transcripts of historical documents, but they also change text that was already correct. We propose EditVeto, a veto gate pla...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：避免LLM在OCR后校正中误改正确文本。  
+主要方法：提出EditVeto否决门，对LLM重写结果进行字符对齐分块，用0.6B参数门控决定保留或还原每个编辑块。  
+关键贡献：该方法能提升多种重写器（包括未见过的）的校正性能，降低cMER 0.0026-0.0044，提高偏好分数0.15-0.25。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-13'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05539" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-14'); return false;" class="text-decoration-none text-dark">
+                                Uncertainty-Aware Resource Orchestration for Agentic AI Systems
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.41">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Masoud Shokrnezhad, Tarik Taleb<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05392v1 Announce Type: new 
+Abstract: Agentic artificial intelligence (AI) systems powered by large language models (LLMs) execute as autonomous multi-step pipelines that dynamically invoke...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：Agentic AI系统运行时资源需求未知且非平稳，导致编排困境。
+主要方法：形式化为不确定性感知编排问题，提出Conformal Reservation方法进行资源预留与截止时间验证。
+关键贡献：首次针对未知非平稳的Agentic管道提出概率保证的资源编排方案。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-14'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05392" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-15'); return false;" class="text-decoration-none text-dark">
+                                Multi-layer Indexer: Overlapping Selection and Attention in DeepSeek Sparse Attention
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.40">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Serdarcan Dilbaz, Arjun Krishna, Kiran Kamble, Daniel M. Bikel<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.03768v1 Announce Type: new 
+Abstract: Sparse attention cuts the cost of long-context inference by making the attention matrix sparse: each query attends only a subset of the sequence, chose...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：稀疏注意力中索引器扫描耗时，且相邻层选择相似令牌。
+主要方法：MLI让每层复用前一层索引器的选择，消除依赖，实现并行运行。
+关键贡献：无需重新训练或新权重，兼容IndexCache，加速DeepSeek-V3.2和GLM-5推理。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-15'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.03768" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-16'); return false;" class="text-decoration-none text-dark">
+                                Multimodal Fusion Methods for Whole-Slide Images and Clinical Data in Inflammatory Bowel Disease
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.34">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.34)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Ankana Banerjee (University of Stavanger, Norway), Mark van der Giezen (University of Stavanger, Norway), Ole Gunnar Aasprong (Stavanger University Hospital, Norway), Emiel A. M. Janssen (University of Stavanger, Norway), {\O}yvind Steinsb{\o} (Stavanger University Hospital, Norway), Tore Grimstad (Stavanger University Hospital, Norway), Kjersti Engan (University of Stavanger, Norway)<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05579v1 Announce Type: new 
+Abstract: Multimodal AI fusion of histology and clinical data is an active research area in computational pathology, but fusion methods are rarely compared under...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：多模态融合方法在炎症性肠病全切片图像和临床数据中的应用  
+主要方法：提出模块化框架，使用注意力聚合器提取切片嵌入，与临床嵌入输入15种可互换融合方法  
+关键贡献：最佳融合方法在六种场景中四种优于单模态模型，宏F1达0.57-0.75，且结果因结局和输入而异
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-16'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05579" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-17'); return false;" class="text-decoration-none text-dark">
+                                Hybrid Spark: Adaptive Speculative Decoding That Lets the Content Choose the Drafter
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.30">
+                            <span class="text-warning">★★☆☆☆</span> <small class="text-muted">(0.30)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Ekagra Ranjan, Bharat Venkitesh<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05611v1 Announce Type: new 
+Abstract: Speculative decoding (SD) speeds up large language model (LLM) serving, but its gain depends on the workload's \emph{shape}, such as batch size and con...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何结合模型驱动和模型无关的起草器提升推测解码效率。  
+主要方法：提出Hybrid Spark框架，同时运行两种起草器，通过每验证token的价格统一评估并支持自适应验证。  
+关键贡献：在GPU上实现两种起草器协同工作，无需分割资源，吞吐量提升1.10-1.62倍。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-17'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05611" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-18'); return false;" class="text-decoration-none text-dark">
+                                Verified but Vacuous: Three Failure Surfaces of LLM-Driven Verified Code Generation
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.28">
+                            <span class="text-warning">★★☆☆☆</span> <small class="text-muted">(0.28)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Aditya Vempaty, Himaneesh Sompalle, Manan Tayal, Mowafak Allaham, Prasenjit Dey, Ashish Jagmohan, Ravi Kokku<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05590v1 Announce Type: new 
+Abstract: What should ``verified'' mean when evaluating LLM-generated code? Many existing pipelines report a single verification number. We argue this collapses ...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LLM生成代码的“验证”含义模糊，现有方法忽略三个不同属性。  
+主要方法：通过两个实证演示分离验证器接受、语法规范绑定、语义规范保真度三个失败面。  
+关键贡献：揭示并实证了LLM驱动验证代码生成的三个失败面可分离。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-18'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05590" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-19'); return false;" class="text-decoration-none text-dark">
+                                A Feasibility Condition for Confidence-Gated Tiered LLM Inference
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.25">
+                            <span class="text-warning">★★☆☆☆</span> <small class="text-muted">(0.25)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Sumit P. Ahuja<br>
+                        <i class="bi bi-calendar"></i> Thu,
+                    </p>
+                    <p class="card-text small">arXiv:2611.05394v1 Announce Type: new 
+Abstract: Tiered inference distributes large language model computation across a hierarchy of devices, from on-device and edge hardware to the datacenter, and is...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：置信门控分层LLM推理的可行性条件  
+主要方法：将路由决策建模为二元测试，通过架构成本比κ推导可行性条件  
+关键贡献：给出闭式条件，揭示信号质量与成本关系，提出三个设计需求
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-19'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.05394" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <i class="bi bi-tags"></i> 热门关键词
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark me-1 mb-1">model</span> <span class="badge bg-info text-dark me-1 mb-1">llms</span> <span class="badge bg-info text-dark me-1 mb-1">models</span> <span class="badge bg-info text-dark me-1 mb-1">reasoning</span> <span class="badge bg-info text-dark me-1 mb-1">memory</span> <span class="badge bg-info text-dark me-1 mb-1">methods</span> <span class="badge bg-info text-dark me-1 mb-1">questions</span> <span class="badge bg-info text-dark me-1 mb-1">visual</span> <span class="badge bg-info text-dark me-1 mb-1">quality</span> <span class="badge bg-info text-dark me-1 mb-1">reviewer</span> <span class="badge bg-info text-dark me-1 mb-1">judge</span> <span class="badge bg-info text-dark me-1 mb-1">causal</span> <span class="badge bg-info text-dark me-1 mb-1">evidence</span> <span class="badge bg-info text-dark me-1 mb-1">signal</span> <span class="badge bg-info text-dark me-1 mb-1">audio</span> 
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <i class="bi bi-bar-chart"></i> 研究类别
+                    </div>
+                    <div class="card-body">
+                        
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.AI</span>
+                <span class="badge bg-primary">8</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.CV</span>
+                <span class="badge bg-primary">4</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.CL</span>
+                <span class="badge bg-primary">4</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.LG</span>
+                <span class="badge bg-primary">4</span>
+            </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <i class="bi bi-cloud"></i> 词云
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="data/analysis/wordcloud_20261105_074226.png" class="img-fluid" alt="词云">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 详情弹窗 -->
+    
+        <div class="modal fade" id="modal-0" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">When Does Sharing Work? Scaling a Shared SigLIP2 Across Image, Video, Audio, and Audio-Visual Representations</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★★</span> <small class="text-muted">(0.55)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Xiaofei Sun, Peng Wang, Huayao Liu, Xiaoxiao Xu, Jun Song, Deqing Li, Lin Qu</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05406v1 Announce Type: new 
+Abstract: Contrastive pretraining has advanced image-text understanding, yet image, video, and audio encoders are still trained independently, with cross-modal alignment realized mainly through post-hoc binding to a frozen anchor space. We present Omni-Encoder, a general multimodal encoder that processes image, video, audio, and audio-visual inputs within a single SigLIP-2 Vision Transformer with fully shared parameters. Unlike anchor-centric binding or per-modality adapters, all modalities are optimized jointly end-to-end, and the framework is organized from input to training. A modality-native input stage first maps each signal into the shared embedding space, including a 1D-convolutional audio tokenizer that converts mel-spectrograms into tokens aligned with visual patches. A multimodal rotary position embedding parameterized by absolute timestamps then places visual frames and audio segments in a unified spatiotemporal coordinate system. Finally, alternating-modality training interleaves image, video, audio, and temporally aligned audio-visual batches and accumulates their gradients into one update, which we find central to stable joint optimization. Omni-Encoder achieves competitive results on 16 benchmarks across all four modalities with one shared parameter set, and joint training improves each modality over its separately trained counterpart. Code and models will be publicly released.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有图像、视频、音频编码器独立训练，跨模态对齐依赖后处理绑定。  
+主要方法：提出Omni-Encoder，用共享参数的SigLIP-2 Vision Transformer端到端联合优化所有模态，包括模态原生输入、多模态旋转位置编码和交替模态训练。  
+关键贡献：在16个基准上取得竞争性结果。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05406" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05406" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Prospective Memory for Proactive LLM Agents</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★★</span> <small class="text-muted">(0.51)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Yuanchen Bei, Zhining Liu, Tianxin Wei, Weizhi Zhang, Zhichen Zeng, Philip S. Yu, Hendrik Hamann, Jingrui He, Hanghang Tong</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05731v1 Announce Type: new 
+Abstract: Most memory systems for LLM agents are retrospective, preserving and retrieving past information to inform current decisions. Proactive agents, however, also require prospective memory: retaining future-directed intentions and realizing them when appropriate opportunities arise, even without explicit requests. Crucially, remembering the right intention does not guarantee acting at the right time: a related observation may call for waiting, while a later cue may make the same intention actionable. Inspired by cognitive theories of human prospective memory, we introduce Pro-Memory, a memory framework that separates maintaining future intentions from deciding when and how to realize them. Pro-Memory preserves pending objectives linked to their supporting evidence, assesses new observations against their original goals and activation conditions, and coordinates appropriate contributions with the agent's ongoing actions. It further updates intention states based on actions actually issued or evidence of resolution, while an experience memory distills feedback from completed episodes into guidance for future decisions. Experiments on two benchmarks spanning delayed-intention tasks and open-ended proactive assistance demonstrate consistent improvements in proactive task performance over representative memory approaches across multiple LLM backbones, while limiting unnecessary interventions.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有LLM代理缺乏前瞻性记忆，无法自主记住并适时执行未来意图。
+主要方法：提出Pro-Memory框架，分离意图维护与执行时机决策，结合经验记忆更新。
+关键贡献：在延迟意图和开放任务上显著提升代理的主动性和时机把握能力。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05731" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05731" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">AGORA: Reliability-Aware Aggregation of LLM Judges via Item-Response Theory</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.50)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Junhyung Ahn</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05556v1 Announce Type: new 
+Abstract: LLM-as-a-judge is a common substitute for costly human evaluation, and aggregating several judges is the standard remedy for any single judge's bias. Judge pools mix judges of very different reliability, while the human-labeled sets that validate them hold a few hundred items or fewer. In this regime the per-item mean weights weak judges as heavily as strong ones, and confusion-table models such as Dawid-Skene must estimate a per-judge error table from too few items. We propose AGORA (Aggregation Of Reliability-weighted Assessments), an item-response-theory aggregator that places every item on one latent quality scale and describes each judge by a sensitivity parameter and ordered rating thresholds, so judge reliability is learned from all items jointly and without human labels. Across three benchmarks, AGORA matches or exceeds Dawid-Skene on large evaluation sets, and its advantage widens as the set shrinks toward a few hundred items. It remains accurate as pools grow more uneven, a label-free dispersion statistic indicates in advance when trust weighting helps, and its learned trust weights track per-judge human validity.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LLM法官聚合时可靠性不均，小数据集下均值法和混淆表模型效果差。  
+主要方法：提出AGORA，基于项目反应理论，联合学习法官敏感度与阈值，无需人工标签。  
+关键贡献：小数据集上优势显著，处理不均匀法官池，提供无标签分散统计量指示信任加权有效性。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05556" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05556" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-3" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Challenge-Aware Knowledge Recruitment with Meta-Agent Supervision for Medical Multi-Agent Reasoning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.48)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Riccardo Riccio, Haitz S\'aez de Oc\'ariz Borde, Pietro Li\`o</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05393v1 Announce Type: new 
+Abstract: Large language models perform strongly on standard medical QA but degrade on harder reasoning tasks, where multi-agent debate often fails to beat strong single-model prompting. We argue that a key limitation is that existing systems select experts and retrieve knowledge from the question alone, rather than from gaps that emerge during reasoning. We propose challenge-aware adaptive recruitment: an external CHALLENGER inspects the evolving reasoning trace and identifies specific factual or expertise gaps. These signals trigger targeted knowledge retrieval or mid-discussion specialist recruitment. On the MEDAGENTSBENCH hard subset (862 questions across nine biomedical datasets), upfront retrieval provides little benefit, while challenge-aware in-between retrieval performs better; on a multi-specialist backbone it improves accuracy on 8 of 9 datasets and adds 6 percentage points over Challenger Only. Ablations indicate benefits from both retrieval timing and gap-specific query signals, and a live web-search experiment shows that the timing advantage persists across retrieval backends. For specialist recruitment, self-triggered adaptation is unreliable, whereas Challenger-triggered recruitment raises GPT-4.1-mini MedQA accuracy from 46% to 54%, with positive direction on all tested generalization datasets. Naively combining retrieval and specialist recruitment degrades performance, highlighting the need to coordinate adaptive intervention channels. These results show that when and why external resources are recruited is a key design choice in multi-agent medical reasoning.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有医疗多智能体推理系统仅从问题本身选择专家和知识，忽略推理过程中的知识缺口。
+主要方法：提出挑战感知自适应招募，由外部CHALLENGER监控推理轨迹，识别缺口并触发针对性知识检索或专家招募。
+关键贡献：在MEDAGENTSBENCH hard子集上，挑战感知中间检索优于前期检索，多专家骨干提升8/9数据集准确率，Challenger触发专家招募提升准确率8个百分点。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05393" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05393" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-4" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.48)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>S M Rayeed, Qian Ma, Charles V. Stewart, Yao Ma</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05559v1 Announce Type: new 
+Abstract: In biodiversity monitoring, a single image raises several questions: which taxon, how many, which trait, and whether the individual has been seen before. Vision-language models (VLMs) could answer all of these from the image, but their ability is largely untested in biology, as existing benchmarks focus mostly on species identification within a few taxonomic groups. We present Bio-VQA, the largest biological visual question answering (VQA) benchmark and the only one to span four aspects of biological visual understanding: hierarchical taxonomic reasoning, fine-grained attribute grounding, quantitative spatial reasoning, and individual re-identification. Bio-VQA contains 1.86M questions over 217K images from 11 public datasets, and extends right-or-wrong scoring to graded scoring, so a near-miss counts for more than a distant one. Evaluating 18 open-weight models from 3.75B to 38.4B parameters, we find that general visual capabilities do not transfer to biological organisms: the best model counts animals exactly on 41.7% of images with 2 to 10 individuals, less than half its accuracy on everyday objects at the same counts. Taxonomic accuracy falls to one sixth, from 0.72 at phylum to 0.12 at scientific name, and scaling helps mostly at coarse ranks. The gap to a domain specialist widens accordingly, from 0.731 against BioCLIP-2's 0.874 at class (1.2x) to 0.269 against 0.544 at scientific name (2x). On trait size measurement, 15 of the 18 models do no better than an image-blind baseline that predicts one fixed number for every specimen, and on re-identification, 17 of the 18 models fall below chance under adversarial conditions. These failures persist across a tenfold range of model size. We hope Bio-VQA becomes a standard test of how well VLM capabilities transfer to the biological domain.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：视觉语言模型在生物视觉理解中的精细能力如何？
+主要方法：构建Bio-VQA基准，含1.86M问题、217K图像，覆盖分类、属性、空间、个体推理，采用分级评分。
+关键贡献：最大生物VQA基准，揭示通用模型在生物任务上准确率显著下降。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05559" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05559" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-5" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">From Tokens to Trajectories: Parameter-Efficient Continuous Adaptation of Unified Multimodal Models</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.47)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Gayatri Deshmukh, Onkar Susladkar, Adheesh Juvekar, Halil Kilicoglu, Ismini Lourentzou</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05451v1 Announce Type: new 
+Abstract: While discrete tokenization in Unified Multimodal Models (UMMs) establishes strong semantic reasoning, it introduces a strict quantization bottleneck that degrades fine-grained visual details, often resulting in structurally accurate but artifact-heavy images. We introduce FlowShift, a parameter-efficient post-training framework that bypasses this bottleneck by converting pre-trained discrete UMMs into continuous rectified-flow generators. Instead of discarding the backbone's semantic priors, FlowShift replaces discrete visual interfaces with continuous latent projections and applies LoRA to the attention layers. To efficiently boost visual quality without semantic drift, we propose Dual-Objective Velocity Vector Distillation (DOVD), which aligns the model with a high-fidelity continuous teacher and ground-truth continuous trajectories. This approach drastically improves perceptual quality while preserving prompt adherence and reasoning. When applied to leading discrete UMMs, FlowShift significantly improves COCO-30K FID and aesthetic scores, while retaining over 99.5% of multimodal understanding capabilities. Ablations confirm DOVD drives generation quality. Ultimately, FlowShift achieves high-fidelity continuous generation without sacrificing pre-trained semantic grounding.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：离散token化导致量化瓶颈，降低细粒度视觉质量。  
+主要方法：FlowShift将预训练离散UMM转为连续整流流生成器，用LoRA和DOVD对齐连续轨迹。  
+关键贡献：参数高效后训练框架，大幅提升感知质量，保留99.5%多模态理解能力。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05451" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05451" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-6" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cognitive Bias Signatures in Search-Equipped LLM Agents: A Stage-Resolved Analysis</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.47)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Yanru Xiao, Yingwei Yu</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05720v1 Announce Type: new 
+Abstract: Search can help LLM agents correct mistakes, but their starting conditions may shape which evidence they find and use. Drawing on cognitive-bias paradigms, we develop a controlled search harness to examine result order, records of prior work, and initial hypotheses while holding each question and document collection fixed. Matched controls distinguish order effects from differences in document composition and the effects of failed work from context length. Across 10 models and 1,000 synthetic search worlds, we track queries, retrieved documents, document openings, and final answers. Our comparisons suggest that final answers are more sensitive to initial evidence order during active search than when all evidence is supplied in full. Dead-end histories can reduce strategy switching relative to matched neutral histories, indicating an effect beyond context length. Under wrong hypotheses, stage measurements distinguish reduced retrieval or opening from errors that persist after counter-evidence is opened. Exploratory interventions show that opening counter-evidence more often can coincide with lower accuracy, while accuracy can improve with little change in opening.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：搜索增强LLM代理中认知偏差对证据发现和使用的影响  
+主要方法：开发受控搜索工具，通过匹配对照实验区分顺序效应、文档组成和失败工作影响，在10个模型和1000个合成搜索世界中测试  
+关键贡献：发现最终答案对初始证据顺序敏感，死胡同历史减少策略切换，错误假设下阶段测量区分检索/打开与持续错误，打开反证更多可能降低准确率</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05720" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05720" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-7" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Quantifying out-of-distribution data severity with Wasserstein distances: benchmarking large language models for alloy property prediction</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.46)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>YuJie Liu, Dezhen Xue, Jun Sun, Xiangdong Ding, Zhibin Gao, Turab Lookman</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.03767v1 Announce Type: new 
+Abstract: As general-purpose Large Language Models (LLMs), such as Gemini and DeepSeek, exhibit increasingly advanced reasoning capabilities, a critical question arises: how do their property prediction abilities compare to those of domain-specific pretrained materials models? In this study, we evaluate predictions for Ti, steels, high-entropy alloy (HEA) and Al, demonstrating that general-purpose LLMs surprisingly outperform SteelBERT, MatSciBERT, and SciBERT. To further enhance performance, we introduce a hybrid approach that utilizes numerical priors from a prior model, such as CatBoost or SteelBERT, to guide the general LLMs (Deepseek V3.1, Gemini-2.5-Flash). By inputting these initial estimates from a prior model as prompts, the LLM acts as a reasoning corrector, achieving accuracy superior to the prior model and "unguided mode". Furthermore, we investigate the impact of data strategy using a similarity-based metric, revealing that data quality dominates quantity; using merely 5% of high-similarity reference data of training set as input yields performance similar to the results of using 100% of training set. Additionally, the LLMs demonstrate excellent uncertainty calibration, where self-reported "high" confidence strongly correlates with minimal deviation from ground truth. Our findings suggest that synergizing general-purpose LLMs with prior model numerical baselines and high-quality data curation creates a cost-effective and accurate paradigm for materials discovery, reducing the need for expensive domain-specific pretraining.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：通用LLM与领域特定材料模型在合金性能预测中的能力比较  
+主要方法：利用数值先验引导LLM（DeepSeek/Gemini）作为推理校正器，并基于Wasserstein距离评估数据分布外严重性  
+关键贡献：发现通用LLM优于领域模型；混合方法提升精度；数据质量主导数量，5%高相似数据即可媲美全量训练集</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.03767" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.03767" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-8" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Stress-Testing the Robustness of LLM-Based Causal Inference</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.45)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Ankitkumar Patel, Jigarkumar Patel, Amit Kumar, Supreetha Sreeram, Venkatesh Kulkarni</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.03656v1 Announce Type: new 
+Abstract: Why do some of the world's most powerful Artificial Intelligence (AI) systems still struggle to reason about cause and effect? Causal discovery, the ability to discern the underlying drivers of a system, is fundamental to scientific inquiry and has traditionally relied on structured data and statistical methods. Recently, Large Language Models (LLMs) have been explored as an alternative paradigm for causal inference, leveraging their broad knowledge and reasoning capabilities. Yet, despite their linguistic fluency, LLMs often rely on surface-level pattern recognition rather than genuine causal logic. While it is known that LLMs stumble in this domain, we lack a precise map of where, why, and how significantly these failures occur. In this paper, we propose a systematic stress-test framework across six critical dimensions: model scale, causal graph complexity, prompting strategy, metadata quality, data quality, and sensitivity to uncertainty. Our findings reveal a significant "optimism bias" in LLMs; models consistently overestimate causal links, leading to low precision across the board. Furthermore, we demonstrate that traditional evaluation metrics can be deceptive: while reasoning-heavy models lead in performance, the highest scores often occur when uncertainty in inference is overlooked. Once uncertainty is integrated into the evaluation, performance drops, providing a more honest reflection of causal reliability. We also find that, while scaling model size improves outcomes, these gains are fragile; performance degrades sharply as the quality of metadata decreases. This work serves as a practical guide to the blind spots of LLMs, offering a clear-eyed assessment of when these tools can be integrated into a causal discovery pipeline and when they are likely to lead researchers astray.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LLM在因果推理中的失败原因和程度
+主要方法：提出六维压力测试框架（模型规模、因果图复杂度等）
+关键贡献：发现LLM存在“乐观偏差”，高估因果联系，传统评估指标具有欺骗性</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.03656" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.03656" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-9" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Fuad Ali</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05390v1 Announce Type: new 
+Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：多智能体语言模型系统中，审查者何时有权推翻上游代理的决策？
+主要方法：提出证据门控机制，要求审查者提供约束违规的机械有效记录和合规修复才能替换决策。
+关键贡献：证据门控能减少正确提案被破坏，同时保留大部分违规修复；但界面设计改变审查者行为，并非模型无关的安全保障。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05390" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05390" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-10" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Dr. No: Feature Steering for Abstention in Vision-Language Models</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Farid Hasanov, Riccardo Renzulli, Bahram Zonooz, Mykola Pechenizkiy, Decebal Constantin Mocanu</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.03862v1 Announce Type: new 
+Abstract: Large foundation models often answer even when the available visual or textual evidence is insufficient to support a reliable conclusion. This failure to abstain makes them hard to trust in high-stakes or information-seeking settings, where a confident but unsupported answer can be worse than no answer at all. It also raises a natural question: can the internal mechanisms behind this behaviour be identified and controlled at inference time? We present Dr. No, a feature-steering approach that mines sparse autoencoder (SAE) features associated with abstention and commitment, then modulates a small set of them during the prefill pass, without retraining the base model.
+  Dr. No is evaluated on LLaVA-1.6 Mistral 7B across multimodal abstention benchmarks, including UNK-VQA and MM-UPD, and additionally benchmarked on language reasoning tasks using Qwen3.5-2B on AbstentionBench subsets. Against multiple uncertainty-based abstention baselines, feature steering achieves a more favourable balance between correct answering and appropriate abstention than post-hoc rejection methods. The gains are strongest on UNK-VQA and on MM-UPD cases involving image--question or question--answer incompatibility, and transfer most clearly to mathematical reasoning subsets of AbstentionBench. However, performance is more limited on absent-answer detection and retrieval-heavy multi-hop QA, such as MuSiQue. These results suggest that sparse internal features provide lightweight control handles for shaping uncertainty-aware behaviour in foundation models, while also showing that abstention control is source-dependent rather than governed by a single universal signal.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：大型基础模型在证据不足时仍会回答，缺乏拒答能力，影响可信度。  
+主要方法：提出Dr. No，通过稀疏自编码器特征挖掘与调制，在预填充阶段控制拒答与承诺行为，无需重训练。  
+关键贡献：在多项基准上实现比后验拒绝方法更好的正确回答与适当拒答平衡，尤其在图像-问题不兼容等场景。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.03862" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.03862" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-11" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">When to Ask, When to Answer: Strategic Clarification for Ambiguous Reference Resolution in Dialogue</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Ibrahim Khebour, Nikhil Krishnaswamy</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05517v1 Announce Type: new 
+Abstract: For humans, referential disambiguation is a collaborative process involving clarification questions asked when they will meaningfully change the outcome. However, large language models (LLMs) have been shown to be biased toward premature answering, preferring definite single-turn responses over more clarification exchanges. In this paper, we study the problem of "strategic clarification" -- asking clarification questions in a reference game when their answers will narrow the set of candidate referents. We construct a controlled test environment from the SIMMC 2.1 dataset that records how many questions each ambiguous reference needs to be successfully resolved, and examine how baseline LLM behavior and common post-training methods ask clarifying questions vs. attempt to answer the referent. We also propose BACE (Belief-Aware Critic with Epistemic tracking), a lightweight action chooser method on top of a frozen LM backbone, and show that BACE more consistently chooses the optimal number of clarifying questions than methods such as GRPO and ArCHer.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LLM在歧义指代中偏向过早回答，缺乏策略性澄清。  
+主要方法：构建SIMMC 2.1测试环境，提出BACE轻量级动作选择器。  
+关键贡献：BACE比GRPO和ArCHer更一致地选择最优澄清次数。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05517" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05517" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-12" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Can Large Language Models Review the Scientific Literature? A Test Against a 102-Article Benchmark</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Abdullah Al Kalbani, David M. Schultz, Alexandra K. Anderson-Frey, Zhonghua Zheng, Catherine McGuire</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05459v1 Announce Type: new 
+Abstract: Large language models (LLMs) are increasingly used to support scientific literature reviews, yet evaluations often examine individual tasks rather than the review process as a whole. We assess six AI tools across four stages: finding relevant articles, interpreting them, synthesizing across them, and proposing future research. The benchmark is a published review of the Spanish plume weather pattern and its 102-article corpus.
+  In the initial searches, five tools collectively identified 57 articles, with the best individual tool finding 42. Institutional library access increased discovery from 42 to 82 articles for Codex and from 15 to 79 for Claude Code. Given the complete corpus of 102 PDFs, three tools correctly identified all 18 articles discussing the Spanish plume substantially, but incorrectly classified 40% to 79% of the 84 passing mentions as substantial. The same three tools produced syntheses evaluated blindly by two domain experts. Although largely accurate, the syntheses provided limited insight and sometimes contained unsupported claims, quotation errors, and exaggerated statements of consensus. Finally, all three tools proposed research directions broader than the Spanish plume literature, although two approached questions identified in the benchmark review.
+  No single tool performed best across all tasks. We provide eight recommendations for researchers using AI tools in literature reviews. Our findings suggest that LLMs can assist with discovering and interpreting scientific literature, particularly when institutional access is available, but cannot replace expert judgment in evaluating evidence or synthesizing research.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：评估大语言模型在科学文献综述中的表现。
+主要方法：以102篇西班牙 plume 文献为基准，测试六个AI工具在查找、解释、综合和提出研究四个阶段的能力。
+关键贡献：发现工具能识别相关文章但分类不准确，合成内容基本正确但洞察有限，存在错误和夸大共识。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05459" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05459" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-13" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Rewrite, Then Veto: Rewriter-Agnostic Edit Gating for LLM-Based Post-OCR Correction</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Jorge Ram\'on Fonseca Cacho</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CL</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05539v1 Announce Type: new 
+Abstract: LLMs can repair noisy OCR transcripts of historical documents, but they also change text that was already correct. We propose EditVeto, a veto gate placed after a full-context LLM rewrite. The rewrite is character-aligned to the OCR input, its differences are split into blocks, and a 0.6B-parameter gate keeps or reverts each block. An oracle analysis motivates the design: given the true error locations, per-span generation is worse than no correction, whereas vetoing a full rewrite's edits helps. Trained on rewrites by two Qwen3 models and evaluated, frozen, on the eight HIPE-OCRepair-2026 test sets, the gate improves all five rewriters tested, two of them unseen in training: weighted cMER falls by 0.0026-0.0044 and the preference score rises by 0.15-0.25 (paired bootstrap, p ~ 0.0002 each). On published competition outputs it lowers cMER for three of four teams but raises it for the winning run (0.0050 to 0.0065). In a second, disclosed test look, a retrained gate still improves LoRA-tuned rewriters (cMER -0.0011 to -0.0021), and an ensemble of their gated edits reaches a cMER of 0.0069 and a preference score of 0.928, mostly through fine-tuning and pooling rather than gating. Built only on public models and data, it is behind the winner (0.0050) and tied with the second-ranked run (0.0071), both from the only team using domain pre-training, and ahead of all other published runs. A third, secondary look shows the unchanged gate improving zero-shot Qwen3.8-27B (cMER 0.0114 to 0.0108) but only the preference score of its LoRA-tuned version.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：避免LLM在OCR后校正中误改正确文本。  
+主要方法：提出EditVeto否决门，对LLM重写结果进行字符对齐分块，用0.6B参数门控决定保留或还原每个编辑块。  
+关键贡献：该方法能提升多种重写器（包括未见过的）的校正性能，降低cMER 0.0026-0.0044，提高偏好分数0.15-0.25。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05539" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05539" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-14" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Uncertainty-Aware Resource Orchestration for Agentic AI Systems</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Masoud Shokrnezhad, Tarik Taleb</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05392v1 Announce Type: new 
+Abstract: Agentic artificial intelligence (AI) systems powered by large language models (LLMs) execute as autonomous multi-step pipelines that dynamically invoke tools, integrate observations into memory, and iterate until a task is resolved or a resource budget is exhausted. Unlike classical workflows with fixed graphs, the aggregate compute, bandwidth, and end-to-end latency demands of such pipelines are unknown at dispatch time: they emerge at runtime from intermediate observations and stochastic token sampling, yielding heavy-tailed, multi-modal random variables. This unpredictability forces infrastructure orchestrators into a dilemma: under-provisioning risks mid-execution throttling and deadline violations, while over-provisioning wastes scarce edge or cloud capacity. Existing schedulers require a fully known pipeline graph, while edge resource-management methods rely on parametric or stationary demand models, and neither fits the unknown, non-stationary profiles of agentic pipelines. We formalize this setting as the uncertainty-aware agentic orchestration problem, where the goal is to reserve, at dispatch time, compute and bandwidth allocations that cover actual pipeline demands, and to verify that the pipeline can meet its deadline, each with a prescribed probability. We then propose Conformal Reservation for Orchestration (CRO), an online algorithm that translates a sliding window of past execution traces into dispatch-time resource allocations with finite-sample, distribution-free coverage guarantees via conformal prediction. Simulations over heterogeneous task mixes with multi-modal and heavy-tailed profiles show that CRO is the only evaluated method that simultaneously satisfies target probabilistic coverage across all risk levels while, among coverage-feasible methods, attaining the lowest over-reservation, roughly halving the resource waste of the Chebyshev-bound baseline.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：Agentic AI系统运行时资源需求未知且非平稳，导致编排困境。
+主要方法：形式化为不确定性感知编排问题，提出Conformal Reservation方法进行资源预留与截止时间验证。
+关键贡献：首次针对未知非平稳的Agentic管道提出概率保证的资源编排方案。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05392" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05392" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-15" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Multi-layer Indexer: Overlapping Selection and Attention in DeepSeek Sparse Attention</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Serdarcan Dilbaz, Arjun Krishna, Kiran Kamble, Daniel M. Bikel</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.03768v1 Announce Type: new 
+Abstract: Sparse attention cuts the cost of long-context inference by making the attention matrix sparse: each query attends only a subset of the sequence, chosen by a fixed pattern or, in recent production LLMs, learned per query. In DeepSeek Sparse Attention (DSA), the attention of DeepSeek-V3.2 and the GLM-5 family, every layer is preceded by a lightning indexer that scores the whole cache and keeps the k=2048 highest-scoring tokens for the layer to attend. At long context this indexer scan, not the sparse attention it feeds, is where the decode time goes. But adjacent layers select nearly the same tokens, so a layer can attend the selection of the previous indexer layer instead of its own. This removes the dependency: each indexer then runs concurrently with the attention of its layer. The resulting Multi-layer Indexer (MLI) needs no retraining and no new weights. Its default realization changes no kernel, running inside SGLang's production decode graph; an optional fused decode kernel accelerates it further on DeepSeek-V3.2. MLI composes with IndexCache (the cross-layer reuse GLM-5.2 ships as IndexShare): IndexCache drops the indexer from some layers, and MLI hides the scan on the rest. We serve DeepSeek-V3.2 and GLM-5 under IndexCache's protocol at retentions 1/2 to 1/32 (the fraction of layers that keep an indexer) and contexts 10K to 195K. At equal retention the composition decodes faster than IndexCache: up to 14.5% faster on DeepSeek-V3.2 and 9.8% on GLM-5 at 1/2, and 7.9% and 5.1% at 1/4, largest where IndexCache keeps the most indexers and growing with context. At retention 1/r it is faster still than IndexCache at 1/(2r) while keeping twice the fresh selections: at 128K it reaches 1.32x the unmodified model's decode throughput at 1/4, above IndexCache's 1.28x at 1/8. Its LongBench, RULER and LongBench v2 accuracy stays within a few percentage points of IndexCache's.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：稀疏注意力中索引器扫描耗时，且相邻层选择相似令牌。
+主要方法：MLI让每层复用前一层索引器的选择，消除依赖，实现并行运行。
+关键贡献：无需重新训练或新权重，兼容IndexCache，加速DeepSeek-V3.2和GLM-5推理。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.03768" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.03768" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-16" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Multimodal Fusion Methods for Whole-Slide Images and Clinical Data in Inflammatory Bowel Disease</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.34)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Ankana Banerjee (University of Stavanger, Norway), Mark van der Giezen (University of Stavanger, Norway), Ole Gunnar Aasprong (Stavanger University Hospital, Norway), Emiel A. M. Janssen (University of Stavanger, Norway), {\O}yvind Steinsb{\o} (Stavanger University Hospital, Norway), Tore Grimstad (Stavanger University Hospital, Norway), Kjersti Engan (University of Stavanger, Norway)</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05579v1 Announce Type: new 
+Abstract: Multimodal AI fusion of histology and clinical data is an active research area in computational pathology, but fusion methods are rarely compared under identical conditions and across different clinical endpoints. We present a modular framework in which slide-level embeddings, obtained by training an attention-based aggregator over patch embeddings from a frozen foundation model, and per-visit clinical embeddings are fed into 15 interchangeable fusion methods with a shared output dimension and prediction head (except decision-level methods). Using a prospective cohort of newly diagnosed inflammatory bowel disease patients, we predicted STRIDE-II-aligned remission outcomes from baseline or follow-up visits. The best fusion method reached macro-F1 of 0.57-0.75, outperforming both single-modality models in four of six scenarios, and differed by outcome and input. Image reliance, the drop in balanced accuracy when the slide embedding is removed, tended to follow the remission type - highest for histological and lowest for endoscopic remission; methods with similar accuracy relied on the slide to very different degrees.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：多模态融合方法在炎症性肠病全切片图像和临床数据中的应用  
+主要方法：提出模块化框架，使用注意力聚合器提取切片嵌入，与临床嵌入输入15种可互换融合方法  
+关键贡献：最佳融合方法在六种场景中四种优于单模态模型，宏F1达0.57-0.75，且结果因结局和输入而异</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05579" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05579" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-17" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Hybrid Spark: Adaptive Speculative Decoding That Lets the Content Choose the Drafter</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★☆☆☆</span> <small class="text-muted">(0.30)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Ekagra Ranjan, Bharat Venkitesh</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05611v1 Announce Type: new 
+Abstract: Speculative decoding (SD) speeds up large language model (LLM) serving, but its gain depends on the workload's \emph{shape}, such as batch size and context length, and on its \emph{content}. A model-based drafter proposes a short block on any content, while a model-free drafter such as n-gram lookup proposes long copies at almost no cost when the output repeats its input, as in code editing. Adaptive verification spends a batch-wide verification budget on the draft tokens most likely to be accepted, but it supports only one model-based drafter. Model-free drafters provide no per-token confidence, so they cannot take part in budget allocation, and deployments must either fix one drafter or split their GPUs between drafters. We present \sys, a framework that runs a model-based and a model-free drafter on every step and gives each request the better of their chains, within adaptive verification and entirely on the GPU, which keeps asynchronous scheduling intact. The key idea is a price per verified draft token: the goodput that slot would earn elsewhere in the batch. Once the model-free drafter's tokens carry calibrated acceptance estimates, fit once on general text, this price puts both drafters' chains on one scale. Instantiated with \dspark and an n-gram drafter in vLLM, \sys achieves 1.10--1.62\x the output throughput of \dspark on code editing at batch size~4 and 1.04--1.27\x at batch size~128, while staying at 0.97--1.01\x of it on chat at temperature~0. A single deployment can therefore serve both workloads.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何结合模型驱动和模型无关的起草器提升推测解码效率。  
+主要方法：提出Hybrid Spark框架，同时运行两种起草器，通过每验证token的价格统一评估并支持自适应验证。  
+关键贡献：在GPU上实现两种起草器协同工作，无需分割资源，吞吐量提升1.10-1.62倍。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05611" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05611" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-18" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Verified but Vacuous: Three Failure Surfaces of LLM-Driven Verified Code Generation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★☆☆☆</span> <small class="text-muted">(0.28)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Aditya Vempaty, Himaneesh Sompalle, Manan Tayal, Mowafak Allaham, Prasenjit Dey, Ashish Jagmohan, Ravi Kokku</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05590v1 Announce Type: new 
+Abstract: What should ``verified'' mean when evaluating LLM-generated code? Many existing pipelines report a single verification number. We argue this collapses three distinct properties measured in a conditional audit sequence: verifier acceptance (Surface A), \emph{syntactic specification binding (Surface B: does the proof obligation bind to the spec?), and \emph{semantic specification fidelity} (Surface C: does the spec capture the informal requirement?). Two empirical demonstrations show the surfaces separate. \textbf{First ($A \neq B$), via Li@Opus (a same-model reproduction of \citet{li2025dafny}'s Dafny-as-intermediate-representation (IR) pipeline under Claude Opus 4.7) on three Python benchmarks}: it reaches \textbf{99.1\% verifier acceptance} on HumanEval while only \textbf{1.9\%} carry a certificate binding to a spec-defined predicate or function. \textbf{Second ($B \neq C$), via VCG on two Rust benchmarks}: we use VCG (which is our own in-house Dafny-as-intermediate pipeline) on Rust because the Rust target lets us enforce fully-verifiable output (every component ships as a Dafny certificate, ensures-binding gate passing by construction). Even inside that construction, \textbf{11.48\% (MBPP-Rust) and 14.82\% (VeriContest LC slice) of structurally-verified samples still fail hidden tests}. On the LC slice of VeriContest, \textbf{VCG's reported End2End rate is 7.79\% (535/6870).} The cited external rates are 5.51\% (GPT-5.5) and 1.88\% (single-shot Opus 4.7). These give descriptive differences of 2.3 percentage points and 4.14$\times$, respectively; task-budget, repair and harness differences prevent a matched-performance claim.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LLM生成代码的“验证”含义模糊，现有方法忽略三个不同属性。  
+主要方法：通过两个实证演示分离验证器接受、语法规范绑定、语义规范保真度三个失败面。  
+关键贡献：揭示并实证了LLM驱动验证代码生成的三个失败面可分离。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05590" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05590" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-19" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">A Feasibility Condition for Confidence-Gated Tiered LLM Inference</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★☆☆☆</span> <small class="text-muted">(0.25)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Sumit P. Ahuja</p>
+                        <p><strong>发布日期：</strong>Thu,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.05394v1 Announce Type: new 
+Abstract: Tiered inference distributes large language model computation across a hierarchy of devices, from on-device and edge hardware to the datacenter, and is increasingly offered as the route to cheaper, lower-latency, and more private serving. Most such systems orchestrate frozen model checkpoints, and most decide what to resolve locally and what to escalate using a confidence signal produced by a forward-deployed model. We give a closed-form condition for when no threshold on that signal makes a tiered cascade worthwhile relative to sending every query to the backstop. Modeling the routing decision as a binary test and separating local from escalation cost through an architecture cost ratio $\kappa$, we derive a feasibility condition bracketed by a signal-free floor, below which a cascade is feasible at any signal quality, and a perfect-signal ceiling, above which none is. Read along the $\kappa$ axis the condition inverts: where local compute is billed, cost binds, matching a recent empirical finding; where it is sunk, on decentralized hardware, feasibility becomes unconditional and signal quality instead sets what the cascade achieves. We turn the condition into three design requirements that existing trained-in primitives satisfy only in isolation, and we propose, as future work, a co-designed architecture and a protocol to test it. The condition and the inversion hold independently of that architecture; they are the paper's contribution.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：置信门控分层LLM推理的可行性条件  
+主要方法：将路由决策建模为二元测试，通过架构成本比κ推导可行性条件  
+关键贡献：给出闭式条件，揭示信号质量与成本关系，提出三个设计需求</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.05394" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.05394" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="mt-5 py-3 bg-light text-center">
+        <p class="text-muted mb-0">
+            Powered by <a href="https://github.com/tyutcxj/Daily-Paper-Digest">Daily arXiv</a>
+            | Data from <a href="https://arxiv.org">arXiv</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showModal(modalId) {
+            var modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }
+    </script>
+</body>
+</html>

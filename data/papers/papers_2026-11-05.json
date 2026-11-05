@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2611.05406",
+    "title": "When Does Sharing Work? Scaling a Shared SigLIP2 Across Image, Video, Audio, and Audio-Visual Representations",
+    "authors": [
+      "Xiaofei Sun, Peng Wang, Huayao Liu, Xiaoxiao Xu, Jun Song, Deqing Li, Lin Qu"
+    ],
+    "abstract": "arXiv:2611.05406v1 Announce Type: new \nAbstract: Contrastive pretraining has advanced image-text understanding, yet image, video, and audio encoders are still trained independently, with cross-modal alignment realized mainly through post-hoc binding to a frozen anchor space. We present Omni-Encoder, a general multimodal encoder that processes image, video, audio, and audio-visual inputs within a single SigLIP-2 Vision Transformer with fully shared parameters. Unlike anchor-centric binding or per-modality adapters, all modalities are optimized jointly end-to-end, and the framework is organized from input to training. A modality-native input stage first maps each signal into the shared embedding space, including a 1D-convolutional audio tokenizer that converts mel-spectrograms into tokens aligned with visual patches. A multimodal rotary position embedding parameterized by absolute timestamps then places visual frames and audio segments in a unified spatiotemporal coordinate system. Finally, alternating-modality training interleaves image, video, audio, and temporally aligned audio-visual batches and accumulates their gradients into one update, which we find central to stable joint optimization. Omni-Encoder achieves competitive results on 16 benchmarks across all four modalities with one shared parameter set, and joint training improves each modality over its separately trained counterpart. Code and models will be publicly released.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05406",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05406"
+      }
+    ],
+    "relevance_score": 0.5477532098488788,
+    "max_similarity": 0.2997864683549222
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05731",
+    "title": "Prospective Memory for Proactive LLM Agents",
+    "authors": [
+      "Yuanchen Bei, Zhining Liu, Tianxin Wei, Weizhi Zhang, Zhichen Zeng, Philip S. Yu, Hendrik Hamann, Jingrui He, Hanghang Tong"
+    ],
+    "abstract": "arXiv:2611.05731v1 Announce Type: new \nAbstract: Most memory systems for LLM agents are retrospective, preserving and retrieving past information to inform current decisions. Proactive agents, however, also require prospective memory: retaining future-directed intentions and realizing them when appropriate opportunities arise, even without explicit requests. Crucially, remembering the right intention does not guarantee acting at the right time: a related observation may call for waiting, while a later cue may make the same intention actionable. Inspired by cognitive theories of human prospective memory, we introduce Pro-Memory, a memory framework that separates maintaining future intentions from deciding when and how to realize them. Pro-Memory preserves pending objectives linked to their supporting evidence, assesses new observations against their original goals and activation conditions, and coordinates appropriate contributions with the agent's ongoing actions. It further updates intention states based on actions actually issued or evidence of resolution, while an experience memory distills feedback from completed episodes into guidance for future decisions. Experiments on two benchmarks spanning delayed-intention tasks and open-ended proactive assistance demonstrate consistent improvements in proactive task performance over representative memory approaches across multiple LLM backbones, while limiting unnecessary interventions.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05731",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05731"
+      }
+    ],
+    "relevance_score": 0.5050221594384823,
+    "max_similarity": 0.37277047907590005
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05556",
+    "title": "AGORA: Reliability-Aware Aggregation of LLM Judges via Item-Response Theory",
+    "authors": [
+      "Junhyung Ahn"
+    ],
+    "abstract": "arXiv:2611.05556v1 Announce Type: new \nAbstract: LLM-as-a-judge is a common substitute for costly human evaluation, and aggregating several judges is the standard remedy for any single judge's bias. Judge pools mix judges of very different reliability, while the human-labeled sets that validate them hold a few hundred items or fewer. In this regime the per-item mean weights weak judges as heavily as strong ones, and confusion-table models such as Dawid-Skene must estimate a per-judge error table from too few items. We propose AGORA (Aggregation Of Reliability-weighted Assessments), an item-response-theory aggregator that places every item on one latent quality scale and describes each judge by a sensitivity parameter and ordered rating thresholds, so judge reliability is learned from all items jointly and without human labels. Across three benchmarks, AGORA matches or exceeds Dawid-Skene on large evaluation sets, and its advantage widens as the set shrinks toward a few hundred items. It remains accurate as pools grow more uneven, a label-free dispersion statistic indicates in advance when trust weighting helps, and its learned trust weights track per-judge human validity.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05556",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05556"
+      }
+    ],
+    "relevance_score": 0.4970198206355624,
+    "max_similarity": 0.36701196055081853
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05393",
+    "title": "Challenge-Aware Knowledge Recruitment with Meta-Agent Supervision for Medical Multi-Agent Reasoning",
+    "authors": [
+      "Riccardo Riccio, Haitz S\\'aez de Oc\\'ariz Borde, Pietro Li\\`o"
+    ],
+    "abstract": "arXiv:2611.05393v1 Announce Type: new \nAbstract: Large language models perform strongly on standard medical QA but degrade on harder reasoning tasks, where multi-agent debate often fails to beat strong single-model prompting. We argue that a key limitation is that existing systems select experts and retrieve knowledge from the question alone, rather than from gaps that emerge during reasoning. We propose challenge-aware adaptive recruitment: an external CHALLENGER inspects the evolving reasoning trace and identifies specific factual or expertise gaps. These signals trigger targeted knowledge retrieval or mid-discussion specialist recruitment. On the MEDAGENTSBENCH hard subset (862 questions across nine biomedical datasets), upfront retrieval provides little benefit, while challenge-aware in-between retrieval performs better; on a multi-specialist backbone it improves accuracy on 8 of 9 datasets and adds 6 percentage points over Challenger Only. Ablations indicate benefits from both retrieval timing and gap-specific query signals, and a live web-search experiment shows that the timing advantage persists across retrieval backends. For specialist recruitment, self-triggered adaptation is unreliable, whereas Challenger-triggered recruitment raises GPT-4.1-mini MedQA accuracy from 46% to 54%, with positive direction on all tested generalization datasets. Naively combining retrieval and specialist recruitment degrades performance, highlighting the need to coordinate adaptive intervention channels. These results show that when and why external resources are recruited is a key design choice in multi-agent medical reasoning.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05393",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05393"
+      }
+    ],
+    "relevance_score": 0.4812998599855608,
+    "max_similarity": 0.21135009638474228
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05559",
+    "title": "How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning",
+    "authors": [
+      "S M Rayeed, Qian Ma, Charles V. Stewart, Yao Ma"
+    ],
+    "abstract": "arXiv:2611.05559v1 Announce Type: new \nAbstract: In biodiversity monitoring, a single image raises several questions: which taxon, how many, which trait, and whether the individual has been seen before. Vision-language models (VLMs) could answer all of these from the image, but their ability is largely untested in biology, as existing benchmarks focus mostly on species identification within a few taxonomic groups. We present Bio-VQA, the largest biological visual question answering (VQA) benchmark and the only one to span four aspects of biological visual understanding: hierarchical taxonomic reasoning, fine-grained attribute grounding, quantitative spatial reasoning, and individual re-identification. Bio-VQA contains 1.86M questions over 217K images from 11 public datasets, and extends right-or-wrong scoring to graded scoring, so a near-miss counts for more than a distant one. Evaluating 18 open-weight models from 3.75B to 38.4B parameters, we find that general visual capabilities do not transfer to biological organisms: the best model counts animals exactly on 41.7% of images with 2 to 10 individuals, less than half its accuracy on everyday objects at the same counts. Taxonomic accuracy falls to one sixth, from 0.72 at phylum to 0.12 at scientific name, and scaling helps mostly at coarse ranks. The gap to a domain specialist widens accordingly, from 0.731 against BioCLIP-2's 0.874 at class (1.2x) to 0.269 against 0.544 at scientific name (2x). On trait size measurement, 15 of the 18 models do no better than an image-blind baseline that predicts one fixed number for every specimen, and on re-identification, 17 of the 18 models fall below chance under adversarial conditions. These failures persist across a tenfold range of model size. We hope Bio-VQA becomes a standard test of how well VLM capabilities transfer to the biological domain.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05559",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05559"
+      }
+    ],
+    "relevance_score": 0.48098699320981003,
+    "max_similarity": 0.21319198923953597
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05451",
+    "title": "From Tokens to Trajectories: Parameter-Efficient Continuous Adaptation of Unified Multimodal Models",
+    "authors": [
+      "Gayatri Deshmukh, Onkar Susladkar, Adheesh Juvekar, Halil Kilicoglu, Ismini Lourentzou"
+    ],
+    "abstract": "arXiv:2611.05451v1 Announce Type: new \nAbstract: While discrete tokenization in Unified Multimodal Models (UMMs) establishes strong semantic reasoning, it introduces a strict quantization bottleneck that degrades fine-grained visual details, often resulting in structurally accurate but artifact-heavy images. We introduce FlowShift, a parameter-efficient post-training framework that bypasses this bottleneck by converting pre-trained discrete UMMs into continuous rectified-flow generators. Instead of discarding the backbone's semantic priors, FlowShift replaces discrete visual interfaces with continuous latent projections and applies LoRA to the attention layers. To efficiently boost visual quality without semantic drift, we propose Dual-Objective Velocity Vector Distillation (DOVD), which aligns the model with a high-fidelity continuous teacher and ground-truth continuous trajectories. This approach drastically improves perceptual quality while preserving prompt adherence and reasoning. When applied to leading discrete UMMs, FlowShift significantly improves COCO-30K FID and aesthetic scores, while retaining over 99.5% of multimodal understanding capabilities. Ablations confirm DOVD drives generation quality. Ultimately, FlowShift achieves high-fidelity continuous generation without sacrificing pre-trained semantic grounding.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05451",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05451"
+      }
+    ],
+    "relevance_score": 0.472299248052042,
+    "max_similarity": 0.2053916930204774
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05720",
+    "title": "Cognitive Bias Signatures in Search-Equipped LLM Agents: A Stage-Resolved Analysis",
+    "authors": [
+      "Yanru Xiao, Yingwei Yu"
+    ],
+    "abstract": "arXiv:2611.05720v1 Announce Type: new \nAbstract: Search can help LLM agents correct mistakes, but their starting conditions may shape which evidence they find and use. Drawing on cognitive-bias paradigms, we develop a controlled search harness to examine result order, records of prior work, and initial hypotheses while holding each question and document collection fixed. Matched controls distinguish order effects from differences in document composition and the effects of failed work from context length. Across 10 models and 1,000 synthetic search worlds, we track queries, retrieved documents, document openings, and final answers. Our comparisons suggest that final answers are more sensitive to initial evidence order during active search than when all evidence is supplied in full. Dead-end histories can reduce strategy switching relative to matched neutral histories, indicating an effect beyond context length. Under wrong hypotheses, stage measurements distinguish reduced retrieval or opening from errors that persist after counter-evidence is opened. Exploratory interventions show that opening counter-evidence more often can coincide with lower accuracy, while accuracy can improve with little change in opening.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05720",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05720"
+      }
+    ],
+    "relevance_score": 0.4675840024305893,
+    "max_similarity": 0.20007338554803017
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.03767",
+    "title": "Quantifying out-of-distribution data severity with Wasserstein distances: benchmarking large language models for alloy property prediction",
+    "authors": [
+      "YuJie Liu, Dezhen Xue, Jun Sun, Xiangdong Ding, Zhibin Gao, Turab Lookman"
+    ],
+    "abstract": "arXiv:2611.03767v1 Announce Type: new \nAbstract: As general-purpose Large Language Models (LLMs), such as Gemini and DeepSeek, exhibit increasingly advanced reasoning capabilities, a critical question arises: how do their property prediction abilities compare to those of domain-specific pretrained materials models? In this study, we evaluate predictions for Ti, steels, high-entropy alloy (HEA) and Al, demonstrating that general-purpose LLMs surprisingly outperform SteelBERT, MatSciBERT, and SciBERT. To further enhance performance, we introduce a hybrid approach that utilizes numerical priors from a prior model, such as CatBoost or SteelBERT, to guide the general LLMs (Deepseek V3.1, Gemini-2.5-Flash). By inputting these initial estimates from a prior model as prompts, the LLM acts as a reasoning corrector, achieving accuracy superior to the prior model and \"unguided mode\". Furthermore, we investigate the impact of data strategy using a similarity-based metric, revealing that data quality dominates quantity; using merely 5% of high-similarity reference data of training set as input yields performance similar to the results of using 100% of training set. Additionally, the LLMs demonstrate excellent uncertainty calibration, where self-reported \"high\" confidence strongly correlates with minimal deviation from ground truth. Our findings suggest that synergizing general-purpose LLMs with prior model numerical baselines and high-quality data curation creates a cost-effective and accurate paradigm for materials discovery, reducing the need for expensive domain-specific pretraining.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.03767",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.03767"
+      }
+    ],
+    "relevance_score": 0.4603749845777036,
+    "max_similarity": 0.1880126716136167
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.03656",
+    "title": "Stress-Testing the Robustness of LLM-Based Causal Inference",
+    "authors": [
+      "Ankitkumar Patel, Jigarkumar Patel, Amit Kumar, Supreetha Sreeram, Venkatesh Kulkarni"
+    ],
+    "abstract": "arXiv:2611.03656v1 Announce Type: new \nAbstract: Why do some of the world's most powerful Artificial Intelligence (AI) systems still struggle to reason about cause and effect? Causal discovery, the ability to discern the underlying drivers of a system, is fundamental to scientific inquiry and has traditionally relied on structured data and statistical methods. Recently, Large Language Models (LLMs) have been explored as an alternative paradigm for causal inference, leveraging their broad knowledge and reasoning capabilities. Yet, despite their linguistic fluency, LLMs often rely on surface-level pattern recognition rather than genuine causal logic. While it is known that LLMs stumble in this domain, we lack a precise map of where, why, and how significantly these failures occur. In this paper, we propose a systematic stress-test framework across six critical dimensions: model scale, causal graph complexity, prompting strategy, metadata quality, data quality, and sensitivity to uncertainty. Our findings reveal a significant \"optimism bias\" in LLMs; models consistently overestimate causal links, leading to low precision across the board. Furthermore, we demonstrate that traditional evaluation metrics can be deceptive: while reasoning-heavy models lead in performance, the highest scores often occur when uncertainty in inference is overlooked. Once uncertainty is integrated into the evaluation, performance drops, providing a more honest reflection of causal reliability. We also find that, while scaling model size improves outcomes, these gains are fragile; performance degrades sharply as the quality of metadata decreases. This work serves as a practical guide to the blind spots of LLMs, offering a clear-eyed assessment of when these tools can be integrated into a causal discovery pipeline and when they are likely to lead researchers astray.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.03656",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.03656"
+      }
+    ],
+    "relevance_score": 0.44532487506668095,
+    "max_similarity": 0.16947576503777226
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05390",
+    "title": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions",
+    "authors": [
+      "Fuad Ali"
+    ],
+    "abstract": "arXiv:2611.05390v1 Announce Type: new \nAbstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05390",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05390"
+      }
+    ],
+    "relevance_score": 0.42797734438228485,
+    "max_similarity": 0.15226296804093373
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.03862",
+    "title": "Dr. No: Feature Steering for Abstention in Vision-Language Models",
+    "authors": [
+      "Farid Hasanov, Riccardo Renzulli, Bahram Zonooz, Mykola Pechenizkiy, Decebal Constantin Mocanu"
+    ],
+    "abstract": "arXiv:2611.03862v1 Announce Type: new \nAbstract: Large foundation models often answer even when the available visual or textual evidence is insufficient to support a reliable conclusion. This failure to abstain makes them hard to trust in high-stakes or information-seeking settings, where a confident but unsupported answer can be worse than no answer at all. It also raises a natural question: can the internal mechanisms behind this behaviour be identified and controlled at inference time? We present Dr. No, a feature-steering approach that mines sparse autoencoder (SAE) features associated with abstention and commitment, then modulates a small set of them during the prefill pass, without retraining the base model.\n  Dr. No is evaluated on LLaVA-1.6 Mistral 7B across multimodal abstention benchmarks, including UNK-VQA and MM-UPD, and additionally benchmarked on language reasoning tasks using Qwen3.5-2B on AbstentionBench subsets. Against multiple uncertainty-based abstention baselines, feature steering achieves a more favourable balance between correct answering and appropriate abstention than post-hoc rejection methods. The gains are strongest on UNK-VQA and on MM-UPD cases involving image--question or question--answer incompatibility, and transfer most clearly to mathematical reasoning subsets of AbstentionBench. However, performance is more limited on absent-answer detection and retrieval-heavy multi-hop QA, such as MuSiQue. These results suggest that sparse internal features provide lightweight control handles for shaping uncertainty-aware behaviour in foundation models, while also showing that abstention control is source-dependent rather than governed by a single universal signal.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.03862",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.03862"
+      }
+    ],
+    "relevance_score": 0.4263594400522712,
+    "max_similarity": 0.14412155561406664
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05517",
+    "title": "When to Ask, When to Answer: Strategic Clarification for Ambiguous Reference Resolution in Dialogue",
+    "authors": [
+      "Ibrahim Khebour, Nikhil Krishnaswamy"
+    ],
+    "abstract": "arXiv:2611.05517v1 Announce Type: new \nAbstract: For humans, referential disambiguation is a collaborative process involving clarification questions asked when they will meaningfully change the outcome. However, large language models (LLMs) have been shown to be biased toward premature answering, preferring definite single-turn responses over more clarification exchanges. In this paper, we study the problem of \"strategic clarification\" -- asking clarification questions in a reference game when their answers will narrow the set of candidate referents. We construct a controlled test environment from the SIMMC 2.1 dataset that records how many questions each ambiguous reference needs to be successfully resolved, and examine how baseline LLM behavior and common post-training methods ask clarifying questions vs. attempt to answer the referent. We also propose BACE (Belief-Aware Critic with Epistemic tracking), a lightweight action chooser method on top of a frozen LM backbone, and show that BACE more consistently chooses the optimal number of clarifying questions than methods such as GRPO and ArCHer.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05517",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05517"
+      }
+    ],
+    "relevance_score": 0.4169984727924408,
+    "max_similarity": 0.13825896294628406
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05459",
+    "title": "Can Large Language Models Review the Scientific Literature? A Test Against a 102-Article Benchmark",
+    "authors": [
+      "Abdullah Al Kalbani, David M. Schultz, Alexandra K. Anderson-Frey, Zhonghua Zheng, Catherine McGuire"
+    ],
+    "abstract": "arXiv:2611.05459v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used to support scientific literature reviews, yet evaluations often examine individual tasks rather than the review process as a whole. We assess six AI tools across four stages: finding relevant articles, interpreting them, synthesizing across them, and proposing future research. The benchmark is a published review of the Spanish plume weather pattern and its 102-article corpus.\n  In the initial searches, five tools collectively identified 57 articles, with the best individual tool finding 42. Institutional library access increased discovery from 42 to 82 articles for Codex and from 15 to 79 for Claude Code. Given the complete corpus of 102 PDFs, three tools correctly identified all 18 articles discussing the Spanish plume substantially, but incorrectly classified 40% to 79% of the 84 passing mentions as substantial. The same three tools produced syntheses evaluated blindly by two domain experts. Although largely accurate, the syntheses provided limited insight and sometimes contained unsupported claims, quotation errors, and exaggerated statements of consensus. Finally, all three tools proposed research directions broader than the Spanish plume literature, although two approached questions identified in the benchmark review.\n  No single tool performed best across all tasks. We provide eight recommendations for researchers using AI tools in literature reviews. Our findings suggest that LLMs can assist with discovering and interpreting scientific literature, particularly when institutional access is available, but cannot replace expert judgment in evaluating evidence or synthesizing research.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05459",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05459"
+      }
+    ],
+    "relevance_score": 0.41217378649409486,
+    "max_similarity": 0.13303752976330366
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05539",
+    "title": "Rewrite, Then Veto: Rewriter-Agnostic Edit Gating for LLM-Based Post-OCR Correction",
+    "authors": [
+      "Jorge Ram\\'on Fonseca Cacho"
+    ],
+    "abstract": "arXiv:2611.05539v1 Announce Type: new \nAbstract: LLMs can repair noisy OCR transcripts of historical documents, but they also change text that was already correct. We propose EditVeto, a veto gate placed after a full-context LLM rewrite. The rewrite is character-aligned to the OCR input, its differences are split into blocks, and a 0.6B-parameter gate keeps or reverts each block. An oracle analysis motivates the design: given the true error locations, per-span generation is worse than no correction, whereas vetoing a full rewrite's edits helps. Trained on rewrites by two Qwen3 models and evaluated, frozen, on the eight HIPE-OCRepair-2026 test sets, the gate improves all five rewriters tested, two of them unseen in training: weighted cMER falls by 0.0026-0.0044 and the preference score rises by 0.15-0.25 (paired bootstrap, p ~ 0.0002 each). On published competition outputs it lowers cMER for three of four teams but raises it for the winning run (0.0050 to 0.0065). In a second, disclosed test look, a retrained gate still improves LoRA-tuned rewriters (cMER -0.0011 to -0.0021), and an ensemble of their gated edits reaches a cMER of 0.0069 and a preference score of 0.928, mostly through fine-tuning and pooling rather than gating. Built only on public models and data, it is behind the winner (0.0050) and tied with the second-ranked run (0.0071), both from the only team using domain pre-training, and ahead of all other published runs. A third, secondary look shows the unchanged gate improving zero-shot Qwen3.8-27B (cMER 0.0114 to 0.0108) but only the preference score of its LoRA-tuned version.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05539",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05539"
+      }
+    ],
+    "relevance_score": 0.41189088325715983,
+    "max_similarity": 0.13243011516219544
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05392",
+    "title": "Uncertainty-Aware Resource Orchestration for Agentic AI Systems",
+    "authors": [
+      "Masoud Shokrnezhad, Tarik Taleb"
+    ],
+    "abstract": "arXiv:2611.05392v1 Announce Type: new \nAbstract: Agentic artificial intelligence (AI) systems powered by large language models (LLMs) execute as autonomous multi-step pipelines that dynamically invoke tools, integrate observations into memory, and iterate until a task is resolved or a resource budget is exhausted. Unlike classical workflows with fixed graphs, the aggregate compute, bandwidth, and end-to-end latency demands of such pipelines are unknown at dispatch time: they emerge at runtime from intermediate observations and stochastic token sampling, yielding heavy-tailed, multi-modal random variables. This unpredictability forces infrastructure orchestrators into a dilemma: under-provisioning risks mid-execution throttling and deadline violations, while over-provisioning wastes scarce edge or cloud capacity. Existing schedulers require a fully known pipeline graph, while edge resource-management methods rely on parametric or stationary demand models, and neither fits the unknown, non-stationary profiles of agentic pipelines. We formalize this setting as the uncertainty-aware agentic orchestration problem, where the goal is to reserve, at dispatch time, compute and bandwidth allocations that cover actual pipeline demands, and to verify that the pipeline can meet its deadline, each with a prescribed probability. We then propose Conformal Reservation for Orchestration (CRO), an online algorithm that translates a sliding window of past execution traces into dispatch-time resource allocations with finite-sample, distribution-free coverage guarantees via conformal prediction. Simulations over heterogeneous task mixes with multi-modal and heavy-tailed profiles show that CRO is the only evaluated method that simultaneously satisfies target probabilistic coverage across all risk levels while, among coverage-feasible methods, attaining the lowest over-reservation, roughly halving the resource waste of the Chebyshev-bound baseline.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05392",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05392"
+      }
+    ],
+    "relevance_score": 0.41059583152708246,
+    "max_similarity": 0.12877801336678543
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.03768",
+    "title": "Multi-layer Indexer: Overlapping Selection and Attention in DeepSeek Sparse Attention",
+    "authors": [
+      "Serdarcan Dilbaz, Arjun Krishna, Kiran Kamble, Daniel M. Bikel"
+    ],
+    "abstract": "arXiv:2611.03768v1 Announce Type: new \nAbstract: Sparse attention cuts the cost of long-context inference by making the attention matrix sparse: each query attends only a subset of the sequence, chosen by a fixed pattern or, in recent production LLMs, learned per query. In DeepSeek Sparse Attention (DSA), the attention of DeepSeek-V3.2 and the GLM-5 family, every layer is preceded by a lightning indexer that scores the whole cache and keeps the k=2048 highest-scoring tokens for the layer to attend. At long context this indexer scan, not the sparse attention it feeds, is where the decode time goes. But adjacent layers select nearly the same tokens, so a layer can attend the selection of the previous indexer layer instead of its own. This removes the dependency: each indexer then runs concurrently with the attention of its layer. The resulting Multi-layer Indexer (MLI) needs no retraining and no new weights. Its default realization changes no kernel, running inside SGLang's production decode graph; an optional fused decode kernel accelerates it further on DeepSeek-V3.2. MLI composes with IndexCache (the cross-layer reuse GLM-5.2 ships as IndexShare): IndexCache drops the indexer from some layers, and MLI hides the scan on the rest. We serve DeepSeek-V3.2 and GLM-5 under IndexCache's protocol at retentions 1/2 to 1/32 (the fraction of layers that keep an indexer) and contexts 10K to 195K. At equal retention the composition decodes faster than IndexCache: up to 14.5% faster on DeepSeek-V3.2 and 9.8% on GLM-5 at 1/2, and 7.9% and 5.1% at 1/4, largest where IndexCache keeps the most indexers and growing with context. At retention 1/r it is faster still than IndexCache at 1/(2r) while keeping twice the fresh selections: at 128K it reaches 1.32x the unmodified model's decode throughput at 1/4, above IndexCache's 1.28x at 1/8. Its LongBench, RULER and LongBench v2 accuracy stays within a few percentage points of IndexCache's.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.03768",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.03768"
+      }
+    ],
+    "relevance_score": 0.4036477345662578,
+    "max_similarity": 0.1867849091195076
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05579",
+    "title": "Multimodal Fusion Methods for Whole-Slide Images and Clinical Data in Inflammatory Bowel Disease",
+    "authors": [
+      "Ankana Banerjee (University of Stavanger, Norway), Mark van der Giezen (University of Stavanger, Norway), Ole Gunnar Aasprong (Stavanger University Hospital, Norway), Emiel A. M. Janssen (University of Stavanger, Norway), {\\O}yvind Steinsb{\\o} (Stavanger University Hospital, Norway), Tore Grimstad (Stavanger University Hospital, Norway), Kjersti Engan (University of Stavanger, Norway)"
+    ],
+    "abstract": "arXiv:2611.05579v1 Announce Type: new \nAbstract: Multimodal AI fusion of histology and clinical data is an active research area in computational pathology, but fusion methods are rarely compared under identical conditions and across different clinical endpoints. We present a modular framework in which slide-level embeddings, obtained by training an attention-based aggregator over patch embeddings from a frozen foundation model, and per-visit clinical embeddings are fed into 15 interchangeable fusion methods with a shared output dimension and prediction head (except decision-level methods). Using a prospective cohort of newly diagnosed inflammatory bowel disease patients, we predicted STRIDE-II-aligned remission outcomes from baseline or follow-up visits. The best fusion method reached macro-F1 of 0.57-0.75, outperforming both single-modality models in four of six scenarios, and differed by outcome and input. Image reliance, the drop in balanced accuracy when the slide embedding is removed, tended to follow the remission type - highest for histological and lowest for endoscopic remission; methods with similar accuracy relied on the slide to very different degrees.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05579",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05579"
+      }
+    ],
+    "relevance_score": 0.33635108003287084,
+    "max_similarity": 0.16097927722495656
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05611",
+    "title": "Hybrid Spark: Adaptive Speculative Decoding That Lets the Content Choose the Drafter",
+    "authors": [
+      "Ekagra Ranjan, Bharat Venkitesh"
+    ],
+    "abstract": "arXiv:2611.05611v1 Announce Type: new \nAbstract: Speculative decoding (SD) speeds up large language model (LLM) serving, but its gain depends on the workload's \\emph{shape}, such as batch size and context length, and on its \\emph{content}. A model-based drafter proposes a short block on any content, while a model-free drafter such as n-gram lookup proposes long copies at almost no cost when the output repeats its input, as in code editing. Adaptive verification spends a batch-wide verification budget on the draft tokens most likely to be accepted, but it supports only one model-based drafter. Model-free drafters provide no per-token confidence, so they cannot take part in budget allocation, and deployments must either fix one drafter or split their GPUs between drafters. We present \\sys, a framework that runs a model-based and a model-free drafter on every step and gives each request the better of their chains, within adaptive verification and entirely on the GPU, which keeps asynchronous scheduling intact. The key idea is a price per verified draft token: the goodput that slot would earn elsewhere in the batch. Once the model-free drafter's tokens carry calibrated acceptance estimates, fit once on general text, this price puts both drafters' chains on one scale. Instantiated with \\dspark and an n-gram drafter in vLLM, \\sys achieves 1.10--1.62\\x the output throughput of \\dspark on code editing at batch size~4 and 1.04--1.27\\x at batch size~128, while staying at 0.97--1.01\\x of it on chat at temperature~0. A single deployment can therefore serve both workloads.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05611",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05611"
+      }
+    ],
+    "relevance_score": 0.2995220951269767,
+    "max_similarity": 0.11598278460946314
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05590",
+    "title": "Verified but Vacuous: Three Failure Surfaces of LLM-Driven Verified Code Generation",
+    "authors": [
+      "Aditya Vempaty, Himaneesh Sompalle, Manan Tayal, Mowafak Allaham, Prasenjit Dey, Ashish Jagmohan, Ravi Kokku"
+    ],
+    "abstract": "arXiv:2611.05590v1 Announce Type: new \nAbstract: What should ``verified'' mean when evaluating LLM-generated code? Many existing pipelines report a single verification number. We argue this collapses three distinct properties measured in a conditional audit sequence: verifier acceptance (Surface A), \\emph{syntactic specification binding (Surface B: does the proof obligation bind to the spec?), and \\emph{semantic specification fidelity} (Surface C: does the spec capture the informal requirement?). Two empirical demonstrations show the surfaces separate. \\textbf{First ($A \\neq B$), via Li@Opus (a same-model reproduction of \\citet{li2025dafny}'s Dafny-as-intermediate-representation (IR) pipeline under Claude Opus 4.7) on three Python benchmarks}: it reaches \\textbf{99.1\\% verifier acceptance} on HumanEval while only \\textbf{1.9\\%} carry a certificate binding to a spec-defined predicate or function. \\textbf{Second ($B \\neq C$), via VCG on two Rust benchmarks}: we use VCG (which is our own in-house Dafny-as-intermediate pipeline) on Rust because the Rust target lets us enforce fully-verifiable output (every component ships as a Dafny certificate, ensures-binding gate passing by construction). Even inside that construction, \\textbf{11.48\\% (MBPP-Rust) and 14.82\\% (VeriContest LC slice) of structurally-verified samples still fail hidden tests}. On the LC slice of VeriContest, \\textbf{VCG's reported End2End rate is 7.79\\% (535/6870).} The cited external rates are 5.51\\% (GPT-5.5) and 1.88\\% (single-shot Opus 4.7). These give descriptive differences of 2.3 percentage points and 4.14$\\times$, respectively; task-budget, repair and harness differences prevent a matched-performance claim.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05590",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05590"
+      }
+    ],
+    "relevance_score": 0.279926221951351,
+    "max_similarity": 0.09497638081620362
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05394",
+    "title": "A Feasibility Condition for Confidence-Gated Tiered LLM Inference",
+    "authors": [
+      "Sumit P. Ahuja"
+    ],
+    "abstract": "arXiv:2611.05394v1 Announce Type: new \nAbstract: Tiered inference distributes large language model computation across a hierarchy of devices, from on-device and edge hardware to the datacenter, and is increasingly offered as the route to cheaper, lower-latency, and more private serving. Most such systems orchestrate frozen model checkpoints, and most decide what to resolve locally and what to escalate using a confidence signal produced by a forward-deployed model. We give a closed-form condition for when no threshold on that signal makes a tiered cascade worthwhile relative to sending every query to the backstop. Modeling the routing decision as a binary test and separating local from escalation cost through an architecture cost ratio $\\kappa$, we derive a feasibility condition bracketed by a signal-free floor, below which a cascade is feasible at any signal quality, and a perfect-signal ceiling, above which none is. Read along the $\\kappa$ axis the condition inverts: where local compute is billed, cost binds, matching a recent empirical finding; where it is sunk, on decentralized hardware, feasibility becomes unconditional and signal quality instead sets what the cascade achieves. We turn the condition into three design requirements that existing trained-in primitives satisfy only in isolation, and we propose, as future work, a co-designed architecture and a protocol to test it. The condition and the inversion hold independently of that architecture; they are the paper's contribution.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 05 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05394",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05394"
+      }
+    ],
+    "relevance_score": 0.25204343545280306,
+    "max_similarity": 0.12077097239335707
+  }
+]
