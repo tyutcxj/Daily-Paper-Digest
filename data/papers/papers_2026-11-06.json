@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2611.07372",
+    "title": "EnvOpt: Automated Optimization for Agent Environments",
+    "authors": [
+      "Mingxuan Li, Huanzhi Mao, Qiuyang Mang, Hanchen Li, Joseph E. Gonzalez, Alex Dimakis"
+    ],
+    "abstract": "arXiv:2611.07372v1 Announce Type: new \nAbstract: An LLM agent's cost and success depend on its model, its harness, and its environment. In addition to the widely studied directions of parameter tuning and harness optimization, we propose the third direction: optimization over stationary environments. Agents are often deployed in rich environments shared by many tasks, such as a company's Slack workspace or a complex collection of data sources, documents or tickets. We call these environments stationary environments. We introduce EnvOpt, a method for automated end-to-end optimization of stationary environments for any given model and harness, using real or synthetic tasks without needing any graders or reference answers. On AutomationBench, EnvOpt reduces the cost of Claude Haiku 4.5 by 72.7% and raises its pass rate by 14.34%. The same environment transfers to Opus 5, cutting its cost by 68.1% with a 1.34% gain. Added on top of Meta-Harness's optimized harness for Haiku 4.5, it lowers cost by a further 83.4% and adds 11.17% accuracy over Meta-Harness alone. Across 5 benchmarks, EnvOpt significantly reduces the cost of agents while improving or maintaining pass rate, and is transferable to different models and different harnesses. We also discuss common successful and rejected environment optimization strategies during automated optimization. More broadly, our results show that how information is represented to an agent shapes both its cost and its success, making the environment worth optimizing in addition to the parameters and the harness.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07372",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07372"
+      }
+    ],
+    "relevance_score": 0.6030548768575409,
+    "max_similarity": 0.3712391706138885
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.06956",
+    "title": "Octopus: One Brain, Many Branches for Latent-KV Multi-Agent Reinforcement Learning",
+    "authors": [
+      "Tianming Sha"
+    ],
+    "abstract": "arXiv:2611.06956v1 Announce Type: new \nAbstract: Multi-agent LLM systems explore in parallel by spawning sub-agents with isolated context windows, whereas single-agent systems append every search and verification step into one growing trajectory. However, existing multi-agent frameworks duplicate prefix KV caches across branches, exchange findings by re-prefilling text summaries, and flatten or drop cross-branch dependencies during reinforcement learning (RL).\n  We introduce Octopus, a single-model multi-agent RL framework in which all threads share one backbone and coordinate over a GPU-resident directed acyclic graph (DAG) of KV states through five primitives (fork, read_thread, wait_threads, rewind, commit). Octopus combines three co-designed mechanisms: (1) Zero-Copy Radix Forking, which spawns branches as $\\mathcal{O}(1)$ cursor views over shared physical KV pages; (2) Attention-Only KV Mounting, which mounts a sibling thread's terminal KV blocks directly into full-attention layers while bypassing linear-recurrent states (Gated DeltaNet / Mamba-2), cutting off-task hijacking by $21\\times$ ($57.9\\% \\to 2.7\\%$) while retaining $92.2\\%$ of full-text mutual information at zero extra KV allocation; and (3) a Packed DAG-GRPO Trainer, which packs all episode branches into one block-sparse attention pass and assigns counterfactual branch credit via leave-one-branch-out marginal rewards.\n  Trained end-to-end with GRPO on Qwen3.5-4B over a sparse BM25 corpus, Octopus reaches $49.6\\%$ accuracy on BrowseComp-Plus ($+17.5$ points over single-agent GRPO at 143K context and $+12.5$ points over text-summary multi-agent RL) and $51.2\\%$ on OpenResearcher, outperforming dense-retrieval agents up to $250\\times$ larger while increasing training throughput $3.3\\times$ and cutting peak KV memory $2.8\\times$.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.06956",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.06956"
+      }
+    ],
+    "relevance_score": 0.5461203513706285,
+    "max_similarity": 0.29658359973052273
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07392",
+    "title": "WeLM-Image: A Unified Image Generation Model towards Visual Intelligence",
+    "authors": [
+      "Canmiao Fu, Chen Li, Guohui Zhang, Hao Lu, Hongyang Wei, Huadong Wu, Huaisong Zhang, Hubery Yin, Liyuan Cui, Qixin Yan, Tong Shao, Xiaoqiang Zhou, Xinhang Leng, Ying Zhang, Zhenhai Liu, Zhipeng Huang"
+    ],
+    "abstract": "arXiv:2611.07392v1 Announce Type: new \nAbstract: We present \\textbf{WeLM-Image}, a unified image foundation model that integrates multimodal understanding into text-to-image generation, instruction-guided editing, and multi-reference synthesis. Designed for single-GPU deployment in WeChat's large-scale consumer applications, the model processes text, reference images, and target latents as one interleaved sequence. A Mixture-of-Transformers (MoT) backbone combines shared attention with independent understanding and generation parameters to limit optimization interference. Equipping each path with Mixture-of-Experts (MoE) modules provides sparse capacity, with 31.7B stored parameters and approximately 5.4B generation parameters activated per target latent token. A generation-oriented data engine combines a knowledge-grounded visual vocabulary with large-scale visual clustering to balance semantic coverage and editing tasks, while training-time evaluation guides iterative data refinement. Bilingual annotations and verified editing supervision support progressive training up to native 1.5K resolution. We optimize generation and editing separately with rubric- and checklist-based rewards, then consolidate the specialized policies through noise-aware on-policy distillation. In the reported overall comparisons, the 1536-resolution model ranks first among the evaluated open-source models on PRISM-Bench, Qwen-Image-Bench, and UnicBench. MeanFlow-based few-step distillation yields WeLM-Image-Turbo, which generates a $1024\\times1024$ image in 4.98\\,s on a single NVIDIA H20 GPU using eight guidance-free steps.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07392",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07392"
+      }
+    ],
+    "relevance_score": 0.515586508185762,
+    "max_similarity": 0.2558152534610387
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07123",
+    "title": "PromptOps: Iterative Prompt Optimization for LLM-as-a-Judge Systems",
+    "authors": [
+      "Sven Kleinkop, Tam\\'as Janusko, Ricardo Bochnia, Gunnar Hempel, Steffen Tomschke, J\\\"urgen Anke, Maik Thiele"
+    ],
+    "abstract": "arXiv:2611.07123v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used as automated judges for evaluating the behavior of chatbots and other AI systems. In deployment, however, their agreement with the intended human evaluation policy may degrade as user interactions and score distributions change. Existing automatic prompt optimization methods are primarily studied as one-shot procedures on static development sets and therefore provide limited guidance for maintaining LLM judges over time. We frame this problem as judge drift and introduce PromptOps, a closedloop framework for monitoring and iteratively recalibrating LLM-as-a-Judge (LLMaaJ) systems. PromptOps separates four operational decisions: when to optimize, which optimization procedure to apply, which feedback records to use, and how to update the judge prompt. We instantiate the framework with five prompt optimization methods: GEPA, SIMBA, Rubric Synthesis, and exemplar selection using either simulated annealing or a Tree-structured Parzen Estimator. Our experiments demonstrate that iterative prompt optimization can recalibrate LLM judges and recover performance after controlled shifts in the referencescore distribution. However, effective maintenance is inherently contextdependent: neither optimization algorithm choice nor update timing generalizes universally across settings. These findings establish prompt optimization for deployed LLM judges as an inherently iterative maintenance problem and demonstrate that PromptOps provides a practical abstraction for studying and implementing this process.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07123",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07123"
+      }
+    ],
+    "relevance_score": 0.4953869731165756,
+    "max_similarity": 0.2367126324405062
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07408",
+    "title": "PSGAgent: Enhancing MLLMs' Dynamic Visual Perception for Panoptic Scene Graph Generation via Agentic Reasoning",
+    "authors": [
+      "Qingyun Liu, Yuankun Liu, Jiaye Feng, Jie Huang, Zonghong Dai, Haochen Li, Jingkun Wang, Weiping Li, Tong Mo"
+    ],
+    "abstract": "arXiv:2611.07408v1 Announce Type: new \nAbstract: Panoptic Scene Graph generation (PSG) requires holistic yet fine-grained reasoning over complex relations among objects. However, current Multimodal Large Language Models (MLLMs) applied to PSG suffer from a perception bottleneck: they function as static observers limited by fixed-resolution views. As a result, models often overlook critical relations involving small or peripheral objects and struggle to differentiate ambiguous predicates in complex scenes. To address these limitations, we propose PSGAgent, an agentic framework that enhances visual perception for PSG through a think-act-observe loop. PSGAgent allows MLLMs to dynamically refine their visual perception using two tools: a Region Zoom-In Tool for local exploration of small or boundary relations and a Visual Highlight Tool for relation-focused segmentation that filters out irrelevant contextual noise. To optimize decision-making, we construct a two-stage training pipeline. First, we create a high-quality, error-aware Multimodal Chain-of-Thought (M-CoT) dataset that provides robust supervision for cold-start learning. Then, we design a novel hierarchical reward mechanism integrated with Group Sequence Policy Optimization (GSPO) to enable strategic and adaptive tool usage. Extensive experiments on the PSG benchmark show that PSGAgent achieves SOTA performance, demonstrating strong capability in both holistic and fine-grained scene understanding.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07408",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07408"
+      }
+    ],
+    "relevance_score": 0.4903939435879471,
+    "max_similarity": 0.22327042323883148
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07508",
+    "title": "DelegateEval: Evaluating Platforms for Personal External Service Agents",
+    "authors": [
+      "Jichao Li, Jinrong Lu, Manjiang Yu, Zhixuan Liu"
+    ],
+    "abstract": "arXiv:2611.07508v1 Announce Type: new \nAbstract: AI agents that work for an individual over time may also help that individual serve external clients. We define a personal external service agent as an agent authorized and continuously managed by a specific individual to accept client requests, deliver work, and provide ongoing support using that person's knowledge, experience, professional methods, and service boundaries. Such agents could allow individuals to serve more clients with less direct involvement and generate economic value at scale. We propose DelegateEval, a platform-level evaluation framework for agent systems that may combine large language models, reusable skills, protocols such as MCP, and executable tool environments. It covers eight dimensions: ease of creation, service discovery and matching, delivery quality, expertise inheritance, service continuity, learning and improvement, reliability and governance, and efficiency and value. These dimensions assess whether a platform enables people with different backgrounds to turn their expertise into ongoing services that deliver verifiable work, develop capabilities through experience, and remain economically feasible. We present the framework and an experimental design. Complete datasets, executable environments, a unified scoring protocol, and cross-model results remain to be developed and empirically validated.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07508",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07508"
+      }
+    ],
+    "relevance_score": 0.4510964826324507,
+    "max_similarity": 0.17927994508625536
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.06972",
+    "title": "KDASO: Knowledge-Data Dual-Driven Automated Skill Optimization for Liability Adjudication Tasks",
+    "authors": [
+      "Zi-Jian Cheng, Weiming Wu, Jie Meng, Zhen Peng, Shan Huang, Qun Li, Guobing Wu, Lan-Zhe Guo"
+    ],
+    "abstract": "arXiv:2611.06972v1 Announce Type: new \nAbstract: Liability adjudication tasks (e.g., legal charge determination) require analyzing event descriptions against domain-specific skills to determine whether a party should bear liability. While Large Language Models (LLMs) have shown promise in this area by leveraging executable skills for interpretable reasoning, existing approaches face three critical limitations: skill libraries become stale as real-world scenarios dynamically evolve, skill descriptions often suffer from a semantic execution gap where LLMs deviate from intended expert logic, and growing skill collections exceed context budgets causing critical skill omission. To address these challenges, we propose Knowledge-Data Dual-Driven Automated Skill Optimization (KDASO), which continuously evolves a skill library through neighborhood-conditioned induction from recent adjudication data, execution-aligned refinement based on LLM trajectory analysis, and context-budgeted routing for scalable skill selection. Experiments across ride-hailing adjudication, legal liability determination, and logical reasoning judgment demonstrate that KDASO significantly outperforms current general-purpose and domain-specific baselines. KDASO further achieves 8.96% improvement when transferring skills to concept-similar scenarios and maintains consistent performance gains through continuous optimization, underscoring the high transferability and stability of generated skills.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.06972",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.06972"
+      }
+    ],
+    "relevance_score": 0.44942406072632013,
+    "max_similarity": 0.17763996617841102
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07122",
+    "title": "Regulating Autonomous Mobility-on-Demand Operators with Fixed and Adaptive Penalties: A Multi-Agent Reinforcement Learning Approach",
+    "authors": [
+      "Korbinian K\\\"ugler, Carolin Schmidt, Florian Dandl, Filipe Rodrigues"
+    ],
+    "abstract": "arXiv:2611.07122v1 Announce Type: new \nAbstract: Profit-maximizing Autonomous Mobility-on-Demand (AMoD) operators may exploit consumer surplus through excessive prices and underserve less profitable regions by relocating vehicles away from them. We study how penalty-based regulation of an AMoD operator in a multimodal mobility system can limit surge pricing and improve regional service availability. We model regulation as an outer control loop that acts on a learning-based operator. Static regulation with fixed penalties is formulated as a Markov Decision Process for an operator that jointly controls pricing and rebalancing, and dynamic regulation as a Partially Observable Stochastic Game in which a regulator periodically adjusts region-specific penalties in closed loop. Operator and regulator policies are learned with graph-based multi-agent reinforcement learning. In experiments with real-world Manhattan data, fixed surge pricing penalties reduce the share of travelers facing excessive prices from 22% to 1%. For regional service availability, dynamic regulation improves the regulator's reward by up to 15.6% over fixed penalties of equal mean intensity. The gains in service availability are strongest when spare fleet capacity exists, whereas service deficits persist in peak periods with highly utilized fleets. The learned regulator policy responds by reducing penalties where limited fleet capacity restricts compliance. The results identify trade-offs between regulatory targets, operator profitability, and traveler utility.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07122",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07122"
+      }
+    ],
+    "relevance_score": 0.4291936711635538,
+    "max_similarity": 0.1523167469458997
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.06984",
+    "title": "Resource-Efficient Reinforcement Learning Post-Training through Elastic Expert Parallelism",
+    "authors": [
+      "Jia Wei, Ziyi Qiu, Yi Xu, Xuehai Qian"
+    ],
+    "abstract": "arXiv:2611.06984v1 Announce Type: new \nAbstract: Reinforcement learning post-training improves the capabilities of large language models, but generating training responses is a major computational bottleneck. In mixture-of-experts models, workers that finish their assigned responses may remain occupied because their experts are still needed by workers processing longer responses. Consequently, approximately one-third of occupied worker time in the baseline occurs after local response generation finishes. Here we present FlexFloor, a system that enables earlier resource release during synchronous response generation while preserving the expert computation required by ongoing responses. FlexFloor jointly adapts response scheduling and the active group of workers. It uses historical response lengths and memory constraints to guide batching and prompt placement, then progressively releases workers while maintaining expert availability and correct communication. Compared with the verl baseline, FlexFloor generates approximately 65.40% more response tokens per unit of occupied computing time and increases response generation throughput by 52.74%, with little observed variation in rollout reward. By making reinforcement learning post-training more efficient, FlexFloor supports faster development and iterative improvement of large language models and AI agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.06984",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.06984"
+      }
+    ],
+    "relevance_score": 0.42912861365980076,
+    "max_similarity": 0.15313983136334716
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07103",
+    "title": "A Night at the LLM Zoo: Data Conditioned Flow Matching for Generating Pretrained LLM Weights",
+    "authors": [
+      "Scott Biggs, Bedionita Soro, Saumya Gupta, Bruno Andreis, Sung Ju Hwang"
+    ],
+    "abstract": "arXiv:2611.07103v1 Announce Type: new \nAbstract: A challenge to Weight Space Learning as it expands from task specific and vision models to Large Language Models (LLMs) is the absence of a well curated and analyzed LLM population. To address this, we train such a model zoo for application to Weight Space Generation by systematically varying the data mixture composition between web text, books, mathematics, coding, and French across populations of 51M, 124M, and 355M parameter GPT-2 Models, each tier with count N = 100. We analyze these populations by cosine similarity, functional diversity, Leave-One-Mixture-Out modeling, and variance decomposition. We show that the zoo contains diverse models whose variation is structured by training mixture composition. We embed the training mixture composition to condition a Flow Matching model of complete pretrained LLM weights in Gram-PCA compressed weight space. By demonstrating zero-shot generalization to held out mixtures, measuring Continuous Ranked Probability Score skill, as well as finding minimal changes in downstream test-set perplexity and general capability benchmark scores, we show that our generator generalizes on the simplex of data mixtures to produce models that perform similarly to those in the zoo ex nihilo. Finally, we produce all source code and artifacts to support the continued expansion of Weight Space Learning and Generation into the LLM domain.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07103",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07103"
+      }
+    ],
+    "relevance_score": 0.42064240526731217,
+    "max_similarity": 0.14075262126697746
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07093",
+    "title": "Server-Side Sparse Assignment for Federated Mixture-of-Experts",
+    "authors": [
+      "Xue Zheng, Aylin Yener"
+    ],
+    "abstract": "arXiv:2611.07093v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly recognized for their remarkable capabilities; federated learning (FL) offers a promising framework for collaboratively fine-tuning LLMs on edge devices while achieving data privacy. However, edge devices are inherently heterogeneous: clients may exhibit diverse data distributions and resource constraints, including limited memory and computation budgets. Recent federated Mixture-of-Experts (MoE) approaches address these challenges by using sparse expert activation or partial expert loading. However, existing partial-expert methods rely on heuristic full-pool observations or prioritize system-wide load balance, without guarantees for recovering client-specific relevant experts from partial observations. We propose $S^3$-MoE, a server-side sparse expert assignment framework that estimates client-specific expert relevance from partial observations and refines assignments through an exploit--explore mechanism. We also establish relevance-estimation error and exact Top-$K$ recovery guarantees. Experiments using a CNN-based MoE on CIFAR-100 show that $S^3$-MoE recovers task-dependent client--expert preferences and reduces conflicts caused by correlated expert selection across clients. Compared with Full-20 FedAvg, which gives each client access to all 20 experts for local Top-5 routing, $S^3$-MoE achieves 1.31 percentage points higher mean final accuracy while loading only $5$ experts per client.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07093",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07093"
+      }
+    ],
+    "relevance_score": 0.4202850241727999,
+    "max_similarity": 0.14370552785247503
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.06993",
+    "title": "Batch-Conditioned Semantic Anchors for Robust Transductive Adaptation of Vision--Language Models",
+    "authors": [
+      "Mohammed Rahman Sherif Khan Mohammad, Ardhendu Behera, Sandip Pradhan, Swagat Kumar, Amr Ahmed"
+    ],
+    "abstract": "arXiv:2611.06993v1 Announce Type: new \nAbstract: Transductive adaptation improves vision-language models at test time by refining predictions on an unlabeled batch, but current methods face a key trade-off. Aggressive approaches exploit batch structure but can drift when batches are sparse, have prior shift, or cover little of the label space. Conservative methods better preserve CLIP text semantics, but fixed semantic references can under-adapt even when the batch provides strong corrective evidence. We propose JPTA (Joint Prior and Transport Adaptation), a prior-aware framework that casts transductive VLM adaptation as batch-conditioned semantic reference estimation. Instead of treating CLIP text prototypes as fixed priors or freely replaceable, JPTA views them as semantic references that shift toward image-side batch structure only under calibrated evidence. It estimates batch priors and soft image-side prototypes to form transported semantic references whose impact is scaled by batch reliability. Across standard benchmarks, low effective-class regimes, all-class evaluation, and online streams, JPTA consistently outperforms TransCLIP and StatA, with the largest gains on sparse and prior-shifted batches. Anchor-drift, active-support, and absent-class-mass diagnostics show that JPTA fixes effective-class mismatch without unconstrained transductive drift, indicating that robust transductive VLM adaptation should recalibrate semantic references using reliable batch evidence rather than choose between unrestricted transduction and fixed prototypes. Code is available at https://github.com/MR-Sherif/JPTA.git.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.06993",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.06993"
+      }
+    ],
+    "relevance_score": 0.415705105953588,
+    "max_similarity": 0.13481242020666037
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.05517",
+    "title": "When to Ask, When to Answer: Strategic Clarification for Ambiguous Reference Resolution in Dialogue",
+    "authors": [
+      "Ibrahim Khebour, Nikhil Krishnaswamy"
+    ],
+    "abstract": "arXiv:2611.05517v1 Announce Type: new \nAbstract: For humans, referential disambiguation is a collaborative process involving clarification questions asked when they will meaningfully change the outcome. However, large language models (LLMs) have been shown to be biased toward premature answering, preferring definite single-turn responses over more clarification exchanges. In this paper, we study the problem of \"strategic clarification\" -- asking clarification questions in a reference game when their answers will narrow the set of candidate referents. We construct a controlled test environment from the SIMMC 2.1 dataset that records how many questions each ambiguous reference needs to be successfully resolved, and examine how baseline LLM behavior and common post-training methods ask clarifying questions vs. attempt to answer the referent. We also propose BACE (Belief-Aware Critic with Epistemic tracking), a lightweight action chooser method on top of a frozen LM backbone, and show that BACE more consistently chooses the optimal number of clarifying questions than methods such as GRPO and ArCHer.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.05517",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.05517"
+      }
+    ],
+    "relevance_score": 0.41238351142876156,
+    "max_similarity": 0.1324069904550563
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.06989",
+    "title": "The Two-Ledger Model: Transaction-Grain Cost Accounting for Multi-Agent AI Systems Across Clouds, Models, and Systems of Record",
+    "authors": [
+      "Vivek Acharya"
+    ],
+    "abstract": "arXiv:2611.06989v1 Announce Type: new \nAbstract: Enterprises run business transactions through multi-agent AI systems spanning clouds, large language models (LLMs), orchestration harnesses, and systems of record. Finance receives AI cost only at settlement grain, aggregated by SKU and charge period. The business question (what did this order, claim, or case cost in AI?) cannot be answered from billing data, because providers never see enterprise transaction boundaries. The FinOps Open Cost and Usage Specification (FOCUS) gives billing data one schema across providers but remains settlement-grain even as it adds AI token and requester attribution. We formalize this grain mismatch, derive seven requirements, and propose the Two-Ledger Model: a settlement ledger of FOCUS-conformant billing data joined to an attribution ledger of invocation-grain usage records built on OpenTelemetry GenAI telemetry. A layered correlation spine (trace context, A2A/MCP metadata, business-key correlation, probabilistic matching) assigns each record to its business transaction with recorded method and confidence; a versioned rate card prices usage in near real time; period reconciliation ties both ledgers to the invoice, and the unexplained residual identifies shadow AI. Costs are reported per order, claim, or outcome with agentic cost metrics. A simulation with known ground truth shows the spine sustaining cost coverage above 99% as trace propagation falls to zero, the reconciliation residual recovering planted unmetered spend within 0.24 percentage points while flagging provider billing errors, and mid-flight gating cutting p99 transaction cost by up to 61% at a 2-4% false-pause rate. We propose the attribution ledger as an invocation-grain FOCUS profile for standardization.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.06989",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.06989"
+      }
+    ],
+    "relevance_score": 0.4099343561469935,
+    "max_similarity": 0.12945054384374505
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07073",
+    "title": "When Verification Is Not Agreement: Cross-Agent LLM-to-Dafny Formalization",
+    "authors": [
+      "Priyanath Maji"
+    ],
+    "abstract": "arXiv:2611.07073v1 Announce Type: new \nAbstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning. We introduce a cross-agent formalization protocol where a Specifier model translates clinical trial criteria into a Dafny predicate, and an Implementer model writes an operational method checked against it. A same-model control establishes that even with no capability gap, independent re-extraction from identical text agrees only 59.3% of the time. Evaluating four model configurations on 96 clinical trial documents, we find that agreement is highly sensitive to how model capability is allocated across the two roles: the GPT-4.1-nano/GPT-4.1-mini configuration achieves 53.0% agreement when the stronger model is the Implementer, but only 14.3% when the roles are reversed. The strongest tested configuration, GPT-5.6-luna/GPT-5.4-mini, improves agreement to 34.4% but remains below the same-model baseline and is dominated by direct contradiction (42.7%). We also detect a critical verification artifact in which a weaker Implementer satisfies the postcondition by invoking the Specifier's predicate directly; after structural auditing, corrected agreement falls from 14.3% to 13.2%. Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07073",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07073"
+      }
+    ],
+    "relevance_score": 0.40766971308569006,
+    "max_similarity": 0.12841609383756522
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.06953",
+    "title": "SteelAgent: LLM-Orchestrated, Physics-Informed Steel Property Prediction with Audited Generalization and Calibrated Uncertainty",
+    "authors": [
+      "Aleksandr Volkov, Roman Sultimov, Mikhail Kuzin, Yury Maximov"
+    ],
+    "abstract": "arXiv:2611.06953v1 Announce Type: new \nAbstract: Steel property models can perform well on random test splits even when they extrapolate poorly to unfamiliar alloys. SteelAgent couples metallurgical descriptors and machine-learning models with a language-model interface for property prediction, uncertainty reporting and inverse design. We examine how the choice of held-out unit changes the conclusions drawn from SteelBench tensile-strength evaluations. For gradient boosting, pooled out-of-fold $R^2$ fell from 0.859 on a random split to 0.113 when steel families were held out. Empirical coverage of nominal 90% prediction intervals ranged from 91.0% under random splitting to 37.6% on held-out sources. The effect of physics-derived features depended on the evaluation. They increased gradient-boosting $R^2$ by 0.2534 in a 17-family holdout analysis and decreased it by 0.358 in a separate four-grade laboratory analysis. We report group-level errors and a synthetic regression experiment illustrating how calibration can deteriorate on held-out groups. These results motivate reporting the evaluation population alongside a property estimate or compliance score.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.06953",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.06953"
+      }
+    ],
+    "relevance_score": 0.39027542522938885,
+    "max_similarity": 0.10747002090960393
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07065",
+    "title": "Stochastic Dynamics of Generative AI: From Autoregressive Models to Interacting LLM Networks and Neural SDEs",
+    "authors": [
+      "Vikram Krishnamurthy, Yiming Zhang, Luke Snow"
+    ],
+    "abstract": "arXiv:2611.07065v1 Announce Type: new \nAbstract: This paper develops a stochastic dynamical-systems perspective on three classes of generative AI models. First, we formulate large language models (LLMs) as high-dimensional nonlinear autoregressive models with attention-based dependencies. This formulation connects pretraining by conditional maximum likelihood to sequential token generation and provides a probabilistic interpretation of LLM operation. Second, we consider networks of interacting LLMs and characterize their collective behavior through mean-field ordinary differential equations. These dynamics provide a framework for understanding emergent preferential attachment and persistent structural biases, including type-dependent glass-ceiling effects. Third, we consider neural stochastic differential equations (SDEs) as continuous-time generative models for stochastic trajectories, including those observed at irregular time intervals. We discuss their training with particular emphasis on Wiener-space cubature methods based on rough-path analysis as an efficient alternative to Monte Carlo estimation. Together, the three settings address probabilistic prediction, information exchange and emergent behavior in interacting networks, and path-space generative modeling.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07065",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07065"
+      }
+    ],
+    "relevance_score": 0.38560419399316104,
+    "max_similarity": 0.09859656812276459
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07069",
+    "title": "Finite-Time Convergence and Regret Guarantees for Neural Reinforcement Learning in POMDPs",
+    "authors": [
+      "Jingjuan Huang, Zhiyao Zhang, Alvaro Velasquez, Nathaniel D. Bastian, Jia Liu"
+    ],
+    "abstract": "arXiv:2611.07069v1 Announce Type: new \nAbstract: Reinforcement learning (RL) in Partially Observable Markov Decision Processes (POMDPs) is computationally challenging due to the curse of long-range dependence on history. Fortunately, recent studies have shown that a range of POMDPs that satisfy the filter stability assumption can be well approximated by a superstate Markov Decision Process (MDP) based on a truncated history in a finite-memory window, with a value gap that decays with the window length. However, existing finite-time convergence analyses on such superstate MDP surrogates are either limited to over-simplified linear function approximation or rely on an i.i.d. sampling oracle that is violated by POMDP trajectories, both of which severely limit the applicability of these theoretical results in practice. This motivates us to bridge the gap by investigating RL in POMDPs with nonlinear neural value function approximation. Our main contributions are threefold: i) We first establish a new finite-state MDP point-wise approximation error bound, which lays the foundation for our RL algorithm design and analysis in POMDPs; ii) By applying Temporal-Difference (TD) learning to POMDP-generated superstate transitions and targeting the Bellman fixed point of the superstate MDP, we prove a finite-time critic error bound with nonlinear neural value function approximation; and iii) By combining the neural critic function approximation error bound with the policy mirror descent framework, we obtain a finite-time sublinear regret against the optimal POMDP value. To the best of our knowledge, such a finite-time sublinear regret based on neural function approximation is the first in the literature for finite-memory POMDPs. Our numerical experiments also verify our theoretical results.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07069",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07069"
+      }
+    ],
+    "relevance_score": 0.36563564375716934,
+    "max_similarity": 0.1377939465609531
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.06977",
+    "title": "BlockLock: Reproducible LLM Inference with Fixed Batch Geometry",
+    "authors": [
+      "Xiuyuan Qi, Pedro Reviriego, Javier Conde, Shanshan Liu"
+    ],
+    "abstract": "arXiv:2611.06977v1 Announce Type: new \nAbstract: Reproducible LLM inference requires that a request produces the same output regardless of the other requests in the batch. Existing solutions pay for this in different ways: batch-invariant kernels constrain every operator, and isolating prefill with fixed-shape decode ({our CoRun-style baseline}) gives up shared prefill compute and pads decode. We present BlockLock, which keeps shared batched prefill and pins only the numerical path of the protected request: it fixes the geometry that the request sees, with {two modes: BlockLock-Rows uses fixed-width rows and retains batched decode of all requests; BlockLock-Pack uses terminal-anchored packing with an isolated dummy segment, then extracts the protected request's KV state for target-only decode. Under a stated per-deployment contract, both modes preserve the target's output bitwise when its companions change.} Across five {dense} models (Qwen3-8B/14B, Llama-3.1-8B-Instruct, and Gemma-3-4B/12B-IT) and three single-GPU deployments (NVIDIA A6000, A100, and H100), we evaluate our approach on both tinyBenchmarks and BFCL{; we also include initial tensor-parallel experiments on two NVIDIA A6000 GPUs. Both modes preserve target sequences and Top20-logit bits in the reported tests.} At equal delivered work, {BlockLock-Rows} reduces latency by 53.5--55.0\\% and improves throughput by 115.2--122.2\\% relative to vLLM Batch-Invariant; compared with batch-invariant kernels, it needs no custom kernel implementations and constrains only the protected requests.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.06977",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.06977"
+      }
+    ],
+    "relevance_score": 0.36044472992023757,
+    "max_similarity": 0.13282373985266321
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.07188",
+    "title": "MammoSeek: A Mammography Agent with selective zooming for grounded reports",
+    "authors": [
+      "Haoyan Ding, Qian Wang, Lixia Wang, Debiao Li"
+    ],
+    "abstract": "arXiv:2611.07188v1 Announce Type: new \nAbstract: Radiologists read a screening mammogram by first forming a global impression of the four views and then selectively magnifying suspicious regions before assigning a BI-RADS assessment. MLLMs, in contrast, see the whole image at a fixed, reduced resolution, which makes sub-millimeter calcifications invisible, and they perform close to chance on mammography. Therefore, we present MammoSeek, a mammography agent that reproduces this reading process. After forming an impression of each breast, the agent performs selective zooming: it decides by itself which detector candidates deserve a closer look and inspects only those on full-resolution views. Guided by a BI-RADS assessment skill, it then assigns a category and generates a localized, lexicon-structured report for each breast; its assessment is combined with image-model scores in a decision layer to decide recall. On an internal (EMBED) and an external (VinDr-Mammo) dataset, \\ours reaches exam-level AUCs of 0.824 and 0.818, far above other MLLMs, mammography agent and CNN classifiers. Selective zooming also outperforms both no zooming and forced zooming in localization, structured-report F1 and recall decisions at low cost.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 06 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.07188",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.07188"
+      }
+    ],
+    "relevance_score": 0.2880354634825783,
+    "max_similarity": 0.10279133215517287
+  }
+]
