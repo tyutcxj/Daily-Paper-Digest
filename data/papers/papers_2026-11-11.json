@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2611.12990",
+    "title": "Multimodal Graph Learning: A Survey of Models, Benchmarks, and Frontiers",
+    "authors": [
+      "Rui Xue, Tianfu Wu"
+    ],
+    "abstract": "arXiv:2611.12990v1 Announce Type: new \nAbstract: Multimodal attributed graphs (MAGs), in which nodes carry text, images, and other modalities while edges encode relations among entities, underlie e-commerce, social media, content platforms, and creative applications. Learning on MAGs has developed along two complementary lines: graph-centric methods redesign how modalities are fused, propagated, and connected within message passing, while foundation-model-centric methods pretrain transferable multimodal graph encoders or bring graph context into multimodal large language models for prediction and generation. In parallel, several benchmarks have appeared with different datasets and evaluation protocols. This survey takes an algorithm-centric and evaluation-grounded view of the field and makes three contributions. Modeling: we introduce a unified message-passing formulation and organize methods into five integration levels (feature, propagation, topology, learning, and foundation model), covering discriminative and graph-conditioned generative models; within this formulation we derive representative methods as special cases, compare their assumptions, expressiveness, and cost, and identify cross-modal sensitivity as a property that separates otherwise similar architectures. Datasets and evaluation: we review recent benchmarks, summarize their datasets and metrics, define model-independent descriptors (label homophily, average degree, clustering, and edge provenance), and map each evaluation protocol to the baselines it uses. Frontiers: we connect multimodal graph learning to AI agents, covering the multimodal graphs that agents perceive and remember and graph engineering, the practice of organizing agent workflows as explicit graphs; we then discuss open problems, concrete efforts for the community, and research directions, including when graph structure helps in the presence of strong multimodal foundation models.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12990",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12990"
+      }
+    ],
+    "relevance_score": 0.5447402232777558,
+    "max_similarity": 0.292738143849911
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12938",
+    "title": "Graph Visualizations in Prompts for Knowledge Graph Question Answering",
+    "authors": [
+      "Luiz do Valle Miranda, Andreas L. Opdahl, Grzegorz J. Nalepa"
+    ],
+    "abstract": "arXiv:2611.12938v1 Announce Type: new \nAbstract: We study when and how multimodal input improves knowledge graph question answering (KGQA) in large vision--language models. Using a controlled evaluation over 1,500 WebQSP and CWQ questions and six VLMs within a fixed KGQA pipeline, we compare text-only prompting against text-plus-graph visualization at the per-question level and analyze performance changes as a function of reasoning complexity, model size, and image layout. Adding a graph image yields an average gain of 1.85 F1 points, driven by strong precision improvements on low-complexity questions (+4.65 F1). Mixed-effects and regression analyses show that these multimodal gains do not depend strongly on model scale, but are highly sensitive to graph layout: image-only settings sharply degrade performance, hierarchical Graphviz layouts outperform less organized renderings, and decomposing large subgraphs into separated paths yields the largest improvements. Taken together, the results indicate that visual prompting primarily aids KGQA by enhancing prediction precision in low-complexity contexts, provided that visual design respects cognitive and perceptual constraints. To optimize both accuracy and inference efficiency, we argue for adaptive visual prompting policies that selectively append diagrams to small, visually sparse subgraphs with well-structured layouts, avoiding unnecessary visual clutter and token overhead on complex queries. We conclude by relating these findings to a visual notation design theory, outlining how principled diagram encoding can guide future multimodal VLM prompting.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12938",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12938"
+      }
+    ],
+    "relevance_score": 0.49999383094455296,
+    "max_similarity": 0.2365770131340508
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.13028",
+    "title": "GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
+    "authors": [
+      "Jiajun Chen, Shicheng Fang, Jiahao Lu, Yuxin Wang, Xipeng Qiu"
+    ],
+    "abstract": "arXiv:2611.13028v1 Announce Type: new \nAbstract: AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). We introduce GTAGym, an environment and framework for evaluation and RL on GTA V tasks. Its evaluation benchmark, GTAVBench, derived from GTA V main-story missions, contains 103 online tasks reconstructed across nine task families, alongside 47 image-based shooting and sniping tasks using GTA V imagery. A web server provides access to the online environment and evaluation interface, supporting parallel testing through screenshots and keyboard-mouse actions with automatic engine-state outcome checks. We evaluate six frontier LLMs on GTAVBench with textual task instructions and on its GTAVBench-AGI branch, where instructions appear only in the first screenshot and a harness automatically compresses interaction history. The best configuration achieves 70.9% overall accuracy in GTAVBench-AGI, yet aerial navigation, evasion and interception remain difficult. GTAGym also provides a scalable generator that samples task parameters within user-specified ranges and option sets under fixed templates, creating batches of 3D and image-based shooting environments for RL with automatic reward and termination signals. LoRA RL of Qwen3.8-27B on generated on-foot navigation tasks improves the in-domain performance and transfers to out-of-domain task categories, and native GTA V tasks from 15% to 23%.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.13028",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.13028"
+      }
+    ],
+    "relevance_score": 0.48345099867403807,
+    "max_similarity": 0.2182912479502689
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12953",
+    "title": "Agent Architecture Cost-Success Trade-offs: A Controlled Evaluation across Enterprise-Style SOPs",
+    "authors": [
+      "Subhrangshu Nandi, Hitesh Arora, Yunfei Bai, Udita Patel, Chirag Shah, Hannah Kwon, Wei Zhang, Weian Chen, Chloe Ruoqi Li, Alberto Sconfienza, Ayush Goyal, Yasmine Lee, Ming Xiong, Prathap Ramachandra"
+    ],
+    "abstract": "arXiv:2611.12953v1 Announce Type: new \nAbstract: Enterprises increasingly use large language model agents to execute standard operating procedures (SOPs): long, branching, tool-intensive workflows. Yet there is little controlled evidence for choosing among competing agentic architectures. Holding the model, tasks, and tools fixed and varying only the architecture, we compare four designs (a function-calling single agent, a skill-augmented agent, centralized multi-agent orchestration, and a triage swarm; eight arms) across 13 enterprise SOPs, and introduce a skill-definition quality rubric to build matched high and low-quality skill corpora. Three takeaways emerge. (1)~\\textbf{There is no universal best architecture; the right choice is SOP-dependent.} On a given SOP, task success ranges from under $10\\%$ on the hardest to near $100\\%$ on the easiest; no architecture is statistically separable in aggregate, and added structure only plausibly pays off on complex, branching SOPs (a directional, not yet significant, trend). (2)~\\textbf{Added architecture cost must be justified by a task-success gain.} Every coordinated arm (multi-agent or skill-augmented) spends $1.4$--$4.7\\times$ the tokens and $2.6$--$5.8\\times$ the latency of the single agent for gains that are usually small and rarely significant, making the single agent the efficient default; high-quality skills do lift success (to $73.1\\%$ from $67.4\\%$) while degraded skills fall below it. (3)~\\textbf{Implementation quality outweighs the single- versus multi-agent choice.} A plausible multi-agent implementation loses to the single agent, yet a targeted redesign of it becomes the only arm to significantly beat the baseline ($75.6\\%$ vs.\\ $67.4\\%$).",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12953",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12953"
+      }
+    ],
+    "relevance_score": 0.4677534800186879,
+    "max_similarity": 0.26185664387237384
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12936",
+    "title": "LandslideFM: A Foundation Model Towards Unified Landslide Perception and Understanding",
+    "authors": [
+      "Shanwen Wang, Sirui Wang, Xin Sun, Jungong Han"
+    ],
+    "abstract": "arXiv:2611.12936v1 Announce Type: new \nAbstract: Intelligent landslide detection is essential for disaster prevention. However, existing models primarily focus on isolated visual tasks, require extensive labeled data, and lack deep analytical and scene-understanding capabilities. To address these limitations, we propose LandslideFM, the first unified foundation model that connects visual perception tasks with contextual interpretation of landslides. Specifically, LandslideFM adapts to multiple visual tasks via a Source-Agreement Graduated Trust semi-supervised learning framework that leverages limited labeled data alongside abundant unlabeled data. Furthermore, predicted landslide regions provide explicit spatial guidance to a Vision-Language Model adapted through parameter-efficient fine-tuning, enabling comprehensive landslide reasoning. To support training and evaluation in this domain, we also present LandslideVL, the first benchmark for intelligent landslide analysis, combining visual imagery and newly introduced textual prompts. Comprehensive experiments across public datasets and LandslideVL demonstrate that LandslideFM achieves superior quantitative and qualitative performance. Most importantly, LandslideFM surpasses general-purpose VLMs in specialized landslide reasoning and scene analysis. Our code is released at https://github.com/wangshanwen001/LandslideFM.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12936",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12936"
+      }
+    ],
+    "relevance_score": 0.4568748250996524,
+    "max_similarity": 0.18149180027348422
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.13000",
+    "title": "PhysMoE: Fast Spatial Grounding with Single-Token Coordinate Representation in Modality-Decoupled VLMs",
+    "authors": [
+      "Ruimeng Liu, Denan Liang, Ruofei Bai, Fuming Zhang, Kuan Xu, Shenghai Yuan, Lihua Xie"
+    ],
+    "abstract": "arXiv:2611.13000v1 Announce Type: new \nAbstract: Embodied Vision-Language Models (VLMs) are backbones for robotic planning and manipulation. However, for coordinate prediction in grounding tasks, existing architectures suffer from two distinct bottlenecks: discrete tokenization disrupts spatial continuity with high decoding latency, while standard point regression fails on multi-contact affordances and irregularly shaped targets. To resolve these challenges, we propose PhysMoE, introducing three core contributions: (1) sharing lower layers for multimodal context while routing upper layers to specialized spatial (pixel) and linguistic (text) experts by physical modality, eliminating gradient interference; (2) encoding each coordinate as a single token by reusing the visual encoder's learned positional embeddings, injecting 2D spatial priors to natively align coordinates with visual features and ease training; and (3) differentiable Signed Distance Field (SDF) supervision on pointing, accommodating affordances and irregular geometries without costly mask decoders. Compared to the base model, PhysMoE achieves a 15.7% average gain and an 8.31x throughput speedup across 9 coordinate-based grounding benchmarks (trajectory, affordance, and localization), while preserving multimodal understanding and reasoning across 11 text-based embodied benchmarks.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.13000",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.13000"
+      }
+    ],
+    "relevance_score": 0.4541692123347918,
+    "max_similarity": 0.18230710100166936
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12975",
+    "title": "Attribute-Evidence Learning with Multimodal Prompt for Generalized Category Discovery",
+    "authors": [
+      "Wei Zhang, Zhu Teng, Zhixiang Chi, Junnan Zou, Wenxin Luo, Linfeng Ye, Jianping Fan, Konstantions N. Plataniotis"
+    ],
+    "abstract": "arXiv:2611.12975v1 Announce Type: new \nAbstract: Generalized category discovery (GCD) aims to discover novel categories from unlabeled data by leveraging limited labeled samples from old classes. Existing methods that rely solely on visual cues often neglect the multimodal nature of human perception, prompting recent approaches to incorporate textual information such as category tags and attributes. However, these approaches typically entangle global tags and local attributes within a shared global image representation, rendering attributes unreliable and potentially providing misleading cues that can drive the model toward incorrect predictions. To this end, we propose AptM-GCD, a novel multimodal framework that exploits apt textual guidance through attribute evidence learning and multimodal prompt reasoning. Specifically, we design an Attribute-Evidence Learning (AEL) mechanism that treats attributes as localized visual evidence rather than global category descriptors. By interacting attribute embeddings with patch-level visual tokens, AEL identifies reliable attribute-related regions and extracts discriminative local evidence, thereby reducing the impact of noisy or irrelevant attribute cues. Building upon the extracted evidence, we further develop a Multimodal Prompt Learning (MPL) mechanism to bridge local attribute semantics and global visual understanding. MPL converts fine-grained textual evidence into visual prompts and injects them into a multimodal prompt transformer, enabling attribute information to enhance category discrimination through contextual reasoning without enforcing direct global alignment between modalities. Extensive experiments on six datasets demonstrate that AptM-GCD consistently achieves SoTA performance across both fine-grained and generic benchmarks. Moreover, the proposed framework exhibits strong generalization ability, delivering consistent gains under unimodal and class-imbalanced GCD settings.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12975",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12975"
+      }
+    ],
+    "relevance_score": 0.45191623378820545,
+    "max_similarity": 0.17622777500704107
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12997",
+    "title": "TIB: Sample-wise Tempered Information Bottleneck for Multimodal Attribution beyond Alignment Assumption",
+    "authors": [
+      "Qiming Huang, Peixi Liu, Jianbo Jiao"
+    ],
+    "abstract": "arXiv:2611.12997v1 Announce Type: new \nAbstract: Multimodal (e.g. vision-language, in this work) attribution aims to interpret the models without access to ground-truth explanatory supervision. Existing multimodal attribution methods typically rely on paired modalities as proxy supervision, implicitly assuming that image-text pairs are semantically aligned. Information bottleneck (IB)-based attribution methods follow this general paradigm and instantiate it through a global sufficiency-compression objective. In realistic multimodal datasets, however, this assumption is frequently violated due to partial semantic misalignment and unreliable cross-modal correspondences. Through theoretical analysis, we show that, under such misalignment, information-bottleneck-based attribution objectives exhibit a structural limitation: by assuming equal reliability across all proxy supervision signals, they induce posterior over-contraction and forced explanations. To address this issue, we propose TIB, a sample-wise Tempered Information Bottleneck framework that adaptively modulates attribution strength according to cross-modal reliability, without assuming semantic alignment. Extensive experiments on controlled benchmarks and large-scale datasets show the effectiveness of the proposed approach, while also validating the identified failure mode.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12997",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12997"
+      }
+    ],
+    "relevance_score": 0.44625294842636914,
+    "max_similarity": 0.17320141009648604
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12934",
+    "title": "EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery",
+    "authors": [
+      "Haoran Zhang, Huizhen Sun, Hanbin Wen, Jie Leng, Jiaxin Zhu, Zhaohua Sun"
+    ],
+    "abstract": "arXiv:2611.12934v1 Announce Type: new \nAbstract: While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose questions on curated images or give agents preprocessed inputs, leaving out the raw multi-sensor archives where such analysis begins. We introduce EarthRecord, a benchmark built on the raw record of 56 sites: four decades of Landsat, MODIS, VIIRS, and Sentinel-2 data, with cloud masking and cross-sensor harmonization left to the agent. It poses 238 land-change questions across ten analysis tasks, scored against withheld references from global products, agreement among methods, and visual interpretation. Two controls test what answers rest on: the closed book removes the record, and instrument pairs alter one satellite's data while nothing changes on the ground. Evaluations of twelve multimodal agents reveal that leading agents complete most analyses end to end but falter when an answer requires mapping from imagery. Further analysis shows that the record moves answers from prior knowledge to the pixels but not yet to the real change on the ground: when one satellite's data are altered, half of the right answers follow the alteration. EarthRecord thus provides a principled platform for measuring and advancing agents from pixels to land change.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12934",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12934"
+      }
+    ],
+    "relevance_score": 0.442109282830638,
+    "max_similarity": 0.1687604357273841
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.13006",
+    "title": "Seeing Is Not Believing: Counterfactual Lesion Erasure Teaches a Small Medical Vision-Language Agent to Report Only What the Image Shows",
+    "authors": [
+      "Bhaskar Gurram"
+    ],
+    "abstract": "arXiv:2611.13006v1 Announce Type: new \nAbstract: Medical vision-language models (VLMs) often report a finding because the question names it; standard benchmarks miss this. From public segmentation datasets we build counterfactual views without manual annotation: the lesion erased by inpainting, a same-shape control edit elsewhere, and unedited lesion-free images. The evidence sensitivity gap (ESG) is the rate of absent-or-refer answers after erasure minus the rate after the control edit; it is zero for a model that ignores the image or reacts to both edits alike. MedScope-4B (Qwen3.5-4B, LoRA, image tools) was trained on label-derived trajectories, selected by a pre-registered rule and tested once against nine frontier and six open VLMs; four pre-registered checks then probed the mechanism. On 507 internal cases across five imaging types, MedScope-4B reached ESG 0.758 and claimed an erased lesion in 9.6% of cases, against 0.27-0.47 and 41-62% for the frontier models (all p<0.001), without significant loss of accuracy on real lesions. Without counterfactual views ESG fell to 0.279+-0.107 (three seeds); the effect replicated on MedGemma 1.5 4B and two unseen inpainting tools. At four external centres the advantage held but frontier models detected more real lesions; on a fresh external test MedScope-4B detected 0 of 48 pneumothorax films, with net utility below gemini-4-argon's (-0.36 [-0.50, -0.23]). Matching the control edit was not shown to matter; over three seeds no fresh-external ESG advantage over removal-based DPO was established; a paired-view consistency objective did not beat a matched-compute control, while that continuation alone cut erased-lesion claims on unseen tools at every seed, at a cost in sensitivity at one. Training on erased and edited images gives a small model an evidence-gated disposition that prompting does not give frontier models; it does not improve perception, and rare critical findings need coverage.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.13006",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.13006"
+      }
+    ],
+    "relevance_score": 0.4366879243389724,
+    "max_similarity": 0.1612742879112815
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12981",
+    "title": "Evidence-Grounded Iterative Reasoning for the Diagnosis of Diffuse Cystic Lung Diseases",
+    "authors": [
+      "Haoqing Li, Jun Shi, Tou Li, Xianmeng Chen, Rui Wang, Yating Peng, Qiwei Jia, Li Gao, Qianyi Chen, Hong An, Ruoyun Ouyang, Xiaowen Hu"
+    ],
+    "abstract": "arXiv:2611.12981v1 Announce Type: new \nAbstract: Overlapping imaging manifestations complicate the differential diagnosis of Diffuse Cystic Lung Diseases (DCLDs), while limited annotated data constrain supervised model development. Multimodal Large Language Models (MLLMs) can integrate imaging and clinical information, but their diagnostic reasoning remains limited by incomplete volumetric perception and insufficient grounding in disease-specific evidence. We propose DCLDs-EIR, an evidence-grounded iterative reasoning framework coupling diagnostic hypothesis refinement with multimodal evidence acquisition and verification. Multiview renderings of predicted lung and cyst segmentations characterize global cyst distributions and initialize the differential diagnosis. Competing hypotheses guide axial CT inspection to identify local findings that, together with clinical context, inform retrieval from a disease-specific knowledge graph. Accumulated patient observations and retrieved knowledge are jointly assessed for diagnostic support and refutation to revise the diagnostic state. Updated hypotheses and unresolved distinctions guide subsequent inspection, forming a feedback loop between evidence acquisition and hypothesis verification. Multicenter evaluation demonstrates that DCLDs-EIR consistently improves diagnostic accuracy over baselines and enables traceable differential diagnosis through explicit links between diagnostic hypotheses, patient observations, and disease-specific knowledge.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12981",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12981"
+      }
+    ],
+    "relevance_score": 0.4286734038462183,
+    "max_similarity": 0.15021128013146082
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12970",
+    "title": "TrustMod-SM: A Multi-Axis Benchmark for Evaluating Trustworthiness of LLMs in Social Media Content Moderation",
+    "authors": [
+      "Aizan Zafar, Sreekantam Sai Venkata, Gathik Jindal, Ritu Raj Sharma, Zishan Ahmad, Tulika Saha, Srinath Srinivasa"
+    ],
+    "abstract": "arXiv:2611.12970v1 Announce Type: new \nAbstract: Large Language Models (LLMs) show strong potential for social media content moderation, but their trustworthiness beyond overall accuracy remains underexplored. We introduce TrustMod-SM, a benchmark of roughly 29,000 instances across eight datasets, to evaluate LLM moderators on five dimensions: trustfulness, fairness, safety, robustness, and context integrity. Evaluating 16 open-weight models (0.5B-284B parameters, spanning text-only and vision-language architectures) and one closed frontier model, we find persistent trustworthiness gaps. Higher detection accuracy often coincides with greater demographic disparity, and models frequently comply with concealment or exaggeration prompts, assign high confidence to wrong predictions, rarely escalate ambiguous cases, and struggle to separate hate speech from counter-speech or reclaimed language (especially below 8B parameters). Scaling does not uniformly resolve these issues, and no single model excels across all five dimensions.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12970",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12970"
+      }
+    ],
+    "relevance_score": 0.4182711848438929,
+    "max_similarity": 0.1374378404227074
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.13077",
+    "title": "One Temperature to Rule Them All?",
+    "authors": [
+      "Aviv Orly (School of Physics and Astronomy, Tel Aviv University, Israel), Ori Shem-Ur (School of Physics and Astronomy, Tel Aviv University, Israel), Yaron Oz (School of Physics and Astronomy, Tel Aviv University, Israel)"
+    ],
+    "abstract": "arXiv:2611.13077v1 Announce Type: new \nAbstract: Inference-time sampling is a central mechanism for improving large language models, with temperature controlling the tradeoff between reliability and diversity. While recent work suggests that varying temperature across samples can improve multi-sample inference, simple fixed-temperature schemes remain the standard in practice. We investigate this discrepancy in the canonical pass@K setting, asking when temperature diversity is useful, and when a single tuned temperature suffices. To this end, we analyze per-question success probabilities across multiple models and datasets, tracking how they vary with sampling temperature. We identify several consistent properties of these profiles, including that harder questions are less likely to share efficient sampling temperatures, although this trend is only logarithmic in hardness. We then derive an efficient method for evaluating the theoretically optimal multi-temperature allocation scheme, and show that although such a scheme improves performance, its gains over single-temperature baselines are typically modest when temperature is tuned as a function of the sampling budget K. We explain this phenomenon through mathematical mechanisms that we call dulling effects, and show how they ensure the robustness of temperature choices across different question distributions. Our results clarify when multi-temperature sampling is useful, and how temperatures should ideally be chosen.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.13077",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.13077"
+      }
+    ],
+    "relevance_score": 0.4102259806935764,
+    "max_similarity": 0.1287256514501423
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12954",
+    "title": "Physics2Weight: Direct Neural Network Architecture and Weight Generation from Physical Laws Using Large Language Models",
+    "authors": [
+      "Shogo Sato, Tomoyasu Shimada, Kazuhiko Murasaki, Takashi Sano"
+    ],
+    "abstract": "arXiv:2611.12954v1 Announce Type: new \nAbstract: Recent advances in large language models (LLMs) have enabled weight-space programming (WSP), which directly generates neural network weights without gradient-based optimization. However, extending WSP to physical problems remains challenging, particularly in achieving both solution accuracy and physical consistency. In this paper, we propose Physics2Weight (PtW), a framework that extends WSP to solving partial differential equations by directly generating neural network weights and editing architectures based on governing equations and initial and boundary conditions. PtW introduces physics-constrained prompting and physics-guided architecture editing, combined with iterative weight refinement from WSP, to improve solution accuracy and physical consistency without gradient-based optimization. Experiments on four PDEs, namely the heat, advection, Burgers', and Allen--Cahn equations, demonstrate lower solution errors than conventional physics-informed neural networks, while revealing limitations in satisfying the governing equations for nonlinear PDEs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12954",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12954"
+      }
+    ],
+    "relevance_score": 0.40697592005724403,
+    "max_similarity": 0.12625199896366085
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12974",
+    "title": "StatPrompt-LLM: A Lightweight Statistical Refinement for Foundation-Style Time-Series Forecasting",
+    "authors": [
+      "Aniket Sinha, Veronica W. Tsou"
+    ],
+    "abstract": "arXiv:2611.12974v1 Announce Type: new \nAbstract: Time-series forecasting has recently seen a paradigm shift with the introduction of foundation-style models that adapt large pretrained language architectures to sequential data. However, effectively exposing fundamental temporal structures, such as trend, scale, and temporal dependence, to these models remains an open challenge, particularly when the available observations are limited. In this paper, we conduct an exploratory empirical study across different generations of forecasting architectures and propose StatPrompt-LLM, a lightweight statistical refinement of Time-LLM. StatPrompt-LLM augments the existing Time-LLM prompting mechanism with dataset-level statistical information and introduces a zero-initialised autoregressive bypass as a complementary linear forecasting pathway. We evaluate our framework on electricity and meteorological time-series benchmarks, including ETTh1, ETTh2, and Weather, under full-prefix and reduced-prefix configurations. Under the 10% reduced-prefix configuration, StatPrompt-LLM achieved lower in-sample prediction errors than Time-LLM, with unweighted average relative reductions across datasets of 40.2% in MSE and 21.4% in MAE. Full-prefix results were more dataset-dependent. Ablation analyses revealed relatively modest and dataset-dependent changes when selected additional statistical descriptor groups were masked within the combined architecture. Computational profiling indicated additional model parameters and runtime overhead relative to Time-LLM.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12974",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12974"
+      }
+    ],
+    "relevance_score": 0.40542128614157497,
+    "max_similarity": 0.12376073355134778
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12966",
+    "title": "BuySideFlow: A Point-in-Time Benchmark for LLM Agents in Investment Research",
+    "authors": [
+      "Dong Bo, Fanjin Zhang, Ke Cheng, Xinxin Zhao, Xiaowei Su, Yang Wang, Jinghang Xu, Cuiping Li, Hong Chen, Jing Zhang"
+    ],
+    "abstract": "arXiv:2611.12966v1 Announce Type: new \nAbstract: Large language models (LLMs) can generate SQL and SQL--Python workflows for investment research, but ensuring point-in-time (PIT) validity remains challenging. Agents must enforce disclosure cutoffs and select the appropriate historical states and record versions throughout data retrieval and financial analysis. We introduce \\textsc{BuySideFlow}, a benchmark of 408 practitioner-derived Chinese-language tasks spanning equities, funds, fixed income, and macroeconomics over a fixed snapshot from a licensed production financial database. We provide executable references and a taxonomy of temporal errors, pairing result checks with expert audits of executed workflows. We evaluate nine agent configurations on all tasks, with result accuracy ranging from 16.2\\% to 36.8\\%. An audit of 900 runs on 100 shared tasks confirms PIT violations in 193 of the 380 runs that pass result checks (50.8\\%), showing that output agreement alone does not establish temporal validity.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12966",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12966"
+      }
+    ],
+    "relevance_score": 0.4018242586212491,
+    "max_similarity": 0.11903277991094041
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12950",
+    "title": "SetPrint: Black-Box LLM Fingerprinting via Setwise Correspondence of Response Changes",
+    "authors": [
+      "Jinmo Han, Ju Yeon Kang, Jimin Hong, Sunghwan Ahn, Yonghyeon Jun, Nam Soo Kim"
+    ],
+    "abstract": "arXiv:2611.12950v1 Announce Type: new \nAbstract: Black-box LLM fingerprinting aims to determine whether a target model was derived from a source model when only the output responses to input queries are observable. One way to reveal this relationship is to perturb each query and observe the resulting responses of both models, yielding two corresponding sets of response variations. These sets provide two complementary sources of information: the relations among response changes within each set, and the correspondence of response changes between the two sets. Existing approaches, however, have not fully exploited both. We introduce \\textbf{SetPrint}, a training-free method that jointly captures both within-set relations and between-set correspondence. SetPrint expresses each response change relative to the mean change of its own set, and then compares changes from the two models that were induced by the same perturbation. On LeaFBench, SetPrint consistently outperforms existing training-free black-box fingerprinting methods. Further analyses attribute these gains to both within-set relations and between-set correspondence.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12950",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12950"
+      }
+    ],
+    "relevance_score": 0.37299490527504364,
+    "max_similarity": 0.14740829143880668
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12998",
+    "title": "Linear Probes to Bayesian Manifolds: Geometry of Arithmetic in Large Language Models",
+    "authors": [
+      "Anshul Kumar, Neha Prasad, Manoj Kumar, Barnab\\'as P\\'oczos, Deeksha Varshney"
+    ],
+    "abstract": "arXiv:2611.12998v1 Announce Type: new \nAbstract: Linear probes are a standard method to study geometric structures, such as helices and circles, from the activations of large language models (LLMs), and such structure is often taken as evidence that the model computes with it. Probe accuracy alone cannot establish this, because it conflates four separate claims. These are (1) that the concept is decodable from the activations, (2) that they form a specific shape, (3) that the shape belongs to the probed concept rather than to a related concept the model also represents, and (4) that the output of the model depends on the shape. We call these claims decodability, shape, ownership, and causal use, and we test them separately with a four-stage Bayesian pipeline. Stage 2 compares candidate shapes and selects the best one only when its evidence passes a predefined threshold. Stage 3 removes a set of related concepts, specified in advance, and tests whether the shape is owned or inherited. Stage 4 intervenes on the shape to test whether the output of the model depends on it. We apply the pipeline to two-digit addition and multiplication in GPT-J 6B, Llama 3.1 8B, and Pythia 6.9B. Nearly every concept is decodable, but the decoded directions overlap substantially across concepts. Every strongly supported comparison selects a ribbon, which is a helix whose radius changes with the value, or a torus. Of 1,330 cells with an ownership verdict, 19% of shapes are owned and 81% are inherited. Owned and inherited shapes move the output about equally often. Intervening on the shape retains approximately 61% of the effect of intervening on the full probe while using at most five dimensions, against a median of nine for the probe. Our results indicate that a probe verdict alone overstates what a model computes with, and we propose that probe results be reported as verdicts on all four claims rather than as a single accuracy.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12998",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12998"
+      }
+    ],
+    "relevance_score": 0.3589931324603665,
+    "max_similarity": 0.1297390046676613
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12937",
+    "title": "Tracing Psychometric Inference in Large Language Models",
+    "authors": [
+      "Chih-Hao Hsu, Feng-Chun B. Chou, Pin-Hao A. Chen"
+    ],
+    "abstract": "arXiv:2611.12937v1 Announce Type: new \nAbstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We address this question using a cross-persona paradigm across 14 model variants from two families (Llama 3 and Qwen 2.5, 0.5B-14B, base and instruct). Given responses on one psychological scale from real individuals (N = 272 Taiwanese university students), models predict responses on six other scales. At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation. We then examine whether this structure is reflected internally. Contrastive direction analysis finds geometry aligned with the human matrix in larger instruct variants, but little alignment in base variants under this assay. Across models, geometry strength is associated with behavioral amplification (r = 0.68, p = 0.008; partial r = 0.69 controlling for log size). To relate internal structure to output behavior, a matched activation-probing paradigm shows that probe slopes vary less than behavioral slopes (1.38-1.77 vs 0.52-1.53). A synthetic control shows that ridge probing can inflate these slopes; after subtracting a baseline based on a reliability proxy from another analysis, adjusted slopes remain associated with behavior (r = 0.88). We term the measured probe-behavior gap readout attenuation. These results establish decodability and geometric alignment under the tested assays, without showing that the measured directions mediate the cross-persona answers.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12937",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12937"
+      }
+    ],
+    "relevance_score": 0.33150487936876183,
+    "max_similarity": 0.09407575073553293
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.12988",
+    "title": "Third Eye: Beyond Immediate Gains in Recursive Self-Improvement",
+    "authors": [
+      "Sujato Dutta, Padala Indira Sneha, Kypu Mahitha, Shashank Vanga, Neeraj Choudhary"
+    ],
+    "abstract": "arXiv:2611.12988v1 Announce Type: new \nAbstract: Does a useful self-update remain useful after the model updates again? Third Eye separates immediate performance from the outcome of a further native update. We evaluate five 3-8B backbones on math and code: 64 fresh runs, three candidates per run, and three continuations per candidate. Selection and final scoring use disjoint items. In the balanced Qwen3-4B/Llama-3.2-3B comparison, immediate-selected utility is near zero, but continuation reduces it by 1.78 percentage points (simultaneous 95% interval [0.68, 2.88]). Candidate-averaged immediate utility is already negative: selection partly accounts for the apparently neutral first step. Continuation also lowers utility for SmolLM3-3B and Llama-3.1-8B; Qwen3-8B remains inconclusive. Target and out-of-distribution losses dominate retention changes. Matched recipe and recipient-donor controls identify neither a reliable mitigation nor a single mechanism. The results support evaluating persistent self-updates as adaptation transitions, with independent scoring and a no-update baseline, rather than interpreting immediate performance as their full value.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 11 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.12988",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.12988"
+      }
+    ],
+    "relevance_score": 0.3049128891072256,
+    "max_similarity": 0.1250909849716931
+  }
+]

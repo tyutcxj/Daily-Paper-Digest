@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily arXiv - AI Research Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .card-title a:hover { color: #0d6efd !important; }
+        .date-selector {
+            min-width: 200px;
+            background-color: rgba(255,255,255,0.9) !important;
+            color: #333 !important;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 500;
+        }
+        .date-selector:focus {
+            background-color: white !important;
+            box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.5);
+        }
+        .date-selector option {
+            color: #333;
+            background-color: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-journal-richtext"></i> Daily arXiv
+            </a>
+            <div class="d-flex align-items-center">
+                
+        <select class="form-select form-select-sm date-selector" onchange="if(this.value) window.location.href=this.value">
+            <option value="2026-11-11.html" selected>2026-11-11 (20篇)</option><option value="2026-11-10.html" >2026-11-10 (14篇)</option><option value="2026-11-09.html" >2026-11-09 (20篇)</option><option value="2026-11-08.html" >2026-11-08 (20篇)</option><option value="2026-11-07.html" >2026-11-07 (20篇)</option><option value="2026-11-06.html" >2026-11-06 (20篇)</option><option value="2026-11-05.html" >2026-11-05 (20篇)</option><option value="2026-11-04.html" >2026-11-04 (20篇)</option><option value="2026-11-03.html" >2026-11-03 (20篇)</option><option value="2026-11-02.html" >2026-11-02 (20篇)</option><option value="2026-11-01.html" >2026-11-01 (20篇)</option><option value="2026-10-31.html" >2026-10-31 (8篇)</option><option value="2026-10-30.html" >2026-10-30 (20篇)</option><option value="2026-10-29.html" >2026-10-29 (7篇)</option><option value="2026-10-28.html" >2026-10-28 (20篇)</option><option value="2026-10-27.html" >2026-10-27 (20篇)</option><option value="2026-10-26.html" >2026-10-26 (20篇)</option><option value="2026-10-25.html" >2026-10-25 (20篇)</option><option value="2026-10-24.html" >2026-10-24 (15篇)</option><option value="2026-10-23.html" >2026-10-23 (20篇)</option><option value="2026-10-22.html" >2026-10-22 (20篇)</option><option value="2026-10-21.html" >2026-10-21 (20篇)</option><option value="2026-10-20.html" >2026-10-20 (20篇)</option><option value="2026-10-19.html" >2026-10-19 (20篇)</option><option value="2026-10-18.html" >2026-10-18 (20篇)</option><option value="2026-10-17.html" >2026-10-17 (5篇)</option><option value="2026-10-16.html" >2026-10-16 (20篇)</option><option value="2026-10-15.html" >2026-10-15 (20篇)</option><option value="2026-10-14.html" >2026-10-14 (20篇)</option><option value="2026-10-13.html" >2026-10-13 (20篇)</option><option value="2026-10-12.html" >2026-10-12 (20篇)</option><option value="2026-10-11.html" >2026-10-11 (20篇)</option><option value="2026-10-10.html" >2026-10-10 (10篇)</option><option value="2026-10-09.html" >2026-10-09 (19篇)</option><option value="2026-10-08.html" >2026-10-08 (20篇)</option><option value="2026-10-07.html" >2026-10-07 (20篇)</option><option value="2026-10-06.html" >2026-10-06 (20篇)</option><option value="2026-10-05.html" >2026-10-05 (20篇)</option><option value="2026-10-04.html" >2026-10-04 (20篇)</option><option value="2026-10-03.html" >2026-10-03 (20篇)</option><option value="2026-10-02.html" >2026-10-02 (20篇)</option><option value="2026-10-01.html" >2026-10-01 (20篇)</option><option value="2026-09-30.html" >2026-09-30 (20篇)</option><option value="2026-09-29.html" >2026-09-29 (20篇)</option><option value="2026-09-28.html" >2026-09-28 (20篇)</option><option value="2026-09-27.html" >2026-09-27 (20篇)</option><option value="2026-09-26.html" >2026-09-26 (12篇)</option><option value="2026-09-25.html" >2026-09-25 (20篇)</option><option value="2026-09-24.html" >2026-09-24 (20篇)</option><option value="2026-09-23.html" >2026-09-23 (20篇)</option><option value="2026-09-22.html" >2026-09-22 (20篇)</option><option value="2026-09-21.html" >2026-09-21 (20篇)</option><option value="2026-09-20.html" >2026-09-20 (20篇)</option><option value="2026-09-19.html" >2026-09-19 (20篇)</option><option value="2026-09-18.html" >2026-09-18 (20篇)</option><option value="2026-09-17.html" >2026-09-17 (20篇)</option><option value="2026-09-16.html" >2026-09-16 (20篇)</option><option value="2026-09-15.html" >2026-09-15 (20篇)</option><option value="2026-09-14.html" >2026-09-14 (20篇)</option><option value="2026-09-13.html" >2026-09-13 (19篇)</option><option value="2026-09-12.html" >2026-09-12 (8篇)</option><option value="2026-09-11.html" >2026-09-11 (20篇)</option><option value="2026-09-10.html" >2026-09-10 (20篇)</option><option value="2026-09-09.html" >2026-09-09 (20篇)</option><option value="2026-09-08.html" >2026-09-08 (19篇)</option><option value="2026-09-07.html" >2026-09-07 (20篇)</option><option value="2026-09-06.html" >2026-09-06 (20篇)</option><option value="2026-09-05.html" >2026-09-05 (14篇)</option><option value="2026-09-04.html" >2026-09-04 (20篇)</option><option value="2026-09-03.html" >2026-09-03 (20篇)</option><option value="2026-09-02.html" >2026-09-02 (20篇)</option><option value="2026-09-01.html" >2026-09-01 (20篇)</option><option value="2026-08-31.html" >2026-08-31 (20篇)</option><option value="2026-08-30.html" >2026-08-30 (20篇)</option><option value="2026-08-29.html" >2026-08-29 (8篇)</option><option value="2026-08-28.html" >2026-08-28 (20篇)</option><option value="2026-08-27.html" >2026-08-27 (20篇)</option><option value="2026-08-26.html" >2026-08-26 (20篇)</option><option value="2026-08-25.html" >2026-08-25 (20篇)</option><option value="2026-08-24.html" >2026-08-24 (20篇)</option><option value="2026-08-23.html" >2026-08-23 (20篇)</option><option value="2026-08-22.html" >2026-08-22 (20篇)</option><option value="2026-08-21.html" >2026-08-21 (20篇)</option><option value="2026-08-20.html" >2026-08-20 (20篇)</option><option value="2026-08-19.html" >2026-08-19 (20篇)</option><option value="2026-08-18.html" >2026-08-18 (20篇)</option><option value="2026-08-17.html" >2026-08-17 (20篇)</option><option value="2026-08-16.html" >2026-08-16 (12篇)</option><option value="2026-08-15.html" >2026-08-15 (20篇)</option><option value="2026-08-14.html" >2026-08-14 (20篇)</option><option value="2026-08-13.html" >2026-08-13 (20篇)</option><option value="2026-08-12.html" >2026-08-12 (20篇)</option><option value="2026-08-11.html" >2026-08-11 (20篇)</option><option value="2026-08-10.html" >2026-08-10 (19篇)</option><option value="2026-08-09.html" >2026-08-09 (20篇)</option><option value="2026-08-08.html" >2026-08-08 (20篇)</option><option value="2026-08-07.html" >2026-08-07 (20篇)</option><option value="2026-08-06.html" >2026-08-06 (20篇)</option><option value="2026-08-05.html" >2026-08-05 (20篇)</option><option value="2026-08-04.html" >2026-08-04 (20篇)</option><option value="2026-08-03.html" >2026-08-03 (20篇)</option><option value="2026-08-02.html" >2026-08-02 (20篇)</option><option value="2026-08-01.html" >2026-08-01 (20篇)</option><option value="2026-07-31.html" >2026-07-31 (20篇)</option><option value="2026-07-30.html" >2026-07-30 (20篇)</option><option value="2026-07-29.html" >2026-07-29 (20篇)</option><option value="2026-07-28.html" >2026-07-28 (20篇)</option><option value="2026-07-27.html" >2026-07-27 (20篇)</option><option value="2026-07-26.html" >2026-07-26 (20篇)</option><option value="2026-07-25.html" >2026-07-25 (14篇)</option><option value="2026-07-24.html" >2026-07-24 (20篇)</option><option value="2026-07-23.html" >2026-07-23 (20篇)</option><option value="2026-07-22.html" >2026-07-22 (20篇)</option><option value="2026-07-21.html" >2026-07-21 (20篇)</option><option value="2026-07-20.html" >2026-07-20 (20篇)</option><option value="2026-07-19.html" >2026-07-19 (20篇)</option><option value="2026-07-18.html" >2026-07-18 (20篇)</option><option value="2026-07-17.html" >2026-07-17 (20篇)</option><option value="2026-07-16.html" >2026-07-16 (20篇)</option><option value="2026-07-15.html" >2026-07-15 (20篇)</option><option value="2026-07-14.html" >2026-07-14 (20篇)</option><option value="2026-07-13.html" >2026-07-13 (20篇)</option><option value="2026-07-12.html" >2026-07-12 (20篇)</option><option value="2026-07-11.html" >2026-07-11 (14篇)</option><option value="2026-07-10.html" >2026-07-10 (20篇)</option><option value="2026-07-09.html" >2026-07-09 (20篇)</option><option value="2026-07-08.html" >2026-07-08 (19篇)</option><option value="2026-07-07.html" >2026-07-07 (20篇)</option><option value="2026-07-06.html" >2026-07-06 (20篇)</option><option value="2026-07-05.html" >2026-07-05 (20篇)</option><option value="2026-07-04.html" >2026-07-04 (20篇)</option><option value="2026-07-03.html" >2026-07-03 (20篇)</option><option value="2026-07-02.html" >2026-07-02 (20篇)</option><option value="2026-07-01.html" >2026-07-01 (20篇)</option><option value="2026-06-30.html" >2026-06-30 (20篇)</option><option value="2026-06-29.html" >2026-06-29 (20篇)</option><option value="2026-06-28.html" >2026-06-28 (20篇)</option><option value="2026-06-27.html" >2026-06-27 (20篇)</option><option value="2026-06-26.html" >2026-06-26 (20篇)</option><option value="2026-06-25.html" >2026-06-25 (20篇)</option><option value="2026-06-24.html" >2026-06-24 (20篇)</option><option value="2026-06-23.html" >2026-06-23 (20篇)</option><option value="2026-06-22.html" >2026-06-22 (18篇)</option><option value="2026-06-21.html" >2026-06-21 (18篇)</option><option value="2026-06-20.html" >2026-06-20 (20篇)</option><option value="2026-06-19.html" >2026-06-19 (19篇)</option><option value="2026-06-18.html" >2026-06-18 (20篇)</option><option value="2026-06-17.html" >2026-06-17 (20篇)</option><option value="2026-06-16.html" >2026-06-16 (19篇)</option><option value="2026-06-15.html" >2026-06-15 (20篇)</option><option value="2026-06-14.html" >2026-06-14 (20篇)</option><option value="2026-06-13.html" >2026-06-13 (20篇)</option><option value="2026-06-12.html" >2026-06-12 (20篇)</option><option value="2026-06-11.html" >2026-06-11 (20篇)</option><option value="2026-06-10.html" >2026-06-10 (20篇)</option><option value="2026-06-09.html" >2026-06-09 (19篇)</option><option value="2026-06-08.html" >2026-06-08 (20篇)</option><option value="2026-06-07.html" >2026-06-07 (20篇)</option><option value="2026-06-06.html" >2026-06-06 (11篇)</option><option value="2026-06-05.html" >2026-06-05 (20篇)</option><option value="2026-06-04.html" >2026-06-04 (20篇)</option><option value="2026-06-03.html" >2026-06-03 (20篇)</option><option value="2026-06-02.html" >2026-06-02 (20篇)</option><option value="2026-06-01.html" >2026-06-01 (20篇)</option><option value="2026-05-31.html" >2026-05-31 (20篇)</option><option value="2026-05-30.html" >2026-05-30 (20篇)</option><option value="2026-05-29.html" >2026-05-29 (20篇)</option><option value="2026-05-28.html" >2026-05-28 (20篇)</option><option value="2026-05-27.html" >2026-05-27 (20篇)</option><option value="2026-05-25.html" >2026-05-25 (17篇)</option><option value="2026-05-22.html" >2026-05-22 (15篇)</option>
+        </select>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h4 class="mb-3">
+                    <i class="bi bi-file-text"></i> 今日论文
+                    <span class="badge bg-secondary">20 篇</span>
+                </h4>
+                <div class="row">
+                    
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-0'); return false;" class="text-decoration-none text-dark">
+                                Multimodal Graph Learning: A Survey of Models, Benchmarks, and Frontiers
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.54">
+                            <span class="text-success">★★★★★</span> <small class="text-muted">(0.54)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Rui Xue, Tianfu Wu<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12990v1 Announce Type: new 
+Abstract: Multimodal attributed graphs (MAGs), in which nodes carry text, images, and other modalities while edges encode relations among entities, underlie e-co...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：多模态属性图学习的方法与评估  
+主要方法：提出统一消息传递框架，按特征、传播、拓扑、学习、基础模型五层次组织方法  
+关键贡献：比较方法假设与表达力，识别跨模态敏感性，综述基准与数据集
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-0'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12990" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-1'); return false;" class="text-decoration-none text-dark">
+                                Graph Visualizations in Prompts for Knowledge Graph Question Answering
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.50">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.50)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Luiz do Valle Miranda, Andreas L. Opdahl, Grzegorz J. Nalepa<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12938v1 Announce Type: new 
+Abstract: We study when and how multimodal input improves knowledge graph question answering (KGQA) in large vision--language models. Using a controlled evaluati...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：多模态输入何时及如何提升知识图谱问答性能  
+主要方法：在固定流水线中对比纯文本与文本加图可视化提示，分析复杂度、模型大小和图布局的影响  
+关键贡献：添加图图像平均提升1.85 F1，低复杂度问题精度提升4.65 F1，图布局高度敏感，建议自适应视觉提示策略
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-1'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12938" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-2'); return false;" class="text-decoration-none text-dark">
+                                GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.48">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.48)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Jiajun Chen, Shicheng Fang, Jiahao Lu, Yuxin Wang, Xipeng Qiu<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.13028v1 Announce Type: new 
+Abstract: AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA ga...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：AAA游戏中任务完成自动评估与强化学习困难。
+主要方法：构建GTAGym环境，包含GTAVBench基准（103个在线任务+47个图像任务），支持并行测试与自动结果检查。
+关键贡献：提供可扩展任务生成器，评估六个LLM达70.9%准确率，揭示空中导航等难点。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-2'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.13028" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-3'); return false;" class="text-decoration-none text-dark">
+                                Agent Architecture Cost-Success Trade-offs: A Controlled Evaluation across Enterprise-Style SOPs
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.47">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.47)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Subhrangshu Nandi, Hitesh Arora, Yunfei Bai, Udita Patel, Chirag Shah, Hannah Kwon, Wei Zhang, Weian Chen, Chloe Ruoqi Li, Alberto Sconfienza, Ayush Goyal, Yasmine Lee, Ming Xiong, Prathap Ramachandra<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12953v1 Announce Type: new 
+Abstract: Enterprises increasingly use large language model agents to execute standard operating procedures (SOPs): long, branching, tool-intensive workflows. Ye...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：企业LLM代理架构选择缺乏控制实验证据  
+主要方法：固定模型、任务和工具，比较四种架构在13个企业SOP上的表现  
+关键贡献：发现无通用最佳架构，成本需由成功增益证明
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-3'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12953" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-4'); return false;" class="text-decoration-none text-dark">
+                                LandslideFM: A Foundation Model Towards Unified Landslide Perception and Understanding
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.46">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.46)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Shanwen Wang, Sirui Wang, Xin Sun, Jungong Han<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12936v1 Announce Type: new 
+Abstract: Intelligent landslide detection is essential for disaster prevention. However, existing models primarily focus on isolated visual tasks, require extens...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有滑坡检测模型孤立、需大量标注、缺乏深度分析能力。
+主要方法：提出LandslideFM，采用源一致渐进信任半监督学习框架，结合参数高效微调的视觉语言模型。
+关键贡献：首个统一滑坡感知与理解基础模型，并构建了结合视觉与文本提示的LandslideVL基准。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-4'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12936" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-5'); return false;" class="text-decoration-none text-dark">
+                                PhysMoE: Fast Spatial Grounding with Single-Token Coordinate Representation in Modality-Decoupled VLMs
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.45">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.45)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Ruimeng Liu, Denan Liang, Ruofei Bai, Fuming Zhang, Kuan Xu, Shenghai Yuan, Lihua Xie<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.13000v1 Announce Type: new 
+Abstract: Embodied Vision-Language Models (VLMs) are backbones for robotic planning and manipulation. However, for coordinate prediction in grounding tasks, exis...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有VLM坐标预测存在离散token化破坏空间连续性与解码延迟高，点回归无法处理多触点及不规则目标。
+主要方法：提出PhysMoE，共享下层多模态，上层路由至空间/语言专家；单token编码坐标复用视觉位置嵌入；可微SDF监督。
+关键贡献：在9个坐标基准上平均提升15.7%，吞吐量提升8.31倍，保持多模态能力。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-5'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.13000" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-6'); return false;" class="text-decoration-none text-dark">
+                                Attribute-Evidence Learning with Multimodal Prompt for Generalized Category Discovery
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.45">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.45)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Wei Zhang, Zhu Teng, Zhixiang Chi, Junnan Zou, Wenxin Luo, Linfeng Ye, Jianping Fan, Konstantions N. Plataniotis<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12975v1 Announce Type: new 
+Abstract: Generalized category discovery (GCD) aims to discover novel categories from unlabeled data by leveraging limited labeled samples from old classes. Exis...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：广义类别发现中现有方法忽略多模态属性且属性与全局表示纠缠导致不可靠。
+主要方法：提出AptM-GCD，通过属性证据学习将属性视为局部视觉证据，与patch级令牌交互提取判别性局部证据。
+关键贡献：设计属性证据学习机制减少噪声属性影响，并开发多模态提示推理。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-6'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12975" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-7'); return false;" class="text-decoration-none text-dark">
+                                TIB: Sample-wise Tempered Information Bottleneck for Multimodal Attribution beyond Alignment Assumption
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.45">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.45)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Qiming Huang, Peixi Liu, Jianbo Jiao<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12997v1 Announce Type: new 
+Abstract: Multimodal (e.g. vision-language, in this work) attribution aims to interpret the models without access to ground-truth explanatory supervision. Existi...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有多模态归因方法假设语义对齐，但实际存在不对齐导致归因失败。  
+主要方法：提出样本级温和信息瓶颈（TIB），根据跨模态可靠性自适应调节归因强度。  
+关键贡献：解决了信息瓶颈在不对齐下的结构限制，实验验证有效性。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-7'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12997" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-8'); return false;" class="text-decoration-none text-dark">
+                                EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.44">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.44)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Haoran Zhang, Huizhen Sun, Hanbin Wen, Jie Leng, Jiaxin Zhu, Zhaohua Sun<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12934v1 Announce Type: new 
+Abstract: While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change an...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：多模态代理能否利用数十年卫星影像进行可靠的土地变化分析。
+主要方法：构建EarthRecord基准，包含56个站点原始多传感器数据及238个土地变化问题，评估12个代理。
+关键贡献：揭示代理能完成端到端分析，但依赖像素而非真实地面变化，且对传感器数据变化敏感。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-8'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12934" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-9'); return false;" class="text-decoration-none text-dark">
+                                Seeing Is Not Believing: Counterfactual Lesion Erasure Teaches a Small Medical Vision-Language Agent to Report Only What the Image Shows
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.44">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.44)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Bhaskar Gurram<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.13006v1 Announce Type: new 
+Abstract: Medical vision-language models (VLMs) often report a finding because the question names it; standard benchmarks miss this. From public segmentation dat...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：医学VLM因问题命名而报告不存在的病灶，标准基准无法检测。  
+主要方法：构建反事实病灶擦除视图，提出证据敏感性差距（ESG）指标，训练MedScope-4B小模型。  
+关键贡献：MedScope-4B显著降低幻觉（ESG 0.758，声称擦除病灶仅9.6%），同时保持真实病灶准确性。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-9'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.13006" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-10'); return false;" class="text-decoration-none text-dark">
+                                Evidence-Grounded Iterative Reasoning for the Diagnosis of Diffuse Cystic Lung Diseases
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.43">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.CV</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Haoqing Li, Jun Shi, Tou Li, Xianmeng Chen, Rui Wang, Yating Peng, Qiwei Jia, Li Gao, Qianyi Chen, Hong An, Ruoyun Ouyang, Xiaowen Hu<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12981v1 Announce Type: new 
+Abstract: Overlapping imaging manifestations complicate the differential diagnosis of Diffuse Cystic Lung Diseases (DCLDs), while limited annotated data constrai...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何利用多模态证据进行弥漫性囊性肺病的鉴别诊断？  
+主要方法：提出DCLDs-EIR框架，结合多视图分割、竞争性假设引导的CT检查、知识图谱检索和迭代证据评估。  
+关键贡献：构建了证据驱动的迭代推理机制，弥补了MLLM在体积感知和疾病特异性证据方面的不足。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-10'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12981" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-11'); return false;" class="text-decoration-none text-dark">
+                                TrustMod-SM: A Multi-Axis Benchmark for Evaluating Trustworthiness of LLMs in Social Media Content Moderation
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Aizan Zafar, Sreekantam Sai Venkata, Gathik Jindal, Ritu Raj Sharma, Zishan Ahmad, Tulika Saha, Srinath Srinivasa<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12970v1 Announce Type: new 
+Abstract: Large Language Models (LLMs) show strong potential for social media content moderation, but their trustworthiness beyond overall accuracy remains under...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：评估LLM在社交媒体内容审核中的可信度，超越整体准确率。  
+主要方法：构建TrustMod-SM基准，含约29,000实例，从信任、公平、安全、鲁棒、上下文完整性五维度评估16个开源和1个闭源模型。  
+关键贡献：发现可信度差距，高准确率伴随人口统计偏差，模型易受提示影响，规模扩大不能统一解决所有问题。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-11'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12970" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-12'); return false;" class="text-decoration-none text-dark">
+                                One Temperature to Rule Them All?
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.41">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Aviv Orly (School of Physics and Astronomy, Tel Aviv University, Israel), Ori Shem-Ur (School of Physics and Astronomy, Tel Aviv University, Israel), Yaron Oz (School of Physics and Astronomy, Tel Aviv University, Israel)<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.13077v1 Announce Type: new 
+Abstract: Inference-time sampling is a central mechanism for improving large language models, with temperature controlling the tradeoff between reliability and d...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：温度多样性在多样本推理中的效用，何时单温度足够  
+主要方法：分析成功概率随温度变化，推导最优多温度分配方案  
+关键贡献：发现困难问题共享有效温度仅对数下降，多温度方案提升有限
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-12'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.13077" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-13'); return false;" class="text-decoration-none text-dark">
+                                Physics2Weight: Direct Neural Network Architecture and Weight Generation from Physical Laws Using Large Language Models
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.41">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Shogo Sato, Tomoyasu Shimada, Kazuhiko Murasaki, Takashi Sano<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12954v1 Announce Type: new 
+Abstract: Recent advances in large language models (LLMs) have enabled weight-space programming (WSP), which directly generates neural network weights without gr...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何用LLM直接生成神经网络权重和架构求解偏微分方程，兼顾精度与物理一致性。  
+主要方法：提出Physics2Weight框架，通过物理约束提示、物理引导架构编辑和迭代权重精炼，无需梯度优化。  
+关键贡献：在热传导、对流、Burgers'和Allen-Cahn方程上误差低于传统PINN，但非线性PDE的物理一致性仍有局限。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-13'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12954" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-14'); return false;" class="text-decoration-none text-dark">
+                                StatPrompt-LLM: A Lightweight Statistical Refinement for Foundation-Style Time-Series Forecasting
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.41">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Aniket Sinha, Veronica W. Tsou<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12974v1 Announce Type: new 
+Abstract: Time-series forecasting has recently seen a paradigm shift with the introduction of foundation-style models that adapt large pretrained language archit...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何有效向基础模型暴露时间序列的统计结构以提升预测性能  
+主要方法：提出StatPrompt-LLM，在Time-LLM提示中加入数据集级统计信息，并添加零初始化的自回归旁路  
+关键贡献：在减少前缀设置下，MSE和MAE分别平均降低40.2%和21.4%
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-14'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12974" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-15'); return false;" class="text-decoration-none text-dark">
+                                BuySideFlow: A Point-in-Time Benchmark for LLM Agents in Investment Research
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.40">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Dong Bo, Fanjin Zhang, Ke Cheng, Xinxin Zhao, Xiaowei Su, Yang Wang, Jinghang Xu, Cuiping Li, Hong Chen, Jing Zhang<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12966v1 Announce Type: new 
+Abstract: Large language models (LLMs) can generate SQL and SQL--Python workflows for investment research, but ensuring point-in-time (PIT) validity remains chal...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LLM代理在投资研究中确保时间点有效性的挑战  
+主要方法：构建BuySideFlow基准，包含408个中文任务，提供可执行参考和时间错误分类  
+关键贡献：发现结果检查通过的任务中仍有50.8%存在PIT违规
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-15'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12966" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-16'); return false;" class="text-decoration-none text-dark">
+                                SetPrint: Black-Box LLM Fingerprinting via Setwise Correspondence of Response Changes
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.37">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.37)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Jinmo Han, Ju Yeon Kang, Jimin Hong, Sunghwan Ahn, Yonghyeon Jun, Nam Soo Kim<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12950v1 Announce Type: new 
+Abstract: Black-box LLM fingerprinting aims to determine whether a target model was derived from a source model when only the output responses to input queries a...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：黑盒LLM指纹识别，判断目标模型是否源自源模型
+主要方法：SetPrint，无训练方法，联合捕获组内关系与组间对应
+关键贡献：在LeaFBench上优于现有无训练黑盒指纹识别方法
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-16'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12950" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-17'); return false;" class="text-decoration-none text-dark">
+                                Linear Probes to Bayesian Manifolds: Geometry of Arithmetic in Large Language Models
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.36">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.36)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Anshul Kumar, Neha Prasad, Manoj Kumar, Barnab\'as P\'oczos, Deeksha Varshney<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12998v1 Announce Type: new 
+Abstract: Linear probes are a standard method to study geometric structures, such as helices and circles, from the activations of large language models (LLMs), a...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：线性探针能否证明LLM中算术概念的几何结构及其因果使用。
+主要方法：四阶段贝叶斯管道，分别测试可解码性、形状、所有权和因果使用。
+关键贡献：区分了四个独立主张，并提供了验证几何结构因果相关性的方法。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-17'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12998" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-18'); return false;" class="text-decoration-none text-dark">
+                                Tracing Psychometric Inference in Large Language Models
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.33">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.33)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Chih-Hao Hsu, Feng-Chun B. Chou, Pin-Hao A. Chen<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12937v1 Announce Type: new 
+Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We addre...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LLM是否内部表征心理结构还是仅输出类似结构？  
+主要方法：跨角色范式，14个模型变体，对比方向分析与激活探测。  
+关键贡献：大型指令模型内部几何与人类矩阵对齐，几何强度与行为放大相关。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-18'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12937" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-19'); return false;" class="text-decoration-none text-dark">
+                                Third Eye: Beyond Immediate Gains in Recursive Self-Improvement
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.30">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.30)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Sujato Dutta, Padala Indira Sneha, Kypu Mahitha, Shashank Vanga, Neeraj Choudhary<br>
+                        <i class="bi bi-calendar"></i> Wed,
+                    </p>
+                    <p class="card-text small">arXiv:2611.12988v1 Announce Type: new 
+Abstract: Does a useful self-update remain useful after the model updates again? Third Eye separates immediate performance from the outcome of a further native u...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：递归自我改进中即时性能是否在后续更新后仍有用。
+主要方法：用5个3-8B模型在数学和代码上做64次运行，比较即时选择与延续后效用。
+关键贡献：发现即时效用近零，延续后降低，支持将持久更新视为适应过渡，需独立评分。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-19'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.12988" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <i class="bi bi-tags"></i> 热门关键词
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark me-1 mb-1">multimodal</span> <span class="badge bg-info text-dark me-1 mb-1">visual</span> <span class="badge bg-info text-dark me-1 mb-1">models</span> <span class="badge bg-info text-dark me-1 mb-1">model</span> <span class="badge bg-info text-dark me-1 mb-1">tasks</span> <span class="badge bg-info text-dark me-1 mb-1">temperature</span> <span class="badge bg-info text-dark me-1 mb-1">graph</span> <span class="badge bg-info text-dark me-1 mb-1">evidence</span> <span class="badge bg-info text-dark me-1 mb-1">analysis</span> <span class="badge bg-info text-dark me-1 mb-1">agent</span> <span class="badge bg-info text-dark me-1 mb-1">language</span> <span class="badge bg-info text-dark me-1 mb-1">based</span> <span class="badge bg-info text-dark me-1 mb-1">llm</span> <span class="badge bg-info text-dark me-1 mb-1">data</span> <span class="badge bg-info text-dark me-1 mb-1">agents</span> 
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <i class="bi bi-bar-chart"></i> 研究类别
+                    </div>
+                    <div class="card-body">
+                        
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.AI</span>
+                <span class="badge bg-primary">10</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.LG</span>
+                <span class="badge bg-primary">5</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.CV</span>
+                <span class="badge bg-primary">5</span>
+            </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <i class="bi bi-cloud"></i> 词云
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="data/analysis/wordcloud_20261111_073101.png" class="img-fluid" alt="词云">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 详情弹窗 -->
+    
+        <div class="modal fade" id="modal-0" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Multimodal Graph Learning: A Survey of Models, Benchmarks, and Frontiers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★★</span> <small class="text-muted">(0.54)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Rui Xue, Tianfu Wu</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12990v1 Announce Type: new 
+Abstract: Multimodal attributed graphs (MAGs), in which nodes carry text, images, and other modalities while edges encode relations among entities, underlie e-commerce, social media, content platforms, and creative applications. Learning on MAGs has developed along two complementary lines: graph-centric methods redesign how modalities are fused, propagated, and connected within message passing, while foundation-model-centric methods pretrain transferable multimodal graph encoders or bring graph context into multimodal large language models for prediction and generation. In parallel, several benchmarks have appeared with different datasets and evaluation protocols. This survey takes an algorithm-centric and evaluation-grounded view of the field and makes three contributions. Modeling: we introduce a unified message-passing formulation and organize methods into five integration levels (feature, propagation, topology, learning, and foundation model), covering discriminative and graph-conditioned generative models; within this formulation we derive representative methods as special cases, compare their assumptions, expressiveness, and cost, and identify cross-modal sensitivity as a property that separates otherwise similar architectures. Datasets and evaluation: we review recent benchmarks, summarize their datasets and metrics, define model-independent descriptors (label homophily, average degree, clustering, and edge provenance), and map each evaluation protocol to the baselines it uses. Frontiers: we connect multimodal graph learning to AI agents, covering the multimodal graphs that agents perceive and remember and graph engineering, the practice of organizing agent workflows as explicit graphs; we then discuss open problems, concrete efforts for the community, and research directions, including when graph structure helps in the presence of strong multimodal foundation models.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：多模态属性图学习的方法与评估  
+主要方法：提出统一消息传递框架，按特征、传播、拓扑、学习、基础模型五层次组织方法  
+关键贡献：比较方法假设与表达力，识别跨模态敏感性，综述基准与数据集</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12990" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12990" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Graph Visualizations in Prompts for Knowledge Graph Question Answering</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.50)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Luiz do Valle Miranda, Andreas L. Opdahl, Grzegorz J. Nalepa</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12938v1 Announce Type: new 
+Abstract: We study when and how multimodal input improves knowledge graph question answering (KGQA) in large vision--language models. Using a controlled evaluation over 1,500 WebQSP and CWQ questions and six VLMs within a fixed KGQA pipeline, we compare text-only prompting against text-plus-graph visualization at the per-question level and analyze performance changes as a function of reasoning complexity, model size, and image layout. Adding a graph image yields an average gain of 1.85 F1 points, driven by strong precision improvements on low-complexity questions (+4.65 F1). Mixed-effects and regression analyses show that these multimodal gains do not depend strongly on model scale, but are highly sensitive to graph layout: image-only settings sharply degrade performance, hierarchical Graphviz layouts outperform less organized renderings, and decomposing large subgraphs into separated paths yields the largest improvements. Taken together, the results indicate that visual prompting primarily aids KGQA by enhancing prediction precision in low-complexity contexts, provided that visual design respects cognitive and perceptual constraints. To optimize both accuracy and inference efficiency, we argue for adaptive visual prompting policies that selectively append diagrams to small, visually sparse subgraphs with well-structured layouts, avoiding unnecessary visual clutter and token overhead on complex queries. We conclude by relating these findings to a visual notation design theory, outlining how principled diagram encoding can guide future multimodal VLM prompting.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：多模态输入何时及如何提升知识图谱问答性能  
+主要方法：在固定流水线中对比纯文本与文本加图可视化提示，分析复杂度、模型大小和图布局的影响  
+关键贡献：添加图图像平均提升1.85 F1，低复杂度问题精度提升4.65 F1，图布局高度敏感，建议自适应视觉提示策略</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12938" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12938" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.48)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Jiajun Chen, Shicheng Fang, Jiahao Lu, Yuxin Wang, Xipeng Qiu</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.13028v1 Announce Type: new 
+Abstract: AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). We introduce GTAGym, an environment and framework for evaluation and RL on GTA V tasks. Its evaluation benchmark, GTAVBench, derived from GTA V main-story missions, contains 103 online tasks reconstructed across nine task families, alongside 47 image-based shooting and sniping tasks using GTA V imagery. A web server provides access to the online environment and evaluation interface, supporting parallel testing through screenshots and keyboard-mouse actions with automatic engine-state outcome checks. We evaluate six frontier LLMs on GTAVBench with textual task instructions and on its GTAVBench-AGI branch, where instructions appear only in the first screenshot and a harness automatically compresses interaction history. The best configuration achieves 70.9% overall accuracy in GTAVBench-AGI, yet aerial navigation, evasion and interception remain difficult. GTAGym also provides a scalable generator that samples task parameters within user-specified ranges and option sets under fixed templates, creating batches of 3D and image-based shooting environments for RL with automatic reward and termination signals. LoRA RL of Qwen3.8-27B on generated on-foot navigation tasks improves the in-domain performance and transfers to out-of-domain task categories, and native GTA V tasks from 15% to 23%.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：AAA游戏中任务完成自动评估与强化学习困难。
+主要方法：构建GTAGym环境，包含GTAVBench基准（103个在线任务+47个图像任务），支持并行测试与自动结果检查。
+关键贡献：提供可扩展任务生成器，评估六个LLM达70.9%准确率，揭示空中导航等难点。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.13028" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.13028" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-3" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Agent Architecture Cost-Success Trade-offs: A Controlled Evaluation across Enterprise-Style SOPs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.47)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Subhrangshu Nandi, Hitesh Arora, Yunfei Bai, Udita Patel, Chirag Shah, Hannah Kwon, Wei Zhang, Weian Chen, Chloe Ruoqi Li, Alberto Sconfienza, Ayush Goyal, Yasmine Lee, Ming Xiong, Prathap Ramachandra</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12953v1 Announce Type: new 
+Abstract: Enterprises increasingly use large language model agents to execute standard operating procedures (SOPs): long, branching, tool-intensive workflows. Yet there is little controlled evidence for choosing among competing agentic architectures. Holding the model, tasks, and tools fixed and varying only the architecture, we compare four designs (a function-calling single agent, a skill-augmented agent, centralized multi-agent orchestration, and a triage swarm; eight arms) across 13 enterprise SOPs, and introduce a skill-definition quality rubric to build matched high and low-quality skill corpora. Three takeaways emerge. (1)~\textbf{There is no universal best architecture; the right choice is SOP-dependent.} On a given SOP, task success ranges from under $10\%$ on the hardest to near $100\%$ on the easiest; no architecture is statistically separable in aggregate, and added structure only plausibly pays off on complex, branching SOPs (a directional, not yet significant, trend). (2)~\textbf{Added architecture cost must be justified by a task-success gain.} Every coordinated arm (multi-agent or skill-augmented) spends $1.4$--$4.7\times$ the tokens and $2.6$--$5.8\times$ the latency of the single agent for gains that are usually small and rarely significant, making the single agent the efficient default; high-quality skills do lift success (to $73.1\%$ from $67.4\%$) while degraded skills fall below it. (3)~\textbf{Implementation quality outweighs the single- versus multi-agent choice.} A plausible multi-agent implementation loses to the single agent, yet a targeted redesign of it becomes the only arm to significantly beat the baseline ($75.6\%$ vs.\ $67.4\%$).</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：企业LLM代理架构选择缺乏控制实验证据  
+主要方法：固定模型、任务和工具，比较四种架构在13个企业SOP上的表现  
+关键贡献：发现无通用最佳架构，成本需由成功增益证明</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12953" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12953" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-4" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">LandslideFM: A Foundation Model Towards Unified Landslide Perception and Understanding</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.46)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Shanwen Wang, Sirui Wang, Xin Sun, Jungong Han</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12936v1 Announce Type: new 
+Abstract: Intelligent landslide detection is essential for disaster prevention. However, existing models primarily focus on isolated visual tasks, require extensive labeled data, and lack deep analytical and scene-understanding capabilities. To address these limitations, we propose LandslideFM, the first unified foundation model that connects visual perception tasks with contextual interpretation of landslides. Specifically, LandslideFM adapts to multiple visual tasks via a Source-Agreement Graduated Trust semi-supervised learning framework that leverages limited labeled data alongside abundant unlabeled data. Furthermore, predicted landslide regions provide explicit spatial guidance to a Vision-Language Model adapted through parameter-efficient fine-tuning, enabling comprehensive landslide reasoning. To support training and evaluation in this domain, we also present LandslideVL, the first benchmark for intelligent landslide analysis, combining visual imagery and newly introduced textual prompts. Comprehensive experiments across public datasets and LandslideVL demonstrate that LandslideFM achieves superior quantitative and qualitative performance. Most importantly, LandslideFM surpasses general-purpose VLMs in specialized landslide reasoning and scene analysis. Our code is released at https://github.com/wangshanwen001/LandslideFM.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有滑坡检测模型孤立、需大量标注、缺乏深度分析能力。
+主要方法：提出LandslideFM，采用源一致渐进信任半监督学习框架，结合参数高效微调的视觉语言模型。
+关键贡献：首个统一滑坡感知与理解基础模型，并构建了结合视觉与文本提示的LandslideVL基准。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12936" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12936" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-5" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">PhysMoE: Fast Spatial Grounding with Single-Token Coordinate Representation in Modality-Decoupled VLMs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.45)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Ruimeng Liu, Denan Liang, Ruofei Bai, Fuming Zhang, Kuan Xu, Shenghai Yuan, Lihua Xie</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.13000v1 Announce Type: new 
+Abstract: Embodied Vision-Language Models (VLMs) are backbones for robotic planning and manipulation. However, for coordinate prediction in grounding tasks, existing architectures suffer from two distinct bottlenecks: discrete tokenization disrupts spatial continuity with high decoding latency, while standard point regression fails on multi-contact affordances and irregularly shaped targets. To resolve these challenges, we propose PhysMoE, introducing three core contributions: (1) sharing lower layers for multimodal context while routing upper layers to specialized spatial (pixel) and linguistic (text) experts by physical modality, eliminating gradient interference; (2) encoding each coordinate as a single token by reusing the visual encoder's learned positional embeddings, injecting 2D spatial priors to natively align coordinates with visual features and ease training; and (3) differentiable Signed Distance Field (SDF) supervision on pointing, accommodating affordances and irregular geometries without costly mask decoders. Compared to the base model, PhysMoE achieves a 15.7% average gain and an 8.31x throughput speedup across 9 coordinate-based grounding benchmarks (trajectory, affordance, and localization), while preserving multimodal understanding and reasoning across 11 text-based embodied benchmarks.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有VLM坐标预测存在离散token化破坏空间连续性与解码延迟高，点回归无法处理多触点及不规则目标。
+主要方法：提出PhysMoE，共享下层多模态，上层路由至空间/语言专家；单token编码坐标复用视觉位置嵌入；可微SDF监督。
+关键贡献：在9个坐标基准上平均提升15.7%，吞吐量提升8.31倍，保持多模态能力。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.13000" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.13000" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-6" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Attribute-Evidence Learning with Multimodal Prompt for Generalized Category Discovery</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.45)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Wei Zhang, Zhu Teng, Zhixiang Chi, Junnan Zou, Wenxin Luo, Linfeng Ye, Jianping Fan, Konstantions N. Plataniotis</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12975v1 Announce Type: new 
+Abstract: Generalized category discovery (GCD) aims to discover novel categories from unlabeled data by leveraging limited labeled samples from old classes. Existing methods that rely solely on visual cues often neglect the multimodal nature of human perception, prompting recent approaches to incorporate textual information such as category tags and attributes. However, these approaches typically entangle global tags and local attributes within a shared global image representation, rendering attributes unreliable and potentially providing misleading cues that can drive the model toward incorrect predictions. To this end, we propose AptM-GCD, a novel multimodal framework that exploits apt textual guidance through attribute evidence learning and multimodal prompt reasoning. Specifically, we design an Attribute-Evidence Learning (AEL) mechanism that treats attributes as localized visual evidence rather than global category descriptors. By interacting attribute embeddings with patch-level visual tokens, AEL identifies reliable attribute-related regions and extracts discriminative local evidence, thereby reducing the impact of noisy or irrelevant attribute cues. Building upon the extracted evidence, we further develop a Multimodal Prompt Learning (MPL) mechanism to bridge local attribute semantics and global visual understanding. MPL converts fine-grained textual evidence into visual prompts and injects them into a multimodal prompt transformer, enabling attribute information to enhance category discrimination through contextual reasoning without enforcing direct global alignment between modalities. Extensive experiments on six datasets demonstrate that AptM-GCD consistently achieves SoTA performance across both fine-grained and generic benchmarks. Moreover, the proposed framework exhibits strong generalization ability, delivering consistent gains under unimodal and class-imbalanced GCD settings.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：广义类别发现中现有方法忽略多模态属性且属性与全局表示纠缠导致不可靠。
+主要方法：提出AptM-GCD，通过属性证据学习将属性视为局部视觉证据，与patch级令牌交互提取判别性局部证据。
+关键贡献：设计属性证据学习机制减少噪声属性影响，并开发多模态提示推理。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12975" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12975" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-7" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">TIB: Sample-wise Tempered Information Bottleneck for Multimodal Attribution beyond Alignment Assumption</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.45)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Qiming Huang, Peixi Liu, Jianbo Jiao</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12997v1 Announce Type: new 
+Abstract: Multimodal (e.g. vision-language, in this work) attribution aims to interpret the models without access to ground-truth explanatory supervision. Existing multimodal attribution methods typically rely on paired modalities as proxy supervision, implicitly assuming that image-text pairs are semantically aligned. Information bottleneck (IB)-based attribution methods follow this general paradigm and instantiate it through a global sufficiency-compression objective. In realistic multimodal datasets, however, this assumption is frequently violated due to partial semantic misalignment and unreliable cross-modal correspondences. Through theoretical analysis, we show that, under such misalignment, information-bottleneck-based attribution objectives exhibit a structural limitation: by assuming equal reliability across all proxy supervision signals, they induce posterior over-contraction and forced explanations. To address this issue, we propose TIB, a sample-wise Tempered Information Bottleneck framework that adaptively modulates attribution strength according to cross-modal reliability, without assuming semantic alignment. Extensive experiments on controlled benchmarks and large-scale datasets show the effectiveness of the proposed approach, while also validating the identified failure mode.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有多模态归因方法假设语义对齐，但实际存在不对齐导致归因失败。  
+主要方法：提出样本级温和信息瓶颈（TIB），根据跨模态可靠性自适应调节归因强度。  
+关键贡献：解决了信息瓶颈在不对齐下的结构限制，实验验证有效性。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12997" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12997" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-8" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.44)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Haoran Zhang, Huizhen Sun, Hanbin Wen, Jie Leng, Jiaxin Zhu, Zhaohua Sun</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12934v1 Announce Type: new 
+Abstract: While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose questions on curated images or give agents preprocessed inputs, leaving out the raw multi-sensor archives where such analysis begins. We introduce EarthRecord, a benchmark built on the raw record of 56 sites: four decades of Landsat, MODIS, VIIRS, and Sentinel-2 data, with cloud masking and cross-sensor harmonization left to the agent. It poses 238 land-change questions across ten analysis tasks, scored against withheld references from global products, agreement among methods, and visual interpretation. Two controls test what answers rest on: the closed book removes the record, and instrument pairs alter one satellite's data while nothing changes on the ground. Evaluations of twelve multimodal agents reveal that leading agents complete most analyses end to end but falter when an answer requires mapping from imagery. Further analysis shows that the record moves answers from prior knowledge to the pixels but not yet to the real change on the ground: when one satellite's data are altered, half of the right answers follow the alteration. EarthRecord thus provides a principled platform for measuring and advancing agents from pixels to land change.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：多模态代理能否利用数十年卫星影像进行可靠的土地变化分析。
+主要方法：构建EarthRecord基准，包含56个站点原始多传感器数据及238个土地变化问题，评估12个代理。
+关键贡献：揭示代理能完成端到端分析，但依赖像素而非真实地面变化，且对传感器数据变化敏感。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12934" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12934" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-9" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Seeing Is Not Believing: Counterfactual Lesion Erasure Teaches a Small Medical Vision-Language Agent to Report Only What the Image Shows</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.44)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Bhaskar Gurram</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.13006v1 Announce Type: new 
+Abstract: Medical vision-language models (VLMs) often report a finding because the question names it; standard benchmarks miss this. From public segmentation datasets we build counterfactual views without manual annotation: the lesion erased by inpainting, a same-shape control edit elsewhere, and unedited lesion-free images. The evidence sensitivity gap (ESG) is the rate of absent-or-refer answers after erasure minus the rate after the control edit; it is zero for a model that ignores the image or reacts to both edits alike. MedScope-4B (Qwen3.5-4B, LoRA, image tools) was trained on label-derived trajectories, selected by a pre-registered rule and tested once against nine frontier and six open VLMs; four pre-registered checks then probed the mechanism. On 507 internal cases across five imaging types, MedScope-4B reached ESG 0.758 and claimed an erased lesion in 9.6% of cases, against 0.27-0.47 and 41-62% for the frontier models (all p<0.001), without significant loss of accuracy on real lesions. Without counterfactual views ESG fell to 0.279+-0.107 (three seeds); the effect replicated on MedGemma 1.5 4B and two unseen inpainting tools. At four external centres the advantage held but frontier models detected more real lesions; on a fresh external test MedScope-4B detected 0 of 48 pneumothorax films, with net utility below gemini-4-argon's (-0.36 [-0.50, -0.23]). Matching the control edit was not shown to matter; over three seeds no fresh-external ESG advantage over removal-based DPO was established; a paired-view consistency objective did not beat a matched-compute control, while that continuation alone cut erased-lesion claims on unseen tools at every seed, at a cost in sensitivity at one. Training on erased and edited images gives a small model an evidence-gated disposition that prompting does not give frontier models; it does not improve perception, and rare critical findings need coverage.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：医学VLM因问题命名而报告不存在的病灶，标准基准无法检测。  
+主要方法：构建反事实病灶擦除视图，提出证据敏感性差距（ESG）指标，训练MedScope-4B小模型。  
+关键贡献：MedScope-4B显著降低幻觉（ESG 0.758，声称擦除病灶仅9.6%），同时保持真实病灶准确性。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.13006" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.13006" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-10" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Evidence-Grounded Iterative Reasoning for the Diagnosis of Diffuse Cystic Lung Diseases</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Haoqing Li, Jun Shi, Tou Li, Xianmeng Chen, Rui Wang, Yating Peng, Qiwei Jia, Li Gao, Qianyi Chen, Hong An, Ruoyun Ouyang, Xiaowen Hu</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.CV</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12981v1 Announce Type: new 
+Abstract: Overlapping imaging manifestations complicate the differential diagnosis of Diffuse Cystic Lung Diseases (DCLDs), while limited annotated data constrain supervised model development. Multimodal Large Language Models (MLLMs) can integrate imaging and clinical information, but their diagnostic reasoning remains limited by incomplete volumetric perception and insufficient grounding in disease-specific evidence. We propose DCLDs-EIR, an evidence-grounded iterative reasoning framework coupling diagnostic hypothesis refinement with multimodal evidence acquisition and verification. Multiview renderings of predicted lung and cyst segmentations characterize global cyst distributions and initialize the differential diagnosis. Competing hypotheses guide axial CT inspection to identify local findings that, together with clinical context, inform retrieval from a disease-specific knowledge graph. Accumulated patient observations and retrieved knowledge are jointly assessed for diagnostic support and refutation to revise the diagnostic state. Updated hypotheses and unresolved distinctions guide subsequent inspection, forming a feedback loop between evidence acquisition and hypothesis verification. Multicenter evaluation demonstrates that DCLDs-EIR consistently improves diagnostic accuracy over baselines and enables traceable differential diagnosis through explicit links between diagnostic hypotheses, patient observations, and disease-specific knowledge.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何利用多模态证据进行弥漫性囊性肺病的鉴别诊断？  
+主要方法：提出DCLDs-EIR框架，结合多视图分割、竞争性假设引导的CT检查、知识图谱检索和迭代证据评估。  
+关键贡献：构建了证据驱动的迭代推理机制，弥补了MLLM在体积感知和疾病特异性证据方面的不足。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12981" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12981" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-11" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">TrustMod-SM: A Multi-Axis Benchmark for Evaluating Trustworthiness of LLMs in Social Media Content Moderation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Aizan Zafar, Sreekantam Sai Venkata, Gathik Jindal, Ritu Raj Sharma, Zishan Ahmad, Tulika Saha, Srinath Srinivasa</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12970v1 Announce Type: new 
+Abstract: Large Language Models (LLMs) show strong potential for social media content moderation, but their trustworthiness beyond overall accuracy remains underexplored. We introduce TrustMod-SM, a benchmark of roughly 29,000 instances across eight datasets, to evaluate LLM moderators on five dimensions: trustfulness, fairness, safety, robustness, and context integrity. Evaluating 16 open-weight models (0.5B-284B parameters, spanning text-only and vision-language architectures) and one closed frontier model, we find persistent trustworthiness gaps. Higher detection accuracy often coincides with greater demographic disparity, and models frequently comply with concealment or exaggeration prompts, assign high confidence to wrong predictions, rarely escalate ambiguous cases, and struggle to separate hate speech from counter-speech or reclaimed language (especially below 8B parameters). Scaling does not uniformly resolve these issues, and no single model excels across all five dimensions.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：评估LLM在社交媒体内容审核中的可信度，超越整体准确率。  
+主要方法：构建TrustMod-SM基准，含约29,000实例，从信任、公平、安全、鲁棒、上下文完整性五维度评估16个开源和1个闭源模型。  
+关键贡献：发现可信度差距，高准确率伴随人口统计偏差，模型易受提示影响，规模扩大不能统一解决所有问题。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12970" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12970" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-12" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">One Temperature to Rule Them All?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Aviv Orly (School of Physics and Astronomy, Tel Aviv University, Israel), Ori Shem-Ur (School of Physics and Astronomy, Tel Aviv University, Israel), Yaron Oz (School of Physics and Astronomy, Tel Aviv University, Israel)</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.13077v1 Announce Type: new 
+Abstract: Inference-time sampling is a central mechanism for improving large language models, with temperature controlling the tradeoff between reliability and diversity. While recent work suggests that varying temperature across samples can improve multi-sample inference, simple fixed-temperature schemes remain the standard in practice. We investigate this discrepancy in the canonical pass@K setting, asking when temperature diversity is useful, and when a single tuned temperature suffices. To this end, we analyze per-question success probabilities across multiple models and datasets, tracking how they vary with sampling temperature. We identify several consistent properties of these profiles, including that harder questions are less likely to share efficient sampling temperatures, although this trend is only logarithmic in hardness. We then derive an efficient method for evaluating the theoretically optimal multi-temperature allocation scheme, and show that although such a scheme improves performance, its gains over single-temperature baselines are typically modest when temperature is tuned as a function of the sampling budget K. We explain this phenomenon through mathematical mechanisms that we call dulling effects, and show how they ensure the robustness of temperature choices across different question distributions. Our results clarify when multi-temperature sampling is useful, and how temperatures should ideally be chosen.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：温度多样性在多样本推理中的效用，何时单温度足够  
+主要方法：分析成功概率随温度变化，推导最优多温度分配方案  
+关键贡献：发现困难问题共享有效温度仅对数下降，多温度方案提升有限</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.13077" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.13077" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-13" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Physics2Weight: Direct Neural Network Architecture and Weight Generation from Physical Laws Using Large Language Models</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Shogo Sato, Tomoyasu Shimada, Kazuhiko Murasaki, Takashi Sano</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12954v1 Announce Type: new 
+Abstract: Recent advances in large language models (LLMs) have enabled weight-space programming (WSP), which directly generates neural network weights without gradient-based optimization. However, extending WSP to physical problems remains challenging, particularly in achieving both solution accuracy and physical consistency. In this paper, we propose Physics2Weight (PtW), a framework that extends WSP to solving partial differential equations by directly generating neural network weights and editing architectures based on governing equations and initial and boundary conditions. PtW introduces physics-constrained prompting and physics-guided architecture editing, combined with iterative weight refinement from WSP, to improve solution accuracy and physical consistency without gradient-based optimization. Experiments on four PDEs, namely the heat, advection, Burgers', and Allen--Cahn equations, demonstrate lower solution errors than conventional physics-informed neural networks, while revealing limitations in satisfying the governing equations for nonlinear PDEs.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何用LLM直接生成神经网络权重和架构求解偏微分方程，兼顾精度与物理一致性。  
+主要方法：提出Physics2Weight框架，通过物理约束提示、物理引导架构编辑和迭代权重精炼，无需梯度优化。  
+关键贡献：在热传导、对流、Burgers'和Allen-Cahn方程上误差低于传统PINN，但非线性PDE的物理一致性仍有局限。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12954" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12954" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-14" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">StatPrompt-LLM: A Lightweight Statistical Refinement for Foundation-Style Time-Series Forecasting</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Aniket Sinha, Veronica W. Tsou</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12974v1 Announce Type: new 
+Abstract: Time-series forecasting has recently seen a paradigm shift with the introduction of foundation-style models that adapt large pretrained language architectures to sequential data. However, effectively exposing fundamental temporal structures, such as trend, scale, and temporal dependence, to these models remains an open challenge, particularly when the available observations are limited. In this paper, we conduct an exploratory empirical study across different generations of forecasting architectures and propose StatPrompt-LLM, a lightweight statistical refinement of Time-LLM. StatPrompt-LLM augments the existing Time-LLM prompting mechanism with dataset-level statistical information and introduces a zero-initialised autoregressive bypass as a complementary linear forecasting pathway. We evaluate our framework on electricity and meteorological time-series benchmarks, including ETTh1, ETTh2, and Weather, under full-prefix and reduced-prefix configurations. Under the 10% reduced-prefix configuration, StatPrompt-LLM achieved lower in-sample prediction errors than Time-LLM, with unweighted average relative reductions across datasets of 40.2% in MSE and 21.4% in MAE. Full-prefix results were more dataset-dependent. Ablation analyses revealed relatively modest and dataset-dependent changes when selected additional statistical descriptor groups were masked within the combined architecture. Computational profiling indicated additional model parameters and runtime overhead relative to Time-LLM.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何有效向基础模型暴露时间序列的统计结构以提升预测性能  
+主要方法：提出StatPrompt-LLM，在Time-LLM提示中加入数据集级统计信息，并添加零初始化的自回归旁路  
+关键贡献：在减少前缀设置下，MSE和MAE分别平均降低40.2%和21.4%</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12974" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12974" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-15" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">BuySideFlow: A Point-in-Time Benchmark for LLM Agents in Investment Research</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.40)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Dong Bo, Fanjin Zhang, Ke Cheng, Xinxin Zhao, Xiaowei Su, Yang Wang, Jinghang Xu, Cuiping Li, Hong Chen, Jing Zhang</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12966v1 Announce Type: new 
+Abstract: Large language models (LLMs) can generate SQL and SQL--Python workflows for investment research, but ensuring point-in-time (PIT) validity remains challenging. Agents must enforce disclosure cutoffs and select the appropriate historical states and record versions throughout data retrieval and financial analysis. We introduce \textsc{BuySideFlow}, a benchmark of 408 practitioner-derived Chinese-language tasks spanning equities, funds, fixed income, and macroeconomics over a fixed snapshot from a licensed production financial database. We provide executable references and a taxonomy of temporal errors, pairing result checks with expert audits of executed workflows. We evaluate nine agent configurations on all tasks, with result accuracy ranging from 16.2\% to 36.8\%. An audit of 900 runs on 100 shared tasks confirms PIT violations in 193 of the 380 runs that pass result checks (50.8\%), showing that output agreement alone does not establish temporal validity.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LLM代理在投资研究中确保时间点有效性的挑战  
+主要方法：构建BuySideFlow基准，包含408个中文任务，提供可执行参考和时间错误分类  
+关键贡献：发现结果检查通过的任务中仍有50.8%存在PIT违规</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12966" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12966" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-16" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">SetPrint: Black-Box LLM Fingerprinting via Setwise Correspondence of Response Changes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.37)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Jinmo Han, Ju Yeon Kang, Jimin Hong, Sunghwan Ahn, Yonghyeon Jun, Nam Soo Kim</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12950v1 Announce Type: new 
+Abstract: Black-box LLM fingerprinting aims to determine whether a target model was derived from a source model when only the output responses to input queries are observable. One way to reveal this relationship is to perturb each query and observe the resulting responses of both models, yielding two corresponding sets of response variations. These sets provide two complementary sources of information: the relations among response changes within each set, and the correspondence of response changes between the two sets. Existing approaches, however, have not fully exploited both. We introduce \textbf{SetPrint}, a training-free method that jointly captures both within-set relations and between-set correspondence. SetPrint expresses each response change relative to the mean change of its own set, and then compares changes from the two models that were induced by the same perturbation. On LeaFBench, SetPrint consistently outperforms existing training-free black-box fingerprinting methods. Further analyses attribute these gains to both within-set relations and between-set correspondence.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：黑盒LLM指纹识别，判断目标模型是否源自源模型
+主要方法：SetPrint，无训练方法，联合捕获组内关系与组间对应
+关键贡献：在LeaFBench上优于现有无训练黑盒指纹识别方法</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12950" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12950" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-17" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Linear Probes to Bayesian Manifolds: Geometry of Arithmetic in Large Language Models</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.36)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Anshul Kumar, Neha Prasad, Manoj Kumar, Barnab\'as P\'oczos, Deeksha Varshney</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12998v1 Announce Type: new 
+Abstract: Linear probes are a standard method to study geometric structures, such as helices and circles, from the activations of large language models (LLMs), and such structure is often taken as evidence that the model computes with it. Probe accuracy alone cannot establish this, because it conflates four separate claims. These are (1) that the concept is decodable from the activations, (2) that they form a specific shape, (3) that the shape belongs to the probed concept rather than to a related concept the model also represents, and (4) that the output of the model depends on the shape. We call these claims decodability, shape, ownership, and causal use, and we test them separately with a four-stage Bayesian pipeline. Stage 2 compares candidate shapes and selects the best one only when its evidence passes a predefined threshold. Stage 3 removes a set of related concepts, specified in advance, and tests whether the shape is owned or inherited. Stage 4 intervenes on the shape to test whether the output of the model depends on it. We apply the pipeline to two-digit addition and multiplication in GPT-J 6B, Llama 3.1 8B, and Pythia 6.9B. Nearly every concept is decodable, but the decoded directions overlap substantially across concepts. Every strongly supported comparison selects a ribbon, which is a helix whose radius changes with the value, or a torus. Of 1,330 cells with an ownership verdict, 19% of shapes are owned and 81% are inherited. Owned and inherited shapes move the output about equally often. Intervening on the shape retains approximately 61% of the effect of intervening on the full probe while using at most five dimensions, against a median of nine for the probe. Our results indicate that a probe verdict alone overstates what a model computes with, and we propose that probe results be reported as verdicts on all four claims rather than as a single accuracy.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：线性探针能否证明LLM中算术概念的几何结构及其因果使用。
+主要方法：四阶段贝叶斯管道，分别测试可解码性、形状、所有权和因果使用。
+关键贡献：区分了四个独立主张，并提供了验证几何结构因果相关性的方法。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12998" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12998" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-18" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Tracing Psychometric Inference in Large Language Models</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.33)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Chih-Hao Hsu, Feng-Chun B. Chou, Pin-Hao A. Chen</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12937v1 Announce Type: new 
+Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We address this question using a cross-persona paradigm across 14 model variants from two families (Llama 3 and Qwen 2.5, 0.5B-14B, base and instruct). Given responses on one psychological scale from real individuals (N = 272 Taiwanese university students), models predict responses on six other scales. At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation. We then examine whether this structure is reflected internally. Contrastive direction analysis finds geometry aligned with the human matrix in larger instruct variants, but little alignment in base variants under this assay. Across models, geometry strength is associated with behavioral amplification (r = 0.68, p = 0.008; partial r = 0.69 controlling for log size). To relate internal structure to output behavior, a matched activation-probing paradigm shows that probe slopes vary less than behavioral slopes (1.38-1.77 vs 0.52-1.53). A synthetic control shows that ridge probing can inflate these slopes; after subtracting a baseline based on a reliability proxy from another analysis, adjusted slopes remain associated with behavior (r = 0.88). We term the measured probe-behavior gap readout attenuation. These results establish decodability and geometric alignment under the tested assays, without showing that the measured directions mediate the cross-persona answers.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LLM是否内部表征心理结构还是仅输出类似结构？  
+主要方法：跨角色范式，14个模型变体，对比方向分析与激活探测。  
+关键贡献：大型指令模型内部几何与人类矩阵对齐，几何强度与行为放大相关。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12937" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12937" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-19" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Third Eye: Beyond Immediate Gains in Recursive Self-Improvement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.30)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Sujato Dutta, Padala Indira Sneha, Kypu Mahitha, Shashank Vanga, Neeraj Choudhary</p>
+                        <p><strong>发布日期：</strong>Wed,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.12988v1 Announce Type: new 
+Abstract: Does a useful self-update remain useful after the model updates again? Third Eye separates immediate performance from the outcome of a further native update. We evaluate five 3-8B backbones on math and code: 64 fresh runs, three candidates per run, and three continuations per candidate. Selection and final scoring use disjoint items. In the balanced Qwen3-4B/Llama-3.2-3B comparison, immediate-selected utility is near zero, but continuation reduces it by 1.78 percentage points (simultaneous 95% interval [0.68, 2.88]). Candidate-averaged immediate utility is already negative: selection partly accounts for the apparently neutral first step. Continuation also lowers utility for SmolLM3-3B and Llama-3.1-8B; Qwen3-8B remains inconclusive. Target and out-of-distribution losses dominate retention changes. Matched recipe and recipient-donor controls identify neither a reliable mitigation nor a single mechanism. The results support evaluating persistent self-updates as adaptation transitions, with independent scoring and a no-update baseline, rather than interpreting immediate performance as their full value.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：递归自我改进中即时性能是否在后续更新后仍有用。
+主要方法：用5个3-8B模型在数学和代码上做64次运行，比较即时选择与延续后效用。
+关键贡献：发现即时效用近零，延续后降低，支持将持久更新视为适应过渡，需独立评分。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.12988" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.12988" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="mt-5 py-3 bg-light text-center">
+        <p class="text-muted mb-0">
+            Powered by <a href="https://github.com/tyutcxj/Daily-Paper-Digest">Daily arXiv</a>
+            | Data from <a href="https://arxiv.org">arXiv</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showModal(modalId) {
+            var modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }
+    </script>
+</body>
+</html>
