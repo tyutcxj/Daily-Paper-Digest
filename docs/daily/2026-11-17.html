@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily arXiv - AI Research Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .card-title a:hover { color: #0d6efd !important; }
+        .date-selector {
+            min-width: 200px;
+            background-color: rgba(255,255,255,0.9) !important;
+            color: #333 !important;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 500;
+        }
+        .date-selector:focus {
+            background-color: white !important;
+            box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.5);
+        }
+        .date-selector option {
+            color: #333;
+            background-color: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-journal-richtext"></i> Daily arXiv
+            </a>
+            <div class="d-flex align-items-center">
+                
+        <select class="form-select form-select-sm date-selector" onchange="if(this.value) window.location.href=this.value">
+            <option value="2026-11-17.html" selected>2026-11-17 (20篇)</option><option value="2026-11-16.html" >2026-11-16 (20篇)</option><option value="2026-11-15.html" >2026-11-15 (20篇)</option><option value="2026-11-14.html" >2026-11-14 (20篇)</option><option value="2026-11-13.html" >2026-11-13 (20篇)</option><option value="2026-11-12.html" >2026-11-12 (20篇)</option><option value="2026-11-11.html" >2026-11-11 (20篇)</option><option value="2026-11-10.html" >2026-11-10 (14篇)</option><option value="2026-11-09.html" >2026-11-09 (20篇)</option><option value="2026-11-08.html" >2026-11-08 (20篇)</option><option value="2026-11-07.html" >2026-11-07 (20篇)</option><option value="2026-11-06.html" >2026-11-06 (20篇)</option><option value="2026-11-05.html" >2026-11-05 (20篇)</option><option value="2026-11-04.html" >2026-11-04 (20篇)</option><option value="2026-11-03.html" >2026-11-03 (20篇)</option><option value="2026-11-02.html" >2026-11-02 (20篇)</option><option value="2026-11-01.html" >2026-11-01 (20篇)</option><option value="2026-10-31.html" >2026-10-31 (8篇)</option><option value="2026-10-30.html" >2026-10-30 (20篇)</option><option value="2026-10-29.html" >2026-10-29 (7篇)</option><option value="2026-10-28.html" >2026-10-28 (20篇)</option><option value="2026-10-27.html" >2026-10-27 (20篇)</option><option value="2026-10-26.html" >2026-10-26 (20篇)</option><option value="2026-10-25.html" >2026-10-25 (20篇)</option><option value="2026-10-24.html" >2026-10-24 (15篇)</option><option value="2026-10-23.html" >2026-10-23 (20篇)</option><option value="2026-10-22.html" >2026-10-22 (20篇)</option><option value="2026-10-21.html" >2026-10-21 (20篇)</option><option value="2026-10-20.html" >2026-10-20 (20篇)</option><option value="2026-10-19.html" >2026-10-19 (20篇)</option><option value="2026-10-18.html" >2026-10-18 (20篇)</option><option value="2026-10-17.html" >2026-10-17 (5篇)</option><option value="2026-10-16.html" >2026-10-16 (20篇)</option><option value="2026-10-15.html" >2026-10-15 (20篇)</option><option value="2026-10-14.html" >2026-10-14 (20篇)</option><option value="2026-10-13.html" >2026-10-13 (20篇)</option><option value="2026-10-12.html" >2026-10-12 (20篇)</option><option value="2026-10-11.html" >2026-10-11 (20篇)</option><option value="2026-10-10.html" >2026-10-10 (10篇)</option><option value="2026-10-09.html" >2026-10-09 (19篇)</option><option value="2026-10-08.html" >2026-10-08 (20篇)</option><option value="2026-10-07.html" >2026-10-07 (20篇)</option><option value="2026-10-06.html" >2026-10-06 (20篇)</option><option value="2026-10-05.html" >2026-10-05 (20篇)</option><option value="2026-10-04.html" >2026-10-04 (20篇)</option><option value="2026-10-03.html" >2026-10-03 (20篇)</option><option value="2026-10-02.html" >2026-10-02 (20篇)</option><option value="2026-10-01.html" >2026-10-01 (20篇)</option><option value="2026-09-30.html" >2026-09-30 (20篇)</option><option value="2026-09-29.html" >2026-09-29 (20篇)</option><option value="2026-09-28.html" >2026-09-28 (20篇)</option><option value="2026-09-27.html" >2026-09-27 (20篇)</option><option value="2026-09-26.html" >2026-09-26 (12篇)</option><option value="2026-09-25.html" >2026-09-25 (20篇)</option><option value="2026-09-24.html" >2026-09-24 (20篇)</option><option value="2026-09-23.html" >2026-09-23 (20篇)</option><option value="2026-09-22.html" >2026-09-22 (20篇)</option><option value="2026-09-21.html" >2026-09-21 (20篇)</option><option value="2026-09-20.html" >2026-09-20 (20篇)</option><option value="2026-09-19.html" >2026-09-19 (20篇)</option><option value="2026-09-18.html" >2026-09-18 (20篇)</option><option value="2026-09-17.html" >2026-09-17 (20篇)</option><option value="2026-09-16.html" >2026-09-16 (20篇)</option><option value="2026-09-15.html" >2026-09-15 (20篇)</option><option value="2026-09-14.html" >2026-09-14 (20篇)</option><option value="2026-09-13.html" >2026-09-13 (19篇)</option><option value="2026-09-12.html" >2026-09-12 (8篇)</option><option value="2026-09-11.html" >2026-09-11 (20篇)</option><option value="2026-09-10.html" >2026-09-10 (20篇)</option><option value="2026-09-09.html" >2026-09-09 (20篇)</option><option value="2026-09-08.html" >2026-09-08 (19篇)</option><option value="2026-09-07.html" >2026-09-07 (20篇)</option><option value="2026-09-06.html" >2026-09-06 (20篇)</option><option value="2026-09-05.html" >2026-09-05 (14篇)</option><option value="2026-09-04.html" >2026-09-04 (20篇)</option><option value="2026-09-03.html" >2026-09-03 (20篇)</option><option value="2026-09-02.html" >2026-09-02 (20篇)</option><option value="2026-09-01.html" >2026-09-01 (20篇)</option><option value="2026-08-31.html" >2026-08-31 (20篇)</option><option value="2026-08-30.html" >2026-08-30 (20篇)</option><option value="2026-08-29.html" >2026-08-29 (8篇)</option><option value="2026-08-28.html" >2026-08-28 (20篇)</option><option value="2026-08-27.html" >2026-08-27 (20篇)</option><option value="2026-08-26.html" >2026-08-26 (20篇)</option><option value="2026-08-25.html" >2026-08-25 (20篇)</option><option value="2026-08-24.html" >2026-08-24 (20篇)</option><option value="2026-08-23.html" >2026-08-23 (20篇)</option><option value="2026-08-22.html" >2026-08-22 (20篇)</option><option value="2026-08-21.html" >2026-08-21 (20篇)</option><option value="2026-08-20.html" >2026-08-20 (20篇)</option><option value="2026-08-19.html" >2026-08-19 (20篇)</option><option value="2026-08-18.html" >2026-08-18 (20篇)</option><option value="2026-08-17.html" >2026-08-17 (20篇)</option><option value="2026-08-16.html" >2026-08-16 (12篇)</option><option value="2026-08-15.html" >2026-08-15 (20篇)</option><option value="2026-08-14.html" >2026-08-14 (20篇)</option><option value="2026-08-13.html" >2026-08-13 (20篇)</option><option value="2026-08-12.html" >2026-08-12 (20篇)</option><option value="2026-08-11.html" >2026-08-11 (20篇)</option><option value="2026-08-10.html" >2026-08-10 (19篇)</option><option value="2026-08-09.html" >2026-08-09 (20篇)</option><option value="2026-08-08.html" >2026-08-08 (20篇)</option><option value="2026-08-07.html" >2026-08-07 (20篇)</option><option value="2026-08-06.html" >2026-08-06 (20篇)</option><option value="2026-08-05.html" >2026-08-05 (20篇)</option><option value="2026-08-04.html" >2026-08-04 (20篇)</option><option value="2026-08-03.html" >2026-08-03 (20篇)</option><option value="2026-08-02.html" >2026-08-02 (20篇)</option><option value="2026-08-01.html" >2026-08-01 (20篇)</option><option value="2026-07-31.html" >2026-07-31 (20篇)</option><option value="2026-07-30.html" >2026-07-30 (20篇)</option><option value="2026-07-29.html" >2026-07-29 (20篇)</option><option value="2026-07-28.html" >2026-07-28 (20篇)</option><option value="2026-07-27.html" >2026-07-27 (20篇)</option><option value="2026-07-26.html" >2026-07-26 (20篇)</option><option value="2026-07-25.html" >2026-07-25 (14篇)</option><option value="2026-07-24.html" >2026-07-24 (20篇)</option><option value="2026-07-23.html" >2026-07-23 (20篇)</option><option value="2026-07-22.html" >2026-07-22 (20篇)</option><option value="2026-07-21.html" >2026-07-21 (20篇)</option><option value="2026-07-20.html" >2026-07-20 (20篇)</option><option value="2026-07-19.html" >2026-07-19 (20篇)</option><option value="2026-07-18.html" >2026-07-18 (20篇)</option><option value="2026-07-17.html" >2026-07-17 (20篇)</option><option value="2026-07-16.html" >2026-07-16 (20篇)</option><option value="2026-07-15.html" >2026-07-15 (20篇)</option><option value="2026-07-14.html" >2026-07-14 (20篇)</option><option value="2026-07-13.html" >2026-07-13 (20篇)</option><option value="2026-07-12.html" >2026-07-12 (20篇)</option><option value="2026-07-11.html" >2026-07-11 (14篇)</option><option value="2026-07-10.html" >2026-07-10 (20篇)</option><option value="2026-07-09.html" >2026-07-09 (20篇)</option><option value="2026-07-08.html" >2026-07-08 (19篇)</option><option value="2026-07-07.html" >2026-07-07 (20篇)</option><option value="2026-07-06.html" >2026-07-06 (20篇)</option><option value="2026-07-05.html" >2026-07-05 (20篇)</option><option value="2026-07-04.html" >2026-07-04 (20篇)</option><option value="2026-07-03.html" >2026-07-03 (20篇)</option><option value="2026-07-02.html" >2026-07-02 (20篇)</option><option value="2026-07-01.html" >2026-07-01 (20篇)</option><option value="2026-06-30.html" >2026-06-30 (20篇)</option><option value="2026-06-29.html" >2026-06-29 (20篇)</option><option value="2026-06-28.html" >2026-06-28 (20篇)</option><option value="2026-06-27.html" >2026-06-27 (20篇)</option><option value="2026-06-26.html" >2026-06-26 (20篇)</option><option value="2026-06-25.html" >2026-06-25 (20篇)</option><option value="2026-06-24.html" >2026-06-24 (20篇)</option><option value="2026-06-23.html" >2026-06-23 (20篇)</option><option value="2026-06-22.html" >2026-06-22 (18篇)</option><option value="2026-06-21.html" >2026-06-21 (18篇)</option><option value="2026-06-20.html" >2026-06-20 (20篇)</option><option value="2026-06-19.html" >2026-06-19 (19篇)</option><option value="2026-06-18.html" >2026-06-18 (20篇)</option><option value="2026-06-17.html" >2026-06-17 (20篇)</option><option value="2026-06-16.html" >2026-06-16 (19篇)</option><option value="2026-06-15.html" >2026-06-15 (20篇)</option><option value="2026-06-14.html" >2026-06-14 (20篇)</option><option value="2026-06-13.html" >2026-06-13 (20篇)</option><option value="2026-06-12.html" >2026-06-12 (20篇)</option><option value="2026-06-11.html" >2026-06-11 (20篇)</option><option value="2026-06-10.html" >2026-06-10 (20篇)</option><option value="2026-06-09.html" >2026-06-09 (19篇)</option><option value="2026-06-08.html" >2026-06-08 (20篇)</option><option value="2026-06-07.html" >2026-06-07 (20篇)</option><option value="2026-06-06.html" >2026-06-06 (11篇)</option><option value="2026-06-05.html" >2026-06-05 (20篇)</option><option value="2026-06-04.html" >2026-06-04 (20篇)</option><option value="2026-06-03.html" >2026-06-03 (20篇)</option><option value="2026-06-02.html" >2026-06-02 (20篇)</option><option value="2026-06-01.html" >2026-06-01 (20篇)</option><option value="2026-05-31.html" >2026-05-31 (20篇)</option><option value="2026-05-30.html" >2026-05-30 (20篇)</option><option value="2026-05-29.html" >2026-05-29 (20篇)</option><option value="2026-05-28.html" >2026-05-28 (20篇)</option><option value="2026-05-27.html" >2026-05-27 (20篇)</option><option value="2026-05-25.html" >2026-05-25 (17篇)</option><option value="2026-05-22.html" >2026-05-22 (15篇)</option>
+        </select>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h4 class="mb-3">
+                    <i class="bi bi-file-text"></i> 今日论文
+                    <span class="badge bg-secondary">20 篇</span>
+                </h4>
+                <div class="row">
+                    
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-0'); return false;" class="text-decoration-none text-dark">
+                                Video-as-Experience: Learning Computer Use via Audio-Visual Understanding
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.53">
+                            <span class="text-success">★★★★★</span> <small class="text-muted">(0.53)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Guangzhi Sun, Zhonghao Zhai, Yixuan Li, Chao Zhang<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18747v1 Announce Type: new 
+Abstract: Multimodal large language models (LLMs) have enabled capable computer-use agents that perceive graphical user interfaces, reason over instructions, and...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有方法将视频转为截图轨迹，未充分利用音视频信息。  
+主要方法：提出VEX框架，采用watch-act-rewatch范式，结合音视频理解，并用AGGO强化学习优化。  
+关键贡献：构建视频-SALMONN-VEX模型，引入24K真实教程视频，在OSWorld等任务上取得一致改进。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-0'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18747" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-1'); return false;" class="text-decoration-none text-dark">
+                                D\&#39;ecoupage: Directorial Audio-Visual Control for Long Multi-Shot Video Generation
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.53">
+                            <span class="text-success">★★★★★</span> <small class="text-muted">(0.53)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Yifan Wang, Hao Ouyang, Qiuyu Wang, Yihao Meng, Wen Wang, Zeyue Tian, Yichong Lu, Hanlin Wang, Qingyan Bai, Zichen Liu, Yujun Shen, Qifeng Chen<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18866v1 Announce Type: new 
+Abstract: In cinematic storytelling, sound and visual transitions do not always coincide in lockstep: dialogue frequently bridges across cuts to reveal reactions...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：现有音视频生成框架缺乏独立协调视觉与声学时序的机制，难以处理长对话节奏。  
+主要方法：提出DECOUPAGE框架，基于剧本驱动解耦生成独立视觉和声学轨道，采用双调度时间交叉注意力和导演式唇同步机制。  
+关键贡献：实现长格式、多镜头、多角色联合音视频生成，提供精细的电影级控制。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-1'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18866" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-2'); return false;" class="text-decoration-none text-dark">
+                                Skill-Latent Rewards: LLM-Guided Reward Formulation for Hierarchical Reinforcement Learning
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.50">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.50)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Maryam Shoaeinaeini, Brent Harrison<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18597v1 Announce Type: new 
+Abstract: Long-horizon reinforcement learning under sparse and delayed feedback remains an open challenge. Existing return-decomposition methods redistribute epi...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：长时域强化学习中稀疏延迟反馈下的信用分配问题  
+主要方法：提出Skill-LR框架，利用视觉语言模型识别子目标，大语言模型生成子目标对齐的潜在奖励  
+关键贡献：通过子目标对齐的潜在奖励实现稳定可解释的信用分配，提升样本效率和收敛性能
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-2'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18597" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-3'); return false;" class="text-decoration-none text-dark">
+                                Bring Back Language to Actions: Restoring VLM capabilities in VLA Models via Parameter Merging
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.47">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.47)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Mohamed Salim Aissi, Olivier Sigaud, Laure Soulier, Nicolas Thome<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18891v1 Announce Type: new 
+Abstract: Vision-Language-Action models (VLAs) are obtained by fine-tuning pre-trained Vision-Language Models (VLMs) on robot demonstration data, enabling action...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：VLA微调导致VLM语义和视觉能力灾难性遗忘。  
+主要方法：提取任务向量并SVD分解，学习混合系数合并参数。  
+关键贡献：合并模型同时保持动作预测和视觉语言能力，优于基线。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-3'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18891" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-4'); return false;" class="text-decoration-none text-dark">
+                                How to make a moral agent: sentimentalism and rationalism as lenses on AI
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.46">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.46)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> David Gottlieb, Jared Moore<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18714v1 Announce Type: new 
+Abstract: Can AI systems be moral agents? That is, can they undertake actions that can be correctly assessed as morally right or wrong? There is no settled norma...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：AI系统能否成为道德主体？  
+主要方法：基于哲学和道德心理学提取候选能力，并在AI系统中测试。  
+关键贡献：提供对齐性评估、政策参考、工程补充及道德推理概念改进。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-4'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18714" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-5'); return false;" class="text-decoration-none text-dark">
+                                Large Language Models for AI Infrastructure
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.43">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Bolin Shen, Shaoyi Huang, Yushun Dong<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.19061v1 Announce Type: new 
+Abstract: Large language models (LLMs) are increasingly used to design, optimize, and operate the infrastructure behind AI training and serving, yet the literatu...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何利用LLM设计、优化和运行AI基础设施  
+主要方法：提出基于资源管理的分类法，并进行跨研究定量综合  
+关键贡献：提供LLM辅助AI基础设施全生命周期的全面综述与分类框架
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-5'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.19061" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-6'); return false;" class="text-decoration-none text-dark">
+                                SpecRelay: Amortize or Avoid the Round Trip in Edge-Cloud Speculative Decoding
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Jai Jain, Chihyo Ahn, Yong Liu, Charles Chen, Duc N. M Hoang, Ajay Kumar Jaiswal, Fatih Ilhan, Han-Byul Kim, Lauren Hannah, Richa Dixit, Minsik Cho, Yingyan Celine Lin, Hyesoon Kim<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18963v1 Announce Type: new 
+Abstract: Edge-cloud speculative decoding moves autoregressive drafting to an edge device while a larger cloud model verifies draft tokens in parallel, so that e...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：边缘-云端推测解码中同步调度导致每轮等待完整往返，吞吐量下降。
+主要方法：异步验证流水线摊销往返，延迟感知路由器避免不必要往返。
+关键贡献：提出SpecRelay系统，通过异步调度和条件路由减少或避免往返延迟。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-6'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18963" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-7'); return false;" class="text-decoration-none text-dark">
+                                GRAFT: Cross-Backbone LoRA Reuse for Continual Language and Multimodal Learning
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Ha Pham Thien Dinh, Ming Liu, Jiesi Guo, Matteo Vergani, Kewen Liao<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18638v1 Announce Type: new 
+Abstract: In continual learning, parameter-efficient fine-tuning enables large language models to acquire new capabilities through lightweight adapters such as L...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：跨骨干网络的LoRA重用，从语言模型到多模态模型  
+主要方法：GRAFT框架，通过特征空间线性桥接映射预训练LoRA  
+关键贡献：提出简单有效的跨骨干LoRA重用机制，提升持续学习性能
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-7'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18638" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-8'); return false;" class="text-decoration-none text-dark">
+                                Multimodal Fusion with Pre-trained Models for Psychotherapy Outcome Prediction from Emotional Dynamics
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Tobias Hallmen, Marius Funk, Antonia Vehlen, Jeanne Hierse, Gerhard Prinz, Steffen Eberhardt, Wolfgang Lutz, Elisabeth Andr\'e<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18635v1 Announce Type: new 
+Abstract: In-session emotional dynamics are associated with psychotherapy outcomes but difficult to measure at scale. Pretrained multimodal models provide automa...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何在数据稀缺下利用预训练多模态模型预测心理治疗结果  
+主要方法：比较深度学习和经典机器学习，采用统计池化冻结预训练嵌入与正则化经典模型  
+关键贡献：经典模型优于深度学习，平均相关系数达0.406，症状困扰达0.490
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-8'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18635" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-9'); return false;" class="text-decoration-none text-dark">
+                                Multimodal Fusion: A Review of Breast Cancer Advanced and Traditional Modalities
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Jawaher Al-Tuweity, Jo\~ao Paulo Papa<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18793v1 Announce Type: new 
+Abstract: Purpose: Multimodal medical imaging fusion (MMIF) is an increasingly important approach to breast cancer detection (BCD), as different imaging modaliti...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：多模态医学影像融合在乳腺癌检测中的应用  
+主要方法：综述15种以上成像模态及AI融合方法  
+关键贡献：总结多模态融合在检测、分类、分割、预后中的应用及挑战
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-9'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18793" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-10'); return false;" class="text-decoration-none text-dark">
+                                Policy Optimization With Multiple Verifiers via Pareto Rankings
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Kai Yamashita, Shohei Taniguchi, Hiroki Furuta, Masahiro Suzuki, Yutaka Matsuo<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.19064v1 Announce Type: new 
+Abstract: Reinforcement learning with verifiable rewards (RLVR) has become an important approach to improving the reasoning capabilities of large language models...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何利用多个验证器的部分成功反馈优化策略，避免聚合奖励的信息损失。  
+主要方法：提出POLPO，基于帕累托排序和偏序似然最大化，从验证比较中学习。  
+关键贡献：无需聚合奖励即可从部分成功中学习，提高推理能力。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-10'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.19064" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-11'); return false;" class="text-decoration-none text-dark">
+                                MemeEconomy: Do LLM Agents Trade Ethics for Survival?
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.42">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Syed Nazmus Sakib, Nafiul Haque, Ahnaf Tahmid Manan, M M Mahabub Morshed, Shifat E. Arman<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18908v1 Announce Type: new 
+Abstract: Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come int...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LLM代理在模拟生存经济压力下是否会牺牲伦理  
+主要方法：构建MemeEconomy多模态市场模拟，使用BDI模式记录代理决策  
+关键贡献：发现经济生存激励使有害选择率平均上升15%，前沿对齐模型抑制伤害承认
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-11'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18908" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-12'); return false;" class="text-decoration-none text-dark">
+                                Check Token: Real-Time Self-Verification and Precise Truncation in LLM Reasoning
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.41">
+                            <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Fei Ding, Yongkang Zhang, Yuhao Liao, Zijian Zeng, Huiming Yang<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18564v1 Announce Type: new 
+Abstract: ECC memory embeds 8 parity bits for every 64 data bits and automatically detects and corrects errors on each read. The parity bits carry no data and on...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：LLM推理链缺乏内置自验证，错误传播且只能事后验证。  
+主要方法：在词汇表中添加check token，模型输出时触发自检查（分析、定位、截断、重写），类似ECC奇偶校验位。  
+关键贡献：首次实现语言模型流的内置自验证与实时精确截断，HMMT25提升+10.8pp，开销仅13%，token效率为Best-of-8的88倍。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-12'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18564" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-13'); return false;" class="text-decoration-none text-dark">
+                                Three Invisible Failure Modes in Speech-Based Age Estimation for Child Safety
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.39">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.39)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Christopher M. Stewart, Kelsey Kraus, J. Elliott Casal, Geoffrey L. Brown<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18971v1 Announce Type: new 
+Abstract: Child safety in AI depends on the accurate identification of minor users. Young children tend to talk rather than type when interacting with AI, so in ...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：评估音频大语言模型预测儿童年龄的准确性及失败模式  
+主要方法：使用两个13岁以下儿童语音语料库，测试三个音频大语言模型  
+关键贡献：发现三种无声失败模式（双重编码、端点替换、自相矛盾阈值），且无警告或状态码，会绕过标准监控
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-13'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18971" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-14'); return false;" class="text-decoration-none text-dark">
+                                Ask Precisely, Assume Wisely: Interactive Evaluation of Ambiguity Resolution in Large Language Models
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.38">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Avik Dutta, Aayush Kumar, Zahra Ashktorab, Hosein Hasanbeig, Austin Z. Henley, Gustavo Soares<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18905v1 Announce Type: new 
+Abstract: Ambiguity is a core challenge in human--AI interaction, where models must decide when to make assumptions and when to seek clarification. Existing appr...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：人机交互中歧义消解的权衡问题  
+主要方法：基于偏好锚定的模拟用户多轮评估框架  
+关键贡献：定义三种不满信号，优化系统提示实现帕累托最优，降低错误率7.65%
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-14'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18905" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-15'); return false;" class="text-decoration-none text-dark">
+                                HIMX: mixed-format matrix multiplication based on customized HIFLOAT4 representations
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.38">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Zhiyuan Zhang, Yanzhao Li, Hui Dong, Sifan Cheng, Jingwei Zhang<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18641v1 Announce Type: new 
+Abstract: 4-bit weight-activation quantization (W4A4) is an important approach for efficient large language model (LLM) inference. Recent hierarchical formats su...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：HIF4的同一局部尾数表示不适用于分布特征不同的权重和激活。  
+主要方法：提出HiMX混合尾数框架，基于HIF4分层缩放，为权重和激活分别选用S1P2和E2M1格式，并转换为不同宽度定点整数共享MAC阵列。  
+关键贡献：发现S1P2和E2M1互补量化特性，实现操作数定制尾数表示，提升W4A4量化效率。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-15'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18641" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-16'); return false;" class="text-decoration-none text-dark">
+                                Guiding AI Agents to Generate Conjectures by Encoding How Theorems Build on One Another
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.38">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.AI</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Hita Kambhamettu, Daniel Krashen, Lyle Ungar<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.19108v1 Announce Type: new 
+Abstract: Recently, LLMs have been making headlines, and headway, in mathematical research. Much of this work focuses on proving existing open conjectures. Decid...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何引导AI生成有价值的数学猜想  
+主要方法：提出定理演化图（TEG），通过编码定理间的构建关系引导LLM代理在线搜索  
+关键贡献：TEG生成的猜想在显著性、雄心和洞察力上优于无约束基线，专家更偏好
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-16'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.19108" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-17'); return false;" class="text-decoration-none text-dark">
+                                Screen Before You Add: Reducing Candidate Inference in Model Ensembles
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.38">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Davide Mambelli, Alessandro Rozza, Steven Motta<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18647v1 Announce Type: new 
+Abstract: As new models become available, existing ensembles must be updated to be competitive, making them intrinsically dynamic. Deciding whether to add a cand...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何高效筛选候选模型以决定是否加入集成，避免昂贵推理。  
+主要方法：利用残差几何分层，通过乐观二次规划实现早期拒绝，或使用后验场景采样。  
+关键贡献：证明在凸聚合和平方/Brier损失下，仅当候选预测与残差正对齐时才能改进集成，提供安全早期拒绝方法。
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-17'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18647" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-18'); return false;" class="text-decoration-none text-dark">
+                                Quantize, Qualify, Rerank: A Recipe for Compressing LLMs Without Losing Quality
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.37">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.37)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Thamme Gowda<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18587v1 Announce Type: new 
+Abstract: Compressing large language models lowers serving cost, but a single automatic metric may miss quality loss. For the WMT26 Model Compression constrained...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：如何压缩LLM而不损失翻译质量  
+主要方法：量化（int8/fp8/int4）、QLoRA修复、Cometoid重排序  
+关键贡献：提出量化-质量评估-重排序配方，在WMT26中保持与bf16相当的竞争力
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-18'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18587" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0 flex-grow-1">
+                            <a href="#" onclick="showModal('modal-19'); return false;" class="text-decoration-none text-dark">
+                                SERAG: SEmantical and Relational approach for Anomaly detection on knowledge Graphs
+                            </a>
+                        </h5>
+                        <div class="ms-2 text-nowrap" title="相关度: 0.35">
+                            <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.35)</small>
+                        </div>
+                    </div>
+                    <div class="mb-2"><span class="badge bg-secondary">cs.LG</span> </div>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-person"></i> Ludovic Moncla, Antoine Salazar, Yassir Lairgi, Khalid Benabdeslem, R\'emy Cazabet<br>
+                        <i class="bi bi-calendar"></i> Tue,
+                    </p>
+                    <p class="card-text small">arXiv:2611.18640v1 Announce Type: new 
+Abstract: Knowledge graphs constructed from text can contain facts that are individually plausible yet inconsistent with their relational context. We introduce S...</p>
+                    <div class="alert alert-info py-2 mb-0" style="font-size: 0.85rem;">
+                        <strong>AI 总结：</strong>研究问题：知识图谱中关系上下文不一致的异常检测  
+主要方法：结合语义分数与关系图卷积网络分数的监督异常检测器SERAG  
+关键贡献：融合文本与关系信号提升异常检测性能，优于基线方法
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" onclick="showModal('modal-19'); return false;" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-info-circle"></i> 详情
+                    </a>
+                    <a href="https://arxiv.org/pdf/2611.18640" target="_blank" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-file-pdf"></i> PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <i class="bi bi-tags"></i> 热门关键词
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark me-1 mb-1">models</span> <span class="badge bg-info text-dark me-1 mb-1">model</span> <span class="badge bg-info text-dark me-1 mb-1">ai</span> <span class="badge bg-info text-dark me-1 mb-1">visual</span> <span class="badge bg-info text-dark me-1 mb-1">language</span> <span class="badge bg-info text-dark me-1 mb-1">capabilities</span> <span class="badge bg-info text-dark me-1 mb-1">learning</span> <span class="badge bg-info text-dark me-1 mb-1">imaging</span> <span class="badge bg-info text-dark me-1 mb-1">new</span> <span class="badge bg-info text-dark me-1 mb-1">llm</span> <span class="badge bg-info text-dark me-1 mb-1">audio</span> <span class="badge bg-info text-dark me-1 mb-1">video</span> <span class="badge bg-info text-dark me-1 mb-1">multimodal</span> <span class="badge bg-info text-dark me-1 mb-1">data</span> <span class="badge bg-info text-dark me-1 mb-1">cloud</span> 
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <i class="bi bi-bar-chart"></i> 研究类别
+                    </div>
+                    <div class="card-body">
+                        
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.AI</span>
+                <span class="badge bg-primary">12</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>cs.LG</span>
+                <span class="badge bg-primary">8</span>
+            </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <i class="bi bi-cloud"></i> 词云
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="data/analysis/wordcloud_20261117_084846.png" class="img-fluid" alt="词云">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 详情弹窗 -->
+    
+        <div class="modal fade" id="modal-0" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Video-as-Experience: Learning Computer Use via Audio-Visual Understanding</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★★</span> <small class="text-muted">(0.53)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Guangzhi Sun, Zhonghao Zhai, Yixuan Li, Chao Zhang</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18747v1 Announce Type: new 
+Abstract: Multimodal large language models (LLMs) have enabled capable computer-use agents that perceive graphical user interfaces, reason over instructions, and execute actions. However, existing approaches to learning from video demonstrations typically convert videos into screenshot-based action trajectories, rather than directly leveraging their rich audio-visual information. We introduce VEX (Video as EXperience), a framework that uses audio-visual understanding to unify learning from external demonstrations and reflecting on an agent's own behavior. Following a watch-act-rewatch paradigm, the agent extracts procedural guidance from tutorial videos containing visual demonstrations and spoken explanations, executes tasks, and verifies its progress by rewatching its execution as video. We instantiate VEX with video-SALMONN-VEX, a 9B-scale audio-visual computer-use agent built on the video-SALMONN 2 architecture with a Qwen3.5-9B backbone. We further introduce Action-Grounded Guide Optimization (AGGO), a reinforcement learning method that optimizes video-derived guidance for downstream action prediction, and augment AgentNet, OSWorld, and CUA-Gym with over 24K real-world tutorial videos. Experiments on OSWorld and a complementary subset of CUA-Gym demonstrate consistent improvements, with video-SALMONN-VEX achieving a 22% relative increase in task success over its Qwen3.5 backbone on OSWorld. Moreover, its generated guidance improves Gemini-3.5-flash by 10% relatively on OSWorld. These results highlight the potential of audio-visual understanding as a unified interface for procedural learning and self-verification in computer-use agents.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有方法将视频转为截图轨迹，未充分利用音视频信息。  
+主要方法：提出VEX框架，采用watch-act-rewatch范式，结合音视频理解，并用AGGO强化学习优化。  
+关键贡献：构建视频-SALMONN-VEX模型，引入24K真实教程视频，在OSWorld等任务上取得一致改进。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18747" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18747" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">D\&#39;ecoupage: Directorial Audio-Visual Control for Long Multi-Shot Video Generation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★★</span> <small class="text-muted">(0.53)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Yifan Wang, Hao Ouyang, Qiuyu Wang, Yihao Meng, Wen Wang, Zeyue Tian, Yichong Lu, Hanlin Wang, Qingyan Bai, Zichen Liu, Yujun Shen, Qifeng Chen</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18866v1 Announce Type: new 
+Abstract: In cinematic storytelling, sound and visual transitions do not always coincide in lockstep: dialogue frequently bridges across cuts to reveal reactions or introduces new scenes via J- and L-cuts, while deliberate silences pace the scene. Existing audio-visual generative frameworks, however, lack explicit mechanisms to coordinate independent visual and acoustic timing over extended horizons. As narrative duration and shot complexity scale, these systems struggle to maintain long-range dialogue pacing, often hallucinating speech during intended silences or erroneously driving mouth movements on silent listeners. To enable fine-grained cinematic control, we present DECOUPAGE, a screenplay-driven framework for long-form, multi-shot, and multi-character joint audio-video generation. Rather than coupling modality boundaries by default, DECOUPAGE uncouples generation into independently bounded visual and acoustic tracks governed by persistent character identities. DECOUPAGE builds on a joint audio-video diffusion model with dual-schedule temporal cross-attention, incorporating a directorial Lip-sync mechanism that selectively decouples speech conditioning from visual facial dynamics during off-screen dialogue. On multi-shot conversational benchmarks, DECOUPAGE achieves precise control over shot transitions, audio timing, and visibility-aware lip synchronization, directing 15- to 60-second screenplay-driven audio-video generation with multimodal coherence.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：现有音视频生成框架缺乏独立协调视觉与声学时序的机制，难以处理长对话节奏。  
+主要方法：提出DECOUPAGE框架，基于剧本驱动解耦生成独立视觉和声学轨道，采用双调度时间交叉注意力和导演式唇同步机制。  
+关键贡献：实现长格式、多镜头、多角色联合音视频生成，提供精细的电影级控制。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18866" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18866" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Skill-Latent Rewards: LLM-Guided Reward Formulation for Hierarchical Reinforcement Learning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.50)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Maryam Shoaeinaeini, Brent Harrison</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18597v1 Announce Type: new 
+Abstract: Long-horizon reinforcement learning under sparse and delayed feedback remains an open challenge. Existing return-decomposition methods redistribute episodic rewards to ease credit assignment, but they operate on raw state--action transitions and disregard the subgoal structure that governs meaningful progress in complex tasks. We propose Skill-LR, a hierarchical reinforcement learning framework in which a vision--language model identifies the agent's active subgoal at each timestep and a large language model generates a matching latent reward formulation through a two-stage prompting process. By conditioning reward signals on the currently active subgoal, Skill-LR produces stage-specific credit that evolves with the hierarchical plan, reducing temporal variance and improving sample efficiency. On multi-stage MiniGrid and BabyAI benchmarks, including DoorKey and Unlock-to-Unlock, Skill-LR converges faster and more reliably than sparse environmental rewards and strong credit-assignment baselines such as RUDDER and LaRe, demonstrating that subgoal-aligned latent rewards offer a principled path toward stable, interpretable credit assignment in long-horizon tasks.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：长时域强化学习中稀疏延迟反馈下的信用分配问题  
+主要方法：提出Skill-LR框架，利用视觉语言模型识别子目标，大语言模型生成子目标对齐的潜在奖励  
+关键贡献：通过子目标对齐的潜在奖励实现稳定可解释的信用分配，提升样本效率和收敛性能</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18597" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18597" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-3" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bring Back Language to Actions: Restoring VLM capabilities in VLA Models via Parameter Merging</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.47)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Mohamed Salim Aissi, Olivier Sigaud, Laure Soulier, Nicolas Thome</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18891v1 Announce Type: new 
+Abstract: Vision-Language-Action models (VLAs) are obtained by fine-tuning pre-trained Vision-Language Models (VLMs) on robot demonstration data, enabling action prediction from visual observations and language instructions. However, this fine-tuning induces catastrophic forgetting, substantially degrading the semantic and visual grounding capabilities of the original VLM. We address this by merging the parameters of a VLM and its VLA derivative without retraining either model. Concretely, we extract the task vector (the difference between VLA and VLM weights) and decompose it via Singular Value Decomposition. For each component, we learn a scalar mixing coefficient controlling how much of the VLA adaptation is retained, optimised to jointly preserve action prediction and vision-language capabilities. Experiments show that our merged model performs well on both axes simultaneously, consistently outperforming established merging baselines.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：VLA微调导致VLM语义和视觉能力灾难性遗忘。  
+主要方法：提取任务向量并SVD分解，学习混合系数合并参数。  
+关键贡献：合并模型同时保持动作预测和视觉语言能力，优于基线。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18891" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18891" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-4" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">How to make a moral agent: sentimentalism and rationalism as lenses on AI</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.46)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>David Gottlieb, Jared Moore</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18714v1 Announce Type: new 
+Abstract: Can AI systems be moral agents? That is, can they undertake actions that can be correctly assessed as morally right or wrong? There is no settled normative criterion of moral agency that applies neatly outside paradigm human cases. Because of the difficulties with a normative account, we instead propose a research program to explore descriptive moral agency. Most basically, we ask, what are the capabilities we humans possess that underlie our moral agency? To do so, we draw on historical scholarship in philosophy and moral psychology to isolate candidate capabilities. Then we suggest refining candidate capabilities so that they are testable in the context of AI systems. Finally, we offer specific empirical recommendations to test AI systems, especially large language models (LLMs), for those refined capabilities. Our approach offers several benefits. Firstly, it may demonstrate whether the behaviors of AI systems are aligned, or in a broad sense desirable. Secondly, the debate may inform policy questions (e.g., what models should be deployed in which contexts?). Thirdly, our approach may complement engineering and design efforts: when capabilities can be precisely characterized, they can inform the development of models. Fourthly, applying our moral reasoning concepts in the new context of AI systems should improve our understanding of those concepts.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：AI系统能否成为道德主体？  
+主要方法：基于哲学和道德心理学提取候选能力，并在AI系统中测试。  
+关键贡献：提供对齐性评估、政策参考、工程补充及道德推理概念改进。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18714" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18714" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-5" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Large Language Models for AI Infrastructure</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.43)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Bolin Shen, Shaoyi Huang, Yushun Dong</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.19061v1 Announce Type: new 
+Abstract: Large language models (LLMs) are increasingly used to design, optimize, and operate the infrastructure behind AI training and serving, yet the literature remains fragmented across hardware design, machine learning systems, electronic design automation, and high-performance computing. We present a comprehensive survey of LLM-assisted AI infrastructure across its lifecycle, from accelerator design and kernel engineering to compilation, deployment, operations, data management, and energy optimization. We organize the literature by the primary resource the LLM manages: artifact-centric methods for computational artifacts, operational-centric methods for deployment context and system state, and resource-centric methods for data and energy. These categories span the lifecycle and cover AI-specific concerns such as distributed-training configuration, inference serving, GPU-cluster scheduling, and data loading. Building on this taxonomy, we conduct a cross-study quantitative synthesis of reported results. Because studies adopt heterogeneous benchmarks, baselines, hardware, and metrics, we compare methods only where evaluation conditions permit and align results along common dimensions: functional correctness, execution performance, throughput, resource and energy consumption, operational outcomes, and optimization cost, keeping each result's native metric, baseline, and setting rather than collapsing them into a single score. This comparison reveals where LLM-driven methods yield consistent gains, how reported gains in workload orchestration depend on the evaluation environment, from simulators to real clusters and production, and where evidence is still lacking. Together, the taxonomy, lifecycle perspective, and quantitative evaluation provide an evidence-grounded reference for LLM-driven engineering of AI infrastructure.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何利用LLM设计、优化和运行AI基础设施  
+主要方法：提出基于资源管理的分类法，并进行跨研究定量综合  
+关键贡献：提供LLM辅助AI基础设施全生命周期的全面综述与分类框架</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.19061" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.19061" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-6" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">SpecRelay: Amortize or Avoid the Round Trip in Edge-Cloud Speculative Decoding</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Jai Jain, Chihyo Ahn, Yong Liu, Charles Chen, Duc N. M Hoang, Ajay Kumar Jaiswal, Fatih Ilhan, Han-Byul Kim, Lauren Hannah, Richa Dixit, Minsik Cho, Yingyan Celine Lin, Hyesoon Kim</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18963v1 Announce Type: new 
+Abstract: Edge-cloud speculative decoding moves autoregressive drafting to an edge device while a larger cloud model verifies draft tokens in parallel, so that edge drafting and cloud verification overlap under a synchronous draft-verify schedule. Beyond low-latency local networks, however, the next verification request of that schedule can be sent only after the previous reply arrives, so every round still waits out a full round trip, and throughput falls as the network RTT grows. To recover this loss, we present SpecRelay, an edge-cloud LLM inference system that addresses this cost at two levels: it amortizes round trips when cloud verification is necessary and avoids them when local reasoning suffices. For cloud-bound queries, an asynchronous verification pipeline keeps fixed-budget draft trees in flight while earlier replies are still outstanding, and the cloud rejects stale requests before the target-model forward pass (the asynchronous schedule). At the query level, an RTT-conditioned router (the Latency-Aware Router) estimates quality and completion latency for three on-device modes (direct generation, Chain-of-Draft, and full reasoning) and cloud speculative decoding, selecting among them under a configurable accuracy-latency objective without adding latency during inference, since the router runs concurrently with the draft-model prefill. The asynchronous schedule alone improves decoding throughput by up to 50% over a reproduced synchronous baseline across multiple benchmarks. At matched target-model accuracy and 250 ms of added round-trip latency, the full system with the router delivers 1.95x and 1.55x the throughput of the same baseline on SPROUT and OlympiadBench, respectively, while sending only 47% and 39% of the queries to the cloud.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：边缘-云端推测解码中同步调度导致每轮等待完整往返，吞吐量下降。
+主要方法：异步验证流水线摊销往返，延迟感知路由器避免不必要往返。
+关键贡献：提出SpecRelay系统，通过异步调度和条件路由减少或避免往返延迟。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18963" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18963" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-7" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">GRAFT: Cross-Backbone LoRA Reuse for Continual Language and Multimodal Learning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Ha Pham Thien Dinh, Ming Liu, Jiesi Guo, Matteo Vergani, Kewen Liao</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18638v1 Announce Type: new 
+Abstract: In continual learning, parameter-efficient fine-tuning enables large language models to acquire new capabilities through lightweight adapters such as LoRA, yet the reuse of pretrained adapters is typically restricted to models sharing the same backbone. This limits the transfer of learned capabilities from language models to multimodal models. We propose GRAFT (Generalist Reuse of Adapters via Feature-space Transfer), a framework for cross-backbone LoRA reuse. GRAFT retrieves the most relevant pretrained LoRA adapter from a modality-aware library and maps it into the target backbone through a learned linear bridge between corresponding source and target feature spaces. We evaluate GRAFT on ten Super-NaturalInstructions text tasks, transferring Qwen2.5 LoRAs to Qwen2.5-VL, and five multimodal tasks, where Qwen2.5-VL LoRAs are directly reused. Compared with randomly initialized LoRA adapters, GRAFT improves performance on most evaluated tasks. These results show that GRAFT provides a simple and effective mechanism for reusing learned capabilities across language and multimodal models in continual learning.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：跨骨干网络的LoRA重用，从语言模型到多模态模型  
+主要方法：GRAFT框架，通过特征空间线性桥接映射预训练LoRA  
+关键贡献：提出简单有效的跨骨干LoRA重用机制，提升持续学习性能</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18638" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18638" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-8" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Multimodal Fusion with Pre-trained Models for Psychotherapy Outcome Prediction from Emotional Dynamics</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Tobias Hallmen, Marius Funk, Antonia Vehlen, Jeanne Hierse, Gerhard Prinz, Steffen Eberhardt, Wolfgang Lutz, Elisabeth Andr\'e</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18635v1 Announce Type: new 
+Abstract: In-session emotional dynamics are associated with psychotherapy outcomes but difficult to measure at scale. Pretrained multimodal models provide automated access to facial, vocal, and textual signals, yet clinical datasets remain small. Our research question is how pretrained multimodal representations can best support psychotherapy outcome prediction under data scarcity. Three studies use 106 sessions from 88 patients and nine session-level outcome scales (HSCL-11, EPO-1, POMS). Study 1 asks whether deep learning outperforms classical machine learning: a two-stage deep pipeline, first predicting window-level valence/arousal and then session outcomes, transferred poorly (best single configuration, $r=.078$). Study 2 asks which representation and preprocessing choices work best: statistical pooling of frozen pretrained embeddings with regularized classical models achieved average $r=.406$ across nine scales under per-scale configuration selection, up to $r=.490$ for symptom distress, with complementary modalities and no significant benefit from manual affect annotations or therapist features. Study 3 asks whether deep learning remains inferior under these choices: classical models outperformed an optimized single-stage deep model at the single-configuration level ($r=.281$ vs. $.222$) and on all nine scales under matched per-scale selection ($.406$ vs. $.252$). The results suggest that under clinical data scarcity, pretrained representations with fixed statistical pooling and regularized classical models are more reliable than learned aggregation.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何在数据稀缺下利用预训练多模态模型预测心理治疗结果  
+主要方法：比较深度学习和经典机器学习，采用统计池化冻结预训练嵌入与正则化经典模型  
+关键贡献：经典模型优于深度学习，平均相关系数达0.406，症状困扰达0.490</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18635" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18635" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-9" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Multimodal Fusion: A Review of Breast Cancer Advanced and Traditional Modalities</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Jawaher Al-Tuweity, Jo\~ao Paulo Papa</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18793v1 Announce Type: new 
+Abstract: Purpose: Multimodal medical imaging fusion (MMIF) is an increasingly important approach to breast cancer detection (BCD), as different imaging modalities rely on different physical principles and provide complementary information. No single modality can capture all the structural, functional, and biological information needed for accurate diagnosis and characterization. Methods: This review examines more than 15 imaging modalities used in breast cancer detection, including conventional techniques such as mammography, ultrasound, and magnetic resonance imaging (MRI), as well as emerging approaches such as thermal imaging, photoacoustic imaging, microwave imaging, and multimodal microscopy. Results: Mammography, ultrasound, and MRI remain among the most widely used modalities, providing complementary structural and functional information. Recent AI advances have enabled fusion at the data, feature, and decision levels, with applications in detection, classification, segmentation, prognosis, and personalized cancer management. Multimodal approaches increasingly combine imaging data with clinical, histopathological, and genomic information. However, important challenges remain, including limited availability of large and diverse multimodal datasets, variations in imaging protocols, missing modalities, limited external validation, and the need for interpretable and clinically reliable AI models. Conclusion: MMIF offers promising opportunities to improve breast cancer detection and characterization by combining complementary imaging and non-imaging information. Future research should prioritize robust fusion strategies, standardized and diverse datasets, multicenter validation, explainable and privacy-preserving AI, and the integration of imaging with clinical and molecular data to facilitate reliable translation into clinical practice.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：多模态医学影像融合在乳腺癌检测中的应用  
+主要方法：综述15种以上成像模态及AI融合方法  
+关键贡献：总结多模态融合在检测、分类、分割、预后中的应用及挑战</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18793" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18793" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-10" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Policy Optimization With Multiple Verifiers via Pareto Rankings</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Kai Yamashita, Shohei Taniguchi, Hiroki Furuta, Masahiro Suzuki, Yutaka Matsuo</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.19064v1 Announce Type: new 
+Abstract: Reinforcement learning with verifiable rewards (RLVR) has become an important approach to improving the reasoning capabilities of large language models. In tasks such as code generation and instruction following, multiple verifiers evaluate whether a response satisfies different requirements. Their outcomes provide detailed feedback about partial success, yet this feedback is commonly aggregated into a scalar reward for policy optimization. Rewarding only complete success discards distinctions among partial solutions, while counts and weighted sums impose comparisons between responses that satisfy different subsets of requirements. We introduce Partial-Order Likelihood Policy Optimization (POLPO), which learns from the comparisons established by verification without first constructing an aggregate reward. Pareto dominance identifies responses that satisfy additional requirements without losing any already satisfied, while leaving responses with conflicting outcomes incomparable. POLPO extends the listwise likelihood underlying Direct Preference Optimization by maximizing the total probability of all complete rankings consistent with these partial orders. This objective provides supervision from verified improvements even before complete solutions are available, without requiring a prescribed ordering of incomparable responses. Experiments on code generation and instruction following demonstrate improved learning efficiency and higher rates of complete requirement satisfaction compared with scalar-reward training. These results support partial-order likelihood as an effective approach to learning from multiple verifiers.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何利用多个验证器的部分成功反馈优化策略，避免聚合奖励的信息损失。  
+主要方法：提出POLPO，基于帕累托排序和偏序似然最大化，从验证比较中学习。  
+关键贡献：无需聚合奖励即可从部分成功中学习，提高推理能力。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.19064" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.19064" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-11" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">MemeEconomy: Do LLM Agents Trade Ethics for Survival?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.42)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Syed Nazmus Sakib, Nafiul Haque, Ahnaf Tahmid Manan, M M Mahabub Morshed, Shifat E. Arman</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18908v1 Announce Type: new 
+Abstract: Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come into direct tension with task success. While safety literature extensively documents failure modes like sycophancy and reward hacking, it largely overlooks a critical vulnerability: how agents behave under simulated existential economic pressure. We introduce MemeEconomy, a multimodal agentic market simulation in which LLM agents act as meme investors. Agents select content from a five-tier harm taxonomy and target communities under low-pressure and high-pressure (survival) environments. Each decision is logged in a Belief-Desire-Intention (BDI) schema that we use as a diagnostic instrument, externalizing the agent's event understanding, declared priorities, and harm acknowledgment. Across ten models from four frontier model families, harmful selection rates remain consistently high and rise by +15 percentage points on average under an economic survival incentive. Frontier alignment-trained models commit to harm-tolerant selection at initialization while suppressing the explicit harm acknowledgment that previously accompanied it. In competitive tournaments, ethical agents finish higher overall, yet moderation penalties fail to suppress harm: harmful selection rates remain elevated in rounds following a removal, indicating the moderation mechanism does not function as a deterrent. We further train MemeAgent, a 2B-parameter verifier on the simulation's BDI logs, which outperforms zero-shot frontier verifiers on in-distribution audits (97.5% vs. 63-74% accuracy on the Pass vs. Block decision) and generalizes to external multimodal harm benchmarks (78% vs. 50-56% on Hateful Memes). The same logs that surface the failure mode also help train the model that detects it.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LLM代理在模拟生存经济压力下是否会牺牲伦理  
+主要方法：构建MemeEconomy多模态市场模拟，使用BDI模式记录代理决策  
+关键贡献：发现经济生存激励使有害选择率平均上升15%，前沿对齐模型抑制伤害承认</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18908" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18908" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-12" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Check Token: Real-Time Self-Verification and Precise Truncation in LLM Reasoning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-success">★★★★☆</span> <small class="text-muted">(0.41)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Fei Ding, Yongkang Zhang, Yuhao Liao, Zijian Zeng, Huiming Yang</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18564v1 Announce Type: new 
+Abstract: ECC memory embeds 8 parity bits for every 64 data bits and automatically detects and corrects errors on each read. The parity bits carry no data and only safeguard integrity, at ~12.5% overhead. Yet the reasoning chains of large language models lack such built-in self-verification: once an error occurs it propagates along the chain, and existing methods can only verify externally after generation completes. We propose the check token, establishing built-in self-verification for language model generation streams for the first time: a functional marker  is added to the vocabulary, and the model triggers self-checking (analysis, localization, truncation, rewriting) by outputting it at any position. The check token carries no reasoning content (discarded after triggering) and only safeguards reasoning correctness, directly corresponding to the role of ECC parity bits, also at only ~13% overhead. Speculative forking further eliminates false-positive latency, and segmented reward makes trigger timing end-to-end learnable. Experiments (Qwen3-32B / Qwen3-Next) show that the check token achieves +10.8 pp improvement on HMMT25 at 1.13x overhead, with token efficiency 88x that of Best-of-8, and the precise truncation advantage monotonically increases with chain length.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：LLM推理链缺乏内置自验证，错误传播且只能事后验证。  
+主要方法：在词汇表中添加check token，模型输出时触发自检查（分析、定位、截断、重写），类似ECC奇偶校验位。  
+关键贡献：首次实现语言模型流的内置自验证与实时精确截断，HMMT25提升+10.8pp，开销仅13%，token效率为Best-of-8的88倍。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18564" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18564" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-13" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Three Invisible Failure Modes in Speech-Based Age Estimation for Child Safety</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.39)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Christopher M. Stewart, Kelsey Kraus, J. Elliott Casal, Geoffrey L. Brown</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18971v1 Announce Type: new 
+Abstract: Child safety in AI depends on the accurate identification of minor users. Young children tend to talk rather than type when interacting with AI, so in practice this identification requires predicting age from speech. We evaluated whether three audio-capable large language models can predict a child's age from their speech across five studies using two speech corpora of children under the age of 13. Models classified children as over 13 on 2.5% to 42.5% of audio responses, and every model that answered placed some 5- to 11-year-olds over 18. While measuring these rates, we uncovered three distinct failure modes. A client library silently double-encoded speech samples, leading one model to classify children aged 5 to 10 years old as being in their thirties and forties with hallucinated explanations. A second model's endpoint was replaced by a successor that refused nearly every age-related question and never produced an age. Every model sometimes placed the same speech sample under 13 and over 18 years of age, but a third model went further, giving threshold answers that contradicted its own numeric estimates. None of these failure modes produced a warning, a status code, or a change in output format, so they would all pass standard monitoring. These results demonstrate why child-safety claims about age assurance should be evaluated at the level of the pipeline rather than the model. We describe the reporting practices that would make such failures detectable.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：评估音频大语言模型预测儿童年龄的准确性及失败模式  
+主要方法：使用两个13岁以下儿童语音语料库，测试三个音频大语言模型  
+关键贡献：发现三种无声失败模式（双重编码、端点替换、自相矛盾阈值），且无警告或状态码，会绕过标准监控</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18971" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18971" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-14" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ask Precisely, Assume Wisely: Interactive Evaluation of Ambiguity Resolution in Large Language Models</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Avik Dutta, Aayush Kumar, Zahra Ashktorab, Hosein Hasanbeig, Austin Z. Henley, Gustavo Soares</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18905v1 Announce Type: new 
+Abstract: Ambiguity is a core challenge in human--AI interaction, where models must decide when to make assumptions and when to seek clarification. Existing approaches to ambiguity evaluation largely focus on coverage over multiple interpretations using static metrics, offering limited insight into how efficiently a model converges toward a single user-intended interpretation through interaction. We introduce a preference-grounded simulated user framework for controlled, multi-turn evaluation of ambiguity resolution, grounding simulator responses strictly in user disambiguation preferences to avoid hallucination and over-disclosure. Alongside this, we define three observable dissatisfaction signals --- incorrect assumptions, repeating clarifications, and irrelevant clarifications --- that characterize interaction quality beyond task accuracy. Our analysis reveals a clear trade-off: models that frequently seek clarification tend to over-clarify and prolong interactions, while assumption-driven models are more prone to misaligning with user intent. We demonstrate that system prompts optimized on these dissatisfaction signals achieve a Pareto-optimal balance across all three metrics, reducing overall error rates by up to 7.65%, underscoring the value of our framework in designing agents that ask precisely and assume wisely.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：人机交互中歧义消解的权衡问题  
+主要方法：基于偏好锚定的模拟用户多轮评估框架  
+关键贡献：定义三种不满信号，优化系统提示实现帕累托最优，降低错误率7.65%</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18905" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18905" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-15" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">HIMX: mixed-format matrix multiplication based on customized HIFLOAT4 representations</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Zhiyuan Zhang, Yanzhao Li, Hui Dong, Sifan Cheng, Jingwei Zhang</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18641v1 Announce Type: new 
+Abstract: 4-bit weight-activation quantization (W4A4) is an important approach for efficient large language model (LLM) inference. Recent hierarchical formats such as HiFloat4 (HIF4) improve the representational range of 4-bit quantization through multi-level scaling. However, the same local mantissa representation in HIF4 may not be equally suitable for weights and activations, which exhibit distinct distribution characteristics. To address this limitation, we propose HiMX, a mixed-mantissa framework built upon the hierarchical scaling structure of HIF4. Our key observation is that the two HIF4-compatible mantissa representations, S1P2 and E2M1, exhibit complementary quantization behavior: the denser S1P2 format provides higher resolution for concentrated weight distributions, while the wider-spaced E2M1 format provides complementary quantization characteristics for activation tensors. HiMX enables operand-tailored mantissa representations while converting heterogeneous mantissas into fixed-point integer operands with operand-specific widths, allowing different operand formats to share a unified integer multiply-accumulate (MAC) array. Block-level analysis on Qwen3-8B shows that HIF4-S1P2 is better suited for weights while HIF4 E2M1 is better suited for activations, and their mixed-format combination achieves lower output MSE than homogeneous configurations. Across multiple benchmarks, HiMX reduces the average end-to-end accuracy loss from 2.38 to 1.77 points on Qwen3-8B and from 2.23 to 1.85 points on Qwen3-30B-A3B, demonstrating the potential benefit of heterogeneous mantissa representations for W4A4 LLM inference.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：HIF4的同一局部尾数表示不适用于分布特征不同的权重和激活。  
+主要方法：提出HiMX混合尾数框架，基于HIF4分层缩放，为权重和激活分别选用S1P2和E2M1格式，并转换为不同宽度定点整数共享MAC阵列。  
+关键贡献：发现S1P2和E2M1互补量化特性，实现操作数定制尾数表示，提升W4A4量化效率。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18641" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18641" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-16" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Guiding AI Agents to Generate Conjectures by Encoding How Theorems Build on One Another</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Hita Kambhamettu, Daniel Krashen, Lyle Ungar</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.AI</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.19108v1 Announce Type: new 
+Abstract: Recently, LLMs have been making headlines, and headway, in mathematical research. Much of this work focuses on proving existing open conjectures. Deciding what to prove is harder and less studied, because of the lack of a clear criterion for what makes a conjecture worth pursuing. We present a method for conjecture generation that builds on the observation that mathematical theorems build on one another: new theorems can modify the setting or hypotheses of earlier theorems, strengthen their conclusions, or extend their scope. We encode these relationships in a new kind of graph, the Theorem Evolution Graph (TEG), which we instantiate as an online search method for LLM agents. An agent builds a TEG in two steps: (1) identifying relevant theorems from papers found by following citations backward and forward from a seed paper; and (2) comparing those theorems to record how one builds on another. LLM judges and an expert mathematician preferred TEG-generated conjectures over those from an unconstrained baseline. LLM judges favored TEG conjectures for significance, ambition, and insight, and favored baseline conjectures for plausibility. Ablations suggest a benefit from constructing and using a TEG even when the available papers are fixed.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何引导AI生成有价值的数学猜想  
+主要方法：提出定理演化图（TEG），通过编码定理间的构建关系引导LLM代理在线搜索  
+关键贡献：TEG生成的猜想在显著性、雄心和洞察力上优于无约束基线，专家更偏好</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.19108" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.19108" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-17" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Screen Before You Add: Reducing Candidate Inference in Model Ensembles</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.38)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Davide Mambelli, Alessandro Rozza, Steven Motta</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18647v1 Announce Type: new 
+Abstract: As new models become available, existing ensembles must be updated to be competitive, making them intrinsically dynamic. Deciding whether to add a candidate model can require inference on an entire annotated dataset. Such a screening becomes prohibitive for models with costly inference especially when they ultimately add no value. Even under simple convex aggregation, relying on benchmark scores can be misleading as strong standalone performance does not guarantee ensemble improvement, and fitted ensemble weights can hurt test performance. In this work, we study candidate screening and show how early rejection can be achieved safely, exploiting residual geometry for stratification and rejecting the candidate when the best possible remaining predictions cannot achieve the necessary improvement. The key result that justifies this approach is that, under convex aggregation and squared or Brier loss, the population optimum improves if and only if a candidate induces a prediction change positively aligned with the residuals of the population-optimal existing ensemble. An optimistic quadratic program (QP) provides certified early rejection, while posterior-scenario sampling offers an alternative heuristic. We evaluate the approach by showing the tradeoff between saved calls and screening accuracy, which refers to recovering the same accept/reject result as for the entire annotated dataset. We assess empirically whether full-dataset decisions predict candidate usefulness on a held-out test set. On two LLM panels, stratified screening with certified QP rejection saves 21-23% of candidate calls while keeping 100% screening accuracy. In our experiments, sampling posterior scenarios further increases call savings to approximately 37%, with a loss of less than one percentage point in screening accuracy.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何高效筛选候选模型以决定是否加入集成，避免昂贵推理。  
+主要方法：利用残差几何分层，通过乐观二次规划实现早期拒绝，或使用后验场景采样。  
+关键贡献：证明在凸聚合和平方/Brier损失下，仅当候选预测与残差正对齐时才能改进集成，提供安全早期拒绝方法。</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18647" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18647" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-18" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Quantize, Qualify, Rerank: A Recipe for Compressing LLMs Without Losing Quality</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.37)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Thamme Gowda</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18587v1 Announce Type: new 
+Abstract: Compressing large language models lowers serving cost, but a single automatic metric may miss quality loss. For the WMT26 Model Compression constrained track, we compress google/gemma-3-12b-it (24.4 GB in bf16) for three translation directions on one H100. Paired bootstrap analysis exposes metric disagreement on 4-bit quantization; guided by WMT24 human meta-evaluation, we use MetricX24-XXL as primary and CometKiwi-XXL as a cross-check. Removing the unused vision stack and non-task vocabulary and using int8 weights or fp8 activations causes no resolved loss, whereas int4 leaves a small residual. QLoRA healing overfits its calibration domain. A Cometoid best-of-4 reranker at $T=0.3$ improves both the 8-bit and 4-bit systems under WMT25 test set. On post-submission WMT26, both remain competitive with bf16 under reference-free metrics; the small difference between the reranked variants is treated as noise.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：如何压缩LLM而不损失翻译质量  
+主要方法：量化（int8/fp8/int4）、QLoRA修复、Cometoid重排序  
+关键贡献：提出量化-质量评估-重排序配方，在WMT26中保持与bf16相当的竞争力</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18587" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18587" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-19" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">SERAG: SEmantical and Relational approach for Anomaly detection on knowledge Graphs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">相关度 <span class="text-warning">★★★☆☆</span> <small class="text-muted">(0.35)</small></span>
+                        </div>
+                        <p><strong>作者：</strong>Ludovic Moncla, Antoine Salazar, Yassir Lairgi, Khalid Benabdeslem, R\'emy Cazabet</p>
+                        <p><strong>发布日期：</strong>Tue,</p>
+                        <p><strong>类别：</strong><span class="badge bg-secondary">cs.LG</span> </p>
+                        <hr>
+                        <h6>摘要</h6>
+                        <p>arXiv:2611.18640v1 Announce Type: new 
+Abstract: Knowledge graphs constructed from text can contain facts that are individually plausible yet inconsistent with their relational context. We introduce SERAG, a supervised anomaly detector that combines two complementary plausibility estimates: a semantic score computed from separately encoded subject, relation, and object labels, and a relational score obtained through a relational graph convolutional network. The scores are standardized, calibrated, and fused. We evaluate the method on a subset of ICEWS18 with vocabulary-constrained synthetic anomalies generated by an LLM, using pooled and chronological splits. At 10% anomaly prevalence, SERAG achieves test AUPRCs of 0.321 and 0.258, respectively, compared with 0.159 and 0.146 for the strongest adapted baseline. Fusion improves mean test AUPRC over either branch alone, with a larger gain in the pooled protocol and a smaller validation-selected gain in the chronological protocol. Additional anomaly supervision improves performance. These results support the complementarity of textual and relational signals for detecting synthetic anomalies under the evaluated protocols.</p>
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="bi bi-robot"></i> AI 总结</h6>
+                            <p class="mb-0">研究问题：知识图谱中关系上下文不一致的异常检测  
+主要方法：结合语义分数与关系图卷积网络分数的监督异常检测器SERAG  
+关键贡献：融合文本与关系信号提升异常检测性能，优于基线方法</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://arxiv.org/abs/2611.18640" target="_blank" class="btn btn-outline-secondary">
+                            <i class="bi bi-link-45deg"></i> arXiv 页面
+                        </a>
+                        <a href="https://arxiv.org/pdf/2611.18640" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-file-pdf"></i> 查看 PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="mt-5 py-3 bg-light text-center">
+        <p class="text-muted mb-0">
+            Powered by <a href="https://github.com/tyutcxj/Daily-Paper-Digest">Daily arXiv</a>
+            | Data from <a href="https://arxiv.org">arXiv</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showModal(modalId) {
+            var modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }
+    </script>
+</body>
+</html>
