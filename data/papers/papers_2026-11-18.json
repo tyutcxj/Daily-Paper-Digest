@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2611.21847",
+    "title": "Inventa: Decentralized Self-Improving Agents for Autonomous Scientific Discovery",
+    "authors": [
+      "Prithwish Jana, Nikos Kanakaris, Purak Jain, Anoop Deoras, Sahika Genc"
+    ],
+    "abstract": "arXiv:2611.21847v1 Announce Type: new \nAbstract: Large language model (LLM) agents can generate research ideas and improve scientific discovery through iterative experimentation. However, increasing the number of agents or iterations does not automatically translate to producing more diverse or feasible ideas. Agents may converge on similar candidates, propagate unsupported claims through shared memory components and repeatedly apply search strategies that no longer yield any improvements.\n  We introduce Inventa, a framework for automated scientific discovery that employs autonomous research units and verified shared knowledge. Each unit creates a lineage of candidate ideas using a mutator agent. A local orchestrator agent periodically adapts the mutator's harness. When progress stalls, the orchestrator agent replaces its model or restarts the idea evolution process. Verifiers evaluate each candidate idea and record verified improvements, useful components and constraint violations in a shared knowledge, the only channel between units. We evaluate Inventa on five benchmarks spanning the research cycle, covering retrieval (ScholarCatalyst), ideation (IdeaBench), proposal writing (IdeaScientist), and scientific law discovery (EurekaBench, SciLaws-Bench). It leads all five, achieving 73.6% on EurekaBench versus 56.2% for CORAL. On IdeaBench, it discovers 26.0 novel ideas per paper, compared with 18.6 for ResearchAgent, with 82% fewer model calls.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21847",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21847"
+      }
+    ],
+    "relevance_score": 0.5112339446497003,
+    "max_similarity": 0.25483528145614837
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21648",
+    "title": "Can an LLM dream? Testing the overfitted brain hypothesis on an agent with text memory",
+    "authors": [
+      "Eric Zou"
+    ],
+    "abstract": "arXiv:2611.21648v1 Announce Type: new \nAbstract: Hoel (2021) proposed that dreams distort replayed experience so that the brain does not overfit to recent events. We test this hypothesis on an LLM agent (Claude Opus 5.5) that stores what it learns in a text memory and rewrites that memory each night from the day's conversation transcript. The agent goes through ten simulated days of conversation built from LongMemEval. We corrupt 5, 10, 20 or 40 percent of the transcript's turns before each nightly rewrite in one of two ways. Detail corruption changes one or two details in a turn to plausible wrong ones, or replaces the turn with one by the same speaker from an earlier day. Random-text corruption replaces half of the selected turns with a passage of Moby-Dick and inserts Moby-Dick words into the other half. A size limit on the memory, rising from 19,500 to 117,000 tokens over ten nights, set from human free-recall data, forces it to forget. We learned that corruption did not help the agent apply what it learned in earlier conversations to new tasks in any of 30 runs (ten conditions, three different conversation histories). Replacing details in 40 percent of turns lowered recall from 76 to 60 percent. Random text had no consistent effect on recall, with a paired difference of 0 $\\pm$ 2 points at 40 percent, because the model recognized it as corrupted and left it out of memory. Replaced details were stored as fact even when another turn held the correct value, and the agent answered 40 percent of those questions correctly, compared with 75 percent without corruption. These results suggest that a pretrained model can separate corrupted text from real events, so a fair test needs a learner that cannot make this separation as easily, such as a model fine-tuned on the corrupted days or an agent whose days take place in an invented world.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21648",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21648"
+      }
+    ],
+    "relevance_score": 0.4896606426288747,
+    "max_similarity": 0.22875664598463089
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21690",
+    "title": "EgoLink: Egocentric Language-Vision Interactive Network Knowledge Challenge Summary",
+    "authors": [
+      "Renhe Sun, Yueying Feng, Bohan Yu, Tong Niu, Yunqi Liu, Zitong Wang, Haolin He, Kexin Shi, Hualei Wang, Qiuqiang Kong, Chang Yao, Yuge Huang, Weiqiang Wang, Jingyuan Chen, Jian Liu"
+    ],
+    "abstract": "arXiv:2611.21690v1 Announce Type: new \nAbstract: The EgoLink Challenge at ACM Multimedia 2026 benchmarks egocentric multimodal intelligence linking first-person perception, social reasoning, and interactive action. Unlike benchmarks centered on visible objects and activities, EgoLink evaluates whether models can interpret emotional and social cues, resolve visually grounded references, and convert user requests into verified tool-mediated actions. Its two tracks cover social reasoning in egocentric video and interactive agents that complete service tasks through dialogue, tool use, and closed-loop execution. Together, they test whether perception, reasoning, and decision-making remain coupled under both offline question answering and state-changing interaction. We highlight a multi-stage Track 1 data pipeline for multiple-choice question (MCQ) generation, chain-of-thought generation, automatic quality grading, and video-contribution filtering. We summarize the task design, evaluation metrics, rules, leaderboards, and representative solutions. The benchmark combines objective answer scoring with process- and result-based evaluation, enabling analysis of both final correctness and execution quality. The best Track 1 system achieved 0.9263 accuracy, while the best Track 2 system achieved 0.844 joint success and 0.916 micro accuracy. Participant reports reveal a shared principle: strong systems make intermediate evidence explicit through candidate verification, option-robust reasoning, scenario-aware planning, tool canonicalization, and state-aware correction before answering or acting. These findings highlight the importance of process verification and evidence-grounded reasoning for reliable egocentric multimodal intelligence.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21690",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21690"
+      }
+    ],
+    "relevance_score": 0.4773036751914467,
+    "max_similarity": 0.20671919098637137
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21682",
+    "title": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
+    "authors": [
+      "Liyan Wang, Longze Li, Mohamed Hassan, Isshu Lee, Dajie Sun, Ruimin Feng, Aleksandar Vakanski"
+    ],
+    "abstract": "arXiv:2611.21682v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly being explored for knowledge-intensive and safety-critical applications in nuclear engineering. However, existing nuclear-domain benchmarks provide limited content coverage or focus primarily on answer accuracy without systematically evaluating the quality of the underlying reasoning. This study introduces NEBench R1, a reasoning-oriented benchmark comprising 7,546 unique multiple-choice questions extracted from U.S. Nuclear Regulatory Commission (NRC) reactor operator licensing examinations covering 18 nuclear facilities. Each question is classified according to the NRC Knowledge and Abilities catalogs and accompanied by an official explanation serving as a reference for reasoning evaluation. Six LLMs were evaluated, with overall accuracy ranging from 34.0% to 73.9% across three distinct performance tiers. To assess reasoning quality, an LLM-based judge evaluated correctly answered responses using a multidimensional rubric. Although responses generally demonstrated strong problem comprehension, they scored lower in factual and procedural accuracy and distractor analysis, indicating that correct answers were not necessarily supported by technically sound justifications. Response clarity was also weakly indicative of technical quality. Furthermore, longer reasoning traces were associated with lower accuracy in both frontier reasoning models, suggesting that reasoning length may reflect question difficulty rather than improved problem-solving performance. Reasoning-token consumption may therefore provide an additional signal for identifying potentially unreliable responses. NEBench R1 establishes a benchmark for evaluating both answer accuracy and reasoning quality, providing a foundation for assessing the domain competence and reliability of LLMs in nuclear engineering.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21682",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21682"
+      }
+    ],
+    "relevance_score": 0.4751553545744528,
+    "max_similarity": 0.20604614335462376
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21950",
+    "title": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
+    "authors": [
+      "Owen Queen, Ioana Ciuca, Emma Dann, Jean Somalwar, Carine You, Steven Dillmann, Viraj Manwadkar, Evan Gorrell, Harrison G Zhang, Jonathan K Pritchard, Risa H Wechsler, James Zou"
+    ],
+    "abstract": "arXiv:2611.21950v1 Announce Type: new \nAbstract: AI agents can assist scientific research, but balancing autonomous investigation with scientists' ability to inspect and redirect ongoing work remains a central design challenge. We present DiscoveryAgent, a domain-agnostic, scientist-centric system that combines autonomous investigation with scientist-directed hypothesis steering. Scientists select, refine, or replace hypotheses between research rounds, while audit agents interrogate checkpointed records to trace claims, reproduce analyses, and inform subsequent decisions. Across two predictive modeling tasks, DiscoveryAgent produced the best variable-star classifier among evaluated baselines and, with scientist steering, a protein variant-effect predictor surpassed by only one of 106 ProteinGym baselines. We develop a rigorous checkpointing system that enables highly capable audit agents, a scalable form of oversight for agentic research. Audit agents autonomously identify errors at higher rates than previous AI scientist agents, and scientists collaborating with audit agents identify 14x more valid errors versus scientists performing manual review. In three case studies led by domain experts across physical science, social science, and life science, we developed a multimodal photometric-redshift estimator that resolves complementary failures of images and photometry, achieving 0.971 AUROC for low-redshift classification; documented an 83% rise in Florida homeowners-insurance premiums from 2013 to 2023, with a growing, regressive burden; and identified CD4+ T-cell relay genes, which both receive and exert broad transcriptional regulation, enriched for autoimmune disease associations. Together, these results show how autonomous research can expand scientists' empirical reach while centering their authority over research direction and their ability to understand and challenge the evidence.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21950",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21950"
+      }
+    ],
+    "relevance_score": 0.4652779911289284,
+    "max_similarity": 0.260395223518146
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.22030",
+    "title": "What Does an Agent Need? Bundle-Aware Agent Resource Composition",
+    "authors": [
+      "Yunxiao Shi (Australian National University), Tingwei Chen (University of Technology Sydney), Dannong Xu (Australian National University), Ahad N. Zehmakan (Australian National University), Jialie Shen (City St George's, University of London), Zhendong Chu (Squirrel Ai Learning), Qingsong Wen (Squirrel Ai Learning)"
+    ],
+    "abstract": "arXiv:2611.22030v1 Announce Type: new \nAbstract: An agent resource's value depends on its backbone and companion resources and is known only after execution. Token-based generators remain tied to their training catalog, while independent resource scoring misses complementarities and reused bundles target other tasks. We formulate Task-Conditioned Agent Resource Composition (AgentComposition): jointly selecting a backbone model and a tool-skill bundle to maximize end-to-end execution utility. Our Retrieval-Grounded Bundle-Aware Agent Generation retrieves candidate resources and past configurations of similar tasks. A fine-tuned generator reads resource descriptions and recombines candidates through constrained beam search, allowing new resources without retraining. A bundle-aware critic ranks complete configurations using a large language model (LLM) teacher and historically successful configurations as execution proxies, and adapts to execution feedback when available. We evaluate reference recovery, offline execution with judged and native rewards, and online recommendation with real execution, building AgentSelect-Exec with 5,060 executed configurations. Our method recovers the complete reference configuration within ten candidates for 67.73% of AgentSelect queries, nearly twice the strongest baseline, and leads all baselines on SkillsBench. The proxy-trained critic raises the top-ranked agent's execution score from 7.58 to 8.37 out of 10; execution feedback increases it to 8.78, above the strongest baselines. Four target-domain queries suffice to adapt the generator to SkillsBench. Agents recommended online outperform the strongest baselines under both an LLM judge and native verifiers. These results support learning and transferring joint resource composition from task experience.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.22030",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.22030"
+      }
+    ],
+    "relevance_score": 0.4567227016210312,
+    "max_similarity": 0.18708433297789545
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21852",
+    "title": "The Hidden Cost of MoE Diffusion Decoding: Profiling and Fixing the Sampler",
+    "authors": [
+      "Harshit Samrat, Ramakrishna Paramahamsa Kompella"
+    ],
+    "abstract": "arXiv:2611.21852v1 Announce Type: new \nAbstract: Masked diffusion language models (dLLMs) decode by iteratively denoising a full canvas of tokens, so every forward pass runs a per-token sampling and stopping pipeline over the entire canvas-by-vocabulary logits tensor. We profile single-user decoding of a 26B-parameter diffusion Mixture-of-Experts model on a bandwidth-bound edge accelerator (NVIDIA GB10) and report a result that is easy to miss: after weight quantisation, this logits pipeline, not the expert GEMMs, is the single largest consumer of decode time. Unlike autoregressive decoding, where sampling touches one position's logits per committed token, diffusion decoding processes S times as many logit entries per output token, where S is the number of denoising steps. We show this pipeline is largely redundant or fusable and remove it in two lossless tiers: a bit-exact tier whose output is byte-identical to the reference decoder, and an accuracy-parity tier using a fused single-pass entropy kernel and Gumbel-max sampling. Combined with a W4A16 expert kernel, the full stack reaches 2.4-2.7 times end-to-end speedup over bf16 at unchanged benchmark accuracy on GSM8K, HumanEval, and MATH, on a single 273 GB/s device. We confirm the finding on a second, independently built diffusion MoE (LLaDA2.0-mini: pipeline 28.8% of decode, fused W4A16 3.3 times at accuracy parity) and show it disappears on a dense diffusion model (3.6%). The cost is specific to MoE diffusion, where quantisation makes the backbone cheap. Code and quantised weights are released.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21852",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21852"
+      }
+    ],
+    "relevance_score": 0.4553777628637718,
+    "max_similarity": 0.18837364605451812
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21978",
+    "title": "WebAgents: Unbundling Agent Creation, Hosting, and Execution for an Agent-Native Web",
+    "authors": [
+      "Dario Fenoglio, Martin Gjoreski, Marc Langheinrich, Pradyumna Chari, Ramesh Raskar"
+    ],
+    "abstract": "arXiv:2611.21978v1 Announce Type: new \nAbstract: Large language models are moving from isolated assistants toward autonomous agents that can plan, use tools, and coordinate with others, motivating an emerging Agentic Web of independently developed agents and services. Realizing this vision requires agent behavior to move across creators, hosts, and runtimes without coupling publication to a particular execution environment or transferring authority over user resources. We introduce WebAgents, which unbundles these roles through a signed agent.pkg that carries portable workflows, skills, schemas, and resource requirements. An OpenClaw-based agent-native browser/runtime verifies the package, obtains authorization, and binds it at run time to user-controlled models, tools, permissions, and budgets, while hosts distribute the public program and may retain private services server-side. We demonstrate this contract with three unrelated workflows executed unchanged under local and API-backed models, including literature review with live services and a website-published travel agent using semantic tools and user-selected personal resources. In a controlled suite, WebAgents explicitly blocks all 716 injected contract violations while accepting all 295 matched benign controls, with median automated pre-execution processing below 0.5 s for all three packages. We conclude by outlining a path toward NANDA-based discovery and interoperable package ecosystems while retaining execution authority in the user's runtime.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21978",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21978"
+      }
+    ],
+    "relevance_score": 0.4551108472155082,
+    "max_similarity": 0.1855105971941749
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21622",
+    "title": "CrisisBench: an evaluation suite for crisis counseling AI",
+    "authors": [
+      "Akshay Swaminathan, Filip Ramazan, Sharang Phadke, Kevina Wang, Ivan Lopez, Shaked Peleg Azzam, Gloria Ye, Chastin Chung, William Wang, Stephanie Stoll, Ivy Pham, Rebecca Hurwitz, Shreya Shah, Samuel Chuang, Divyanjali Verma, Abhay John, Ehsan Adeli, Nigam H. Shah"
+    ],
+    "abstract": "arXiv:2611.21622v1 Announce Type: new \nAbstract: Background: Crisis helplines are essential to mental health systems but are often understaffed and underfunded. LLMs could support counselors, but existing benchmarks do not capture the escalation, risk assessment, and de-escalation central to crisis conversations, while privacy restrictions limit use of real transcripts.\nMethods: We present CrisisBench, a privacy-preserving suite for single- and multi-turn crisis counseling evaluation. It includes 1,085 single-turn tasks from 200 de-identified conversations and 1,185 patient LLMs derived from hotline metadata. Patient models and a 23-item LLM judge were calibrated against expert counselors.\nResults: We evaluated five GPT models plus draft-then-edit and retrieval-augmented generation. All systems underperformed human counselors on excessive empathy and questioning in single-turn evaluation. The rubric achieved human-human Krippendorff's $\\alpha$ = 0.51 and LLM-human $\\alpha$ = 0.54 (Pearson r = 0.80). In multi-turn evaluation, retrieval-augmented generation scored highest overall (0.961), with all systems within 0.058. Microskills and style/tone were near ceiling, while productivity and safety/risk accounted for most between-system variation. Counselors rated patient LLMs realistic (86%) and useful (92%).\nConclusion: CrisisBench enables scalable, privacy-preserving evaluation of crisis counseling. Current systems perform strongly on core structural competencies but still diverge from experts on important response-level failure modes. We release the rubrics, judge prompts, and evaluation tasks.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21622",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21622"
+      }
+    ],
+    "relevance_score": 0.4517650179462025,
+    "max_similarity": 0.17903553306892328
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21924",
+    "title": "GridDriver: On-Board BEV-Based Language Planning and Reasoning",
+    "authors": [
+      "Katharina Winter, William Engel, Zain A. Alishammat, Fabian B. Flohr"
+    ],
+    "abstract": "arXiv:2611.21924v1 Announce Type: new \nAbstract: Bird's-Eye-View (BEV)-conditioned large language models (LLMs) enable language-interactive driving, but onboard deployment requires efficient perception and continuous planning alongside autoregressive language generation. We present GridDriver, an efficient BEV-conditioned LLM framework combining trajectory prediction, structured driving indicators, natural-language navigation, driving explanations, and scene question answering. Lightweight spatio-temporal BEV perception and spatially structured tokens provide scene context to a shared LLM, while frame-wise scheduling interleaves trajectory prediction with asynchronous language generation. GridDriver achieves competitive performance on public benchmarks, reaching 87.9% PDMS on NAVSIM and 57.6% accuracy on nuScenes-QA with a shared planning and QA checkpoint. Spatial representation analyses demonstrate improved geometric information retention and trajectory prediction compared with Q-Former compression. The system achieves 32.7 ms standalone planning latency and 9.4 plans/s in an onboard ROS 2 pipeline. We further evaluate planning on our own data recordings and demonstrate open-loop onboard operation on a research vehicle. Across public benchmarks and real-world evaluations, we identify strengths and limitations of the BEV-based approach.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21924",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21924"
+      }
+    ],
+    "relevance_score": 0.44510121440557604,
+    "max_similarity": 0.1705884799736023
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.22033",
+    "title": "Thinking Harder Doesn't Lead to Better Choices: Reasoning Effort Increases the Confidence but Not the Correctness of LLM Shopping Agents",
+    "authors": [
+      "Adi Krishnamoorthy, X. Y. Han"
+    ],
+    "abstract": "arXiv:2611.22033v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly deployed as autonomous shopping agents that process multimodal product listings (consisting of visual and text data) and recommend purchases on behalf of consumers. Naturally, one might assume that models with more thinking power would make higher-quality purchasing decisions. To test this belief, we ask two questions about such agents: does asking a model to think harder make it choose better products, and does the confidence it reports tell us the likelihood it may be wrong? We benchmark ten frontier models on three product-choice benchmarks built from WebShop, Amazon's SQID and Wayfair's WANDS platforms to see if LLMs with more thinking power actually make better-quality product purchase decisions. Across all three benchmarks, we found that increasing the thinking effort does not increase decision quality in a statistically meaningful way. The same change in thinking effort raises stated confidence at a statistically significant level, so extra thinking buys confidence rather than correctness. We also measure the calibration of these models (how well their reported confidence percentage matches their true correctness percentage) in these tasks and show that most models are not well-calibrated at every effort level. We also find that errors are strongly shared: when one model errs in a task, several others tend to err on that same task. Furthermore, on tasks where several models all err, a large number of them pick the same wrong product.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.22033",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.22033"
+      }
+    ],
+    "relevance_score": 0.44381785014861674,
+    "max_similarity": 0.17160175882351134
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21812",
+    "title": "Sketch, Don't Paint: Allocating Test-Time Compute in Generative Visual Reasoning",
+    "authors": [
+      "Sheng Lu, Guangpin Tao, Tong Lu, Ying Tai"
+    ],
+    "abstract": "arXiv:2611.21812v1 Announce Type: new \nAbstract: Multimodal models increasingly reason by synthesizing pixels, sketching maze paths within interleaved chains of thought or rolling out video solutions frame by frame. Each visual thought runs the full diffusion schedule inherited from photorealistic synthesis, so iterative denoising dominates inference cost. We study how to allocate test-time compute along two axes: when to render visual thoughts rather than thinking in text or answering directly, and how many denoising steps each thought requires. Controlled interventions that vary only how the thought is rendered uncover three regimes. Causal thoughts carry the plan and become legible early: an 8-step sketch nearly matches a 50-step render in accuracy, commits to the same plan as often as two independent full renders agree, and in video models mostly fails by stalling short of the goal, so the rollout abstains. Decorative thoughts can be omitted without loss, whereas harmful thoughts lower accuracy. Because the regime depends on both model and task, always drawing is suboptimal. Across 14 model-benchmark pairs of three interleaved reasoners, answering directly, without any thinking, wins 9 pairs, and choosing among direct, text-only, and visual tiers from ten labeled examples per pair raises mean accuracy from 60.7% (always drawing) to 65.1%. Where drawing pays, we propose sketch-and-vote, which samples 8-step sketches (a step count chosen without labels) from independent noises until one answer reaches three votes. With this one setting, sketch-and-vote beats full rendering with fewer denoising steps on an image reasoner and two video reasoners, by 8.6 points on VSP spatial planning and by 9.6 and 22.1 points on mazes.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21812",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21812"
+      }
+    ],
+    "relevance_score": 0.44336093784857095,
+    "max_similarity": 0.1697374771863526
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21839",
+    "title": "VisHead-Spec: Head-Routed Visual Attention for Multimodal Speculative Decoding",
+    "authors": [
+      "Xin Guo, Arushi Rai, Xiang Zhou, Qiang Zhang, Siyu Lin, Xiangjun Fan, Lizhu Zhang"
+    ],
+    "abstract": "arXiv:2611.21839v1 Announce Type: new \nAbstract: Speculative decoding accelerates vision-language models(VLMs) while preserving the target model's outputs, but its speedup diminishes under high concurrency serving as the system becomes more compute bounded as the batch size increases. This problem is pronounced for multimodal speculative decoding as the long range of the image tokens in the prompt can significantly increase the computational cost during draft token prediction. The block-diffusion drafters (e.g. DFlash, DSpark) can effectively speed up the draft model efficiency by predicting multiple draft tokens in one forward pass, but their speedup for VLMs under high concurrency is still modest (<9%). In order to understand this gap, we examine the information flow between different modalities from target model to draft model and identify the sparsity pattern of visual attention between the target and draft models: only small set of key-value heads in the draft model need direct visual feature attention in the context and only visual features from top level layers in the target model need to be attended in the context. We therefore propose VisHead-Spec, which selects a small, fixed set of key-value (KV) heads to attend to all image features from top level layers in the target model and restricts the remaining heads to text features. On Qwen3-VL-8B and MMSpec, VisHead-Spec-8 lets 8 of the drafter's 40 KV heads read the image while keeping accepted length within 0.3% of the block-diffusion draft model baseline (i.e. DSpark). At batch size 64, its throughput gain over autoregressive decoding increases to 16.0%, compared with 9.5% for DSpark; at batch size 1, its speedup remains comparable to DSpark.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21839",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21839"
+      }
+    ],
+    "relevance_score": 0.4314050999873485,
+    "max_similarity": 0.15380324801862325
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21655",
+    "title": "Depth-Aware Activation Steering via Attention Residuals",
+    "authors": [
+      "Shilong Zhao (Independent Researcher)"
+    ],
+    "abstract": "arXiv:2611.21655v1 Announce Type: new \nAbstract: Activation steering is a simple, training-free way to modulate LLM behavior, yet existing methods typically inject vectors at a single layer and lack mechanisms for depth-aware propagation or internal verification. We combine two recent ideas - Attention Residuals (AttnRes) providing learnable cross-layer pathways, and Jacobian-lens (J-space) concept readout - into a lightweight depth-aware steering pipeline. On two small open models (Qwen3-0.6B and Qwen3.5-0.8B), distributing a persona vector according to AttnRes-style depth weights yields stronger internal alignment (deeper-layer concept cosine and rank, p<0.0001) and stronger behavioral shifts than single-layer injection. The effect is sign-specific: reverse vectors invert all six metrics, random directions degrade alignment (p<0.0001), and a short LoRA fine-tune erases the imprint. Injection rewires attention strictly downstream of the injection point (upstream JS = 0.00000). Three practical findings follow. First, a layer-wise geometric decomposition of cosine readouts: at the injection layer 123% of the increase is arithmetic, while 5-11 layers downstream 100% is dynamical. Second, an intensity window: effects are monotone over 0.3-0.7, then generation collapses (617 to 306 to 25 chars). Third, metric discipline: keyword-rule metrics fail LLM-judge validation (kappa <= 0.09), and two rule-based conclusions were retracted. Training the depth weights on a steering objective (200 steps, frozen backbone) raises final alignment 10x on held-out prompts. Cross-persona vectors retain 96-99% of the effect: specificity holds against random, not semantic, directions. We contribute a practical, low-overhead depth-aware steering method with a careful evaluation protocol. Code and data are released.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21655",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21655"
+      }
+    ],
+    "relevance_score": 0.4245963224483261,
+    "max_similarity": 0.14866788348378845
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21641",
+    "title": "RAW: Refusal Aversion in the Wild, A Causal Measurement Method for Deployed LLMs",
+    "authors": [
+      "Pavel Kireyev"
+    ],
+    "abstract": "arXiv:2611.21641v1 Announce Type: new \nAbstract: Deployed LLMs field hundreds of millions of conversations a day and refuse a non-trivial fraction of user requests, yet the user-side cost of refusal, whether users disengage and by how much, is unmeasured on any production model: a blind spot for the consumer-facing platforms built on them. A/B-testing refusal is ethically and operationally constrained on frontier-lab products and unavailable to third-party platforms deploying these models through a fixed API. We introduce RAW, a method that uses LLM stochasticity as a natural experiment: at near-identical prompts in any existing log, the same model sometimes refuses and sometimes does not, and that variation identifies the causal user-side effect of refusal. Applying the method to 15 deployed LLMs in LMSYS-Chat-1M and WildChat, with user-clustered inference, we find that for about half of the models we can measure precisely, a refusal costs 3 to 17 pp of subsequent re-engagement; the rest show no distinguishable effect, among them one deployment whose positive point estimate we trace to persistent users retrying the refused request. Our contribution is the measurement method, which runs on any deployed model from logs alone for about \\$0.30 per 1,000 conversations. We release labels, moderation scores, prompt embeddings, and pipeline code.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21641",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21641"
+      }
+    ],
+    "relevance_score": 0.42415573824838276,
+    "max_similarity": 0.14910246672405966
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21955",
+    "title": "SCAN: Site-Aware Collaborative Privacy-Preserving Adaptation of Vision-Language Models for Neurological Disease Classification",
+    "authors": [
+      "Nikhil J. Dhinagar, Rishab Pendam, Harmony S. Cen, Sophia I. Thomopoulos, John P. John, Mahir H. Khan, Sook-Lei Liew, Erik Kaestner, Carrie McDonald, Paul M. Thompson"
+    ],
+    "abstract": "arXiv:2611.21955v1 Announce Type: new \nAbstract: Worldwide neuroimaging data could strengthen diagnostic foundation models, but privacy rules often prevent centralizing brain MRI scans. We present SCAN, a site-aware collaborative adaptation framework for Neurological Disease Classification that lets new sites adapt a 3D medical vision-language model (VLM) without retraining or sharing patient scans. Each site keeps exact class prototypes for local prediction and can share privacy-protected class summaries: norm-bounded sums and counts perturbed once with calibrated noise. Using 7,641 scans from 67 sites across 12 countries, covering Alzheimer's disease (AD), stroke, epilepsy and controls, we assess local adaptation, cross-site benefits, and effects on existing sites. At seven unseen sites, the frozen VLM's zero-shot AUCs were 0.833-0.945 for AD and stroke. Training-free local prototypes improved epilepsy AUC at three sites from 0.598/0.625/0.508 to 0.684/0.729/0.762 and AD AUC at one site from 0.833 to 0.863, nearly matching a classifier trained at each site (mean AUC 0.757 vs. 0.759). With differential privacy ($\\epsilon$ = 4), new sites contributed without materially reducing accuracy at existing sites (AUC change $\\leq$0.2%), although gains from sharing were limited, and membership attacks performed near chance. SCAN offers hospitals a worldwide framework to adapt and share brain MRI VLMs without exchanging scans or retraining.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21955",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21955"
+      }
+    ],
+    "relevance_score": 0.41322995607538937,
+    "max_similarity": 0.13458711665437423
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21644",
+    "title": "MInfoVisQA: A Multilingual Benchmark for Information-Rich Visual Question Answering",
+    "authors": [
+      "Changjiang Jiang, Jiang Zhou, Xinbin Yuan, Fan Zhang, Tao Feng, Zhuohan Xie"
+    ],
+    "abstract": "arXiv:2611.21644v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) excel in vision-language tasks; yet, whether they maintain consistent understanding of information-rich visuals (InfoVis) when the surface language changes remains unclear. To quantify this capability, we introduce MInfoVisQA, a parallel benchmark with 8,960 QA configurations derived from 128 seed instances across 24 languages. We construct seed-matched, language-parallel visuals and QA pairs by disentangling numerical-structural data from text and programmatically synchronizing translated labels. We evaluate 25 MLLMs under two settings: Language-Aligned QA (LQA, matching visual-text languages) and Cross-Language QA (XQA, fixed QA language with varying visual languages). The results show that aggregate accuracy masks substantial robustness gaps: two models with comparable mean LQA accuracy (80.4\\%) exhibit performance spreads of 7.8 and 20.3 percentage points across languages. Moreover, all 25 models score lower with non-English visuals under fixed English QA, underscoring the need for cross-language sensitivity metrics.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21644",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21644"
+      }
+    ],
+    "relevance_score": 0.4127306466717017,
+    "max_similarity": 0.12972720718100583
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21925",
+    "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+    "authors": [
+      "Jameson Sandler, Shane Bergsma, Mostafa Elhoushi, Bin Claire Zhang, Gavia Gray, Joel Hestness, Nolan Dey, Ferdinando Fioretto"
+    ],
+    "abstract": "arXiv:2611.21925v1 Announce Type: new \nAbstract: Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model. Faster inference can be achieved when multiple draft tokens pass verification simultaneously. Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding. However, standard feature encoding mechanisms have three limitations: (1) they are lossy, applying encoding projections that are destructive to the underlying target feature-space via a discovered effect known as residual mixing, (2) they are memory-less, with no record of previously processed proposals, and (3) they utilize features sampled uniformly from across the target layers, omitting important hidden states. To address these issues, we propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals. Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality. DNeo marks a new state of the art in high quality, fast LLM inference.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21925",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21925"
+      }
+    ],
+    "relevance_score": 0.39731514024699016,
+    "max_similarity": 0.1138834900337864
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21766",
+    "title": "Margin Dynamics for Large Language Model Alignment",
+    "authors": [
+      "Xingzi Xu, Mehmet Saygin Seyfioglu, Karim Bouyarmane"
+    ],
+    "abstract": "arXiv:2611.21766v1 Announce Type: new \nAbstract: Practitioners choose among LLM alignment methods largely by trial and error. We provide a theoretical foundation: each pairwise method defines a vector field on the probability simplex that governs how the model redistributes mass between preferred and dispreferred completions. Projecting onto a single preferred/dispreferred pair reduces this to a one-dimensional margin ODE with a closed-form solution. These solutions reveal that DPO margins grow without bound (logarithmically as $O(\\log t)$ in the gradient-flow limit) while IPO margins converge to a finite $1/(2\\tau)$; that label noise induces a qualitative phase transition in DPO (unbounded $\\to$ bounded) but affects IPO only quantitatively; and that gradient concentration under asymmetric weighting governs trainability at scale. We confirm all three predictions across five model families spanning four benchmarks. The closed-form solutions also enable principled method design: we prove that adding any label smoothing $\\varepsilon > 0$ to SimPO creates a finite margin attractor at $\\Delta^* = \\beta^{-1}\\log((1-\\varepsilon)/\\varepsilon)$, while $\\varepsilon = 0$ (standard SimPO) has no attractor. We test this across three models (8B-9B) and confirm the prediction: the theory-derived configuration (TPO-S, $\\varepsilon = 0.05$) is competitive with the strongest baselines, attaining the highest mean IFEval score among the compared methods on all three, validating that the predicted finite attractor is a usable operating point rather than proposing a new state-of-the-art loss.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21766",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21766"
+      }
+    ],
+    "relevance_score": 0.3463051235643491,
+    "max_similarity": 0.1136246862054552
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.21691",
+    "title": "AdaFlowLite: Scalable and Non-blocking Inference on Asynchronous Mobile Data",
+    "authors": [
+      "Sicong Liu, Fengmin Wu, Yuan Gao, Bin Guo, Zimu Zhou, Hongkai Wen, Zhiwen Yu"
+    ],
+    "abstract": "arXiv:2611.21691v1 Announce Type: new \nAbstract: The rise of mobile devices equipped with numerous sensors, such as LiDAR and cameras, has driven the adoption of multi-modal deep intelligence for distributed sensing tasks, such as smart cabins and driving assistance. However, the arrival time of mobile sensory data vary due to modality size and network dynamics, which can lead to delays (if waiting for slow data) or accuracy decline (if inference proceeds without waiting). Moreover, the diversity and dynamic nature of mobile systems exacerbate this challenge. In response, we present a shift to \\textit{opportunistic} inference for asynchronous distributed multi-modal data, enabling inference as soon as partial data arrives. While existing methods focus on optimizing modality consistency and complementarity, known as modal affinity, they lack a \\textit{computational} approach to control this affinity in open-world mobile environments. %\n\\sysname pioneers the formulation of structured cross-modality affinity in mobile contexts using a hierarchical analysis-based normalized matrix. This approach accommodates the diversity and dynamics of modalities, generalizing across different types and numbers of inputs. Employing an multi-modal lightweight Swin Transformer (MMLST), \\sysname facilitates real-time and flexible data imputation, adapting to various modalities and downstream tasks without retraining. Experiments show that \\sysname significantly reduces inference latency by up to 80.4\\% and enhances accuracy by up to 62.1\\%, while achieving nearly a 50\\% reduction in energy consumption, outperforming status quo approaches. Also, this method can enhance LLM performance to preprocess asynchronous data.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "updated": "Wed, 18 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.21691",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.21691"
+      }
+    ],
+    "relevance_score": 0.32096726798960656,
+    "max_similarity": 0.2663755601173579
+  }
+]
