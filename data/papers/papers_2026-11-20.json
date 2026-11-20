@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2611.25380",
+    "title": "Beyond Weight Updates: Evolving Agent Harnesses for Domain Specialization",
+    "authors": [
+      "BoHao Chen"
+    ],
+    "abstract": "arXiv:2611.25380v1 Announce Type: new \nAbstract: Domain specialization of LLM agents is usually framed as a weight-update problem: collect trajectories, run reinforcement learning (RL) or supervised fine-tuning (SFT), and deploy a new checkpoint. We study a complementary axis: evolving the \\textbf{agent harness}---the system prompt, tool schemas, skill library, and planning scaffolding---while keeping the policy frozen. We cast harness evolution as an RL-style outer loop and instantiate it with GEPA, a reflective evolutionary optimizer. The resulting harness adapters require no GPU training, are loadable per vertical domain, and compose with weight-based RL. Experiments with Codev, a Claude Code-style coding agent, on SWE-bench Verified, OfficeBench, and Terminal-Bench show a consistent pattern: weight updates give the strongest single-path gains, harness evolution recovers most of those gains at a small fraction of the compute, and combining both paths is best overall. We also analyze a failure mode of SFT-based specialization---shortened reasoning chains and increased truncation---and argue that harness adapters avoid it by construction. Our results position harness evolution as a practical, non-destructive complement to weight updates for vertical agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25380",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25380"
+      }
+    ],
+    "relevance_score": 0.6513466643842505,
+    "max_similarity": 0.4304329671059396
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25235",
+    "title": "Some Memories Must Fade: Persistence and Decay of User Memories in Model Parameters",
+    "authors": [
+      "Sanidhya Vijayvargiya, Rahul Lokesh"
+    ],
+    "abstract": "arXiv:2611.25235v1 Announce Type: new \nAbstract: Parametric memory allows Large Language Models to internalize knowledge directly into their weights, offering a potentially powerful alternative to retrieval-based memory (RAG). However, existing approaches to parametric memory are difficult to deploy as they largely mirror the Continual Learning (CL) objective of retaining information indefinitely. This is neither sustainable nor sufficient for a memory system, which must govern knowledge across its lifecycle by retaining stable facts, reinforcing recurring observations, updating changed beliefs, and allowing transient information to fade. We propose a system for parametric memory management consisting of a memory substrate (handling information storage and forgetting) and a learned policy (what to remember, how deeply, and for how long). Our substrate is a fixed-capacity LoRA adapter that consists of k-hot rank combinations which store facts without catastrophic interference and maintain an independently controlled temporal decay, enabling outdated information to fade while long-term facts persist. On this substrate, we train a lightweight controller that governs each incoming user event to ensure the memory system reflects the user's true, updated belief state. To evaluate how memory systems manage user memory, we introduce a controlled dataset of long-horizon user trajectories with varying persistence of facts based on changing belief states and user-behavioral shifts, and probe queries that test recall while information is valid and abstention after it expires. Our policy learns to effectively manage user memory over its entire lifecycle, balancing recall and abstention to achieve 86% of oracle performance, unlike CL and RAG baselines that primarily default to one of the two behaviors. By providing the first system to manage memory directly in model weights, this work establishes a foundation for long-horizon parametric memory.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25235",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25235"
+      }
+    ],
+    "relevance_score": 0.6045912500515118,
+    "max_similarity": 0.369359794916643
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.24995",
+    "title": "EgoPass-Bench: Identifying Objects That May Affect the Wearer's Passage in Egocentric Video",
+    "authors": [
+      "Hongyu Wang, Chuhan Li, Congjin Xu, Xuandong Zhao, Hua Shen"
+    ],
+    "abstract": "arXiv:2611.24995v1 Announce Type: new \nAbstract: Understanding an egocentric environment requires reasoning about how surrounding entities affect the observer's actions. Existing evaluations of multimodal foundation models (MFMs) examine observer localization, motion trajectories, and action feasibility, but leave the discovery and interpretation of evolving observer-entity interactions insufficiently assessed. We introduce EgoPass-Bench, a benchmark for observer-relative interaction understanding in real-world egocentric video. EgoPass-Bench comprises 284 manually reviewed evaluation clips recorded using Ray-Ban Meta (Gen 2) smart glasses and 2,201 distinct questions across five tasks assessing motion perception, interaction judgments about specified entities, and relevant-entity discovery without target cues. Our evaluation of eight frame-based and six native-video configurations reveals a pronounced discrepancy between motion perception and interaction understanding. The strongest evaluated model, GPT-6 Astra, correctly recognizes object motion in 91.37% of 394 comparisons involving the same targets, but correctly identifies changes in passage constraints in only 66.50%. Across all 574 entity-discovery questions, it trails the two-person human baseline by $23.65 \\pm 7.45$ percentage points (paired 95% CI), while exceeding the always-empty baseline (36.76%) by at least 18.9 percentage points. Further analysis reveals frequent inclusion of entities that neither pose a plausible physical conflict nor constrain passage, showing that accurate motion recognition does not ensure reliable relevant-entity discovery.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.24995",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.24995"
+      }
+    ],
+    "relevance_score": 0.5453498652734329,
+    "max_similarity": 0.29863534652326373
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25363",
+    "title": "Stop Going in Circles:Loop-Triggered Routing for System 1 Decision Agents",
+    "authors": [
+      "Zeming Yu, Huamin Ma, Yingyu Chen, Yuan Sun, Peng Hu, Yang Qin"
+    ],
+    "abstract": "arXiv:2611.25363v1 Announce Type: new \nAbstract: System 1 decision models (represented by Jev) provide fast, low-cost action selection, but existing agent integrations do not reliably translate these local advantages into task completion. At certain points during execution, an agent may repeatedly select the same actions without making progress toward its goal. LLM-based policies offer strong reasoning capabilities that support planning within an agent, but invoking them at every step incurs substantial overhead. The effective coordination should therefore preserve Jev's fast local action selection while introducing LLM reasoning when execution stalls. We observe that recurring state-action pairs can signal stalled execution. We therefore propose LoopRoute, a simple but effective action router that uses this signal to allocate control within an agent. The decision model acts by default. When a loop is detected, the LLM provides brief, feedback-driven assistance and then returns control to the decision model. Later loops can request further assistance. The rule requires neither additional training nor model-specific confidence calibration. Across three benchmarks and seven LLMs, LoopRoute improves task success over standalone Jev with only limited use of the LLM policy. The mean gains are 21.0%, 60.1%, and 30.1% on ALFWorld, MapReader, and TextWorld cooking, respectively. Compared with full LLM control, LoopRoute also substantially reduces the mean cumulative API time and API-call cost per task. The same rule also improves the success rates of six frozen decision models.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25363",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25363"
+      }
+    ],
+    "relevance_score": 0.5139094491152383,
+    "max_similarity": 0.2565312776444223
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25252",
+    "title": "Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark",
+    "authors": [
+      "Zhenling Chen, Zhiguo Zeng, Anne Barros"
+    ],
+    "abstract": "arXiv:2611.25252v1 Announce Type: new \nAbstract: Coding agents built on large language models (LLMs) now help develop many models published as general solutions. Should generality instead reside in the agent that builds a model for each new task? We examine this question in prognostics and health management (PHM), where every model must work on unseen equipment. Our deployment-style benchmark, NextUnit-Bench, covers 24 public datasets split into 58 folds that hold out units or operating conditions; each agent has two hours to deliver an executable predictor, then run on the hidden units. First, frontier agents outperform AutoML, which reaches less than half the best agent's score, and faithful implementations of published methods on four datasets, of which only 6 of 30 beat the strongest agent's own design; published accuracies, where reproducible, rest on the papers' own conventions, and a single convention, capping the remaining life of test engines, can halve the reported error. Second, the agents' advantage is a design made on each machine's data; once made, a plain-text plan of a few hundred words carries most of the gap between two frontier agents, and given a weaker agent's plan, the strongest agent falls to that agent's level, often to identical predictions. Before touching the data, however, it matters little whose plan an agent carries out, and domain toolkits appear to help neither: what sets the strongest apart is how much it learns from the data. Third, such designs reach only implementers that can execute them: given the strongest agent's designs, a locally deployable open-weight model delivers half as often, even when they are lightened, and scores no higher than without them. Generality, we argue, is not disappearing but moving, from the model to the modeler.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25252",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25252"
+      }
+    ],
+    "relevance_score": 0.5119415286044151,
+    "max_similarity": 0.2550386073449889
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25135",
+    "title": "Calibrated Decision Rewards: Training Language Models with a Judge That Knows How Sure It Is",
+    "authors": [
+      "Rudransh Agnihotri, Manasvi Kapoor"
+    ],
+    "abstract": "arXiv:2611.25135v1 Announce Type: new \nAbstract: Reinforcement learning (RL) can only teach a language model what its reward can recognize. Answer checkers are exact but need a reference answer; learned reward models and LLM judges work everywhere, but their scores are not probabilities. We study RLCDR (Reinforcement Learning from Calibrated Decision Rewards). An LLM converted into a decision model answers a typed question about a response (\"is the final answer correct?\", \"which step is the first error?\") with a probability distribution, read in one forward pass, debiased over option orders and calibrated with about a hundred labels. Training Qwen3-1.7B with GRPO on MATH, this reference-free reward raises MATH500 accuracy from 72.2% to 76.8% (+4.65 points, p < 1e-4), matching training on the answer key (76.9%), while a random reward gains only +0.65. The gain grows with difficulty, from 44.8% to 51.7% on the hardest level. On the policy's own changing samples the reward stays calibrated: its expected calibration error is half that of a softmax judge on the same 27B backbone (0.074 vs. 0.141), and it shows no sign of reward hacking. Without step training, the same model finds the first wrong step better than a dedicated 7B process reward model (ProcessBench F1 0.772 vs. 0.722, 20/20 splits). We also map where the approach stops being enough: trained only on problems the base model mostly fails, the reference-free reward still improves the policy (+1.9 MATH500 points, p = 0.03) but trails the answer key, because its probabilities become overconfident on that distribution. We state six hypotheses in advance and test each with a control designed to falsify it.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25135",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25135"
+      }
+    ],
+    "relevance_score": 0.4594898098443231,
+    "max_similarity": 0.18983158531782707
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25151",
+    "title": "Rate-distortion Assessment for Hierarchical Content Summarization",
+    "authors": [
+      "Yunye Gong, Indranil Sur, Jared Claypoole, Pritish Sahu, Ajay Divakaran"
+    ],
+    "abstract": "arXiv:2611.25151v1 Announce Type: new \nAbstract: Powerful generative models including large language and vision models have demonstrated success across a wide range of content generation, editing and manipulation tasks via end-to-end prompt-based generation. However, current assessment of the quality of generative content manipulation remains subjective, limiting scientific understanding of model capabilities. Inspired by rate-distortion theory from Shannon information compression theory, in this work we formalize hierarchical content summarization as an information encoding problem. We design a principled framework to extract the semantic hierarchy of the source content to support quantitative characterization of the rate-distortion trade-off between compression efficiency (rate) against information loss (distortion) during generative content manipulation, which allows us to benchmark various models with respect to performance conditional on rate budget of interest. We demonstrate the use of the framework with empirical experiments on content summarization for long-context question-answering with state-of-the-art large language models, offering new insights into their efficiency and comprehension capabilities. We further demonstrate the use of the semantic hierarchy as guidance for performing effective retrieval augmented generation, showing improved rate-distortion characteristics against current baselines.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25151",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25151"
+      }
+    ],
+    "relevance_score": 0.45146954320376936,
+    "max_similarity": 0.17789411230119023
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25360",
+    "title": "AppSci-Bench: Can LLMs Build AI Agents and Make Them Better?",
+    "authors": [
+      "Sanjari Srivastava, Manpreet Kaur, Cheng Chang, Sof\\'ia Ram\\'os Anton, Oumaima Essamadi, Rishu Garg, Alejandro Lavale Jim\\'enez, Marcos Caballero Yus, Mercedes Garc\\'ia Mart\\'inez, Peng Qi"
+    ],
+    "abstract": "arXiv:2611.25360v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used not only to power AI agents but also to build them. While many benchmarks assess the quality of LLM- powered agents, few ascertain how good LLMs are at building them. To this end, we introduce AppSci-Bench, where we construct a setting akin to how human Applied Scientists build agents for businesses - through eliciting task requirements from stakeholders, exploring the business's infrastructure, and scientifically improve the target agent by designing experiments and internal benchmarks. AppSci-Bench features seven realistic domains - five new ones (Slides Generation, Order-to-Cash, Compliance Review, Customer Call Insights, and CRM Insights) and two domains recast from tau3-bench (Yao et al., 2024; Shi et al., 2026b)(Airline and Banking) - each with a held-out evaluation suite customized for that task. We evaluate seven frontier models and find AppSci-Bench challenging: the best model, Claude Opus 5.0, only reaches a mean-minimum score of 59.1% across 3 build attempts; other models do significantly worse. Models struggle with eliciting task requirements (only 65% for Opus 5.0), build representative internal evaluations (models saturate their own evaluation 65% of the time but fail to solve the held-out task), presenting challenges for future research. The benchmark code is available here: https://github.com/sanjari-orb/appsci-bench.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25360",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25360"
+      }
+    ],
+    "relevance_score": 0.4418825928694326,
+    "max_similarity": 0.16717210539370816
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25228",
+    "title": "MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks",
+    "authors": [
+      "Anima Singh, Suhas Yogin, Weicheng Kuo, Ivor Rendulic, Ivan Jurin, Antoine Yang, Oran Kelly, Rohan Doshi, Hammad Ayyubi, Ioana Bica, Sergi Caelles, Matthew Conniff, Dan Graur, Anastasija Ili\\'c, Ahmet Iscen, Chao Jia, Tomasz K\\k{e}pa, Chunyuan Li, Noah \\'O Donnaile, Filip Pavetic, Goran Petrovic, Khalid Salama, Zhicheng Wang, Polina Zablotskaia, Yiqian Zhang, Ming Zhao, Benjamin Caine, Mario Lu\\v{c}i\\'c, Melvin Johnson, Radu Soricut, Jean-Baptiste Alayrac"
+    ],
+    "abstract": "arXiv:2611.25228v1 Announce Type: new \nAbstract: We introduce the Multimodal Knowledge Agent (MKA) benchmark, which measures how well autonomous agents perform end-to-end professional knowledge work that depends on visual understanding. Each task requires an agent to extract and combine information from multiple visually dense files, such as CAD blueprints, electronics schematics, radiographs, complex charts and geospatial maps, and to produce a standalone deliverable in .xlsx, .pptx, .pdf, .docx, .html or .png format. Existing benchmarks leave this capability largely untested: removing image-viewing tools leaves Gemini 4 Carbon's score on GDPval unchanged, and single-format evaluations such as GDP.pdf and GDP.xlsx do not require reasoning across files or modalities. MKA contains 200 tasks across 10 economic sectors. Deliverables are graded against expert-weighted rubrics by a sandboxed agentic autorater that agrees with human domain experts on 96.2% of criterion judgments in our expert-graded study (Cohen's $\\kappa = 0.91$), scored by weighted satisfaction rate (WSR) overall and on frontier criteria unsaturated by prior-generation models (Climb-WSR). Across the frontier models we evaluate (Gemini 4 Carbon, Claude Fable 5.2, Claude Opus 5.5, and GPT-6 Astra), Claude Fable 5.2 (56.6% Climb-WSR, 73.3% Overall WSR) and Gemini 4 Carbon (54.3% Climb-WSR, 71.9% Overall WSR) achieve the highest scores, while Carbon uses $5.7\\times$ fewer tokens. Even for the strongest models, Climb-WSR remains below 57%, leaving substantial headroom for multimodal agents.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25228",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25228"
+      }
+    ],
+    "relevance_score": 0.44089532164438905,
+    "max_similarity": 0.16500699787832884
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25069",
+    "title": "VisAlloc: Allocating Visual Supervision for On-Policy Self-Distillation",
+    "authors": [
+      "Haoran Xu, Tian Chen, Yuhe Wu, Yanbo Zhao, Junchi Liao, Hongyu Wang, Jiaze Li, Wentao Wang, Yanfeng Li, Rui Qian"
+    ],
+    "abstract": "arXiv:2611.25069v1 Announce Type: new \nAbstract: On-policy self-distillation (OPSD) offers a promising approach to improving visual reasoning in multimodal large language models (MLLMs). However, not all samples benefit equally from privileged visual guidance, and uniform token supervision can dilute visually grounded signals. We propose VisAlloc, a dual-level framework combining sample-level visual filtering with token-level counterfactual reweighting. A fixed paired-teacher filter retains samples answered correctly from an evidence-centered positive crop but incorrectly from a spatially displaced negative crop. At the token level, both EMA teachers score the same student-generated response, and their absolute log-probability differences measure view sensitivity. Additional supervision targets tokens admitted by sensitivity or teacher-distribution disagreement, with shared frozen-prior, template-bigram, and student--teacher divergence gates. Inverse-frequency redistribution preserves the total additional weight within each micro-batch, while the positive teacher remains the sole distillation target. Inference requires only the full-image student. Across eight benchmarks, our 4B and 9B models achieve macro-averages of 81.44 and 84.92, outperforming Vision-OPD reproductions by 0.97 and 0.52 points, respectively. Code on GitHub: https://github.com/Kaelyn01/VisAlloc",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25069",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25069"
+      }
+    ],
+    "relevance_score": 0.4364070482036386,
+    "max_similarity": 0.16078870192843242
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25100",
+    "title": "HapBO: Harnessed $\\alpha$-$\\pi$ Bayesian Optimization via Expert Natural Language Priors",
+    "authors": [
+      "Jean-S\\'ebastien Giroux, Rose Guay Hottin, Marco Bonizzato"
+    ],
+    "abstract": "arXiv:2611.25100v1 Announce Type: new \nAbstract: Bayesian Optimization (BO) can be substantially more sample-efficient when informed by prior knowledge about the problem. In practice, however, such knowledge is often available only in natural language, e.g., expert intuitions or documentation, rather than as the explicit probability distribution landscape that prior-guided BO methods may require. Leveraging it effectively demands both an expressive mapping from language to priors and robustness to information that may be misleading. We propose HapBO (Harnessed $\\alpha$-$\\pi$ Bayesian Optimization), which elicits beliefs once from a human expert, a large language model (LLM), or both, and deterministically compiles a structured specification into a reusable belief function ($\\pi: \\mathcal{X} \\to[0,1]$), with a rich representation not restricted to a Gaussian family. Building on $\\alpha$-$\\pi$BO, HapBO applies this belief function through a bounded positive multiplier on any nonnegative acquisition, preserving positive acquisition support and requiring no LLM calls during optimization. We prove that, for the Expected Improvement acquisition function (EI), HapBO preserves the standard simple-regret rate up to a bounded factor, even under adversarial beliefs. We evaluate HapBO on 40 HPOBench tasks, a synthetic suite in 6-15 dimensions and two real-world applications: cortical neurostimulation and constrained solar design. HapBO achieves the lowest aggregate HPOBench regret and strong real-world task performance, with zero in-loop token cost. In real-world applications it improves the optimization outcome even at budgets of 12-20 queries, and at a small fraction of the wall-clock and token costs of other LLM-based methods.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25100",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25100"
+      }
+    ],
+    "relevance_score": 0.432248230669398,
+    "max_similarity": 0.15603888659695442
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25236",
+    "title": "A Neurosymbolic Multimodal Framework for 30-Day Diabetic Readmission Prediction: Integrating Structured EHR Data, Dense Clinical Embeddings, and Knowledge-Grounded Symbolic Extraction",
+    "authors": [
+      "Una Suman Kumar Patro, Sibangi Subhadarsani, Narendra Badam"
+    ],
+    "abstract": "arXiv:2611.25236v1 Announce Type: new \nAbstract: Unplanned 30-day readmissions among patients with diabetes mellitus impose a substantial clinical and economic burden, yet most predictive models use only structured electronic health record (EHR) data and ignore free-text clinical notes, which often contain code-mixed Hindi-English (Hinglish) phrasing and negation that general-purpose language models parse unreliably. We propose a neurosymbolic multimodal framework evaluated on the public Diabetes 130-US Hospitals dataset (101,766 encounters; 71,518 patients) with a patient-level grouped 80/20 split. Three streams are fused: engineered structured features; 32 components of Bio_ClinicalBERT note embeddings obtained by truncated singular value decomposition; and symbolic entities extracted by an open-weight clinical language model within a three-stage hybrid retrieval-augmented generation pipeline (dense retrieval, sparse lexical retrieval, and cross-encoder re-ranking) with reflective negation auditing. A cost-sensitive XGBoost classifier with a decision threshold calibrated by Youden's J statistic produces the prediction. On the held-out test cohort (n = 20,153), the structured baseline achieved an area under the receiver operating characteristic curve (AUROC) of 0.6477, sensitivity of 0.5839, and Brier score of 0.1080. The full multimodal model achieved the highest sensitivity (0.6667; +8.28 percentage points), the best F2-score (0.3824), and the lowest Brier score (0.0977), at a slightly lower AUROC (0.6375) and specificity (0.5161). Shapley additive explanations showed that prior utilization dominates risk, with compressed narrative components among the top predictors. On a 500-note code-switched benchmark, grounded retrieval raised Hinglish symptom recall from 4.8% to 40.2% and precision from 3.1% to 45.2%, while reducing entity hallucinations from 1.74 to 0.00 per note.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25236",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25236"
+      }
+    ],
+    "relevance_score": 0.423863055163897,
+    "max_similarity": 0.1426730928098722
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25214",
+    "title": "Steering Automated Scientific Discovery via Audited Epistemic Exploration",
+    "authors": [
+      "Fangxu Yu, Tao Feng, Xuying Ning, Haolin Yang, Jiaxuan You, Tianyi Zhou"
+    ],
+    "abstract": "arXiv:2611.25214v1 Announce Type: new \nAbstract: Scientific discovery requires revisiting the hypotheses in light of new evidence and identifying promising directions beyond those already explored. However, research agents often make claims that are not supported by their observations, explore a narrow hypothesis space, and retain beliefs despite recognizing conflicting evidence. These failures motivate the search for an explicit epistemic state that captures both beliefs about existing hypotheses and directions for further exploration. To this end, we propose Epistemic Compass (EpiCompass), a plug-and-play scaffold that maintains this state through an epistemic tree linking hypotheses, evidence, beliefs, and revisions. As an investigation progresses, EpiCompass reassesses the hypotheses explored against accumulated evidence and uses unresolved conflicts and unexplored directions to guide hypothesis generation. It selects candidates by anticipated epistemic gain, accounting for both refinement of existing hypotheses and expansion of the hypothesis space, and verifies the final conclusion against the accumulated evidence. Experimental results across three scientific discovery benchmarks and three LLM backbones demonstrate that EpiCompass consistently outperforms baselines, with further analyses showing reductions in errors of unsupported claims and failures to revise beliefs.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25214",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25214"
+      }
+    ],
+    "relevance_score": 0.420748531368444,
+    "max_similarity": 0.2061736067867552
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25210",
+    "title": "Recurrent Vision Language Models Solve the Shell Game",
+    "authors": [
+      "Dingqiang Ye, Jiacong Xu, Wen Zhang, Yiqun Mei, Vishal M. Patel"
+    ],
+    "abstract": "arXiv:2611.25210v1 Announce Type: new \nAbstract: Tracking a hidden object through a video is effortless for humans, yet it remains a bottleneck for vision language models (VLMs). In the shell game, where a ball is hidden under one of several identical cups that are then swapped, VLMs that answer directly stay near chance, thinking models fail on long games, and fine-tuning learns only the lengths it has seen. We argue that the limit is serial computation: each swap must be composed with the last result, and a VLM of fixed depth has only a fixed number of state transitions for it. To address this, we propose RecurrentVLM, which makes every attention layer of a pretrained VLM recur over time by computing the keys and values of finished frame groups from the layer's own output. With a single answer token, RecurrentVLM reaches 100% on VET-Bench and 99.6% on MET-Bench, and 99% on 50-swap games after training on at most 30 swaps. We also observe several interesting phenomena: length generalization emerges suddenly at an aha moment; without recurrence, each swap costs an attention layer; the ball's state forms in the first four attention layers; and recurrence keeps the latest state at the cost of details of earlier moments. These results suggest that recurrent VLMs are a potential solution for tracking the states of unobserved objects in video. Code will be released.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25210",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25210"
+      }
+    ],
+    "relevance_score": 0.41694260747973744,
+    "max_similarity": 0.1369152404412314
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25111",
+    "title": "DSFlow: A Neuro-Symbolic Data Workflow Agent with Statistical Diagnostic Guardrails",
+    "authors": [
+      "Junfeng Nie, Xiaohui Chen"
+    ],
+    "abstract": "arXiv:2611.25111v1 Announce Type: new \nAbstract: Data science workflows often require tools that presume non-trivial technical knowledge. Large language models (LLMs) reduce this barrier, but a gap remains between flexible general-purpose agents and statistically controlled pipelines. We introduce DSFlow, a LangGraph-based neuro-symbolic data-agent platform that combines reusable, LLM-selected skills with deterministic diagnostic guardrails. Skills provide extensible task knowledge. Symbolic validation can accept a proposed method, request clarification or replanning, override an unsuitable method, or supply a safe fallback. Regression and clustering case studies illustrate how DSFlow uses diagnostic evidence to correct method choices and documents those decisions in auditable reports.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25111",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25111"
+      }
+    ],
+    "relevance_score": 0.3998119145488289,
+    "max_similarity": 0.11497090392799109
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25165",
+    "title": "Separating Interpretability and Reconstruction in Sparse Autoencoders",
+    "authors": [
+      "Anh Tien Nguyen, Dimitris Samaras, Mahdi S. Hosseini"
+    ],
+    "abstract": "arXiv:2611.25165v1 Announce Type: new \nAbstract: Sparse Autoencoders (SAEs) are effective tools for mechanistic interpretability by decomposing neural representations into sparse and interpretable features. However, a single sparse representation in traditional SAEs is responsible for both reconstruction fidelity and interpretability, which are not guaranteed to align. To separate these objectives, we propose DualSAE, a modular framework that augments standard SAEs with a plug-in Residual Branch. A standard SAE serves as the Sparse Branch, learning a sparse code that contains the dominant semantics of the input. The added Residual Branch models the non-semantic information omitted by the Sparse Branch. We ensure that the contributions of the two branches towards the overall reconstruction have minimal overlap through a decorrelation loss. We also adopt a two-stage training strategy that first stabilizes sparse representation learning before coupling with the Residual Branch. Across diverse encoder-SAE configurations on two vision datasets and two language corpora, DualSAE achieves mean relative improvements of approximately 29% in reconstruction fidelity and 34% in interpretability (measured by monosemanticity score). Moreover, with more interpretable representations, DualSAE yields consistent performance gains in the downstream applications of topic modeling, hypothesis generation, and LLM steering. Qualitative analysis further suggests that the Sparse Branch indeed preserves dominant semantic content, whereas the Residual Branch captures non-semantic information to improve reconstruction fidelity.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25165",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25165"
+      }
+    ],
+    "relevance_score": 0.37444750687327655,
+    "max_similarity": 0.08707823363195842
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25070",
+    "title": "An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance",
+    "authors": [
+      "Nianjun Zhou, Dhaval Patel"
+    ],
+    "abstract": "arXiv:2611.25070v1 Announce Type: new \nAbstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts.\n  A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25070",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25070"
+      }
+    ],
+    "relevance_score": 0.36705901345197844,
+    "max_similarity": 0.13673958635392885
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25357",
+    "title": "Pro$^2$ Agent: Scientific Problem Probing for Autonomous AI R&D",
+    "authors": [
+      "Yixiong Chen, Liqian Peng, Tian Tan, Ziqian Lin, Blake Jianhang Chen, Chao Zhao, Yaojie Liu, Alec Go, Alan Yuille"
+    ],
+    "abstract": "arXiv:2611.25357v1 Announce Type: new \nAbstract: Large language model (LLM) agents can now autonomously conduct AI research by writing code and running experiments. They typically do so by iteratively optimizing a codebase, while ignoring the problem structure behind the task. This formulation is effective on simpler tasks, but on difficult problems it often gets stuck in the wrong solution region because the agent never explicitly represents its understanding of the problem. We introduce Pro$^2$ Agent, which shifts the primary state of autonomous AI research from a codebase state to a Problem State: an explicit structure of what problems prevent success and which solutions are likely to address them. Pro$^2$ Agent initializes the Problem State through comprehensive analysis of available resources and constraints. It then performs targeted research to relate the identified problems to candidate solutions. Through controlled hypothesis testing, the agent updates the importance of a suspected problem or the benefit brought by a candidate solution. On the complete MLE-Bench, Pro$^2$ Agent matches the best reported medal rate (70.7%) under the standard 24-hour budget and reaches 76.0% with a 48-hour budget, the highest medal rate reported on the complete benchmark. It also achieves competitive performance on PostTrainBench. In addition, it produces research notes for each task that make the research process transparent and reusable by human researchers.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25357",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25357"
+      }
+    ],
+    "relevance_score": 0.3664638056081714,
+    "max_similarity": 0.13698800919867132
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25109",
+    "title": "CoMPASS: A Multi-Turn Benchmark for Measuring LLM Reinforcement of Parasocial Behavior",
+    "authors": [
+      "Shwetanshu Singh, Mark Keavney, Mathieu Duteil, Meriem Mehri, Scott Blain"
+    ],
+    "abstract": "arXiv:2611.25109v1 Announce Type: new \nAbstract: Users of conversational LLMs sometimes anthropomorphize these systems, form emotional attachments to them, and become dependent on them. This behavior, known as parasocial attachment, has been linked to multiple documented fatalities. However, public benchmarks for measuring whether LLMs reinforce users' parasocial attachment are lacking: existing work is single-turn, post hoc observational, or focused on extreme user states such as psychosis. We introduce CoMPASS, a multi-turn benchmark for measuring whether LLMs reinforce or resist users' gradually escalating parasocial attachment. CoMPASS is grounded in attachment theory and includes four user personas, three independent escalation dimensions (anthropomorphism, attachment, dependency) applied singly and in combination against a matched control, and a seven-signal scoring rubric. We report results for eight frontier models from four providers and observe that under our primary judge, multi-turn escalation raises parasocial behavior on the anthropomorphism and the attachment composite scores across all models. Six of the eight models show a significant increase in overall parasocial reinforcement over control when all three dimensions are escalated simultaneously. We find that within-provider differences are small relative to cross-provider differences, which suggests that provider-level choices such as post-training, rather than model scale, shape parasocial reinforcement and that provider-side intervention may be feasible.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25109",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25109"
+      }
+    ],
+    "relevance_score": 0.3358272006058615,
+    "max_similarity": 0.10013690042467181
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.25179",
+    "title": "Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks",
+    "authors": [
+      "Zirui Song, Jiadong Zhang, Zheng Lu, Xiaosong Ma, Xiaojun Chang, Xiuying Chen"
+    ],
+    "abstract": "arXiv:2611.25179v1 Announce Type: new \nAbstract: Simulated manipulation benchmarks measure policy performance using hand-written success checkers that label each episode as a success or failure. Passing an expert demonstration shows that a checker accepts one way of completing the task. Learned policies, however, may stop after partial progress or complete the task in a different way. A checker may then accept an incomplete execution (phantom success) or reject an execution that satisfies the instruction (silent failure). In this paper, we introduce SimAudit, an LLM-based pipeline that audits success checkers against task instructions. SimAudit analyzes the instruction and checker code to identify scenarios where the two may disagree, recreates those scenarios in simulation, and runs the original checker. Multi-view renderings are then used to verify whether the observed behavior satisfies the instruction. Across RoboTwin 2.0, RoboCasa365, and RoboDojo, 183 simulated test cases produced the predicted checker verdict. Visual verification and deduplication yielded 61 distinct defects across 49 tasks, including 40 phantom successes and 21 silent failures. Most defects in RoboCasa365 accepted incomplete executions, most in RoboDojo rejected valid executions, and both error types were common in RoboTwin 2.0. These findings suggest that validating success checkers requires testing both incomplete executions and valid alternatives to expert demonstrations, and motivate more rigorous evaluation protocols for future benchmarks.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "updated": "Fri, 20 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.25179",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.25179"
+      }
+    ],
+    "relevance_score": 0.25626612994953923,
+    "max_similarity": 0.1889417584905061
+  }
+]
