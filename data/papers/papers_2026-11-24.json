@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2611.28097",
+    "title": "ORDO: Fine-Grained Motion Understanding in Video LLMs via Order-Dependent Supervision",
+    "authors": [
+      "Jiaye Luan, Chaoning Zhang, Pengcheng Zheng, Dongshen Han, Sheng Zheng, Ping Guo, Caiyan Qin, Yang Du, Yang Yang"
+    ],
+    "abstract": "arXiv:2611.28097v1 Announce Type: new \nAbstract: Video large language models (video LLMs) answer a wide range of questions about real videos, yet they remain weak at fine-grained motion such as whether an object speeds up or slows down. Existing methods train these models on synthetic motion clips, on order pretext tasks such as reordering shuffled clips, or with rewards that compare ordered and perturbed frames. None of them requires that the label be unrecoverable from the frames once their order is discarded, so a model can fit such data from static cues without learning to use frame order. We propose ORDO, a framework that builds this requirement into the training data. We define order-necessary supervision as data in which the unordered set of frames has the same distribution under competing labels, and we realise it for motion attributes with three constructions, time-reversal pairing, matched spatial extent and uniform interval coverage. A procedural curriculum of six motion primitives instantiates these constructions, and low-rank adapters of the language model are trained on it with an answer-level objective and self-distillation replay on real videos. With 4,000 synthetic clips, ORDO raises the mean accuracy over four motion benchmarks by +7.6, +4.9 and +5.1 points on Qwen3.5-9B, Qwen3-VL-8B and Molmo2-8B, while the same training with shuffled frames changes it by less than one point. Code and generator will be made publicly available.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28097",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28097"
+      }
+    ],
+    "relevance_score": 0.6091626141207833,
+    "max_similarity": 0.37746335809596065
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28202",
+    "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+    "authors": [
+      "Mark Zhao, Pengcheng Wang, Rui Yang, Jiarui Yao, Xirui Jiang, Yuxi Chen, Bingxuan Li, Hanyang Chen, Ke Yang, Manling Li, Tong Zhang, Huan Zhang"
+    ],
+    "abstract": "arXiv:2611.28202v1 Announce Type: new \nAbstract: Multimodal foundation models can play video games well when the game waits for them, but often fail when it keeps running. We find that much of this gap lies in the harness, which decides what the model sees, what it remembers, and how its outputs become actions over time. Existing harnesses such as VISTA improve the first two, yet turn each model call into at most one action, so the agent acts only as often as its model thinks. We introduce AutoPILOT, which changes the third: in each model call, the model can send a primitive action, start an open-loop macro, or write a closed-loop controller that keeps playing from the screen without further model calls until it hands control back. To evaluate agents in real-time games, we build AFK-Bench, 120 diverse browser games grouped by how they respond to inaction and playable in real time or with the clock paused. With GPT-6.1 Sol under the same budgets, AutoPILOT reaches 68.6% real-time success against 38.3% for VISTA, and on GameWorld it keeps 80.0% in real time while VISTA drops from 84.1% to 42.9%. Its gains hold across models, and it reaches VISTA's final success rate at a fifth of its API cost. Our results suggest that how a harness turns model outputs into actions over time is a central yet underexplored part of agent design, and we hope AutoPILOT and AFK-Bench will serve as a foundation for agents in a world that does not wait.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28202",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28202"
+      }
+    ],
+    "relevance_score": 0.6018003040522109,
+    "max_similarity": 0.3694395488921372
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28356",
+    "title": "Engram: Multi-Stage Memory for Agentic Tuning of Heterogeneous Models",
+    "authors": [
+      "Huanran Li, Nhat X. T. Le, Kevin De Angeli, Yao Xuan, Alireza Vahdatpour, Djordje Gligorijevic"
+    ],
+    "abstract": "arXiv:2611.28356v1 Announce Type: new \nAbstract: Large language model (LLM) agents can now tune neural networks, yet without cross-session memory they spend costly trials rediscovering known lessons. Reuse is difficult because production models differ in architecture, training setup and inference budget. We present Engram, a memory system that links past trial outcomes with the hypotheses and rationale behind them and assesses whether this evidence applies to the current model. An online agent curates evidence at the decision points where it is needed: Initial Guidance supplies validated lessons at the start, Session Retrieval supplies related past sessions before each batch of hypotheses is generated, and Trial Candidate Review checks each trial candidate against matching past trials. Between sessions, an offline agent distills validated lessons, making the memory self-improving. On two ads models, Engram reaches the 32-trial result of a no-memory control with 47% fewer trials and also ends with a better model on average.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28356",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28356"
+      }
+    ],
+    "relevance_score": 0.4946661207542098,
+    "max_similarity": 0.23254187600884443
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28348",
+    "title": "SMAD: A Semantics-Guided Multi-Agent Framework for Unsupervised Time-Series Anomaly Detection",
+    "authors": [
+      "Qinghua Liu, Junpeng Wang, Mingzhi Hu, Menghai Pan, Shubham Jain, Yuzhong Chen, Yan Zheng, Yiwei Cai, John Paparrizos"
+    ],
+    "abstract": "arXiv:2611.28348v1 Announce Type: new \nAbstract: Time-series anomaly detection (TSAD) lacks a one-size-fits-all detector for heterogeneous data and anomaly types. Existing automation is limited by implicit objectives, potentially unreliable historical knowledge, or high computational costs. More fundamentally, it selects how to detect anomalies without explicitly defining what to detect. We propose SMAD, an LLM-based multi-agent framework that translates anomaly intent into executable, testable detection pipelines. Rather than selecting detectors against an implicit target, SMAD establishes a natural-language semantic contract grounded in measurable time-series properties, specifying target event patterns, expected score responses, and validation questions. This contract governs both detector construction and evaluation: LLM agents propose pipelines, while contract-matched synthetic interventions provide label-free evidence from the target series to assess semantic coverage and guide iterative self-refinement. A semantics-aware ensemble integrates validated candidates and attributes each alert to contributing detectors and supporting evidence. On univariate and multivariate TSAD benchmarks, SMAD improves detection performance over the strongest baseline by 11.5% and 9.6%, respectively, while outperforming general-purpose coding agents at 2-5x lower language-model token cost.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28348",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28348"
+      }
+    ],
+    "relevance_score": 0.49355754532785845,
+    "max_similarity": 0.23137156080368826
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28080",
+    "title": "Multimodal Violence Understanding and Temporal Retrieval in Movies with Adaptive Audio-Visual Fusion",
+    "authors": [
+      "Jiaqian Li, Rohitash Chandra"
+    ],
+    "abstract": "arXiv:2611.28080v1 Announce Type: new \nAbstract: Violence in films and streaming media remains a concern for audience protection and creates substantial workload for manual content classification. Existing violence-detection methods often rely on limited modalities or short video clips, making it difficult to capture complementary evidence and localise violent events in long, untrimmed videos. In this study, we develop a framework for multimodal video understanding that classifies violence severity, predicts multiple violence types, and locates violent events in time. We combine temporally aligned visual and audio features extracted using pretrained encoders through attention-based adaptive fusion, followed by Transformer-based temporal modelling. Our framework supports three complementary tasks: video-level violence-severity classification, multi-label violence-type prediction, and temporal localisation of violent events. We evaluate the framework on the XD-Violence benchmark and examine its cross-domain performance using AIRTLab. On XD-Violence, our multimodal model achieves 93.27\\% severity-classification accuracy and a micro-F1 score of 88.60\\% for multi-label violence-type prediction, outperforming the corresponding unimodal configurations. We achieve a mean temporal intersection-over-union (tIoU) of 0.5075 for temporal localisation. Our cross-domain experiments reveal performance degradation under different recording conditions, while our movie case studies demonstrate the framework's potential to retrieve potentially violent scenes for further review. Our results highlight the practical value of multimodal intelligent systems in supporting human reviewers with the identification, classification, and temporal retrieval of violent content in films and streaming media.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28080",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28080"
+      }
+    ],
+    "relevance_score": 0.4912836546701069,
+    "max_similarity": 0.22721208084523487
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28079",
+    "title": "Vision-Language Truck Driving Advisories Grounded in Provincial Rules and Forecast Risks",
+    "authors": [
+      "Xintong Jiang, Shucheng Huang, Qiaoxuan Zhang, Jincheng Xu, Yukun Lu"
+    ],
+    "abstract": "arXiv:2611.28079v1 Announce Type: new \nAbstract: Vision-language models (VLMs) can generate context-aware driving advisories, but their outputs may conflict with road conditions or traffic rules, and they typically address a hazard only once it is visible. This matters for long-haul trucking, where heavy trucks need long stopping distances and a single trip may cross several jurisdictions with different traffic regulations. This paper proposes a data generation and distillation framework that integrates structured scene understanding, risk forecasting, and traffic-rule retrieval to generate truck driving decisions and natural-language advisories, with a consistency check on every record. The records, written by an 8B teacher, are then used to distill a 3B-parameter student model for onboard deployment. We also introduce a dashcam dataset covering four Canadian provinces, comprising 11,142 annotated lane-marking frames and 9,494 driving segments. On held-out driving data across all four provinces, the student passes the consistency check in 94.6% of the segments, against 20.2% for the untuned 8B teacher, and announces 26.2% of the risks in the next 10 to 30 seconds before they appear. Of the generated advisories, 97.7% conform to the provincial traffic rules and guidance. These findings suggest that the framework can produce rule-conforming training data for compact driving advisory models.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28079",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28079"
+      }
+    ],
+    "relevance_score": 0.4597990562031449,
+    "max_similarity": 0.189924809648808
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28295",
+    "title": "GERF: A Token-Efficient Multimodal Retrieval Framework for Schema-Guided Scientific Information Extraction",
+    "authors": [
+      "Yiyu Qian (Cornell University), Xing Wu (Shanghai University)"
+    ],
+    "abstract": "arXiv:2611.28295v1 Announce Type: new \nAbstract: Scientific information extraction (IE) is a fundamental component of AI for Science, transforming experimental knowledge embedded in scientific literature into structured and traceable data for evidence synthesis, scientific database construction, and data-driven discovery. However, critical experimental details are often distributed across text, tables, figures, captions, and surrounding discussion, making them difficult to recover using conventional text-only extraction. Existing LLM-based and multimodal RAG pipelines typically rely on full-document context or coarse page-level retrieval, introducing substantial irrelevant evidence and high textual and visual token costs. We propose GERF, a Graph-based Evidence Retrieval Framework for token-efficient, schema-guided multimodal scientific IE. GERF represents each article as a heterogeneous evidence graph that connects schema fields, text chunks, figures, and figure-derived content through semantic and structural relations. Using schema fields as retrieval anchors, GERF combines direct semantic retrieval, Random Walk with Restart, and null-aware evidence expansion to construct compact, field-specific multimodal evidence packages. Visual interpretation is applied only to graph-selected figures, avoiding indiscriminate processing of the entire document. We evaluate GERF from two complementary perspectives: evidence retrieval quality and pipeline-level input-token consumption. On the expert-annotated SOFC-Exp corpus, GERF retrieves gold-supported evidence for 94.55% of the evaluated field instances, providing broad field-level evidence coverage for downstream extraction. In the token comparison, GERF reduces average input-token usage by 73.40% relative to full-context processing and uses fewer tokens than the evaluated page-level pipelines.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28295",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28295"
+      }
+    ],
+    "relevance_score": 0.4437085772919501,
+    "max_similarity": 0.16533475460847866
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28239",
+    "title": "FinEvo: Recursive Self-Improvement for Long-Horizon Financial Modeling",
+    "authors": [
+      "Chengjun Pan, Shichun Liu, Zekai Zhou, Shihan Dou, Jiahang Lin, Chengsong Huang, Dingwei Zhu, Tao Gui"
+    ],
+    "abstract": "arXiv:2611.28239v1 Announce Type: new \nAbstract: Advances in large language models (LLMs) have expanded their role in high-value productivity tasks, including financial analysis and modeling, while enabling models to play an increasingly active role in their own improvement. This motivates two complementary lines of inquiry: can financial modeling capabilities provide a foundation for model self-evolution, and can self-evolution, in turn, advance financial capabilities? We introduce FinEvo, a self-evolution framework that integrates autonomous experience construction with financial capability improvement. FinEvo prepares financial models, iteratively evolves challenges through self-play, and learns from the resulting interactions using executable rewards, relying on the same model throughout. An end-to-end execution with Qwen3.6-27B shows that solving feedback supports both increasing reasoning demands and identifying specification issues that executable checks can miss. Learning from these experiences raises whole-task success from 22.73 to 29.09 on held-out within-source tasks and from 13.13 to 19.19 on SpreadsheetBench 2 Financial. Comparable gains across task sources and evaluation settings, together with improvement on a task category absent from training, suggest that FinEvo strengthens underlying financial modeling capabilities shared across tasks. These findings support self-evolution as a path toward broader financial competence, advancing the empirical exploration of recursive self-improvement (RSI) in professional domains. Code is available at https://github.com/pcj-sudo/FinEvo.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28239",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28239"
+      }
+    ],
+    "relevance_score": 0.44117172360176976,
+    "max_similarity": 0.1680062019138883
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28285",
+    "title": "Specialized Large Language Models for Markovian Reasoning: Structural Cache Compression, Transition Pretraining, and Dual-Loop Transformers",
+    "authors": [
+      "Haibin Tong, Liangliang Xin, Yamei Zhu, Jiang Yu"
+    ],
+    "abstract": "arXiv:2611.28285v1 Announce Type: new \nAbstract: Standard autoregressive large language models attend to the growing history of generated tokens, making the key-value (KV) cache a central memory and throughput bottleneck in long-chain reasoning and multi-branch sampling. Yet an important class of reasoning problems is naturally first-order Markovian: the next step depends on a sufficient representation of the current state, rather than on the raw sequence of all earlier steps. We develop a unified design paradigm for Markovian-reasoning specialized large language models. At the cache level, the Markovian state interface transforms history-dependent KV storage into constant-size state transfer with respect to the number of reasoning steps. At the learning level, we reformulate long-chain prediction as independently trainable one-step transition objectives, with explicit state bottlenecks, distillation, invariance, and drift-consistency losses. At the architectural level, we introduce a dual-loop Transformer: an outer loop advances the reasoning state, while an inner recurrent-depth loop allocates adaptive computation to each transition through shared weights and explicit memory tokens or recurrent matrix states. We connect this architecture to a three-region cache, step-relative positions, truncated backpropagation, branch-aware checkpoints, and a transition-centric evaluation protocol. The organizing principle is simple: the optimal reasoning system need not remember everything; it must carry forward exactly what the future needs. This principle opens a path toward specialized reasoning engines whose memory footprint is decoupled from reasoning-chain length.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28285",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28285"
+      }
+    ],
+    "relevance_score": 0.44013069841721286,
+    "max_similarity": 0.16241133659508744
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28368",
+    "title": "Schedule, Rank, Profile: Continuous Evaluation of LLM Agents in Games",
+    "authors": [
+      "Martyna Plomecka, Yao Yan, DJ Sterling, Jon Lipovetz, John Schultz, Michael Aaron, Chiamaka Chukwuka, Will Cukierski, Christopher D'Mello, Bovard Doerschuk-Tiberi, Robert Fraser, Ian Gemp, Yuting Han, Addison Howard, Oran Kelly, Siqi Liu, Jeff Moser, Meghan O'Connell, Jun Peng, Laurel Prince, Meg Risdal, Jonathan Ward, Domino Weir, Marc Lanctot"
+    ],
+    "abstract": "arXiv:2611.28368v1 Announce Type: new \nAbstract: Games are a robust test for large language model agents: they require sequential decisions, adversarial or cooperative interaction, state tracking, reasoning under uncertainty, and long-horizon planning. However, a one-time game benchmark can go stale as models, prompts, environment implementations, and evaluation policies change, and refreshing it is costly: full round-robin evaluation scales poorly in the number of model pairs, and the resulting outcomes live on incompatible per-game scales. We present a framework for continuous evaluation of LLM agents in game settings, organized around three coupled components. First, an adaptive scheduler that maps pairwise Bradley-Terry uncertainty to reduced per-pair match targets, concentrating budget on comparisons that remain unresolved. Second, a Unified Leaderboard (ULB) that reduces heterogeneous outcomes to pairwise evidence and fits a game-balanced Bradley-Terry model by minorization-maximization with bootstrap intervals, so that high-throughput games cannot dominate the aggregate ranking. Third, a game skill-profile methodology that scores each game along diverse skill dimensions, making the capability coverage of the suite explicit and turning game selection into a design decision rather than an artifact of availability. In this paper, we specify the research design and outcome reduction of the current implementation and evaluate the framework on a ten-game suite spanning perfect-information board games, imperfect-information games, and social/language settings, reporting LLM capability profiles, evaluation-cost savings across model-refresh cycles, and an empirical Pareto frontier relating model performance to inference cost. As deployed, the scheduler saved 61.7% of episodes; it counted each episode in the two team games as four records, overstating their savings, and the other eight games save 61.9%.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28368",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28368"
+      }
+    ],
+    "relevance_score": 0.43042242633525285,
+    "max_similarity": 0.15415078298618062
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28081",
+    "title": "BehaviorICL: Task-Conditioned Decoder States for Visual In-Context Learning",
+    "authors": [
+      "Chenyang Wang, Jiamo Hu, Chengrui Wu, Lingyue Chen, Jianguo Chen, Xun Xu, Xulei Yang"
+    ],
+    "abstract": "arXiv:2611.28081v1 Announce Type: new \nAbstract: The usefulness of an in-context demonstration for a vision-language model (VLM) depends on both the query image and the task posed about it. We study whether the frozen target VLM's own decoder states, read before answer generation, can select such demonstrations. BehaviorICL represents each image and task by a task-conditioned processing signature, the hidden states at the final input position across all decoder layers. Its training-free variant, BehaviorICL-Raw, averages cosine similarities between corresponding layer states and passes the retrieved examples with their reference answers to the same VLM. When the same NICO++ images are asked about their object or their context, Raw retrieves largely different demonstrations for the two questions and outperforms an image retriever given task-matched demonstrations on both VLMs. Across two VLMs and eight classification and visual question answering datasets, Raw gives the highest average accuracy among training-free retrievers on both VLMs and exceeds RICES with a CLIP ViT-L/14 encoder by 3.83 points on Qwen and 1.85 on InternVL. A lightweight shared projection, BehaviorICL-Proj, brings further gains on classification. Analyses of extraction text, decoder depth and bank answers help explain these gains, and attention analysis describes how the task text shifts attention at the extraction position toward the classified object. These results support the target VLM's internal states as a practical basis for visual in-context learning.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28081",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28081"
+      }
+    ],
+    "relevance_score": 0.42532339977483835,
+    "max_similarity": 0.14607761227095603
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28100",
+    "title": "You Only Think Once: Rescuing Hybrid Vision-Language Models Lost in Thought",
+    "authors": [
+      "Tianyi Tan, Wentao Wang, Xiaohan Li, Zining Ren, Siyuan Li, Xutao Mao, Rui Qian, Luoxi Zhang, Shiwen Ni"
+    ],
+    "abstract": "arXiv:2611.28100v1 Announce Type: new \nAbstract: Thinking at length before answering is expected to strengthen the visual reasoning of vision-language models (VLMs), yet hybrid VLMs often get lost in thought: their thoughts loop or exhaust the budget without an answer, so thinking can score below answering directly. Existing early-exit methods watch a thought for the moment its answer is ready and force the answer out of it, but in a hybrid VLM that moment often never comes. We find that the remedy is not to stop a failing thought earlier, but to stop taking its answer: once a thought is given up, the model's own direct answers decide. Based on this, we propose **YOTO (You Only Think Once)**, a method that answers first and thinks at most once. YOTO draws direct answers until a probe-weighted vote settles; only an unsettled problem receives a single thought, which a failure head on the hidden state monitors and stops as soon as it predicts failure, handing the problem back to direct answers. At a matched 20k-token budget, YOTO is up to 5.9 points more accurate than the strongest early-exit baseline, using one failure-head threshold across model sizes. Keeping the released weights frozen, it adds only two linear probes. On the full MathVision benchmark, YOTO improves Qwen3.5-2B from 40.1% to 57.3% and Qwen3.5-4B from 68.3% to 73.7%, above the 72.8% that Qwen3.5-9B, a model more than twice its size, reaches with thinking. Its gains carry over to five further benchmarks and a second model family. These results suggest that hybrid VLMs reason better by answering first and thinking once than by thinking longer.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28100",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28100"
+      }
+    ],
+    "relevance_score": 0.42147617888744354,
+    "max_similarity": 0.14464464460655263
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28078",
+    "title": "Adversarial Attacks Expose Path-Dependent Failures in Discrete Medical Image Tokenizers",
+    "authors": [
+      "Ahmed Loughzali, Akash Yallamati, Aadiv Reki, Aslan Shaukat Vaida, Jeyashree Krishnan"
+    ],
+    "abstract": "arXiv:2611.28078v1 Announce Type: new \nAbstract: Discrete image tokenizers convert medical images into token sequences that downstream models either decode into an image for a classifier (the reconstruction path), classify directly (the token path), or feed to a generative multimodal model. We ask whether imperceptible input perturbations can break these systems through the tokenizer alone. We evaluate four tokenizers on three imaging modalities and extend the strongest attack to a deployed generative model. Our central finding is path-dependence: the same tokenizer fails in opposite ways depending on how its output is used. A supervised attack collapses diagnostic accuracy on the reconstruction path, with ROC AUC falling to $\\leq 0.013$ at $\\epsilon=2/255$ on all four tokenizers, while sparing the token path. An unsupervised, label-free attack does the reverse; its damage concentrates in the multi-codebook tokenizers, worst in MedITok, whose token-path AUC falls from 0.919 to 0.239. The same label-free attack transfers to LLaVA-Med, a frozen medical vision-language model built on MedITok, making it report proliferative diabetic retinopathy in a healthy retina or call a malignant lesion benign, without access to the question, answer, or language-model gradients. Harm is driven by how far the attack moves the tokenizer's internal representation, not by how many tokens change: on the learned-codebook tokenizers, a control attack that changes nearly all tokens but moves the representation less leaves every path and answer intact. Domain-specific pretraining does not provide robustness: MedITok has the best clean accuracy yet is the most fragile, more so than UniTok, its general-domain counterpart. None of six candidate defenses repairs every failure mode, and several fail once the attacker optimizes against the defense directly. Medical tokenizer robustness must therefore be evaluated per downstream path, against an adaptive adversary.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28078",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28078"
+      }
+    ],
+    "relevance_score": 0.4182988658631881,
+    "max_similarity": 0.13965658096073089
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28038",
+    "title": "What Counts as Attack Success? Evaluating Harmfulness in Red Teaming LLMs",
+    "authors": [
+      "Ruyuan Wan, Adriana Alvarado Garcia, Md Toufikuzzaman, Dongwon Lee, Ting-Hao `Kenneth' Huang"
+    ],
+    "abstract": "arXiv:2611.28038v1 Announce Type: new \nAbstract: Judging whether a model response is harmful requires contextual and normative choices, yet red-teaming studies often delegate this judgment to automated evaluators. We examine how harmfulness criteria are specified in red-teaming research and how they carry through to reported results. Reviewing 76 papers, we find that many adopt their criteria from prior datasets, classifiers, or judge prompts rather than defining harmfulness themselves. Applying evaluators from these papers to identical outputs, we find that they can reach different judgments on the same response, which can change conclusions when comparing models. These differences arise partly because evaluators draw the boundary of harm in different places: some count any response that does not refuse, while others count only output that could plausibly cause harm. We argue that red-teaming studies should state their harmfulness criteria and report how they chose and validated their evaluators to support more reliable measurement and interpretation.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28038",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28038"
+      }
+    ],
+    "relevance_score": 0.41742092739286335,
+    "max_similarity": 0.20405612627931743
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28090",
+    "title": "Teacher-Guided Multimodal Dual Representation Reconstruction for Egocentric Human Activity Recognition",
+    "authors": [
+      "Yuzhe Hao, Ikuro Sato, Rei Kawakami, Koichi Shinoda"
+    ],
+    "abstract": "arXiv:2611.28090v1 Announce Type: new \nAbstract: Multimodal Egocentric Human Activity Recognition (Ego-HAR) leverages complementary cues from first-person vision (V) and inertial sensor data (S) to recognize daily activities, where video mainly captures appearance and object-related context while inertial signals capture motion cues that video may miss. However, existing pre-training methods typically supervise the fused representation with a single joint objective, which may underemphasize the complementarity between the two modalities and limit the model's ability to learn from distinct modality-oriented signals. To address this issue, we propose Multimodal Dual Representation Reconstruction (MDR2), a teacher-guided pre-training framework in which frozen, label-informed video and inertial teachers each provide dense, modality-specific targets to a multimodal student trained on temporally sparse inputs. On the EvIs-Kitchen dataset, MDR2 improves noun/verb F1-macro over the supervised M-Baseline by 9.20/6.17 points at K=4 video key frames and by 1.21/1.82 points at K=32. These results show that MDR2 consistently achieves higher mean recognition performance across the evaluated video-observation settings under the unified backbone setting, with more pronounced gains under sparse inputs.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28090",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28090"
+      }
+    ],
+    "relevance_score": 0.41457843480485684,
+    "max_similarity": 0.1954437406912811
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28099",
+    "title": "VidRouteBench: A Benchmark for Budgeted Video-Generation Routing",
+    "authors": [
+      "Dayu Wang"
+    ],
+    "abstract": "arXiv:2611.28099v1 Announce Type: new \nAbstract: Text-to-video generators differ by two orders of magnitude in price, and a cheap configuration of a strong model is often good enough for a prompt. Routing prompts across such arms (model x sampling configuration) should buy quality at fixed budget, but no dataset supports studying it: public video-preference sets contain only closed models, one configuration each.\n  We release VidRouteBench: 16 arms from 7 open families spanning 121x in measured cost ($0.0025-$0.298 per clip), 27,110 clips (1,421 A800-hours) over 1,625 grouped prompts, a quality score frozen after calibration against human preferences (68.7% CV accuracy vs 66.2% for the best single scorer), per-clip scores on 9 identifiable quality dimensions, repeated seeds, an encrypted test split, and a sealed newest family for cold start. The evaluator compares a router against the best prompt-agnostic mixture of arms, not the best single arm. Per-prompt specialisation here is real and predictable (oracle gap 0.642, 47% reproducible across seeds, prompt-arm interaction F=4.47 at p=1.6e-63), unlike LLM-routing arms, where the same pipeline finds none.\n  We then propose OPMU (one probe, many utilities): label a new arm on K probe prompts, predict its 9 dimensions once, and serve any scenario utility by scalarising afterwards. Over 215 utility directions OPMU Pareto-dominates the prompt-agnostic baseline for 94% of directions versus 90% for per-scenario routers, with no per-scenario retraining. Three baselines fail instructively: bag-of-words features lose almost all routing gain in the low-data regime (0.009 vs 0.168); crediting a new arm with its probe average is harmful (-3.32 recovery) although it is the strong baseline on RewardBench-style arms (0.786); Chebyshev scalarisation does not help, our cost-utility front being convex.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28099",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28099"
+      }
+    ],
+    "relevance_score": 0.4128167202434848,
+    "max_similarity": 0.13367076742882805
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28048",
+    "title": "Distributionally-Verifiable Rewards for Human-Behavior Simulation",
+    "authors": [
+      "Ruoyun Ma, Shuang Liu, Peiye Liu, Ao Qu, Baichuan Mo"
+    ],
+    "abstract": "arXiv:2611.28048v1 Announce Type: new \nAbstract: Large language models are increasingly used to simulate survey respondents in social-science research. A useful simulator should predict individual responses, reproduce population response distributions, and capture demographic differences. Common training approaches struggle to balance these goals: exact-match rewards encourage the model to concentrate on the most frequent human response, which is contradictory to the goal of distributional alignment. Meanwhile, aggregate distribution matching can look good even when demographic information is ignored. To this end, we introduce Distributionally-Verifiable Rewards (DVR), a reinforcement-learning reward that uses demographic group distribution gaps to guide individual responses, designed by aligning policy generated frequencies with human response frequencies within each question-group margins. We evaluate the method using the OpinionQA dataset and find that comparing with accuracy-only RLVR, DVR preserves per-response accuracy while reducing JSD by 34.5% in-distribution and 14.6% on held-out questions, with higher DPC point estimates on both splits. Comparing KL-SFT with the demographics-blind marginal further shows that low JSD is insufficient to establish fidelity to population heterogeneity, highlighting that accuracy, distributional fit, and demographic structure should be evaluated together.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28048",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28048"
+      }
+    ],
+    "relevance_score": 0.40262942025982495,
+    "max_similarity": 0.12048032387291888
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28327",
+    "title": "AV-FLARE: Feature-Level Reliability Estimation for Multimodal Emotion Recognition",
+    "authors": [
+      "Ines Jemmali, Alaa Nfissi, Wassim Bouachir, Nizar Bouguila"
+    ],
+    "abstract": "arXiv:2611.28327v1 Announce Type: new \nAbstract: Multimodal emotion recognition (MMER) systems typically rely on learned feature representations and attention mechanisms that implicitly weight information across time and modalities. However, these mechanisms do not explicitly incorporate input reliability, despite the presence of noise in audio, occlusions in visual data, and the sparse and event-driven nature of affective cues. We propose AV-FLARE, a framework that explicitly estimates fine-grained reliability scores across both temporal and feature dimensions prior to temporal modeling and uses them to modulate feature representations. Reliability is computed using two complementary components: (i) a supervised network trained jointly with the classification objective, and (ii) an unsupervised Gaussian Mixture Model that models global feature distributions. These signals are combined to provide both task-driven and distribution-aware reliability estimates. To integrate modalities, we introduce a hierarchical cross-modal attention mechanism in which textual features are used to guide audio-visual fusion as a semantic reference modality. Experiments on the IEMOCAP dataset show that AV-FLARE improves over a no-reliability baseline, achieving 90.81\\% accuracy and 81.69\\% F1-score, corresponding to gains of +4.41% and +8.56%, respectively. These results suggest that incorporating explicit input reliability estimation may improve robustness in multimodal emotion recognition under the evaluated setting.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28327",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28327"
+      }
+    ],
+    "relevance_score": 0.38931918962670303,
+    "max_similarity": 0.16405154467809138
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28341",
+    "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+    "authors": [
+      "G\\\"un Kaynar, Boshen Yan, Carl Kingsford"
+    ],
+    "abstract": "arXiv:2611.28341v1 Announce Type: new \nAbstract: Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan. We study how agents fail when tools fail, using RetryRealistic, a sandboxed yet realistic testbed for controlled fault injection in which agents operate on a real OS filesystem with genuine permission enforcement, SQLite databases, a deterministic local HTTP server, and a constrained shell, across 8 tools, 9 fault types with controlled persistence, and 30 multi-step tasks. Evaluating four agents over 2,100 faulted runs against ground truth, we find that recovery is unreliable (19-68% correct) and frequently silent: 6-26% of runs end in a confident fabrication, a wrong answer asserted as fact. The failure mode is governed more by the fault type than by the model: faults that return partial data drive fabrication (up to 38%), while hard denials drive honest failure. The mechanism is what we call silent ingestion: the agent accepts faulted data as valid on first contact without retrying or flagging the problem, then builds a fabricated answer on top of it. We show that fabrication is reducible: a verification-first Monitor, grounding checks in structured tool outputs and issuing corrective directives rather than hard blocks, raises correct recovery from 45.6% to 56.3% and cuts fabrication from 17.3% to 10.8%. Removing chain-of-thought increases fabrication (+8.3pp), so deliberation guards against silent ingestion. We release RetryRealistic, the fault-injection toolkit, and all annotated traces at https://github.com/Kingsford-Group/RetryRealistic",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28341",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28341"
+      }
+    ],
+    "relevance_score": 0.3824799984313056,
+    "max_similarity": 0.21977306733854812
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.28314",
+    "title": "INSEP: Refusal-Direction Inseparability as a Defense Against Abliteration",
+    "authors": [
+      "Ivan Brugere, Junqi Jiang, Saumitra Mishra, Sumitra Ganesh"
+    ],
+    "abstract": "arXiv:2611.28314v1 Announce Type: new \nAbstract: Abliteration is a widely used white-box attack against the safety alignment of large language models (LLMs). It elicits harmful behavior by estimating a refusal direction in the model's activation space and projecting that direction out of the residual-stream write-out matrices. We propose INSEP, a defense that fine-tunes the model to reduce the separability of harmful and benign activations along the refusal direction. Abliteration estimates this direction as a difference in class means and projects it out. Reducing separability weakens the signal the attack relies on. An adversarial eigendecomposition selects the most separable prompt subsets. A low-rank adapter reduces their separation along that direction. Behavioral losses preserve the base model's refusal and the quality of its benign responses during training. We benchmark INSEP against six published defenses under five attacks, across eight LLMs from 1B to 14B parameters and several model families. Beyond response harm, we measure coherence, directness, over-refusal, and MMLU, to distinguish robust refusal from low harm produced by evasive or degraded responses. INSEP ranks first on the mean composite score across all eight base models while retaining utility, in the largest abliteration-defense evaluation reported to date.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "updated": "Tue, 24 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.28314",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.28314"
+      }
+    ],
+    "relevance_score": 0.31827983446269076,
+    "max_similarity": 0.07936267035108047
+  }
+]
