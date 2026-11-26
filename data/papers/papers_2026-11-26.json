@@ -1,0 +1,542 @@
+[
+  {
+    "id": "https://arxiv.org/abs/2611.33232",
+    "title": "How Many Samples Is RL Worth? Best-of-N versus RL Post-Training for Text-to-Image Models",
+    "authors": [
+      "Salil Bhatnagar"
+    ],
+    "abstract": "arXiv:2611.33232v1 Announce Type: new \nAbstract: Reinforcement learning (RL) on a reward that can be checked automatically has become a common last step in the training of text-to-image models. A simpler way to get more correct images is best-of-N: draw N images from the base model and keep the one that a picker prefers. We ask how many base model samples one RL sample is worth, and call this number the exchange rate. We measure it for Stable Diffusion 3.5 Medium and its public Flow-GRPO checkpoint on 398 new prompts in the style of GenEval, the benchmark behind the RL reward, with human labels on every prompt and two automatic judges other than the reward. The answer depends on the prompt. Four fifths of the prompts do not ask for a position (for example, one object left of another). On these, the base model catches up: best-of-16 with an off-the-shelf vision-language model (VLM) as the picker is about as good as one RL image. A person who looks through up to 3 base images finds a correct one as often as one RL image is correct. On the prompts that ask for a position, RL is far ahead: a person finds a correct image among 8 base images for only 52% of the prompts, against 92% for one RL image. Over all prompts, our primary test, which we fixed in advance, finds best-of-16 with the VLM picker 9.3 points behind one RL image when both automatic judges must pass an image. People see a smaller gap, 5.5 and 6.5 points in two checks. FLUX.1-dev shows a similar gap in the same test. RL also solves 20 prompts that the base model misses in 128 tries, and 1,024 tries recover half of them. The automatic judges are wrong in opposite directions: a detector-based judge like the reward, as used in our primary test, reports a larger gap than people see, and VLM judges report little or none. Comparisons of RL with best-of-N should therefore check the selected images by hand.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33232",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33232"
+      }
+    ],
+    "relevance_score": 0.5619455734267162,
+    "max_similarity": 0.3193360990135843
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33190",
+    "title": "General-Purpose Decision Models for AI Configuration Tuning",
+    "authors": [
+      "Jingzhi Gong, Jie M. Zhang"
+    ],
+    "abstract": "arXiv:2611.33190v1 Announce Type: new \nAbstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget. Existing tuners use different sampling and search policies, making the choice of decision strategy central to both tuning quality and cost. We investigate whether general-purpose decision models can guide tuning, using Jev as a deployed representative that returns structured choices and numeric scores across diverse tasks. To assess where it helps, we compare its use as an optimizer, performance predictor, and region guider against conventional methods and a large language model (LLM) on eight AI tuning tasks. Conventional optimizers attain rank 1 in six of eight comparisons. Similarly, established predictors outperform Jev in seven. Through region guidance, however, it finds configurations with lower perplexity than those selected by the native tuner, offering a quality gain when additional decision time and API fees are acceptable. These findings yield actionable recommendations on selecting the decision role, retaining conventional predictors, and balancing tuning quality against cost.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33190",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33190"
+      }
+    ],
+    "relevance_score": 0.5252973858391495,
+    "max_similarity": 0.2730114487620282
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33563",
+    "title": "FIG-MAC: A Fine-grained Inspiration Graph Empowered Multi-Agent Collaboration for Automated Scientific Hypothesis Generation",
+    "authors": [
+      "Siyuan Chen, Yuping Gao, Tai Huang, Yuling Zhou, Dongyu Su, Tongguan Wang"
+    ],
+    "abstract": "arXiv:2611.33563v1 Announce Type: new \nAbstract: Automated Scientific Hypothesis Generation (ASHG) leveraging large language models (LLMs) aims to harness their strengths in knowledge integration, logical reasoning, and text generation for efficiently producing innovative, verifiable scientific hypotheses. However, existing approaches face three critical limitations: (i) insufficient fine-grained knowledge representation, as unstructured context impairs LLM comprehension and reasoning; (ii) lack of knowledge evolution traceability, constraining the generation of innovative cross-domain conjectures; (iii) absence of human-inspired and role-specialized multi-agent collaboration, failing to leverage the efficient innovation mechanisms arising from cognitive diversity and division of labor among expert roles to complete the full ASHG-evaluation loop. To address these limitations, we propose the Fine-grained Inspiration Graph-empowered Multi-Agent Collaboration framework (FIG-MAC) including: (i) Fine-grained Inspiration Graph module (FIG), to obtain fine-grained structured knowledge representations, where nodes represent academic semantic units and edges encode heuristic relationships among them; (ii) ontology-guided hybrid reasoning module, which follows the FIG ontology to construct structured reasoning paths and uses vector search to enrich them with semantic evidence, to obtain the traceable scientific conjecture paths; (iii) role-specialized Multi-Agent framework, inspired by real scientific teamwork, enabling a closed-loop process of scientific conjecture generation, screening, and validation. Experimental results demonstrate that FIG-MAC significantly outperforms state-of-the-art methods on source diversity, provenance-adjusted novelty, and raw novelty.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33563",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33563"
+      }
+    ],
+    "relevance_score": 0.5197347988292744,
+    "max_similarity": 0.26131977521669986
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33368",
+    "title": "Searching Ultra-Long Videos with Decision Models",
+    "authors": [
+      "Ce Zhang, Baiqi Li, Seongsu Ha, Gedas Bertasius"
+    ],
+    "abstract": "arXiv:2611.33368v1 Announce Type: new \nAbstract: Understanding ultra-long videos requires retrieving sparse, query-relevant evidence from extensive video histories. Existing similarity-based retrieval methods are efficient, but they encode the question and the video content independently and thus often miss evidence whose relevance requires reasoning over both. Generative large language models (LLMs) can perform such reasoning, but they typically generate text over multiple rounds of search, which makes each query slow and costly. In this work, we introduce DeLoVi (Decision Models for Long Video), a framework that leverages pretrained decision models to retrieve evidence from ultra-long videos. Like an LLM, a decision model reads the question together with the candidate evidence, so it can reason over both. Unlike an LLM, it directly outputs a relevance score without generating text, which makes it fast and inexpensive. We first present DeLoVi-S, a simple method that generates captions for short video clips and uses a decision model to rank those captions by their relevance to a question. A generative LLM then answers the question using the top-ranked captions. Despite its simplicity, DeLoVi-S achieves state-of-the-art performance on three ultra-long video understanding benchmarks, EgoLifeQA, EgoMemReason, and MM-Lifelong, and generalizes effectively to long-video understanding benchmarks, VideoMME-L and LVBench. However, DeLoVi-S scores every caption for every question, so its cost grows linearly with video length. To reduce this cost, we propose an automated policy evolution framework that iteratively refines the memory construction and retrieval policies around a fixed pretrained decision model. The resulting method, DeLoVi-E, maintains comparable performance while reducing input tokens by 34x on average compared with DeLoVi-S. It also runs over 3x faster than the best prior method on EgoLifeQA while achieving higher accuracy.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33368",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33368"
+      }
+    ],
+    "relevance_score": 0.5177721379957824,
+    "max_similarity": 0.25759408323519833
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33369",
+    "title": "Benchmarking Segmentation Models for Scalable Mangrove Mapping with Sentinel-1/2 Imagery",
+    "authors": [
+      "Damba Kon\\'e, Sara Mobsite, Joris Gu\\'erin, \\'Elodie Blanchard, Thibault Catry"
+    ],
+    "abstract": "arXiv:2611.33369v1 Announce Type: new \nAbstract: Mangroves are dynamic coastal ecosystems that contribute to carbon storage, coastal protection and biodiversity conservation, but are vulnerable to climate change. Very-high-resolution imagery such as Pl\\'eiades enables detailed mangrove mapping but it is costly and have a low revisit rate. Large-scale monitoring requires free and regularly available data such as Sentinel-1 and Sentinel-2 but their spatial resolution poses challenges for detailed mangrove mapping. In this work, we benchmark deep learning approaches for mangrove mapping from Sentinel-1 radar and Sentinel-2 optical imagery using reference maps derived from very-high-resolution Pl\\'eiades imagery. We compare four segmentation configurations based on CROMA and BigEarthNet-pretrained ResNet50 representations with different segmentation decoders. We construct a mangrove mapping dataset covering French Guiana, Suriname, and Amap\\'a. CROMA + UPerNet achieves the best performance, with an F1-score of 0.9218 and an IoU of 0.8549. These results highlight the potential of pretrained multimodal Earth observation representations and open Sentinel data to support mangrove resilience through scalable monitoring.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33369",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33369"
+      }
+    ],
+    "relevance_score": 0.5071185983545644,
+    "max_similarity": 0.25186742593598
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33184",
+    "title": "Semantic Density Does Not Predict Agent-Memory Collapse",
+    "authors": [
+      "Saksham Gupta, Yash Choudhary, Arpit Upadhyay"
+    ],
+    "abstract": "arXiv:2611.33184v1 Announce Type: new \nAbstract: Persistent textual memory can improve LLM agents, but repeated updates can erode task performance. We ask whether memory-store statistics warn before held-out accuracy declines. We registered mean pairwise cosine similarity ($\\rho$) and 13 additional geometry, retrieval, and graph statistics on 805 snapshots from 13 memory methods across ALFWorld, AppWorld, ScienceWorld, WebShop, and two ARC-AGI settings. These methods store trajectories, rules, workflows, strategies, or linked records, using selective retrieval or whole-store prompting. No such statistic reliably predicted early signs of task accuracy decline, and $\\rho$ had zero median lead. With the checkpoint after peak accuracy as a secondary decline point, measures of highly similar pairs and nearest-neighbor crowding changed earlier but did not consistently outperform stored-item count. We trained classifiers on this corpus and applied them unchanged to PropWorld runs of up to 5,000 crafting tasks. They falsely flagged 56.9% of checkpoints from size-limited stores with stable accuracy and detected only 18% of checkpoints after task success fell to zero. Thus, global semantic density did not provide a reliable warning, while local crowding did not transfer consistently across memory designs. In these long-horizon runs, size-limited stores remained stable, while the sole failure arose when unbounded whole-store prompting exceeded model input capacity, which token growth predicted directly.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33184",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33184"
+      }
+    ],
+    "relevance_score": 0.4905984240803958,
+    "max_similarity": 0.22827241734732978
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33594",
+    "title": "Aligned Machine: A Benchmark for Evaluating Multimodal Embedding Similarity via Human Comparative Judgements",
+    "authors": [
+      "Jiechen Li, Hannah Groos, Brinnae Bent"
+    ],
+    "abstract": "arXiv:2611.33594v1 Announce Type: new \nAbstract: Embedding models increasingly inform how people search, recommend, and retrieve information, yet we lack credible ways to test whether these similarity judgments reflect how humans understand meaning. Existing benchmarks typically rely on static, expert-labeled pairs with coarse Likert-style annotations, limiting scalability and making it difficult to obtain consistent, high-confidence annotations. We introduce Aligned Machine, an interactive, public-facing platform that transforms broad participation into a continuously growing Human-Aligned Similarity Benchmark (HASB) for evaluating semantic alignment in embedding-based systems. Participants complete a cognitively-natural, forced-choice task, comparing two pairs of items (text or images) and selecting which pair is more similar. This comparative design is accessible to non-experts, yields clean preference data, and supports robust aggregation. We report results from an initial deployment with 115 participants contributing 2,875 total labeled pairs and 872 unique pairs. Using HASB, we evaluated 12 widely used embedding models and found only partial alignment between embedding similarity and human judgments. Text-only models consistently achieve higher overall agreement than multimodal models, while multimodal performance varies systematically by task type: alignment is strongest for image-image comparisons, weaker for image-text comparisons, and lowest for text-text comparisons. Aligned Machine is designed to evolve over time as participation grows, supporting longitudinal analysis, domain-specific studies, bias detection, and measurement of concept drift across model versions. By combining accessible public participation with rigorous comparative evaluation, HASB provides a scalable and accountable framework for auditing semantic alignment in embedding models.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33594",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33594"
+      }
+    ],
+    "relevance_score": 0.46723649410213397,
+    "max_similarity": 0.19809980654611756
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33470",
+    "title": "Dynamic Reasoning in Next-Gen Detection and Response: An Empirical Study of LLM Triage, Reinforcement Tuning, and Adversarial Evasion",
+    "authors": [
+      "Jeremy Canale"
+    ],
+    "abstract": "arXiv:2611.33470v1 Announce Type: new \nAbstract: We present an end-to-end empirical study of dynamic reasoning in next-generation detection and response pipelines, evaluating how static classifiers, graph-based signal fusion, and large language model (LLM) triage agents perform under strict human-analyst attention budgets (Recall at B alerts/day). Across 56 reproducible experiments spanning a multi-layer enterprise-and-cloud simulator and four public datasets (SOREL-20M, BODMAS, LANL, and DARPA Transparent Computing), we test twelve architectural claims governing modern fleet-scale defense. First, we show that fleet growth halves recall at a fixed analyst budget even at negligible compute cost (<$0.0003 per million events), and that rarity-weighted graph risk propagation outperforms GraphSAGE without neural training. Second, evaluating frontier reasoning models (Gemini) and fine-tuned open-weight models (Qwen3-4B) for alert triage reveals that unconstrained LLM auto-closure eliminates 90% of false positives while silently discarding 31-44% of true attack cases. Third, post-training with Group Relative Policy Optimization (GRPO) causes severe reward hacking on unseen attack classes, suppressing up to 86% of novel attacks compared to two-epoch supervised fine-tuning. Finally, against an adaptive adversary generating plausible cover stories in benign telemetry fields, LLM triage evasion rises sharply unless gated by a deterministic policy harness prior to model invocation.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33470",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33470"
+      }
+    ],
+    "relevance_score": 0.4659639793745591,
+    "max_similarity": 0.1956743560994642
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33174",
+    "title": "MGMem: An Efficient, Deterministic, and Provenance-Preserving Framework for Long-Horizon Agent Memory",
+    "authors": [
+      "Junhong Huang, Xin Tong, Jun Xia"
+    ],
+    "abstract": "arXiv:2611.33174v1 Announce Type: new \nAbstract: Long-horizon Large Language Model (LLM) agents need persistent memory that surfaces the right past interaction at the right time across thousands of turns. Many systems index by invoking generative LLMs to rewrite history into summaries, facts, or knowledge graphs--a step that is (a) costly (thousands of generative calls per build), (b) non-deterministic (undermining reproducibility and giving inconsistent answers across runs), and (c) provenance-erasing (the reader sees synthesized text, not the original turn). We propose MGMem, a framework with no generative indexing calls that replaces this step with a deterministic discriminative-parser pipeline: recurring mentions across sessions are organized into an incidence graph, question mentions are resolved by a subject-conditioned three-stage resolver, and raw dialogue episodes are returned to the reader. On English multi-session dialogue QA, MGMem outperforms matched-protocol baselines on LoCoMo without generative indexing calls; on the full LongMemEval-S, it remains competitive overall and leads or ties on single-session types among local retrieval comparisons. Code: https://github.com/junhong-h/MGMem",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33174",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33174"
+      }
+    ],
+    "relevance_score": 0.46537184355610217,
+    "max_similarity": 0.1962925418972291
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33394",
+    "title": "Confidence scores for gated automation of large language models",
+    "authors": [
+      "Luiz G. A. Alves, Aaron Vermeersch"
+    ],
+    "abstract": "arXiv:2611.33394v1 Announce Type: new \nAbstract: AI agents built on large language models (LLMs) demonstrate strong capabilities in automated decision-making. However, LLMs may produce incorrect answers with high confidence, limiting their applicability in decisions that affect individuals and organizations. Reliable confidence scores are necessary to gate such decisions, and existing estimates are frequently unavailable or too coarse to support effective gating. This work uses supervised learning to train models to predict the correctness of LLM-generated answers, enabling automated confident responses and routing uncertain ones for human review. A linear confidence score head is fitted to the final-layer hidden state of the frozen LLM backbone, and text-only metamodels are trained as an alternative for closed models. All results come from a single 2B-parameter backbone, on graded answers that are about 98% SQuAD and the remainder TruthfulQA. Against multiple baselines, the confidence score head outperforms all baselines and metamodels, automating the largest fraction of the workload at high accuracy targets. Prompted confidence scores can appear well calibrated yet lack the resolution needed for thresholding. Although transferability to unseen datasets is modest, the confidence score head remains the most robust approach. The proposed confidence scoring framework enhances the safety of automating LLM-based agents and can be adapted to gate other properties, including safety or compliance.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33394",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33394"
+      }
+    ],
+    "relevance_score": 0.4616418454149612,
+    "max_similarity": 0.19214882137159212
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33339",
+    "title": "Temporal Weight Surgery: Repairing Video Grounding with LLM Editors",
+    "authors": [
+      "Ali Asgarov, Chris Thomas"
+    ],
+    "abstract": "arXiv:2611.33339v1 Announce Type: new \nAbstract: A surgeon first finds what is wrong, then fixes only that part. We use this idea for video grounding, where video-language models often find the right moment in a long video but write its time wrong. In Temporal Weight Surgery (TWS), a general-purpose LLM reads the model's weights and activations, finds where the error arises and repairs it there, without gradients. Separate sessions find the same cause, and this diagnosis of where and why the model fails is our main contribution. Three GPT-6 Astra sessions trace a dropped digit in TimeLens-8B to one MLP layer, and the largest edit gains 7.9 mIoU on 1,215 unseen questions and 18.3 on videos of 30 minutes or more. Two Claude Opus 5.5 sessions trace minutes written as seconds in Qwen3-VL-8B to the separator and gain 2.9 and 1.3. Before any edit, its answers often have the right minute and the wrong separator, and fixing only the separator lifts their mIoU from 13.1 to 19.2. Every improving edit beats a random edit of its size, and the edited models run as fast as before.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33339",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33339"
+      }
+    ],
+    "relevance_score": 0.4549201697277807,
+    "max_similarity": 0.18701341020180964
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33176",
+    "title": "Psychophysics of Duration Perception in Multimodal Large Language Models",
+    "authors": [
+      "Auss Abbood, Zihao Fu, Nigel Collier"
+    ],
+    "abstract": "arXiv:2611.33176v1 Announce Type: new \nAbstract: Studies of time perception in language models focus mainly on text-based settings. Yet multimodal models are increasingly used for tasks that require perceiving the passage of time, making the limits of their temporal perception important to understand. We measure the limits of duration perception from audio against a human baseline to address this gap. Drawing from psychophysics, we operationalise duration perception as a melody recognition task, testing when a melody becomes unrecognisable as it is slowed down. Of 21 tested models, most cannot recognise well-known melodies without labelled in-context examples. With in-context examples, seven recognise melodies reliably, most peaking within the median human recognition band. Generalisation is limited: (i) recognition peaks shift with in-context example speed, (ii) melody titles induce prediction bias, and (iii) providing examples with scientific pitch notation does not prevent accuracy declining at long note durations for most models. In humans, the recognition window is a property of the perceiver; in current models, it is largely a property of the prompt.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33176",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33176"
+      }
+    ],
+    "relevance_score": 0.4491695740680946,
+    "max_similarity": 0.17633659219203845
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33197",
+    "title": "Extraneous Cognitive Load in Large Language Models",
+    "authors": [
+      "Arushi Gupta, Sheng Liu, James Zou"
+    ],
+    "abstract": "arXiv:2611.33197v1 Announce Type: new \nAbstract: Cognitive Load Theory (CLT) shows that human problem-solving is affected by both intrinsic load, arising from task difficulty, and extraneous load, arising from how task information is presented. Large language models (LLMs) show analogous effects: presentation alone can affect model performance, but these effects have not yet been systematically isolated from task difficulty. To address this gap, we introduce CogLoadBench, a controlled benchmark that varies five CLT-inspired presentation factors across three reasoning task families. Across models, we find that higher extraneous load conditions often reduce accuracy by either adding competition or complicating the reasoning path. To support diagnosis and mitigation of load-related effects, we propose the Extraneous Load Score (ELS), a prompt-time metric computed from activations that estimates a model's extraneous load, and show that it generalizes across reasoning task types and load levels. We further show that shifting model representations toward lower-load directions at inference time can improve average model performance without changing prompt content.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33197",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33197"
+      }
+    ],
+    "relevance_score": 0.44413188457291053,
+    "max_similarity": 0.16920257554016763
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33210",
+    "title": "Confidence-Based Adaptive Retrieval Fails Where It Matters Most: A Paradox in Biomedical Question Answering",
+    "authors": [
+      "Chengying She, Siyu Deng, Haiyan Ge, Lizhuang Liu"
+    ],
+    "abstract": "arXiv:2611.33210v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used for biomedical question answering, but plausible incorrect answers remain a safety risk in clinical settings. Retrieval-augmented generation (RAG) can ground responses in medical literature, while confidence-based adaptive RAG retrieves only when the model appears uncertain. We evaluate this routing strategy on three biomedical QA benchmarks of increasing difficulty and compare models across a broad range of parameter scales. The results reveal a paradox: confidence is well calibrated (AUROC 0.78--0.89) on standard medical exam questions where retrieval adds little value (+2.4\\% to -1.4\\%), yet becomes \\emph{near-random} (AUROC 0.506) on specialist-level questions where retrieval helps most (+11.2\\%). Five uncertainty signals---first-token probability, margin, entropy, consistency-based sampling, and verbalized confidence---show the same failure pattern. Five post-hoc calibration correction strategies, including density-ratio reweighting and rank-preserving transformation, do not recover a useful routing signal on hard questions (best AUROC: 0.507). Cross-model comparison shows that larger parameter scale and higher base accuracy do not guarantee reliable confidence-based routing under specialist-domain difficulty shift. These findings challenge the premise of confidence-based adaptive RAG: in high-stakes biomedical settings, defaulting to always-retrieve is safer and more accurate than confidence-based routing when calibration on the target domain is unknown.",
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33210",
+    "primary_category": "cs.CV",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33210"
+      }
+    ],
+    "relevance_score": 0.44224845492388754,
+    "max_similarity": 0.16607407454647904
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33167",
+    "title": "Code availability is not enough: schemas for documenting and extending data analysis",
+    "authors": [
+      "H. Sherry Zhang, Roger D. Peng"
+    ],
+    "abstract": "arXiv:2611.33167v1 Announce Type: new \nAbstract: A data analysis involves a sequence of decisions, from data cleaning to model specification, each of which can affect the reported result. Reproducing that result is not the same as understanding the sequence of decisions that produced it and the reasons for each: the code mixes those decisions with implementation details, while the manuscript states the major decisions and their rationale but scatters them across its sections and often leaves out the minor ones. A reader may then ask how the result would change under a different decision: the question itself is easy to pose, but implementing it is often non-trivial in practice. In this work, we propose a schema that represents a data analysis as a collection of decisions in natural language, from which large language models (LLMs) can generate and validate analysis scripts directly. This workflow can also expand a single analysis into a full multiverse of alternatives, specified in an alternative file, ready for comparison. We demonstrate the proposed workflow in two applications. In the first, we construct a schema for a published regression analysis of heaped smoking data and show that it reproduces the reported estimates, and that a reviewer-suggested alternative can be specified through the alternative file and turned into code automatically. In the second, where no schema is provided, we show how the workflow serves instead as a reproducibility check, applied to the many-analysts football study. As an intermediate representation between the manuscript and code scripts, our schema gives a self-contained account of an analysis and makes it extensible from a reader's perspective.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33167",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33167"
+      }
+    ],
+    "relevance_score": 0.43585868730207855,
+    "max_similarity": 0.1629281929133445
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33250",
+    "title": "Focus On Facts: Stylistically Invariant and Factually Sensitive Text Embeddings",
+    "authors": [
+      "Maximus Adeola"
+    ],
+    "abstract": "arXiv:2611.33250v1 Announce Type: new \nAbstract: Text embedding models can conflate surface-form similarity with factual identity. Given an altered near-copy with one corrupted fact and a differently worded fact-preserving rewrite, the base model prefers the altered near-copy. We test whether hard-negative contrastive supervision can reduce this surface-similarity shortcut. We construct FOF-Bench, an 83,263-triplet benchmark spanning five domains. Each anchor is paired with an LLM-generated, fact-preserving stylistic rewrite and a matched fact-altered near-copy. We fine-tune FOF-80M (Focus On Facts), an 80M-parameter embedding model, with a triplet contrastive objective that ranks the rewrite above the factual alteration. On 8,327 held-out test triplets, the base model chooses the factually altered text in 99.58% of cases (0.42% factual preference rate; mean separation -0.1650). After fine-tuning, mean positive--negative separation is +0.0329, 98.5% of individual margins move in the intended direction, and the preference rate reaches 29.37%. On DiSC, an external style-transfer corpus, mean cross-style similarity increases from 0.7905 to 0.9559. The model also penalizes omission and transfers poorly to directional tasks such as NLI and summarization. We characterize FOF-80M as a soft factual fingerprint for studying factual retention under stylistic variation, not as a general-purpose factuality metric.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33250",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33250"
+      }
+    ],
+    "relevance_score": 0.4084451095626034,
+    "max_similarity": 0.12930435313099375
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33195",
+    "title": "Verified experience improves materials prediction with large language models",
+    "authors": [
+      "Yiming Zhang, Koji Tsuda"
+    ],
+    "abstract": "arXiv:2611.33195v1 Announce Type: new \nAbstract: Materials discovery is an iterative loop: experiments and calculations verify predictions, and each outcome can inform the next. Yet most predictors are specialized single-task models fixed after training. Large language models have recently emerged as predictors across heterogeneous tasks but generally underperform specialized models, and retrieval-augmented variants discard their own outcomes. Benchmarks also score queries in isolation, leaving improvement from outcomes untested. Here we construct MatMemBench, a sequential benchmark of 22 materials tasks that reveals outcomes only after prediction and tests online adaptation, memory retention and cross-task transfer. We present MatRecall, a framework that lets large language models store verified predictions, with evidence, outcome and error, as episodes and recall them without retraining. MatRecall improved median performance by 62% over a memory-free model, exceeded specialized models on 11 tasks, remained useful after feedback stopped and transferred between related tasks. Verified experience could become a reusable resource for self-improving discovery loops.",
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33195",
+    "primary_category": "cs.CL",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33195"
+      }
+    ],
+    "relevance_score": 0.4056648076450414,
+    "max_similarity": 0.12177387767677904
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33263",
+    "title": "What, Who, and When: Structured Harm Assessment for Mental Health Safety via Short Reasoning",
+    "authors": [
+      "Catarina Botelho, Ant\\'onio Farinhas, John Mendon\\c{c}a, Areti Vassilopoulos, In\\^es Gon\\c{c}alves, Maya D'Eon, Hugo Pitorro, Laura Cabello, Carrie Spadine, Nuno M. Guerreiro, Ricardo Rei"
+    ],
+    "abstract": "arXiv:2611.33263v1 Announce Type: new \nAbstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns. Existing guard models primarily identify categories of harmful content, often overlooking the context needed to determine an appropriate response. We introduce a clinically grounded taxonomy that characterizes harm along three dimensions: what the harm is, who is involved, and when it occurs. It further separates harm characterization from intervention decisions, thus enabling safety policies to be specified outside the model weights through explicit, clinician-curated instructions that can be updated and audited. We validate the taxonomy with expert clinicians and validate a panel of LLM judges to scale annotation. Relabeling public benchmarks in this taxonomy shows that they rarely contain harm directed at the user, which accounts for nearly half of the harm in real conversations. We then train MindGuard2, a 35B-A3B reasoning-based guard model using supervised fine-tuning on short reasoning traces followed by reinforcement learning with a reasoning-length penalty, to minimize inference overhead while preserving the benefits of reasoning. On two public benchmarks and real-world conversations, MindGuard2 achieves balanced accuracy comparable to the substantially larger GLM-5.3 at approximately 10x lower median latency, advancing the accuracy-latency Pareto frontier. Furthermore, it achieves low false-positive rates at high recall, helping balance the need to detect unsafe situations against the risk of unnecessary interventions that may disrupt support and undermine user trust. We release a safety guardrail model with SOTA performance trained on synthetic data, together with synthetic conversations and annotations of public benchmarks in our taxonomy.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33263",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33263"
+      }
+    ],
+    "relevance_score": 0.4023446215879134,
+    "max_similarity": 0.1174989302695866
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33161",
+    "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+    "authors": [
+      "Rangarajan Ramesh, Yongchao Huang"
+    ],
+    "abstract": "arXiv:2611.33161v1 Announce Type: new \nAbstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement. We propose a scoring framework that combines a small set of hard checks every answer must pass with a wider set of softer checks whose scores are blended into one number per candidate. This adaptive scoring framework consists of three components: a drafting model that produces the candidates, a configuring model that selects and weights the checks for each task, and scoring models that rate properties no grounded tool can compute. We apply our proposed method to four tasks: writing code that is both correct and secure (CWEval), generating robot manipulation plans (LIBERO with added safety variants), passing competitive-programming hidden tests (LiveCodeBench), and answering questions from retrieved documents (HotpotQA). An ablation study isolates the contribution of each component and finds that the largest gains come from combining hard checks with candidate comparison: on tasks where the first sampled answer is often broken or unsafe, this pairing lifts joint correctness-and-safety by up to +0.21 (retrieval-augmented QA) and code-generation safety by up to +0.28 (CWEval), with the size of the gain tracking how weak the first sample is, falling to near zero or slightly negative where it is already strong. The per-task layer that selects and weights the softer checks adds no measurable value over simpler alternatives. This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain.",
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33161",
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33161"
+      }
+    ],
+    "relevance_score": 0.3949488320143445,
+    "max_similarity": 0.10858256842639268
+  },
+  {
+    "id": "https://arxiv.org/abs/2611.33237",
+    "title": "Resource-Efficient Multimodal Fusion for Early Rice Blast Forecasting in Sustainable Agriculture",
+    "authors": [
+      "Shubhajyoti Das, Pritam Bikram, Arindam Biswas, Samrat Paul, Parimal Sinha, Bhargab B. Bhattacharya"
+    ],
+    "abstract": "arXiv:2611.33237v1 Announce Type: new \nAbstract: Resource-efficient artificial intelligence has become increasingly important for sustainable agriculture, where timely disease forecasting must be achieved under computational and energy constraints. Early estimation of rice blast can enhance food security by optimizing crop management practices while reducing excessive pesticide use. However, existing frameworks often suffer from high computational overhead and limited capability to model the complex spectral-temporal dependencies present in heterogeneous meteorological and remote sensing data. To address these challenges, this paper proposes a lightweight multimodal fusion framework comprising an attentive positional encoding-based Transformer and a convolutional neural network (CNN)-embedded gated recurrent unit (GRU) for efficient spectral-temporal representation learning. The attention-enhanced positional encoding assigns adaptive importance to sequential meteorological tokens, enabling effective modelling of temporal characteristics. In parallel, the lightweight CNN extracts discriminative spectral features, while the GRU captures temporal dynamics from remote sensing imagery acquired over two time-instances. A multimodal fusion layer integrates these heterogeneous representations to forecast rice blast risk 5-10 days before symptom manifestation across diverse agro-climatic zones. Extensive experiments demonstrate that the proposed framework outperforms state-of-the-art methods, achieving a validation accuracy of 96.93% and an F1-score of 95.79%. In addition to its predictive performance, the lightweight multimodal architecture substantially reduces computational complexity, inference latency, and carbon emissions, making it an energy-efficient solution for large-scale disease forecasting. The proposed framework provides a practical foundation for resource-efficient artificial intelligence in sustainable agriculture.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "updated": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33237",
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": null,
+    "doi": null,
+    "links": [
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://arxiv.org/abs/2611.33237"
+      }
+    ],
+    "relevance_score": 0.29672940958935345,
+    "max_similarity": 0.17173532890573168
+  }
+]
