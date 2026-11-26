@@ -10,7 +10,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33563",
-    "summary": "研究问题：现有自动科学假设生成方法存在知识表示不细、缺乏演化追踪、缺少多智能体协作等问题  \n主要方法：提出FIG-MAC框架，包括细粒度灵感图模块和本体引导混合推理模块  \n关键贡献：实现细粒度结构化知识表示，支持跨领域创新假设生成，完成全流程评估",
+    "summary": "研究问题：现有自动科学假设生成方法存在细粒度知识表示不足、缺乏知识演化可追溯性及多智能体协作缺失。\n主要方法：提出FIG-MAC框架，包含细粒度灵感图模块和本体引导混合推理模块。\n关键贡献：实现结构化知识表示与角色专业化多智能体协作，提升跨领域假设生成创新性。",
     "language": "zh"
   },
   {
@@ -24,7 +24,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33190",
-    "summary": "研究问题：通用决策模型能否指导AI配置调优  \n主要方法：使用Jev作为代表，比较其作为优化器、性能预测器和区域引导器与常规方法及LLM在8个调优任务上的表现  \n关键贡献：区域引导下Jev找到更低困惑度的配置，提供了质量提升，并给出选择决策角色、保留常规预测器、平衡质量与成本的建议",
+    "summary": "研究问题：通用决策模型能否指导AI配置调优  \n主要方法：用Jev作为代表，比较其作为优化器、预测器和区域引导器与传统方法及LLM在8个任务上的表现  \n关键贡献：区域引导可找到更低困惑度的配置，但需额外成本；给出选择决策角色、保留传统预测器、平衡质量与成本的建议",
     "language": "zh"
   },
   {
@@ -38,7 +38,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33232",
-    "summary": "研究问题：RL后训练与best-of-N采样在文本到图像模型中的价值比较（汇率）。\n主要方法：在Stable Diffusion 3.5上，用398个GenEval风格提示，对比Flow-GRPO RL与best-of-N，结合人类和自动评判。\n关键贡献：汇率依赖提示类型：非位置提示中best-of-16约等于1个RL图像；位置提示中RL远优于best-of-8（92% vs 52%）。",
+    "summary": "研究问题：RL后训练与best-of-N采样在文本到图像模型中的效率比较。  \n主要方法：提出“汇率”概念，通过人类标注和自动评判比较Stable Diffusion 3.5 Medium的RL检查点与best-of-N采样。  \n关键贡献：发现RL在位置提示上显著优于best-of-N，非位置提示上best-of-16可接近RL。",
     "language": "zh"
   },
   {
@@ -52,21 +52,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33368",
-    "summary": "研究问题：如何高效从超长视频中检索稀疏查询相关证据。  \n主要方法：提出DeLoVi框架，用预训练决策模型直接输出相关性分数，无需文本生成。  \n关键贡献：DeLoVi-S在三个超长视频理解基准上达到SOTA，并有效泛化到长视频。",
-    "language": "zh"
-  },
-  {
-    "paper_id": "https://arxiv.org/abs/2611.33369",
-    "title": "Benchmarking Segmentation Models for Scalable Mangrove Mapping with Sentinel-1/2 Imagery",
-    "authors": [
-      "Damba Kon\\'e, Sara Mobsite, Joris Gu\\'erin, \\'Elodie Blanchard, Thibault Catry"
-    ],
-    "categories": [
-      "cs.CV"
-    ],
-    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
-    "pdf_url": "https://arxiv.org/pdf/2611.33369",
-    "summary": "研究问题：利用Sentinel-1/2影像实现可扩展的红树林制图，克服高分辨率影像成本高、重访率低的限制。  \n主要方法：基准测试四种基于CROMA和BigEarthNet预训练ResNet50的分割配置，构建法属圭亚那、苏里南和阿马帕数据集。  \n关键贡献：CROMA+UPerNet取得最佳性能（F1=0.9218，IoU=0.8549），验证预训练多模态表示和开放Sentinel数据支持红树林监测的潜力。",
+    "summary": "研究问题：如何高效检索超长视频中与查询相关的稀疏证据。\n主要方法：提出DeLoVi框架，用预训练决策模型直接输出候选证据与问题的相关性分数，无需生成文本。\n关键贡献：DeLoVi-S方法在三个超长视频理解基准上达到SOTA，兼具推理能力和高效性。",
     "language": "zh"
   },
   {
@@ -80,7 +66,21 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33184",
-    "summary": "研究问题：探究语义密度等统计指标能否预测LLM代理记忆崩溃  \n主要方法：收集805个快照，计算13种几何、检索和图统计量，训练分类器并迁移测试  \n关键贡献：发现全局语义密度不可靠，局部拥挤指标不跨设计迁移，大小受限存储保持稳定",
+    "summary": "研究问题：记忆存储统计量能否预测LLM代理任务准确率下降  \n主要方法：计算805个快照的多种统计量，训练分类器并跨环境测试  \n关键贡献：发现全局语义密度不可靠，局部拥挤无法跨记忆设计迁移",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2611.33369",
+    "title": "Benchmarking Segmentation Models for Scalable Mangrove Mapping with Sentinel-1/2 Imagery",
+    "authors": [
+      "Damba Kon\\'e, Sara Mobsite, Joris Gu\\'erin, \\'Elodie Blanchard, Thibault Catry"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33369",
+    "summary": "研究问题：如何利用免费Sentinel数据实现大规模红树林制图？  \n主要方法：对比四种基于CROMA和BigEarthNet预训练ResNet50的分割配置。  \n关键贡献：CROMA+UPerNet取得最佳性能（F1=0.9218, IoU=0.8549），验证预训练多模态表示和开放Sentinel数据支持红树林监测。",
     "language": "zh"
   },
   {
@@ -94,7 +94,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33594",
-    "summary": "研究问题：现有嵌入模型相似性判断缺乏与人类理解对齐的可信评估基准。  \n主要方法：构建交互式众包平台Aligned Machine，通过强制选择比较任务收集人类偏好数据，形成HASB基准。  \n关键贡献：提出可扩展的众包评估方法，发现文本模型比多模态模型更符合人类判断。",
+    "summary": "研究问题：缺乏可信方式测试嵌入模型相似性是否反映人类理解  \n主要方法：构建Aligned Machine平台，通过众包强制选择任务收集人类比较判断  \n关键贡献：提出可扩展的HASB基准，发现文本模型对齐度高于多模态模型",
     "language": "zh"
   },
   {
@@ -108,7 +108,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33470",
-    "summary": "研究问题：动态推理在下一代检测与响应管道中的表现  \n主要方法：56个可重复实验，使用多层企业云模拟器和四个公共数据集  \n关键贡献：发现LLM自动关闭消除90%误报但丢弃31-44%真实攻击，GRPO导致奖励黑客抑制86%新攻击",
+    "summary": "研究问题：动态推理在下一代检测与响应管道中的表现  \n主要方法：56个可重复实验，涵盖多层企业云模拟器和四个公开数据集  \n关键贡献：发现舰队增长降低召回率；稀有加权图风险传播优于GraphSAGE；LLM自动关闭消除90%误报但丢弃31-44%真实攻击；GRPO导致奖励黑客行为抑制86%新攻击",
     "language": "zh"
   },
   {
@@ -122,21 +122,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33174",
-    "summary": "研究问题：长时程LLM代理记忆的高成本、非确定性和溯源丢失问题  \n主要方法：提出MGMem框架，用确定性判别解析管道替代生成式索引，构建提及图、三阶段解析器并返回原始对话  \n关键贡献：无需生成式索引调用，性能优于或持平基线，保持确定性和溯源",
-    "language": "zh"
-  },
-  {
-    "paper_id": "https://arxiv.org/abs/2611.33394",
-    "title": "Confidence scores for gated automation of large language models",
-    "authors": [
-      "Luiz G. A. Alves, Aaron Vermeersch"
-    ],
-    "categories": [
-      "cs.AI"
-    ],
-    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
-    "pdf_url": "https://arxiv.org/pdf/2611.33394",
-    "summary": "研究问题：LLM高置信度错误答案限制自动化决策，需可靠置信度分数进行门控。\n主要方法：监督学习训练模型预测LLM答案正确性，包括线性置信度分数头和文本元模型。\n关键贡献：置信度分数头优于所有基线，在高准确率目标下自动化最大工作量，且比提示置信度更鲁棒。",
+    "summary": "研究问题：长时LLM代理记忆的高成本、非确定性和来源丢失问题。  \n主要方法：提出MGMem框架，用确定性判别解析管道替代生成索引，构建提及图、主题解析器并返回原始对话。  \n关键贡献：无生成索引调用，性能优于基线，保持竞争性且支持来源保留。",
     "language": "zh"
   },
   {
@@ -150,7 +136,21 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33176",
-    "summary": "研究问题：多模态大语言模型从音频感知时间长度的极限  \n主要方法：基于心理物理学的旋律识别任务，测试慢速下的识别能力  \n关键贡献：发现模型识别窗口主要受提示影响，而非感知者特性",
+    "summary": "研究问题：测量多模态大语言模型从音频感知时间长度的极限  \n主要方法：基于心理物理学的旋律识别任务，测试放慢速度下的识别阈值  \n关键贡献：发现模型识别窗口主要取决于提示，泛化能力有限",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2611.33394",
+    "title": "Confidence scores for gated automation of large language models",
+    "authors": [
+      "Luiz G. A. Alves, Aaron Vermeersch"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33394",
+    "summary": "研究问题：LLM高置信度输出错误答案，需可靠置信度分数门控自动化决策。  \n主要方法：监督学习训练模型预测答案正确性，线性置信度分数头拟合冻结LLM隐藏状态，文本元模型作为替代。  \n关键贡献：置信度分数头在准确率目标下自动化最大工作量，优于所有基线；提示置信度分数虽校准但缺乏阈值分辨率。",
     "language": "zh"
   },
   {
@@ -164,7 +164,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33339",
-    "summary": "研究问题：视频定位中模型找到正确时刻但时间标记错误。\n主要方法：Temporal Weight Surgery，用LLM读取权重和激活定位并修复错误，无需梯度。\n关键贡献：诊断模型失败位置和原因，编辑单层或分隔符显著提升性能。",
+    "summary": "研究问题：视频定位中模型常找对时刻但写错时间（如分钟写成秒、数字丢失）。  \n主要方法：Temporal Weight Surgery (TWS)，用通用LLM读取模型权重和激活，定位错误层并直接修复，无需梯度。  \n关键贡献：诊断模型失败的位置和原因，通过少量GPT/Claude会话修复特定层，显著提升mIoU（如7.9、18.3），且编辑后模型速度不变。",
     "language": "zh"
   },
   {
@@ -178,7 +178,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33210",
-    "summary": "研究问题：在生物医学问答中，基于置信度的自适应检索在困难问题上失效。  \n主要方法：评估多种不确定性信号和校准策略。  \n关键贡献：揭示置信度校准与检索收益之间的悖论。",
+    "summary": "研究问题：在生物医学问答中，基于置信度的自适应检索在困难问题上失效。  \n主要方法：评估多种置信度信号和校准策略在三个生物医学QA基准上的表现。  \n关键贡献：揭示悖论：置信度在简单问题上校准良好但检索增益小，在困难问题上校准差但检索增益大。",
     "language": "zh"
   },
   {
@@ -192,21 +192,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33197",
-    "summary": "研究问题：LLM中呈现方式（外在认知负荷）对性能的影响，与任务难度分离。  \n主要方法：提出CogLoadBench基准，变化五种呈现因素；提出ELS指标估计外在负荷。  \n关键贡献：发现高外在负荷降低准确率；通过推理时调整表示可改善性能。",
-    "language": "zh"
-  },
-  {
-    "paper_id": "https://arxiv.org/abs/2611.33195",
-    "title": "Verified experience improves materials prediction with large language models",
-    "authors": [
-      "Yiming Zhang, Koji Tsuda"
-    ],
-    "categories": [
-      "cs.CL"
-    ],
-    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
-    "pdf_url": "https://arxiv.org/pdf/2611.33195",
-    "summary": "研究问题：材料预测中缺乏利用验证结果改进的机制  \n主要方法：构建MatMemBench基准和MatRecall框架，存储并召回验证经验  \n关键贡献：MatRecall提升62%性能，超越专用模型，实现跨任务迁移",
+    "summary": "研究问题：LLM中任务信息呈现方式（外源性负荷）对性能的影响，与任务难度分离。  \n主要方法：提出CogLoadBench基准，变化五种呈现因素；提出ELS度量从激活中估计外源性负荷。  \n关键贡献：发现高外源性负荷降低准确率；ELS可泛化；推理时向低负荷方向调整表示可提升性能。",
     "language": "zh"
   },
   {
@@ -220,35 +206,21 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33167",
-    "summary": "研究问题：如何清晰记录数据分析中的决策序列并支持扩展分析？  \n主要方法：提出自然语言schema表示决策，利用LLM生成和验证分析脚本。  \n关键贡献：实现决策的显式记录与多宇宙分析的自动生成。",
+    "summary": "研究问题：如何更好地记录和扩展数据分析中的决策序列，超越仅提供代码。\n主要方法：提出用自然语言模式表示分析决策，利用大语言模型生成和验证分析脚本，并支持多宇宙替代方案。\n关键贡献：通过模式化决策和自动代码生成，提升分析的可理解性和可扩展性。",
     "language": "zh"
   },
   {
-    "paper_id": "https://arxiv.org/abs/2611.33263",
-    "title": "What, Who, and When: Structured Harm Assessment for Mental Health Safety via Short Reasoning",
+    "paper_id": "https://arxiv.org/abs/2611.33195",
+    "title": "Verified experience improves materials prediction with large language models",
     "authors": [
-      "Catarina Botelho, Ant\\'onio Farinhas, John Mendon\\c{c}a, Areti Vassilopoulos, In\\^es Gon\\c{c}alves, Maya D'Eon, Hugo Pitorro, Laura Cabello, Carrie Spadine, Nuno M. Guerreiro, Ricardo Rei"
+      "Yiming Zhang, Koji Tsuda"
     ],
     "categories": [
-      "cs.AI"
+      "cs.CL"
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
-    "pdf_url": "https://arxiv.org/pdf/2611.33263",
-    "summary": "研究问题：LLM用于心理健康支持时的安全评估缺乏上下文\n主要方法：提出临床分类法（what/who/when），训练MindGuard2模型（35B-A3B）使用短推理和强化学习\n关键贡献：分类法分离危害与干预，发现基准中缺乏针对用户的危害，实现高效推理",
-    "language": "zh"
-  },
-  {
-    "paper_id": "https://arxiv.org/abs/2611.33161",
-    "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
-    "authors": [
-      "Rangarajan Ramesh, Yongchao Huang"
-    ],
-    "categories": [
-      "cs.AI"
-    ],
-    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
-    "pdf_url": "https://arxiv.org/pdf/2611.33161",
-    "summary": "研究问题：LLM/VLM候选答案选择中现有方法存在弱点（如流畅但不安全、数学可行但物理不可行等）。  \n主要方法：提出约束感知测试时评分框架，包含草稿模型、配置模型和评分模型，结合硬检查与软检查。  \n关键贡献：硬检查与候选比较的组合在多个任务上显著提升联合正确率。",
+    "pdf_url": "https://arxiv.org/pdf/2611.33195",
+    "summary": "研究问题：材料预测中缺乏利用验证结果改进的机制  \n主要方法：构建MatMemBench基准和MatRecall框架，存储验证预测作为经验并召回  \n关键贡献：MatRecall提升性能62%，超过专用模型，实现跨任务迁移",
     "language": "zh"
   },
   {
@@ -262,7 +234,35 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33250",
-    "summary": "研究问题：文本嵌入模型混淆表面相似性与事实同一性，偏好事实错误的近似副本。  \n主要方法：构建FOF-Bench三元组基准，微调FOF-80M模型使用硬负对比学习，将事实保留重写排在事实改变文本之上。  \n关键贡献：提出FOF-80M作为软事实指纹，事实偏好率从0.42%升至29.37%，跨风格相似度从0.7905升至0.9559。",
+    "summary": "研究问题：文本嵌入模型混淆表面相似性与事实同一性，偏好事实改变文本。\n主要方法：构建FOF-Bench基准，微调FOF-80M模型，使用三元组对比目标训练。\n关键贡献：微调后事实偏好率从0.42%提升至29.37%，跨风格相似性从0.7905升至0.9559。",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2611.33263",
+    "title": "What, Who, and When: Structured Harm Assessment for Mental Health Safety via Short Reasoning",
+    "authors": [
+      "Catarina Botelho, Ant\\'onio Farinhas, John Mendon\\c{c}a, Areti Vassilopoulos, In\\^es Gon\\c{c}alves, Maya D'Eon, Hugo Pitorro, Laura Cabello, Carrie Spadine, Nuno M. Guerreiro, Ricardo Rei"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33263",
+    "summary": "研究问题：LLM用于心理健康支持时缺乏上下文的安全评估  \n主要方法：提出临床分类法（what/who/when），训练MindGuard2模型（35B-A3B）结合短推理轨迹与强化学习  \n关键贡献：分离危害特征与干预决策，验证分类法，发现真实对话中近半危害针对用户",
+    "language": "zh"
+  },
+  {
+    "paper_id": "https://arxiv.org/abs/2611.33161",
+    "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+    "authors": [
+      "Rangarajan Ramesh, Yongchao Huang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "Thu, 26 Nov 2026 00:00:00 -0500",
+    "pdf_url": "https://arxiv.org/pdf/2611.33161",
+    "summary": "研究问题：LLM/VLM候选答案选择中现有方法存在安全、可行性等缺陷  \n主要方法：提出约束感知测试时评分框架，包含起草、配置、评分三个组件  \n关键贡献：硬检查与候选比较结合，在代码安全、机器人规划等任务上显著提升效果",
     "language": "zh"
   },
   {
@@ -276,7 +276,7 @@
     ],
     "published": "Thu, 26 Nov 2026 00:00:00 -0500",
     "pdf_url": "https://arxiv.org/pdf/2611.33237",
-    "summary": "研究问题：早期稻瘟病预测中的资源高效多模态融合  \n主要方法：提出轻量级多模态融合框架，含注意力位置编码Transformer和CNN嵌入GRU  \n关键贡献：实现高效光谱-时间表示学习，降低计算开销",
+    "summary": "研究问题：早期稻瘟病预测中计算资源受限与复杂光谱-时间依赖建模困难\n主要方法：基于注意力位置编码Transformer与CNN嵌入GRU的轻量级多模态融合框架\n关键贡献：提出资源高效的多模态融合方法，实现低计算开销下的准确早期稻瘟病预测",
     "language": "zh"
   }
 ]
